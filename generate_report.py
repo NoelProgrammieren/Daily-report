@@ -465,7 +465,7 @@ def fetch_forecast_data(forecast: dict) -> dict:
         print("yfinance nicht installiert — überspringe historische Daten.")
         return {
             "updated_at": datetime.now(BERLIN).isoformat(),
-            "tickers": [{"company": t.get("company"), "symbol": None, "history": [], "forecast": _build_forecast_projection(t, None)} for t in tickers],
+            "tickers": [{"company": t.get("company"), "symbol": None, "history": [], "forecast": _build_forecast_projection(t, None, None)} for t in tickers],
         }
 
     result = []
@@ -624,7 +624,7 @@ def generate_report() -> None:
         "Gib NUR das JSON aus, kein anderer Text."
     )
 
-    model_id = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6")
+    model_id = os.getenv("CLAUDE_MODEL", "claude-haiku-4-5-20251001")
     print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Modell: {model_id}")
 
     search_count = 0

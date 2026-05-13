@@ -54,7 +54,13 @@ jobs:
           if [ -n "$(git status --porcelain $PATHS)" ]; then
             git add $PATHS
             git commit -m "Daily report $(date -u +%Y-%m-%d)"
-            git push
+            # Rebase über zwischenzeitlich gepushte Commits, dann push.
+            # Bis zu 3 Versuche, falls in der Zwischenzeit nochmal etwas reinkommt.
+            for attempt in 1 2 3; do
+              git pull --rebase origin main && git push && break
+              echo "Push-Versuch $attempt fehlgeschlagen, retry in 5s..."
+              sleep 5
+            done
           else
             echo "Keine Änderungen — nichts zu committen."
           fi

@@ -260,7 +260,8 @@ def save_calendar(cal: dict) -> None:
     )
 
 
-def extract_json(text: str) -> dict:
+def _normalize_json_text(text: str) -> str:
+    """Strippe Code-Fence/BOM und beschränke auf das äußerste {..}-Objekt."""
     text = text.lstrip("﻿").strip()
     if text.startswith("```"):
         text = re.sub(r"^```(?:json)?\s*", "", text)
@@ -269,7 +270,71 @@ def extract_json(text: str) -> dict:
     last = text.rfind("}")
     if first != -1 and last != -1 and last > first:
         text = text[first:last + 1]
-    return json.loads(text, strict=False)
+    return text
+
+
+def _auto_repair_json(text: str) -> str:
+    """Heuristische Reparaturen für häufige LLM-JSON-Fehler.
+
+    Best-effort: bei nicht greifender Reparatur wird der Originaltext zurückgegeben.
+    """
+    repaired = text
+    # Typografische Anführungszeichen → ASCII
+    repaired = repaired.replace("“", '"').replace("”", '"')
+    repaired = repaired.replace("‘", "'").replace("’", "'")
+    # Trailing Commas vor } oder ]
+    repaired = re.sub(r",(\s*[}\]])", r"\1", repaired)
+    # Single-Quote-Keys → Double Quotes (nur wenn unproblematisch)
+    repaired = re.sub(r"(?P<pre>[{,]\s*)'([A-Za-z_][\w\- ]*)'(\s*:)", r'\g<pre>"\2"\3', repaired)
+    return repaired
+
+
+def extract_json(text: str) -> dict:
+    """Parst JSON mit Auto-Repair-Fallback. Wirft `json.JSONDecodeError` wenn alles scheitert."""
+    cleaned = _normalize_json_text(text)
+    try:
+        return json.loads(cleaned, strict=False)
+    except json.JSONDecodeError as first_err:
+        repaired = _auto_repair_json(cleaned)
+        if repaired != cleaned:
+            try:
+                result = json.loads(repaired, strict=False)
+                print(f"[parser] Auto-Repair erfolgreich (Original-Fehler: {first_err}).")
+                return result
+            except json.JSONDecodeError:
+                pass
+        raise first_err
+
+
+def repair_json_with_claude(client, model_id: str, raw_text: str, original_error: str) -> dict:
+    """Letzte Reparatur-Stufe: bittet Claude, das JSON zu reparieren.
+
+    Schlanker Call ohne Web-Search, niedriges Token-Budget. Gibt das geparste Objekt zurück.
+    """
+    repair_system = (
+        "Du erhältst kaputtes JSON, das ein anderes LLM erzeugt hat. "
+        "Deine einzige Aufgabe: gib das valide JSON zurück. "
+        "Behalte alle Werte inhaltlich bei, behebe nur Syntaxfehler "
+        "(unescapte Anführungszeichen in Strings, fehlende Kommas, falsche Escapes, etc.). "
+        "Antworte AUSSCHLIESSLICH mit dem reparierten JSON-Objekt — kein Markdown, kein Code-Fence, kein Kommentar."
+    )
+    user_msg = (
+        f"Folgendes JSON ist beim Parsen fehlgeschlagen: {original_error}\n\n"
+        "Hier der Rohtext (zwischen den Markern). Repariere ihn und gib NUR das valide JSON aus.\n\n"
+        f"---BEGIN---\n{raw_text}\n---END---"
+    )
+    print(f"[parser] Versuche Claude-Retry für JSON-Reparatur ({len(raw_text)} chars)...")
+    response = client.messages.create(
+        model=model_id,
+        max_tokens=12000,
+        system=repair_system,
+        messages=[{"role": "user", "content": user_msg}],
+    )
+    text_blocks = [b for b in response.content if getattr(b, "type", "") == "text"]
+    if not text_blocks:
+        raise RuntimeError("Repair-Call lieferte keinen Text-Block.")
+    repaired_raw = text_blocks[-1].text
+    return extract_json(repaired_raw)
 
 
 def build_calendar_context(calendar: dict, today: str) -> str:
@@ -597,9 +662,17 @@ def generate_report() -> None:
     try:
         data = extract_json(raw_text)
     except json.JSONDecodeError as e:
+        print(f"[parser] Erster Parse-Versuch fehlgeschlagen: {e}")
         debug_path = REPORTS_DIR / f"{today}.raw.txt"
         debug_path.write_text(raw_text, encoding="utf-8")
-        raise RuntimeError(f"JSON-Parsing fehlgeschlagen: {e}. Rohtext: {debug_path}") from e
+        print(f"[parser] Rohtext gesichert: {debug_path}")
+        try:
+            data = repair_json_with_claude(client, model_id, raw_text, str(e))
+            print(f"[parser] Claude-Retry erfolgreich.")
+        except Exception as e2:
+            raise RuntimeError(
+                f"JSON-Parsing fehlgeschlagen (auch nach Retry): {e2}. Rohtext: {debug_path}"
+            ) from e2
 
     report_data = {
         "date": today,

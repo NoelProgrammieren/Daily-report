@@ -8,6 +8,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-13",
+      "event": "Kevin Warsh Senate vote – Fed Chair confirmation (expected today, vote teed up after yesterday's board confirmation 51-45)",
+      "relevant_for": "Gesamtmarkt, all equities",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-05-15",
       "event": "US-CPI April",
       "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
@@ -36,40 +43,47 @@
       "category": "earnings"
     },
     {
+      "date": "2026-05-22",
+      "event": "NVIDIA Q1 FY27 Earnings (after market close)",
+      "relevant_for": "NVIDIA, semiconductor sector",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, fixed income",
       "rating": 5,
       "category": "fed"
     },
     {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
-      "relevant_for": "Intel",
+      "relevant_for": "Intel, Infrastruktur & Industrie",
       "rating": 3,
-      "category": "political"
+      "category": "other"
     },
     {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
-      "relevant_for": "Apple",
+      "relevant_for": "Apple, Informationstechnologie",
       "rating": 4,
       "category": "product"
     },
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "LVMH, Hermès, Siemens, Gesamtmarkt",
+      "relevant_for": "DAX, europäische Equities, LVMH, Siemens",
       "rating": 4,
       "category": "fed"
     },
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 Earnings",
-      "relevant_for": "Microsoft, Core S&P 500, MSCI World IT ETF",
+      "relevant_for": "Microsoft, Informationstechnologie",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-13T09:51:14.092637+02:00"
+  "updated_at": "2026-05-13T16:59:17.634438+02:00"
 }

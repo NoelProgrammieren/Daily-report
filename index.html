@@ -18,6 +18,8 @@
       </div>
       <nav class="tabs" role="tablist">
         <button class="tab active" data-tab="today" role="tab">Heute</button>
+        <button class="tab" data-tab="hot-takes" role="tab">🔥 Hot Takes</button>
+        <button class="tab" data-tab="forecast" role="tab">📈 Prognose</button>
         <button class="tab" data-tab="archive" role="tab">Archiv</button>
         <button class="tab" data-tab="calendar" role="tab">Kalender</button>
       </nav>
@@ -29,6 +31,23 @@
         <div id="today-meta" class="meta-row"></div>
         <div id="today-report" class="report">
           <p class="loading">Lade aktuellen Bericht…</p>
+        </div>
+      </section>
+
+      <section id="tab-hot-takes" class="tab-panel">
+        <h2>🔥 Hot Takes – vielversprechende Prognosen</h2>
+        <p class="hint">Picks mit Rating 1–5, gekoppelt an konkrete bevorstehende Ereignisse. Verfallen nach dem Event-Datum.</p>
+        <div id="hot-takes-list">
+          <p class="loading">Lade Hot Takes…</p>
+        </div>
+      </section>
+
+      <section id="tab-forecast" class="tab-panel">
+        <h2>📈 Prognose – Portfolio-Ausblick</h2>
+        <p class="hint">Historische Kursverläufe (90 Tage) plus Erwartungspfad mit Unsicherheitsband. Erwartung, keine Garantie.</p>
+        <div id="forecast-commentary" class="forecast-commentary"></div>
+        <div id="forecast-list">
+          <p class="loading">Lade Prognose…</p>
         </div>
       </section>
 
@@ -54,6 +73,7 @@
       <span id="footer-info"></span>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

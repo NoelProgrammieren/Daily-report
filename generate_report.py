@@ -17,9 +17,49 @@ import anthropic
 ROOT = Path(__file__).parent
 REPORTS_DIR = ROOT / "reports"
 CALENDAR_FILE = ROOT / "calendar.json"
+HOT_TAKES_FILE = ROOT / "hot_takes.json"
+FORECAST_FILE = ROOT / "forecast_data.json"
 REPORTS_DIR.mkdir(exist_ok=True)
 
 BERLIN = ZoneInfo("Europe/Berlin")
+
+# Mapping deutsche/Anzeige-Namen → yfinance-Ticker (Portfolio + Watchlist).
+TICKER_MAP = {
+    "Apple": "AAPL",
+    "NVIDIA": "NVDA",
+    "Alphabet": "GOOG",
+    "Alphabet C": "GOOG",
+    "Microsoft": "MSFT",
+    "Intel": "INTC",
+    "Amazon": "AMZN",
+    "MasterCard": "MA",
+    "Mastercard": "MA",
+    "Berkshire Hathaway": "BRK-B",
+    "Berkshire Hathaway B": "BRK-B",
+    "BRK.B": "BRK-B",
+    "LVMH": "MC.PA",
+    "Hermès": "RMS.PA",
+    "Hermes": "RMS.PA",
+    "AMD": "AMD",
+    "Broadcom": "AVGO",
+    "Meta": "META",
+    "Visa": "V",
+    "JPMorgan": "JPM",
+    "Coca-Cola": "KO",
+    "Walmart": "WMT",
+    "Eli Lilly": "LLY",
+    "Moderna": "MRNA",
+    "Caterpillar": "CAT",
+    "Siemens": "SIE.DE",
+    "Lockheed Martin": "LMT",
+    "Rheinmetall": "RHM.DE",
+    # ETFs
+    "Core S&P 500": "CSPX.L",
+    "Core MSCI World": "IWDA.L",
+    "MSCI World Information Technology": "WITS.L",
+    "MSCI Emerging Markets Ex China": "EMXC",
+    "Russell 2000 U.S. Small Cap": "IWM",
+}
 
 PORTFOLIO_PROMPT = """# 📊 BRANCHEN-TRACKER – Daily News & Updates
 
@@ -102,6 +142,21 @@ Ausschließlich seriöse Quellen: Reuters, Bloomberg, CNBC, Financial Times, Wal
 ## ZEITLICHER KONTEXT
 Bericht wird um 19:00 MEZ/MESZ (= 13:00 ET) erstellt. Erfasst After-Hours-News vom Vortag sowie Pre-Market- und Intraday-Entwicklungen bis Mittag ET. Late-Session-Überraschungen sind noch nicht enthalten.
 
+## HOT TAKES – VIELVERSPRECHENDE PROGNOSEN
+
+Zusätzlich zu den Tagesnachrichten lieferst du eine Liste „Hot Takes": Unternehmen aus dem Portfolio oder dem Watch-Universum mit **besonders vielversprechender Aussicht**, fundiert auf **konkreten, seriösen Ereignissen** (anstehende Earnings, bestätigte Produkt-Launches, regulatorische Genehmigungen, M&A-Deals, Analyst-Days mit klarer Guidance).
+
+**Strikte Regeln für Hot Takes:**
+- Niemals geratene Spekulation. Jeder Hot Take MUSS an ein nachweisbares Ereignis gekoppelt sein.
+- 0–5 Einträge pro Tag — nur wenn es wirklich etwas gibt. Lieber leer als schwach.
+- Rating 1–5 nach Stärke der Prognose (5 = sehr hohe Konviktion, 1 = nur leichter Vorteil).
+- Bevorzugt Unternehmen, die ins Portfolio passen (siehe Universum-Liste oben).
+- Hot Takes werden rollierend persistiert. Ein Eintrag verfällt, wenn sein `event_date` vorbei ist.
+
+## PROGNOSE – PORTFOLIO-AUSBLICK
+
+Liefere zusätzlich einen kurzen Portfolio-Ausblick und für 3–6 Kern-Positionen eine quantitative Erwartung. Der Erwartungsbereich darf eine begründete Einschätzung sein (nicht reine Mathematik), MUSS aber an Ereignisse / Trends gekoppelt werden. Klar als „Erwartung", nicht als „Vorhersage" kennzeichnen.
+
 ## AUSGABE-SCHEMA
 
 Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markdown-Code-Fence. Genau dieses Schema:
@@ -109,9 +164,12 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
 ```
 {
   "macro": {
-    "summary": "2-3 Sätze: S&P 500, Nasdaq + wichtigstes geopolitisches/makroökonomisches Hintergrundrauschen",
+    "market_state": "2 Sätze: aktueller Stand der Märkte (Indizes, Tagesbewegung, Stimmung)",
+    "macro_drivers": "2-3 Sätze: Zinsen, Inflation, Notenbanken, Geopolitik, Rohstoffe — was bewegt den Markt strukturell heute",
+    "sentiment": "1 Satz: Investorenstimmung (Risk-on / Risk-off / abwartend) und ein bis drei Stichworte",
     "sp500": "z.B. 5.842 (+0,3 %)",
-    "nasdaq": "z.B. 18.920 (-0,1 %)"
+    "nasdaq": "z.B. 18.920 (-0,1 %)",
+    "dax": "z.B. 19.350 (+0,4 %)"
   },
   "sectors": [
     {
@@ -130,6 +188,31 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
       ]
     }
   ],
+  "hot_takes": [
+    {
+      "company": "NVIDIA",
+      "rating": 5,
+      "event_basis": "Q1 FY27 Earnings am 2026-05-22 — Konsens erwartet Beat dank Hyperscaler-Capex",
+      "event_date": "2026-05-22",
+      "time_horizon": "1-2 Wochen",
+      "thesis": "2-3 Sätze: Warum die Prognose vielversprechend ist. Verweis auf konkrete Daten / Aussagen / Quellen.",
+      "risks": "1 Satz: was diese Prognose entgleisen könnte"
+    }
+  ],
+  "forecast": {
+    "commentary": "3-5 Sätze: Wie sich das Portfolio in den nächsten 4-8 Wochen voraussichtlich entwickelt. Welche Treiber? Welche Risiken?",
+    "tickers": [
+      {
+        "company": "Apple",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 4.0,
+        "key_drivers": ["WWDC im Juni", "China-Nachfrage", "iPhone-17-Zyklus"],
+        "thesis": "1-2 Sätze begründende Einschätzung"
+      }
+    ]
+  },
   "outlook": [
     {
       "date": "2026-05-15",
@@ -152,10 +235,14 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
 
 **Wichtige Regeln:**
 - Sektoren NUR aufnehmen wenn berichtenswert (keine leeren Einträge!)
-- `price_change` weglassen wenn nicht relevant
+- `hot_takes` darf leer sein wenn heute nichts überzeugendes da ist. NIEMALS spekulative Picks füllen.
+- `forecast.tickers`: 3–6 Einträge aus dem Portfolio (Schwerpunkt auf Einzelaktien). `scenario` ist eines von: "bullish", "neutral", "bearish".
+- `expected_change_*_pct` und `uncertainty_pct`: Zahlen in Prozent (z.B. `2.5` für +2,5 %). `uncertainty_pct` ist die halbe Bandbreite um die Erwartung (Bandbreite = expected ± uncertainty).
+- `price_change` in news weglassen wenn nicht relevant
 - `outlook` = Ausblick nächste Tage / diese Woche (3-7 Punkte)
-- `calendar_events` = wichtige Termine für die nächsten Wochen/Monate, die in den persistenten Kalender aufgenommen werden sollen
+- `calendar_events` = wichtige Termine für die nächsten Wochen/Monate
 - `category` ist eines von: "earnings", "fed", "economic", "product", "political", "other"
+- `company`-Namen in hot_takes/forecast.tickers: nutze die Schreibweise aus dem Universum oben (z.B. "Apple", "NVIDIA", "Berkshire Hathaway B", "LVMH").
 - Daten im Format YYYY-MM-DD
 - Antworte AUSSCHLIESSLICH mit dem JSON-Objekt
 """
@@ -229,6 +316,193 @@ def merge_calendar(old: dict, new_events: list, today: str) -> dict:
     }
 
 
+def load_hot_takes() -> dict:
+    if HOT_TAKES_FILE.exists():
+        return json.loads(HOT_TAKES_FILE.read_text(encoding="utf-8"))
+    return {"takes": [], "updated_at": None}
+
+
+def save_hot_takes(data: dict) -> None:
+    HOT_TAKES_FILE.write_text(
+        json.dumps(data, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def build_hot_takes_context(hot_takes: dict, today: str) -> str:
+    today_date = datetime.strptime(today, "%Y-%m-%d").date()
+    active = []
+    for t in hot_takes.get("takes", []):
+        try:
+            d = datetime.strptime(t.get("event_date", ""), "%Y-%m-%d").date()
+            if d >= today_date:
+                active.append(t)
+        except (ValueError, KeyError):
+            continue
+    if not active:
+        return "Aktuell keine offenen Hot Takes."
+    lines = ["Aktuell offene Hot Takes (bitte aktualisieren oder bestätigen, nicht doppelt aufnehmen):"]
+    for t in sorted(active, key=lambda e: e.get("event_date", ""))[:15]:
+        lines.append(
+            f"- {t.get('company','?')} (Rating {t.get('rating','?')}, Event {t.get('event_date','?')}): {t.get('event_basis','')}"
+        )
+    return "\n".join(lines)
+
+
+def merge_hot_takes(old: dict, new_takes: list, today: str) -> dict:
+    today_date = datetime.strptime(today, "%Y-%m-%d").date()
+    merged: dict = {}
+
+    for t in old.get("takes", []):
+        try:
+            d = datetime.strptime(t.get("event_date", ""), "%Y-%m-%d").date()
+            if d >= today_date:
+                key = (t.get("company", ""), t.get("event_date", ""))
+                merged[key] = t
+        except (ValueError, KeyError):
+            continue
+
+    now_iso = datetime.now(BERLIN).isoformat()
+    for t in new_takes:
+        try:
+            d = datetime.strptime(t.get("event_date", ""), "%Y-%m-%d").date()
+            if d < today_date:
+                continue
+            key = (t.get("company", ""), t.get("event_date", ""))
+            existing = merged.get(key)
+            t_clean = dict(t)
+            t_clean["first_seen"] = existing.get("first_seen", today) if existing else today
+            t_clean["last_updated"] = now_iso
+            merged[key] = t_clean
+        except (ValueError, KeyError):
+            continue
+
+    return {
+        "takes": sorted(
+            merged.values(),
+            key=lambda e: (-int(e.get("rating", 0) or 0), e.get("event_date", "")),
+        ),
+        "updated_at": now_iso,
+    }
+
+
+def fetch_forecast_data(forecast: dict) -> dict:
+    """Holt historische Kursdaten für alle Forecast-Ticker via yfinance.
+
+    Best-effort: bei Fehlern wird der Ticker einfach ohne Historie ausgeliefert.
+    """
+    tickers = forecast.get("tickers", [])
+    if not tickers:
+        return {"updated_at": datetime.now(BERLIN).isoformat(), "tickers": []}
+
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("yfinance nicht installiert — überspringe historische Daten.")
+        return {
+            "updated_at": datetime.now(BERLIN).isoformat(),
+            "tickers": [{"company": t.get("company"), "symbol": None, "history": [], "forecast": _build_forecast_projection(t, None)} for t in tickers],
+        }
+
+    result = []
+    for t in tickers:
+        company = t.get("company", "")
+        symbol = TICKER_MAP.get(company)
+        history = []
+        last_close = None
+        last_date = None
+        if symbol:
+            try:
+                hist = yf.Ticker(symbol).history(period="90d", auto_adjust=True)
+                if not hist.empty:
+                    for ts, close in zip(hist.index, hist["Close"]):
+                        if close is None or (isinstance(close, float) and (close != close)):
+                            continue
+                        history.append({"date": ts.strftime("%Y-%m-%d"), "close": round(float(close), 2)})
+                    if history:
+                        last_close = history[-1]["close"]
+                        last_date = history[-1]["date"]
+                print(f"  yfinance {company} ({symbol}): {len(history)} Tage")
+            except Exception as e:
+                print(f"  yfinance Fehler für {company} ({symbol}): {e}")
+        else:
+            print(f"  Kein Ticker-Mapping für '{company}' — Forecast nur ohne Historie.")
+
+        result.append({
+            "company": company,
+            "symbol": symbol,
+            "history": history,
+            "last_close": last_close,
+            "last_date": last_date,
+            "scenario": t.get("scenario"),
+            "thesis": t.get("thesis"),
+            "key_drivers": t.get("key_drivers", []),
+            "forecast": _build_forecast_projection(t, last_close, last_date),
+        })
+
+    return {
+        "updated_at": datetime.now(BERLIN).isoformat(),
+        "commentary": forecast.get("commentary", ""),
+        "tickers": result,
+    }
+
+
+def _build_forecast_projection(ticker: dict, last_close, last_date) -> dict:
+    """Berechnet Erwartungspfad + Band aus Claude-Schätzungen."""
+    exp_30 = _safe_float(ticker.get("expected_change_30d_pct"))
+    exp_90 = _safe_float(ticker.get("expected_change_90d_pct"))
+    unc = _safe_float(ticker.get("uncertainty_pct"))
+    if exp_30 is None or unc is None:
+        return None
+
+    if last_close is None:
+        return {
+            "expected_change_30d_pct": exp_30,
+            "expected_change_90d_pct": exp_90,
+            "uncertainty_pct": unc,
+            "path": [],
+        }
+
+    try:
+        anchor = datetime.strptime(last_date, "%Y-%m-%d").date() if last_date else datetime.now(BERLIN).date()
+    except ValueError:
+        anchor = datetime.now(BERLIN).date()
+
+    points = []
+    horizon_days = 90 if exp_90 is not None else 30
+    for d in (7, 14, 30, 60, 90):
+        if d > horizon_days:
+            continue
+        if d <= 30 or exp_90 is None:
+            expected_pct = exp_30 * (d / 30.0)
+        else:
+            expected_pct = exp_30 + (exp_90 - exp_30) * ((d - 30) / 60.0)
+        band_pct = unc * (d / 30.0) ** 0.5  # leicht wachsendes Unsicherheitsband
+        central = last_close * (1 + expected_pct / 100.0)
+        lower = last_close * (1 + (expected_pct - band_pct) / 100.0)
+        upper = last_close * (1 + (expected_pct + band_pct) / 100.0)
+        points.append({
+            "date": (anchor + timedelta(days=d)).strftime("%Y-%m-%d"),
+            "central": round(central, 2),
+            "lower": round(lower, 2),
+            "upper": round(upper, 2),
+        })
+    return {
+        "expected_change_30d_pct": exp_30,
+        "expected_change_90d_pct": exp_90,
+        "uncertainty_pct": unc,
+        "path": points,
+    }
+
+
+def _safe_float(v):
+    if v is None:
+        return None
+    try:
+        return float(v)
+    except (TypeError, ValueError):
+        return None
+
+
 def update_index() -> None:
     reports = []
     for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True):
@@ -265,16 +539,23 @@ def generate_report() -> None:
     print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Kalender geladen ({len(calendar.get('events', []))} Ereignisse).")
     calendar_context = build_calendar_context(calendar, today)
 
+    hot_takes_state = load_hot_takes()
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hot Takes geladen ({len(hot_takes_state.get('takes', []))} aktiv).")
+    hot_takes_context = build_hot_takes_context(hot_takes_state, today)
+
     client = anthropic.Anthropic(timeout=600.0)
     print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Client initialisiert, starte API-Call mit Web-Search...")
 
     user_message = (
         f"Erstelle den Tagesbericht für heute, {today} (Datum entspricht Europe/Berlin).\n\n"
         f"{calendar_context}\n\n"
+        f"{hot_takes_context}\n\n"
         "Recherchiere aktuelle Nachrichten zu den im Universum gelisteten Unternehmen und Sektoren "
         "(After-Hours von gestern + Pre-Market & Intraday bis ca. 13:00 ET heute). "
         "Halte dich strikt an die Reporting-Prinzipien (Qualität vor Quantität). "
         "Aktualisiere den Kalender mit neu entdeckten wichtigen Terminen. "
+        "Aktualisiere oder ergänze Hot Takes (rollierend) — nur an konkrete Events gekoppelt, niemals geraten. "
+        "Liefere `forecast.tickers` für 3–6 Kern-Portfolio-Positionen. "
         "Gib NUR das JSON aus, kein anderer Text."
     )
 
@@ -325,6 +606,8 @@ def generate_report() -> None:
         "generated_at": datetime.now(BERLIN).isoformat(),
         "macro": data.get("macro", {}),
         "sectors": data.get("sectors", []),
+        "hot_takes": data.get("hot_takes", []),
+        "forecast": data.get("forecast", {}),
         "outlook": data.get("outlook", []),
         "usage": {
             "input_tokens": response.usage.input_tokens,
@@ -340,6 +623,17 @@ def generate_report() -> None:
     new_calendar = merge_calendar(calendar, data.get("calendar_events", []), today)
     save_calendar(new_calendar)
     print(f"Kalender aktualisiert: {len(new_calendar['events'])} Ereignisse.")
+
+    new_hot_takes = merge_hot_takes(hot_takes_state, data.get("hot_takes", []), today)
+    save_hot_takes(new_hot_takes)
+    print(f"Hot Takes aktualisiert: {len(new_hot_takes['takes'])} aktive Einträge.")
+
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hole Kursdaten für Forecast via yfinance...")
+    forecast_payload = fetch_forecast_data(data.get("forecast", {}))
+    FORECAST_FILE.write_text(
+        json.dumps(forecast_payload, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"Forecast-Daten gespeichert: {len(forecast_payload.get('tickers', []))} Ticker.")
 
     update_index()
     print("Index aktualisiert.")

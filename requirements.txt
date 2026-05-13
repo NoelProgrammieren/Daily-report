@@ -1,1 +1,2 @@
 anthropic>=0.92.0
+yfinance>=0.2.40

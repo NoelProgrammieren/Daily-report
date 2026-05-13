@@ -76,14 +76,38 @@ function renderReport(report, container) {
   const macro = report.macro || {};
   let html = "";
 
-  // Macro
+  // Macro – gegliedert in Marktlage / Makro-Treiber / Sentiment
+  // Abwärtskompatibel: falls nur das alte `summary`-Feld existiert, als Marktlage rendern.
+  const marketState = macro.market_state || macro.summary || "";
+  const macroDrivers = macro.macro_drivers || "";
+  const sentiment = macro.sentiment || "";
   html += `<div class="macro">
     <h3>Makro-Kontext</h3>
-    <p>${escapeHtml(macro.summary || "Keine Makro-Notizen.")}</p>`;
-  if (macro.sp500 || macro.nasdaq) {
+    <div class="macro-sections">`;
+  if (marketState) {
+    html += `<div class="macro-section">
+      <div class="macro-label">📊 Marktlage</div>
+      <p>${escapeHtml(marketState)}</p>
+    </div>`;
+  }
+  if (macroDrivers) {
+    html += `<div class="macro-section">
+      <div class="macro-label">🌐 Makro-Treiber</div>
+      <p>${escapeHtml(macroDrivers)}</p>
+    </div>`;
+  }
+  if (sentiment) {
+    html += `<div class="macro-section">
+      <div class="macro-label">🎯 Sentiment</div>
+      <p>${escapeHtml(sentiment)}</p>
+    </div>`;
+  }
+  html += `</div>`;
+  if (macro.sp500 || macro.nasdaq || macro.dax) {
     html += `<div class="indices">`;
     if (macro.sp500) html += `<div><strong>S&amp;P 500:</strong> ${escapeHtml(macro.sp500)}</div>`;
     if (macro.nasdaq) html += `<div><strong>Nasdaq:</strong> ${escapeHtml(macro.nasdaq)}</div>`;
+    if (macro.dax) html += `<div><strong>DAX:</strong> ${escapeHtml(macro.dax)}</div>`;
     html += `</div>`;
   }
   html += `</div>`;
@@ -208,8 +232,9 @@ async function loadArchive() {
           const body = details.querySelector(".archive-body");
           renderReport(report, body);
           const summaryNote = details.querySelector(".archive-summary");
-          summaryNote.textContent = report.macro?.summary
-            ? report.macro.summary.slice(0, 110) + (report.macro.summary.length > 110 ? "…" : "")
+          const archiveSnippet = report.macro?.market_state || report.macro?.summary || "";
+          summaryNote.textContent = archiveSnippet
+            ? archiveSnippet.slice(0, 110) + (archiveSnippet.length > 110 ? "…" : "")
             : "";
         } catch (e) {
           details.querySelector(".archive-body").innerHTML =
@@ -316,7 +341,257 @@ async function loadCalendar() {
   }
 }
 
+// ---------- hot takes ----------
+const SCENARIO_LABEL = { bullish: "📈 Bullish", neutral: "➡️ Neutral", bearish: "📉 Bearish" };
+
+async function loadHotTakes() {
+  const container = document.getElementById("hot-takes-list");
+  try {
+    // Hot Takes liegen rollierend in hot_takes.json (Top-Level-Datei).
+    const data = await fetchJSON("hot_takes.json");
+    const today = new Date().toISOString().slice(0, 10);
+    const takes = (data.takes || []).filter((t) => (t.event_date || "9999-12-31") >= today);
+    if (takes.length === 0) {
+      container.innerHTML = `<div class="empty-state"><span class="em">🤷</span>Aktuell keine offenen Hot Takes. Neue erscheinen, sobald greifbare Events kommen.</div>`;
+      return;
+    }
+    // Sortieren: Rating absteigend, dann Event-Datum aufsteigend
+    takes.sort((a, b) => (Number(b.rating) || 0) - (Number(a.rating) || 0) ||
+      (a.event_date || "").localeCompare(b.event_date || ""));
+    let html = "";
+    for (const t of takes) {
+      const r = Number(t.rating || 0);
+      html += `<div class="hot-take r${r}">
+        <div class="hot-take-head">
+          <span class="hot-take-company">${escapeHtml(t.company || "?")}</span>
+          <span class="rating r${r}">⭐ ${r}/5</span>
+        </div>
+        <div class="hot-take-event">
+          <span class="hot-take-eventdate">${escapeHtml(t.event_date || "")}</span>
+          · ${escapeHtml(t.event_basis || "")}
+          ${t.time_horizon ? `<span class="hot-take-horizon">⏱ ${escapeHtml(t.time_horizon)}</span>` : ""}
+        </div>
+        <p class="hot-take-thesis">${escapeHtml(t.thesis || "")}</p>
+        ${t.risks ? `<div class="hot-take-risks">⚠️ ${escapeHtml(t.risks)}</div>` : ""}
+        <div class="hot-take-foot">
+          ${t.first_seen ? `<span>seit ${escapeHtml(t.first_seen)}</span>` : ""}
+        </div>
+      </div>`;
+    }
+    container.innerHTML = html;
+  } catch (e) {
+    container.innerHTML = `<div class="empty-state"><span class="em">📭</span>Noch keine Hot Takes vorhanden.</div>`;
+  }
+}
+
+// ---------- forecast ----------
+function chartColors() {
+  const styles = getComputedStyle(document.documentElement);
+  return {
+    text: styles.getPropertyValue("--text").trim() || "#e6edf3",
+    textDim: styles.getPropertyValue("--text-dim").trim() || "#8b96a4",
+    border: styles.getPropertyValue("--border").trim() || "#2a3340",
+    accent: styles.getPropertyValue("--accent").trim() || "#4a9eff",
+    positive: styles.getPropertyValue("--positive").trim() || "#2ea043",
+    negative: styles.getPropertyValue("--negative").trim() || "#f85149",
+    warning: styles.getPropertyValue("--warning").trim() || "#d29922",
+  };
+}
+
+function withAlpha(hex, alpha) {
+  // Akzeptiert #rrggbb oder benannte Farben → fällt sonst auf den Hex-String zurück.
+  const m = /^#?([0-9a-f]{6})$/i.exec(hex.trim());
+  if (!m) return hex;
+  const num = parseInt(m[1], 16);
+  const r = (num >> 16) & 0xff;
+  const g = (num >> 8) & 0xff;
+  const b = num & 0xff;
+  return `rgba(${r}, ${g}, ${b}, ${alpha})`;
+}
+
+let forecastCharts = [];
+
+function destroyForecastCharts() {
+  for (const c of forecastCharts) {
+    try { c.destroy(); } catch (_) { /* ignore */ }
+  }
+  forecastCharts = [];
+}
+
+function renderForecastChart(canvasId, ticker) {
+  if (typeof Chart === "undefined") return; // Chart.js noch nicht geladen
+  const ctx = document.getElementById(canvasId);
+  if (!ctx) return;
+  const colors = chartColors();
+  const history = ticker.history || [];
+  const path = ticker.forecast?.path || [];
+
+  // Konstruiere die kombinierte Datums-Achse: History + Forecast-Pfade.
+  const allDates = [...history.map((p) => p.date), ...path.map((p) => p.date)];
+
+  // Forecast-Linie startet beim letzten History-Punkt (visueller Anschluss).
+  const forecastCentral = [];
+  const forecastUpper = [];
+  const forecastLower = [];
+  const histLen = history.length;
+  for (let i = 0; i < allDates.length; i++) {
+    if (i < histLen - 1) {
+      forecastCentral.push(null);
+      forecastUpper.push(null);
+      forecastLower.push(null);
+    } else if (i === histLen - 1 && histLen > 0) {
+      const anchor = history[histLen - 1].close;
+      forecastCentral.push(anchor);
+      forecastUpper.push(anchor);
+      forecastLower.push(anchor);
+    } else {
+      const p = path[i - histLen];
+      forecastCentral.push(p?.central ?? null);
+      forecastUpper.push(p?.upper ?? null);
+      forecastLower.push(p?.lower ?? null);
+    }
+  }
+  const histSeries = [];
+  for (let i = 0; i < allDates.length; i++) {
+    histSeries.push(i < histLen ? history[i].close : null);
+  }
+
+  const chart = new Chart(ctx, {
+    type: "line",
+    data: {
+      labels: allDates,
+      datasets: [
+        {
+          label: "Historisch",
+          data: histSeries,
+          borderColor: colors.accent,
+          backgroundColor: withAlpha(colors.accent, 0.05),
+          borderWidth: 2,
+          pointRadius: 0,
+          tension: 0.2,
+          spanGaps: false,
+        },
+        {
+          label: "Erwartung",
+          data: forecastCentral,
+          borderColor: colors.warning,
+          borderDash: [6, 4],
+          borderWidth: 2,
+          pointRadius: 2,
+          pointBackgroundColor: colors.warning,
+          tension: 0.25,
+          spanGaps: false,
+        },
+        {
+          label: "Bandbreite (oben)",
+          data: forecastUpper,
+          borderColor: "transparent",
+          backgroundColor: withAlpha(colors.warning, 0.15),
+          pointRadius: 0,
+          fill: "+1",
+          tension: 0.25,
+        },
+        {
+          label: "Bandbreite (unten)",
+          data: forecastLower,
+          borderColor: "transparent",
+          backgroundColor: withAlpha(colors.warning, 0.15),
+          pointRadius: 0,
+          fill: false,
+          tension: 0.25,
+        },
+      ],
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: false,
+      interaction: { mode: "index", intersect: false },
+      plugins: {
+        legend: {
+          display: true,
+          labels: {
+            color: colors.textDim,
+            font: { size: 11 },
+            filter: (item) => !item.text.startsWith("Bandbreite"),
+          },
+        },
+        tooltip: {
+          callbacks: {
+            label: (ctx) => `${ctx.dataset.label}: ${ctx.parsed.y?.toFixed(2) ?? "—"}`,
+          },
+        },
+      },
+      scales: {
+        x: {
+          ticks: { color: colors.textDim, maxTicksLimit: 6, autoSkip: true, font: { size: 10 } },
+          grid: { color: withAlpha(colors.border, 0.4) },
+        },
+        y: {
+          ticks: { color: colors.textDim, font: { size: 10 } },
+          grid: { color: withAlpha(colors.border, 0.4) },
+        },
+      },
+    },
+  });
+  forecastCharts.push(chart);
+}
+
+async function loadForecast() {
+  const list = document.getElementById("forecast-list");
+  const commentBox = document.getElementById("forecast-commentary");
+  try {
+    const data = await fetchJSON("forecast_data.json");
+    if (data.commentary) {
+      commentBox.innerHTML = `<p>${escapeHtml(data.commentary)}</p>
+        <p class="forecast-disclaimer">Erwartungspfade und Bandbreite sind <strong>begründete Einschätzungen</strong>, keine Vorhersagen. Tatsächliche Kursverläufe können davon erheblich abweichen.</p>`;
+    } else {
+      commentBox.innerHTML = "";
+    }
+    const tickers = data.tickers || [];
+    if (tickers.length === 0) {
+      list.innerHTML = `<div class="empty-state"><span class="em">📉</span>Noch keine Prognose-Daten. Wird beim nächsten 19-Uhr-Lauf erzeugt.</div>`;
+      return;
+    }
+    destroyForecastCharts();
+    let html = "";
+    for (let i = 0; i < tickers.length; i++) {
+      const t = tickers[i];
+      const canvasId = `forecast-chart-${i}`;
+      const scenario = t.scenario || "neutral";
+      const exp30 = t.forecast?.expected_change_30d_pct;
+      const exp90 = t.forecast?.expected_change_90d_pct;
+      const unc = t.forecast?.uncertainty_pct;
+      const fmtPct = (v) => (v === null || v === undefined) ? "—" : `${v > 0 ? "+" : ""}${Number(v).toFixed(1)} %`;
+      html += `<div class="forecast-card">
+        <div class="forecast-card-head">
+          <span class="forecast-company">${escapeHtml(t.company || "")}</span>
+          ${t.symbol ? `<span class="forecast-symbol">${escapeHtml(t.symbol)}</span>` : ""}
+          <span class="scenario scenario-${scenario}">${SCENARIO_LABEL[scenario] || scenario}</span>
+        </div>
+        <div class="forecast-metrics">
+          <div><span class="forecast-metric-label">30 T</span><span class="forecast-metric-val">${fmtPct(exp30)}</span></div>
+          <div><span class="forecast-metric-label">90 T</span><span class="forecast-metric-val">${fmtPct(exp90)}</span></div>
+          <div><span class="forecast-metric-label">± Band</span><span class="forecast-metric-val">${fmtPct(unc)}</span></div>
+          ${t.last_close ? `<div><span class="forecast-metric-label">Stand</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}</span></div>` : ""}
+        </div>
+        <div class="forecast-chart-wrap"><canvas id="${canvasId}"></canvas></div>
+        ${t.thesis ? `<p class="forecast-thesis">${escapeHtml(t.thesis)}</p>` : ""}
+        ${(t.key_drivers || []).length ? `<div class="forecast-drivers">Treiber: ${t.key_drivers.map((d) => `<span class="driver-tag">${escapeHtml(d)}</span>`).join(" ")}</div>` : ""}
+      </div>`;
+    }
+    list.innerHTML = html;
+    // Charts erst nach DOM-Injection erzeugen
+    for (let i = 0; i < tickers.length; i++) {
+      renderForecastChart(`forecast-chart-${i}`, tickers[i]);
+    }
+  } catch (e) {
+    list.innerHTML = `<div class="empty-state"><span class="em">📉</span>Noch keine Prognose-Daten. Wird beim nächsten 19-Uhr-Lauf erzeugt.</div>`;
+  }
+}
+
 // ---------- init ----------
 loadToday();
 loadArchive();
 loadCalendar();
+loadHotTakes();
+loadForecast();

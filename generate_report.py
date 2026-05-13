@@ -174,11 +174,15 @@ def save_calendar(cal: dict) -> None:
 
 
 def extract_json(text: str) -> dict:
-    text = text.strip()
+    text = text.lstrip("﻿").strip()
     if text.startswith("```"):
         text = re.sub(r"^```(?:json)?\s*", "", text)
         text = re.sub(r"\s*```\s*$", "", text)
-    return json.loads(text)
+    first = text.find("{")
+    last = text.rfind("}")
+    if first != -1 and last != -1 and last > first:
+        text = text[first:last + 1]
+    return json.loads(text, strict=False)
 
 
 def build_calendar_context(calendar: dict, today: str) -> str:

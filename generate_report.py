@@ -278,9 +278,12 @@ def generate_report() -> None:
         "Gib NUR das JSON aus, kein anderer Text."
     )
 
+    model_id = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6")
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Modell: {model_id}")
+
     search_count = 0
     with client.messages.stream(
-        model="claude-opus-4-7",
+        model=model_id,
         max_tokens=12000,
         system=PORTFOLIO_PROMPT,
         tools=[{

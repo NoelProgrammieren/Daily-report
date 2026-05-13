@@ -1,0 +1,27 @@
+{
+  "date": "2026-05-11",
+  "generated_at": "2026-05-11T19:00:00+02:00",
+  "macro": {
+    "summary": "Wochenstart mit Risk-On-Stimmung. Asiatische Märkte stark, US-Futures vor Eröffnung leicht im Plus. Fed-Sprecher Goolsbee deutet mögliche Zinssenkung im Juli an.",
+    "sp500": "5.838 (+0,7 %)",
+    "nasdaq": "18.847 (+1,1 %)"
+  },
+  "sectors": [
+    {
+      "name": "Luxusgüter",
+      "emoji": "👜",
+      "positions_mentioned": ["Hermès"],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "Hermès meldet Rekord-Q1 mit +13 % organischem Wachstum",
+          "rating": 4,
+          "summary": "Hermès übertrifft Konsens mit 13 % organischem Umsatzwachstum, getrieben von Lederwaren in Japan und Amerika. Margenausblick angehoben.",
+          "price_change": "+3,1 %",
+          "investor_relevance": "Bestätigt die These hinter der Hermès-Position; widerlegt China-Sorgen im Luxussegment."
+        }
+      ]
+    }
+  ],
+  "outlook": []
+}

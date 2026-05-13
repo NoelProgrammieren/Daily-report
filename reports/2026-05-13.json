@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-13",
+  "generated_at": "2026-05-13T19:00:00+02:00",
+  "macro": {
+    "summary": "Beispiel-Bericht zur Layoutdemonstration. S&P 500 leicht im Plus, Nasdaq seitwärts. Marktfokus auf bevorstehende NVIDIA-Earnings und FOMC-Sitzungsprotokoll. (Dieser Eintrag wird beim ersten echten 19-Uhr-Lauf überschrieben.)",
+    "sp500": "5.842 (+0,3 %)",
+    "nasdaq": "18.920 (-0,1 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": ["NVIDIA", "Apple"],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "NVIDIA bestätigt Earnings-Termin und kündigt neue Datacenter-GPU an",
+          "rating": 5,
+          "summary": "NVIDIA hat den Termin für die Q1-Earnings auf den 22. Mai fixiert und parallel die nächste Generation der Blackwell-Ultra-GPUs angekündigt. Analysten erwarten weiteren Beat beim Datacenter-Umsatz.",
+          "price_change": "+1,8 %",
+          "investor_relevance": "Direkt relevant für die NVIDIA-Position (5,09 % Portfoliogewicht) sowie für den ETF MSCI World IT."
+        },
+        {
+          "priority": "lightning",
+          "title": "Apple Vision Pro 2 startet in China",
+          "rating": 3,
+          "summary": "Apple bestätigt offiziellen China-Launch der Vision Pro 2 für Juli. Marktanalysten erwarten anfänglich verhaltenes Volumen, langfristig aber Hebelwirkung für das Services-Segment.",
+          "investor_relevance": "Mittelfristig relevant – Apple bleibt größte Einzelposition."
+        }
+      ]
+    },
+    {
+      "name": "Luxusgüter",
+      "emoji": "👜",
+      "positions_mentioned": ["LVMH"],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "LVMH meldet stabile China-Nachfrage trotz Konjunktursorgen",
+          "rating": 3,
+          "summary": "Auf einer Investorenkonferenz in Paris bestätigte CFO Guiony stabile Umsätze im chinesischen Premium-Segment. Keine konkreten Quartalszahlen, aber Entspannungssignal nach den schwachen Q4-Zahlen.",
+          "price_change": "+0,9 %",
+          "investor_relevance": "Stützt die LVMH-Position; reduziert kurzfristiges China-Risiko."
+        }
+      ]
+    }
+  ],
+  "outlook": [
+    {
+      "date": "2026-05-15",
+      "event": "US-CPI-Daten April",
+      "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
+      "rating": 4
+    },
+    {
+      "date": "2026-05-22",
+      "event": "NVIDIA Q1 Earnings (nach Börse)",
+      "relevant_for": "NVIDIA, Halbleiter-Sektor, IT-ETFs",
+      "rating": 5
+    },
+    {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung & Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "rating": 5
+    }
+  ]
+}

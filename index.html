@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Börsen-Tracker · Daily Report</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E📊%3C/text%3E%3C/svg%3E" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="brand">
+        <span class="logo">📊</span>
+        <div>
+          <h1>Börsen-Tracker</h1>
+          <p class="tagline">Daily News &amp; Updates</p>
+        </div>
+      </div>
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-tab="today" role="tab">Heute</button>
+        <button class="tab" data-tab="archive" role="tab">Archiv</button>
+        <button class="tab" data-tab="calendar" role="tab">Kalender</button>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Theme umschalten">🌙</button>
+    </header>
+
+    <main>
+      <section id="tab-today" class="tab-panel active">
+        <div id="today-meta" class="meta-row"></div>
+        <div id="today-report" class="report">
+          <p class="loading">Lade aktuellen Bericht…</p>
+        </div>
+      </section>
+
+      <section id="tab-archive" class="tab-panel">
+        <h2>Archiv – letzte Berichte</h2>
+        <p class="hint">Die letzten 3 Tage sind direkt ausgeklappt. Ältere Berichte per Klick öffnen.</p>
+        <div id="archive-list">
+          <p class="loading">Lade Archiv…</p>
+        </div>
+      </section>
+
+      <section id="tab-calendar" class="tab-panel">
+        <h2>📅 Kalender – kommende Ereignisse</h2>
+        <p class="hint">Wird bei jedem 19-Uhr-Bericht automatisch geprüft und ergänzt.</p>
+        <div id="calendar-filters" class="filter-row"></div>
+        <div id="calendar-list">
+          <p class="loading">Lade Kalender…</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <span id="footer-info"></span>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>

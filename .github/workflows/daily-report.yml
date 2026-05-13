@@ -1,0 +1,83 @@
+name: Daily Stock Report
+
+on:
+  schedule:
+    # 19:00 Europe/Berlin entspricht 17:00 UTC (Sommerzeit) bzw. 18:00 UTC (Winterzeit).
+    # Wir triggern zu beiden Zeiten — der Python-Skript prüft die lokale Berlin-Zeit
+    # und überspringt den Lauf, wenn es nicht ~19:00 ist.
+    - cron: '0 17 * * 1-5'
+    - cron: '0 18 * * 1-5'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Lauf erzwingen, auch wenn nicht 19:00 Berlin Zeit'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: daily-report
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate report
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          FORCE_RUN: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
+        run: python generate_report.py
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain reports calendar.json)" ]; then
+            git add reports calendar.json
+            git commit -m "Daily report $(date -u +%Y-%m-%d)"
+            git push
+          else
+            echo "Keine Änderungen — nichts zu committen."
+          fi
+
+  deploy:
+    needs: generate
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout (post-commit)
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref }}
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

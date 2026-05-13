@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "date": "2026-05-15",
+      "event": "US-CPI April",
+      "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
+      "rating": 4,
+      "category": "economic"
+    },
+    {
+      "date": "2026-05-22",
+      "event": "NVIDIA Q1 Earnings (nach Börse)",
+      "relevant_for": "NVIDIA, Halbleiter-Sektor, IT-ETFs",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung & Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-04",
+      "event": "Apple WWDC Keynote",
+      "relevant_for": "Apple",
+      "rating": 4,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "ECB Sitzung",
+      "relevant_for": "LVMH, Hermès, Siemens (Euro)",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 Earnings",
+      "relevant_for": "Microsoft, IT-ETFs",
+      "rating": 5,
+      "category": "earnings"
+    }
+  ],
+  "updated_at": "2026-05-13T19:00:00+02:00"
+}

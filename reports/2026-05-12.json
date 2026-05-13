@@ -1,0 +1,48 @@
+{
+  "date": "2026-05-12",
+  "generated_at": "2026-05-12T19:00:00+02:00",
+  "macro": {
+    "summary": "S&P 500 nach starkem Wochenstart leicht im Minus. Nasdaq getragen von Halbleiterwerten. Geopolitischer Fokus auf US-China-Verhandlungen zu Export-Restriktionen.",
+    "sp500": "5.826 (-0,2 %)",
+    "nasdaq": "18.940 (+0,5 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": ["Intel", "AMD"],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Intel verzögert 18A-Produktionsstart erneut",
+          "rating": 5,
+          "summary": "Intel hat den geplanten Hochlauf der 18A-Foundry-Produktion um ein weiteres Quartal verschoben. CEO Tan begründet dies mit Yield-Problemen. AMD nutzt die Unsicherheit für eine Roadmap-Offensive.",
+          "price_change": "-4,2 %",
+          "investor_relevance": "Direkt relevant für die Intel-Position (⚠️) – Foundry-Strategie steht damit weiter unter Druck."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": ["MasterCard"],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "MasterCard kündigt KI-Betrugserkennung 2.0 an",
+          "rating": 3,
+          "summary": "Neue, modellbasierte Echtzeit-Betrugserkennung soll laut MasterCard False-Positive-Rate halbieren. Rollout für Q3 geplant.",
+          "investor_relevance": "Stärkt das Cross-Border-Geschäft – mittelfristig positiv für die MasterCard-Position."
+        }
+      ]
+    }
+  ],
+  "outlook": [
+    {
+      "date": "2026-05-15",
+      "event": "US-CPI-Daten April",
+      "relevant_for": "Gesamtmarkt",
+      "rating": 4
+    }
+  ]
+}

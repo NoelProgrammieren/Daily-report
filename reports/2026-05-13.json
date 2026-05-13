@@ -1,68 +1,128 @@
 {
   "date": "2026-05-13",
-  "generated_at": "2026-05-13T19:00:00+02:00",
+  "generated_at": "2026-05-13T09:51:14.091919+02:00",
   "macro": {
-    "summary": "Beispiel-Bericht zur Layoutdemonstration. S&P 500 leicht im Plus, Nasdaq seitwärts. Marktfokus auf bevorstehende NVIDIA-Earnings und FOMC-Sitzungsprotokoll. (Dieser Eintrag wird beim ersten echten 19-Uhr-Lauf überschrieben.)",
-    "sp500": "5.842 (+0,3 %)",
-    "nasdaq": "18.920 (-0,1 %)"
+    "summary": "Der Dienstag (12. Mai) stand im Zeichen eines heißen April-CPI-Reports: Die US-Inflation kletterte auf 3,8 % (höchster Stand seit Mai 2023), angetrieben von steigenden Ölpreisen durch den anhaltenden US-Iran-Konflikt und die Blockade der Straße von Hormuz. Tech-Aktien gerieten unter Druck; der S&P 500 schloss -0,16 % bei ~7.401, der Nasdaq -0,71 % bei ~26.088. Geopolitisch bemerkenswert: Präsident Trump reiste nach Peking zum Gipfel mit Xi Jinping – Trade und KI stehen auf der Agenda, begleitet von 16 Tech-CEOs inkl. Tim Cook und Elon Musk. Am heutigen Mittwoch (13. Mai) stabilisieren sich die Märkte nach dem gestrigen Sell-off leicht.",
+    "sp500": "~7.401 (-0,16 % Di.)",
+    "nasdaq": "~26.088 (-0,71 % Di.)"
   },
   "sectors": [
     {
-      "name": "Informationstechnologie",
-      "emoji": "🖥️",
-      "positions_mentioned": ["NVIDIA", "Apple"],
+      "name": "Makro & Fed",
+      "emoji": "🏦",
+      "positions_mentioned": [],
       "news": [
         {
           "priority": "fire",
-          "title": "NVIDIA bestätigt Earnings-Termin und kündigt neue Datacenter-GPU an",
+          "title": "April-CPI 3,8 % – heißester Wert seit Mai 2023, Fed-Zinserhöhung rückt ins Blickfeld",
           "rating": 5,
-          "summary": "NVIDIA hat den Termin für die Q1-Earnings auf den 22. Mai fixiert und parallel die nächste Generation der Blackwell-Ultra-GPUs angekündigt. Analysten erwarten weiteren Beat beim Datacenter-Umsatz.",
-          "price_change": "+1,8 %",
-          "investor_relevance": "Direkt relevant für die NVIDIA-Position (5,09 % Portfoliogewicht) sowie für den ETF MSCI World IT."
+          "summary": "Der US-CPI stieg im April saisonbereinigt +0,6 % MoM, die Jahresrate liegt bei 3,8 % – deutlich über Erwartungen und der höchste Stand seit Mai 2023. Die Kern-Inflation (ex Energie/Food) lag bei +2,8 % YoY, ebenfalls über Schätzungen. Treiber ist der Ölpreisschock durch den US-Iran-Krieg und die Straße-von-Hormuz-Blockade (WTI >100 $/bbl). Laut CME FedWatch preisen die Märkte inzwischen eine ~30%ige Chance auf eine Fed-Zinserhöhung bis Dezember ein – bei gleichzeitig ~98 % Wahrscheinlichkeit für eine Pause im Juni-Meeting.",
+          "investor_relevance": "Direkte Auswirkung auf alle Portfoliopositionen: Höher-für-länger-Zinsen belasten Wachstumstitel (Tech-Heavy-Positionen ~58 % des Portfolios) und stützen den Dollar; FOMC-Pfad und Iran-Konflikt bleiben der entscheidende Makro-Treiber für die nächsten Wochen."
         },
         {
-          "priority": "lightning",
-          "title": "Apple Vision Pro 2 startet in China",
-          "rating": 3,
-          "summary": "Apple bestätigt offiziellen China-Launch der Vision Pro 2 für Juli. Marktanalysten erwarten anfänglich verhaltenes Volumen, langfristig aber Hebelwirkung für das Services-Segment.",
-          "investor_relevance": "Mittelfristig relevant – Apple bleibt größte Einzelposition."
+          "priority": "fire",
+          "title": "Kevin Warsh als neuer Fed-Chair bestätigt – Senat stimmt zu",
+          "rating": 4,
+          "summary": "Der US-Senat stimmte am Dienstag mit 51:45 Stimmen für Kevin Warsh als neues Fed-Gouverneursmitglied; die Abstimmung zur Ernennung als Chair-Nachfolger von Powell wird am Mittwoch erwartet. Warsh gilt als eher hawkish und saß bereits von 2006 bis 2011 im Fed-Vorstand. Jerome Powell bleibt bis zur Ernennung als Vorsitzender aktiv und danach noch als Gouverneur bis Januar 2028.",
+          "investor_relevance": "Ein Warsh-geführtes Fed könnte weniger ratenfreundlich agieren als unter Powell – relevant für das gesamte Portfolio, insbesondere für zinsempfindliche Wachstumswerte und MasterCard/JPMorgan (Watch)."
         }
       ]
     },
     {
-      "name": "Luxusgüter",
-      "emoji": "👜",
-      "positions_mentioned": ["LVMH"],
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Intel",
+        "NVIDIA",
+        "Apple"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Intel: Jahreshauptversammlung heute + Aktie volatil zwischen $115–$130 nach Momentum-Abkühlung",
+          "rating": 4,
+          "summary": "Intel hält heute (13. Mai, 9:00 Uhr PDT) seine Jahreshauptversammlung ab. Die Aktie zeigt heute Intraday-Volatilität in einer Range von $115–$129,76 – ein Nachbeben des gestrigen Sell-offs (-4,7 % am Di.), der durch den CPI-Schock ausgelöst wurde. Seit dem Tief am 30. März hat INTC über +214 % zugelegt und fast $440 Mrd. Marktkapitalisierung aufgebaut; Short-Seller-Papierverlusts liegen laut S3 Partners bei >$12 Mrd. Das Bewertungsniveau (~100x Forward-KGV) ist das höchste in der Unternehmensgeschichte und ~5x dem 10-Jahres-Schnitt.",
+          "price_change": "Intraday: $115–$129,76 (Di.: -4,7 %)",
+          "investor_relevance": "Core-Watchposition ⚠️: Die fundamentale Turnaround-Story (Apple-Deal, Terafab, KI-CPU-Nachfrage) bleibt intakt, doch die extreme Bewertung macht INTC anfällig für weitere Korrekturen bei Makro-Schocks – Position eng beobachten."
+        },
+        {
+          "priority": "fire",
+          "title": "Terafab: SpaceX/Tesla/Intel-Megafab in Texas – $55–119 Mrd. Investition, Intel 14A als Fertigungsprozess bestätigt",
+          "rating": 4,
+          "summary": "Elon Musk's Terafab-Projekt (Joint Venture von SpaceX, Tesla, xAI mit Intel als Fertigungspartner) hat öffentliche Anhörungsunterlagen in Grimes County, Texas eingereicht: Phase 1 kostet ~$55 Mrd., das Gesamtvolumen kann auf $119 Mrd. skalieren. Intel's 14A-Prozess ist als Fertigungsknoten bestätigt; Pilotproduktion ist für Ende 2026 geplant. Eine öffentliche Anhörung zur Steuervergünstigung ist für den 3. Juni 2026 angesetzt. Das Projekt ist der bisher erste und größte externe Foundry-Auftrag für Intel.",
+          "investor_relevance": "Strukturell bullisch für Intel (erste externe Großkunden-Validierung der Foundry), aber auch für Apple (strategische TSMC-Diversifizierungslogik) und den gesamten KI-Infrastruktur-Themenbereich des Portfolios (NVIDIA, MSCI World IT ETF)."
+        },
+        {
+          "priority": "lightning",
+          "title": "Trump-Xi-Gipfel in Peking: Apple-CEO Tim Cook unter den 16 teilnehmenden Tech-Executives",
+          "rating": 3,
+          "summary": "Präsident Trump begann am Dienstag seinen Staatsbesuch in Peking mit 16 führenden Tech-Unternehmern, darunter Apple-CEO Tim Cook und Tesla-CEO Elon Musk. Handel und KI stehen laut Berichten oben auf der Agenda. Für Apple – das stark auf chinesische Fertigung angewiesen ist und den chinesischen Markt als zweitwichtigsten Umsatzmarkt hat – könnten Signale aus dem Gipfel unmittelbaren strategischen Wert haben.",
+          "investor_relevance": "Für Apple-Inhaber relevant: Jede positive Entwicklung bezüglich Handelsspannungen und chinesischer Marktbedingungen könnte die Apple-Aktie (9,94 % Portfolio-Anteil) kurz- bis mittelfristig beflügeln."
+        },
+        {
+          "priority": "lightning",
+          "title": "NVIDIA: Wells Fargo & Susquehanna erhöhen Kursziele vor Q1-Earnings",
+          "rating": 3,
+          "summary": "Wells Fargo reiterte ein Overweight-Rating auf NVIDIA mit einem erhöhten Kursziel von $315 (zuvor $265). Susquehanna bestätigte ebenfalls ein positives Rating mit neuem Ziel von $275 (zuvor $250) und verwies auf weiter beschleunigenden GB300-Ramp in H1 2026. NVIDIA berichtet seine Q1-Earnings am 22. Mai nach Börsenschluss.",
+          "investor_relevance": "Für NVIDIA-Position (5,09 % des Portfolios) relevant: Der Konsens erwartet starke Zahlen – die Latte liegt hoch; Q1 Earnings am 22. Mai werden der nächste kritische Katalysator."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [],
       "news": [
         {
           "priority": "pin",
-          "title": "LVMH meldet stabile China-Nachfrage trotz Konjunktursorgen",
+          "title": "Fed-Zinserhöhungsrisiko steigt: Märkte preisen 30 % Chance auf Hike bis Dezember",
           "rating": 3,
-          "summary": "Auf einer Investorenkonferenz in Paris bestätigte CFO Guiony stabile Umsätze im chinesischen Premium-Segment. Keine konkreten Quartalszahlen, aber Entspannungssignal nach den schwachen Q4-Zahlen.",
-          "price_change": "+0,9 %",
-          "investor_relevance": "Stützt die LVMH-Position; reduziert kurzfristiges China-Risiko."
+          "summary": "Als Konsequenz des heißen April-CPI und der robusten Arbeitsmarktdaten (115.000 Jobs im April vs. 65.000 erwartet) steigt die Wahrscheinlichkeit einer Fed-Zinserhöhung bis Ende 2026 laut CME FedWatch auf ~30 %. Gleichzeitig liegt die Wahrscheinlichkeit einer Pause im Juni bei ~98 %. In diesem Umfeld profitieren Zahlungsnetzwerke wie MasterCard tendenziell von höheren nominalen Transaktionsvolumina, während Kreditkartenkunden durch Inflation unter Druck geraten.",
+          "investor_relevance": "MasterCard (2,04 % Portfolio): Das höher-für-länger-Zinsumfeld ist strukturell neutral bis leicht negativ für Konsumausgaben; Berkshire Hathaway (0,67 %) als defensiver Puffer dürfte in diesem Umfeld outperformen."
         }
       ]
     }
   ],
   "outlook": [
     {
+      "date": "2026-05-13",
+      "event": "Intel Jahreshauptversammlung (9:00 Uhr PDT) – CEO Lip-Bu Tan spricht",
+      "relevant_for": "Intel",
+      "rating": 3
+    },
+    {
+      "date": "2026-05-13",
+      "event": "Kevin Warsh – Senatsvote als Fed-Chair erwartet",
+      "relevant_for": "Gesamtmarkt, MasterCard, alle Wachstumswerte",
+      "rating": 4
+    },
+    {
       "date": "2026-05-15",
-      "event": "US-CPI-Daten April",
-      "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
+      "event": "US-CPI April (bereits veröffentlicht – 3,8 %; nächste Inflationsdaten im Kalender)",
+      "relevant_for": "Gesamtmarkt, Fed-Pfad",
       "rating": 4
     },
     {
       "date": "2026-05-22",
-      "event": "NVIDIA Q1 Earnings (nach Börse)",
-      "relevant_for": "NVIDIA, Halbleiter-Sektor, IT-ETFs",
+      "event": "NVIDIA Q1 Earnings (nach Börsenschluss) – Wells Fargo & Susquehanna mit erhöhten Kurszielen",
+      "relevant_for": "NVIDIA, MSCI World IT ETF, Core S&P 500",
       "rating": 5
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steuervergünstigung für Intel/SpaceX/Tesla-Megafab)",
+      "relevant_for": "Intel",
+      "rating": 3
+    },
+    {
       "date": "2026-05-28",
-      "event": "FOMC Sitzung & Zinsentscheid",
+      "event": "FOMC Sitzung & Zinsentscheid – Erstmals unter (erwartetem) Chair Warsh",
       "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
       "rating": 5
     }
-  ]
+  ],
+  "usage": {
+    "input_tokens": 110647,
+    "output_tokens": 4163
+  }
 }

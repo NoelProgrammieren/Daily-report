@@ -1,9 +1,23 @@
 {
   "events": [
     {
+      "date": "2026-05-13",
+      "event": "Kevin Warsh – Senatsvote als neuer Fed-Chair",
+      "relevant_for": "Gesamtmarkt, alle Portfoliopositionen",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
       "date": "2026-05-15",
       "event": "US-CPI April",
       "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
+      "rating": 4,
+      "category": "economic"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "US-CPI April (bereits veröffentlicht: 3,8 % – höchster Stand seit Mai 2023)",
+      "relevant_for": "Gesamtmarkt, Fed-Pfad",
       "rating": 4,
       "category": "economic"
     },
@@ -15,11 +29,25 @@
       "category": "earnings"
     },
     {
+      "date": "2026-05-22",
+      "event": "NVIDIA Q1 Earnings (nach Börsenschluss)",
+      "relevant_for": "NVIDIA, MSCI World IT ETF, Core S&P 500",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid",
       "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
       "rating": 5,
       "category": "fed"
+    },
+    {
+      "date": "2026-06-03",
+      "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
+      "relevant_for": "Intel",
+      "rating": 3,
+      "category": "political"
     },
     {
       "date": "2026-06-04",
@@ -31,17 +59,17 @@
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "LVMH, Hermès, Siemens (Euro)",
+      "relevant_for": "LVMH, Hermès, Siemens, Gesamtmarkt",
       "rating": 4,
       "category": "fed"
     },
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 Earnings",
-      "relevant_for": "Microsoft, IT-ETFs",
+      "relevant_for": "Microsoft, Core S&P 500, MSCI World IT ETF",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-13T19:00:00+02:00"
+  "updated_at": "2026-05-13T09:51:14.092637+02:00"
 }

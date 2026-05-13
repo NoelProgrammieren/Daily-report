@@ -256,10 +256,13 @@ def generate_report() -> None:
         print(f"Berlin time {now_berlin.strftime('%H:%M')} — not the 19:00 window, skipping.")
         return
 
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Start: Datum={today}, FORCE_RUN={os.getenv('FORCE_RUN')}")
     calendar = load_calendar()
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Kalender geladen ({len(calendar.get('events', []))} Ereignisse).")
     calendar_context = build_calendar_context(calendar, today)
 
-    client = anthropic.Anthropic()
+    client = anthropic.Anthropic(timeout=600.0)
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Client initialisiert, starte API-Call mit Web-Search...")
 
     user_message = (
         f"Erstelle den Tagesbericht für heute, {today} (Datum entspricht Europe/Berlin).\n\n"
@@ -271,18 +274,32 @@ def generate_report() -> None:
         "Gib NUR das JSON aus, kein anderer Text."
     )
 
+    search_count = 0
     with client.messages.stream(
         model="claude-opus-4-7",
-        max_tokens=16000,
+        max_tokens=12000,
         system=PORTFOLIO_PROMPT,
         tools=[{
-            "type": "web_search_20260209",
+            "type": "web_search_20250305",
             "name": "web_search",
-            "max_uses": 10,
+            "max_uses": 5,
         }],
         messages=[{"role": "user", "content": user_message}],
     ) as stream:
+        for event in stream:
+            etype = getattr(event, "type", "")
+            if etype == "content_block_start":
+                block = getattr(event, "content_block", None)
+                btype = getattr(block, "type", "")
+                if btype == "server_tool_use":
+                    search_count += 1
+                    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Web-Suche #{search_count} gestartet...")
+                elif btype == "text":
+                    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Claude beginnt mit Textausgabe...")
         response = stream.get_final_message()
+
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] API-Call fertig ({search_count} Web-Suchen, "
+          f"input={response.usage.input_tokens}, output={response.usage.output_tokens} Tokens).")
 
     text_blocks = [b for b in response.content if b.type == "text"]
     if not text_blocks:

@@ -41,7 +41,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           FORCE_RUN: ${{ github.event.inputs.force == 'true' && '1' || '0' }}
-        run: python generate_report.py
+          PYTHONUNBUFFERED: '1'
+        timeout-minutes: 12
+        run: python -u generate_report.py
 
       - name: Commit and push changes
         run: |

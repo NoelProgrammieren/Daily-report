@@ -15,6 +15,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-13",
+      "event": "Kevin Warsh Senate vote – Fed Chair confirmation",
+      "relevant_for": "Gesamtmarkt, Fed Policy",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-05-15",
       "event": "US-CPI April",
       "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
@@ -27,6 +34,20 @@
       "relevant_for": "Gesamtmarkt, Fed-Pfad",
       "rating": 4,
       "category": "economic"
+    },
+    {
+      "date": "2026-05-15",
+      "event": "US-CPI April (bereits veröffentlicht: 3.8%)",
+      "relevant_for": "Gesamtmarkt, Inflationserwartungen",
+      "rating": 4,
+      "category": "economic"
+    },
+    {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27 Earnings after market close",
+      "relevant_for": "NVIDIA, Tech-Sektor",
+      "rating": 5,
+      "category": "earnings"
     },
     {
       "date": "2026-05-22",
@@ -57,6 +78,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung – Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, Alle festverzinslichen Positionen",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
       "relevant_for": "Intel, Infrastruktur & Industrie",
@@ -64,26 +92,33 @@
       "category": "other"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab – Öffentliche Anhörung Grimes County TX",
+      "relevant_for": "Intel, Energieinfrastruktur",
+      "rating": 3,
+      "category": "other"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
-      "relevant_for": "Apple, Informationstechnologie",
+      "relevant_for": "Apple, Softwareökosystem",
       "rating": 4,
       "category": "product"
     },
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "DAX, europäische Equities, LVMH, Siemens",
+      "relevant_for": "LVMH, Hermès, europäische Tech-Titel",
       "rating": 4,
       "category": "fed"
     },
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 Earnings",
-      "relevant_for": "Microsoft, Informationstechnologie",
+      "relevant_for": "Microsoft, Cloud/Azure, AI-Infrastruktur",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-13T16:59:17.634438+02:00"
+  "updated_at": "2026-05-13T20:53:55.001750+02:00"
 }

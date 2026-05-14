@@ -29,8 +29,22 @@
       "category": "economic"
     },
     {
+      "date": "2026-05-15",
+      "event": "US CPI April (already released: 3.8%)",
+      "relevant_for": "Gesamtmarkt, Inflation Narrative",
+      "rating": 4,
+      "category": "economic"
+    },
+    {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings after market close",
+      "relevant_for": "NVIDIA",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27 Earnings (after market close)",
       "relevant_for": "NVIDIA",
       "rating": 5,
       "category": "earnings"
@@ -66,7 +80,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung – Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, Finanzdienstleistungen",
+      "relevant_for": "Gesamtmarkt, MasterCard, Visa, JPMorgan",
       "rating": 5,
       "category": "fed"
     },
@@ -87,7 +101,7 @@
     {
       "date": "2026-06-03",
       "event": "Terafab – Public Hearing Grimes County TX (Intel/Tesla/SpaceX megafab tax incentives)",
-      "relevant_for": "Intel",
+      "relevant_for": "Intel, Tesla, Infrastruktur",
       "rating": 3,
       "category": "political"
     },
@@ -99,9 +113,16 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC Keynote",
+      "relevant_for": "Apple, Informationstechnologie",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "LVMH, Hermès, Eurozone equities",
+      "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
       "rating": 4,
       "category": "fed"
     },
@@ -111,7 +132,14 @@
       "relevant_for": "Microsoft",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings",
+      "relevant_for": "Microsoft, Informationstechnologie",
+      "rating": 5,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-14T09:43:37.553896+02:00"
+  "updated_at": "2026-05-14T20:29:55.750373+02:00"
 }

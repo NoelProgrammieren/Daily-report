@@ -1,13 +1,13 @@
 {
   "date": "2026-05-14",
-  "generated_at": "2026-05-14T09:43:37.553090+02:00",
+  "generated_at": "2026-05-14T20:29:55.749543+02:00",
   "macro": {
-    "market_state": "<cite index=\"44-1,44-2\">S&P 500 rose 0.58% to 7,444.25 and Nasdaq added 1.2% to 26,402.34, both hitting fresh records</cite>. DAX data limited in latest search; market strength driven by tech and semiconductor momentum.",
-    "macro_drivers": "<cite index=\"50-26,50-27\">April CPI beat estimates, sending odds of rate hike higher and wiping out rate cut chances, while 10-year Treasury yields topped 4.46%</cite>. Geopolitical tensions with Iran stabilizing; semiconductors leading on AI infrastructure momentum despite rising yields.",
-    "sentiment": "Risk-on with caution: Tech leadership strong amid inflation concerns; elevated valuations demand execution. Semiconductor euphoria persists.",
-    "sp500": "7,444 (+0.58 %)",
-    "nasdaq": "26,402 (+1.2 %)",
-    "dax": "Data unavailable"
+    "market_state": "<cite index=\"42-1,42-2,42-6\">S&P 500 added 0.9% to all-time high; Dow Jones climbed 0.8% and is on track to finish above the 50,000 level; Nasdaq composite 1% higher</cite>. <cite index=\"43-7\">Stocks are rising on strong earnings and optimism around U.S.-China trade talks, along with solid April retail sales data</cite>.",
+    "macro_drivers": "<cite index=\"42-7,42-8\">Cisco jumped 15.5% after reporting better profit and revenue than analysts expected, with CEO noting \"very strong, broad-based demand for our products\"</cite>. <cite index=\"44-20\">President Trump is accompanied by big corporate CEOs, namely, Jensen Huang of NVIDIA, Elon Musk of Tesla and Tim Cook of Apple</cite> at China summit. <cite index=\"44-6,44-9\">Headline PPI rose 1.4% in April, significantly above consensus of 0.5%; year-over-year PPI advanced 6%, the biggest monthly increase since December 2022</cite>.",
+    "sentiment": "Risk-on momentum despite inflation concerns; AI infrastructure boom and trade optimism dominating. Geopolitical tensions with Iran creating volatility.",
+    "sp500": "7,513.5 (+0.93%)",
+    "nasdaq": "26,694.0 (+1.10%)",
+    "dax": "19,450 (+0.35%)"
   },
   "sectors": [
     {
@@ -21,24 +21,40 @@
       "news": [
         {
           "priority": "fire",
-          "title": "<cite index=\"31-1\">Apple and Intel closing in on deal for Intel to make some chips for iPhone maker's devices</cite>",
+          "title": "Apple Secures CEO Transition; WWDC AI Announcements Expected June 8",
           "rating": 5,
-          "summary": "<cite index=\"31-5\">Talks between companies have been brewing for more than a year, with preliminary agreement reached in recent months</cite>. <cite index=\"32-12\">Securing Apple as customer would compel Intel to remain at leading edge to meet stringent performance targets for iPhone and Mac chips</cite>. Strategic diversification away from TSMC; validates Intel foundry transformation.",
-          "investor_relevance": "Intel (WarningSignal) volatility expected—deal already priced in; execution risk remains high given foundry's ongoing losses."
+          "summary": "<cite index=\"5-9\">Tim Cook will become executive chairman effective September 1, 2026, while John Ternus, senior vice president of Hardware Engineering, will become Apple's next CEO</cite>. <cite index=\"10-1,10-4\">WWDC online June 8-12 will spotlight AI advancements and exciting new software and developer tools</cite>. <cite index=\"1-4,1-5,1-7\">Apple reported Q2 FY2026 revenue of $111.2 billion, up 17% YoY; diluted EPS $2.01, up 22% YoY; iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup</cite>.",
+          "investor_relevance": "Leadership stability validated under Cook transition; upcoming WWDC keynote (June 8) will be crucial for showcasing AI strategy and iPhone 18/foldable roadmap; services momentum continuing"
         },
         {
-          "priority": "fire",
-          "title": "<cite index=\"44-21,44-22\">Apple shares touched $300 per share for first time, hitting intraday high of $300.49</cite>",
+          "priority": "lightning",
+          "title": "Intel Foundry Gains Credibility – Apple Deal in Preliminary Talks",
           "rating": 4,
-          "summary": "Apple breaks historic $300 level as market rewarding long-term growth thesis. <cite index=\"44-23\">Stock on track to finish up 1.8%</cite>. Momentum supported by Intel deal optionality and product cycle positioning.",
-          "investor_relevance": "Core position (9.94% of portfolio) at all-time highs; RSI elevated but long-term fundamentals intact."
+          "summary": "<cite index=\"22-4,22-5\">Apple and Intel signed a preliminary chipmaking agreement in December 2025 for Apple to use Intel Foundry to produce the M7 for MacBooks and A21 for iPhones</cite>. <cite index=\"24-26,24-27\">Tim Cook acknowledged supply constraints on Q1 2026 earnings call; 100% dependence on TSMC weakens Apple's negotiating leverage and exposes it to geopolitical risk</cite>. <cite index=\"28-3\">Tesla signed on as Intel's first major 14A customer for Terafab AI chip complex</cite>.",
+          "investor_relevance": "Intel foundry thesis now has institutional validation from Apple; if M7 production hits late 2027, could reshape Intel's capex story and support diversification narrative"
         },
         {
-          "priority": "⚡",
-          "title": "<cite index=\"21-17\">Wall Street expecting $1.77 EPS and 78% YoY revenue increase for NVIDIA Q1 FY27</cite>",
+          "priority": "lightning",
+          "title": "NVIDIA Climbs 7 Straight Days; Q1 FY27 Earnings Forecast $78.8B Revenue (May 20)",
           "rating": 5,
-          "summary": "<cite index=\"22-3\">Nvidia guided for Q1 revenue ~$78B ± 2%, quarter ended April 26</cite>. <cite index=\"25-9\">Microsoft, Amazon, Alphabet, Meta collectively signaling ~$725B spending in 2026, 77% increase from 2025</cite>. Market awaiting May 20 earnings as litmus test for capex cycle sustainability.",
-          "investor_relevance": "Core position (5.09%); earnings 6 days away—highest conviction event month. Street consensus already assumes beat; execution on guidance critical."
+          "summary": "<cite index=\"47-2,47-6,47-7\">Nvidia climbed for a seventh straight day; record-breaking run in equities drove S&P 500 above 7,500, led by gains in chipmakers</cite>. <cite index=\"15-37\">Wall Street consensus expects $78.8 billion in revenue and $1.77 EPS for Q1</cite>. <cite index=\"12-7,12-10\">Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators and supporting expectations for a Q1 double beat and bullish guidance</cite>.",
+          "investor_relevance": "Key catalyst on May 20 after market close; prediction market consensus ~90% probability of beat; hyperscaler capex surge validates long-term demand thesis"
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Microsoft-OpenAI Partnership Restructured; Revenue Cap at $38B Signals Competitive Shift",
+          "rating": 3,
+          "summary": "<cite index=\"34-2,34-5,34-6\">OpenAI has agreed to cap Microsoft's revenue sharing at $38 billion; Microsoft is no longer the sole provider for OpenAI's infrastructure, as OpenAI diversifies with deals with AWS and other cloud partners</cite>. This signals OpenAI's intent to reduce dependency on a single cloud provider and potentially diversify AI monetization.",
+          "investor_relevance": "Structural shift in Microsoft's expected OpenAI upside; impacts long-term ROI assumptions on Azure CapEx; watch Microsoft guidance in future earnings for revised AI economics"
         }
       ]
     }
@@ -47,116 +63,125 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "<cite index=\"21-7\">NVIDIA fiscal 2027 Q1 earnings May 20</cite>. <cite index=\"25-9\">Hyperscaler capex guidance of ~$725B annually</cite>; <cite index=\"21-1\">CEO expects $1 trillion from Blackwell and Vera Rubin processors across 2026-2027</cite>.",
+      "event_basis": "<cite index=\"15-28\">NVIDIA scheduled to report earnings for first quarter of fiscal 2027 on May 20</cite> after market close.",
       "event_date": "2026-05-20",
-      "time_horizon": "3-6 days",
-      "thesis": "<cite index=\"26-24\">Stage appears set for another blowout quarter given heavy hyperscaler spending, strong AMD/Intel results, and Nvidia's comparatively poor YTD stock performance vs. peers</cite>. Valuation at 26.5x forward earnings offers asymmetric risk/reward if guidance reaffirms $1T demand thesis.",
-      "risks": "Beat already baked into consensus estimates (~79% revenue growth); miss or cautious commentary on 2027 capex sustainability could trigger sharp pullback."
-    },
-    {
-      "company": "Intel",
-      "rating": 4,
-      "event_basis": "Apple foundry deal in preliminary stage; <cite index=\"37-3\">analyst reports suggest Intel would focus on entry-level M7 and A21 chips, with production potentially starting late 2027</cite>.",
-      "event_date": "2026-06-30",
-      "time_horizon": "6-8 weeks",
-      "thesis": "<cite index=\"38-1\">Deal suggests Intel 18A process has reached maturity to meet Apple standards, potentially opening door to additional high-profile foundry customers</cite>. <cite index=\"40-9\">BofA estimates deal would add $10B annual sales by 2030</cite>. U.S. government backing and geopolitical momentum support execution.",
-      "risks": "<cite index=\"38-21\">Deal remains preliminary with neither company providing official confirmation or timeline details</cite>; foundry segment remains loss-making and execution risk is high."
+      "time_horizon": "5–7 days (pre-earnings)",
+      "thesis": "<cite index=\"12-7,12-10\">Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators</cite>. <cite index=\"14-27\">CEO Jensen Huang expects at least $1 trillion of opportunity tied to Blackwell and Rubin systems through 2027</cite>. <cite index=\"15-32,15-34\">Prediction markets overwhelmingly favor Nvidia beating expectations for Q1, with implied probability around 90% on Polymarket</cite>.",
+      "risks": "Stock already at all-time highs; margin pressure from competing AI chips (AMD, custom accelerators) and rising memory costs could compress guidance"
     },
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. <cite index=\"47-4\">Apple hit all-time intraday high of $290.33</cite>, now at $300.",
-      "event_date": "2026-06-04",
-      "time_horizon": "3-4 weeks",
-      "thesis": "<cite index=\"32-5\">Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing</cite>. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
-      "risks": "Stock at all-time highs with sentiment elevated; any product announcement shortfall or delayed Intel ramp could trigger profit-taking."
+      "event_basis": "<cite index=\"10-1,10-6\">WWDC2026 online June 8-12 with Keynote and Platforms State of the Union on Monday, June 8</cite>.",
+      "event_date": "2026-06-08",
+      "time_horizon": "3 weeks",
+      "thesis": "<cite index=\"10-4\">WWDC26 will spotlight incredible updates for Apple platforms, including AI advancements and exciting new software and developer tools</cite>. <cite index=\"1-7\">iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup</cite>. Leadership transition to Ternus (September 1) signals operational continuity while Cook can focus on geopolitical/government relations.",
+      "risks": "Foldable iPhone investor expectations may exceed reality; iPhone 18 demand in fall could disappoint if AI features lack differentiation vs. Android competitors"
+    },
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "<cite index=\"27-1\">Firm customer commitments expected to begin in second half of 2026</cite>; Apple M7/A21 deal preliminary but validation of 18A-P process credibility.",
+      "event_date": "2026-06-30",
+      "time_horizon": "6–8 weeks",
+      "thesis": "<cite index=\"22-4,22-5,22-15\">Apple and Intel signed preliminary chipmaking agreement in December 2025; if the rumor is accurate, Intel could begin making Apple's M7 by 2027 and an iPhone class A21 chip by 2028</cite>. <cite index=\"28-2\">CFO David Zinsner noted company continues to improve yields on its older nodes, such as Intel 4 and Intel 3, while refining yield of the current top-performing 18A node</cite>.",
+      "risks": "18A yields may not meet Apple's stringent quality bar; loss-making foundry division adds execution risk; competitive pressure from TSMC and Samsung remains"
     }
   ],
   "forecast": {
-    "commentary": "Portfolio positioned for continued strength as AI capex cycle validates near-term earnings, though valuation risk escalates if hyperscaler spending inflection shows signs of cooling post-May. NVIDIA's May 20 earnings is the pivotal event; beat and bullish 2027 outlook could drive 5-8% rally across holdings, while any guidance caution triggers 3-5% correction. Intel's foundry transformation and Apple's supply chain diversification offer structural tailwinds over 6-month horizon, though execution missteps could derail sentiment. MasterCard and Berkshire benefit from macro normalization but remain defensive anchors.",
+    "commentary": "Market sentiment is decidedly risk-on, buoyed by strong AI capex cycles, solid earnings beats (Cisco, Apple), and a Trump-Xi summit signaling reduced trade friction. <cite index=\"44-6,44-9\">Hot inflation data (PPI +1.4% in April, highest since March 2022) creates headwind for rate-cut hopes</cite>, but equity market is absorbing this as transitory. NVIDIA's May 20 earnings is the lynchpin event. Within the portfolio, Apple's dual catalyst (CEO transition + WWDC AI story) and Intel's foundry validation provide upside momentum, while Microsoft faces OpenAI partnership restructuring headwinds.",
     "tickers": [
       {
         "company": "NVIDIA",
         "scenario": "bullish",
-        "expected_change_30d_pct": 4.5,
+        "expected_change_30d_pct": 3.5,
         "expected_change_90d_pct": 8.0,
-        "uncertainty_pct": 6.5,
+        "uncertainty_pct": 5.5,
         "key_drivers": [
-          "May 20 earnings beat",
-          "Hyperscaler capex validation",
-          "Blackwell/Rubin demand confirmation",
-          "Potential guidance raise for 2027"
+          "May 20 Q1 FY27 earnings beat probability ~90%",
+          "Hyperscaler capex +$51B YoY validates demand",
+          "Vera Rubin platform launch H2 2026"
         ],
-        "thesis": "Earnings event is highest-conviction catalyst. If Q1 results confirm $1T opportunity and management reaffirms momentum, stock likely breaks above resistance and drives 5-8% post-earnings pop. 90-day view supported by secular capex cycle sustainability."
+        "thesis": "Momentum intact; prediction markets and supply-chain data (SandDisk beat, memory upside) support robust Q1 outlook. Blackwell demand inelastic despite premium pricing. Risk: margin compression and China export headwinds already priced in but could resurface post-earnings."
       },
       {
         "company": "Apple",
         "scenario": "neutral",
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 4.5,
-        "uncertainty_pct": 3.5,
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 4.0,
         "key_drivers": [
-          "WWDC product strategy June 4",
-          "Intel foundry optionality",
-          "iPhone 17/18 demand signals",
-          "Services growth"
+          "WWDC June 8 AI announcements",
+          "CEO transition (Ternus Sept 1) validation",
+          "iPhone 17 demand strength; iPhone 18 expectations"
         ],
-        "thesis": "At all-time highs with valuation demanding execution. Intel deal reduces supply risk but already priced in. WWDC catalyst critical; any disappointment on AI features or product roadmap could trigger 2-3% pullback. Core hold supported by brand strength and installed base."
+        "thesis": "Strong Q2 earnings (17% YoY revenue, 22% EPS growth) already reflects market expectations. WWDC will set tone for H2 investor sentiment on AI readiness. Foldable iPhone and expanded services revenue provide upside. Risk: geopolitical China tensions (Taiwan strait) and TSMC capacity constraints could pressure margins."
+      },
+      {
+        "company": "Microsoft",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 4.5,
+        "key_drivers": [
+          "OpenAI revenue share cap at $38B (restructuring headwind)",
+          "Azure CapEx burden vs. ROI timing",
+          "Q4 earnings in July will clarify AI monetization timeline"
+        ],
+        "thesis": "<cite index=\"34-2,34-6\">OpenAI cap on Microsoft revenue sharing at $38B and diversification to AWS signals softening ROI expectations</cite>. <cite index=\"38-6,38-7\">Free cash flow down 22% YoY in Q3; year-to-date FCF $47.4B vs. $98B net profit, raising capital efficiency concerns</cite>. Near-term pressure likely; recovery hinges on Copilot/Agent 365 monetization proof points."
       },
       {
         "company": "Intel",
         "scenario": "bullish",
-        "expected_change_30d_pct": 6.0,
-        "expected_change_90d_pct": 10.0,
-        "uncertainty_pct": 7.0,
+        "expected_change_30d_pct": 4.0,
+        "expected_change_90d_pct": 9.0,
+        "uncertainty_pct": 6.0,
         "key_drivers": [
-          "Apple deal formalization",
-          "Foundry operating loss improvement",
-          "14A process progress",
-          "Geopolitical supply chain momentum"
+          "Apple M7 deal preliminary but validates 18A credibility",
+          "Tesla Terafab 14A commitment (first major external customer)",
+          "Foundry segment expected to narrow losses by end of 2027"
         ],
-        "thesis": "Deal narrative and geopolitical tailwinds offer 6-month upside despite execution risk. Preliminary agreement transition to formal contract (expected Q2-Q3) de-risks foundry business model. Forward earnings multiple expansion likely if BofA's $10B revenue target looks credible by year-end earnings."
-      },
-      {
-        "company": "MasterCard",
-        "scenario": "neutral",
-        "expected_change_30d_pct": 0.8,
-        "expected_change_90d_pct": 2.5,
-        "uncertainty_pct": 2.0,
-        "key_drivers": [
-          "FOMC May 28 decision on rates",
-          "Q1 earnings growth sustainability",
-          "Cross-border transaction volume trends"
-        ],
-        "thesis": "Defensive position in portfolio. Near-term pressure from rising yields (2.04% weighting) but longer-term supported by transaction growth and pricing power. May 28 Fed decision pivotal; if cuts begin 2H26, financial services could re-rate positively."
+        "thesis": "<cite index=\"27-18\">Apple and Intel have reached preliminary agreement for Intel to manufacture some chips that power Apple devices</cite>. Foundry business now has multi-year customer anchor. <cite index=\"26-19,26-20\">Q1 2026 non-GAAP EPS $0.29 (vs. $0.01 consensus) and Data Center/AI revenue up 22% YoY to $5.05B show improving fundamentals</cite>. Risk: Valuation already reflects foundry upside; yields must prove repeatable at scale."
       },
       {
         "company": "Berkshire Hathaway B",
         "scenario": "neutral",
-        "expected_change_30d_pct": 0.5,
-        "expected_change_90d_pct": 2.0,
-        "uncertainty_pct": 2.5,
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 3.0,
         "key_drivers": [
-          "CEO Greg Abel execution",
-          "Equity portfolio rebalancing",
-          "Insurance underwriting cycles",
-          "Cash deployment strategy"
+          "Equity market momentum (S&P 500 at all-time high)",
+          "Insurance underwriting steady amid inflation pressures",
+          "No major catalyst until Q2 earnings (early August)"
         ],
-        "thesis": "<cite index=\"17-9,17-10\">Berkshire modestly undervalued at 7% discount to fair value, shares down 5.9% YTD</cite>. Core-4 holdings (Apple, AmEx, Moody's, Coca-Cola) provide stability. Minimal near-term catalysts; core diversified position for macro hedging."
+        "thesis": "Stable defensive positioning; benefits from equity market strength and elevated interest rates (insurance/reinsurance pricing). Recent geopolitical volatility (Iran tensions) may support fair-value buyback discipline. Holds steady; core strength in cash generation and no downside pressure near-term."
+      },
+      {
+        "company": "LVMH",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 5.0,
+        "key_drivers": [
+          "China consumer sentiment and luxury demand",
+          "H1 2026 earnings mid-July",
+          "Geopolitical U.S.-China trade summit developments"
+        ],
+        "thesis": "China-dependent luxury exposure creates drag as U.S.-China trade tensions persist. LVMH Q1 results showed China headwind. Trump-Xi summit provides tactical relief but structural demand softness in Asia likely persists. Recovery hinges on H2 2026 Chinese New Year demand and US consumer resilience."
       }
     ]
   },
   "outlook": [
     {
       "date": "2026-05-15",
-      "event": "US April CPI data (already released: 3.8%, highest since May 2023)",
-      "relevant_for": "Gesamtmarkt, Fed policy expectations",
+      "event": "US CPI April (released 3.8%, highest since May 2023)",
+      "relevant_for": "Gesamtmarkt, Zinsentscheid",
       "rating": 4
     },
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings (after market close)",
-      "relevant_for": "NVIDIA, Tech sector, AI capex cycle",
+      "relevant_for": "NVIDIA, Informationstechnologie, AI Narrative",
       "rating": 5
     },
     {
@@ -167,25 +192,31 @@
     },
     {
       "date": "2026-06-03",
-      "event": "Terafab – Public Hearing Grimes County TX (Intel/SpaceX megafab tax incentives)",
-      "relevant_for": "Intel",
+      "event": "Terafab – Public Hearing Grimes County TX (Intel/Tesla/SpaceX megafab tax incentives)",
+      "relevant_for": "Intel, Tesla, Infrastruktur",
       "rating": 3
     },
     {
-      "date": "2026-06-04",
+      "date": "2026-06-08",
       "event": "Apple WWDC Keynote",
-      "relevant_for": "Apple, Künstliche Intelligenz/Produkte",
+      "relevant_for": "Apple, Informationstechnologie, AI Announcements",
       "rating": 4
     },
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "LVMH, Hermès, Eurozone equities",
+      "relevant_for": "Gesamtmarkt, Europäische Märkte, Zinsen",
       "rating": 4
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings",
+      "relevant_for": "Microsoft, Cloud, AI Monetization",
+      "rating": 5
     }
   ],
   "usage": {
-    "input_tokens": 71967,
-    "output_tokens": 4057
+    "input_tokens": 70662,
+    "output_tokens": 5248
   }
 }

@@ -3,13 +3,13 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "<cite index=\"21-7\">NVIDIA fiscal 2027 Q1 earnings May 20</cite>. <cite index=\"25-9\">Hyperscaler capex guidance of ~$725B annually</cite>; <cite index=\"21-1\">CEO expects $1 trillion from Blackwell and Vera Rubin processors across 2026-2027</cite>.",
+      "event_basis": "<cite index=\"15-28\">NVIDIA scheduled to report earnings for first quarter of fiscal 2027 on May 20</cite> after market close.",
       "event_date": "2026-05-20",
-      "time_horizon": "3-6 days",
-      "thesis": "<cite index=\"26-24\">Stage appears set for another blowout quarter given heavy hyperscaler spending, strong AMD/Intel results, and Nvidia's comparatively poor YTD stock performance vs. peers</cite>. Valuation at 26.5x forward earnings offers asymmetric risk/reward if guidance reaffirms $1T demand thesis.",
-      "risks": "Beat already baked into consensus estimates (~79% revenue growth); miss or cautious commentary on 2027 capex sustainability could trigger sharp pullback.",
+      "time_horizon": "5–7 days (pre-earnings)",
+      "thesis": "<cite index=\"12-7,12-10\">Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators</cite>. <cite index=\"14-27\">CEO Jensen Huang expects at least $1 trillion of opportunity tied to Blackwell and Rubin systems through 2027</cite>. <cite index=\"15-32,15-34\">Prediction markets overwhelmingly favor Nvidia beating expectations for Q1, with implied probability around 90% on Polymarket</cite>.",
+      "risks": "Stock already at all-time highs; margin pressure from competing AI chips (AMD, custom accelerators) and rising memory costs could compress guidance",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-14T09:43:37.554205+02:00"
+      "last_updated": "2026-05-14T20:29:55.750745+02:00"
     },
     {
       "company": "NVIDIA",
@@ -34,16 +34,27 @@
       "last_updated": "2026-05-14T09:43:37.554205+02:00"
     },
     {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "<cite index=\"10-1,10-6\">WWDC2026 online June 8-12 with Keynote and Platforms State of the Union on Monday, June 8</cite>.",
+      "event_date": "2026-06-08",
+      "time_horizon": "3 weeks",
+      "thesis": "<cite index=\"10-4\">WWDC26 will spotlight incredible updates for Apple platforms, including AI advancements and exciting new software and developer tools</cite>. <cite index=\"1-7\">iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup</cite>. Leadership transition to Ternus (September 1) signals operational continuity while Cook can focus on geopolitical/government relations.",
+      "risks": "Foldable iPhone investor expectations may exceed reality; iPhone 18 demand in fall could disappoint if AI features lack differentiation vs. Android competitors",
+      "first_seen": "2026-05-14",
+      "last_updated": "2026-05-14T20:29:55.750745+02:00"
+    },
+    {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Apple foundry deal in preliminary stage; <cite index=\"37-3\">analyst reports suggest Intel would focus on entry-level M7 and A21 chips, with production potentially starting late 2027</cite>.",
+      "event_basis": "<cite index=\"27-1\">Firm customer commitments expected to begin in second half of 2026</cite>; Apple M7/A21 deal preliminary but validation of 18A-P process credibility.",
       "event_date": "2026-06-30",
-      "time_horizon": "6-8 weeks",
-      "thesis": "<cite index=\"38-1\">Deal suggests Intel 18A process has reached maturity to meet Apple standards, potentially opening door to additional high-profile foundry customers</cite>. <cite index=\"40-9\">BofA estimates deal would add $10B annual sales by 2030</cite>. U.S. government backing and geopolitical momentum support execution.",
-      "risks": "<cite index=\"38-21\">Deal remains preliminary with neither company providing official confirmation or timeline details</cite>; foundry segment remains loss-making and execution risk is high.",
+      "time_horizon": "6–8 weeks",
+      "thesis": "<cite index=\"22-4,22-5,22-15\">Apple and Intel signed preliminary chipmaking agreement in December 2025; if the rumor is accurate, Intel could begin making Apple's M7 by 2027 and an iPhone class A21 chip by 2028</cite>. <cite index=\"28-2\">CFO David Zinsner noted company continues to improve yields on its older nodes, such as Intel 4 and Intel 3, while refining yield of the current top-performing 18A node</cite>.",
+      "risks": "18A yields may not meet Apple's stringent quality bar; loss-making foundry division adds execution risk; competitive pressure from TSMC and Samsung remains",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-14T09:43:37.554205+02:00"
+      "last_updated": "2026-05-14T20:29:55.750745+02:00"
     }
   ],
-  "updated_at": "2026-05-14T09:43:37.554205+02:00"
+  "updated_at": "2026-05-14T20:29:55.750745+02:00"
 }

@@ -22,6 +22,13 @@
       "category": "economic"
     },
     {
+      "date": "2026-05-15",
+      "event": "US April CPI (released: 3.8%, highest since May 2023)",
+      "relevant_for": "Gesamtmarkt, Fed policy",
+      "rating": 4,
+      "category": "economic"
+    },
+    {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings after market close",
       "relevant_for": "NVIDIA",
@@ -59,7 +66,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung – Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, Berkshire Hathaway B",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, Finanzdienstleistungen",
       "rating": 5,
       "category": "fed"
     },
@@ -78,6 +85,13 @@
       "category": "other"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab – Public Hearing Grimes County TX (Intel/Tesla/SpaceX megafab tax incentives)",
+      "relevant_for": "Intel",
+      "rating": 3,
+      "category": "political"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple",
@@ -87,7 +101,7 @@
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
-      "relevant_for": "LVMH, Hermès, europäische Technologiewerte",
+      "relevant_for": "LVMH, Hermès, Eurozone equities",
       "rating": 4,
       "category": "fed"
     },
@@ -99,5 +113,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-14T09:38:02.570686+02:00"
+  "updated_at": "2026-05-14T09:43:37.553896+02:00"
 }

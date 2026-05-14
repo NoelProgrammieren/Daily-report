@@ -1,420 +1,7 @@
 {
-  "updated_at": "2026-05-14T09:38:04.499445+02:00",
-  "commentary": "Portfolio poised for moderate near-term headwinds from inflation shock but sustained by AI infrastructure capex and mega-cap earnings strength. Tech outperformance likely continues post-NVIDIA earnings (May 20), though inflation will keep rate-cut expectations depressed through late 2026. Intel/Apple deal catalyzes semiconductor diversification narrative—benefiting Intel but long-term neutral-to-negative for NVIDIA share. Expect 4–8% chop on macro, with spikes on Fed commentary and geopolitical escalation (Iran).",
+  "updated_at": "2026-05-14T09:43:39.195875+02:00",
+  "commentary": "Portfolio positioned for continued strength as AI capex cycle validates near-term earnings, though valuation risk escalates if hyperscaler spending inflection shows signs of cooling post-May. NVIDIA's May 20 earnings is the pivotal event; beat and bullish 2027 outlook could drive 5-8% rally across holdings, while any guidance caution triggers 3-5% correction. Intel's foundry transformation and Apple's supply chain diversification offer structural tailwinds over 6-month horizon, though execution missteps could derail sentiment. MasterCard and Berkshire benefit from macro normalization but remain defensive anchors.",
   "tickers": [
-    {
-      "company": "Apple",
-      "symbol": "AAPL",
-      "history": [
-        {
-          "date": "2026-01-05",
-          "close": 266.76
-        },
-        {
-          "date": "2026-01-06",
-          "close": 261.87
-        },
-        {
-          "date": "2026-01-07",
-          "close": 259.85
-        },
-        {
-          "date": "2026-01-08",
-          "close": 258.56
-        },
-        {
-          "date": "2026-01-09",
-          "close": 258.89
-        },
-        {
-          "date": "2026-01-12",
-          "close": 259.77
-        },
-        {
-          "date": "2026-01-13",
-          "close": 260.57
-        },
-        {
-          "date": "2026-01-14",
-          "close": 259.48
-        },
-        {
-          "date": "2026-01-15",
-          "close": 257.73
-        },
-        {
-          "date": "2026-01-16",
-          "close": 255.06
-        },
-        {
-          "date": "2026-01-20",
-          "close": 246.24
-        },
-        {
-          "date": "2026-01-21",
-          "close": 247.19
-        },
-        {
-          "date": "2026-01-22",
-          "close": 247.89
-        },
-        {
-          "date": "2026-01-23",
-          "close": 247.58
-        },
-        {
-          "date": "2026-01-26",
-          "close": 254.94
-        },
-        {
-          "date": "2026-01-27",
-          "close": 257.79
-        },
-        {
-          "date": "2026-01-28",
-          "close": 255.96
-        },
-        {
-          "date": "2026-01-29",
-          "close": 257.8
-        },
-        {
-          "date": "2026-01-30",
-          "close": 259.0
-        },
-        {
-          "date": "2026-02-02",
-          "close": 269.51
-        },
-        {
-          "date": "2026-02-03",
-          "close": 268.98
-        },
-        {
-          "date": "2026-02-04",
-          "close": 275.98
-        },
-        {
-          "date": "2026-02-05",
-          "close": 275.4
-        },
-        {
-          "date": "2026-02-06",
-          "close": 277.6
-        },
-        {
-          "date": "2026-02-09",
-          "close": 274.37
-        },
-        {
-          "date": "2026-02-10",
-          "close": 273.43
-        },
-        {
-          "date": "2026-02-11",
-          "close": 275.25
-        },
-        {
-          "date": "2026-02-12",
-          "close": 261.49
-        },
-        {
-          "date": "2026-02-13",
-          "close": 255.54
-        },
-        {
-          "date": "2026-02-17",
-          "close": 263.64
-        },
-        {
-          "date": "2026-02-18",
-          "close": 264.11
-        },
-        {
-          "date": "2026-02-19",
-          "close": 260.34
-        },
-        {
-          "date": "2026-02-20",
-          "close": 264.34
-        },
-        {
-          "date": "2026-02-23",
-          "close": 265.93
-        },
-        {
-          "date": "2026-02-24",
-          "close": 271.89
-        },
-        {
-          "date": "2026-02-25",
-          "close": 273.98
-        },
-        {
-          "date": "2026-02-26",
-          "close": 272.7
-        },
-        {
-          "date": "2026-02-27",
-          "close": 263.94
-        },
-        {
-          "date": "2026-03-02",
-          "close": 264.48
-        },
-        {
-          "date": "2026-03-03",
-          "close": 263.51
-        },
-        {
-          "date": "2026-03-04",
-          "close": 262.28
-        },
-        {
-          "date": "2026-03-05",
-          "close": 260.05
-        },
-        {
-          "date": "2026-03-06",
-          "close": 257.22
-        },
-        {
-          "date": "2026-03-09",
-          "close": 259.64
-        },
-        {
-          "date": "2026-03-10",
-          "close": 260.59
-        },
-        {
-          "date": "2026-03-11",
-          "close": 260.57
-        },
-        {
-          "date": "2026-03-12",
-          "close": 255.52
-        },
-        {
-          "date": "2026-03-13",
-          "close": 249.89
-        },
-        {
-          "date": "2026-03-16",
-          "close": 252.59
-        },
-        {
-          "date": "2026-03-17",
-          "close": 254.0
-        },
-        {
-          "date": "2026-03-18",
-          "close": 249.71
-        },
-        {
-          "date": "2026-03-19",
-          "close": 248.73
-        },
-        {
-          "date": "2026-03-20",
-          "close": 247.76
-        },
-        {
-          "date": "2026-03-23",
-          "close": 251.26
-        },
-        {
-          "date": "2026-03-24",
-          "close": 251.41
-        },
-        {
-          "date": "2026-03-25",
-          "close": 252.39
-        },
-        {
-          "date": "2026-03-26",
-          "close": 252.66
-        },
-        {
-          "date": "2026-03-27",
-          "close": 248.57
-        },
-        {
-          "date": "2026-03-30",
-          "close": 246.4
-        },
-        {
-          "date": "2026-03-31",
-          "close": 253.56
-        },
-        {
-          "date": "2026-04-01",
-          "close": 255.39
-        },
-        {
-          "date": "2026-04-02",
-          "close": 255.68
-        },
-        {
-          "date": "2026-04-06",
-          "close": 258.62
-        },
-        {
-          "date": "2026-04-07",
-          "close": 253.27
-        },
-        {
-          "date": "2026-04-08",
-          "close": 258.66
-        },
-        {
-          "date": "2026-04-09",
-          "close": 260.25
-        },
-        {
-          "date": "2026-04-10",
-          "close": 260.24
-        },
-        {
-          "date": "2026-04-13",
-          "close": 258.96
-        },
-        {
-          "date": "2026-04-14",
-          "close": 258.59
-        },
-        {
-          "date": "2026-04-15",
-          "close": 266.18
-        },
-        {
-          "date": "2026-04-16",
-          "close": 263.16
-        },
-        {
-          "date": "2026-04-17",
-          "close": 269.98
-        },
-        {
-          "date": "2026-04-20",
-          "close": 272.8
-        },
-        {
-          "date": "2026-04-21",
-          "close": 265.93
-        },
-        {
-          "date": "2026-04-22",
-          "close": 272.92
-        },
-        {
-          "date": "2026-04-23",
-          "close": 273.18
-        },
-        {
-          "date": "2026-04-24",
-          "close": 270.81
-        },
-        {
-          "date": "2026-04-27",
-          "close": 267.36
-        },
-        {
-          "date": "2026-04-28",
-          "close": 270.46
-        },
-        {
-          "date": "2026-04-29",
-          "close": 269.92
-        },
-        {
-          "date": "2026-04-30",
-          "close": 271.1
-        },
-        {
-          "date": "2026-05-01",
-          "close": 279.88
-        },
-        {
-          "date": "2026-05-04",
-          "close": 276.58
-        },
-        {
-          "date": "2026-05-05",
-          "close": 283.92
-        },
-        {
-          "date": "2026-05-06",
-          "close": 287.25
-        },
-        {
-          "date": "2026-05-07",
-          "close": 287.18
-        },
-        {
-          "date": "2026-05-08",
-          "close": 293.05
-        },
-        {
-          "date": "2026-05-11",
-          "close": 292.68
-        },
-        {
-          "date": "2026-05-12",
-          "close": 294.8
-        },
-        {
-          "date": "2026-05-13",
-          "close": 298.87
-        }
-      ],
-      "last_close": 298.87,
-      "last_date": "2026-05-13",
-      "scenario": "neutral",
-      "thesis": "Intel deal is long-term positive (capacity, diversification) but adds near-term execution risk. Near-term muted as market awaits WWDC and Q3 2026 earnings guidance. Supply relief should support modest upside by Q3/Q4.",
-      "key_drivers": [
-        "Intel deal execution (supply relief, near-term noise)",
-        "iPhone 18 cycle resilience",
-        "China demand & geopolitics",
-        "WWDC June announcements"
-      ],
-      "forecast": {
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 4.0,
-        "uncertainty_pct": 5.0,
-        "path": [
-          {
-            "date": "2026-05-20",
-            "central": 299.92,
-            "lower": 292.7,
-            "upper": 307.13
-          },
-          {
-            "date": "2026-05-27",
-            "central": 300.96,
-            "lower": 290.75,
-            "upper": 311.17
-          },
-          {
-            "date": "2026-06-12",
-            "central": 303.35,
-            "lower": 288.41,
-            "upper": 318.3
-          },
-          {
-            "date": "2026-07-12",
-            "central": 307.09,
-            "lower": 285.96,
-            "upper": 328.22
-          },
-          {
-            "date": "2026-08-11",
-            "central": 310.82,
-            "lower": 284.94,
-            "upper": 336.71
-          }
-        ]
-      }
-    },
     {
       "company": "NVIDIA",
       "symbol": "NVDA",
@@ -783,47 +370,873 @@
       "last_close": 225.83,
       "last_date": "2026-05-13",
       "scenario": "bullish",
-      "thesis": "Near-term catalysts (earnings + China optionality) likely push stock 5–8% higher into late May/June. Huang's participation in Trump-Xi summit signals geopolitical thaw on chip exports—critical tail-risk reduction. Consensus expects 78% YoY revenue growth; beat likely given hyperscaler momentum.",
+      "thesis": "Earnings event is highest-conviction catalyst. If Q1 results confirm $1T opportunity and management reaffirms momentum, stock likely breaks above resistance and drives 5-8% post-earnings pop. 90-day view supported by secular capex cycle sustainability.",
       "key_drivers": [
-        "Q1 FY27 earnings beat (May 20)",
-        "China export pathway clarity (Huang summit)",
-        "Hyperscaler capex momentum",
-        "Blackwell ramp & Rubin roadmap"
+        "May 20 earnings beat",
+        "Hyperscaler capex validation",
+        "Blackwell/Rubin demand confirmation",
+        "Potential guidance raise for 2027"
       ],
       "forecast": {
-        "expected_change_30d_pct": 5.0,
+        "expected_change_30d_pct": 4.5,
         "expected_change_90d_pct": 8.0,
-        "uncertainty_pct": 6.0,
+        "uncertainty_pct": 6.5,
         "path": [
           {
             "date": "2026-05-20",
-            "central": 228.46,
-            "lower": 221.92,
-            "upper": 235.01
+            "central": 228.2,
+            "lower": 221.11,
+            "upper": 235.29
           },
           {
             "date": "2026-05-27",
-            "central": 231.1,
-            "lower": 221.84,
-            "upper": 240.36
+            "central": 230.57,
+            "lower": 220.54,
+            "upper": 240.6
           },
           {
             "date": "2026-06-12",
-            "central": 237.12,
-            "lower": 223.57,
+            "central": 235.99,
+            "lower": 221.31,
             "upper": 250.67
           },
           {
             "date": "2026-07-12",
-            "central": 240.51,
-            "lower": 221.35,
-            "upper": 259.67
+            "central": 239.94,
+            "lower": 219.19,
+            "upper": 260.7
           },
           {
             "date": "2026-08-11",
             "central": 243.9,
-            "lower": 220.43,
-            "upper": 267.37
+            "lower": 218.47,
+            "upper": 269.32
+          }
+        ]
+      }
+    },
+    {
+      "company": "Apple",
+      "symbol": "AAPL",
+      "history": [
+        {
+          "date": "2026-01-05",
+          "close": 266.76
+        },
+        {
+          "date": "2026-01-06",
+          "close": 261.87
+        },
+        {
+          "date": "2026-01-07",
+          "close": 259.85
+        },
+        {
+          "date": "2026-01-08",
+          "close": 258.56
+        },
+        {
+          "date": "2026-01-09",
+          "close": 258.89
+        },
+        {
+          "date": "2026-01-12",
+          "close": 259.77
+        },
+        {
+          "date": "2026-01-13",
+          "close": 260.57
+        },
+        {
+          "date": "2026-01-14",
+          "close": 259.48
+        },
+        {
+          "date": "2026-01-15",
+          "close": 257.73
+        },
+        {
+          "date": "2026-01-16",
+          "close": 255.06
+        },
+        {
+          "date": "2026-01-20",
+          "close": 246.24
+        },
+        {
+          "date": "2026-01-21",
+          "close": 247.19
+        },
+        {
+          "date": "2026-01-22",
+          "close": 247.89
+        },
+        {
+          "date": "2026-01-23",
+          "close": 247.58
+        },
+        {
+          "date": "2026-01-26",
+          "close": 254.94
+        },
+        {
+          "date": "2026-01-27",
+          "close": 257.79
+        },
+        {
+          "date": "2026-01-28",
+          "close": 255.96
+        },
+        {
+          "date": "2026-01-29",
+          "close": 257.8
+        },
+        {
+          "date": "2026-01-30",
+          "close": 259.0
+        },
+        {
+          "date": "2026-02-02",
+          "close": 269.51
+        },
+        {
+          "date": "2026-02-03",
+          "close": 268.98
+        },
+        {
+          "date": "2026-02-04",
+          "close": 275.98
+        },
+        {
+          "date": "2026-02-05",
+          "close": 275.4
+        },
+        {
+          "date": "2026-02-06",
+          "close": 277.6
+        },
+        {
+          "date": "2026-02-09",
+          "close": 274.37
+        },
+        {
+          "date": "2026-02-10",
+          "close": 273.43
+        },
+        {
+          "date": "2026-02-11",
+          "close": 275.25
+        },
+        {
+          "date": "2026-02-12",
+          "close": 261.49
+        },
+        {
+          "date": "2026-02-13",
+          "close": 255.54
+        },
+        {
+          "date": "2026-02-17",
+          "close": 263.64
+        },
+        {
+          "date": "2026-02-18",
+          "close": 264.11
+        },
+        {
+          "date": "2026-02-19",
+          "close": 260.34
+        },
+        {
+          "date": "2026-02-20",
+          "close": 264.34
+        },
+        {
+          "date": "2026-02-23",
+          "close": 265.93
+        },
+        {
+          "date": "2026-02-24",
+          "close": 271.89
+        },
+        {
+          "date": "2026-02-25",
+          "close": 273.98
+        },
+        {
+          "date": "2026-02-26",
+          "close": 272.7
+        },
+        {
+          "date": "2026-02-27",
+          "close": 263.94
+        },
+        {
+          "date": "2026-03-02",
+          "close": 264.48
+        },
+        {
+          "date": "2026-03-03",
+          "close": 263.51
+        },
+        {
+          "date": "2026-03-04",
+          "close": 262.28
+        },
+        {
+          "date": "2026-03-05",
+          "close": 260.05
+        },
+        {
+          "date": "2026-03-06",
+          "close": 257.22
+        },
+        {
+          "date": "2026-03-09",
+          "close": 259.64
+        },
+        {
+          "date": "2026-03-10",
+          "close": 260.59
+        },
+        {
+          "date": "2026-03-11",
+          "close": 260.57
+        },
+        {
+          "date": "2026-03-12",
+          "close": 255.52
+        },
+        {
+          "date": "2026-03-13",
+          "close": 249.89
+        },
+        {
+          "date": "2026-03-16",
+          "close": 252.59
+        },
+        {
+          "date": "2026-03-17",
+          "close": 254.0
+        },
+        {
+          "date": "2026-03-18",
+          "close": 249.71
+        },
+        {
+          "date": "2026-03-19",
+          "close": 248.73
+        },
+        {
+          "date": "2026-03-20",
+          "close": 247.76
+        },
+        {
+          "date": "2026-03-23",
+          "close": 251.26
+        },
+        {
+          "date": "2026-03-24",
+          "close": 251.41
+        },
+        {
+          "date": "2026-03-25",
+          "close": 252.39
+        },
+        {
+          "date": "2026-03-26",
+          "close": 252.66
+        },
+        {
+          "date": "2026-03-27",
+          "close": 248.57
+        },
+        {
+          "date": "2026-03-30",
+          "close": 246.4
+        },
+        {
+          "date": "2026-03-31",
+          "close": 253.56
+        },
+        {
+          "date": "2026-04-01",
+          "close": 255.39
+        },
+        {
+          "date": "2026-04-02",
+          "close": 255.68
+        },
+        {
+          "date": "2026-04-06",
+          "close": 258.62
+        },
+        {
+          "date": "2026-04-07",
+          "close": 253.27
+        },
+        {
+          "date": "2026-04-08",
+          "close": 258.66
+        },
+        {
+          "date": "2026-04-09",
+          "close": 260.25
+        },
+        {
+          "date": "2026-04-10",
+          "close": 260.24
+        },
+        {
+          "date": "2026-04-13",
+          "close": 258.96
+        },
+        {
+          "date": "2026-04-14",
+          "close": 258.59
+        },
+        {
+          "date": "2026-04-15",
+          "close": 266.18
+        },
+        {
+          "date": "2026-04-16",
+          "close": 263.16
+        },
+        {
+          "date": "2026-04-17",
+          "close": 269.98
+        },
+        {
+          "date": "2026-04-20",
+          "close": 272.8
+        },
+        {
+          "date": "2026-04-21",
+          "close": 265.93
+        },
+        {
+          "date": "2026-04-22",
+          "close": 272.92
+        },
+        {
+          "date": "2026-04-23",
+          "close": 273.18
+        },
+        {
+          "date": "2026-04-24",
+          "close": 270.81
+        },
+        {
+          "date": "2026-04-27",
+          "close": 267.36
+        },
+        {
+          "date": "2026-04-28",
+          "close": 270.46
+        },
+        {
+          "date": "2026-04-29",
+          "close": 269.92
+        },
+        {
+          "date": "2026-04-30",
+          "close": 271.1
+        },
+        {
+          "date": "2026-05-01",
+          "close": 279.88
+        },
+        {
+          "date": "2026-05-04",
+          "close": 276.58
+        },
+        {
+          "date": "2026-05-05",
+          "close": 283.92
+        },
+        {
+          "date": "2026-05-06",
+          "close": 287.25
+        },
+        {
+          "date": "2026-05-07",
+          "close": 287.18
+        },
+        {
+          "date": "2026-05-08",
+          "close": 293.05
+        },
+        {
+          "date": "2026-05-11",
+          "close": 292.68
+        },
+        {
+          "date": "2026-05-12",
+          "close": 294.8
+        },
+        {
+          "date": "2026-05-13",
+          "close": 298.87
+        }
+      ],
+      "last_close": 298.87,
+      "last_date": "2026-05-13",
+      "scenario": "neutral",
+      "thesis": "At all-time highs with valuation demanding execution. Intel deal reduces supply risk but already priced in. WWDC catalyst critical; any disappointment on AI features or product roadmap could trigger 2-3% pullback. Core hold supported by brand strength and installed base.",
+      "key_drivers": [
+        "WWDC product strategy June 4",
+        "Intel foundry optionality",
+        "iPhone 17/18 demand signals",
+        "Services growth"
+      ],
+      "forecast": {
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 3.5,
+        "path": [
+          {
+            "date": "2026-05-20",
+            "central": 299.92,
+            "lower": 294.86,
+            "upper": 304.97
+          },
+          {
+            "date": "2026-05-27",
+            "central": 300.96,
+            "lower": 293.82,
+            "upper": 308.11
+          },
+          {
+            "date": "2026-06-12",
+            "central": 303.35,
+            "lower": 292.89,
+            "upper": 313.81
+          },
+          {
+            "date": "2026-07-12",
+            "central": 307.84,
+            "lower": 293.04,
+            "upper": 322.63
+          },
+          {
+            "date": "2026-08-11",
+            "central": 312.32,
+            "lower": 294.2,
+            "upper": 330.44
+          }
+        ]
+      }
+    },
+    {
+      "company": "Intel",
+      "symbol": "INTC",
+      "history": [
+        {
+          "date": "2026-01-05",
+          "close": 39.37
+        },
+        {
+          "date": "2026-01-06",
+          "close": 40.04
+        },
+        {
+          "date": "2026-01-07",
+          "close": 42.63
+        },
+        {
+          "date": "2026-01-08",
+          "close": 41.11
+        },
+        {
+          "date": "2026-01-09",
+          "close": 45.55
+        },
+        {
+          "date": "2026-01-12",
+          "close": 44.06
+        },
+        {
+          "date": "2026-01-13",
+          "close": 47.29
+        },
+        {
+          "date": "2026-01-14",
+          "close": 48.72
+        },
+        {
+          "date": "2026-01-15",
+          "close": 48.32
+        },
+        {
+          "date": "2026-01-16",
+          "close": 46.96
+        },
+        {
+          "date": "2026-01-20",
+          "close": 48.56
+        },
+        {
+          "date": "2026-01-21",
+          "close": 54.25
+        },
+        {
+          "date": "2026-01-22",
+          "close": 54.32
+        },
+        {
+          "date": "2026-01-23",
+          "close": 45.07
+        },
+        {
+          "date": "2026-01-26",
+          "close": 42.49
+        },
+        {
+          "date": "2026-01-27",
+          "close": 43.93
+        },
+        {
+          "date": "2026-01-28",
+          "close": 48.78
+        },
+        {
+          "date": "2026-01-29",
+          "close": 48.66
+        },
+        {
+          "date": "2026-01-30",
+          "close": 46.47
+        },
+        {
+          "date": "2026-02-02",
+          "close": 48.81
+        },
+        {
+          "date": "2026-02-03",
+          "close": 49.25
+        },
+        {
+          "date": "2026-02-04",
+          "close": 48.6
+        },
+        {
+          "date": "2026-02-05",
+          "close": 48.24
+        },
+        {
+          "date": "2026-02-06",
+          "close": 50.59
+        },
+        {
+          "date": "2026-02-09",
+          "close": 50.24
+        },
+        {
+          "date": "2026-02-10",
+          "close": 47.13
+        },
+        {
+          "date": "2026-02-11",
+          "close": 48.29
+        },
+        {
+          "date": "2026-02-12",
+          "close": 46.48
+        },
+        {
+          "date": "2026-02-13",
+          "close": 46.79
+        },
+        {
+          "date": "2026-02-17",
+          "close": 46.18
+        },
+        {
+          "date": "2026-02-18",
+          "close": 45.46
+        },
+        {
+          "date": "2026-02-19",
+          "close": 44.62
+        },
+        {
+          "date": "2026-02-20",
+          "close": 44.11
+        },
+        {
+          "date": "2026-02-23",
+          "close": 43.63
+        },
+        {
+          "date": "2026-02-24",
+          "close": 46.12
+        },
+        {
+          "date": "2026-02-25",
+          "close": 46.88
+        },
+        {
+          "date": "2026-02-26",
+          "close": 45.46
+        },
+        {
+          "date": "2026-02-27",
+          "close": 45.61
+        },
+        {
+          "date": "2026-03-02",
+          "close": 45.5
+        },
+        {
+          "date": "2026-03-03",
+          "close": 43.1
+        },
+        {
+          "date": "2026-03-04",
+          "close": 45.58
+        },
+        {
+          "date": "2026-03-05",
+          "close": 45.95
+        },
+        {
+          "date": "2026-03-06",
+          "close": 43.42
+        },
+        {
+          "date": "2026-03-09",
+          "close": 45.58
+        },
+        {
+          "date": "2026-03-10",
+          "close": 46.78
+        },
+        {
+          "date": "2026-03-11",
+          "close": 47.98
+        },
+        {
+          "date": "2026-03-12",
+          "close": 45.25
+        },
+        {
+          "date": "2026-03-13",
+          "close": 45.77
+        },
+        {
+          "date": "2026-03-16",
+          "close": 45.76
+        },
+        {
+          "date": "2026-03-17",
+          "close": 44.06
+        },
+        {
+          "date": "2026-03-18",
+          "close": 45.03
+        },
+        {
+          "date": "2026-03-19",
+          "close": 46.18
+        },
+        {
+          "date": "2026-03-20",
+          "close": 43.87
+        },
+        {
+          "date": "2026-03-23",
+          "close": 44.01
+        },
+        {
+          "date": "2026-03-24",
+          "close": 44.06
+        },
+        {
+          "date": "2026-03-25",
+          "close": 47.18
+        },
+        {
+          "date": "2026-03-26",
+          "close": 44.1
+        },
+        {
+          "date": "2026-03-27",
+          "close": 43.13
+        },
+        {
+          "date": "2026-03-30",
+          "close": 41.19
+        },
+        {
+          "date": "2026-03-31",
+          "close": 44.13
+        },
+        {
+          "date": "2026-04-01",
+          "close": 48.03
+        },
+        {
+          "date": "2026-04-02",
+          "close": 50.38
+        },
+        {
+          "date": "2026-04-06",
+          "close": 50.78
+        },
+        {
+          "date": "2026-04-07",
+          "close": 52.91
+        },
+        {
+          "date": "2026-04-08",
+          "close": 58.95
+        },
+        {
+          "date": "2026-04-09",
+          "close": 61.72
+        },
+        {
+          "date": "2026-04-10",
+          "close": 62.38
+        },
+        {
+          "date": "2026-04-13",
+          "close": 65.18
+        },
+        {
+          "date": "2026-04-14",
+          "close": 63.81
+        },
+        {
+          "date": "2026-04-15",
+          "close": 64.94
+        },
+        {
+          "date": "2026-04-16",
+          "close": 68.5
+        },
+        {
+          "date": "2026-04-17",
+          "close": 68.5
+        },
+        {
+          "date": "2026-04-20",
+          "close": 65.7
+        },
+        {
+          "date": "2026-04-21",
+          "close": 66.26
+        },
+        {
+          "date": "2026-04-22",
+          "close": 65.27
+        },
+        {
+          "date": "2026-04-23",
+          "close": 66.78
+        },
+        {
+          "date": "2026-04-24",
+          "close": 82.54
+        },
+        {
+          "date": "2026-04-27",
+          "close": 84.99
+        },
+        {
+          "date": "2026-04-28",
+          "close": 84.52
+        },
+        {
+          "date": "2026-04-29",
+          "close": 94.75
+        },
+        {
+          "date": "2026-04-30",
+          "close": 94.48
+        },
+        {
+          "date": "2026-05-01",
+          "close": 99.62
+        },
+        {
+          "date": "2026-05-04",
+          "close": 95.78
+        },
+        {
+          "date": "2026-05-05",
+          "close": 108.15
+        },
+        {
+          "date": "2026-05-06",
+          "close": 113.01
+        },
+        {
+          "date": "2026-05-07",
+          "close": 109.62
+        },
+        {
+          "date": "2026-05-08",
+          "close": 124.92
+        },
+        {
+          "date": "2026-05-11",
+          "close": 129.44
+        },
+        {
+          "date": "2026-05-12",
+          "close": 120.61
+        },
+        {
+          "date": "2026-05-13",
+          "close": 120.29
+        }
+      ],
+      "last_close": 120.29,
+      "last_date": "2026-05-13",
+      "scenario": "bullish",
+      "thesis": "Deal narrative and geopolitical tailwinds offer 6-month upside despite execution risk. Preliminary agreement transition to formal contract (expected Q2-Q3) de-risks foundry business model. Forward earnings multiple expansion likely if BofA's $10B revenue target looks credible by year-end earnings.",
+      "key_drivers": [
+        "Apple deal formalization",
+        "Foundry operating loss improvement",
+        "14A process progress",
+        "Geopolitical supply chain momentum"
+      ],
+      "forecast": {
+        "expected_change_30d_pct": 6.0,
+        "expected_change_90d_pct": 10.0,
+        "uncertainty_pct": 7.0,
+        "path": [
+          {
+            "date": "2026-05-20",
+            "central": 121.97,
+            "lower": 117.91,
+            "upper": 126.04
+          },
+          {
+            "date": "2026-05-27",
+            "central": 123.66,
+            "lower": 117.91,
+            "upper": 129.41
+          },
+          {
+            "date": "2026-06-12",
+            "central": 127.51,
+            "lower": 119.09,
+            "upper": 135.93
+          },
+          {
+            "date": "2026-07-12",
+            "central": 129.91,
+            "lower": 118.01,
+            "upper": 141.82
+          },
+          {
+            "date": "2026-08-11",
+            "central": 132.32,
+            "lower": 117.73,
+            "upper": 146.9
           }
         ]
       }
@@ -1196,70 +1609,48 @@
       "last_close": 490.64,
       "last_date": "2026-05-13",
       "scenario": "neutral",
-      "thesis": "Inflation shock (3.8% CPI) pressures consumer discretionary spending near-term, but real wage declines (–0.3% YoY) partially offset by services inflation & travel rebound. MasterCard relatively stable—modest upside from transaction volume gains as hyperscalers boost data center spending.",
+      "thesis": "Defensive position in portfolio. Near-term pressure from rising yields (2.04% weighting) but longer-term supported by transaction growth and pricing power. May 28 Fed decision pivotal; if cuts begin 2H26, financial services could re-rate positively.",
       "key_drivers": [
-        "Consumer spending resilience amid inflation",
-        "FOMC rate hold (May 28)",
-        "Q1 earnings (already reported)",
-        "Emerging market currency headwinds"
+        "FOMC May 28 decision on rates",
+        "Q1 earnings growth sustainability",
+        "Cross-border transaction volume trends"
       ],
       "forecast": {
-        "expected_change_30d_pct": 0.5,
+        "expected_change_30d_pct": 0.8,
         "expected_change_90d_pct": 2.5,
-        "uncertainty_pct": 3.0,
+        "uncertainty_pct": 2.0,
         "path": [
           {
             "date": "2026-05-20",
-            "central": 491.21,
-            "lower": 484.1,
-            "upper": 498.32
+            "central": 491.56,
+            "lower": 486.82,
+            "upper": 496.3
           },
           {
             "date": "2026-05-27",
-            "central": 491.78,
-            "lower": 481.73,
-            "upper": 501.84
+            "central": 492.47,
+            "lower": 485.77,
+            "upper": 499.18
           },
           {
             "date": "2026-06-12",
-            "central": 493.09,
-            "lower": 478.37,
-            "upper": 507.81
+            "central": 494.57,
+            "lower": 484.75,
+            "upper": 504.38
           },
           {
             "date": "2026-07-12",
-            "central": 498.0,
-            "lower": 477.18,
-            "upper": 518.82
+            "central": 498.74,
+            "lower": 484.86,
+            "upper": 512.61
           },
           {
             "date": "2026-08-11",
             "central": 502.91,
-            "lower": 477.41,
-            "upper": 528.4
+            "lower": 485.91,
+            "upper": 519.9
           }
         ]
-      }
-    },
-    {
-      "company": "Core S&P 500 USD (Acc)",
-      "symbol": null,
-      "history": [],
-      "last_close": null,
-      "last_date": null,
-      "scenario": "neutral",
-      "thesis": "Broad index well-anchored to 7,400–7,500 range; tech outperformance absorbs macro uncertainty. May chop around FOMC (May 28) expected, but mega-cap earnings strength sustains bid. 4–5% upside to 7,800 by late June/early July if inflation stabilizes and Fed signals Oct rate cuts.",
-      "key_drivers": [
-        "Fed hold through May 28 FOMC",
-        "Earnings season (tech-led beats)",
-        "Inflation volatility (energy shocks)",
-        "Geopolitical escalation (Iran)"
-      ],
-      "forecast": {
-        "expected_change_30d_pct": 2.0,
-        "expected_change_90d_pct": 4.5,
-        "uncertainty_pct": 4.0,
-        "path": []
       }
     },
     {
@@ -1630,47 +2021,47 @@
       "last_close": 485.52,
       "last_date": "2026-05-13",
       "scenario": "neutral",
-      "thesis": "Defensive positioning amid inflation; tech allocation (15–20%) provides upside if mega-cap earnings sustain. Inflation headwind for auto/insurance segments offset by float duration benefits. Limited near-term catalysts; steady performer.",
+      "thesis": "<cite index=\"17-9,17-10\">Berkshire modestly undervalued at 7% discount to fair value, shares down 5.9% YTD</cite>. Core-4 holdings (Apple, AmEx, Moody's, Coca-Cola) provide stability. Minimal near-term catalysts; core diversified position for macro hedging.",
       "key_drivers": [
-        "Insurance float resilience amid inflation",
-        "Equity portfolio rebalancing (tech concentration)",
-        "FOMC guidance (May 28)",
-        "Buffett-era capital allocation signals"
+        "CEO Greg Abel execution",
+        "Equity portfolio rebalancing",
+        "Insurance underwriting cycles",
+        "Cash deployment strategy"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.0,
-        "expected_change_90d_pct": 2.5,
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 2.0,
         "uncertainty_pct": 2.5,
         "path": [
           {
             "date": "2026-05-20",
-            "central": 486.65,
-            "lower": 480.79,
-            "upper": 492.52
+            "central": 486.09,
+            "lower": 480.22,
+            "upper": 491.95
           },
           {
             "date": "2026-05-27",
-            "central": 487.79,
-            "lower": 479.49,
-            "upper": 496.08
+            "central": 486.65,
+            "lower": 478.36,
+            "upper": 494.94
           },
           {
             "date": "2026-06-12",
-            "central": 490.38,
-            "lower": 478.24,
-            "upper": 502.51
+            "central": 487.95,
+            "lower": 475.81,
+            "upper": 500.09
           },
           {
             "date": "2026-07-12",
-            "central": 494.02,
-            "lower": 476.85,
-            "upper": 511.18
+            "central": 491.59,
+            "lower": 474.42,
+            "upper": 508.75
           },
           {
             "date": "2026-08-11",
-            "central": 497.66,
-            "lower": 476.63,
-            "upper": 518.68
+            "central": 495.23,
+            "lower": 474.21,
+            "upper": 516.25
           }
         ]
       }

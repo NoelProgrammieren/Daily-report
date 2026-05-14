@@ -56,11 +56,19 @@ jobs:
             git commit -m "Daily report $(date -u +%Y-%m-%d)"
             # Rebase über zwischenzeitlich gepushte Commits, dann push.
             # Bis zu 3 Versuche, falls in der Zwischenzeit nochmal etwas reinkommt.
+            pushed=0
             for attempt in 1 2 3; do
-              git pull --rebase origin main && git push && break
+              if git pull --rebase origin main && git push; then
+                pushed=1
+                break
+              fi
               echo "Push-Versuch $attempt fehlgeschlagen, retry in 5s..."
               sleep 5
             done
+            if [ "$pushed" -ne 1 ]; then
+              echo "Alle 3 Push-Versuche fehlgeschlagen — Action wird als failed markiert."
+              exit 1
+            fi
           else
             echo "Keine Änderungen — nichts zu committen."
           fi

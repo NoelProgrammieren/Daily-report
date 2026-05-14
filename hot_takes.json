@@ -3,13 +3,13 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings on 2026-05-20 (after market close). <cite index=\"48-1\">NVDA earnings confirmed for Wednesday 05/20/2026 After Market</cite>.",
+      "event_basis": "<cite index=\"23-1\">NVDA's next earnings date is CONFIRMED for Wednesday 05/20/2026 After Market</cite>. <cite index=\"21-17\">Wall Street is looking for $1.77 in EPS and a 78% year-over-year increase in revenue</cite>.",
       "event_date": "2026-05-20",
-      "time_horizon": "1 week",
-      "thesis": "<cite index=\"34-6\">Analysts at Oppenheimer reiterated outperform rating ahead of earnings next week</cite>. <cite index=\"49-19,49-20\">Management had highlighted $500B worth of high-confidence demand tied to Blackwell and Rubin through 2026; CEO Jensen Huang said he expects at least $1T of opportunity through 2027</cite>. <cite index=\"24-8\">CEO Huang's participation in US-China summit signals potential export pathway recovery</cite>, removing prior overhang on China sales guidance.",
-      "risks": "<cite index=\"46-10\">Technical picture suggests period of consolidation or pullback increasingly likely before or after earnings</cite>; valuation already priced high on 26x forward earnings.",
+      "time_horizon": "6 days",
+      "thesis": "<cite index=\"21-3,21-14\">NVIDIA's quarterly results usually beat analysts' consensus expectations, with a history of earning beats</cite>. <cite index=\"26-1\">CEO Jensen Huang participation in US-China summit signals potential export pathway recovery; combined with strong hyperscaler capex ($725B+ annually), Blackwell demand should exceed guidance</cite>. Margin resilience and 2026-27 $1T processor roadmap provide upside optionality.",
+      "risks": "Valuation extension post-beat; softening forward guidance on H200/Rubin demand; geopolitical China export volatility despite summit.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-13T20:53:55.002070+02:00"
+      "last_updated": "2026-05-14T09:38:02.570991+02:00"
     },
     {
       "company": "NVIDIA",
@@ -25,14 +25,14 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Apple chip manufacturing agreement reportedly finalized (WSJ/Bloomberg, May 9–12, 2026). Formal contract execution and production roadmap expected Q2–Q3 2026.",
+      "event_basis": "<cite index=\"32-11\">Intensive talks between the two companies have been ongoing for more than a year, and they hammered out a formal deal in recent months</cite>. Formal contract execution and production roadmap for Apple deal expected Q2–Q3 2026.",
       "event_date": "2026-06-30",
-      "time_horizon": "4–8 weeks",
-      "thesis": "<cite index=\"14-5,14-6\">Deal would mark major breakthrough for Intel as it rebuilds semiconductor manufacturing; companies said to have been in discussions over year, with formal agreement reached in recent months</cite>. <cite index=\"20-26\">Intel may be getting major business boost, and Trump administration may score political victory after pushing vocally about importance of local US chip manufacturing</cite>.",
-      "risks": "Stock valuation already up 377% YTD; execution risk on first production timelines (18–24 months); margin structure unclear on entry-level Apple products.",
+      "time_horizon": "7 weeks",
+      "thesis": "<cite index=\"33-2,33-4\">The deal would be the most notable vote of confidence yet for Intel's once-struggling chip foundry business</cite>. <cite index=\"2-1,2-18\">The foundry is now expected to break even in 2027, thanks to deals with Amazon, Microsoft, the U.S. Government, and Tesla</cite>. Apple production ramp (likely 2027+) validates 18A process and justifies Trump admin backing—de-risks foundry margin recovery thesis.",
+      "risks": "Qualification delays (2–3 years typical); execution risk on 18A yields; tariff headwinds; Apple could pivot to Samsung if yields slip.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-13T20:53:55.002070+02:00"
+      "last_updated": "2026-05-14T09:38:02.570991+02:00"
     }
   ],
-  "updated_at": "2026-05-13T20:53:55.002070+02:00"
+  "updated_at": "2026-05-14T09:38:02.570991+02:00"
 }

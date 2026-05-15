@@ -672,12 +672,26 @@ function renderEmptyWatchlistCard(company) {
   </div>`;
 }
 
+function renderProConList(items, polarity) {
+  if (!Array.isArray(items) || items.length === 0) return "";
+  const cls = polarity === "con" ? "con-list" : "pro-list";
+  const label = polarity === "con" ? "Risiken" : "Chancen";
+  const lis = items.map((s) => `<li>${escapeHtml(s)}</li>`).join("");
+  return `<div class="${cls}">
+    <div class="pro-con-label">${label}</div>
+    <ul>${lis}</ul>
+  </div>`;
+}
+
 function renderForecastCard(t, canvasId) {
   const scenario = t.scenario || "neutral";
   const exp30 = t.forecast?.expected_change_30d_pct;
   const exp90 = t.forecast?.expected_change_90d_pct;
   const unc = t.forecast?.uncertainty_pct;
   const fmtPct = (v) => (v === null || v === undefined) ? "—" : `${v > 0 ? "+" : ""}${Number(v).toFixed(1)} %`;
+  const pros = Array.isArray(t.pros) ? t.pros : [];
+  const cons = Array.isArray(t.cons) ? t.cons : [];
+  const hasProCon = pros.length > 0 || cons.length > 0;
   return `<div class="forecast-card">
     <div class="forecast-card-head">
       <span class="forecast-company">${escapeHtml(t.company || "")}</span>
@@ -692,6 +706,10 @@ function renderForecastCard(t, canvasId) {
       ${t.last_close ? `<div><span class="forecast-metric-label">Kurs</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}</span></div>` : ""}
     </div>
     <div class="forecast-chart-wrap"><canvas id="${canvasId}"></canvas></div>
+    ${hasProCon ? `<div class="pro-con-grid">
+      ${renderProConList(pros, "pro")}
+      ${renderProConList(cons, "con")}
+    </div>` : ""}
     ${t.thesis ? `<p class="forecast-thesis">${escapeHtml(t.thesis)}</p>` : ""}
     ${(t.key_drivers || []).length ? `<div class="forecast-drivers">Treiber: ${t.key_drivers.map((d) => `<span class="driver-tag">${escapeHtml(d)}</span>`).join(" ")}</div>` : ""}
   </div>`;

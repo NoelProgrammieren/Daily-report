@@ -182,6 +182,30 @@ Ausschließlich seriöse Quellen: Reuters, Bloomberg, CNBC, Financial Times, Wal
 Beispiel falsch: "April CPI beat estimates, sending odds of rate hike higher."
 Beispiel richtig: "Die April-Inflationsdaten (CPI) lagen über den Erwartungen, was die Wahrscheinlichkeit einer Zinserhöhung erhöht."
 
+## SPRACHNIVEAU — LAIENVERSTÄNDLICH
+
+**Zielgruppe der Berichte:** Eine erwachsene Person ohne Finanzhintergrund. Sie soll auf Anhieb verstehen, was passiert ist, warum es passiert ist und welche Konsequenzen das hat.
+
+**Regeln:**
+- **Fachbegriffe erklären** beim ersten Auftauchen pro Bericht in Klammern, danach normal verwenden. Beispiele:
+  - „Earnings (Quartalszahlen)"
+  - „Bond-Yields (Anleiherenditen, also die Zinsen auf Staatsanleihen)"
+  - „Hyperscaler (große Cloud-Anbieter wie AWS, Azure oder Google Cloud)"
+  - „Guidance (Prognose, die ein Unternehmen für die kommenden Monate gibt)"
+  - „Forward-PE (Bewertungs-Kennzahl, die Aktienkurs zu erwartetem Gewinn ins Verhältnis setzt)"
+  - „Free Cash Flow (das Geld, das nach allen Ausgaben übrig bleibt)"
+  - „Hedge (Absicherung gegen Verluste)"
+- **Kausalketten ausschreiben.** Statt „Powell hawkish → yields up" lieber: „Notenbankchef Powell deutete höhere Zinsen an. Das treibt die Anleiherenditen nach oben, was wiederum auf Aktien drückt."
+- **Vergleiche und Größenordnungen liefern.** Statt „Q1 EPS $2.14" lieber: „Der Gewinn pro Aktie lag im ersten Quartal bei 2,14 Dollar — etwa 8 % mehr als im Vorjahr."
+- **Konsequenz benennen.** Bei jeder News kurz sagen, was das für den Kurs / die Branche bedeutet, nicht nur die Tatsache.
+
+**SUBSTANZ-GARANTIE — NICHT verhandelbar:**
+- Konkrete Zahlen (Kurse, Prozente, Termine, Ratings, Volumina) bleiben präzise und werden NICHT weichgespült.
+- Tickersymbole, ISINs, Earnings-Daten, Indexstände, Inflationsraten — alles bleibt exakt.
+- Fachbegriffe dürfen weiter verwendet werden, sie werden nur ergänzt um eine Klammer-Erklärung — nicht ersetzt durch vage Umschreibungen.
+
+**Faustregel:** Nach dem Lesen einer Sektor-News oder eines Hot Takes muss ein Laie a) verstehen WAS passiert ist, b) verstehen WARUM es relevant ist, c) eine grobe Vorstellung der Größenordnung haben.
+
 ## ZEITLICHER KONTEXT
 Bericht wird um 19:00 MEZ/MESZ (= 13:00 ET) erstellt. Erfasst After-Hours-News vom Vortag sowie Pre-Market- und Intraday-Entwicklungen bis Mittag ET. Late-Session-Überraschungen sind noch nicht enthalten.
 
@@ -213,8 +237,12 @@ Für jeden Eintrag:
   - 3 = neutral / im Erwartungsbereich
   - 2 = eher abwartend, Gegenwind
   - 1 = strukturelle Probleme, kein Setup
-- `thesis` (1–2 deutsche Sätze) PFLICHT
-- `key_drivers` (Liste deutscher Stichworte) PFLICHT
+- `thesis` (GENAU EIN deutscher, laienverständlicher Satz — die Kernaussage) PFLICHT
+- `pros` (Liste 2–4 kurzer deutscher Stichpunkte: Argumente FÜR die Prognose / Chancen) PFLICHT
+- `cons` (Liste 2–4 kurzer deutscher Stichpunkte: Argumente DAGEGEN / Risiken) PFLICHT
+- `key_drivers` (Liste 2–4 neutrale Treiber-Stichworte für Tag-Anzeige, z.B. „Earnings", „China-Nachfrage") PFLICHT
+
+`pros` und `cons` sind Stichpunkte, KEINE Sätze. Jeder Stichpunkt max. 8 Wörter. Beispiel-Pro: „Starke Cloud-Nachfrage, Margen wachsen". Beispiel-Con: „China-Restriktionen drücken Absatz".
 
 Der Erwartungsbereich darf eine begründete Einschätzung sein (nicht reine Mathematik), MUSS aber an konkrete Ereignisse/Trends gekoppelt werden. Klar als „Erwartung", nicht als „Vorhersage" kennzeichnen.
 
@@ -272,7 +300,17 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
         "uncertainty_pct": 4.0,
         "potential_rating": 3,
         "key_drivers": ["WWDC im Juni", "China-Nachfrage", "iPhone-17-Zyklus"],
-        "thesis": "1-2 deutsche Sätze begründende Einschätzung"
+        "thesis": "Stabile Geschäfte, aber kurzfristig fehlt der große Kurstreiber.",
+        "pros": [
+          "WWDC im Juni mit neuen KI-Features",
+          "Service-Sparte wächst zweistellig",
+          "Hohe Cash-Reserven für Rückkäufe"
+        ],
+        "cons": [
+          "iPhone-Absatz in China rückläufig",
+          "Bewertung bereits ambitioniert",
+          "Wachstum unter Tech-Schnitt"
+        ]
       },
       {
         "company": "Walmart",
@@ -282,7 +320,16 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
         "uncertainty_pct": 3.5,
         "potential_rating": 4,
         "key_drivers": ["Konsumdaten stabil", "Earnings Mitte Mai"],
-        "thesis": "1-2 deutsche Sätze begründende Einschätzung"
+        "thesis": "Starker Konsumtrend trifft auf solide Quartalszahlen — kurzfristig attraktiv.",
+        "pros": [
+          "Konsumdaten in den USA bleiben robust",
+          "Quartalszahlen am 15. Mai erwartet stark",
+          "E-Commerce-Sparte wächst zweistellig"
+        ],
+        "cons": [
+          "Margendruck durch Lohnerhöhungen",
+          "Zollthema belastet Lieferkette"
+        ]
       }
     ]
   },
@@ -309,7 +356,7 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
 **Wichtige Regeln:**
 - Sektoren NUR aufnehmen wenn berichtenswert (keine leeren Einträge!)
 - `hot_takes` darf leer sein wenn heute nichts überzeugendes da ist. NIEMALS spekulative Picks füllen.
-- `forecast.tickers`: 3–5 Portfolio-Holdings (`category: "portfolio"`) **PLUS** alle 5 Watchlist-Werte (`category: "watchlist"`) — also typischerweise 8–10 Einträge gesamt. Jeder Eintrag bekommt `category` und `potential_rating` (1–5). `scenario` ist eines von: "bullish", "neutral", "bearish".
+- `forecast.tickers`: 3–5 Portfolio-Holdings (`category: "portfolio"`) **PLUS** alle 5 Watchlist-Werte (`category: "watchlist"`) — also typischerweise 8–10 Einträge gesamt. Jeder Eintrag bekommt `category`, `potential_rating` (1–5), `thesis` (1 Satz!), `pros` (2–4 Stichpunkte), `cons` (2–4 Stichpunkte) und `key_drivers` (2–4 Tags). `scenario` ist eines von: "bullish", "neutral", "bearish".
 - `expected_change_*_pct` und `uncertainty_pct`: Zahlen in Prozent (z.B. `2.5` für +2,5 %). `uncertainty_pct` ist die halbe Bandbreite um die Erwartung (Bandbreite = expected ± uncertainty).
 - `price_change` in news weglassen wenn nicht relevant
 - `outlook` = Ausblick nächste Tage / diese Woche (3-7 Punkte)
@@ -579,6 +626,23 @@ def fetch_forecast_data(forecast: dict) -> dict:
         except (TypeError, ValueError):
             potential_rating = None
 
+        # Pros/Cons defensiv parsen: nur nicht-leere Strings übernehmen,
+        # max. 4 Stichpunkte pro Seite, je max. 120 Zeichen.
+        def _clean_bullets(raw):
+            if not isinstance(raw, list):
+                return []
+            out = []
+            for item in raw[:4]:
+                if not isinstance(item, str):
+                    continue
+                s = item.strip()
+                if s:
+                    out.append(s[:120])
+            return out
+
+        pros = _clean_bullets(t.get("pros"))
+        cons = _clean_bullets(t.get("cons"))
+
         result.append({
             "company": company,
             "symbol": symbol,
@@ -589,6 +653,8 @@ def fetch_forecast_data(forecast: dict) -> dict:
             "last_date": last_date,
             "scenario": t.get("scenario"),
             "thesis": t.get("thesis"),
+            "pros": pros,
+            "cons": cons,
             "key_drivers": t.get("key_drivers", []),
             "forecast": _build_forecast_projection(t, last_close, last_date),
         })

@@ -68,12 +68,12 @@ TICKER_MAP = {
     "Boeing": "BA",
     "Airbus": "AIR.PA",
     "MSCI World Health Care": "WHEA.DE",
-    # ETFs (Holdings)
-    "Core S&P 500": "CSPX.L",
-    "Core MSCI World": "IWDA.L",
-    "MSCI World Information Technology": "WITS.L",
-    "MSCI Emerging Markets Ex China": "EMXC",
-    "Russell 2000 U.S. Small Cap": "IWM",
+    # ETFs (Holdings) — Xetra-Ticker konsistent mit MARKET_INDICES
+    "Core S&P 500": "SXR8.DE",
+    "Core MSCI World": "EUNL.DE",
+    "MSCI World Information Technology": "XDWT.DE",
+    "MSCI Emerging Markets Ex China": "EMXC.DE",
+    "Russell 2000 U.S. Small Cap": "ZPRR.DE",
 }
 
 # Reine Watchlist-Werte (keine Holdings). Erscheinen im

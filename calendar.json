@@ -50,6 +50,20 @@
       "category": "earnings"
     },
     {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27 Earnings (nach Börsenschluss)",
+      "relevant_for": "NVIDIA",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 Earnings & Guidance",
+      "relevant_for": "Walmart",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
       "date": "2026-05-22",
       "event": "NVIDIA Q1 Earnings (nach Börse)",
       "relevant_for": "NVIDIA, Halbleiter-Sektor, IT-ETFs",
@@ -73,7 +87,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, fixed income",
+      "relevant_for": "Gesamtmarkt, Anleihenrenditen, Zinserwartungen",
       "rating": 5,
       "category": "fed"
     },
@@ -94,9 +108,9 @@
     {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX",
-      "relevant_for": "Intel, Energieinfrastruktur",
+      "relevant_for": "Intel, Foundry-Validation",
       "rating": 3,
-      "category": "other"
+      "category": "political"
     },
     {
       "date": "2026-06-03",
@@ -134,6 +148,13 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (Montag, 10:00 PT)",
+      "relevant_for": "Apple, KI-Ankündigungen, Siri 2.0",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -143,7 +164,7 @@
     {
       "date": "2026-06-12",
       "event": "ECB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "LVMH, Hermès, europäische Finanzwerte",
+      "relevant_for": "EUR/USD, europäische Technologie-Aktien",
       "rating": 4,
       "category": "fed"
     },
@@ -157,10 +178,10 @@
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 FY2026 Earnings",
-      "relevant_for": "Microsoft",
+      "relevant_for": "Microsoft, Azure, OpenAI-Abhängigkeit, Capex-Effizienz",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-15T20:18:02.283755+02:00"
+  "updated_at": "2026-05-15T23:28:32.036255+02:00"
 }

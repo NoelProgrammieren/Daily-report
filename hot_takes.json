@@ -3,13 +3,13 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "<cite index=\"33-20\">Wall Street expects revenue of $78.8 billion and earnings per share (EPS) of $1.77 for Q1 fiscal 2027</cite>; <cite index=\"33-4,33-5\">big four hyperscalers -- Alphabet, Amazon, Meta Platforms, and Microsoft -- are forecasting combined 2026 capital expenditures of more than $700 billion, with Meta, Alphabet, and Microsoft raising their full-year capex guidance</cite>.",
+      "event_basis": "Q1 FY27 Earnings am 20. Mai (nach Börsenschluss) – Konsens erwartet 78,8 Mrd. Dollar Umsatz, 1,77 Dollar EPS. Hyperscaler-Capex-Erhöhungen (Meta +10 Mrd., Microsoft +36 Mrd., Alphabet & Amazon ebenfalls heraufgestuft) deuten auf robuste Nachfrage nach Blackwell-Systemen hin.",
       "event_date": "2026-05-20",
-      "time_horizon": "1-2 Wochen",
-      "thesis": "<cite index=\"33-1,33-2\">On Polymarket, the implied probability that Nvidia will beat expectations sits around 90%</cite>. <cite index=\"35-1\">Based on Nvidia's track record of beating earnings expectations and the strong quarterly reports that we've already seen from the hyperscalers that are its top customers, we fully expect Nvidia to report another blowout quarter</cite>. <cite index=\"40-1,40-3,40-4\">Goldman Sachs expects Nvidia to report a 'beat-and-raise' quarter, with its analyst expecting Nvidia's updated 2026 and 2027 estimates to be 14% and 34% above broader Wall Street expectations, respectively</cite>.",
-      "risks": "<cite index=\"35-2,35-3\">The company beat consensus estimates and provided guidance that was more upbeat than the consensus last quarter, only to see its stock fall the next day; with a nearly $5.4 trillion market cap, Nvidia is so big that it really has to exceed investor expectations by a wide margin on earnings to see its stock rise immediately after a report</cite>.",
+      "time_horizon": "1-2 Wochen vor/nach Earnings",
+      "thesis": "<cite index=\"22-9\">Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen.</cite> Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
+      "risks": "Bewertung bei ~6 Billionen Dollar Marktkapitalisierung lässt wenig Spielraum für Fehler; selbst starke Ergebnisse könnten Gewinnmitnahmen auslösen (Post-Earnings-Selloff möglich).",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-15T20:18:02.284152+02:00"
+      "last_updated": "2026-05-15T23:28:32.036624+02:00"
     },
     {
       "company": "NVIDIA",
@@ -21,6 +21,17 @@
       "risks": "Geopolitical detente could reverse if US-Iran tensions escalate; inflation surprise may prompt Warsh Fed to signal rate-hold policy extending into H2 2026.",
       "first_seen": "2026-05-13",
       "last_updated": "2026-05-13T16:59:17.634691+02:00"
+    },
+    {
+      "company": "Intel",
+      "rating": 5,
+      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. <cite index=\"50-11\">Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla.</cite> <cite index=\"41-9\">Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.</cite>",
+      "event_date": "2026-06-30",
+      "time_horizon": "2-4 Wochen (über Terafab Hearing hinaus)",
+      "thesis": "<cite index=\"43-6\">Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen.</cite> Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
+      "risks": "Yield- oder Qualitätsprobleme könnten Deal-Momentum zerstören. Hohe Bewertung (>100x Forward-P/E) aktuell für massive Erfolgserfordernisse. Geopolitische/sanktionäre Risiken rund um Chipexporte, insbesondere für Advanced Node.",
+      "first_seen": "2026-05-13",
+      "last_updated": "2026-05-15T23:28:32.036624+02:00"
     },
     {
       "company": "Apple",
@@ -36,25 +47,14 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "<cite index=\"45-4,45-8\">WWDC26 will spotlight incredible updates for Apple platforms, including AI advancements and exciting new software and developer tools</cite>; <cite index=\"45-14\">WWDC kicks off with the Keynote and Platforms State of the Union on Monday, June 8</cite>.",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni – <cite index=\"35-4\">WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools.</cite> <cite index=\"33-1\">WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.</cite>",
       "event_date": "2026-06-08",
       "time_horizon": "2-3 Wochen",
-      "thesis": "<cite index=\"44-19\">iOS 27 is expected to introduce a much more capable Siri, with Apple reportedly preparing a long-delayed Siri 2.0 experience</cite>. <cite index=\"50-5\">WWDC 2026 could finally get the Gemini-powered Siri that's so eagerly anticipated</cite>. <cite index=\"6-3\">The company was reported to have reached a preliminary agreement for Intel to manufacture some of Apple's chips -- a notable vote of confidence given Apple's long-running reliance on Taiwan Semiconductor</cite>, validating Apple's supply chain diversification thesis.",
-      "risks": "AI announcements at WWDC may be incremental; Siri upgrade execution risk remains; no major iPhone/hardware updates expected until fall 2026, limiting stock catalysts post-WWDC.",
+      "thesis": "Intel-Deal validiert Apples technische Leistungsfähigkeit und Diversifizierungsstrategie. WWDC ist Plattform, um Siri 2.0 (Gemini-powered) und tiefe KI-Integration zu demonstrieren – ein Wendepunkt nach Jahren von Verzögerungen. Positives Sentiment für Services-Umsätze und Ökosystem-Bindung.",
+      "risks": "KI-Features könnten underspektakulär wirken, wenn Siri immer noch Konkurrenz-Modelle unterperformt oder Hardware-Ankündigungen fehlen (iPad/Mac). Markt könnte höher gehypte Vorstellungen haben.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-15T20:18:02.284152+02:00"
-    },
-    {
-      "company": "Intel",
-      "rating": 4,
-      "event_basis": "<cite index=\"27-1\">Prices rose 0.6% on a monthly basis, driving the annual rate to 3.8%, the highest since May 2023</cite>; foundry customer validation (Apple, Nvidia) expected through H2 2026; <cite index=\"6-23\">Intel stock notched a fresh 52-week high near $130 after Q1 2026 earnings and the preliminary Apple agreement</cite>.",
-      "event_date": "2026-06-30",
-      "time_horizon": "4-6 Wochen",
-      "thesis": "<cite index=\"6-30\">Intel's first-quarter 2026 revenue rose 7% year over year to $13.6 billion, beating the midpoint of management's own guidance by more than $1 billion and marking the sixth consecutive quarter Intel has exceeded its own forecast</cite>. <cite index=\"6-11\">The Apple, Nvidia, and Terafab deals all suggest the foundry strategy is gaining real traction, and the data center and AI business is finally showing some momentum</cite>.",
-      "risks": "<cite index=\"6-12,6-13\">The stock has already priced a lot of that in; valuation metrics suggest a pullback or execution milestones required before further re-rating</cite>. Q1 earnings beat expectations, but 18A-P process validation with actual customer shipments still pending.",
-      "first_seen": "2026-05-13",
-      "last_updated": "2026-05-15T20:18:02.284152+02:00"
+      "last_updated": "2026-05-15T23:28:32.036624+02:00"
     }
   ],
-  "updated_at": "2026-05-15T20:18:02.284152+02:00"
+  "updated_at": "2026-05-15T23:28:32.036624+02:00"
 }

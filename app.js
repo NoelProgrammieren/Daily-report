@@ -649,8 +649,57 @@ function renderForecastChart(canvasId, ticker) {
   forecastCharts.push(chart);
 }
 
+// Statisch konfigurierte Watchlist-Werte. Müssen im forecast.tickers (vom
+// Claude-Lauf) auftauchen — falls Claude einen Eintrag vergisst, zeigen
+// wir einen Platzhalter, damit die Sektion vollständig wirkt.
+const WATCHLIST_COMPANIES = ["Walmart", "Oracle", "MSCI World Health Care", "Boeing", "Airbus"];
+
+function renderStars(rating) {
+  const r = Number(rating || 0);
+  if (!r) return `<span class="potential-stars potential-empty" title="Kein Rating">— Rating</span>`;
+  const filled = "★".repeat(r);
+  const empty = "☆".repeat(Math.max(0, 5 - r));
+  return `<span class="potential-stars r${r}" title="Potential-Rating ${r}/5">${filled}${empty}</span>`;
+}
+
+function renderEmptyWatchlistCard(company) {
+  return `<div class="forecast-card forecast-card-empty">
+    <div class="forecast-card-head">
+      <span class="forecast-company">${escapeHtml(company)}</span>
+      <span class="potential-stars potential-empty">— Rating</span>
+    </div>
+    <p class="forecast-thesis dim">Noch keine Einschätzung im aktuellen Bericht. Wird beim nächsten 19-Uhr-Lauf ergänzt.</p>
+  </div>`;
+}
+
+function renderForecastCard(t, canvasId) {
+  const scenario = t.scenario || "neutral";
+  const exp30 = t.forecast?.expected_change_30d_pct;
+  const exp90 = t.forecast?.expected_change_90d_pct;
+  const unc = t.forecast?.uncertainty_pct;
+  const fmtPct = (v) => (v === null || v === undefined) ? "—" : `${v > 0 ? "+" : ""}${Number(v).toFixed(1)} %`;
+  return `<div class="forecast-card">
+    <div class="forecast-card-head">
+      <span class="forecast-company">${escapeHtml(t.company || "")}</span>
+      ${t.symbol ? `<span class="forecast-symbol">${escapeHtml(t.symbol)}</span>` : ""}
+      <span class="scenario scenario-${scenario}">${SCENARIO_LABEL[scenario] || scenario}</span>
+      ${renderStars(t.potential_rating)}
+    </div>
+    <div class="forecast-metrics">
+      <div><span class="forecast-metric-label">4 W</span><span class="forecast-metric-val">${fmtPct(exp30)}</span></div>
+      <div><span class="forecast-metric-label">3 M</span><span class="forecast-metric-val">${fmtPct(exp90)}</span></div>
+      <div><span class="forecast-metric-label">± Band</span><span class="forecast-metric-val">${fmtPct(unc)}</span></div>
+      ${t.last_close ? `<div><span class="forecast-metric-label">Kurs</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}</span></div>` : ""}
+    </div>
+    <div class="forecast-chart-wrap"><canvas id="${canvasId}"></canvas></div>
+    ${t.thesis ? `<p class="forecast-thesis">${escapeHtml(t.thesis)}</p>` : ""}
+    ${(t.key_drivers || []).length ? `<div class="forecast-drivers">Treiber: ${t.key_drivers.map((d) => `<span class="driver-tag">${escapeHtml(d)}</span>`).join(" ")}</div>` : ""}
+  </div>`;
+}
+
 async function loadForecast() {
-  const list = document.getElementById("forecast-list");
+  const portfolioList = document.getElementById("forecast-portfolio-list");
+  const watchlistList = document.getElementById("forecast-watchlist-list");
   const commentBox = document.getElementById("forecast-commentary");
   try {
     const data = await fetchJSON("forecast_data.json");
@@ -660,45 +709,55 @@ async function loadForecast() {
     } else {
       commentBox.innerHTML = "";
     }
+
     const tickers = data.tickers || [];
-    if (tickers.length === 0) {
-      list.innerHTML = `<div class="empty-state"><span class="em">📉</span>Noch keine Prognose-Daten. Wird beim nächsten 19-Uhr-Lauf erzeugt.</div>`;
-      return;
-    }
     destroyForecastCharts();
-    let html = "";
-    for (let i = 0; i < tickers.length; i++) {
-      const t = tickers[i];
-      const canvasId = `forecast-chart-${i}`;
-      const scenario = t.scenario || "neutral";
-      const exp30 = t.forecast?.expected_change_30d_pct;
-      const exp90 = t.forecast?.expected_change_90d_pct;
-      const unc = t.forecast?.uncertainty_pct;
-      const fmtPct = (v) => (v === null || v === undefined) ? "—" : `${v > 0 ? "+" : ""}${Number(v).toFixed(1)} %`;
-      html += `<div class="forecast-card">
-        <div class="forecast-card-head">
-          <span class="forecast-company">${escapeHtml(t.company || "")}</span>
-          ${t.symbol ? `<span class="forecast-symbol">${escapeHtml(t.symbol)}</span>` : ""}
-          <span class="scenario scenario-${scenario}">${SCENARIO_LABEL[scenario] || scenario}</span>
-        </div>
-        <div class="forecast-metrics">
-          <div><span class="forecast-metric-label">30 T</span><span class="forecast-metric-val">${fmtPct(exp30)}</span></div>
-          <div><span class="forecast-metric-label">90 T</span><span class="forecast-metric-val">${fmtPct(exp90)}</span></div>
-          <div><span class="forecast-metric-label">± Band</span><span class="forecast-metric-val">${fmtPct(unc)}</span></div>
-          ${t.last_close ? `<div><span class="forecast-metric-label">Stand</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}</span></div>` : ""}
-        </div>
-        <div class="forecast-chart-wrap"><canvas id="${canvasId}"></canvas></div>
-        ${t.thesis ? `<p class="forecast-thesis">${escapeHtml(t.thesis)}</p>` : ""}
-        ${(t.key_drivers || []).length ? `<div class="forecast-drivers">Treiber: ${t.key_drivers.map((d) => `<span class="driver-tag">${escapeHtml(d)}</span>`).join(" ")}</div>` : ""}
-      </div>`;
+
+    // Fallback-Kategorisierung: Watchlist-Werte erkennen wir auch ohne explizites Feld.
+    const enriched = tickers.map((t) => ({
+      ...t,
+      category: t.category === "watchlist" || t.category === "portfolio"
+        ? t.category
+        : (WATCHLIST_COMPANIES.includes(t.company) ? "watchlist" : "portfolio"),
+    }));
+
+    const portfolio = enriched.filter((t) => t.category === "portfolio");
+    const watchlist = enriched.filter((t) => t.category === "watchlist");
+
+    // --- Portfolio-Sektion ---
+    if (portfolio.length === 0) {
+      portfolioList.innerHTML = `<div class="empty-state"><span class="em">📉</span>Keine Portfolio-Einschätzungen im aktuellen Bericht.</div>`;
+    } else {
+      portfolioList.innerHTML = portfolio
+        .map((t, i) => renderForecastCard(t, `forecast-chart-portfolio-${i}`))
+        .join("");
     }
-    list.innerHTML = html;
-    // Charts erst nach DOM-Injection erzeugen
-    for (let i = 0; i < tickers.length; i++) {
-      renderForecastChart(`forecast-chart-${i}`, tickers[i]);
-    }
+
+    // --- Watchlist-Sektion: fehlende Werte als Platzhalter zeigen ---
+    const watchlistByCompany = new Map(watchlist.map((t) => [t.company, t]));
+    const watchlistCards = WATCHLIST_COMPANIES.map((company, i) => {
+      const t = watchlistByCompany.get(company);
+      return t
+        ? renderForecastCard(t, `forecast-chart-watchlist-${i}`)
+        : renderEmptyWatchlistCard(company);
+    });
+    // Falls Claude zusätzliche Watchlist-Einträge schickt, hängen wir die hinten an.
+    const extra = watchlist.filter((t) => !WATCHLIST_COMPANIES.includes(t.company));
+    extra.forEach((t, i) =>
+      watchlistCards.push(renderForecastCard(t, `forecast-chart-watchlist-extra-${i}`))
+    );
+    watchlistList.innerHTML = watchlistCards.join("");
+
+    // Charts erst nach DOM-Injection erzeugen.
+    portfolio.forEach((t, i) => renderForecastChart(`forecast-chart-portfolio-${i}`, t));
+    WATCHLIST_COMPANIES.forEach((company, i) => {
+      const t = watchlistByCompany.get(company);
+      if (t) renderForecastChart(`forecast-chart-watchlist-${i}`, t);
+    });
+    extra.forEach((t, i) => renderForecastChart(`forecast-chart-watchlist-extra-${i}`, t));
   } catch (e) {
-    list.innerHTML = `<div class="empty-state"><span class="em">📉</span>Noch keine Prognose-Daten. Wird beim nächsten 19-Uhr-Lauf erzeugt.</div>`;
+    portfolioList.innerHTML = `<div class="empty-state"><span class="em">📉</span>Noch keine Prognose-Daten. Wird beim nächsten 19-Uhr-Lauf erzeugt.</div>`;
+    watchlistList.innerHTML = WATCHLIST_COMPANIES.map(renderEmptyWatchlistCard).join("");
   }
 }
 

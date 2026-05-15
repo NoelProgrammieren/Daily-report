@@ -63,13 +63,28 @@ TICKER_MAP = {
     "Siemens": "SIE.DE",
     "Lockheed Martin": "LMT",
     "Rheinmetall": "RHM.DE",
-    # ETFs
+    # Watchlist (rein beobachtend, keine Holdings)
+    "Oracle": "ORCL",
+    "Boeing": "BA",
+    "Airbus": "AIR.PA",
+    "MSCI World Health Care": "WHEA.DE",
+    # ETFs (Holdings)
     "Core S&P 500": "CSPX.L",
     "Core MSCI World": "IWDA.L",
     "MSCI World Information Technology": "WITS.L",
     "MSCI Emerging Markets Ex China": "EMXC",
     "Russell 2000 U.S. Small Cap": "IWM",
 }
+
+# Reine Watchlist-Werte (keine Holdings). Erscheinen im
+# Portfolio-&-Watchlist-Tab in einer separaten Sektion.
+WATCHLIST_COMPANIES = [
+    "Walmart",
+    "Oracle",
+    "MSCI World Health Care",
+    "Boeing",
+    "Airbus",
+]
 
 PORTFOLIO_PROMPT = """# 📊 BRANCHEN-TRACKER – Daily News & Updates
 
@@ -114,7 +129,11 @@ Watch: Eli Lilly (GLP-1, KI-Medizin), Moderna (mRNA-Pipeline)
 Watch: Caterpillar (Infrastruktur-Bellwether), Siemens (europäische Perspektive)
 
 ### 🛡️ Rüstung & Luft-/Raumfahrt
-Watch: Lockheed Martin, Rheinmetall (keine eigenen Positionen – bei relevanten geopolitischen Entwicklungen berichten)
+Watch: Lockheed Martin, Rheinmetall, Boeing, Airbus (keine eigenen Positionen – bei relevanten geopolitischen Entwicklungen oder Großaufträgen berichten)
+
+### 🔭 Erweiterte Watchlist (rein beobachtend, keine Holdings)
+Watch: Walmart, Oracle, MSCI World Health Care ETF (WHEA.DE), Boeing, Airbus.
+Diese Werte erscheinen in der Watchlist-Sektion mit eigener 4-Wochen-Prognose und Potential-Rating. Berichte über sie in den Tagesnachrichten nur, wenn etwas wirklich Relevantes passiert ist (gleiche Schwelle wie Holdings).
 
 ## REPORTING-PRINZIP: QUALITÄT VOR QUANTITÄT
 
@@ -149,6 +168,20 @@ Ein guter Tagesbericht hat **3–6 News-Items gesamt**, nicht 20.
 ## QUELLEN
 Ausschließlich seriöse Quellen: Reuters, Bloomberg, CNBC, Financial Times, Wall Street Journal, SEC Filings, offizielle Unternehmens-Pressemitteilungen. Bei Unsicherheit: lieber weglassen statt spekulieren. Keine Kaufempfehlungen.
 
+## SPRACHE — ZWINGEND DEUTSCH
+
+**ALLE Textfelder müssen auf Deutsch verfasst sein.** Auch wenn deine Quellen englisch sind (Reuters, Bloomberg, CNBC etc.), übersetze die Inhalte sinngemäß ins Deutsche.
+
+**Verboten:**
+- Direkte englische Zitate oder Phrasen im Berichtstext (z.B. "April CPI beat estimates", "rate hike odds", "earnings beat", "guidance lifted")
+- Englische Fachwörter, wenn ein deutsches Äquivalent existiert (statt "rate cut" → "Zinssenkung"; statt "guidance" → "Ausblick"; statt "beat" → "übertroffen").
+- Mischtexte mit englischen Satzfetzen.
+
+**Erlaubt:** Eigennamen (Unternehmen, Indizes), gängige Tickersymbole, etablierte Finanz-Akronyme (CPI, FOMC, EPS, M&A) — diese sollten aber sparsam und mit deutscher Erläuterung im Kontext stehen.
+
+Beispiel falsch: "April CPI beat estimates, sending odds of rate hike higher."
+Beispiel richtig: "Die April-Inflationsdaten (CPI) lagen über den Erwartungen, was die Wahrscheinlichkeit einer Zinserhöhung erhöht."
+
 ## ZEITLICHER KONTEXT
 Bericht wird um 19:00 MEZ/MESZ (= 13:00 ET) erstellt. Erfasst After-Hours-News vom Vortag sowie Pre-Market- und Intraday-Entwicklungen bis Mittag ET. Late-Session-Überraschungen sind noch nicht enthalten.
 
@@ -163,9 +196,27 @@ Zusätzlich zu den Tagesnachrichten lieferst du eine Liste „Hot Takes": Untern
 - Bevorzugt Unternehmen, die ins Portfolio passen (siehe Universum-Liste oben).
 - Hot Takes werden rollierend persistiert. Ein Eintrag verfällt, wenn sein `event_date` vorbei ist.
 
-## PROGNOSE – PORTFOLIO-AUSBLICK
+## PROGNOSE – PORTFOLIO & WATCHLIST
 
-Liefere zusätzlich einen kurzen Portfolio-Ausblick und für 3–6 Kern-Positionen eine quantitative Erwartung. Der Erwartungsbereich darf eine begründete Einschätzung sein (nicht reine Mathematik), MUSS aber an Ereignisse / Trends gekoppelt werden. Klar als „Erwartung", nicht als „Vorhersage" kennzeichnen.
+Liefere einen kurzen Markt-/Portfolio-Ausblick und eine quantitative Erwartung für **zwei Gruppen**:
+
+1. **Portfolio (`category: "portfolio"`):** 3–5 Kern-Holdings (z.B. Apple, NVIDIA, Microsoft, Amazon, Alphabet C).
+2. **Watchlist (`category: "watchlist"`):** ALLE 5 Watchlist-Werte zwingend — Walmart, Oracle, MSCI World Health Care, Boeing, Airbus.
+
+Für jeden Eintrag:
+- `expected_change_30d_pct` (≈ 4 Wochen) PFLICHT
+- `expected_change_90d_pct` (3 Monate) optional
+- `uncertainty_pct` (halbe Bandbreite) PFLICHT
+- `potential_rating` (1–5, PFLICHT): Wie attraktiv ist das Chance-Risiko-Profil auf 4-Wochen-Sicht?
+  - 5 = sehr starkes Setup, klarer Katalysator, gutes Risk/Reward
+  - 4 = überdurchschnittlich attraktiv
+  - 3 = neutral / im Erwartungsbereich
+  - 2 = eher abwartend, Gegenwind
+  - 1 = strukturelle Probleme, kein Setup
+- `thesis` (1–2 deutsche Sätze) PFLICHT
+- `key_drivers` (Liste deutscher Stichworte) PFLICHT
+
+Der Erwartungsbereich darf eine begründete Einschätzung sein (nicht reine Mathematik), MUSS aber an konkrete Ereignisse/Trends gekoppelt werden. Klar als „Erwartung", nicht als „Vorhersage" kennzeichnen.
 
 ## AUSGABE-SCHEMA
 
@@ -210,16 +261,28 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
     }
   ],
   "forecast": {
-    "commentary": "3-5 Sätze: Wie sich das Portfolio in den nächsten 4-8 Wochen voraussichtlich entwickelt. Welche Treiber? Welche Risiken?",
+    "commentary": "3-5 deutsche Sätze: Wie sich Portfolio + Watchlist in den nächsten 4-8 Wochen voraussichtlich entwickeln. Welche Treiber? Welche Risiken?",
     "tickers": [
       {
         "company": "Apple",
+        "category": "portfolio",
         "scenario": "neutral",
         "expected_change_30d_pct": 2.5,
         "expected_change_90d_pct": 5.0,
         "uncertainty_pct": 4.0,
+        "potential_rating": 3,
         "key_drivers": ["WWDC im Juni", "China-Nachfrage", "iPhone-17-Zyklus"],
-        "thesis": "1-2 Sätze begründende Einschätzung"
+        "thesis": "1-2 deutsche Sätze begründende Einschätzung"
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 4,
+        "key_drivers": ["Konsumdaten stabil", "Earnings Mitte Mai"],
+        "thesis": "1-2 deutsche Sätze begründende Einschätzung"
       }
     ]
   },
@@ -246,7 +309,7 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
 **Wichtige Regeln:**
 - Sektoren NUR aufnehmen wenn berichtenswert (keine leeren Einträge!)
 - `hot_takes` darf leer sein wenn heute nichts überzeugendes da ist. NIEMALS spekulative Picks füllen.
-- `forecast.tickers`: 3–6 Einträge aus dem Portfolio (Schwerpunkt auf Einzelaktien). `scenario` ist eines von: "bullish", "neutral", "bearish".
+- `forecast.tickers`: 3–5 Portfolio-Holdings (`category: "portfolio"`) **PLUS** alle 5 Watchlist-Werte (`category: "watchlist"`) — also typischerweise 8–10 Einträge gesamt. Jeder Eintrag bekommt `category` und `potential_rating` (1–5). `scenario` ist eines von: "bullish", "neutral", "bearish".
 - `expected_change_*_pct` und `uncertainty_pct`: Zahlen in Prozent (z.B. `2.5` für +2,5 %). `uncertainty_pct` ist die halbe Bandbreite um die Erwartung (Bandbreite = expected ± uncertainty).
 - `price_change` in news weglassen wenn nicht relevant
 - `outlook` = Ausblick nächste Tage / diese Woche (3-7 Punkte)
@@ -502,9 +565,25 @@ def fetch_forecast_data(forecast: dict) -> dict:
         else:
             print(f"  Kein Ticker-Mapping für '{company}' — Forecast nur ohne Historie.")
 
+        # Fallback-Kategorie: Claude vergibt "portfolio"/"watchlist", aber
+        # falls vergessen, identifizieren wir Watchlist-Werte über die Liste.
+        category = t.get("category")
+        if category not in ("portfolio", "watchlist"):
+            category = "watchlist" if company in WATCHLIST_COMPANIES else "portfolio"
+
+        rating_raw = t.get("potential_rating")
+        try:
+            potential_rating = int(rating_raw) if rating_raw is not None else None
+            if potential_rating is not None:
+                potential_rating = max(1, min(5, potential_rating))
+        except (TypeError, ValueError):
+            potential_rating = None
+
         result.append({
             "company": company,
             "symbol": symbol,
+            "category": category,
+            "potential_rating": potential_rating,
             "history": history,
             "last_close": last_close,
             "last_date": last_date,

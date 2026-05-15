@@ -25,7 +25,7 @@
       <nav class="tabs" role="tablist">
         <button class="tab active" data-tab="today" role="tab">Heute</button>
         <button class="tab" data-tab="hot-takes" role="tab">🔥 Hot Takes</button>
-        <button class="tab" data-tab="forecast" role="tab">📈 Prognose</button>
+        <button class="tab" data-tab="forecast" role="tab">📈 Portfolio &amp; Watchlist</button>
         <button class="tab" data-tab="archive" role="tab">Archiv</button>
         <button class="tab" data-tab="calendar" role="tab">Kalender</button>
       </nav>
@@ -59,11 +59,20 @@
       </section>
 
       <section id="tab-forecast" class="tab-panel">
-        <h2>📈 Prognose – Portfolio-Ausblick</h2>
-        <p class="hint">Historische Kursverläufe (90 Tage) plus Erwartungspfad mit Unsicherheitsband. Erwartung, keine Garantie.</p>
+        <h2>📈 Portfolio &amp; Watchlist</h2>
+        <p class="hint">Aktuelle Kurse, 90-Tage-Historie und 4-Wochen-Erwartung mit Unsicherheitsband. Das Potential-Rating (1–5) bewertet das Chance-Risiko-Profil. Erwartung, keine Garantie.</p>
         <div id="forecast-commentary" class="forecast-commentary"></div>
-        <div id="forecast-list">
-          <p class="loading">Lade Prognose…</p>
+        <div id="forecast-portfolio-section" class="ticker-section">
+          <h3 class="section-head">Mein Portfolio</h3>
+          <div id="forecast-portfolio-list" class="ticker-list">
+            <p class="loading">Lade Portfolio-Werte…</p>
+          </div>
+        </div>
+        <div id="forecast-watchlist-section" class="ticker-section">
+          <h3 class="section-head">Watchlist</h3>
+          <div id="forecast-watchlist-list" class="ticker-list">
+            <p class="loading">Lade Watchlist…</p>
+          </div>
         </div>
       </section>
 

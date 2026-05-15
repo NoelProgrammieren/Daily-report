@@ -46,6 +46,7 @@ jobs:
         run: python -u generate_report.py
 
       - name: Commit and push changes
+        id: commit_push
         if: always()
         run: |
           git config user.name "github-actions[bot]"
@@ -69,8 +70,37 @@ jobs:
               echo "Alle 3 Push-Versuche fehlgeschlagen — Action wird als failed markiert."
               exit 1
             fi
+            echo "report_pushed=true" >> "$GITHUB_OUTPUT"
           else
             echo "Keine Änderungen — nichts zu committen."
+            echo "report_pushed=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Telegram-Benachrichtigung
+        if: success() && steps.commit_push.outputs.report_pushed == 'true'
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        continue-on-error: true
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram-Secrets fehlen — Notification übersprungen (kein Fehler)."
+            exit 0
+          fi
+          TODAY=$(TZ='Europe/Berlin' date +'%d.%m.%Y')
+          SITE_URL="https://noelprogrammieren.github.io/Daily-report/"
+          MESSAGE=$(printf '📊 *Daily Stock Report vom %s ist online*\n\n🔗 [Bericht öffnen](%s)' "$TODAY" "$SITE_URL")
+          HTTP_CODE=$(curl -s -o /tmp/tg_response.json -w "%{http_code}" \
+            -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
+            -d "chat_id=${TELEGRAM_CHAT_ID}" \
+            -d "parse_mode=Markdown" \
+            -d "disable_web_page_preview=false" \
+            --data-urlencode "text=${MESSAGE}")
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "Telegram-Notification gesendet."
+          else
+            echo "Telegram-API antwortete mit HTTP $HTTP_CODE:"
+            cat /tmp/tg_response.json || true
           fi
 
   deploy:

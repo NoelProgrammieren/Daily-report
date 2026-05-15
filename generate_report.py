@@ -179,8 +179,16 @@ Ausschließlich seriöse Quellen: Reuters, Bloomberg, CNBC, Financial Times, Wal
 
 **Erlaubt:** Eigennamen (Unternehmen, Indizes), gängige Tickersymbole, etablierte Finanz-Akronyme (CPI, FOMC, EPS, M&A) — diese sollten aber sparsam und mit deutscher Erläuterung im Kontext stehen.
 
+**Übersetzungspflicht für News-Zitate:** Auch wenn deine Web-Suche englische Schlagzeilen oder Auszüge liefert, gibst du im Bericht NIE den englischen Originaltext wieder. Du formulierst den Inhalt zwingend auf Deutsch um. Das gilt für ALLE Felder: `macro.*`, `sectors.*.news.*` (title, summary, investor_relevance), `hot_takes.event_basis`, `hot_takes.thesis`, `hot_takes.risks`, `forecast.commentary`, `forecast.tickers.*.thesis`, `forecast.tickers.*.key_drivers`, `forecast.tickers.*.pros`, `forecast.tickers.*.cons`, `outlook.*`, `calendar_events.*`. Kein Feld darf englischen Fließtext oder ganze englische Sätze enthalten.
+
 Beispiel falsch: "April CPI beat estimates, sending odds of rate hike higher."
 Beispiel richtig: "Die April-Inflationsdaten (CPI) lagen über den Erwartungen, was die Wahrscheinlichkeit einer Zinserhöhung erhöht."
+
+Beispiel falsch (News-Quote): "Apple hit all-time intraday high of $290.33"
+Beispiel richtig: "Apple erreichte ein Allzeit-Intraday-Hoch bei 290,33 USD."
+
+Beispiel falsch (Hot-Take-These): "CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports."
+Beispiel richtig: "Die Teilnahme von CEO Huang an der US-Delegation beim China-Gipfel deutet auf einen möglichen Weg für Exporte fortgeschrittener Chips hin."
 
 ## SPRACHNIVEAU — LAIENVERSTÄNDLICH
 
@@ -219,6 +227,10 @@ Zusätzlich zu den Tagesnachrichten lieferst du eine Liste „Hot Takes": Untern
 - Rating 1–5 nach Stärke der Prognose (5 = sehr hohe Konviktion, 1 = nur leichter Vorteil).
 - Bevorzugt Unternehmen, die ins Portfolio passen (siehe Universum-Liste oben).
 - Hot Takes werden rollierend persistiert. Ein Eintrag verfällt, wenn sein `event_date` vorbei ist.
+- **Jeder Hot Take MUSS `expected_move_pct` und `price_target` enthalten.** Beide Bandbreiten sind plausibel zur These zu wählen:
+  - `expected_move_pct`: {`low`, `high`, `direction`}. `direction` ist `"up"` bei bullischen, `"down"` bei bearishen Takes. Beispiel: +6 bis +12 % in 2 Wochen → `{"low": 6.0, "high": 12.0, "direction": "up"}`.
+  - `price_target`: {`low`, `high`, `currency`}. Konkrete Preisspanne in der Heimatwährung. Beispiel: 310–325 USD → `{"low": 310.0, "high": 325.0, "currency": "USD"}`.
+  - Konsistenz: aktueller Kurs + `expected_move_pct` muss zur `price_target`-Range passen.
 
 ## PROGNOSE – PORTFOLIO & WATCHLIST
 
@@ -284,6 +296,8 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
       "event_basis": "Q1 FY27 Earnings am 2026-05-22 — Konsens erwartet Beat dank Hyperscaler-Capex",
       "event_date": "2026-05-22",
       "time_horizon": "1-2 Wochen",
+      "expected_move_pct": { "low": 6.0, "high": 12.0, "direction": "up" },
+      "price_target": { "low": 310.0, "high": 325.0, "currency": "USD" },
       "thesis": "2-3 Sätze: Warum die Prognose vielversprechend ist. Verweis auf konkrete Daten / Aussagen / Quellen.",
       "risks": "1 Satz: was diese Prognose entgleisen könnte"
     }
@@ -378,6 +392,25 @@ def save_calendar(cal: dict) -> None:
     CALENDAR_FILE.write_text(
         json.dumps(cal, indent=2, ensure_ascii=False), encoding="utf-8"
     )
+
+
+_CITE_RX = re.compile(r"<cite\b[^>]*>(.*?)</cite>", re.DOTALL)
+
+
+def _strip_cite_tags(text: str) -> str:
+    """Entfernt <cite index="..."> Tags aus dem web_search-Tool, behält den Inhalt."""
+    return _CITE_RX.sub(r"\1", text)
+
+
+def _strip_cite_deep(obj):
+    """Wendet _strip_cite_tags rekursiv auf alle Strings in einer JSON-Struktur an."""
+    if isinstance(obj, str):
+        return _strip_cite_tags(obj)
+    if isinstance(obj, list):
+        return [_strip_cite_deep(x) for x in obj]
+    if isinstance(obj, dict):
+        return {k: _strip_cite_deep(v) for k, v in obj.items()}
+    return obj
 
 
 def _normalize_json_text(text: str) -> str:
@@ -527,8 +560,18 @@ def build_hot_takes_context(hot_takes: dict, today: str) -> str:
         return "Aktuell keine offenen Hot Takes."
     lines = ["Aktuell offene Hot Takes (bitte aktualisieren oder bestätigen, nicht doppelt aufnehmen):"]
     for t in sorted(active, key=lambda e: e.get("event_date", ""))[:15]:
+        extras = []
+        mv = t.get("expected_move_pct") or {}
+        if isinstance(mv, dict) and ("low" in mv or "high" in mv):
+            direction = mv.get("direction", "up")
+            sign = "+" if direction == "up" else "-"
+            extras.append(f"Move {sign}{mv.get('low','?')}–{sign}{mv.get('high','?')} %")
+        pt = t.get("price_target") or {}
+        if isinstance(pt, dict) and ("low" in pt or "high" in pt):
+            extras.append(f"Ziel {pt.get('low','?')}–{pt.get('high','?')} {pt.get('currency','')}".strip())
+        extra_str = f" [{' · '.join(extras)}]" if extras else ""
         lines.append(
-            f"- {t.get('company','?')} (Rating {t.get('rating','?')}, Event {t.get('event_date','?')}): {t.get('event_basis','')}"
+            f"- {t.get('company','?')} (Rating {t.get('rating','?')}, Event {t.get('event_date','?')}){extra_str}: {t.get('event_basis','')}"
         )
     return "\n".join(lines)
 
@@ -891,6 +934,8 @@ def generate_report() -> None:
             raise RuntimeError(
                 f"JSON-Parsing fehlgeschlagen (auch nach Retry): {e2}. Rohtext: {debug_path}"
             ) from e2
+
+    data = _strip_cite_deep(data)
 
     report_data = {
         "date": today,

@@ -2,8 +2,8 @@
   "date": "2026-05-14",
   "generated_at": "2026-05-14T20:29:55.749543+02:00",
   "macro": {
-    "market_state": "<cite index=\"42-1,42-2,42-6\">S&P 500 added 0.9% to all-time high; Dow Jones climbed 0.8% and is on track to finish above the 50,000 level; Nasdaq composite 1% higher</cite>. <cite index=\"43-7\">Stocks are rising on strong earnings and optimism around U.S.-China trade talks, along with solid April retail sales data</cite>.",
-    "macro_drivers": "<cite index=\"42-7,42-8\">Cisco jumped 15.5% after reporting better profit and revenue than analysts expected, with CEO noting \"very strong, broad-based demand for our products\"</cite>. <cite index=\"44-20\">President Trump is accompanied by big corporate CEOs, namely, Jensen Huang of NVIDIA, Elon Musk of Tesla and Tim Cook of Apple</cite> at China summit. <cite index=\"44-6,44-9\">Headline PPI rose 1.4% in April, significantly above consensus of 0.5%; year-over-year PPI advanced 6%, the biggest monthly increase since December 2022</cite>.",
+    "market_state": "S&P 500 added 0.9% to all-time high; Dow Jones climbed 0.8% and is on track to finish above the 50,000 level; Nasdaq composite 1% higher. Stocks are rising on strong earnings and optimism around U.S.-China trade talks, along with solid April retail sales data.",
+    "macro_drivers": "Cisco jumped 15.5% after reporting better profit and revenue than analysts expected, with CEO noting \"very strong, broad-based demand for our products\". President Trump is accompanied by big corporate CEOs, namely, Jensen Huang of NVIDIA, Elon Musk of Tesla and Tim Cook of Apple at China summit. Headline PPI rose 1.4% in April, significantly above consensus of 0.5%; year-over-year PPI advanced 6%, the biggest monthly increase since December 2022.",
     "sentiment": "Risk-on momentum despite inflation concerns; AI infrastructure boom and trade optimism dominating. Geopolitical tensions with Iran creating volatility.",
     "sp500": "7,513.5 (+0.93%)",
     "nasdaq": "26,694.0 (+1.10%)",
@@ -23,21 +23,21 @@
           "priority": "fire",
           "title": "Apple Secures CEO Transition; WWDC AI Announcements Expected June 8",
           "rating": 5,
-          "summary": "<cite index=\"5-9\">Tim Cook will become executive chairman effective September 1, 2026, while John Ternus, senior vice president of Hardware Engineering, will become Apple's next CEO</cite>. <cite index=\"10-1,10-4\">WWDC online June 8-12 will spotlight AI advancements and exciting new software and developer tools</cite>. <cite index=\"1-4,1-5,1-7\">Apple reported Q2 FY2026 revenue of $111.2 billion, up 17% YoY; diluted EPS $2.01, up 22% YoY; iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup</cite>.",
+          "summary": "Tim Cook will become executive chairman effective September 1, 2026, while John Ternus, senior vice president of Hardware Engineering, will become Apple's next CEO. WWDC online June 8-12 will spotlight AI advancements and exciting new software and developer tools. Apple reported Q2 FY2026 revenue of $111.2 billion, up 17% YoY; diluted EPS $2.01, up 22% YoY; iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup.",
           "investor_relevance": "Leadership stability validated under Cook transition; upcoming WWDC keynote (June 8) will be crucial for showcasing AI strategy and iPhone 18/foldable roadmap; services momentum continuing"
         },
         {
           "priority": "lightning",
           "title": "Intel Foundry Gains Credibility – Apple Deal in Preliminary Talks",
           "rating": 4,
-          "summary": "<cite index=\"22-4,22-5\">Apple and Intel signed a preliminary chipmaking agreement in December 2025 for Apple to use Intel Foundry to produce the M7 for MacBooks and A21 for iPhones</cite>. <cite index=\"24-26,24-27\">Tim Cook acknowledged supply constraints on Q1 2026 earnings call; 100% dependence on TSMC weakens Apple's negotiating leverage and exposes it to geopolitical risk</cite>. <cite index=\"28-3\">Tesla signed on as Intel's first major 14A customer for Terafab AI chip complex</cite>.",
+          "summary": "Apple and Intel signed a preliminary chipmaking agreement in December 2025 for Apple to use Intel Foundry to produce the M7 for MacBooks and A21 for iPhones. Tim Cook acknowledged supply constraints on Q1 2026 earnings call; 100% dependence on TSMC weakens Apple's negotiating leverage and exposes it to geopolitical risk. Tesla signed on as Intel's first major 14A customer for Terafab AI chip complex.",
           "investor_relevance": "Intel foundry thesis now has institutional validation from Apple; if M7 production hits late 2027, could reshape Intel's capex story and support diversification narrative"
         },
         {
           "priority": "lightning",
           "title": "NVIDIA Climbs 7 Straight Days; Q1 FY27 Earnings Forecast $78.8B Revenue (May 20)",
           "rating": 5,
-          "summary": "<cite index=\"47-2,47-6,47-7\">Nvidia climbed for a seventh straight day; record-breaking run in equities drove S&P 500 above 7,500, led by gains in chipmakers</cite>. <cite index=\"15-37\">Wall Street consensus expects $78.8 billion in revenue and $1.77 EPS for Q1</cite>. <cite index=\"12-7,12-10\">Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators and supporting expectations for a Q1 double beat and bullish guidance</cite>.",
+          "summary": "Nvidia climbed for a seventh straight day; record-breaking run in equities drove S&P 500 above 7,500, led by gains in chipmakers. Wall Street consensus expects $78.8 billion in revenue and $1.77 EPS for Q1. Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators and supporting expectations for a Q1 double beat and bullish guidance.",
           "investor_relevance": "Key catalyst on May 20 after market close; prediction market consensus ~90% probability of beat; hyperscaler capex surge validates long-term demand thesis"
         }
       ]
@@ -53,7 +53,7 @@
           "priority": "pin",
           "title": "Microsoft-OpenAI Partnership Restructured; Revenue Cap at $38B Signals Competitive Shift",
           "rating": 3,
-          "summary": "<cite index=\"34-2,34-5,34-6\">OpenAI has agreed to cap Microsoft's revenue sharing at $38 billion; Microsoft is no longer the sole provider for OpenAI's infrastructure, as OpenAI diversifies with deals with AWS and other cloud partners</cite>. This signals OpenAI's intent to reduce dependency on a single cloud provider and potentially diversify AI monetization.",
+          "summary": "OpenAI has agreed to cap Microsoft's revenue sharing at $38 billion; Microsoft is no longer the sole provider for OpenAI's infrastructure, as OpenAI diversifies with deals with AWS and other cloud partners. This signals OpenAI's intent to reduce dependency on a single cloud provider and potentially diversify AI monetization.",
           "investor_relevance": "Structural shift in Microsoft's expected OpenAI upside; impacts long-term ROI assumptions on Azure CapEx; watch Microsoft guidance in future earnings for revised AI economics"
         }
       ]
@@ -63,33 +63,33 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "<cite index=\"15-28\">NVIDIA scheduled to report earnings for first quarter of fiscal 2027 on May 20</cite> after market close.",
+      "event_basis": "NVIDIA scheduled to report earnings for first quarter of fiscal 2027 on May 20 after market close.",
       "event_date": "2026-05-20",
       "time_horizon": "5–7 days (pre-earnings)",
-      "thesis": "<cite index=\"12-7,12-10\">Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators</cite>. <cite index=\"14-27\">CEO Jensen Huang expects at least $1 trillion of opportunity tied to Blackwell and Rubin systems through 2027</cite>. <cite index=\"15-32,15-34\">Prediction markets overwhelmingly favor Nvidia beating expectations for Q1, with implied probability around 90% on Polymarket</cite>.",
+      "thesis": "Major hyperscalers raised FY2026 CAPEX by ~$51 billion (+77% YoY), signaling stronger demand for NVDA's AI accelerators. CEO Jensen Huang expects at least $1 trillion of opportunity tied to Blackwell and Rubin systems through 2027. Prediction markets overwhelmingly favor Nvidia beating expectations for Q1, with implied probability around 90% on Polymarket.",
       "risks": "Stock already at all-time highs; margin pressure from competing AI chips (AMD, custom accelerators) and rising memory costs could compress guidance"
     },
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "<cite index=\"10-1,10-6\">WWDC2026 online June 8-12 with Keynote and Platforms State of the Union on Monday, June 8</cite>.",
+      "event_basis": "WWDC2026 online June 8-12 with Keynote and Platforms State of the Union on Monday, June 8.",
       "event_date": "2026-06-08",
       "time_horizon": "3 weeks",
-      "thesis": "<cite index=\"10-4\">WWDC26 will spotlight incredible updates for Apple platforms, including AI advancements and exciting new software and developer tools</cite>. <cite index=\"1-7\">iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup</cite>. Leadership transition to Ternus (September 1) signals operational continuity while Cook can focus on geopolitical/government relations.",
+      "thesis": "WWDC26 will spotlight incredible updates for Apple platforms, including AI advancements and exciting new software and developer tools. iPhone achieved March quarter revenue record, fueled by iPhone 17 lineup. Leadership transition to Ternus (September 1) signals operational continuity while Cook can focus on geopolitical/government relations.",
       "risks": "Foldable iPhone investor expectations may exceed reality; iPhone 18 demand in fall could disappoint if AI features lack differentiation vs. Android competitors"
     },
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "<cite index=\"27-1\">Firm customer commitments expected to begin in second half of 2026</cite>; Apple M7/A21 deal preliminary but validation of 18A-P process credibility.",
+      "event_basis": "Firm customer commitments expected to begin in second half of 2026; Apple M7/A21 deal preliminary but validation of 18A-P process credibility.",
       "event_date": "2026-06-30",
       "time_horizon": "6–8 weeks",
-      "thesis": "<cite index=\"22-4,22-5,22-15\">Apple and Intel signed preliminary chipmaking agreement in December 2025; if the rumor is accurate, Intel could begin making Apple's M7 by 2027 and an iPhone class A21 chip by 2028</cite>. <cite index=\"28-2\">CFO David Zinsner noted company continues to improve yields on its older nodes, such as Intel 4 and Intel 3, while refining yield of the current top-performing 18A node</cite>.",
+      "thesis": "Apple and Intel signed preliminary chipmaking agreement in December 2025; if the rumor is accurate, Intel could begin making Apple's M7 by 2027 and an iPhone class A21 chip by 2028. CFO David Zinsner noted company continues to improve yields on its older nodes, such as Intel 4 and Intel 3, while refining yield of the current top-performing 18A node.",
       "risks": "18A yields may not meet Apple's stringent quality bar; loss-making foundry division adds execution risk; competitive pressure from TSMC and Samsung remains"
     }
   ],
   "forecast": {
-    "commentary": "Market sentiment is decidedly risk-on, buoyed by strong AI capex cycles, solid earnings beats (Cisco, Apple), and a Trump-Xi summit signaling reduced trade friction. <cite index=\"44-6,44-9\">Hot inflation data (PPI +1.4% in April, highest since March 2022) creates headwind for rate-cut hopes</cite>, but equity market is absorbing this as transitory. NVIDIA's May 20 earnings is the lynchpin event. Within the portfolio, Apple's dual catalyst (CEO transition + WWDC AI story) and Intel's foundry validation provide upside momentum, while Microsoft faces OpenAI partnership restructuring headwinds.",
+    "commentary": "Market sentiment is decidedly risk-on, buoyed by strong AI capex cycles, solid earnings beats (Cisco, Apple), and a Trump-Xi summit signaling reduced trade friction. Hot inflation data (PPI +1.4% in April, highest since March 2022) creates headwind for rate-cut hopes, but equity market is absorbing this as transitory. NVIDIA's May 20 earnings is the lynchpin event. Within the portfolio, Apple's dual catalyst (CEO transition + WWDC AI story) and Intel's foundry validation provide upside momentum, while Microsoft faces OpenAI partnership restructuring headwinds.",
     "tickers": [
       {
         "company": "NVIDIA",
@@ -128,7 +128,7 @@
           "Azure CapEx burden vs. ROI timing",
           "Q4 earnings in July will clarify AI monetization timeline"
         ],
-        "thesis": "<cite index=\"34-2,34-6\">OpenAI cap on Microsoft revenue sharing at $38B and diversification to AWS signals softening ROI expectations</cite>. <cite index=\"38-6,38-7\">Free cash flow down 22% YoY in Q3; year-to-date FCF $47.4B vs. $98B net profit, raising capital efficiency concerns</cite>. Near-term pressure likely; recovery hinges on Copilot/Agent 365 monetization proof points."
+        "thesis": "OpenAI cap on Microsoft revenue sharing at $38B and diversification to AWS signals softening ROI expectations. Free cash flow down 22% YoY in Q3; year-to-date FCF $47.4B vs. $98B net profit, raising capital efficiency concerns. Near-term pressure likely; recovery hinges on Copilot/Agent 365 monetization proof points."
       },
       {
         "company": "Intel",
@@ -141,7 +141,7 @@
           "Tesla Terafab 14A commitment (first major external customer)",
           "Foundry segment expected to narrow losses by end of 2027"
         ],
-        "thesis": "<cite index=\"27-18\">Apple and Intel have reached preliminary agreement for Intel to manufacture some chips that power Apple devices</cite>. Foundry business now has multi-year customer anchor. <cite index=\"26-19,26-20\">Q1 2026 non-GAAP EPS $0.29 (vs. $0.01 consensus) and Data Center/AI revenue up 22% YoY to $5.05B show improving fundamentals</cite>. Risk: Valuation already reflects foundry upside; yields must prove repeatable at scale."
+        "thesis": "Apple and Intel have reached preliminary agreement for Intel to manufacture some chips that power Apple devices. Foundry business now has multi-year customer anchor. Q1 2026 non-GAAP EPS $0.29 (vs. $0.01 consensus) and Data Center/AI revenue up 22% YoY to $5.05B show improving fundamentals. Risk: Valuation already reflects foundry upside; yields must prove repeatable at scale."
       },
       {
         "company": "Berkshire Hathaway B",

@@ -2,9 +2,9 @@
   "date": "2026-05-13",
   "generated_at": "2026-05-13T20:53:55.000913+02:00",
   "macro": {
-    "market_state": "<cite index=\"24-1\">US 500 rose to 7,414 points on May 13, gaining 0.18%</cite>. <cite index=\"26-6,26-7\">S&P 500 rose to new all-time intraday high as tech enthusiasm overshadowed hotter-than-expected inflation report; broad index rose 0.7%, Nasdaq added 1.4%</cite>.",
-    "macro_drivers": "<cite index=\"26-28\">Producer price index jumped 1.4% in April</cite> — <cite index=\"31-28,31-29\">largest monthly increase since March 2022, much more than 0.5% expected</cite>. <cite index=\"33-3\">Data showing resurgence in inflation has fueled wagers Federal Reserve will keep rates higher for longer</cite>. <cite index=\"24-8\">NVIDIA CEO Huang joined Trump delegation in China summit, potentially paving way for export pathway recovery</cite>.",
-    "sentiment": "<cite index=\"26-9\">Technology stocks outperformed from rest of market, as inflation fears weighed on other sectors</cite> — Risk-on in tech, Risk-off elsewhere, Bifurcated.",
+    "market_state": "US 500 rose to 7,414 points on May 13, gaining 0.18%. S&P 500 rose to new all-time intraday high as tech enthusiasm overshadowed hotter-than-expected inflation report; broad index rose 0.7%, Nasdaq added 1.4%.",
+    "macro_drivers": "Producer price index jumped 1.4% in April — largest monthly increase since March 2022, much more than 0.5% expected. Data showing resurgence in inflation has fueled wagers Federal Reserve will keep rates higher for longer. NVIDIA CEO Huang joined Trump delegation in China summit, potentially paving way for export pathway recovery.",
+    "sentiment": "Technology stocks outperformed from rest of market, as inflation fears weighed on other sectors — Risk-on in tech, Risk-off elsewhere, Bifurcated.",
     "sp500": "7,414 (+0.18%)",
     "nasdaq": "26,179 (+0.35%)",
     "dax": "N/A (US focus; DAX +0.72% per search 21-2)"
@@ -23,7 +23,7 @@
           "priority": "fire",
           "title": "NVIDIA CEO Huang Joins Trump to China Summit — Export Pathway Signal",
           "rating": 5,
-          "summary": "<cite index=\"24-8\">NVIDIA CEO Huang joined Trump delegation in China summit, potentially paving way for exports of more advanced chips to China</cite>. <cite index=\"34-4,34-5,34-6\">Jensen Huang joined Trump on trip to China to meet President Xi; shares up another $3.12 in premarket; Oppenheimer analysts reiterated outperform rating on NVIDIA ahead of earnings</cite>.",
+          "summary": "NVIDIA CEO Huang joined Trump delegation in China summit, potentially paving way for exports of more advanced chips to China. Jensen Huang joined Trump on trip to China to meet President Xi; shares up another $3.12 in premarket; Oppenheimer analysts reiterated outperform rating on NVIDIA ahead of earnings.",
           "price_change": "+2.5%",
           "investor_relevance": "Geopolitical breakthrough on chip export restrictions directly benefits NVIDIA's near-term guidance and validates multi-year Blackwell ramp narrative ahead of May 20 earnings."
         },
@@ -31,7 +31,7 @@
           "priority": "fire",
           "title": "Intel–Apple Foundry Deal Confirmed — Preliminary Agreement Finalized",
           "rating": 5,
-          "summary": "<cite index=\"12-2,12-5\">Wall Street Journal reported Apple and Intel have reached preliminary agreement for Intel to produce some chips for Apple devices</cite>. <cite index=\"20-12,20-17\">Intel stock hit intraday high of $130.57, surpassing dot-com era peak of $74.88 from August 2000 by roughly 74%; jumped over 13% on Friday</cite>.",
+          "summary": "Wall Street Journal reported Apple and Intel have reached preliminary agreement for Intel to produce some chips for Apple devices. Intel stock hit intraday high of $130.57, surpassing dot-com era peak of $74.88 from August 2000 by roughly 74%; jumped over 13% on Friday.",
           "price_change": "+14% (Friday 5/9–10)",
           "investor_relevance": "Major structural validation of Intel's foundry strategy under Lip-Bu Tan. While Intel position is small (1.53%), deal signals real manufacturing diversification risk for TSMC and positions Intel as viable alternative supplier. Formal contract execution expected Q2–Q3 2026."
         },
@@ -39,7 +39,7 @@
           "priority": "lightning",
           "title": "Wholesale Inflation Hotter Than Expected — May Pressure Tech Multiples",
           "rating": 4,
-          "summary": "<cite index=\"26-28,31-28,31-29\">Producer price index jumped 1.4% in April, largest monthly gain since March 2022, much higher than 0.5% expected</cite>. <cite index=\"30-8\">Inflation means Kevin Warsh unlikely to cut rates anytime soon, perhaps for remainder of year</cite>.",
+          "summary": "Producer price index jumped 1.4% in April, largest monthly gain since March 2022, much higher than 0.5% expected. Inflation means Kevin Warsh unlikely to cut rates anytime soon, perhaps for remainder of year.",
           "price_change": "N/A — macro headwind",
           "investor_relevance": "Higher-for-longer Fed rates reduce discount rate on all mega-cap growth positions. Partially offset today by tech enthusiasm and AI narrative strength, but macro headwind for NVIDIA, Apple, Microsoft valuations remains material."
         }
@@ -50,11 +50,11 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings on 2026-05-20 (after market close). <cite index=\"48-1\">NVDA earnings confirmed for Wednesday 05/20/2026 After Market</cite>.",
+      "event_basis": "Q1 FY27 Earnings on 2026-05-20 (after market close). NVDA earnings confirmed for Wednesday 05/20/2026 After Market.",
       "event_date": "2026-05-20",
       "time_horizon": "1 week",
-      "thesis": "<cite index=\"34-6\">Analysts at Oppenheimer reiterated outperform rating ahead of earnings next week</cite>. <cite index=\"49-19,49-20\">Management had highlighted $500B worth of high-confidence demand tied to Blackwell and Rubin through 2026; CEO Jensen Huang said he expects at least $1T of opportunity through 2027</cite>. <cite index=\"24-8\">CEO Huang's participation in US-China summit signals potential export pathway recovery</cite>, removing prior overhang on China sales guidance.",
-      "risks": "<cite index=\"46-10\">Technical picture suggests period of consolidation or pullback increasingly likely before or after earnings</cite>; valuation already priced high on 26x forward earnings."
+      "thesis": "Analysts at Oppenheimer reiterated outperform rating ahead of earnings next week. Management had highlighted $500B worth of high-confidence demand tied to Blackwell and Rubin through 2026; CEO Jensen Huang said he expects at least $1T of opportunity through 2027. CEO Huang's participation in US-China summit signals potential export pathway recovery, removing prior overhang on China sales guidance.",
+      "risks": "Technical picture suggests period of consolidation or pullback increasingly likely before or after earnings; valuation already priced high on 26x forward earnings."
     },
     {
       "company": "Intel",
@@ -62,12 +62,12 @@
       "event_basis": "Apple chip manufacturing agreement reportedly finalized (WSJ/Bloomberg, May 9–12, 2026). Formal contract execution and production roadmap expected Q2–Q3 2026.",
       "event_date": "2026-06-30",
       "time_horizon": "4–8 weeks",
-      "thesis": "<cite index=\"14-5,14-6\">Deal would mark major breakthrough for Intel as it rebuilds semiconductor manufacturing; companies said to have been in discussions over year, with formal agreement reached in recent months</cite>. <cite index=\"20-26\">Intel may be getting major business boost, and Trump administration may score political victory after pushing vocally about importance of local US chip manufacturing</cite>.",
+      "thesis": "Deal would mark major breakthrough for Intel as it rebuilds semiconductor manufacturing; companies said to have been in discussions over year, with formal agreement reached in recent months. Intel may be getting major business boost, and Trump administration may score political victory after pushing vocally about importance of local US chip manufacturing.",
       "risks": "Stock valuation already up 377% YTD; execution risk on first production timelines (18–24 months); margin structure unclear on entry-level Apple products."
     }
   ],
   "forecast": {
-    "commentary": "<cite index=\"26-6,26-7,26-9\">S&P 500 hit new all-time intraday high as technology enthusiasm overshadowed hotter-than-expected inflation; tech stocks outperformed broader market despite inflation headwinds weighed on other sectors</cite>. Over next 4–8 weeks, portfolio faces headwind from sticky inflation (PPI +1.4% MoM, +6% YoY) which signals Fed will remain restrictive and may even hike by year-end. However, tech mega-cap earnings quality, AI infrastructure tailwinds (NVIDIA, Apple China access), and Intel foundry catalysts provide offset. <cite index=\"38-20,38-21\">Markets have completely priced out rate cuts this year; odds of hike by end of year approaching 40%</cite>. Expect continued sector bifurcation: mega-cap tech + semiconductors vs. cyclicals + small-cap.",
+    "commentary": "S&P 500 hit new all-time intraday high as technology enthusiasm overshadowed hotter-than-expected inflation; tech stocks outperformed broader market despite inflation headwinds weighed on other sectors. Over next 4–8 weeks, portfolio faces headwind from sticky inflation (PPI +1.4% MoM, +6% YoY) which signals Fed will remain restrictive and may even hike by year-end. However, tech mega-cap earnings quality, AI infrastructure tailwinds (NVIDIA, Apple China access), and Intel foundry catalysts provide offset. Markets have completely priced out rate cuts this year; odds of hike by end of year approaching 40%. Expect continued sector bifurcation: mega-cap tech + semiconductors vs. cyclicals + small-cap.",
     "tickers": [
       {
         "company": "NVIDIA",
@@ -81,7 +81,7 @@
           "Rubin system pre-orders (agentic AI wave)",
           "$1T long-term TAM affirmation from Huang"
         ],
-        "thesis": "Catalyst-rich near term offset by technical overbought conditions and elevated valuation. <cite index=\"49-19,49-20\">$500B high-confidence Blackwell demand through 2026; CEO expects $1T opportunity through 2027</cite>. China reopening via geopolitical breakthrough removes single largest risk to 2026–2027 guidance."
+        "thesis": "Catalyst-rich near term offset by technical overbought conditions and elevated valuation. $500B high-confidence Blackwell demand through 2026; CEO expects $1T opportunity through 2027. China reopening via geopolitical breakthrough removes single largest risk to 2026–2027 guidance."
       },
       {
         "company": "Intel",
@@ -95,7 +95,7 @@
           "NVIDIA $5B co-investment validation",
           "US government 10% stake + tariff protections"
         ],
-        "thesis": "<cite index=\"17-19\">Apple, Nvidia, and Terafab deals suggest foundry strategy gaining real traction, data center AI business finally showing momentum</cite>. Stock rallied 300%+ YTD but actual revenue inflection tied to 18–24 month production timeline. Risk–reward asymmetric only if formal contract near-term and margins disclosed favorably."
+        "thesis": "Apple, Nvidia, and Terafab deals suggest foundry strategy gaining real traction, data center AI business finally showing momentum. Stock rallied 300%+ YTD but actual revenue inflection tied to 18–24 month production timeline. Risk–reward asymmetric only if formal contract near-term and margins disclosed favorably."
       },
       {
         "company": "Apple",
@@ -123,7 +123,7 @@
           "Q1 2026 earnings beat (April) — maintained strong guidance",
           "Cross-border transaction volume (geopolitical/Iran war tailwind on uncertainty premiums)"
         ],
-        "thesis": "<cite index=\"30-8\">Higher inflation means Warsh not likely to cut rates anytime soon</cite>, supporting payments processing volumes longer. 2.04% position exposed to consumer health; macro headwind from sticky inflation offsets by payment mix resilience and takeover premiums in credit cycle."
+        "thesis": "Higher inflation means Warsh not likely to cut rates anytime soon, supporting payments processing volumes longer. 2.04% position exposed to consumer health; macro headwind from sticky inflation offsets by payment mix resilience and takeover premiums in credit cycle."
       },
       {
         "company": "Berkshire Hathaway B",

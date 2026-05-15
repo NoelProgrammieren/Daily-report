@@ -23,14 +23,14 @@
           "priority": "fire",
           "title": "NVIDIA Q1 FY27 Earnings am 20. Mai – Starke Hypscaler-Capex & Blackwell-Nachfrage treiben Erwartungen in die Höhe",
           "rating": 5,
-          "summary": "<cite index=\"22-4,22-5\">Die vier großen Hyperscaler (Alphabet, Amazon, Meta und Microsoft) haben angekündigt, 2026 zusammen über 700 Milliarden Dollar für Infrastruktur auszugeben – Meta, Alphabet und Microsoft haben ihre Jahresguidance sogar erhöht.</cite> <cite index=\"22-1\">Auf Polymarket liegt die implizierte Wahrscheinlichkeit, dass NVIDIA die Erwartungen übertrifft, bei rund 90 Prozent.</cite> <cite index=\"22-19\">Wall Street erwartet einen Umsatz von 78,8 Milliarden Dollar und einen Gewinn pro Aktie (EPS) von 1,77 Dollar.</cite>",
+          "summary": "Die vier großen Hyperscaler (Alphabet, Amazon, Meta und Microsoft) haben angekündigt, 2026 zusammen über 700 Milliarden Dollar für Infrastruktur auszugeben – Meta, Alphabet und Microsoft haben ihre Jahresguidance sogar erhöht. Auf Polymarket liegt die implizierte Wahrscheinlichkeit, dass NVIDIA die Erwartungen übertrifft, bei rund 90 Prozent. Wall Street erwartet einen Umsatz von 78,8 Milliarden Dollar und einen Gewinn pro Aktie (EPS) von 1,77 Dollar.",
           "investor_relevance": "Dies ist der Schlüssel-Katalysator für KI-Infrastruktur-Überzeugungen – eine positive Überraschung würde dem Sektor Auftrieb geben; eine Enttäuschung hätte breite Auswirkungen auf Tech."
         },
         {
           "priority": "fire",
           "title": "Apple-Intel Chip-Deal: Fundamentale Neuausrichtung der Lieferkette, starke Katalysatoren für beide Unternehmen",
           "rating": 5,
-          "summary": "<cite index=\"50-1\">Nach Monaten Spekulationen meldete das WSJ, dass Apple und Intel eine \"vorläufige Chipfertigungs-Vereinbarung\" erreicht haben, die eine Zusammenarbeit bei Chips für Apple-Geräte vorsieht.</cite> <cite index=\"41-5,41-6,41-7\">TSMCs Kapazität ist begrenzt durch massive KI-Chip-Nachfrage; Apple ist TSMCs zweitgrößter Kunde nach NVIDIA und hat dies genutzt, um sein eigenes Silizium-Programm auszubauen.</cite> <cite index=\"43-4\">Intel-Aktien sind 2026 um über 240 Prozent gestiegen, da Investoren dies als Validation der Foundry-Transformation sehen.</cite>",
+          "summary": "Nach Monaten Spekulationen meldete das WSJ, dass Apple und Intel eine \"vorläufige Chipfertigungs-Vereinbarung\" erreicht haben, die eine Zusammenarbeit bei Chips für Apple-Geräte vorsieht. TSMCs Kapazität ist begrenzt durch massive KI-Chip-Nachfrage; Apple ist TSMCs zweitgrößter Kunde nach NVIDIA und hat dies genutzt, um sein eigenes Silizium-Programm auszubauen. Intel-Aktien sind 2026 um über 240 Prozent gestiegen, da Investoren dies als Validation der Foundry-Transformation sehen.",
           "price_change": "Intel: +19 %, Apple: +2 % (bei Ankündigung)",
           "investor_relevance": "Intel erhält massives Vertrauenssignal und Großkunden-Validierung – grundlegend für die Foundry-Rentabilität. Apple diversifiziert Lieferkette weg von TSMC-Engpässen. Geopolitisch wichtig (US-Chipmaking-Ziel)."
         },
@@ -38,7 +38,7 @@
           "priority": "lightning",
           "title": "Microsoft Q3 FY2026 Earnings: Starkes Wachstum, aber Margendruck durch massive Capex-Erhöhung",
           "rating": 4,
-          "summary": "<cite index=\"5-2\">Microsoft meldete Rekordgewinne am 29. April, aber die Aktie ist 2026 um 14 Prozent gefallen.</cite> <cite index=\"9-11,9-12\">Microsoft wird etwa 118 Milliarden Dollar Capex in der zweiten Jahreshälfte 2026 ausgeben (H2 = Q1-Q2 FY2027) – im Vergleich zu 64,5 Milliarden Dollar Gesamtausgaben in FY2025.</cite> <cite index=\"9-17,9-19\">45 Prozent der Restleistungsverpflichtungen waren an OpenAI gebunden; Alphabet's Gemini und Anthropics Claude drängen jetzt in den Markt.</cite>",
+          "summary": "Microsoft meldete Rekordgewinne am 29. April, aber die Aktie ist 2026 um 14 Prozent gefallen. Microsoft wird etwa 118 Milliarden Dollar Capex in der zweiten Jahreshälfte 2026 ausgeben (H2 = Q1-Q2 FY2027) – im Vergleich zu 64,5 Milliarden Dollar Gesamtausgaben in FY2025. 45 Prozent der Restleistungsverpflichtungen waren an OpenAI gebunden; Alphabet's Gemini und Anthropics Claude drängen jetzt in den Markt.",
           "investor_relevance": "Investoren fragen, ob die massive Capex-Eskalation rentabel ist. OpenAI-Abhängigkeitsrisiko überbewertet KI-Wetten. Margin-Druck durch Lohnerhöhungen bleibt."
         }
       ]
@@ -52,7 +52,7 @@
           "priority": "fire",
           "title": "April-CPI 3,8 % YoY – Höchst seit Mai 2023, Fed-Straffungssignale Gewinnen an Kraft",
           "rating": 5,
-          "summary": "<cite index=\"17-1\">Die April-Inflationsdaten zeigen einen monatlichen Anstieg von 0,6 Prozent, die Jahresrate beträgt 3,8 Prozent – der höchste Stand seit Mai 2023.</cite> <cite index=\"11-4\">Die Kernbrennstoffe stiegen um 0,4 Prozent monatlich und 2,8 Prozent im Jahr, weit über dem 2-Prozent-Ziel der Federal Reserve.</cite> <cite index=\"11-25\">Händler erhöhten die Wahrscheinlichkeit einer Fed-Zinserhöhung bis Jahresende auf etwa 30 Prozent.</cite>",
+          "summary": "Die April-Inflationsdaten zeigen einen monatlichen Anstieg von 0,6 Prozent, die Jahresrate beträgt 3,8 Prozent – der höchste Stand seit Mai 2023. Die Kernbrennstoffe stiegen um 0,4 Prozent monatlich und 2,8 Prozent im Jahr, weit über dem 2-Prozent-Ziel der Federal Reserve. Händler erhöhten die Wahrscheinlichkeit einer Fed-Zinserhöhung bis Jahresende auf etwa 30 Prozent.",
           "investor_relevance": "Dies war der größte Makro-Schock für Portfolio-Anleihe-Positionen; höhere Renditen drücken auf KI-Tech-Bewertungen und Konsumgewinne. Zinssenkungs-Hoffnungen schwinden."
         }
       ]
@@ -65,13 +65,13 @@
       "event_basis": "Q1 FY27 Earnings am 20. Mai (nach Börsenschluss) – Konsens erwartet 78,8 Mrd. Dollar Umsatz, 1,77 Dollar EPS. Hyperscaler-Capex-Erhöhungen (Meta +10 Mrd., Microsoft +36 Mrd., Alphabet & Amazon ebenfalls heraufgestuft) deuten auf robuste Nachfrage nach Blackwell-Systemen hin.",
       "event_date": "2026-05-20",
       "time_horizon": "1-2 Wochen vor/nach Earnings",
-      "thesis": "<cite index=\"22-9\">Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen.</cite> Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
+      "thesis": "Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen. Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
       "risks": "Bewertung bei ~6 Billionen Dollar Marktkapitalisierung lässt wenig Spielraum für Fehler; selbst starke Ergebnisse könnten Gewinnmitnahmen auslösen (Post-Earnings-Selloff möglich)."
     },
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni – <cite index=\"35-4\">WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools.</cite> <cite index=\"33-1\">WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.</cite>",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni – WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools. WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.",
       "event_date": "2026-06-08",
       "time_horizon": "2-3 Wochen",
       "thesis": "Intel-Deal validiert Apples technische Leistungsfähigkeit und Diversifizierungsstrategie. WWDC ist Plattform, um Siri 2.0 (Gemini-powered) und tiefe KI-Integration zu demonstrieren – ein Wendepunkt nach Jahren von Verzögerungen. Positives Sentiment für Services-Umsätze und Ökosystem-Bindung.",
@@ -80,10 +80,10 @@
     {
       "company": "Intel",
       "rating": 5,
-      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. <cite index=\"50-11\">Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla.</cite> <cite index=\"41-9\">Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.</cite>",
+      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla. Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.",
       "event_date": "2026-06-30",
       "time_horizon": "2-4 Wochen (über Terafab Hearing hinaus)",
-      "thesis": "<cite index=\"43-6\">Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen.</cite> Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
+      "thesis": "Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen. Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
       "risks": "Yield- oder Qualitätsprobleme könnten Deal-Momentum zerstören. Hohe Bewertung (>100x Forward-P/E) aktuell für massive Erfolgserfordernisse. Geopolitische/sanktionäre Risiken rund um Chipexporte, insbesondere für Advanced Node."
     }
   ],

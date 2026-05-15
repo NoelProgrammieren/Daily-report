@@ -365,17 +365,35 @@ async function loadArchive() {
 }
 
 // ---------- calendar ----------
-let calendarState = { events: [], filter: "all" };
+let calendarState = {
+  events: [],
+  filter: "all",
+  viewMonth: null,
+  selectedDate: null,
+};
+
+function todayISO() {
+  return new Date().toISOString().slice(0, 10);
+}
+
+function isoFromYM(year, month) {
+  return `${year}-${String(month + 1).padStart(2, "0")}`;
+}
 
 function renderCalendar() {
   const list = document.getElementById("calendar-list");
-  const today = new Date().toISOString().slice(0, 10);
-  let events = calendarState.events.filter((e) => e.date >= today);
+  const today = todayISO();
+  let events = calendarState.selectedDate
+    ? calendarState.events.filter((e) => e.date === calendarState.selectedDate)
+    : calendarState.events.filter((e) => e.date >= today);
   if (calendarState.filter !== "all") {
     events = events.filter((e) => (e.category || "other") === calendarState.filter);
   }
   if (events.length === 0) {
-    list.innerHTML = `<div class="empty-state"><span class="em">🗓️</span>Keine kommenden Ereignisse${calendarState.filter !== "all" ? " in dieser Kategorie" : ""}.</div>`;
+    const ctx = calendarState.selectedDate
+      ? ` am ${formatDateLong(calendarState.selectedDate)}`
+      : (calendarState.filter !== "all" ? " in dieser Kategorie" : "");
+    list.innerHTML = `<div class="empty-state"><span class="em">🗓️</span>Keine Ereignisse${ctx}.</div>`;
     return;
   }
   // Group by month
@@ -433,20 +451,105 @@ function renderCalendarFilters() {
     btn.addEventListener("click", () => {
       calendarState.filter = btn.dataset.filter;
       renderCalendarFilters();
+      renderCalendarPicker();
       renderCalendar();
     });
   });
+}
+
+function renderCalendarPicker() {
+  const grid = document.getElementById("calendar-grid");
+  const label = document.getElementById("cal-month-label");
+  if (!grid || !label) return;
+
+  const [yStr, mStr] = calendarState.viewMonth.split("-");
+  const year = parseInt(yStr, 10);
+  const month = parseInt(mStr, 10) - 1;
+
+  label.textContent = `${MONTH_DE_FULL[month]} ${year}`;
+
+  // Set with all ISO-dates that have events (for highlight lookup)
+  const eventDates = new Set(
+    calendarState.events
+      .filter((e) => calendarState.filter === "all" || (e.category || "other") === calendarState.filter)
+      .map((e) => e.date),
+  );
+
+  // Build a 6×7 grid starting on Monday
+  const firstOfMonth = new Date(Date.UTC(year, month, 1));
+  // JS Sunday=0, we want Monday=0 → Sunday=6
+  const startWeekday = (firstOfMonth.getUTCDay() + 6) % 7;
+  const gridStart = new Date(Date.UTC(year, month, 1 - startWeekday));
+  const today = todayISO();
+
+  const headers = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"];
+  let html = headers.map((d) => `<div class="cal-dow">${d}</div>`).join("");
+
+  for (let i = 0; i < 42; i++) {
+    const d = new Date(gridStart);
+    d.setUTCDate(d.getUTCDate() + i);
+    const iso = d.toISOString().slice(0, 10);
+    const dayMonth = d.getUTCMonth();
+    const cls = ["calendar-day"];
+    if (dayMonth !== month) cls.push("muted");
+    if (iso === today) cls.push("today");
+    if (eventDates.has(iso)) cls.push("has-event");
+    if (calendarState.selectedDate === iso) cls.push("selected");
+    html += `<button type="button" class="${cls.join(" ")}" data-date="${iso}">
+      <span class="cal-day-num">${d.getUTCDate()}</span>
+    </button>`;
+  }
+  grid.innerHTML = html;
+
+  grid.querySelectorAll(".calendar-day").forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const date = btn.dataset.date;
+      calendarState.selectedDate = calendarState.selectedDate === date ? null : date;
+      renderCalendarPicker();
+      renderCalendar();
+    });
+  });
+}
+
+function wireCalendarNav() {
+  const prev = document.getElementById("cal-prev");
+  const next = document.getElementById("cal-next");
+  const reset = document.getElementById("cal-reset");
+  if (prev) prev.addEventListener("click", () => shiftMonth(-1));
+  if (next) next.addEventListener("click", () => shiftMonth(1));
+  if (reset) reset.addEventListener("click", () => {
+    calendarState.selectedDate = null;
+    calendarState.filter = "all";
+    const today = new Date();
+    calendarState.viewMonth = isoFromYM(today.getFullYear(), today.getMonth());
+    renderCalendarFilters();
+    renderCalendarPicker();
+    renderCalendar();
+  });
+}
+
+function shiftMonth(delta) {
+  const [y, m] = calendarState.viewMonth.split("-").map((s) => parseInt(s, 10));
+  const d = new Date(Date.UTC(y, m - 1 + delta, 1));
+  calendarState.viewMonth = isoFromYM(d.getUTCFullYear(), d.getUTCMonth());
+  renderCalendarPicker();
 }
 
 async function loadCalendar() {
   try {
     const cal = await fetchJSON("calendar.json");
     calendarState.events = cal.events || [];
+    if (!calendarState.viewMonth) {
+      const t = new Date();
+      calendarState.viewMonth = isoFromYM(t.getFullYear(), t.getMonth());
+    }
     if (cal.updated_at) {
       document.getElementById("footer-info").textContent =
         `Kalender zuletzt aktualisiert: ${new Date(cal.updated_at).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })}`;
     }
+    wireCalendarNav();
     renderCalendarFilters();
+    renderCalendarPicker();
     renderCalendar();
   } catch (e) {
     document.getElementById("calendar-list").innerHTML =
@@ -474,6 +577,7 @@ async function loadHotTakes() {
     let html = "";
     for (const t of takes) {
       const r = Number(t.rating || 0);
+      const forecastBox = renderHotTakeForecast(t);
       html += `<div class="hot-take r${r}">
         <div class="hot-take-head">
           <span class="hot-take-company">${escapeHtml(t.company || "?")}</span>
@@ -484,6 +588,7 @@ async function loadHotTakes() {
           · ${escapeHtml(t.event_basis || "")}
           ${t.time_horizon ? `<span class="hot-take-horizon">⏱ ${escapeHtml(t.time_horizon)}</span>` : ""}
         </div>
+        ${forecastBox}
         <p class="hot-take-thesis">${escapeHtml(t.thesis || "")}</p>
         ${t.risks ? `<div class="hot-take-risks">⚠️ ${escapeHtml(t.risks)}</div>` : ""}
         <div class="hot-take-foot">
@@ -495,6 +600,38 @@ async function loadHotTakes() {
   } catch (e) {
     container.innerHTML = `<div class="empty-state"><span class="em">📭</span>Noch keine Hot Takes vorhanden.</div>`;
   }
+}
+
+function renderHotTakeForecast(t) {
+  const mv = t.expected_move_pct;
+  const pt = t.price_target;
+  const parts = [];
+  if (mv && (mv.low != null || mv.high != null)) {
+    const dir = mv.direction === "down" ? "down" : "up";
+    const sign = dir === "down" ? "−" : "+";
+    const arrow = dir === "down" ? "▼" : "▲";
+    const lo = mv.low != null ? formatNum(mv.low, 1) : null;
+    const hi = mv.high != null ? formatNum(mv.high, 1) : null;
+    const range = lo != null && hi != null ? `${sign}${lo} % bis ${sign}${hi} %`
+                : (lo != null ? `${sign}${lo} %` : `${sign}${hi} %`);
+    parts.push(`<span class="move-badge ${dir}"><span class="move-arrow">${arrow}</span>${range}</span>`);
+  }
+  if (pt && (pt.low != null || pt.high != null)) {
+    const lo = pt.low != null ? formatNum(pt.low, 2) : null;
+    const hi = pt.high != null ? formatNum(pt.high, 2) : null;
+    const range = lo != null && hi != null ? `${lo}–${hi}`
+                : (lo != null ? `${lo}` : `${hi}`);
+    const curr = pt.currency ? ` ${escapeHtml(pt.currency)}` : "";
+    parts.push(`<span class="target-badge"><span class="target-icon">◎</span>Kursziel ${range}${curr}</span>`);
+  }
+  if (parts.length === 0) return "";
+  return `<div class="hot-take-forecast">${parts.join("")}</div>`;
+}
+
+function formatNum(v, digits) {
+  const n = Number(v);
+  if (!Number.isFinite(n)) return String(v);
+  return n.toLocaleString("de-DE", { minimumFractionDigits: 0, maximumFractionDigits: digits });
 }
 
 // ---------- forecast ----------

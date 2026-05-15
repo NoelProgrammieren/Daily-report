@@ -6,7 +6,7 @@
       "event_basis": "Q1 FY27 Earnings am 20. Mai (nach Börsenschluss) – Konsens erwartet 78,8 Mrd. Dollar Umsatz, 1,77 Dollar EPS. Hyperscaler-Capex-Erhöhungen (Meta +10 Mrd., Microsoft +36 Mrd., Alphabet & Amazon ebenfalls heraufgestuft) deuten auf robuste Nachfrage nach Blackwell-Systemen hin.",
       "event_date": "2026-05-20",
       "time_horizon": "1-2 Wochen vor/nach Earnings",
-      "thesis": "<cite index=\"22-9\">Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen.</cite> Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
+      "thesis": "Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen. Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
       "risks": "Bewertung bei ~6 Billionen Dollar Marktkapitalisierung lässt wenig Spielraum für Fehler; selbst starke Ergebnisse könnten Gewinnmitnahmen auslösen (Post-Earnings-Selloff möglich).",
       "first_seen": "2026-05-13",
       "last_updated": "2026-05-15T23:28:32.036624+02:00"
@@ -17,7 +17,7 @@
       "event_basis": "Q1 FY27 Earnings on 2026-05-22 (after market close). CEO Huang's participation in US-China summit signals potential export pathway recovery; hyperscaler capex spending on track for $725B+ combined annually.",
       "event_date": "2026-05-22",
       "time_horizon": "1-2 weeks",
-      "thesis": "<cite index=\"31-8\">CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports, removing regulatory headwinds on Chinese demand.</cite> Combined with sustained AI capex momentum and <cite index=\"6-9\">hyperscaler combined 2026 spending projections tracking near $725 billion, above earlier expectations,</cite> NVIDIA positioned for earnings beat and raised guidance.",
+      "thesis": "CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports, removing regulatory headwinds on Chinese demand. Combined with sustained AI capex momentum and hyperscaler combined 2026 spending projections tracking near $725 billion, above earlier expectations, NVIDIA positioned for earnings beat and raised guidance.",
       "risks": "Geopolitical detente could reverse if US-Iran tensions escalate; inflation surprise may prompt Warsh Fed to signal rate-hold policy extending into H2 2026.",
       "first_seen": "2026-05-13",
       "last_updated": "2026-05-13T16:59:17.634691+02:00"
@@ -25,10 +25,10 @@
     {
       "company": "Intel",
       "rating": 5,
-      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. <cite index=\"50-11\">Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla.</cite> <cite index=\"41-9\">Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.</cite>",
+      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla. Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.",
       "event_date": "2026-06-30",
       "time_horizon": "2-4 Wochen (über Terafab Hearing hinaus)",
-      "thesis": "<cite index=\"43-6\">Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen.</cite> Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
+      "thesis": "Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen. Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
       "risks": "Yield- oder Qualitätsprobleme könnten Deal-Momentum zerstören. Hohe Bewertung (>100x Forward-P/E) aktuell für massive Erfolgserfordernisse. Geopolitische/sanktionäre Risiken rund um Chipexporte, insbesondere für Advanced Node.",
       "first_seen": "2026-05-13",
       "last_updated": "2026-05-15T23:28:32.036624+02:00"
@@ -36,10 +36,10 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. <cite index=\"47-4\">Apple hit all-time intraday high of $290.33</cite>, now at $300.",
+      "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. Apple hit all-time intraday high of $290.33, now at $300.",
       "event_date": "2026-06-04",
       "time_horizon": "3-4 weeks",
-      "thesis": "<cite index=\"32-5\">Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing</cite>. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
+      "thesis": "Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
       "risks": "Stock at all-time highs with sentiment elevated; any product announcement shortfall or delayed Intel ramp could trigger profit-taking.",
       "first_seen": "2026-05-14",
       "last_updated": "2026-05-14T09:43:37.554205+02:00"
@@ -47,7 +47,7 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni – <cite index=\"35-4\">WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools.</cite> <cite index=\"33-1\">WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.</cite>",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni – WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools. WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.",
       "event_date": "2026-06-08",
       "time_horizon": "2-3 Wochen",
       "thesis": "Intel-Deal validiert Apples technische Leistungsfähigkeit und Diversifizierungsstrategie. WWDC ist Plattform, um Siri 2.0 (Gemini-powered) und tiefe KI-Integration zu demonstrieren – ein Wendepunkt nach Jahren von Verzögerungen. Positives Sentiment für Services-Umsätze und Ökosystem-Bindung.",

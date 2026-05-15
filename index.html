@@ -87,9 +87,22 @@
       <section id="tab-calendar" class="tab-panel">
         <h2>📅 Kalender – kommende Ereignisse</h2>
         <p class="hint">Wird bei jedem 19-Uhr-Bericht automatisch geprüft und ergänzt.</p>
-        <div id="calendar-filters" class="filter-row"></div>
-        <div id="calendar-list">
-          <p class="loading">Lade Kalender…</p>
+        <div class="calendar-layout">
+          <aside class="calendar-picker">
+            <div class="calendar-picker-head">
+              <button type="button" id="cal-prev" class="cal-nav-btn" aria-label="Vorheriger Monat">‹</button>
+              <span id="cal-month-label" class="cal-month-label"></span>
+              <button type="button" id="cal-next" class="cal-nav-btn" aria-label="Nächster Monat">›</button>
+            </div>
+            <div id="calendar-grid" class="calendar-grid"></div>
+            <button type="button" id="cal-reset" class="cal-reset-btn">Auswahl zurücksetzen</button>
+          </aside>
+          <div class="calendar-list-wrap">
+            <div id="calendar-filters" class="filter-row"></div>
+            <div id="calendar-list">
+              <p class="loading">Lade Kalender…</p>
+            </div>
+          </div>
         </div>
       </section>
     </main>

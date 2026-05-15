@@ -19,9 +19,19 @@ REPORTS_DIR = ROOT / "reports"
 CALENDAR_FILE = ROOT / "calendar.json"
 HOT_TAKES_FILE = ROOT / "hot_takes.json"
 FORECAST_FILE = ROOT / "forecast_data.json"
+MARKET_INDICES_FILE = ROOT / "market_indices.json"
 REPORTS_DIR.mkdir(exist_ok=True)
 
 BERLIN = ZoneInfo("Europe/Berlin")
+
+# Hero-Chips: User-spezifische ETFs auf Xetra (entsprechen Portfolio-Holdings).
+MARKET_INDICES = [
+    {"name": "Core S&P 500", "short": "S&P 500", "ticker": "SXR8.DE"},
+    {"name": "MSCI World", "short": "MSCI World", "ticker": "EUNL.DE"},
+    {"name": "MSCI World IT", "short": "World IT", "ticker": "XDWT.DE"},
+    {"name": "MSCI EM ex China", "short": "EM ex China", "ticker": "EMXC.DE"},
+    {"name": "Russell 2000 US Small Cap", "short": "Russell 2000", "ticker": "ZPRR.DE"},
+]
 
 # Mapping deutsche/Anzeige-Namen → yfinance-Ticker (Portfolio + Watchlist).
 TICKER_MAP = {
@@ -568,6 +578,69 @@ def _safe_float(v):
         return None
 
 
+def fetch_market_indices() -> dict:
+    """Holt Tagesschluss + 30-Tage-Sparkline für die Hero-Chips via yfinance.
+
+    Best-effort: einzelne Ticker-Fehler hinterlassen leere Felder, brechen den
+    Lauf aber nicht ab — das Frontend zeigt dann '—' statt Wert.
+    """
+    base_payload = [
+        {
+            "name": idx["name"],
+            "short": idx["short"],
+            "ticker": idx["ticker"],
+            "last_close": None,
+            "prev_close": None,
+            "change_pct": None,
+            "currency": None,
+            "last_date": None,
+            "sparkline": [],
+        }
+        for idx in MARKET_INDICES
+    ]
+
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("yfinance nicht installiert — Indizes-Chips bleiben leer.")
+        return {"updated_at": datetime.now(BERLIN).isoformat(), "indices": base_payload}
+
+    for entry, idx in zip(base_payload, MARKET_INDICES):
+        ticker = idx["ticker"]
+        try:
+            yt = yf.Ticker(ticker)
+            hist = yt.history(period="30d", auto_adjust=True)
+            if hist.empty:
+                print(f"  yfinance leer für {idx['name']} ({ticker})")
+                continue
+
+            closes = [float(c) for c in hist["Close"].dropna()]
+            dates = [d.strftime("%Y-%m-%d") for d in hist.index]
+            if not closes:
+                continue
+
+            entry["last_close"] = round(closes[-1], 2)
+            entry["last_date"] = dates[-1]
+            entry["sparkline"] = [round(c, 2) for c in closes[-30:]]
+            if len(closes) >= 2 and closes[-2]:
+                entry["prev_close"] = round(closes[-2], 2)
+                entry["change_pct"] = round((closes[-1] / closes[-2] - 1) * 100, 2)
+            try:
+                entry["currency"] = getattr(yt.fast_info, "currency", None)
+            except Exception:
+                pass
+
+            print(
+                f"  yfinance {idx['name']} ({ticker}): "
+                f"last={entry['last_close']} {entry['currency'] or ''}, "
+                f"Δ={entry['change_pct']}%, sparkline={len(entry['sparkline'])} Punkte"
+            )
+        except Exception as e:
+            print(f"  yfinance Fehler für {idx['name']} ({ticker}): {e}")
+
+    return {"updated_at": datetime.now(BERLIN).isoformat(), "indices": base_payload}
+
+
 def update_index() -> None:
     reports = []
     for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True):
@@ -707,6 +780,14 @@ def generate_report() -> None:
         json.dumps(forecast_payload, indent=2, ensure_ascii=False), encoding="utf-8"
     )
     print(f"Forecast-Daten gespeichert: {len(forecast_payload.get('tickers', []))} Ticker.")
+
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hole Markt-Indizes für Hero-Chips...")
+    indices_payload = fetch_market_indices()
+    MARKET_INDICES_FILE.write_text(
+        json.dumps(indices_payload, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    filled = sum(1 for x in indices_payload.get("indices", []) if x.get("last_close") is not None)
+    print(f"Markt-Indizes gespeichert: {filled}/{len(indices_payload.get('indices', []))} mit Daten.")
 
     update_index()
     print("Index aktualisiert.")

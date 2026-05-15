@@ -959,6 +959,178 @@ footer {
   font-weight: 500;
 }
 
+/* ---------- hero (Heute-Tab) ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr minmax(240px, 320px);
+  gap: 24px;
+  margin-bottom: 24px;
+  align-items: start;
+}
+
+.hero-main {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.15;
+  color: var(--text);
+}
+
+.hero-date {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-dim);
+  font-feature-settings: "tnum";
+}
+
+.hero-status {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px;
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.hero-status-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  font-size: 12.5px;
+}
+
+.hero-status-row + .hero-status-row {
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.hero-status-label {
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.hero-status-value {
+  color: var(--text);
+  font-weight: 500;
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.hero-status-value.dim {
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+/* ---------- indices row ---------- */
+.indices-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.indices-row .loading {
+  grid-column: 1 / -1;
+}
+
+.index-chip {
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 14px 16px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: border-color 0.18s var(--ease), transform 0.18s var(--ease);
+  position: relative;
+  overflow: hidden;
+}
+
+.index-chip:hover {
+  border-color: var(--border-strong);
+  transform: translateY(-1px);
+}
+
+.index-chip-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  min-height: 18px;
+}
+
+.index-chip-name {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+  color: var(--text-dim);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.index-chip-currency {
+  font-size: 10px;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-weight: 500;
+}
+
+.index-chip-value {
+  font-family: var(--font-mono);
+  font-size: 20px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.015em;
+  color: var(--text);
+  line-height: 1.1;
+}
+
+.index-chip-change {
+  font-family: var(--font-mono);
+  font-size: 12.5px;
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-muted);
+}
+
+.index-chip-change.positive {
+  color: var(--positive);
+}
+
+.index-chip-change.negative {
+  color: var(--negative);
+}
+
+.index-chip-spark {
+  height: 36px;
+  margin-top: 2px;
+  display: block;
+}
+
+.index-chip-spark svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.index-chip.is-empty .index-chip-value,
+.index-chip.is-empty .index-chip-change {
+  color: var(--text-muted);
+  font-style: normal;
+}
+
 /* ---------- responsive ---------- */
 @media (max-width: 720px) {
   .topbar {
@@ -1022,5 +1194,24 @@ footer {
   }
   .hot-take-horizon {
     margin-left: 0;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .hero-title {
+    font-size: 26px;
+  }
+  .indices-row {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 22px;
+  }
+  .index-chip {
+    padding: 12px 14px 8px;
+  }
+  .index-chip-value {
+    font-size: 17px;
   }
 }

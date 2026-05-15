@@ -172,25 +172,138 @@ function renderReport(report, container) {
 async function loadToday() {
   const container = document.getElementById("today-report");
   const meta = document.getElementById("today-meta");
+  const heroDate = document.getElementById("hero-date");
   try {
     const index = await fetchJSON("reports/index.json");
     if (!index.reports || index.reports.length === 0) {
       meta.innerHTML = "";
+      if (heroDate) heroDate.textContent = formatDateLong(new Date().toISOString().slice(0, 10));
       container.innerHTML = `<div class="empty-state"><span class="em">⏳</span>Noch kein Bericht erstellt. Der erste Lauf startet beim nächsten 19-Uhr-Termin.</div>`;
       return;
     }
     const latest = index.reports[0];
     const report = await fetchJSON(`reports/${latest.filename}`);
-    const generatedNote = report.generated_at
-      ? `· generiert ${new Date(report.generated_at).toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" })}`
-      : "";
-    meta.innerHTML = `
-      <span class="date">${formatDateLong(report.date)}</span>
-      <span class="generated">${generatedNote}</span>`;
+    if (heroDate) heroDate.textContent = formatDateLong(report.date);
+    meta.innerHTML = ""; // Datum/Generiert-Info ist jetzt im Hero / Status-Box.
     renderReport(report, container);
   } catch (e) {
     container.innerHTML = `<div class="error">Konnte Bericht nicht laden: ${escapeHtml(e.message)}</div>`;
   }
+}
+
+// ---------- market indices (hero chips) ----------
+function fmtIndexValue(v) {
+  if (v == null) return "—";
+  return Number(v).toLocaleString("de-DE", { minimumFractionDigits: 2, maximumFractionDigits: 2 });
+}
+
+function fmtIndexChange(pct) {
+  if (pct == null) return "—";
+  const sign = pct > 0 ? "+" : "";
+  return `${sign}${Number(pct).toFixed(2)} %`;
+}
+
+function renderSparkline(values, polarity) {
+  if (!Array.isArray(values) || values.length < 2) return "";
+  const w = 100;
+  const h = 36;
+  const min = Math.min(...values);
+  const max = Math.max(...values);
+  const range = max - min || 1;
+  const step = w / (values.length - 1);
+  const points = values
+    .map((v, i) => `${(i * step).toFixed(2)},${(h - ((v - min) / range) * h).toFixed(2)}`)
+    .join(" ");
+  const stroke = polarity === "negative" ? "var(--negative)" : "var(--positive)";
+  return `<svg viewBox="0 0 ${w} ${h}" preserveAspectRatio="none" aria-hidden="true">
+    <polyline points="${points}" fill="none" stroke="${stroke}" stroke-width="1.5"
+              stroke-linejoin="round" stroke-linecap="round" vector-effect="non-scaling-stroke" />
+  </svg>`;
+}
+
+async function loadMarketIndices() {
+  const row = document.getElementById("indices-row");
+  if (!row) return;
+  try {
+    const data = await fetchJSON("market_indices.json");
+    const indices = data.indices || [];
+    if (indices.length === 0) {
+      row.innerHTML = `<p class="loading">Keine Indizes-Daten verfügbar.</p>`;
+      return;
+    }
+    row.innerHTML = indices.map((idx) => {
+      const hasData = idx.last_close != null;
+      const polarity = idx.change_pct == null ? null : (idx.change_pct >= 0 ? "positive" : "negative");
+      const changeClass = polarity ? `index-chip-change ${polarity}` : "index-chip-change";
+      const spark = renderSparkline(idx.sparkline, polarity);
+      return `<div class="index-chip${hasData ? "" : " is-empty"}">
+        <div class="index-chip-head">
+          <span class="index-chip-name">${escapeHtml(idx.short || idx.name || "")}</span>
+          ${idx.currency ? `<span class="index-chip-currency">${escapeHtml(idx.currency)}</span>` : ""}
+        </div>
+        <div class="index-chip-value">${fmtIndexValue(idx.last_close)}</div>
+        <div class="${changeClass}">${fmtIndexChange(idx.change_pct)}</div>
+        <div class="index-chip-spark">${spark}</div>
+      </div>`;
+    }).join("");
+  } catch (e) {
+    row.innerHTML = `<p class="loading">Indizes gerade nicht verfügbar.</p>`;
+  }
+}
+
+// ---------- hero status box ----------
+async function loadHeroStatus() {
+  const box = document.getElementById("hero-status");
+  if (!box) return;
+  const today = new Date().toISOString().slice(0, 10);
+  const rows = [];
+
+  try {
+    const idx = await fetchJSON("reports/index.json");
+    const latest = (idx.reports || [])[0];
+    if (latest?.generated_at) {
+      const gen = new Date(latest.generated_at);
+      rows.push({
+        label: "Bericht",
+        value: gen.toLocaleString("de-DE", { dateStyle: "medium", timeStyle: "short" }),
+      });
+    }
+  } catch (_) { /* fall through */ }
+
+  try {
+    const ht = await fetchJSON("hot_takes.json");
+    const active = (ht.takes || []).filter((t) => (t.event_date || "9999-12-31") >= today).length;
+    rows.push({ label: "Hot Takes aktiv", value: String(active) });
+  } catch (_) { /* fall through */ }
+
+  try {
+    const cal = await fetchJSON("calendar.json");
+    const next = (cal.events || [])
+      .filter((e) => e.date >= today)
+      .sort((a, b) => a.date.localeCompare(b.date))[0];
+    if (next) {
+      const d = new Date(next.date + "T00:00:00");
+      const datePart = `${d.getDate()}. ${MONTH_DE[d.getMonth()]}`;
+      const evTitle = (next.event || "").length > 28
+        ? next.event.slice(0, 26) + "…"
+        : (next.event || "");
+      rows.push({ label: "Nächstes Event", value: `${datePart} · ${evTitle}` });
+    }
+  } catch (_) { /* fall through */ }
+
+  if (rows.length === 0) {
+    box.innerHTML = `<div class="hero-status-row">
+      <span class="hero-status-label">Status</span>
+      <span class="hero-status-value dim">—</span>
+    </div>`;
+    return;
+  }
+  box.innerHTML = rows.map((r) =>
+    `<div class="hero-status-row">
+      <span class="hero-status-label">${escapeHtml(r.label)}</span>
+      <span class="hero-status-value">${escapeHtml(r.value)}</span>
+    </div>`
+  ).join("");
 }
 
 // ---------- archive ----------
@@ -591,6 +704,8 @@ async function loadForecast() {
 
 // ---------- init ----------
 loadToday();
+loadMarketIndices();
+loadHeroStatus();
 loadArchive();
 loadCalendar();
 loadHotTakes();

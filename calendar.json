@@ -80,7 +80,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung – Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, Visa, JPMorgan",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, Rate-sensitive Tech",
       "rating": 5,
       "category": "fed"
     },
@@ -106,6 +106,13 @@
       "category": "political"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab – Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
+      "relevant_for": "Intel",
+      "rating": 3,
+      "category": "political"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple",
@@ -120,9 +127,23 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote & Platforms State of the Union (10:00 PT)",
+      "relevant_for": "Apple",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "ECB Sitzung & Geldpolitische Entscheidung",
+      "relevant_for": "LVMH, Hermès, europäische Finanzwerte",
       "rating": 4,
       "category": "fed"
     },
@@ -136,10 +157,10 @@
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 FY2026 Earnings",
-      "relevant_for": "Microsoft, Informationstechnologie",
+      "relevant_for": "Microsoft",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-14T20:29:55.750373+02:00"
+  "updated_at": "2026-05-15T20:18:02.283755+02:00"
 }

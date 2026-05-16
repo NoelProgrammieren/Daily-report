@@ -1,41 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-05-15",
-      "event": "US-CPI April",
-      "relevant_for": "Gesamtmarkt, Finanzdienstleistungen",
-      "rating": 4,
-      "category": "economic"
-    },
-    {
-      "date": "2026-05-15",
-      "event": "US-CPI April (bereits veröffentlicht: 3,8 % – höchster Stand seit Mai 2023)",
-      "relevant_for": "Gesamtmarkt, Fed-Pfad",
-      "rating": 4,
-      "category": "economic"
-    },
-    {
-      "date": "2026-05-15",
-      "event": "US-CPI April (bereits veröffentlicht: 3.8%)",
-      "relevant_for": "Gesamtmarkt, Inflationserwartungen",
-      "rating": 4,
-      "category": "economic"
-    },
-    {
-      "date": "2026-05-15",
-      "event": "US April CPI (released: 3.8%, highest since May 2023)",
-      "relevant_for": "Gesamtmarkt, Fed policy",
-      "rating": 4,
-      "category": "economic"
-    },
-    {
-      "date": "2026-05-15",
-      "event": "US CPI April (already released: 3.8%)",
-      "relevant_for": "Gesamtmarkt, Inflation Narrative",
-      "rating": 4,
-      "category": "economic"
-    },
-    {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings after market close",
       "relevant_for": "NVIDIA",
@@ -52,7 +17,7 @@
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings (nach Börsenschluss)",
-      "relevant_for": "NVIDIA",
+      "relevant_for": "NVIDIA, MSCI World Information Technology",
       "rating": 5,
       "category": "earnings"
     },
@@ -60,6 +25,13 @@
       "date": "2026-05-21",
       "event": "Walmart Q1 Earnings & Guidance",
       "relevant_for": "Walmart",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 FY27 Earnings (vor Markteröffnung)",
+      "relevant_for": "Walmart, Consumer Discretionary",
       "rating": 4,
       "category": "earnings"
     },
@@ -99,6 +71,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-28",
+      "event": "FOMC Zinsentscheid (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, Anleihenrenditen, Zinsempfindliche Aktien",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
       "relevant_for": "Intel",
@@ -123,6 +102,13 @@
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
       "relevant_for": "Intel",
+      "rating": 3,
+      "category": "political"
+    },
+    {
+      "date": "2026-06-03",
+      "event": "Terafab Öffentliche Anhörung Grimes County TX – Intel/Tesla/SpaceX Megafab Steuervergünstigungen",
+      "relevant_for": "Intel, geopolitische Halbleiterstruktur",
       "rating": 3,
       "category": "political"
     },
@@ -155,6 +141,13 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT)",
+      "relevant_for": "Apple, iOS/macOS KI-Ankündigungen, Developer Ecosystem",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -169,6 +162,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-06-12",
+      "event": "EZB Sitzung & Geldpolitische Entscheidung",
+      "relevant_for": "LVMH, Hermès, Euro-Aktien, europäische Tech",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
       "date": "2026-07-29",
       "event": "Microsoft Q4 Earnings",
       "relevant_for": "Microsoft",
@@ -178,10 +178,10 @@
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 FY2026 Earnings",
-      "relevant_for": "Microsoft, Azure, OpenAI-Abhängigkeit, Capex-Effizienz",
+      "relevant_for": "Microsoft, Azure Capex Leitfaden, KI-Workload-Momentum",
       "rating": 5,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-15T23:28:32.036255+02:00"
+  "updated_at": "2026-05-16T17:52:14.391820+02:00"
 }

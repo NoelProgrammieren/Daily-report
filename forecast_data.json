@@ -1,431 +1,7 @@
 {
-  "updated_at": "2026-05-15T23:28:35.725378+02:00",
-  "commentary": "Das Portfolio und die Watchlist stehen an einem kritischen Scheidepunkt: KI-Infrastruktur-Capex-Investitionen der Hyperscaler unterstützen NVIDIA und Halbleiter-Breite, aber makroökonomische Straffung (höhere Zinssätze durch heißere CPI, Zinserhöhungsrisiken) wird Bewertungen unter Druck setzen. Intel profitiert von struktureller Validierung (Apple-Deal), aber hohe Bewertung birgt Enttäuschungsrisiko. Apple hat Katalysator mit WWDC und Foundry-Diversifizierung, aber iPhone-Nachfrage in China bleibt fragil. Microsoft kämpft mit Margin-Druck durch extremer Capex-Eskalation und OpenAI-Abhängigkeit. Nächste 4 Wochen: NVIDIA Earnings (20. Mai) – Bellwether für Markt; FOMC-Entscheid (28. Mai) – Fed-Halt wahrscheinlich, aber 'higher for longer'-Signale werden Bonds drücken. Mittelfristig (30-90 Tage): WWDC-Katalysatoren, Terafab-Anhörung (Intel-Anreize), Q2-Earnings-Serie.",
+  "updated_at": "2026-05-16T17:52:19.012092+02:00",
+  "commentary": "Portfolio und Watchlist-Werte sind in den nächsten 4 Wochen von zwei Gegenkräften geprägt: (1) NVIDIA-Earnings am 20. Mai bilden einen potentiellen 5–10%-Katalysator, gefolgt von Apple WWDC am 8. Juni als Service-Momentum-Spielfeld. (2) Makro-Gegenwind durch Iran-Konflikt, Energiepreisanstieg und Fed-Zinssorgen (45 % Hike-Wahrscheinlichkeit 2026) drückt auf Multiples von Hyperscalern. Walmart-Earnings am 21. Mai zeigen Konsumstärke, können aber Zolldruck und Margenkompression nicht voll ausblenden. Intel im Turnaround-Modus – braucht externe Kundencommitments in H2, um Bewertung zu rechtfertigen. Insgesamt: Selective Risk-on bei starken Katalysatoren (NVIDIA, Apple), aber strukturelle Rückenwind-Schwäche durch Zinsumfeld.",
   "tickers": [
-    {
-      "company": "NVIDIA",
-      "symbol": "NVDA",
-      "category": "portfolio",
-      "potential_rating": 5,
-      "history": [
-        {
-          "date": "2026-01-07",
-          "close": 189.1
-        },
-        {
-          "date": "2026-01-08",
-          "close": 185.03
-        },
-        {
-          "date": "2026-01-09",
-          "close": 184.85
-        },
-        {
-          "date": "2026-01-12",
-          "close": 184.93
-        },
-        {
-          "date": "2026-01-13",
-          "close": 185.8
-        },
-        {
-          "date": "2026-01-14",
-          "close": 183.13
-        },
-        {
-          "date": "2026-01-15",
-          "close": 187.04
-        },
-        {
-          "date": "2026-01-16",
-          "close": 186.22
-        },
-        {
-          "date": "2026-01-20",
-          "close": 178.06
-        },
-        {
-          "date": "2026-01-21",
-          "close": 183.31
-        },
-        {
-          "date": "2026-01-22",
-          "close": 184.83
-        },
-        {
-          "date": "2026-01-23",
-          "close": 187.66
-        },
-        {
-          "date": "2026-01-26",
-          "close": 186.46
-        },
-        {
-          "date": "2026-01-27",
-          "close": 188.51
-        },
-        {
-          "date": "2026-01-28",
-          "close": 191.51
-        },
-        {
-          "date": "2026-01-29",
-          "close": 192.5
-        },
-        {
-          "date": "2026-01-30",
-          "close": 191.12
-        },
-        {
-          "date": "2026-02-02",
-          "close": 185.6
-        },
-        {
-          "date": "2026-02-03",
-          "close": 180.33
-        },
-        {
-          "date": "2026-02-04",
-          "close": 174.18
-        },
-        {
-          "date": "2026-02-05",
-          "close": 171.87
-        },
-        {
-          "date": "2026-02-06",
-          "close": 185.4
-        },
-        {
-          "date": "2026-02-09",
-          "close": 190.03
-        },
-        {
-          "date": "2026-02-10",
-          "close": 188.53
-        },
-        {
-          "date": "2026-02-11",
-          "close": 190.04
-        },
-        {
-          "date": "2026-02-12",
-          "close": 186.93
-        },
-        {
-          "date": "2026-02-13",
-          "close": 182.8
-        },
-        {
-          "date": "2026-02-17",
-          "close": 184.96
-        },
-        {
-          "date": "2026-02-18",
-          "close": 187.97
-        },
-        {
-          "date": "2026-02-19",
-          "close": 187.89
-        },
-        {
-          "date": "2026-02-20",
-          "close": 189.81
-        },
-        {
-          "date": "2026-02-23",
-          "close": 191.54
-        },
-        {
-          "date": "2026-02-24",
-          "close": 192.84
-        },
-        {
-          "date": "2026-02-25",
-          "close": 195.55
-        },
-        {
-          "date": "2026-02-26",
-          "close": 184.88
-        },
-        {
-          "date": "2026-02-27",
-          "close": 177.18
-        },
-        {
-          "date": "2026-03-02",
-          "close": 182.47
-        },
-        {
-          "date": "2026-03-03",
-          "close": 180.04
-        },
-        {
-          "date": "2026-03-04",
-          "close": 183.03
-        },
-        {
-          "date": "2026-03-05",
-          "close": 183.33
-        },
-        {
-          "date": "2026-03-06",
-          "close": 177.81
-        },
-        {
-          "date": "2026-03-09",
-          "close": 182.64
-        },
-        {
-          "date": "2026-03-10",
-          "close": 184.76
-        },
-        {
-          "date": "2026-03-11",
-          "close": 186.03
-        },
-        {
-          "date": "2026-03-12",
-          "close": 183.14
-        },
-        {
-          "date": "2026-03-13",
-          "close": 180.25
-        },
-        {
-          "date": "2026-03-16",
-          "close": 183.22
-        },
-        {
-          "date": "2026-03-17",
-          "close": 181.93
-        },
-        {
-          "date": "2026-03-18",
-          "close": 180.4
-        },
-        {
-          "date": "2026-03-19",
-          "close": 178.56
-        },
-        {
-          "date": "2026-03-20",
-          "close": 172.7
-        },
-        {
-          "date": "2026-03-23",
-          "close": 175.64
-        },
-        {
-          "date": "2026-03-24",
-          "close": 175.2
-        },
-        {
-          "date": "2026-03-25",
-          "close": 178.68
-        },
-        {
-          "date": "2026-03-26",
-          "close": 171.24
-        },
-        {
-          "date": "2026-03-27",
-          "close": 167.52
-        },
-        {
-          "date": "2026-03-30",
-          "close": 165.17
-        },
-        {
-          "date": "2026-03-31",
-          "close": 174.4
-        },
-        {
-          "date": "2026-04-01",
-          "close": 175.75
-        },
-        {
-          "date": "2026-04-02",
-          "close": 177.39
-        },
-        {
-          "date": "2026-04-06",
-          "close": 177.64
-        },
-        {
-          "date": "2026-04-07",
-          "close": 178.1
-        },
-        {
-          "date": "2026-04-08",
-          "close": 182.08
-        },
-        {
-          "date": "2026-04-09",
-          "close": 183.91
-        },
-        {
-          "date": "2026-04-10",
-          "close": 188.63
-        },
-        {
-          "date": "2026-04-13",
-          "close": 189.31
-        },
-        {
-          "date": "2026-04-14",
-          "close": 196.51
-        },
-        {
-          "date": "2026-04-15",
-          "close": 198.87
-        },
-        {
-          "date": "2026-04-16",
-          "close": 198.35
-        },
-        {
-          "date": "2026-04-17",
-          "close": 201.68
-        },
-        {
-          "date": "2026-04-20",
-          "close": 202.06
-        },
-        {
-          "date": "2026-04-21",
-          "close": 199.88
-        },
-        {
-          "date": "2026-04-22",
-          "close": 202.5
-        },
-        {
-          "date": "2026-04-23",
-          "close": 199.64
-        },
-        {
-          "date": "2026-04-24",
-          "close": 208.27
-        },
-        {
-          "date": "2026-04-27",
-          "close": 216.61
-        },
-        {
-          "date": "2026-04-28",
-          "close": 213.17
-        },
-        {
-          "date": "2026-04-29",
-          "close": 209.25
-        },
-        {
-          "date": "2026-04-30",
-          "close": 199.57
-        },
-        {
-          "date": "2026-05-01",
-          "close": 198.45
-        },
-        {
-          "date": "2026-05-04",
-          "close": 198.48
-        },
-        {
-          "date": "2026-05-05",
-          "close": 196.5
-        },
-        {
-          "date": "2026-05-06",
-          "close": 207.83
-        },
-        {
-          "date": "2026-05-07",
-          "close": 211.5
-        },
-        {
-          "date": "2026-05-08",
-          "close": 215.2
-        },
-        {
-          "date": "2026-05-11",
-          "close": 219.44
-        },
-        {
-          "date": "2026-05-12",
-          "close": 220.78
-        },
-        {
-          "date": "2026-05-13",
-          "close": 225.83
-        },
-        {
-          "date": "2026-05-14",
-          "close": 235.74
-        },
-        {
-          "date": "2026-05-15",
-          "close": 225.32
-        }
-      ],
-      "last_close": 225.32,
-      "last_date": "2026-05-15",
-      "scenario": "bullish",
-      "thesis": "Robust Infrastruktur-Capex und vorbeigehende Gewinnerwartungen treiben kurzfristig, aber 6-Billionen-Dollar-Bewertung hat wenig Fehlertoleranz.",
-      "pros": [
-        "Earnings-Beat sehr wahrscheinlich (90% Polymarket), Guidance bullisch",
-        "Blockbuster-Nachfrage nach Blackwell, Rubin-Opportunity ~1 Billionen Dollar",
-        "Custom-Chip-Konkurrenz (Amazon/Meta) hat Effizienz, nicht Leistung"
-      ],
-      "cons": [
-        "Bewertung 6 Billionen Dollar, 25x Forward-P/E lässt kaum Fehler zu",
-        "Post-Earnings-Selloff möglich trotz Beats (gab es im letzten Q)",
-        "China-Exportbeschränkungen, Margin-Druck durch höhere Speicherkosten"
-      ],
-      "key_drivers": [
-        "Q1 FY27 Earnings am 20. Mai (Beat-Wahrscheinlichkeit: 90 %)",
-        "Hyperscaler-Capex-Beschleunigung (725+ Mrd. $ geplant)",
-        "Blackwell-Nachfrage hoch, Rubin-Pipeline vielversprechend"
-      ],
-      "forecast": {
-        "expected_change_30d_pct": 4.5,
-        "expected_change_90d_pct": 8.0,
-        "uncertainty_pct": 6.0,
-        "path": [
-          {
-            "date": "2026-05-22",
-            "central": 227.69,
-            "lower": 221.16,
-            "upper": 234.22
-          },
-          {
-            "date": "2026-05-29",
-            "central": 230.05,
-            "lower": 220.82,
-            "upper": 239.29
-          },
-          {
-            "date": "2026-06-14",
-            "central": 235.46,
-            "lower": 221.94,
-            "upper": 248.98
-          },
-          {
-            "date": "2026-07-14",
-            "central": 239.4,
-            "lower": 220.28,
-            "upper": 258.52
-          },
-          {
-            "date": "2026-08-13",
-            "central": 243.35,
-            "lower": 219.93,
-            "upper": 266.76
-          }
-        ]
-      }
-    },
     {
       "company": "Apple",
       "symbol": "AAPL",
@@ -795,490 +371,512 @@
       ],
       "last_close": 300.23,
       "last_date": "2026-05-15",
+      "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Kurzfristig fehlt klarer Kurstreiber; WWDC könnte hilfreich sein, aber iPhone-Nachfrage in China rückläufig und Bewertung schon ambitioniert.",
+      "thesis": "Bewertungsmultipel ambitioniert auf 34x Forward-PE; WWDC könnte marginal positiv sein, reicht aber nicht für großen Kurs-Push ohne Service-Überraschung.",
       "pros": [
-        "Intel-Deal validiert Apples Technologie-Leistung & Diversifizierungsstrategie",
-        "WWDC wird Siri 2.0 zeigen – wichtiger für User-Experience & Differentiation",
-        "Service-Sparte wächst zweistellig, stabile Free-Cash-Flow-Generierung"
+        "Service-Sparte wächst 16 % YoY, hohe Marge",
+        "iPhone 17 Supercycle validiert, Installed Base 2,5 Mrd.",
+        "Q2-Zahlen alle Erwartungen übertroffen, Gross Margin auf 49,3 %"
       ],
       "cons": [
-        "iPhone-Absatz in China weiterhin unter Druck",
-        "Bewertung (29x Forward-P/E) schon ambitioniert für 5-8% jährliches Umsatzwachstum",
-        "KI-Feature-Rollout könnte underspektakulär wirken, Siri-Konkurrenz stark"
+        "China-Absatz rückläufig, regulatorische Risiken",
+        "NAND/DRAM-Kosten stark gestiegen, Marge-Druck",
+        "Bewertungsmultipel (34x) enthält KI-Hype; Korrektur-Risiko"
       ],
       "key_drivers": [
-        "WWDC 2026 Keynote (8. Juni) – Siri 2.0 & KI-Features",
-        "Intel-Diversifizierung zur Lösung von TSMC-Engpässen",
-        "iPhone-17-Zyklus, Serviceumsätze wachsen zweistellig"
+        "WWDC 8. Juni",
+        "Apple Intelligence Features",
+        "Service-Momentum bleibt stabil"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 4.0,
-        "uncertainty_pct": 4.5,
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 4.0,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 301.28,
-            "lower": 294.75,
-            "upper": 307.81
+            "central": 301.98,
+            "lower": 296.18,
+            "upper": 307.78
           },
           {
             "date": "2026-05-29",
-            "central": 302.33,
-            "lower": 293.1,
-            "upper": 311.56
+            "central": 303.73,
+            "lower": 295.53,
+            "upper": 311.94
           },
           {
             "date": "2026-06-14",
-            "central": 304.73,
-            "lower": 291.22,
-            "upper": 318.24
+            "central": 307.74,
+            "lower": 295.73,
+            "upper": 319.74
           },
           {
             "date": "2026-07-14",
-            "central": 308.49,
-            "lower": 289.38,
-            "upper": 327.59
+            "central": 311.49,
+            "lower": 294.51,
+            "upper": 328.47
           },
           {
             "date": "2026-08-13",
-            "central": 312.24,
-            "lower": 288.84,
-            "upper": 335.64
+            "central": 315.24,
+            "lower": 294.44,
+            "upper": 336.04
           }
         ]
-      }
+      },
+      "last_close_eur": 258.13,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 30,
+        "hold": 16,
+        "sell": 2,
+        "target_mean": 308.07,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 347819
     },
     {
-      "company": "Intel",
-      "symbol": "INTC",
+      "company": "NVIDIA",
+      "symbol": "NVDA",
       "category": "portfolio",
-      "potential_rating": 4,
+      "potential_rating": 5,
       "history": [
         {
           "date": "2026-01-07",
-          "close": 42.63
+          "close": 189.1
         },
         {
           "date": "2026-01-08",
-          "close": 41.11
+          "close": 185.03
         },
         {
           "date": "2026-01-09",
-          "close": 45.55
+          "close": 184.85
         },
         {
           "date": "2026-01-12",
-          "close": 44.06
+          "close": 184.93
         },
         {
           "date": "2026-01-13",
-          "close": 47.29
+          "close": 185.8
         },
         {
           "date": "2026-01-14",
-          "close": 48.72
+          "close": 183.13
         },
         {
           "date": "2026-01-15",
-          "close": 48.32
+          "close": 187.04
         },
         {
           "date": "2026-01-16",
-          "close": 46.96
+          "close": 186.22
         },
         {
           "date": "2026-01-20",
-          "close": 48.56
+          "close": 178.06
         },
         {
           "date": "2026-01-21",
-          "close": 54.25
+          "close": 183.31
         },
         {
           "date": "2026-01-22",
-          "close": 54.32
+          "close": 184.83
         },
         {
           "date": "2026-01-23",
-          "close": 45.07
+          "close": 187.66
         },
         {
           "date": "2026-01-26",
-          "close": 42.49
+          "close": 186.46
         },
         {
           "date": "2026-01-27",
-          "close": 43.93
+          "close": 188.51
         },
         {
           "date": "2026-01-28",
-          "close": 48.78
+          "close": 191.51
         },
         {
           "date": "2026-01-29",
-          "close": 48.66
+          "close": 192.5
         },
         {
           "date": "2026-01-30",
-          "close": 46.47
+          "close": 191.12
         },
         {
           "date": "2026-02-02",
-          "close": 48.81
+          "close": 185.6
         },
         {
           "date": "2026-02-03",
-          "close": 49.25
+          "close": 180.33
         },
         {
           "date": "2026-02-04",
-          "close": 48.6
+          "close": 174.18
         },
         {
           "date": "2026-02-05",
-          "close": 48.24
+          "close": 171.87
         },
         {
           "date": "2026-02-06",
-          "close": 50.59
+          "close": 185.4
         },
         {
           "date": "2026-02-09",
-          "close": 50.24
+          "close": 190.03
         },
         {
           "date": "2026-02-10",
-          "close": 47.13
+          "close": 188.53
         },
         {
           "date": "2026-02-11",
-          "close": 48.29
+          "close": 190.04
         },
         {
           "date": "2026-02-12",
-          "close": 46.48
+          "close": 186.93
         },
         {
           "date": "2026-02-13",
-          "close": 46.79
+          "close": 182.8
         },
         {
           "date": "2026-02-17",
-          "close": 46.18
+          "close": 184.96
         },
         {
           "date": "2026-02-18",
-          "close": 45.46
+          "close": 187.97
         },
         {
           "date": "2026-02-19",
-          "close": 44.62
+          "close": 187.89
         },
         {
           "date": "2026-02-20",
-          "close": 44.11
+          "close": 189.81
         },
         {
           "date": "2026-02-23",
-          "close": 43.63
+          "close": 191.54
         },
         {
           "date": "2026-02-24",
-          "close": 46.12
+          "close": 192.84
         },
         {
           "date": "2026-02-25",
-          "close": 46.88
+          "close": 195.55
         },
         {
           "date": "2026-02-26",
-          "close": 45.46
+          "close": 184.88
         },
         {
           "date": "2026-02-27",
-          "close": 45.61
+          "close": 177.18
         },
         {
           "date": "2026-03-02",
-          "close": 45.5
+          "close": 182.47
         },
         {
           "date": "2026-03-03",
-          "close": 43.1
+          "close": 180.04
         },
         {
           "date": "2026-03-04",
-          "close": 45.58
+          "close": 183.03
         },
         {
           "date": "2026-03-05",
-          "close": 45.95
+          "close": 183.33
         },
         {
           "date": "2026-03-06",
-          "close": 43.42
+          "close": 177.81
         },
         {
           "date": "2026-03-09",
-          "close": 45.58
+          "close": 182.64
         },
         {
           "date": "2026-03-10",
-          "close": 46.78
+          "close": 184.76
         },
         {
           "date": "2026-03-11",
-          "close": 47.98
+          "close": 186.03
         },
         {
           "date": "2026-03-12",
-          "close": 45.25
+          "close": 183.14
         },
         {
           "date": "2026-03-13",
-          "close": 45.77
+          "close": 180.25
         },
         {
           "date": "2026-03-16",
-          "close": 45.76
+          "close": 183.22
         },
         {
           "date": "2026-03-17",
-          "close": 44.06
+          "close": 181.93
         },
         {
           "date": "2026-03-18",
-          "close": 45.03
+          "close": 180.4
         },
         {
           "date": "2026-03-19",
-          "close": 46.18
+          "close": 178.56
         },
         {
           "date": "2026-03-20",
-          "close": 43.87
+          "close": 172.7
         },
         {
           "date": "2026-03-23",
-          "close": 44.01
+          "close": 175.64
         },
         {
           "date": "2026-03-24",
-          "close": 44.06
+          "close": 175.2
         },
         {
           "date": "2026-03-25",
-          "close": 47.18
+          "close": 178.68
         },
         {
           "date": "2026-03-26",
-          "close": 44.1
+          "close": 171.24
         },
         {
           "date": "2026-03-27",
-          "close": 43.13
+          "close": 167.52
         },
         {
           "date": "2026-03-30",
-          "close": 41.19
+          "close": 165.17
         },
         {
           "date": "2026-03-31",
-          "close": 44.13
+          "close": 174.4
         },
         {
           "date": "2026-04-01",
-          "close": 48.03
+          "close": 175.75
         },
         {
           "date": "2026-04-02",
-          "close": 50.38
+          "close": 177.39
         },
         {
           "date": "2026-04-06",
-          "close": 50.78
+          "close": 177.64
         },
         {
           "date": "2026-04-07",
-          "close": 52.91
+          "close": 178.1
         },
         {
           "date": "2026-04-08",
-          "close": 58.95
+          "close": 182.08
         },
         {
           "date": "2026-04-09",
-          "close": 61.72
+          "close": 183.91
         },
         {
           "date": "2026-04-10",
-          "close": 62.38
+          "close": 188.63
         },
         {
           "date": "2026-04-13",
-          "close": 65.18
+          "close": 189.31
         },
         {
           "date": "2026-04-14",
-          "close": 63.81
+          "close": 196.51
         },
         {
           "date": "2026-04-15",
-          "close": 64.94
+          "close": 198.87
         },
         {
           "date": "2026-04-16",
-          "close": 68.5
+          "close": 198.35
         },
         {
           "date": "2026-04-17",
-          "close": 68.5
+          "close": 201.68
         },
         {
           "date": "2026-04-20",
-          "close": 65.7
+          "close": 202.06
         },
         {
           "date": "2026-04-21",
-          "close": 66.26
+          "close": 199.88
         },
         {
           "date": "2026-04-22",
-          "close": 65.27
+          "close": 202.5
         },
         {
           "date": "2026-04-23",
-          "close": 66.78
+          "close": 199.64
         },
         {
           "date": "2026-04-24",
-          "close": 82.54
+          "close": 208.27
         },
         {
           "date": "2026-04-27",
-          "close": 84.99
+          "close": 216.61
         },
         {
           "date": "2026-04-28",
-          "close": 84.52
+          "close": 213.17
         },
         {
           "date": "2026-04-29",
-          "close": 94.75
+          "close": 209.25
         },
         {
           "date": "2026-04-30",
-          "close": 94.48
+          "close": 199.57
         },
         {
           "date": "2026-05-01",
-          "close": 99.62
+          "close": 198.45
         },
         {
           "date": "2026-05-04",
-          "close": 95.78
+          "close": 198.48
         },
         {
           "date": "2026-05-05",
-          "close": 108.15
+          "close": 196.5
         },
         {
           "date": "2026-05-06",
-          "close": 113.01
+          "close": 207.83
         },
         {
           "date": "2026-05-07",
-          "close": 109.62
+          "close": 211.5
         },
         {
           "date": "2026-05-08",
-          "close": 124.92
+          "close": 215.2
         },
         {
           "date": "2026-05-11",
-          "close": 129.44
+          "close": 219.44
         },
         {
           "date": "2026-05-12",
-          "close": 120.61
+          "close": 220.78
         },
         {
           "date": "2026-05-13",
-          "close": 120.29
+          "close": 225.83
         },
         {
           "date": "2026-05-14",
-          "close": 115.93
+          "close": 235.74
         },
         {
           "date": "2026-05-15",
-          "close": 108.77
+          "close": 225.32
         }
       ],
-      "last_close": 108.77,
+      "last_close": 225.32,
       "last_date": "2026-05-15",
+      "currency": "USD",
       "scenario": "bullish",
-      "thesis": "Strukturell enormes Aufwertungspotenzial durch Apple-Diversifizierung von TSMC, aber hohe Bewertung (>100x Forward-P/E) erfordert flekkenlose Ausführung.",
+      "thesis": "Hyperscaler-Capex-Erhöhungen validieren robuste Blackwell-Nachfrage; Q1-Beat-and-Raise auf Rubin-Bestätigung sehr wahrscheinlich = +7–12 % Kurs-Auftrieb 1–2 Wochen post-Earnings.",
       "pros": [
-        "Apple-Deal ist Game-Changer, validiert 18A-Prozess-Reife",
-        "TSMC-Engpässe persistent → Intel wird Multi-Customer-Winner",
-        "Terafab-Anreize unterstützen die Narrative von US-Chipmaking"
+        "Microsoft +190 Mrd. Capex 2026, Meta +125–145 Mrd.",
+        "18A Yields tracken besser, Rubin pre-committed",
+        "Data-Center-Backlog +460 Mrd. QoQ (Alphabet)"
       ],
       "cons": [
-        "Bewertung extrem optimistisch (>100x P/E); Fehlschlag verursacht 40-50% Crash",
-        "Yield-/Qualitätsrisiken bleiben – TSMC ist 30 Jahre Meister",
-        "Foundry-Segment verliert immer noch Geld, Margin-Path unklar"
+        "Valuation nahe All-Time-High, 97 % Beat-Wahrscheinlichkeit eingepreist",
+        "China-Markt weiterhin closed, optionality capped",
+        "Semiconductor-Sektor übertrieben gelaufen, 32 % über 50-Tage-MA"
       ],
       "key_drivers": [
-        "Apple-Deal Validation (preliminary, weitere Spezifika erwartet)",
-        "Terafab Anhörung (3. Juni) – Steuervergünstigungen für Intel/SpaceX/Tesla",
-        "Foundry Break-Even Ziel 2027, Capacity Ramp läuft"
+        "Q1 FY27 Earnings 20. Mai",
+        "Hyperscaler Capex 725 Mrd. Dollar",
+        "Rubin GPU Roadmap Bestätigung"
       ],
       "forecast": {
-        "expected_change_30d_pct": 3.0,
-        "expected_change_90d_pct": 5.0,
-        "uncertainty_pct": 8.0,
+        "expected_change_30d_pct": 7.5,
+        "expected_change_90d_pct": 10.0,
+        "uncertainty_pct": 6.0,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 109.53,
-            "lower": 105.33,
-            "upper": 113.73
+            "central": 229.26,
+            "lower": 222.73,
+            "upper": 235.79
           },
           {
             "date": "2026-05-29",
-            "central": 110.29,
-            "lower": 104.35,
-            "upper": 116.24
+            "central": 233.21,
+            "lower": 223.97,
+            "upper": 242.44
           },
           {
             "date": "2026-06-14",
-            "central": 112.03,
-            "lower": 103.33,
-            "upper": 120.73
+            "central": 242.22,
+            "lower": 228.7,
+            "upper": 255.74
           },
           {
             "date": "2026-07-14",
-            "central": 113.12,
-            "lower": 100.81,
-            "upper": 125.43
+            "central": 245.04,
+            "lower": 225.92,
+            "upper": 264.15
           },
           {
             "date": "2026-08-13",
-            "central": 114.21,
-            "lower": 99.14,
-            "upper": 129.28
+            "central": 247.85,
+            "lower": 224.44,
+            "upper": 271.27
           }
         ]
-      }
+      },
+      "last_close_eur": 193.72,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 58,
+        "hold": 2,
+        "sell": 1,
+        "target_mean": 272.94,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 61528009
     },
     {
       "company": "Microsoft",
       "symbol": "MSFT",
       "category": "portfolio",
-      "potential_rating": 2,
+      "potential_rating": 3,
       "history": [
         {
           "date": "2026-01-07",
@@ -1643,60 +1241,71 @@
       ],
       "last_close": 421.92,
       "last_date": "2026-05-15",
-      "scenario": "bearish",
-      "thesis": "Kurzfristig negativ: Capex-Dynamik drückt Free Cash Flow, Einrichtungen-Druck durch hohe Zinsen. Frage offen: Welcher ROI?",
+      "currency": "USD",
+      "scenario": "neutral",
+      "thesis": "Bill Ackman-Position (Pershing Square) steigerte Kurs um 4 % am 15. Mai; Fundamentals stark, aber Zinssorgen bremsen Near-Term. Q4-Guidance könnte beruhigend wirken, aber nicht vor Fed-Zinsentscheidung 28. Mai.",
       "pros": [
-        "Copilot-Momentum (250% YoY Paid-Seats-Wachstum)",
-        "OpenAI-Deal erneuert bis 2032 (royalty-free IP, 2030 Umsatzteilung)",
-        "Azure wächst, Enterprise-Lock-in stabil"
+        "Capex-Bestätigung 190 Mrd., Azure Demand robust",
+        "KI-Workloads wachsen, Cloud-Preispower steigt",
+        "Ackman-Endorsement zieht Kapital an"
       ],
       "cons": [
-        "Capex-Eskalation eingesperrt, 2027-2028 Rückgänge unklar",
-        "45% Remaining Performance Obligations = OpenAI → Single-Vendor-Risk",
-        "Marktteil des Cloud gegen Amazon & Google umstritten"
+        "Zinsrisiko durch Iran-Konflikt und Fed-Debatte",
+        "Valuation nach starkem 2025 nicht cheap",
+        "Konkurrenz von Amazon/Google in hyperscale capex"
       ],
       "key_drivers": [
-        "Massive Capex-Eskalation (118 Mrd. $ H2 2026)",
-        "OpenAI-Abhängigkeit, Konkurrenz durch Gemini/Claude",
-        "Margin-Druck durch Lohnerhöhungen & Infrastruktur"
+        "Q4 FY2026 Earnings 29. Juli",
+        "Azure Capex 190 Mrd. Dollar",
+        "AI-Workload-Momentum"
       ],
       "forecast": {
-        "expected_change_30d_pct": -1.5,
-        "expected_change_90d_pct": 1.0,
-        "uncertainty_pct": 5.0,
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 3.5,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 420.44,
-            "lower": 410.25,
-            "upper": 430.63
+            "central": 423.4,
+            "lower": 416.26,
+            "upper": 430.53
           },
           {
             "date": "2026-05-29",
-            "central": 418.97,
-            "lower": 404.56,
-            "upper": 433.38
+            "central": 424.87,
+            "lower": 414.79,
+            "upper": 434.96
           },
           {
             "date": "2026-06-14",
-            "central": 415.59,
-            "lower": 394.5,
-            "upper": 436.69
+            "central": 428.25,
+            "lower": 413.48,
+            "upper": 443.02
           },
           {
             "date": "2026-07-14",
-            "central": 420.87,
-            "lower": 391.03,
-            "upper": 450.7
+            "central": 433.52,
+            "lower": 412.64,
+            "upper": 454.41
           },
           {
             "date": "2026-08-13",
-            "central": 426.14,
-            "lower": 389.6,
-            "upper": 462.68
+            "central": 438.8,
+            "lower": 413.22,
+            "upper": 464.37
           }
         ]
-      }
+      },
+      "last_close_eur": 362.75,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 52,
+        "hold": 3,
+        "sell": 0,
+        "target_mean": 561.56,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 13555
     },
     {
       "company": "Walmart",
@@ -2067,65 +1676,77 @@
       ],
       "last_close": 131.45,
       "last_date": "2026-05-15",
+      "currency": "USD",
       "scenario": "bullish",
-      "thesis": "Laufender Konsumtrend bei Low-Income-Konsumenten (+Energie-Druck) begünstigt EDLP-Positionierung; Q1-Earnings werden solide sein.",
+      "thesis": "Q4-Ergebnisse zeigen Operating-Leverage-Beschleunigung; E-Commerce 24 % Wachstum, Werbung 37 %, Automatisierung reduziert Kosten. Earnings am 21. Mai sollten Beat liefern = +2–5 % Auftrieb.",
       "pros": [
-        "Konsumdaten in USA bleiben robust, Walmart-Traffic stark",
-        "EDLP (Everyday Low Prices) Strategie in inflationärem Umfeld attraktiv",
-        "E-Commerce-Sparte wächst zweistellig"
+        "E-Commerce-Sparte wächst 24 %, Walmart Connect +41 %",
+        "Automatisierung 60 % der Läden, 50 % des E-Comm",
+        "Q4 positive Guidance, FY27 EPS 2,75–2,85 Dollar erwartet"
       ],
       "cons": [
-        "Margendruck durch Lohnerhöhungen (mindestens 14 Dollar/Stunde)",
-        "Zollrisiken (potenziell höhere COGS im H2 2026)"
+        "Zollbelastung, Pharmacy-Pricing-Legislation ~100 bps",
+        "Schwaches unteres Einkommens-Segment",
+        "Geopolitisches Risiko (Iran) drückt Consumer-Stimmung"
       ],
       "key_drivers": [
-        "Starke Konsumdaten (Low-Income Resilience)",
-        "Q1-Earnings am 21. Mai (erwartet strong)",
-        "E-Commerce wächst zweistellig"
+        "Q1 FY27 Earnings 21. Mai",
+        "E-Commerce +24 %",
+        "Werbung +37 %"
       ],
       "forecast": {
-        "expected_change_30d_pct": 2.5,
-        "expected_change_90d_pct": 4.0,
+        "expected_change_30d_pct": 3.5,
+        "expected_change_90d_pct": 5.0,
         "uncertainty_pct": 3.0,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 132.22,
-            "lower": 130.31,
-            "upper": 134.12
+            "central": 132.52,
+            "lower": 130.62,
+            "upper": 134.43
           },
           {
             "date": "2026-05-29",
-            "central": 132.98,
-            "lower": 130.29,
-            "upper": 135.68
+            "central": 133.6,
+            "lower": 130.9,
+            "upper": 136.29
           },
           {
             "date": "2026-06-14",
-            "central": 134.74,
-            "lower": 130.79,
-            "upper": 138.68
+            "central": 136.05,
+            "lower": 132.11,
+            "upper": 139.99
           },
           {
             "date": "2026-07-14",
-            "central": 135.72,
-            "lower": 130.15,
-            "upper": 141.3
+            "central": 137.04,
+            "lower": 131.46,
+            "upper": 142.61
           },
           {
             "date": "2026-08-13",
-            "central": 136.71,
-            "lower": 129.88,
-            "upper": 143.54
+            "central": 138.02,
+            "lower": 131.19,
+            "upper": 144.85
           }
         ]
-      }
+      },
+      "last_close_eur": 113.02,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 39,
+        "hold": 3,
+        "sell": 1,
+        "target_mean": 137.37,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 1814928
     },
     {
       "company": "Oracle",
       "symbol": "ORCL",
       "category": "watchlist",
-      "potential_rating": 3,
+      "potential_rating": 2,
       "history": [
         {
           "date": "2026-01-07",
@@ -2490,25 +2111,27 @@
       ],
       "last_close": 192.95,
       "last_date": "2026-05-15",
+      "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Oracle-Datenbank bleibt unersetzlich für Enterprise-Workloads; KI-Software-Einführung stellt Aufwertungspotenzial dar, aber Wettbewerb durch Salesforce/SAP ist intens.",
+      "thesis": "Oracle profitiert indirekt von Hyperscaler-Capex (Database-Workloads), aber kein unmittelbarer Earnings-Katalysator im Mai; Zinssorgen bremsen.",
       "pros": [
-        "Mission-Critical Database-Positionierung bleibt stabil",
-        "Cloud-Infrastructure-Capex-Nutznießer indirekt",
-        "AI-Platform-Initiativen adressieren neue Marktsegmente"
+        "Cloud-Datenbank-Workloads wachsen mit KI",
+        "Enterprise-Moat bleibt defensiv",
+        "Dividend-Wachstum stabil"
       ],
       "cons": [
-        "Bewertung bereits am höheren Ende (~25x Forward-P/E)",
-        "Konkurrenz im KI-Software-Bereich intensiv"
+        "Keine großen News bis Q3 2026",
+        "Konkurrenz von Cloud-Hyperscalern",
+        "Zinsumfeld drückt auf IT-Budgets"
       ],
       "key_drivers": [
-        "Database-Geschäft profitiert von Cloud-Capex",
-        "AI-infusion in Enterprise-Software (Copilot-Konkurrenz)",
-        "Nächste Earnings Q3 FY2026 (Juni/Juli erwartet)"
+        "Cloud Infrastructure Margin-Mix",
+        "Database AI Adoption",
+        "Keine nahe Earnings"
       ],
       "forecast": {
         "expected_change_30d_pct": 1.0,
-        "expected_change_90d_pct": 2.5,
+        "expected_change_90d_pct": 3.0,
         "uncertainty_pct": 4.0,
         "path": [
           {
@@ -2531,48 +2154,28 @@
           },
           {
             "date": "2026-07-14",
-            "central": 196.33,
-            "lower": 185.41,
-            "upper": 207.24
+            "central": 196.81,
+            "lower": 185.89,
+            "upper": 207.72
           },
           {
             "date": "2026-08-13",
-            "central": 197.77,
-            "lower": 184.41,
-            "upper": 211.14
+            "central": 198.74,
+            "lower": 185.37,
+            "upper": 212.11
           }
         ]
-      }
-    },
-    {
-      "company": "MSCI World Health Care ETF (WHEA.DE)",
-      "symbol": null,
-      "category": "watchlist",
-      "potential_rating": 2,
-      "history": [],
-      "last_close": null,
-      "last_date": null,
-      "scenario": "neutral",
-      "thesis": "Healthcare-Sektor ist Defensiv-Play, aber höhere Zinsen bremsen Growth-Namen (Biotech). GLP-1-Narrative bleibt pozitiv für Lilly/Novo, aber breiter Sektor abwartend.",
-      "pros": [
-        "Defensive Qualität in Makro-Turbulenz attraktiv",
-        "GLP-1 Pipeline (Lilly, Novo) hat durable Growth-Katalysator"
-      ],
-      "cons": [
-        "Höhere Zinsen drücken auf Growth-Biotech-Bewertungen",
-        "Regulated Price-Druck in den USA (IRA-Bestimmungen)"
-      ],
-      "key_drivers": [
-        "Rates bleiben erhöht, belasted Bewertungen",
-        "GLP-1-Boom (Eli Lilly, Novo Nordisk) treibt Sektor selektiv",
-        "Pharma-Gewinnerwartungen gemischt"
-      ],
-      "forecast": {
-        "expected_change_30d_pct": 0.5,
-        "expected_change_90d_pct": 2.0,
-        "uncertainty_pct": 3.5,
-        "path": []
-      }
+      },
+      "last_close_eur": 165.89,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 36,
+        "hold": 6,
+        "sell": 1,
+        "target_mean": 242.74,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 32826
     },
     {
       "company": "Boeing",
@@ -2943,65 +2546,108 @@
       ],
       "last_close": 220.49,
       "last_date": "2026-05-15",
-      "scenario": "neutral",
-      "thesis": "Boeing-Turnaround schleppend; Max-Zertifizierung verzögert sich, Supply-Chain-Druck hoch. Kurzfristig keine Lust für Kauf – abwarten bis Stabilisierung klarer.",
+      "currency": "USD",
+      "scenario": "bearish",
+      "thesis": "Boeing-Kurs sank 3–5 % nach Trump-Ankündigung von 200 Chinas-Jet-Deal (enttäuschend vs. Erwartung); Iran-Konflikt erhöht Geopolitik-Unsicherheit für Luftfahrt. Near-term bearish.",
       "pros": [
-        "Langfristige Luftfahrt-Nachfrage (Backlog groß)",
-        "Defense-Kontrakte Katalysator (Geopolitik)"
+        "Defence-Nachfrage bleibt stabil",
+        "Supply-Chain-Konsolidierung"
       ],
       "cons": [
-        "737 Max 7/10 Zertifizierung kritisch, Verzögerung schädlich",
-        "Lieferketten-Engpässe kosten Marge",
-        "Reputationsrisiko bei Wehrtechnik-Fokus"
+        "China-Deal-Enttäuschung, nur 200 Jets statt mehr",
+        "Iran-Konflikt schreckt Reisen ab",
+        "MAX-Production-Bottleneck nicht gelöst"
       ],
       "key_drivers": [
-        "Certification-Prozess 737 MAX 7/10 (langsamer als erwartet)",
-        "Geopolitische Nachfrage nach Wehrtechnik (Lukrativ, aber reputational)",
-        "Lieferketten-Probleme persistierend"
+        "Trump 200-Jets-Deal mit China (schwach)",
+        "Iran-Konflikt = Flugverkehr-Unsicherheit",
+        "Supply-Chain-Druck"
       ],
       "forecast": {
-        "expected_change_30d_pct": 0.0,
+        "expected_change_30d_pct": -2.0,
         "expected_change_90d_pct": -1.0,
-        "uncertainty_pct": 6.0,
+        "uncertainty_pct": 5.0,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 220.49,
-            "lower": 214.1,
-            "upper": 226.88
+            "central": 219.46,
+            "lower": 214.14,
+            "upper": 224.79
           },
           {
             "date": "2026-05-29",
-            "central": 220.49,
-            "lower": 211.45,
-            "upper": 229.53
+            "central": 218.43,
+            "lower": 210.9,
+            "upper": 225.96
           },
           {
             "date": "2026-06-14",
-            "central": 220.49,
-            "lower": 207.26,
-            "upper": 233.72
+            "central": 216.08,
+            "lower": 205.06,
+            "upper": 227.1
           },
           {
             "date": "2026-07-14",
-            "central": 219.39,
-            "lower": 200.68,
-            "upper": 238.1
+            "central": 217.18,
+            "lower": 201.59,
+            "upper": 232.77
           },
           {
             "date": "2026-08-13",
             "central": 218.29,
-            "lower": 195.37,
-            "upper": 241.2
+            "lower": 199.19,
+            "upper": 237.38
           }
         ]
+      },
+      "last_close_eur": 189.57,
+      "fx_rate_eurusd": 1.1631,
+      "analyst_consensus": {
+        "buy": 21,
+        "hold": 5,
+        "sell": 1,
+        "target_mean": 269.52,
+        "currency": "USD"
+      },
+      "insider_purchases_90d": 189893
+    },
+    {
+      "company": "MSCI World Health Care ETF",
+      "symbol": null,
+      "category": "watchlist",
+      "potential_rating": 2,
+      "history": [],
+      "last_close": null,
+      "last_date": null,
+      "currency": "USD",
+      "scenario": "neutral",
+      "thesis": "Healthcare bleibt defensiv inmitten Tech-Pullback, aber GLP-1-Wettbewerb (Eli Lilly vs. Novo) nimmt Volumen. ETF-Exposure moderat; Zinssorgen bremsen.",
+      "pros": [
+        "GLP-1 Markt wächst, Eli Lilly gewinnt Share",
+        "Defensive Sektoren in Zins-Volatilität"
+      ],
+      "cons": [
+        "Pharma-Bewertung nicht günstig",
+        "Regulatorisches Risiko (Preisregulierung)",
+        "Portfolio weniger KI-exponiert"
+      ],
+      "key_drivers": [
+        "Pharma-Bewertung stabil",
+        "Eli Lilly GLP-1 Momentum",
+        "Keine sektoralen Earnings"
+      ],
+      "forecast": {
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 3.5,
+        "path": []
       }
     },
     {
       "company": "Airbus",
       "symbol": "AIR.PA",
       "category": "watchlist",
-      "potential_rating": 3,
+      "potential_rating": 2,
       "history": [
         {
           "date": "2026-01-07",
@@ -3366,59 +3012,68 @@
       ],
       "last_close": 167.68,
       "last_date": "2026-05-15",
-      "scenario": "bullish",
-      "thesis": "Airbus profitiert von Boeings Zertifizierungs-Chaos; Orderbuch fulminant, Margen-Ausblick positiv. Nächste 2-4 Wochen: Eher seitwärts, aber Q2-Earnings (später Mai/Juni) könnten Aufwertung bringen.",
+      "currency": "EUR",
+      "scenario": "neutral",
+      "thesis": "Airbus profitiert davon, dass Boeing schwächelt, aber Iran-Konflikt und Geopolitik drücken auf Luftfahrt insgesamt. Relative Outperformance, aber kein positiver Katalysator.",
       "pros": [
-        "Boeing-Zertifizierung scheitert → Marktanteil-Shift zu Airbus",
-        "Orderbuch voll, Produktionskapazität ausgelastet",
-        "Margin-Expansion-Potenzial durch besseres Mix"
+        "Boeing-Probleme verlagern Marktanteile",
+        "Backlog robust"
       ],
       "cons": [
-        "Lieferketten-Druck (Rolls-Royce-Triebwerk-Engpässe)",
-        "Europäische Konjunktur-Schwäche (recession risk 2026-2027)"
+        "Geopolitisches Risiko (Flug-Unsicherheit)",
+        "Europäische Makro-Unsicherheit",
+        "Zinsumfeld belastet Flugverkehr"
       ],
       "key_drivers": [
-        "Boeing-Schwäche begünstigt Marktanteil-Gewinne",
-        "A380/A350 Nachfrage nach wie vor stark",
-        "Europäische Nachfrage stabil"
+        "Boeing-Schwäche (relativ bullish)",
+        "Supply Chain, Makro-Unsicherheit",
+        "Keine Earnings nahe"
       ],
       "forecast": {
-        "expected_change_30d_pct": 2.0,
-        "expected_change_90d_pct": 3.5,
-        "uncertainty_pct": 3.5,
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 1.5,
+        "uncertainty_pct": 4.0,
         "path": [
           {
             "date": "2026-05-22",
-            "central": 168.46,
-            "lower": 165.63,
-            "upper": 171.3
+            "central": 167.68,
+            "lower": 164.44,
+            "upper": 170.92
           },
           {
             "date": "2026-05-29",
-            "central": 169.25,
-            "lower": 165.24,
-            "upper": 173.25
+            "central": 167.68,
+            "lower": 163.1,
+            "upper": 172.26
           },
           {
             "date": "2026-06-14",
-            "central": 171.03,
-            "lower": 165.16,
-            "upper": 176.9
+            "central": 167.68,
+            "lower": 160.97,
+            "upper": 174.39
           },
           {
             "date": "2026-07-14",
-            "central": 172.29,
-            "lower": 163.99,
-            "upper": 180.59
+            "central": 168.94,
+            "lower": 159.45,
+            "upper": 178.42
           },
           {
             "date": "2026-08-13",
-            "central": 173.55,
-            "lower": 163.38,
-            "upper": 183.71
+            "central": 170.2,
+            "lower": 158.58,
+            "upper": 181.81
           }
         ]
+      },
+      "analyst_consensus": {
+        "buy": 15,
+        "hold": 8,
+        "sell": 0,
+        "target_mean": 209.31,
+        "currency": "EUR"
       }
     }
-  ]
+  ],
+  "fx_rate_eurusd": 1.1631
 }

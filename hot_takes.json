@@ -3,13 +3,23 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings am 20. Mai (nach Börsenschluss) – Konsens erwartet 78,8 Mrd. Dollar Umsatz, 1,77 Dollar EPS. Hyperscaler-Capex-Erhöhungen (Meta +10 Mrd., Microsoft +36 Mrd., Alphabet & Amazon ebenfalls heraufgestuft) deuten auf robuste Nachfrage nach Blackwell-Systemen hin.",
+      "event_basis": "Q1 FY27 Earnings am 20. Mai 2026 (nach Börsenschluss) – Hyperscaler-Capex auf 725 Milliarden Dollar Jahresziel erhöht; Microsoft plant 190 Milliarden Dollar Capex, Meta erhöht auf 125–145 Milliarden Dollar; Rubin GPU-Plattform pre-committed",
       "event_date": "2026-05-20",
-      "time_horizon": "1-2 Wochen vor/nach Earnings",
-      "thesis": "Wenn die größten Kunden von NVIDIA bei Rekordniveaus in KI-Infrastruktur investieren und das Memory-Ökosystem um NVIDIAs GPUs weiter beschleunigt, sind die Auswirkungen auf NVIDIAs Quartalsergebnisse schwer zu übersehen. Prognose für Q2 und Ganzjahres-Guidance wird wahrscheinlich bullisch sein.",
-      "risks": "Bewertung bei ~6 Billionen Dollar Marktkapitalisierung lässt wenig Spielraum für Fehler; selbst starke Ergebnisse könnten Gewinnmitnahmen auslösen (Post-Earnings-Selloff möglich).",
+      "time_horizon": "3–7 Tage",
+      "expected_move_pct": {
+        "low": 5.0,
+        "high": 10.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 230.0,
+        "high": 245.0,
+        "currency": "USD"
+      },
+      "thesis": "Hyperscaler-Capex-Erhöhungen in H1 2026 bilden harten Floor für Blackwell-Nachfrage; operationale Marge und Rubin-Roadmap-Bestätigung könnten Kurs auf neue Rekorde treiben. Höchste Konviktion für bullisches Szenario: Beat-and-Raise auf Nachfrage-Momentum.",
+      "risks": "Aktie notiert nahe All-Time-High mit 97-%-Beat-Wahrscheinlichkeit bereits eingepreist; jede Enttäuschung bei China-Markt-Kommentaren oder Rubin-Timing könnte -5 % Pullback auslösen.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-15T23:28:32.036624+02:00"
+      "last_updated": "2026-05-16T17:52:14.392229+02:00"
     },
     {
       "company": "NVIDIA",
@@ -47,14 +57,46 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni – WWDC26 wird großartige Updates für Apple-Plattformen zeigen, einschließlich KI-Fortschritten und neuer Software sowie Entwicklertools. WWDC 2026 wird voraussichtlich iOS 27, eine intelligentere Siri und breitere KI-Modell-Optionen zeigen.",
+      "event_basis": "WWDC Keynote am 8. Juni 2026 – Apple Intelligence & Siri-Ankündigungen; neue Developer Tools; iOS 27 & macOS-Integration. Q2-Zahlen bestätigen Service-Momentum und iPhone-Supercycle.",
       "event_date": "2026-06-08",
-      "time_horizon": "2-3 Wochen",
-      "thesis": "Intel-Deal validiert Apples technische Leistungsfähigkeit und Diversifizierungsstrategie. WWDC ist Plattform, um Siri 2.0 (Gemini-powered) und tiefe KI-Integration zu demonstrieren – ein Wendepunkt nach Jahren von Verzögerungen. Positives Sentiment für Services-Umsätze und Ökosystem-Bindung.",
-      "risks": "KI-Features könnten underspektakulär wirken, wenn Siri immer noch Konkurrenz-Modelle unterperformt oder Hardware-Ankündigungen fehlen (iPad/Mac). Markt könnte höher gehypte Vorstellungen haben.",
+      "time_horizon": "2–4 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 6.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 305.0,
+        "high": 320.0,
+        "currency": "USD"
+      },
+      "thesis": "WWDC zeigt konkrete KI-Feature-Roadmap und Developer-Adoption. iPhone 17 + Apple Intelligence = Multi-Jahres-Upgrade-Zyklus. Neue CEO ab September 2026 (John Ternus) signalisiert Produktfokus. Service-Wachstum von 16 % jährlich liefert hohe Marge.",
+      "risks": "Speicherkostendrücke könnten Margen unter erwartete 47,5 % drücken; China-Absatz schwächelt; KI-Monetarisierung langsamer als erhofft.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-15T23:28:32.036624+02:00"
+      "last_updated": "2026-05-16T17:52:14.392229+02:00"
+    },
+    {
+      "company": "Intel",
+      "rating": 3,
+      "event_basis": "H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD erkundigen sich); Terafab-Anhörung am 3. Juni in Grimes County TX validiert Megafab-Partnerschaft Tesla/Intel/SpaceX",
+      "event_date": "2026-06-03",
+      "time_horizon": "2–6 Wochen",
+      "expected_move_pct": {
+        "low": -3.0,
+        "high": 8.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 100.0,
+        "high": 115.0,
+        "currency": "USD"
+      },
+      "thesis": "18A-Yields tracken besser als erwartet; externe Foundry-Umsätze noch niedrig (174 Mio. USD), aber Microsoft/AWS-Bestellungen und Apple-Gespräche deuten Inflection für H2 2026 an. US-Regierungsstake (10 %) + CHIPS Act-Fonds bieten Strukturfloor.",
+      "risks": "Foundry bleibt Verlust-machend (Q1 2026: -2,4 Mrd. USD); keine größeren Kundenabschlüsse = langsamere Skalierung. Valuation auf 115x 2026 EPS ist äußerst ambitioniert.",
+      "first_seen": "2026-05-16",
+      "last_updated": "2026-05-16T17:52:14.392229+02:00"
     }
   ],
-  "updated_at": "2026-05-15T23:28:32.036624+02:00"
+  "archive": [],
+  "updated_at": "2026-05-16T17:52:14.392229+02:00"
 }

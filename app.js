@@ -20,20 +20,33 @@ const MONTH_DE_FULL = [
 ];
 const WEEKDAY_DE = ["Sonntag", "Montag", "Dienstag", "Mittwoch", "Donnerstag", "Freitag", "Samstag"];
 
+const MACRO_ICON_SVG = {
+  globe: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>`,
+  target: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>`,
+  pulse: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>`,
+};
+
 // ---------- theme ----------
 function initTheme() {
   const saved = localStorage.getItem("theme") || "dark";
   document.documentElement.setAttribute("data-theme", saved);
-  document.getElementById("theme-toggle").textContent = saved === "dark" ? "🌙" : "☀️";
 }
 document.getElementById("theme-toggle").addEventListener("click", () => {
   const cur = document.documentElement.getAttribute("data-theme") || "dark";
   const next = cur === "dark" ? "light" : "dark";
   document.documentElement.setAttribute("data-theme", next);
   localStorage.setItem("theme", next);
-  document.getElementById("theme-toggle").textContent = next === "dark" ? "🌙" : "☀️";
 });
 initTheme();
+
+// Watchlist-Shortcut: Click springt zum Portfolio & Watchlist Tab.
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest("#watchlist-shortcut");
+  if (!btn) return;
+  const tabBtn = document.querySelector('.tab[data-tab="forecast"]');
+  if (tabBtn) tabBtn.click();
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
 
 // ---------- tabs ----------
 document.querySelectorAll(".tab").forEach((btn) => {
@@ -81,28 +94,27 @@ function renderReport(report, container) {
   const marketState = macro.market_state || macro.summary || "";
   const macroDrivers = macro.macro_drivers || "";
   const sentiment = macro.sentiment || "";
-  html += `<div class="macro">
-    <h3>Makro-Kontext</h3>
-    <div class="macro-sections">`;
-  if (marketState) {
-    html += `<div class="macro-section">
-      <div class="macro-label">📊 Marktlage</div>
-      <p>${escapeHtml(marketState)}</p>
-    </div>`;
+
+  const macroCards = [
+    { key: "globe", title: "Marktlage", text: marketState },
+    { key: "target", title: "Makro-Treiber", text: macroDrivers },
+    { key: "pulse", title: "Sentiment", text: sentiment },
+  ].filter((c) => c.text);
+
+  if (macroCards.length) {
+    html += `<div class="macro-grid">`;
+    for (const c of macroCards) {
+      html += `<article class="macro-card">
+        <div class="macro-icon icon-${c.key}">${MACRO_ICON_SVG[c.key]}</div>
+        <div class="macro-body">
+          <h3 class="macro-card-title">${escapeHtml(c.title)}</h3>
+          <p class="macro-card-text">${escapeHtml(c.text)}</p>
+        </div>
+      </article>`;
+    }
+    html += `</div>`;
   }
-  if (macroDrivers) {
-    html += `<div class="macro-section">
-      <div class="macro-label">🌐 Makro-Treiber</div>
-      <p>${escapeHtml(macroDrivers)}</p>
-    </div>`;
-  }
-  if (sentiment) {
-    html += `<div class="macro-section">
-      <div class="macro-label">🎯 Sentiment</div>
-      <p>${escapeHtml(sentiment)}</p>
-    </div>`;
-  }
-  html += `</div>`;
+
   if (macro.sp500 || macro.nasdaq || macro.dax) {
     html += `<div class="indices">`;
     if (macro.sp500) html += `<div><strong>S&amp;P 500:</strong> ${escapeHtml(macro.sp500)}</div>`;
@@ -110,7 +122,6 @@ function renderReport(report, container) {
     if (macro.dax) html += `<div><strong>DAX:</strong> ${escapeHtml(macro.dax)}</div>`;
     html += `</div>`;
   }
-  html += `</div>`;
 
   // Sectors
   const sectors = report.sectors || [];
@@ -560,46 +571,97 @@ async function loadCalendar() {
 // ---------- hot takes ----------
 const SCENARIO_LABEL = { bullish: "📈 Bullish", neutral: "➡️ Neutral", bearish: "📉 Bearish" };
 
+let hotTakesState = { takes: [], sort: "rating" };
+
 async function loadHotTakes() {
   const container = document.getElementById("hot-takes-list");
   try {
     // Hot Takes liegen rollierend in hot_takes.json (Top-Level-Datei).
     const data = await fetchJSON("hot_takes.json");
     const today = new Date().toISOString().slice(0, 10);
-    const takes = (data.takes || []).filter((t) => (t.event_date || "9999-12-31") >= today);
-    if (takes.length === 0) {
+    hotTakesState.takes = (data.takes || []).filter((t) => (t.event_date || "9999-12-31") >= today);
+    if (hotTakesState.takes.length === 0) {
       container.innerHTML = `<div class="empty-state"><span class="em">🤷</span>Aktuell keine offenen Hot Takes. Neue erscheinen, sobald greifbare Events kommen.</div>`;
       return;
     }
-    // Sortieren: Rating absteigend, dann Event-Datum aufsteigend
-    takes.sort((a, b) => (Number(b.rating) || 0) - (Number(a.rating) || 0) ||
-      (a.event_date || "").localeCompare(b.event_date || ""));
-    let html = "";
-    for (const t of takes) {
-      const r = Number(t.rating || 0);
-      const forecastBox = renderHotTakeForecast(t);
-      html += `<div class="hot-take r${r}">
-        <div class="hot-take-head">
-          <span class="hot-take-company">${escapeHtml(t.company || "?")}</span>
-          <span class="rating r${r}">⭐ ${r}/5</span>
-        </div>
-        <div class="hot-take-event">
-          <span class="hot-take-eventdate">${escapeHtml(t.event_date || "")}</span>
-          · ${escapeHtml(t.event_basis || "")}
-          ${t.time_horizon ? `<span class="hot-take-horizon">⏱ ${escapeHtml(t.time_horizon)}</span>` : ""}
-        </div>
-        ${forecastBox}
-        <p class="hot-take-thesis">${escapeHtml(t.thesis || "")}</p>
-        ${t.risks ? `<div class="hot-take-risks">⚠️ ${escapeHtml(t.risks)}</div>` : ""}
-        <div class="hot-take-foot">
-          ${t.first_seen ? `<span>seit ${escapeHtml(t.first_seen)}</span>` : ""}
-        </div>
-      </div>`;
-    }
-    container.innerHTML = html;
+    wireHotTakesSort();
+    renderHotTakesList();
   } catch (e) {
     container.innerHTML = `<div class="empty-state"><span class="em">📭</span>Noch keine Hot Takes vorhanden.</div>`;
   }
+}
+
+function wireHotTakesSort() {
+  const btn = document.getElementById("hot-takes-sort");
+  if (!btn || btn.dataset.wired) return;
+  btn.dataset.wired = "1";
+  btn.addEventListener("click", () => {
+    hotTakesState.sort = hotTakesState.sort === "rating" ? "date" : "rating";
+    const label = document.getElementById("hot-takes-sort-label");
+    if (label) label.textContent = hotTakesState.sort === "rating" ? "Höchstes Rating zuerst" : "Nächstes Event zuerst";
+    renderHotTakesList();
+  });
+}
+
+function renderHotTakesList() {
+  const container = document.getElementById("hot-takes-list");
+  if (!container) return;
+  const takes = [...hotTakesState.takes];
+  if (hotTakesState.sort === "rating") {
+    takes.sort((a, b) => (Number(b.rating) || 0) - (Number(a.rating) || 0) ||
+      (a.event_date || "").localeCompare(b.event_date || ""));
+  } else {
+    takes.sort((a, b) => (a.event_date || "").localeCompare(b.event_date || "") ||
+      (Number(b.rating) || 0) - (Number(a.rating) || 0));
+  }
+  let html = "";
+  for (const t of takes) {
+    const r = Number(t.rating || 0);
+    const forecastBox = renderHotTakeForecast(t);
+    const direction = t.expected_move_pct?.direction === "down" ? "down" : "up";
+    const initials = (t.company || "?").trim().split(/\s+/).slice(0, 2).map((w) => w[0] || "").join("").toUpperCase().slice(0, 2);
+    const eventDate = formatHotTakeDate(t.event_date);
+    const thesisLabel = direction === "down" ? "Bearische These" : "Bullische These";
+    const thesisIcon = direction === "down"
+      ? `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 17 13.5 8.5 8.5 13.5 2 7"></polyline><polyline points="16 17 22 17 22 11"></polyline></svg>`
+      : `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>`;
+    html += `<article class="hot-take r${r} dir-${direction}">
+      <span class="hot-take-accent" aria-hidden="true"></span>
+      <div class="hot-take-main">
+        <header class="hot-take-head">
+          <div class="hot-take-avatar" aria-hidden="true">${escapeHtml(initials || "?")}</div>
+          <div class="hot-take-id">
+            <h3 class="hot-take-company">${escapeHtml(t.company || "?")}</h3>
+            ${eventDate ? `<p class="hot-take-eventdate">${escapeHtml(eventDate)}</p>` : ""}
+          </div>
+          <span class="rating-pill r${r}">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
+            ${r}/5
+          </span>
+        </header>
+        ${t.event_basis ? `<ul class="hot-take-event-list"><li>${escapeHtml(t.event_basis)}</li></ul>` : ""}
+        ${t.time_horizon ? `<div class="hot-take-horizon-row"><span class="hot-take-horizon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>${escapeHtml(t.time_horizon)}</span></div>` : ""}
+        ${forecastBox}
+        ${t.thesis ? `<section class="hot-take-section thesis dir-${direction}">
+          <div class="hot-take-section-head">${thesisIcon}<span>${thesisLabel}</span></div>
+          <p>${escapeHtml(t.thesis)}</p>
+        </section>` : ""}
+        ${t.risks ? `<section class="hot-take-section risks">
+          <div class="hot-take-section-head"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg><span>Bewertung im Blick</span></div>
+          <p>${escapeHtml(t.risks)}</p>
+        </section>` : ""}
+        ${t.first_seen ? `<footer class="hot-take-foot">seit ${escapeHtml(formatHotTakeDate(t.first_seen) || t.first_seen)}</footer>` : ""}
+      </div>
+    </article>`;
+  }
+  container.innerHTML = html;
+}
+
+function formatHotTakeDate(iso) {
+  if (!iso) return "";
+  const d = new Date(iso + "T00:00:00");
+  if (isNaN(d.getTime())) return iso;
+  return `${d.getDate()}. ${MONTH_DE_FULL[d.getMonth()]} ${d.getFullYear()}`;
 }
 
 function renderHotTakeForecast(t) {

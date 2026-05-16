@@ -579,6 +579,7 @@ def build_hot_takes_context(hot_takes: dict, today: str) -> str:
 def merge_hot_takes(old: dict, new_takes: list, today: str) -> dict:
     today_date = datetime.strptime(today, "%Y-%m-%d").date()
     merged: dict = {}
+    archive = list(old.get("archive", []))
 
     for t in old.get("takes", []):
         try:
@@ -586,10 +587,14 @@ def merge_hot_takes(old: dict, new_takes: list, today: str) -> dict:
             if d >= today_date:
                 key = (t.get("company", ""), t.get("event_date", ""))
                 merged[key] = t
+            else:
+                # Abgelaufener Take wandert ins Archiv (mit performance falls schon ausgewertet)
+                archive.append(t)
         except (ValueError, KeyError):
             continue
 
     now_iso = datetime.now(BERLIN).isoformat()
+    new_r5_alerts: list = []
     for t in new_takes:
         try:
             d = datetime.strptime(t.get("event_date", ""), "%Y-%m-%d").date()
@@ -601,16 +606,183 @@ def merge_hot_takes(old: dict, new_takes: list, today: str) -> dict:
             t_clean["first_seen"] = existing.get("first_seen", today) if existing else today
             t_clean["last_updated"] = now_iso
             merged[key] = t_clean
+            # r5-Alert nur wenn HEUTE neu hinzugekommen (existing == None) und rating == 5
+            if existing is None and int(t_clean.get("rating") or 0) == 5:
+                new_r5_alerts.append(t_clean)
         except (ValueError, KeyError):
             continue
+
+    # Dedupliziere Archiv (gleicher Key = company + event_date)
+    seen = set()
+    archive_dedup = []
+    for a in archive:
+        k = (a.get("company", ""), a.get("event_date", ""))
+        if k in seen:
+            continue
+        seen.add(k)
+        archive_dedup.append(a)
 
     return {
         "takes": sorted(
             merged.values(),
             key=lambda e: (-int(e.get("rating", 0) or 0), e.get("event_date", "")),
         ),
+        "archive": sorted(archive_dedup, key=lambda e: e.get("event_date", ""), reverse=True),
         "updated_at": now_iso,
+        "_new_r5_alerts": new_r5_alerts,
     }
+
+
+def evaluate_hot_takes_performance(state: dict, today: str) -> dict:
+    """Wertet abgelaufene Hot Takes mit yfinance-Daten aus. Mutiert `state` in-place.
+
+    Status-Werte: pending (event noch nicht +14T), hit (Kurs in target_range +14T), miss (außerhalb).
+    Wenn kein price_target gesetzt war: status="no_target".
+    """
+    try:
+        import yfinance as yf
+    except ImportError:
+        return state
+
+    today_date = datetime.strptime(today, "%Y-%m-%d").date()
+    archive = state.get("archive", [])
+    evaluated_hit = 0
+    evaluated_miss = 0
+    evaluated_skip = 0
+    for t in archive:
+        perf = t.get("performance") or {}
+        if perf.get("status") in ("hit", "miss", "no_target", "no_data"):
+            continue
+        try:
+            event_date = datetime.strptime(t.get("event_date", ""), "%Y-%m-%d").date()
+        except (ValueError, KeyError):
+            continue
+        if (today_date - event_date).days < 14:
+            t["performance"] = {"status": "pending", "evaluated_at": None}
+            continue
+
+        company = t.get("company", "")
+        symbol = TICKER_MAP.get(company)
+        if not symbol:
+            t["performance"] = {"status": "no_data", "reason": "ticker_unknown"}
+            continue
+
+        try:
+            from datetime import timedelta
+            hist = yf.Ticker(symbol).history(
+                start=(event_date - timedelta(days=2)).isoformat(),
+                end=(event_date + timedelta(days=20)).isoformat(),
+                auto_adjust=True,
+            )
+            if hist.empty:
+                t["performance"] = {"status": "no_data", "reason": "no_history"}
+                continue
+            closes = [(d.date(), float(c)) for d, c in zip(hist.index, hist["Close"]) if c == c]
+            event_close = next((c for d, c in closes if d >= event_date), None)
+            target_date = event_date + timedelta(days=14)
+            after_close = next((c for d, c in closes if d >= target_date), None) or (closes[-1][1] if closes else None)
+            if event_close is None or after_close is None:
+                t["performance"] = {"status": "no_data", "reason": "incomplete"}
+                continue
+            pct_change = round((after_close / event_close - 1) * 100, 2)
+            pt = t.get("price_target") or {}
+            lo = pt.get("low")
+            hi = pt.get("high")
+            if lo is not None and hi is not None:
+                in_range = lo <= after_close <= hi
+                status = "hit" if in_range else "miss"
+            else:
+                status = "no_target"
+                in_range = None
+            t["performance"] = {
+                "status": status,
+                "price_at_event": round(event_close, 2),
+                "price_14d_after": round(after_close, 2),
+                "pct_change_14d": pct_change,
+                "in_target_range": in_range,
+                "evaluated_at": today,
+            }
+            if status == "hit":
+                evaluated_hit += 1
+            elif status == "miss":
+                evaluated_miss += 1
+            else:
+                evaluated_skip += 1
+        except Exception as e:
+            t["performance"] = {"status": "no_data", "reason": str(e)[:80]}
+            evaluated_skip += 1
+
+    total = evaluated_hit + evaluated_miss + evaluated_skip
+    if total:
+        print(f"  Performance-Eval: {evaluated_hit} hit, {evaluated_miss} miss, {evaluated_skip} skip (gesamt {total})")
+    return state
+
+
+def _fetch_eurusd_rate(yf_module) -> float | None:
+    """1× pro Run: aktueller EURUSD-Wechselkurs (USD pro 1 EUR)."""
+    try:
+        hist = yf_module.Ticker("EURUSD=X").history(period="2d", auto_adjust=False)
+        if not hist.empty:
+            return round(float(hist["Close"].iloc[-1]), 4)
+    except Exception as e:
+        print(f"  EURUSD=X Fehler: {e}")
+    return None
+
+
+def _ticker_currency(symbol: str) -> str:
+    """Heuristik: Currency aus Ticker-Endung. .DE/.PA/.MI/.AS/.L → EUR/GBp, sonst USD."""
+    if not symbol:
+        return "USD"
+    s = symbol.upper()
+    if s.endswith((".DE", ".PA", ".MI", ".AS", ".MC", ".BR", ".VI", ".HE")):
+        return "EUR"
+    if s.endswith(".L"):
+        return "GBp"
+    if s.endswith(".SW"):
+        return "CHF"
+    if s.endswith(".TO"):
+        return "CAD"
+    return "USD"
+
+
+def _fetch_analyst_insider(yf_module, symbol: str) -> dict:
+    """Bestmöglich: Analystenkonsens + Insider-Käufe. Defensiv, alle Felder optional."""
+    out: dict = {}
+    try:
+        ticker_obj = yf_module.Ticker(symbol)
+        try:
+            recs = ticker_obj.recommendations_summary
+            if recs is not None and not recs.empty:
+                row = recs.iloc[0]
+                buy = int((row.get("strongBuy") or 0) + (row.get("buy") or 0))
+                hold = int(row.get("hold") or 0)
+                sell = int((row.get("sell") or 0) + (row.get("strongSell") or 0))
+                total = buy + hold + sell
+                if total > 0:
+                    out["analyst_consensus"] = {"buy": buy, "hold": hold, "sell": sell}
+        except Exception:
+            pass
+        try:
+            info = ticker_obj.info or {}
+            target_mean = info.get("targetMeanPrice")
+            if target_mean is not None:
+                out.setdefault("analyst_consensus", {})["target_mean"] = round(float(target_mean), 2)
+                out["analyst_consensus"]["currency"] = info.get("currency", "USD")
+        except Exception:
+            pass
+        try:
+            insider = ticker_obj.insider_purchases
+            if insider is not None and not insider.empty:
+                purchases_row = insider[insider.iloc[:, 0].astype(str).str.contains("Purchase", case=False, na=False)]
+                if not purchases_row.empty:
+                    shares = int(purchases_row.iloc[0].get("Shares") or 0)
+                    if shares > 0:
+                        out["insider_purchases_90d"] = shares
+        except Exception:
+            pass
+    except Exception:
+        pass
+    return out
 
 
 def fetch_forecast_data(forecast: dict) -> dict:
@@ -630,6 +802,9 @@ def fetch_forecast_data(forecast: dict) -> dict:
             "updated_at": datetime.now(BERLIN).isoformat(),
             "tickers": [{"company": t.get("company"), "symbol": None, "history": [], "forecast": _build_forecast_projection(t, None, None)} for t in tickers],
         }
+
+    eurusd = _fetch_eurusd_rate(yf)
+    print(f"  EURUSD=X: {eurusd}" if eurusd else "  EURUSD=X: nicht verfügbar")
 
     result = []
     for t in tickers:
@@ -686,7 +861,14 @@ def fetch_forecast_data(forecast: dict) -> dict:
         pros = _clean_bullets(t.get("pros"))
         cons = _clean_bullets(t.get("cons"))
 
-        result.append({
+        currency = _ticker_currency(symbol) if symbol else "USD"
+        last_close_eur = None
+        if last_close is not None and currency == "USD" and eurusd:
+            last_close_eur = round(last_close / eurusd, 2)
+
+        analyst_insider = _fetch_analyst_insider(yf, symbol) if symbol else {}
+
+        entry = {
             "company": company,
             "symbol": symbol,
             "category": category,
@@ -694,19 +876,29 @@ def fetch_forecast_data(forecast: dict) -> dict:
             "history": history,
             "last_close": last_close,
             "last_date": last_date,
+            "currency": currency,
             "scenario": t.get("scenario"),
             "thesis": t.get("thesis"),
             "pros": pros,
             "cons": cons,
             "key_drivers": t.get("key_drivers", []),
             "forecast": _build_forecast_projection(t, last_close, last_date),
-        })
+        }
+        if last_close_eur is not None:
+            entry["last_close_eur"] = last_close_eur
+            entry["fx_rate_eurusd"] = eurusd
+        if analyst_insider:
+            entry.update(analyst_insider)
+        result.append(entry)
 
-    return {
+    payload = {
         "updated_at": datetime.now(BERLIN).isoformat(),
         "commentary": forecast.get("commentary", ""),
         "tickers": result,
     }
+    if eurusd:
+        payload["fx_rate_eurusd"] = eurusd
+    return payload
 
 
 def _build_forecast_projection(ticker: dict, last_close, last_date) -> dict:
@@ -826,7 +1018,95 @@ def fetch_market_indices() -> dict:
         except Exception as e:
             print(f"  yfinance Fehler für {idx['name']} ({ticker}): {e}")
 
-    return {"updated_at": datetime.now(BERLIN).isoformat(), "indices": base_payload}
+    risk_indicators = _fetch_risk_indicators(yf)
+    fear_greed = _fetch_fear_greed()
+
+    payload: dict = {"updated_at": datetime.now(BERLIN).isoformat(), "indices": base_payload}
+    if risk_indicators:
+        payload["risk_indicators"] = risk_indicators
+    if fear_greed:
+        payload["fear_greed"] = fear_greed
+    return payload
+
+
+def _fetch_risk_indicators(yf_module) -> dict:
+    """VIX (Volatilität) und 10Y-2Y-Yield-Spread (Rezessions-Indikator).
+
+    yfinance Treasury-Tickers liefern den Yield × 10 (z.B. 4.32% als 43.2).
+    """
+    out: dict = {}
+    try:
+        vix_hist = yf_module.Ticker("^VIX").history(period="30d", auto_adjust=False)
+        if not vix_hist.empty:
+            closes = [float(c) for c in vix_hist["Close"].dropna()]
+            if closes:
+                last = round(closes[-1], 2)
+                change_pct = None
+                if len(closes) >= 2 and closes[-2]:
+                    change_pct = round((closes[-1] / closes[-2] - 1) * 100, 2)
+                out["vix"] = {
+                    "value": last,
+                    "change_pct": change_pct,
+                    "sparkline": [round(c, 2) for c in closes[-30:]],
+                }
+                print(f"  yfinance VIX: {last} (Δ {change_pct}%)")
+    except Exception as e:
+        print(f"  VIX Fehler: {e}")
+
+    try:
+        tnx = yf_module.Ticker("^TNX").history(period="5d", auto_adjust=False)
+        irx = yf_module.Ticker("^IRX").history(period="5d", auto_adjust=False)
+        if not tnx.empty and not irx.empty:
+            y10 = float(tnx["Close"].dropna().iloc[-1])
+            y2 = float(irx["Close"].dropna().iloc[-1])
+            spread_bps = int(round((y10 - y2) * 10))
+            change_bps = None
+            if len(tnx) >= 2 and len(irx) >= 2:
+                y10_prev = float(tnx["Close"].dropna().iloc[-2])
+                y2_prev = float(irx["Close"].dropna().iloc[-2])
+                change_bps = int(round(((y10 - y2) - (y10_prev - y2_prev)) * 10))
+            interpretation = "invertiert" if spread_bps < 0 else "normal"
+            out["yield_spread_10y_2y"] = {
+                "value_bps": spread_bps,
+                "change_bps": change_bps,
+                "interpretation": interpretation,
+                "y10_pct": round(y10 / 10, 3),
+                "y2_pct": round(y2 / 10, 3),
+            }
+            print(f"  yfinance Yield-Spread 10Y-2Y: {spread_bps} bps ({interpretation})")
+    except Exception as e:
+        print(f"  Yield-Curve Fehler: {e}")
+
+    return out
+
+
+def _fetch_fear_greed() -> dict:
+    """CNN Fear & Greed Index via öffentlicher dataviz-API (kein Auth)."""
+    try:
+        import urllib.request
+        req = urllib.request.Request(
+            "https://production.dataviz.cnn.io/index/fearandgreed/graphdata",
+            headers={"User-Agent": "Mozilla/5.0", "Accept": "application/json"},
+        )
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read())
+        fg = data.get("fear_and_greed", {})
+        score = fg.get("score")
+        rating = fg.get("rating")
+        if score is None:
+            return {}
+        result = {
+            "score": int(round(float(score))),
+            "rating": rating,
+            "previous_close": fg.get("previous_close"),
+            "previous_1_week": fg.get("previous_1_week"),
+            "previous_1_month": fg.get("previous_1_month"),
+        }
+        print(f"  CNN Fear & Greed: {result['score']} ({result['rating']})")
+        return result
+    except Exception as e:
+        print(f"  Fear & Greed Fehler: {e}")
+        return {}
 
 
 def update_index() -> None:
@@ -866,7 +1146,8 @@ def generate_report() -> None:
     calendar_context = build_calendar_context(calendar, today)
 
     hot_takes_state = load_hot_takes()
-    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hot Takes geladen ({len(hot_takes_state.get('takes', []))} aktiv).")
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hot Takes geladen ({len(hot_takes_state.get('takes', []))} aktiv, {len(hot_takes_state.get('archive', []))} archiviert).")
+    hot_takes_state = evaluate_hot_takes_performance(hot_takes_state, today)
     hot_takes_context = build_hot_takes_context(hot_takes_state, today)
 
     client = anthropic.Anthropic(timeout=600.0)
@@ -961,8 +1242,21 @@ def generate_report() -> None:
     print(f"Kalender aktualisiert: {len(new_calendar['events'])} Ereignisse.")
 
     new_hot_takes = merge_hot_takes(hot_takes_state, data.get("hot_takes", []), today)
+    r5_alerts = new_hot_takes.pop("_new_r5_alerts", [])
     save_hot_takes(new_hot_takes)
-    print(f"Hot Takes aktualisiert: {len(new_hot_takes['takes'])} aktive Einträge.")
+    print(f"Hot Takes aktualisiert: {len(new_hot_takes['takes'])} aktive Einträge, {len(new_hot_takes.get('archive', []))} archiviert.")
+
+    r5_alert_file = ROOT / "r5_alert.json"
+    if r5_alerts:
+        r5_alert_file.write_text(
+            json.dumps({"alerts": r5_alerts, "generated_at": datetime.now(BERLIN).isoformat()}, indent=2, ensure_ascii=False),
+            encoding="utf-8",
+        )
+        print(f"[ALERT] {len(r5_alerts)} neue r5-Hot-Takes — r5_alert.json geschrieben.")
+    else:
+        # Wenn nichts da, sicherheitshalber alte Datei löschen damit Workflow nicht triggert
+        if r5_alert_file.exists():
+            r5_alert_file.unlink()
 
     print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Hole Kursdaten für Forecast via yfinance...")
     forecast_payload = fetch_forecast_data(data.get("forecast", {}))

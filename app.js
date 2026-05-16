@@ -257,9 +257,56 @@ async function loadMarketIndices() {
         <div class="index-chip-spark">${spark}</div>
       </div>`;
     }).join("");
+    renderRiskRow(data.risk_indicators, data.fear_greed);
   } catch (e) {
     row.innerHTML = `<p class="loading">Indizes gerade nicht verfügbar.</p>`;
   }
+}
+
+function renderRiskRow(risk, fg) {
+  let container = document.getElementById("risk-row");
+  if (!container) {
+    const indices = document.getElementById("indices-row");
+    if (!indices) return;
+    container = document.createElement("div");
+    container.id = "risk-row";
+    container.className = "risk-row";
+    indices.parentNode.insertBefore(container, indices.nextSibling);
+  }
+  const parts = [];
+  if (risk && risk.vix) {
+    const v = risk.vix.value;
+    const cls = v == null ? "neutral" : (v >= 25 ? "high" : v >= 18 ? "med" : "low");
+    const change = risk.vix.change_pct;
+    const changeStr = change == null ? "" : `${change >= 0 ? "+" : ""}${change.toLocaleString("de-DE", { maximumFractionDigits: 2 })} %`;
+    const changeCls = change == null ? "" : (change >= 0 ? "negative" : "positive");
+    parts.push(`<div class="risk-chip vix risk-${cls}">
+      <span class="risk-chip-label">VIX</span>
+      <span class="risk-chip-value">${v != null ? v.toLocaleString("de-DE", { maximumFractionDigits: 2 }) : "—"}</span>
+      ${changeStr ? `<span class="risk-chip-change ${changeCls}">${changeStr}</span>` : ""}
+    </div>`);
+  }
+  if (risk && risk.yield_spread_10y_2y) {
+    const bps = risk.yield_spread_10y_2y.value_bps;
+    const cls = bps == null ? "neutral" : (bps < 0 ? "high" : bps < 50 ? "med" : "low");
+    const change = risk.yield_spread_10y_2y.change_bps;
+    const changeStr = change == null ? "" : `${change >= 0 ? "+" : ""}${change} bps`;
+    parts.push(`<div class="risk-chip yield risk-${cls}">
+      <span class="risk-chip-label">Yield 10Y-2Y</span>
+      <span class="risk-chip-value">${bps != null ? `${bps} bps` : "—"}</span>
+      ${changeStr ? `<span class="risk-chip-change">${changeStr}</span>` : ""}
+    </div>`);
+  }
+  if (fg && fg.score != null) {
+    const s = fg.score;
+    const cls = s >= 75 ? "greed" : s >= 55 ? "lean-greed" : s >= 45 ? "neutral" : s >= 25 ? "lean-fear" : "fear";
+    parts.push(`<div class="risk-chip fear-greed fg-${cls}">
+      <span class="risk-chip-label">Fear &amp; Greed</span>
+      <span class="risk-chip-value">${s}</span>
+      <span class="risk-chip-change">${escapeHtml(fg.rating || "")}</span>
+    </div>`);
+  }
+  container.innerHTML = parts.join("");
 }
 
 // ---------- hero status box ----------
@@ -580,6 +627,7 @@ async function loadHotTakes() {
     const data = await fetchJSON("hot_takes.json");
     const today = new Date().toISOString().slice(0, 10);
     hotTakesState.takes = (data.takes || []).filter((t) => (t.event_date || "9999-12-31") >= today);
+    renderHitRateCard(data.archive || []);
     if (hotTakesState.takes.length === 0) {
       container.innerHTML = `<div class="empty-state"><span class="em">🤷</span>Aktuell keine offenen Hot Takes. Neue erscheinen, sobald greifbare Events kommen.</div>`;
       return;
@@ -589,6 +637,50 @@ async function loadHotTakes() {
   } catch (e) {
     container.innerHTML = `<div class="empty-state"><span class="em">📭</span>Noch keine Hot Takes vorhanden.</div>`;
   }
+}
+
+function renderHitRateCard(archive) {
+  if (!Array.isArray(archive) || archive.length === 0) return;
+  const evaluated = archive.filter((t) => t.performance && (t.performance.status === "hit" || t.performance.status === "miss"));
+  if (evaluated.length === 0) return;
+  const hits = evaluated.filter((t) => t.performance.status === "hit").length;
+  const total = evaluated.length;
+  const pct = Math.round((hits / total) * 100);
+  // Pro Rating
+  const byRating = {};
+  for (const t of evaluated) {
+    const r = Number(t.rating || 0);
+    byRating[r] = byRating[r] || { h: 0, t: 0 };
+    byRating[r].t++;
+    if (t.performance.status === "hit") byRating[r].h++;
+  }
+  const ratingLines = Object.entries(byRating)
+    .sort((a, b) => Number(b[0]) - Number(a[0]))
+    .map(([r, s]) => `<li><strong>r${r}</strong><span>${s.h}/${s.t} (${Math.round(s.h / s.t * 100)} %)</span></li>`)
+    .join("");
+
+  const sidebar = document.querySelector(".hot-takes-side");
+  if (!sidebar) return;
+  let card = document.getElementById("hit-rate-card");
+  if (!card) {
+    card = document.createElement("div");
+    card.id = "hit-rate-card";
+    card.className = "side-card hit-rate-card";
+    sidebar.insertBefore(card, sidebar.firstChild);
+  }
+  card.innerHTML = `
+    <div class="side-card-head">
+      <span class="side-card-icon accent">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points="16 7 22 7 22 13"></polyline></svg>
+      </span>
+      <h3>Hit-Rate (ausgewertet)</h3>
+    </div>
+    <div class="hit-rate-headline">
+      <span class="hit-rate-pct">${pct} %</span>
+      <span class="hit-rate-sub">${hits} von ${total} Hot Takes im Zielkorridor</span>
+    </div>
+    ${ratingLines ? `<ul class="hit-rate-list">${ratingLines}</ul>` : ""}
+  `;
 }
 
 function wireHotTakesSort() {
@@ -902,9 +994,10 @@ function renderForecastCard(t, canvasId) {
       <div><span class="forecast-metric-label">4 W</span><span class="forecast-metric-val">${fmtPct(exp30)}</span></div>
       <div><span class="forecast-metric-label">3 M</span><span class="forecast-metric-val">${fmtPct(exp90)}</span></div>
       <div><span class="forecast-metric-label">± Band</span><span class="forecast-metric-val">${fmtPct(unc)}</span></div>
-      ${t.last_close ? `<div><span class="forecast-metric-label">Kurs</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}</span></div>` : ""}
+      ${t.last_close ? `<div><span class="forecast-metric-label">Kurs</span><span class="forecast-metric-val">${Number(t.last_close).toFixed(2)}${t.currency && t.currency !== "USD" && t.currency !== "EUR" ? " " + escapeHtml(t.currency) : ""}</span>${t.last_close_eur ? `<span class="forecast-metric-sub">≈ ${Number(t.last_close_eur).toFixed(2)} EUR</span>` : ""}</div>` : ""}
     </div>
     <div class="forecast-chart-wrap"><canvas id="${canvasId}"></canvas></div>
+    ${renderAnalystBox(t)}
     ${hasProCon ? `<div class="pro-con-grid">
       ${renderProConList(pros, "pro")}
       ${renderProConList(cons, "con")}
@@ -912,6 +1005,37 @@ function renderForecastCard(t, canvasId) {
     ${t.thesis ? `<p class="forecast-thesis">${escapeHtml(t.thesis)}</p>` : ""}
     ${(t.key_drivers || []).length ? `<div class="forecast-drivers">Treiber: ${t.key_drivers.map((d) => `<span class="driver-tag">${escapeHtml(d)}</span>`).join(" ")}</div>` : ""}
   </div>`;
+}
+
+function renderAnalystBox(t) {
+  const ac = t.analyst_consensus;
+  const insider = t.insider_purchases_90d;
+  if (!ac && !insider) return "";
+  let html = `<div class="analyst-box">`;
+  if (ac && (ac.buy || ac.hold || ac.sell)) {
+    const total = (ac.buy || 0) + (ac.hold || 0) + (ac.sell || 0);
+    const buyPct = total ? Math.round((ac.buy / total) * 100) : 0;
+    const holdPct = total ? Math.round((ac.hold / total) * 100) : 0;
+    const sellPct = Math.max(0, 100 - buyPct - holdPct);
+    html += `<div class="analyst-row">
+      <span class="analyst-label">Analysten (${total})</span>
+      <div class="analyst-bar">
+        <span class="analyst-bar-buy" style="width:${buyPct}%" title="Buy: ${ac.buy}"></span>
+        <span class="analyst-bar-hold" style="width:${holdPct}%" title="Hold: ${ac.hold}"></span>
+        <span class="analyst-bar-sell" style="width:${sellPct}%" title="Sell: ${ac.sell}"></span>
+      </div>
+      <span class="analyst-counts">${ac.buy}/${ac.hold}/${ac.sell}</span>
+    </div>`;
+    if (ac.target_mean) {
+      const curr = ac.currency || "USD";
+      html += `<div class="analyst-target">⌀ Kursziel: <strong>${Number(ac.target_mean).toFixed(2)} ${escapeHtml(curr)}</strong></div>`;
+    }
+  }
+  if (insider && insider > 0) {
+    html += `<div class="insider-row">📥 ${insider.toLocaleString("de-DE")} Insider-Käufe (letzte 90 T)</div>`;
+  }
+  html += `</div>`;
+  return html;
 }
 
 async function loadForecast() {

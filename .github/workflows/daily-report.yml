@@ -103,6 +103,60 @@ jobs:
             cat /tmp/tg_response.json || true
           fi
 
+      - name: r5-Sofort-Alert (neue Top-Conviction Hot Takes)
+        if: success() && hashFiles('r5_alert.json') != ''
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+        continue-on-error: true
+        run: |
+          if [ -z "$TELEGRAM_BOT_TOKEN" ] || [ -z "$TELEGRAM_CHAT_ID" ]; then
+            echo "Telegram-Secrets fehlen — r5-Alert übersprungen."
+            exit 0
+          fi
+          SITE_URL="https://noelprogrammieren.github.io/Daily-report/"
+          # Schleife über alle Alerts in r5_alert.json
+          python3 - <<'PY'
+          import json, os, subprocess
+          data = json.load(open("r5_alert.json"))
+          alerts = data.get("alerts", [])
+          for a in alerts:
+              company = a.get("company", "?")
+              event_date = a.get("event_date", "")
+              event = a.get("event_basis", "")[:160]
+              mv = a.get("expected_move_pct") or {}
+              if mv.get("low") is not None and mv.get("high") is not None:
+                  direction = mv.get("direction", "up")
+                  sign = "+" if direction == "up" else "-"
+                  move = f"{sign}{mv['low']}–{sign}{mv['high']}%"
+              else:
+                  move = ""
+              pt = a.get("price_target") or {}
+              target = ""
+              if pt.get("low") is not None and pt.get("high") is not None:
+                  target = f"{pt['low']}–{pt['high']} {pt.get('currency','')}".strip()
+              msg = f"⚡ *Neuer Hot Take · {company} · ⭐ 5/5*\n"
+              if event_date:
+                  msg += f"📅 {event_date}\n"
+              if move or target:
+                  parts = []
+                  if move: parts.append(f"Erwartet: {move}")
+                  if target: parts.append(f"Kursziel: {target}")
+                  msg += " · ".join(parts) + "\n"
+              if event:
+                  msg += f"\n{event}\n"
+              msg += f"\n🔗 [Bericht öffnen](https://noelprogrammieren.github.io/Daily-report/)"
+              r = subprocess.run([
+                  "curl", "-s", "-X", "POST",
+                  f"https://api.telegram.org/bot{os.environ['TELEGRAM_BOT_TOKEN']}/sendMessage",
+                  "-d", f"chat_id={os.environ['TELEGRAM_CHAT_ID']}",
+                  "-d", "parse_mode=Markdown",
+                  "-d", "disable_web_page_preview=true",
+                  "--data-urlencode", f"text={msg}",
+              ], capture_output=True, text=True)
+              print(f"r5-Alert {company}: {r.returncode}")
+          PY
+
   deploy:
     needs: generate
     runs-on: ubuntu-latest

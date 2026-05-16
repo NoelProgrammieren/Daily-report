@@ -15,6 +15,9 @@
   --fire: #ff7a45;
   --lightning: #f0c93f;
   --pin: #5e9bff;
+  --macro-globe: #38bdf8;
+  --macro-target: #a78bfa;
+  --macro-pulse: #fb923c;
   --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
   --shadow: 0 1px 2px rgba(0, 0, 0, 0.4), 0 8px 24px rgba(0, 0, 0, 0.25);
   --shadow-lg: 0 1px 2px rgba(0, 0, 0, 0.4), 0 16px 48px rgba(0, 0, 0, 0.4);
@@ -44,6 +47,9 @@
   --positive: #15803d;
   --negative: #dc2626;
   --warning: #a16207;
+  --macro-globe: #0284c7;
+  --macro-target: #7c3aed;
+  --macro-pulse: #c2410c;
   --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
   --shadow: 0 1px 2px rgba(15, 23, 42, 0.04), 0 8px 24px rgba(15, 23, 42, 0.05);
   --shadow-lg: 0 1px 2px rgba(15, 23, 42, 0.04),
@@ -875,30 +881,7 @@ footer {
   margin-top: 40px;
 }
 
-/* ---------- macro sub-sections ---------- */
-.macro-sections {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 18px;
-}
-
-.macro-section p {
-  margin: 0;
-  font-size: 14.5px;
-  line-height: 1.6;
-  color: var(--text);
-}
-
-.macro-label {
-  font-size: 10.5px;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-}
-
-/* ---------- hot takes (legacy classes still used: forecast badges, thesis, risks, foot) ---------- */
+/* ---------- hot take forecast badges (used) ---------- */
 
 .hot-take-forecast {
   display: flex;
@@ -944,23 +927,6 @@ footer {
   color: var(--text);
   background: rgba(74, 158, 255, 0.08);
   border-color: rgba(74, 158, 255, 0.35);
-}
-
-.hot-take-thesis {
-  margin: 0 0 12px;
-  font-size: 14.5px;
-  line-height: 1.6;
-}
-
-.hot-take-risks {
-  background: rgba(248, 81, 73, 0.06);
-  border-left: 2px solid var(--negative);
-  padding: 10px 14px;
-  font-size: 12.5px;
-  color: var(--text-dim);
-  border-radius: var(--radius-xs);
-  margin-bottom: 10px;
-  line-height: 1.55;
 }
 
 .hot-take-foot {
@@ -1595,21 +1561,21 @@ footer {
 }
 
 .macro-icon.icon-globe {
-  color: #38bdf8;
-  background: linear-gradient(135deg, rgba(56, 189, 248, 0.20), rgba(56, 189, 248, 0.04));
-  border-color: rgba(56, 189, 248, 0.28);
+  color: var(--macro-globe);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--macro-globe) 22%, transparent), color-mix(in srgb, var(--macro-globe) 5%, transparent));
+  border-color: color-mix(in srgb, var(--macro-globe) 32%, transparent);
 }
 
 .macro-icon.icon-target {
-  color: #a78bfa;
-  background: linear-gradient(135deg, rgba(167, 139, 250, 0.20), rgba(167, 139, 250, 0.04));
-  border-color: rgba(167, 139, 250, 0.28);
+  color: var(--macro-target);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--macro-target) 22%, transparent), color-mix(in srgb, var(--macro-target) 5%, transparent));
+  border-color: color-mix(in srgb, var(--macro-target) 32%, transparent);
 }
 
 .macro-icon.icon-pulse {
-  color: #fb923c;
-  background: linear-gradient(135deg, rgba(251, 146, 60, 0.20), rgba(251, 146, 60, 0.04));
-  border-color: rgba(251, 146, 60, 0.28);
+  color: var(--macro-pulse);
+  background: linear-gradient(135deg, color-mix(in srgb, var(--macro-pulse) 22%, transparent), color-mix(in srgb, var(--macro-pulse) 5%, transparent));
+  border-color: color-mix(in srgb, var(--macro-pulse) 32%, transparent);
 }
 
 .macro-body {
@@ -1622,11 +1588,11 @@ footer {
   font-size: 13.5px;
   font-weight: 600;
   letter-spacing: -0.005em;
-  color: #38bdf8;
+  color: var(--macro-globe);
 }
 
-.macro-card:nth-child(2) .macro-card-title { color: #a78bfa; }
-.macro-card:nth-child(3) .macro-card-title { color: #fb923c; }
+.macro-card:nth-child(2) .macro-card-title { color: var(--macro-target); }
+.macro-card:nth-child(3) .macro-card-title { color: var(--macro-pulse); }
 
 .macro-card-text {
   margin: 0;
@@ -2014,6 +1980,165 @@ footer {
   color: var(--text-muted);
   font-variant-numeric: tabular-nums;
   margin-top: -2px;
+}
+
+/* ---------- risk row (VIX, Yield, F&G unter den Index-Chips) ---------- */
+.risk-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: -16px 0 28px;
+}
+
+.risk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--bg-elev);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-size: 12.5px;
+  font-variant-numeric: tabular-nums;
+}
+
+.risk-chip-label {
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.risk-chip-value {
+  font-weight: 700;
+  color: var(--text);
+}
+
+.risk-chip-change {
+  font-size: 11.5px;
+  color: var(--text-dim);
+}
+
+.risk-chip-change.positive { color: var(--positive); }
+.risk-chip-change.negative { color: var(--negative); }
+
+.risk-chip.risk-high { border-color: rgba(248, 81, 73, 0.32); background: rgba(248, 81, 73, 0.06); }
+.risk-chip.risk-med  { border-color: rgba(240, 201, 63, 0.32); background: rgba(240, 201, 63, 0.06); }
+.risk-chip.risk-low  { border-color: rgba(63, 185, 80, 0.28); background: rgba(63, 185, 80, 0.04); }
+
+.risk-chip.fg-fear        { border-color: rgba(248, 81, 73, 0.40); background: rgba(248, 81, 73, 0.10); }
+.risk-chip.fg-lean-fear   { border-color: rgba(255, 122, 69, 0.32); background: rgba(255, 122, 69, 0.07); }
+.risk-chip.fg-neutral     { border-color: var(--border-strong); }
+.risk-chip.fg-lean-greed  { border-color: rgba(63, 185, 80, 0.28); background: rgba(63, 185, 80, 0.05); }
+.risk-chip.fg-greed       { border-color: rgba(63, 185, 80, 0.40); background: rgba(63, 185, 80, 0.10); }
+
+/* ---------- analyst box (forecast card) ---------- */
+.analyst-box {
+  margin: 10px 0 14px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  background: rgba(255, 255, 255, 0.015);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.analyst-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 10px;
+}
+
+.analyst-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--text-dim);
+  letter-spacing: -0.005em;
+}
+
+.analyst-bar {
+  display: flex;
+  height: 8px;
+  border-radius: 4px;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.analyst-bar-buy  { background: var(--positive); }
+.analyst-bar-hold { background: var(--warning); opacity: 0.7; }
+.analyst-bar-sell { background: var(--negative); }
+
+.analyst-counts {
+  font-size: 11.5px;
+  color: var(--text-dim);
+  font-variant-numeric: tabular-nums;
+}
+
+.analyst-target {
+  font-size: 12.5px;
+  color: var(--text);
+}
+
+.insider-row {
+  font-size: 12px;
+  color: var(--text-dim);
+  padding-top: 6px;
+  border-top: 1px solid var(--border);
+}
+
+.forecast-metric-sub {
+  display: block;
+  font-size: 10.5px;
+  color: var(--text-muted);
+  font-weight: 400;
+  margin-top: 2px;
+}
+
+/* ---------- hit-rate card (sidebar) ---------- */
+.hit-rate-card .hit-rate-headline {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 10px;
+}
+
+.hit-rate-pct {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hit-rate-sub {
+  font-size: 11.5px;
+  color: var(--text-dim);
+}
+
+.hit-rate-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.hit-rate-list li {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--text-dim);
+  padding: 4px 0;
+  border-top: 1px solid var(--border);
+}
+
+.hit-rate-list li strong {
+  color: var(--text);
+  font-weight: 600;
 }
 
 /* ---------- responsive ---------- */

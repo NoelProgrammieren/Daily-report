@@ -3,9 +3,9 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings am 20. Mai 2026 (nach Börsenschluss) – Hyperscaler-Capex auf 725 Milliarden Dollar Jahresziel erhöht; Microsoft plant 190 Milliarden Dollar Capex, Meta erhöht auf 125–145 Milliarden Dollar; Rubin GPU-Plattform pre-committed",
+      "event_basis": "Q1 FY27 Earnings am 20. Mai 2026 nach Börsenschluss — Konsens erwartet 78 Milliarden Dollar Umsatz und 1,77 USD EPS; Gross Margin und Q2-Guidance sind Schlüsselsignale. Hyperscaler-Capex bestätigt bei 725+ Milliarden Dollar.",
       "event_date": "2026-05-20",
-      "time_horizon": "3–7 Tage",
+      "time_horizon": "2-3 Tage bis Report, 1-2 Wochen Reaktion",
       "expected_move_pct": {
         "low": 5.0,
         "high": 10.0,
@@ -16,10 +16,10 @@
         "high": 245.0,
         "currency": "USD"
       },
-      "thesis": "Hyperscaler-Capex-Erhöhungen in H1 2026 bilden harten Floor für Blackwell-Nachfrage; operationale Marge und Rubin-Roadmap-Bestätigung könnten Kurs auf neue Rekorde treiben. Höchste Konviktion für bullisches Szenario: Beat-and-Raise auf Nachfrage-Momentum.",
-      "risks": "Aktie notiert nahe All-Time-High mit 97-%-Beat-Wahrscheinlichkeit bereits eingepreist; jede Enttäuschung bei China-Markt-Kommentaren oder Rubin-Timing könnte -5 % Pullback auslösen.",
+      "thesis": "Earnings-Beat ist eingepreist; kritisch sind Gross Margin (>=75 % = Preismacht) und Q2-Guidance (>87 Mrd. USD = Nachfrage-Bestätigung). Erfolgreicher Print eröffnet Weg zu neuen Allzeithochs im Juni.",
+      "risks": "Q2-Guidance unter Konsens oder Margin-Rückgang würde Bullen-Narrativ erschüttern und Abverkauf auslösen.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-16T17:52:14.392229+02:00"
+      "last_updated": "2026-05-18T20:28:35.258745+02:00"
     },
     {
       "company": "NVIDIA",
@@ -44,6 +44,27 @@
       "last_updated": "2026-05-15T23:28:32.036624+02:00"
     },
     {
+      "company": "Walmart",
+      "rating": 4,
+      "event_basis": "Q1 FY27 Earnings am 21. Mai 2026 vor Markteröffnung — Konsens erwartet Umsatz-Wachstum 3,5–4,5 %, EPS 0,63–0,65 USD. E-Commerce (+27 % zuletzt), Advertising (+46 % zuletzt) und Membership-Dynamik sind Highlights.",
+      "event_date": "2026-05-21",
+      "time_horizon": "3-4 Tage",
+      "expected_move_pct": {
+        "low": 2.5,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 92.0,
+        "high": 98.0,
+        "currency": "USD"
+      },
+      "thesis": "Walmart zeigt Konsumenten-Resilienz trotz Zoll-Unsicherheit. Hochmargiges E-Commerce- und Werbe-Geschäft beschleunigt Gewinnwachstum schneller als Umsatzwachstum. Solide Guidance sollte bullische Reaktion auslösen.",
+      "risks": "Margendruck durch Lohnerhöhungen oder Zoll-Belastung könnte Gewinn-Momentum bremsen.",
+      "first_seen": "2026-05-18",
+      "last_updated": "2026-05-18T20:28:35.258745+02:00"
+    },
+    {
       "company": "Apple",
       "rating": 4,
       "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. Apple hit all-time intraday high of $290.33, now at $300.",
@@ -57,9 +78,9 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC Keynote am 8. Juni 2026 – Apple Intelligence & Siri-Ankündigungen; neue Developer Tools; iOS 27 & macOS-Integration. Q2-Zahlen bestätigen Service-Momentum und iPhone-Supercycle.",
+      "event_basis": "WWDC Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence-Ankündigungen, Siri-Updates, iOS 27 & macOS-Integration. Historisch wichtig für Upgrade-Zyklus-Validierung.",
       "event_date": "2026-06-08",
-      "time_horizon": "2–4 Wochen",
+      "time_horizon": "3 Wochen bis Event, 2-4 Wochen Post-Event-Bewegung",
       "expected_move_pct": {
         "low": 2.0,
         "high": 6.0,
@@ -70,19 +91,19 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "WWDC zeigt konkrete KI-Feature-Roadmap und Developer-Adoption. iPhone 17 + Apple Intelligence = Multi-Jahres-Upgrade-Zyklus. Neue CEO ab September 2026 (John Ternus) signalisiert Produktfokus. Service-Wachstum von 16 % jährlich liefert hohe Marge.",
-      "risks": "Speicherkostendrücke könnten Margen unter erwartete 47,5 % drücken; China-Absatz schwächelt; KI-Monetarisierung langsamer als erhofft.",
+      "thesis": "Kurs bei 294 USD ist bereits bullisch. WWDC wird das On-Device-AI-Story konkretisieren. Auf Basis von Analyst-Upgrades (Wedbush) und Serviceumsatz-Dynamik (14 % Wachstum) sollte Bestätigung bullisch wirken.",
+      "risks": "Schwache AI-Demo oder China-Besorgnis könnte Euphorie dampfen. Bewertung (30x Forward-PE) preist bereits Erfolg ein.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-16T17:52:14.392229+02:00"
+      "last_updated": "2026-05-18T20:28:35.258745+02:00"
     },
     {
       "company": "Intel",
       "rating": 3,
-      "event_basis": "H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD erkundigen sich); Terafab-Anhörung am 3. Juni in Grimes County TX validiert Megafab-Partnerschaft Tesla/Intel/SpaceX",
+      "event_basis": "Terafab-Öffentliche Anhörung am 3. Juni 2026 (Grimes County TX) — Validierung Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen. H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD).",
       "event_date": "2026-06-03",
-      "time_horizon": "2–6 Wochen",
+      "time_horizon": "2-3 Wochen",
       "expected_move_pct": {
-        "low": -3.0,
+        "low": 3.0,
         "high": 8.0,
         "direction": "up"
       },
@@ -91,12 +112,12 @@
         "high": 115.0,
         "currency": "USD"
       },
-      "thesis": "18A-Yields tracken besser als erwartet; externe Foundry-Umsätze noch niedrig (174 Mio. USD), aber Microsoft/AWS-Bestellungen und Apple-Gespräche deuten Inflection für H2 2026 an. US-Regierungsstake (10 %) + CHIPS Act-Fonds bieten Strukturfloor.",
-      "risks": "Foundry bleibt Verlust-machend (Q1 2026: -2,4 Mrd. USD); keine größeren Kundenabschlüsse = langsamere Skalierung. Valuation auf 115x 2026 EPS ist äußerst ambitioniert.",
+      "thesis": "Intel Foundry tritt in entscheidende Validierungsphase ein. Terafab-Anhörung gibt State-Level-Segen für Megafab-Infrastruktur. Externe Kundencommitments im H2 könnten Breakeven-Narrative beschleunigen und Gründungs-Risiken abschwächen.",
+      "risks": "Anhörung blockiert oder Commitments verzögern sich → Gründungs-Skeptiker bleiben dominant. Strukturelle Volatilität bleibt.",
       "first_seen": "2026-05-16",
-      "last_updated": "2026-05-16T17:52:14.392229+02:00"
+      "last_updated": "2026-05-18T20:28:35.258745+02:00"
     }
   ],
   "archive": [],
-  "updated_at": "2026-05-16T17:52:14.392229+02:00"
+  "updated_at": "2026-05-18T20:28:35.258745+02:00"
 }

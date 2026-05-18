@@ -22,6 +22,13 @@
       "category": "earnings"
     },
     {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27 Earnings (nach Börsenschluss, 17:00 ET)",
+      "relevant_for": "NVIDIA",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
       "date": "2026-05-21",
       "event": "Walmart Q1 Earnings & Guidance",
       "relevant_for": "Walmart",
@@ -31,7 +38,7 @@
     {
       "date": "2026-05-21",
       "event": "Walmart Q1 FY27 Earnings (vor Markteröffnung)",
-      "relevant_for": "Walmart, Consumer Discretionary",
+      "relevant_for": "Walmart",
       "rating": 4,
       "category": "earnings"
     },
@@ -73,7 +80,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, Anleihenrenditen, Zinsempfindliche Aktien",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
       "rating": 5,
       "category": "fed"
     },
@@ -113,6 +120,13 @@
       "category": "political"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab Steuervergünstigungen)",
+      "relevant_for": "Intel",
+      "rating": 3,
+      "category": "other"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple",
@@ -143,7 +157,7 @@
     {
       "date": "2026-06-08",
       "event": "Apple WWDC 2026 Keynote (10:00 PT)",
-      "relevant_for": "Apple, iOS/macOS KI-Ankündigungen, Developer Ecosystem",
+      "relevant_for": "Apple",
       "rating": 4,
       "category": "product"
     },
@@ -164,7 +178,7 @@
     {
       "date": "2026-06-12",
       "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "LVMH, Hermès, Euro-Aktien, europäische Tech",
+      "relevant_for": "Gesamtmarkt, europäische Aktien",
       "rating": 4,
       "category": "fed"
     },
@@ -181,7 +195,14 @@
       "relevant_for": "Microsoft, Azure Capex Leitfaden, KI-Workload-Momentum",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
+      "relevant_for": "Microsoft",
+      "rating": 5,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-16T17:52:14.391820+02:00"
+  "updated_at": "2026-05-18T20:28:35.258332+02:00"
 }

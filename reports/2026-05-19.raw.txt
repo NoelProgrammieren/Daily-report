@@ -1,0 +1,330 @@
+```json
+{
+  "macro": {
+    "market_state": "<cite index=\"18-12\">Der S&P 500 und Nasdaq schlossen Montag mit Verlust, während der Dow Jones Industrial Average im positiven Bereich endete.</cite> Technologieaktien erweitern ihre jüngsten Verkäufe vor der großen NVIDIA-Earnings-Veröffentlichung morgen.",
+    "macro_drivers": "<cite index=\"18-9\">Aktienindex-Futures sind schwächer und Ölpreise fallen inmitten von Inflationsängsten und dem Verkauf von Technologieaktien der vorigen Sitzung.</cite> <cite index=\"18-10,18-11\">Präsident Donald Trump sagte, er habe einen geplanten Angriff auf den Iran abgesagt, da „ernsthafte Verhandlungen" zu einer für die USA und Länder des Nahen Ostens akzeptablen Friedensvereinbarung laufen.</cite> Anleiherenditen befinden sich auf 10-Jahres-Tiefständen, was die Volatilität bei Tech-Bewertungen verstärkt.",
+    "sentiment": "Abwartend vor NVIDIA-Zahlen — Anleger halten Positionen vor dem Earnings-Catalyst morgen nach Börsenschluss.",
+    "sp500": "5.820 (-0,2 %)",
+    "nasdaq": "18.850 (-0,3 %)",
+    "dax": "19.380 (+0,2 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": ["NVIDIA", "Apple", "Intel", "Microsoft"],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "NVIDIA Q1 FY27-Earnings morgen nach Börsenschluss — Konsens erwartet 79,2 Mrd. USD Umsatz, 1,78 USD EPS",
+          "rating": 5,
+          "summary": "<cite index=\"1-1\">Analysten erwarten, dass NVIDIA 1,78 Dollar pro Aktie verdient, um 120 % Jahr über Jahr, bei einem Umsatz von 79,2 Milliarden Dollar (+79,5 % gegenüber dem Vorjahr) meldet.</cite> <cite index=\"1-22\">Der Wedbush-Analyst Matt Bryson erwartet, dass das Unternehmen wieder Schätzungen übertrifft und über dem Konsens bei Guidance liegt, angesichts positiver Datenpunkte und gesunder KI-Infrastruktur-Ausgaben.</cite> <cite index=\"4-17,4-18\">Die vier größten Hyperscaler (Alphabet, Amazon, Microsoft und Meta) kündigten kombinierte Capex-Pläne für 2026 von etwa 725 Milliarden Dollar an — um 77 % gegenüber dem Vorjahr von 410 Milliarden Dollar gestiegen.</cite>",
+          "price_change": "-1,3 %",
+          "investor_relevance": "Größter einzelner Katalysator für Portfolio und Gesamtmarkt morgen — Guidance zu Margen und Q2-Ausblick entscheidend."
+        },
+        {
+          "priority": "lightning",
+          "title": "Apple reorganisiert Hardware-Team unter KI-Druck",
+          "rating": 3,
+          "summary": "<cite index=\"12-3,12-4\">Apple reorganisiert die Hardware-Entwicklung, um zukünftige Geräte zu beschleunigen, meldet Bloomberg. Apple kündigte zudem neue Accessibility-Funktionen powered by Apple Intelligence an.</cite> <cite index=\"14-1\">Apple erreichte am 15. Mai 2026 ein Allzeit-Hoch von 303,20 USD.</cite>",
+          "price_change": "+0,15 %",
+          "investor_relevance": "Vorbereitung auf WWDC im Juni — Signalisiert Tempo beim KI-Feature-Rollout; Kurs pullback aus ATH ist normal vor großem Ereignis."
+        },
+        {
+          "priority": "lightning",
+          "title": "Intel Foundry gewinnt Momentum — CEO Tan erwartet konkrete Kundencommitments H2 2026",
+          "rating": 4,
+          "summary": "<cite index=\"30-1,30-2\">Intel CEO Lip-Bu Tan sagte, dass die Foundry-Drehung an Zugkraft gewinnt, da verbesserte Fertigungserträge das Interesse externer Kunden anziehen. Er sagte, Intel erwartet Commitments von mehreren Foundry-Kunden in der zweiten Jahreshälfte.</cite> <cite index=\"34-3,34-5,34-6\">Intels 18A-Prozessknotenpunkt ist jetzt in der kommerziellen Produktion mit Erträgen, die dem internen Fahrplan von 2024 voraus sind. Der nächste 14A-Knoten zeigt auch solide frühe Ergebnisse, mit 14A, das an einem vergleichbaren Entwicklungsstadium besser abschneidet als 18A.</cite>",
+          "price_change": "+2,1 %",
+          "investor_relevance": "Validierung der Intel-Gründungs-Narrative — konkrete Ankündigungen im H2 könnten volatile Position weiter nach oben treiben."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "NVIDIA",
+      "rating": 5,
+      "event_basis": "Q1 FY27-Earnings am 20. Mai 2026 nach Börsenschluss (17:00 ET) — Konsens erwartet 79,2 Mrd. USD Umsatz, 1,78 USD EPS; Hyperscaler-Capex bestätigt bei 725+ Mrd. USD jährlich kombiniert.",
+      "event_date": "2026-05-20",
+      "time_horizon": "1-2 Wochen",
+      "expected_move_pct": {"low": 5.0, "high": 10.0, "direction": "up"},
+      "price_target": {"low": 235.0, "high": 250.0, "currency": "USD"},
+      "thesis": "<cite index=\"9-3,9-15\">Optionen preisen eine erwartete Bewegung von 5 bis 10 % bis zur Veröffentlichung ein, wobei die breiter aufgestellte Lesart von At-the-Money-Straddles auf der Verfallsgasung vom 22. Mai kommt. Etwa 5 bis 10 % in beide Richtungen je nachdem, welche Strike-Chain man liest.</cite> Starke Hyperscaler-Nachfrage und Konsens-Beats in den letzten 6 Quartalen sprechen für ein Setup, obwohl der Konsens bereits aggressive Erwartungen widerspiegelt.",
+      "risks": "Kurs reagiert häufig schwach auf Beats (3 von letzten 5 Earnings nach unten trotz Schlägen); Gewinnmitnahmen nach 20 % YTD Rallye möglich."
+    },
+    {
+      "company": "Walmart",
+      "rating": 4,
+      "event_basis": "Q1 FY27-Earnings am 21. Mai 2026 vor Markteröffnung (6:00 CDT) — Konsens erwartet Umsatzwachstum 3,5–4,5 %, EPS 0,63–0,65 USD. E-Commerce (+27 % zuletzt), Advertising (+46 % zuletzt) und Membership-Dynamik sind Highlights.",
+      "event_date": "2026-05-21",
+      "time_horizon": "1-2 Wochen",
+      "expected_move_pct": {"low": 2.5, "high": 5.0, "direction": "up"},
+      "price_target": {"low": 92.0, "high": 98.0, "currency": "USD"},
+      "thesis": "<cite index=\"23-5,23-6,23-7\">Walmarts Q4 2026 EPS von 0,74 Dollar schlug die Prognose von 0,73, mit Umsatz von 190,7 Milliarden Dollar gegenüber 190,4 Milliarden erwarteter, was einen 0,77%- igen Kursanstieg im Vormarkthandel antrieb. E-Commerce-Verkäufe wuchsen um 24 % weltweit und 27 % in den USA, mit Werbeeinnahmen um 46 % auf 6,4 Milliarden Dollar gestiegen, was Walmart hilft, erstmals über 700 Milliarden Dollar jährliche Umsätze zu überschreiten. Bereinigte Betriebserträge stiegen um 10,5 %, mit Einnahmen aus Mitgliedschaften über 4,3 Milliarden Dollar hinaus.</cite>",
+      "risks": "Margendruck durch Lohnerhöhungen; Zollthemen belasten Lieferkette; Wechselkursrisiko bei internationalem Geschäft."
+    },
+    {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "WWDC Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence-Ankündigungen (KI-Features), Siri-Überarbeitung, iOS 27 & macOS-Integration.",
+      "event_date": "2026-06-08",
+      "time_horizon": "2-3 Wochen",
+      "expected_move_pct": {"low": 2.0, "high": 6.0, "direction": "up"},
+      "price_target": {"low": 305.0, "high": 320.0, "currency": "USD"},
+      "thesis": "WWDC ist historisches Validierungs-Event für Upgrade-Zyklus und KI-Positionierung. <cite index=\"35-6,35-7,35-8\">Analysten berichten, dass Apple bereits Intels 18A-P-Prozess PDK 0.9.1GA erhalten hat und interne Simulationen durchführt, mit Ergebnissen, die Erwartungen erfüllen sollen. Die formelle Qualifikation soll mit PDK 1.0 im Q1 2026 beginnen, mit Zielprodukte als Einstiegs-M-Serie-Prozessoren für MacBook Air und iPad Pro bei geschätztem jährlichem Volumen von 15 bis 20 Millionen Einheiten.</cite>",
+      "risks": "Margenbedenken bei neuen KI-Features; Abhängigkeit von Drittanbieter-KI (Google Gemini); schlechte Marktreaktion auf Recycled-Features möglich."
+    },
+    {
+      "company": "Intel",
+      "rating": 3,
+      "event_basis": "Terafab-Öffentliche Anhörung am 3. Juni 2026 (Grimes County TX) — Validierung Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen; H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD).",
+      "event_date": "2026-06-03",
+      "time_horizon": "2 Wochen",
+      "expected_move_pct": {"low": 3.0, "high": 8.0, "direction": "up"},
+      "price_target": {"low": 100.0, "high": 115.0, "currency": "USD"},
+      "thesis": "<cite index=\"37-23\">Elon Musk kündigte Pläne an, Intels nächste 14A-Knoten in Terafab, seinem geplanten 119-Milliarden-Dollar-Chip-Fertigungskomplex in Austin, Texas, zu nutzen, das darauf abzielt, Chips für Tesla, SpaceX und xAI herzustellen.</cite> Öffentliche Anhörung signalisiert Regierungsunterstützung und Reality-Check für Megafab-Timing. Kurs bereits um 225 % YTD gestiegen, ist aber auf Foundry-Validierung angewiesen.",
+      "risks": "Bewertung hat massive Rallye bereits eingepreist; Zinsrisiko bei Bondfinanzierung; Execution-Risiken bei 18A/14A Yields; Konkurrenzdrack von TSMC und Samsung."
+    }
+  ],
+  "forecast": {
+    "commentary": "Portfolio und Watchlist befinden sich in einer kritischen Woche mit NVIDIA-Earnings am 20. Mai und Walmart-Zahlen am 21. Mai. Technologie bleibt volatil infolge von Zinssorgen und Bewertungsunsicherheit — Kurs-Pullbacks nach technischen Allzeithochs sind normal und könnten Einstiegsmöglichkeiten bieten. Intel und Foundry-Story zeigen strukturelle Stärke, aber Bewertung preist viel Erfolg ein. Microsoft-Position wird durch Bill Ackmans strategischen Kauf (Q1 2026) validiert, der auf attraktive Bewertungen nach 13 % YTD Rückgang hinweist. Erwartung für nächste 4 Wochen ist leichte Konsolidierung mit Fokus auf Earnings-Reaction und Makro-Datenreleases (FOMC-Entscheid am 28. Mai).",
+    "tickers": [
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 7.5,
+        "expected_change_90d_pct": 12.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 5,
+        "key_drivers": ["Q1 Earnings am 20. Mai", "Hyperscaler-Capex-Bestätigung", "Gross-Margin-Stabilität", "China-Nachfrage"],
+        "thesis": "Stärkster Portfolio-Position mit klarem Earnings-Katalysator morgen, kombiniert mit bewiesener Nachfragebestätigung von Hyperscalern (725+ Mrd. USD 2026 Capex).",
+        "pros": [
+          "6 Quartale in Folge Revenue-Beats",
+          "Hyperscaler-Capex wächst 77 % YoY auf 725 Mrd.",
+          "Data-Center-Margins führen weiterhin Industrie an",
+          "Rubin-Transition auf Kurs, GB200 NVL72 in Produktion"
+        ],
+        "cons": [
+          "Bewertung reflektiert hohe Erwartungen (48x Forward-PE)",
+          "Kurs reagierte auf letzte 3 Beats schwach bis neutral",
+          "China-Umsatz effektiv Null nach April-Export-Verbot",
+          "AMD und Custom-Silicon-Konkurrenz verschärft sich"
+        ]
+      },
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": ["WWDC Keynote am 8. Juni", "Intel Foundry Deal (preliminary)", "iPhone-17-Zyklus", "China-Nachfrage"],
+        "thesis": "Stabile Geschäfte, aber kurzfristig fehlt der große Kurstreiber; WWDC ist wichtiger Katalysator Ende Juni mit Potential von +2-6 %.",
+        "pros": [
+          "Atl-Hoch am 15. Mai (303,20 USD) zeigt technische Stärke",
+          "Service-Sparte wächst zweistellig und unterstützt Margen",
+          "Intel Foundry Deal (preliminary) reduziert TSMC-Abhängigkeit",
+          "WWDC im Juni mit erwarteten KI-Features und iOS 27"
+        ],
+        "cons": [
+          "iPhone-Absatz in China rückläufig, Tim Cook warnte vor Supply-Constraints",
+          "Bewertung bereits ambitioniert auf Revenue-Wachstum <3 %",
+          "KI-Feature-Rollout fragmentiert und abhängig von Drittanbieter-Partnern",
+          "Reputationsrisiko bei OpenAI-Integration (ChatGPT ohne Marketing-Boost)"
+        ]
+      },
+      {
+        "company": "Microsoft",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 3,
+        "key_drivers": ["Azure-Wachstum 40 % (Q3 FY26)", "KI-Business Annualized Run Rate 37 Mrd. USD", "OpenAI Restructuring", "M365 Copilot-Monetisierung"],
+        "thesis": "Nach 13 % YTD Rückgang vom Allzeithoch und Bill Ackmans strategischem Kauf bei 21x Forward-PE bietet Position defensive Qualität — Leidensdruck sollte kurzfristig nachlassen.",
+        "pros": [
+          "Q3 FY26 EPS 4,27 USD schlug Konsens 4,07 USD um 5 %",
+          "Azure wächst 40 % YoY, dominiert Cloud-AI-Infrastruktur",
+          "AI Business 37 Mrd. annualisiert, +123 % YoY",
+          "Bill Ackman kauft 5,65 Mio. Anteile als Bestätigung billiger Bewertung"
+        ],
+        "cons": [
+          "190 Mrd. Dollar Capex 2026 drückt kurzfristige Margen",
+          "Bewertung (21x Forward) bleibt sensibel auf Zinserhöhungen",
+          "Konkurrenz von Amazon (AWS) und Google Cloud (Vertex AI) intensiviert sich",
+          "OpenAI-Vertragsneustrukturierung reduziert Exklusivvorteil"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 4,
+        "key_drivers": ["Q1 Earnings am 21. Mai", "E-Commerce +27 % (Q4 FY26)", "Advertising +46 % (Q4 FY26)", "Membership-Einnahmen"],
+        "thesis": "Robuster Konsumdatenhintergrund trifft auf starke Quartalszahlen morgen — Watchlist-Eintrag mit hohem Signal-Rausch-Verhältnis für Konsumtrends.",
+        "pros": [
+          "Q4 FY26 EPS 0,74 USD schlug 0,73 USD",
+          "E-Commerce +27 % in USA, Advertising Business +46 %",
+          "Membership-Einnahmen überschritten 4,3 Mrd. USD",
+          "Dividend um 5 % erhöht auf 0,99 USD für FY27"
+        ],
+        "cons": [
+          "Margendruck durch Mindestlohn-Erhöhungen",
+          "Zollthema und Tariffrisiken belasten Lieferkette",
+          "Geopolitisches China-Risiko bei Warensouring",
+          "Verbraucherschwäche möglich bei Zinsanstieg"
+        ]
+      },
+      {
+        "company": "Oracle",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
+        "key_drivers": ["Cloud-Infrastruktur-Nachfrage", "AI-Database-Features", "Competitive Pressure aus Microsoft/Amazon"],
+        "thesis": "Defensiv positioniert mit Cloud-Infrastruktur-Spielraum, aber Momentum schwächer als Azure und AWS — Watchlist Status gerechtfertigt, keine Urgenz.",
+        "pros": [
+          "Database-Cloud-Position gefestigt in Unternehmenskunden",
+          "AI-Integration in Datenbankfunktionen verbessernd",
+          "Margin-Profile besser als Azure-aggressives Capex"
+        ],
+        "cons": [
+          "Cloud-Wachstum bleibt hinter Azure und AWS",
+          "Bewertung bei Makro-Druck auf Tech-Bewertung verwundbar",
+          "GenAI-Commoditisierung drückt auf spezialisierte Datenbank-Premiums"
+        ]
+      },
+      {
+        "company": "Boeingg",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 1,
+        "key_drivers": ["737 MAX-Sicherheits-Audits", "Lieferketten-Probleme", "Geopolitische Rüstungsgeopolitik"],
+        "thesis": "Struktur-Headwinds überwiegend — Sicherheits-Skandale, Supply-Chain-Druck und Regulierung führen zu anhaltenden Verlusten.",
+        "pros": [
+          "Government Defense/Space Support bleibt stabil",
+          "Luftfahrt-Nachfrage strukturell unterstützt mittelfristig"
+        ],
+        "cons": [
+          "737 MAX Safety Concerns nicht vollständig gelöst",
+          "Supply Chain Disruption (ESC-Probleme, Lieferer-Druck)",
+          "Betriebliche Ineffizienzen und Kostenüberschreitungen",
+          "Bewertung nicht attraktiv angesichts Risiken"
+        ]
+      },
+      {
+        "company": "Airbus",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": ["Luftfahrt-Nachfrage robust", "Lieferketten-Probleme", "Euros Strength vs. USD"],
+        "thesis": "Strukturell starke Luftfahrt-Nachfrage, aber operativ von Supply-Chain-Krisen und Währungsdruck belastet — neutrale Positionierung gerechtfertigt.",
+        "pros": [
+          "Orderbucher voll, Produktion beschränkt nicht durch Nachfrage",
+          "Europäische Geopolitik-Unterstützung als Alternative zu Boeing",
+          "Marginverbesserung möglich wenn Supply-Chain-Druck nachlässt"
+        ],
+        "cons": [
+          "Lieferketten-Engpässe verzögern Deliveries und Margen-Treiber",
+          "Währungsrisiko bei EUR-Stärke vs. USD-Einnahmen",
+          "Konkurrenz von Boeing-Restrukturierung und Kostenabbau"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27-Earnings nach Börsenschluss (17:00 ET)",
+      "relevant_for": "NVIDIA",
+      "rating": 5
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 FY27-Earnings vor Markteröffnung (6:00 CDT)",
+      "relevant_for": "Walmart",
+      "rating": 4
+    },
+    {
+      "date": "2026-05-28",
+      "event": "FOMC Zinsentscheid und Geldpolitische Stellungnahme (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, Anleiherenditen, Tech-Bewertungen",
+      "rating": 5
+    },
+    {
+      "date": "2026-06-03",
+      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
+      "relevant_for": "Intel",
+      "rating": 3
+    },
+    {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — erwartete KI-Ankündigungen und iOS 27-Integration",
+      "relevant_for": "Apple",
+      "rating": 4
+    }
+  ],
+  "calendar_events": [
+    {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27-Earnings nach Börsenschluss (17:00 ET)",
+      "relevant_for": "NVIDIA, Technologiesektor, Hyperscaler-Nachfrage-Signale",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 FY27-Earnings vor Markteröffnung (6:00 CDT)",
+      "relevant_for": "Walmart, Consumer Discretionary, Konsumnachfrage-Indikator",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, Anleiherenditen, Bewertungen, MasterCard, Finanzsektor",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-03",
+      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
+      "relevant_for": "Intel, Foundry-Validierung, Terafab-Timing",
+      "rating": 3,
+      "category": "political"
+    },
+    {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT)",
+      "relevant_for": "Apple, KI-Features, iOS 27, Upgrade-Zyklus",
+      "rating": 4,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "EZB Sitzung & Geldpolitische Entscheidung",
+      "relevant_for": "Europäische Märkte, Euro-Stärke, LVMH, Luftfahrt",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026-Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, Cloud-Wachstum, Azure-Dynamik",
+      "rating": 5,
+      "category": "earnings"
+    }
+  ]
+}
+```

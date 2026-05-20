@@ -29,6 +29,13 @@
       "category": "earnings"
     },
     {
+      "date": "2026-05-20",
+      "event": "NVIDIA Q1 FY27 Earnings nach Börsenschluss (17:00 ET)",
+      "relevant_for": "NVIDIA",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
       "date": "2026-05-21",
       "event": "Walmart Q1 Earnings & Guidance",
       "relevant_for": "Walmart",
@@ -38,6 +45,13 @@
     {
       "date": "2026-05-21",
       "event": "Walmart Q1 FY27 Earnings (vor Markteröffnung)",
+      "relevant_for": "Walmart",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 Uhr CDT)",
       "relevant_for": "Walmart",
       "rating": 4,
       "category": "earnings"
@@ -85,6 +99,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, Finanzsektor, MasterCard",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
       "relevant_for": "Intel",
@@ -124,7 +145,7 @@
       "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab Steuervergünstigungen)",
       "relevant_for": "Intel",
       "rating": 3,
-      "category": "other"
+      "category": "political"
     },
     {
       "date": "2026-06-04",
@@ -162,6 +183,13 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — erwartete Apple Intelligence & Siri-Ankündigungen",
+      "relevant_for": "Apple",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -178,7 +206,7 @@
     {
       "date": "2026-06-12",
       "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Gesamtmarkt, europäische Aktien",
+      "relevant_for": "Europäische Märkte, DAX",
       "rating": 4,
       "category": "fed"
     },
@@ -202,7 +230,14 @@
       "relevant_for": "Microsoft",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, Cloud-Sektor",
+      "rating": 5,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-18T20:28:35.258332+02:00"
+  "updated_at": "2026-05-20T06:34:48.170861+02:00"
 }

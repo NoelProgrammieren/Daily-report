@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-05-18T20:28:40.368960+02:00",
+  "updated_at": "2026-05-20T06:34:58.543414+02:00",
   "indices": [
     {
       "name": "Core S&P 500",
@@ -9,9 +9,8 @@
       "prev_close": 687.7,
       "change_pct": -0.83,
       "currency": "EUR",
-      "last_date": "2026-05-18",
+      "last_date": "2026-05-19",
       "sparkline": [
-        611.58,
         608.66,
         621.66,
         624.24,
@@ -51,9 +50,8 @@
       "prev_close": 121.06,
       "change_pct": -0.54,
       "currency": "EUR",
-      "last_date": "2026-05-18",
+      "last_date": "2026-05-19",
       "sparkline": [
-        110.38,
         109.72,
         112.49,
         112.68,
@@ -93,9 +91,8 @@
       "prev_close": 118.54,
       "change_pct": -2.14,
       "currency": "EUR",
-      "last_date": "2026-05-18",
+      "last_date": "2026-05-19",
       "sparkline": [
-        93.88,
         93.21,
         96.65,
         96.24,
@@ -135,9 +132,8 @@
       "prev_close": 38.65,
       "change_pct": -0.7,
       "currency": "EUR",
-      "last_date": "2026-05-18",
+      "last_date": "2026-05-19",
       "sparkline": [
-        32.36,
         32.49,
         34.47,
         34.35,
@@ -177,9 +173,8 @@
       "prev_close": 70.17,
       "change_pct": -0.94,
       "currency": "EUR",
-      "last_date": "2026-05-18",
+      "last_date": "2026-05-19",
       "sparkline": [
-        63.79,
         63.64,
         65.21,
         65.5,
@@ -214,10 +209,9 @@
   ],
   "risk_indicators": {
     "vix": {
-      "value": 18.49,
-      "change_pct": 0.33,
+      "value": 18.06,
+      "change_pct": 1.35,
       "sparkline": [
-        25.78,
         21.04,
         19.49,
         19.23,
@@ -246,15 +240,16 @@
         17.87,
         17.26,
         18.43,
-        18.49
+        17.82,
+        18.06
       ]
     },
     "yield_spread_10y_2y": {
-      "value_bps": 10,
+      "value_bps": 11,
       "change_bps": 0,
       "interpretation": "normal",
-      "y10_pct": 0.461,
-      "y2_pct": 0.357
+      "y10_pct": 0.467,
+      "y2_pct": 0.358
     }
   }
 }

@@ -3,23 +3,23 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings am 20. Mai 2026 nach Börsenschluss (17:00 ET) — Konsenserwartet 78 Mrd. USD Umsatz (+78% YoY) und 1,77 USD EPS. Blackwell-Momentum (70 % des Data-Center-Compute), Gross-Margin-Stabilität (~75%) und Q2-Guidance (Konsens 86+ Mrd. USD) sind die drei Haupttreiber.",
+      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — 78 Mrd. USD Umsatz (+78 % YoY), Blackwell-Momentum (70 % Data Center), Gross-Margin-Stabilität (~75 %) und Q2-Guidance (Konsens 86+ Mrd. USD).",
       "event_date": "2026-05-20",
-      "time_horizon": "1-3 Tage",
+      "time_horizon": "1-2 Tage (Post-Earnings-Move)",
       "expected_move_pct": {
-        "low": 5.0,
-        "high": 10.0,
+        "low": 6.0,
+        "high": 12.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 230.0,
-        "high": 245.0,
+        "low": 240.0,
+        "high": 255.0,
         "currency": "USD"
       },
-      "thesis": "Die Earnings sind das Referendum auf den 700+ Milliarden Dollar großen Hyperscaler-KI-Capex-Zyklus. Ein Clean Beat allein reicht nicht — der Markt benötigt Q2-Guidance deutlich über 86 Mrd. USD plus bestätigte China-Umsatz-Dynamik, um eine neue Erzählung für den weiteren Anstieg zu liefern.",
-      "risks": "Wenn Q2-Guidance schwächer als 86 Mrd. USD ausfällt oder China-Kommentare Enttäuschungen zeigen, könnte die Aktie trotz Q1-Beat 3–5 % fallen.",
+      "thesis": "Der Markt hat bereits strikte hohe Erwartungen eingepreist — aber ein sauberer Beat (>80 Mrd. USD Umsatz) und Q2-Guidance über 86 Mrd. USD könnten den Optionsmarkt (8–10 % Move) auslösen. Die China-Commentare und GB300-Ultra-Timing-Updates sind Tipping-Points für die Upside-Überraschung.",
+      "risks": "Ein Guidance-Miss oder verschobene GB300-Ramp-Timing könnten zu Sell-Off-Reaktion führen — die Aktie ist bereits auf ATH (Allzeithoch) gelaufen.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-20T06:34:48.171367+02:00"
+      "last_updated": "2026-05-20T06:50:02.965376+02:00"
     },
     {
       "company": "NVIDIA",
@@ -46,7 +46,7 @@
     {
       "company": "Walmart",
       "rating": 4,
-      "event_basis": "Q1 FY27 Earnings am 21. Mai 2026 vor Markteröffnung (6:00 Uhr CDT) — Konsens erwartet Umsatz-Wachstum 3,5–4,5 % konstanter Währung, EPS 0,63–0,65 USD. Q4 2026 zeigte E-Commerce +27 %, Advertising +46 %, Membership >4,3 Mrd. USD.",
+      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — Umsatz 174,65 Mrd. USD (+5,36 % YoY), EPS 0,65 USD (+7,9 % YoY), E-Commerce +27 % und Advertising +46 % im Q4.",
       "event_date": "2026-05-21",
       "time_horizon": "1 Tag",
       "expected_move_pct": {
@@ -55,14 +55,14 @@
         "direction": "up"
       },
       "price_target": {
-        "low": 92.0,
-        "high": 98.0,
+        "low": 93.5,
+        "high": 99.0,
         "currency": "USD"
       },
-      "thesis": "Walmart ist ein Konjunktur- und Konsumbarometer. Starker US-Konsumtrend + Subscription/Advertising-Wachstum puffert strukturelle Margendruck-Themen.",
-      "risks": "Margendruck durch Lohnerhöhungen und Zollthemen in der Lieferkette könnten FY27-Guidance unter Druck setzen.",
+      "thesis": "Defensive Konsumgeschichte mit hoher Margenqualität: E-Commerce und Advertising (hohe Spanne) sprechen für profitables Wachstum trotz Konsumangst. Q1 sollte diese Trends validieren und neue CEO-Guidance geben.",
+      "risks": "Wenn Konsumvertrauen oder Same-Store-Sales unter 3,5 % fallen, könnte Guidance für FY27 sinken — das würde Bewertungsmultipel drücken.",
       "first_seen": "2026-05-18",
-      "last_updated": "2026-05-20T06:34:48.171367+02:00"
+      "last_updated": "2026-05-20T06:50:02.965376+02:00"
     },
     {
       "company": "Apple",
@@ -78,7 +78,7 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri-Überhaul, iOS 27 & macOS Integration. Historisch validiert WWDC den Upgrade-Zyklus; Apple hat sich für die Gelegenheit positioniert.",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Overhaul, iOS 27 & macOS Integration.",
       "event_date": "2026-06-08",
       "time_horizon": "2-3 Wochen",
       "expected_move_pct": {
@@ -91,10 +91,10 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "WWDC ist ein kritischer Katalysator für Apples KI-Geschichte. Starke Ankündigungen (On-Device KI, Siri 2.0, iOS 27 Integration) könnten das iPhone-18-Upgrade-Narrativ für H2 2026 validieren.",
-      "risks": "Wenn KI-Ankündigungen hinter Googles oder Anthropics' Erwartungen zurückbleiben, könnten Anleger die Apple-Story von seiner KI-Konkurrenzfähigkeit abschreiben.",
+      "thesis": "iOS 27 wird ein viel leistungsfähigeres Siri mit einer lange erwarteten Siri-2.0-Erfahrung erhalten, die eher wie ein Chatbot wirkt als der bisherige Sprachassistent mit neuem Look und natürlicheren Interaktionen. Ein klares Developer-Ecosystem-Narrative für Apple Intelligence kann den Kurs treiben, besonders wenn Hardware-Gating überzeugt.",
+      "risks": "Wenn Apple Intelligence unterspezialisiert wirkt oder sich zu sehr auf teurere Modelle beschränkt, könnte der Kurs stagnieren — Markt erwartet jetzt Konkurrenzfähigkeit mit Google Gemini.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-20T06:34:48.171367+02:00"
+      "last_updated": "2026-05-20T06:50:02.965376+02:00"
     },
     {
       "company": "Intel",
@@ -108,16 +108,16 @@
         "direction": "up"
       },
       "price_target": {
-        "low": 100.0,
-        "high": 115.0,
+        "low": 105.0,
+        "high": 118.0,
         "currency": "USD"
       },
-      "thesis": "Die Terafab-Anhörung ist ein Katalysator für die Intel-Foundry-Transformation, wenn lokale/föderale Steueranreize genehmigt werden. Dies validiert die US-Fabrik-Strategie und signalisiert Commitment von Tesla/Elon Musk.",
-      "risks": "Wenn lokale Widerstände oder Kostenfragen die Anhörung verzögern, könnten geopolitische Risiken (China-Restriktionen bei US-Chip-Exports) Intel unter Druck setzen.",
+      "thesis": "Die 2026-Frage ist, ob 18A Intels Foundry-Verluste stoppt bevor der Markt Beweis braucht — wenn 18A-Volumen wächst aber die frühen Wafer teuer sind, kann Intel technisch auf Track und wirtschaftlich unter Druck sein. Eine positive Terafab-Anhörung mit Green-Light für Capex könnte 14A-Sichtbarkeit validieren.",
+      "risks": "Wenn die Anhörung hinausgezögert wird oder Subventionen unter Druck geraten, fällt das Narrativ zusammen; externe Kundenverpflichtungen für 14A könnten fehlen.",
       "first_seen": "2026-05-16",
-      "last_updated": "2026-05-20T06:34:48.171367+02:00"
+      "last_updated": "2026-05-20T06:50:02.965376+02:00"
     }
   ],
   "archive": [],
-  "updated_at": "2026-05-20T06:34:48.171367+02:00"
+  "updated_at": "2026-05-20T06:50:02.965376+02:00"
 }

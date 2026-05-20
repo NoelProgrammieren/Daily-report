@@ -1,6 +1,6 @@
 {
-  "report_market_state": "Breite Schwäche: Russell 2000 (-0,94%), S&P 500 (-0,83%) und EM ex China (-0,70%) zeigen parallele Rückgänge. Tech-Sektor led die Abverkäufe (-0,64% ohne Einzelaktien-Übertreibung), während Defensive Sektoren profitierten. Internationale Märkte (MSCI World -0,54%) blieben stabiler als US-Pendants.",
-  "report_sentiment": "Der VIX legte um 1,35% zu und signalisiert steigende Volatiität bei moderatem Niveau (18,06). Der Yield-Spread bleibt unverändert normal bei 11 bps und deutet auf stabiles Makroumfeld hin. Ohne Fear & Greed-Wert: Sentiment-Umfeld wirkt weder euphorisch noch panisch, eher vorsichtig.",
+  "report_market_state": "Die Marktbreite zeigte eine klare Bifurkation: Während der S&P 500 und Russell 2000 fast parallel sanken (-0,83% bzw. -0,94%), war der World IT-Sektor signifikant schwächer (-2,14%), was auf Konzentrations-Effekte in US-Tech hindeutet. Der MSCI World (-0,54%) blieb stabiler als der S&P 500, suggereriert, dass EM und Nicht-US-Märkte weniger betroffen waren — ein Hinweis, dass das Sell-off US-Tech-spezifisch ausfiel, nicht globale Macro-Driven. Die Technologie-Sektor insgesamt nur -0,64% (vs. World IT -2,14%) deutet auf Mega-Cap-Konzentration innerhalb IT hin: Alphabet, Amazon, Tesla zusammen trugen das Minus. Kommunikation (-0,97%) folgte unter vermutlich Cloud/Software-Namen. Das Advance/Decline-Verhältnis war somit negativ, aber nicht drastisch — eher ein moderater Pullback als ein Crash-Signal.",
+  "report_sentiment": "Der VIX-Anstieg von 1,35% auf 18,06 war moderat, deutet aber einen Stimmungs-Bruch an: Nach Phase von niedrigen Volatilitäts-Werten regt sich neue Vorsicht. Die Normalität des 10Y-2Y-Spreads (11 bps) widerspricht Panik-Szenarien; vielmehr handelt es sich um kalkulierte Gewinnmitnahmen in Tech, wo KGV-Multiples nach der Rallye der letzten Monate angespannt sind. Put/Call-Verhältnis lässt sich aus den Daten nicht präzise ableiten, aber der VIX-Anstieg trotz moderater Index-Rückgänge suggeriert, dass Investoren tail-risk hedgen — Fear-Niveau noch nicht erhöht, aber Alert-Status gestiegen. Der fehlende Fear&Greed-Wert verhindert präzise Einordnung, doch das Muster (Tech-Sell-off + VIX-Up + Defensive-Outperformance) ist typisch für \"Nervous Neutral\" — Bereitschaft zur Risiko-Reduktion, nicht Panik.",
   "overview_chart": {
     "ranges": {
       "1D": {
@@ -1180,7 +1180,7 @@
   ],
   "sentiment": {
     "score": null,
-    "label": "Neutral – Risiko-Vorsicht"
+    "label": "Vorsichtig – Gewinnmitnahmen"
   },
   "sectors": [
     {
@@ -1218,8 +1218,8 @@
       },
       {
         "name": "Bitcoin",
-        "value": 76656.74,
-        "change_pct": -0.39
+        "value": 76702.99,
+        "change_pct": -0.33
       },
       {
         "name": "MSCI World",

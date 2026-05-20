@@ -31,7 +31,7 @@
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings nach Börsenschluss (17:00 ET)",
-      "relevant_for": "NVIDIA",
+      "relevant_for": "NVIDIA, Informationstechnologie",
       "rating": 5,
       "category": "earnings"
     },
@@ -53,6 +53,13 @@
       "date": "2026-05-21",
       "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 Uhr CDT)",
       "relevant_for": "Walmart",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-05-21",
+      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT)",
+      "relevant_for": "Walmart, Consumer Staples",
       "rating": 4,
       "category": "earnings"
     },
@@ -101,7 +108,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, Finanzsektor, MasterCard",
+      "relevant_for": "Gesamtmarkt, Anleiherenditen, Geldpolitik",
       "rating": 5,
       "category": "fed"
     },
@@ -148,6 +155,13 @@
       "category": "political"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
+      "relevant_for": "Intel, Tesla",
+      "rating": 3,
+      "category": "other"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple",
@@ -190,6 +204,13 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0",
+      "relevant_for": "Apple, Informationstechnologie",
+      "rating": 4,
+      "category": "product"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -206,7 +227,7 @@
     {
       "date": "2026-06-12",
       "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Europäische Märkte, DAX",
+      "relevant_for": "Europäische Märkte, MSCI World",
       "rating": 4,
       "category": "fed"
     },
@@ -239,5 +260,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-20T06:34:48.170861+02:00"
+  "updated_at": "2026-05-20T06:50:02.964934+02:00"
 }

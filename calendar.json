@@ -31,7 +31,7 @@
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings nach Börsenschluss (17:00 ET)",
-      "relevant_for": "NVIDIA",
+      "relevant_for": "NVIDIA, Informationstechnologie, Gesamtmarkt",
       "rating": 5,
       "category": "earnings"
     },
@@ -59,7 +59,7 @@
     {
       "date": "2026-05-21",
       "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT)",
-      "relevant_for": "Walmart",
+      "relevant_for": "Walmart, Einzelhandelsektor, Konsumtrends",
       "rating": 4,
       "category": "earnings"
     },
@@ -115,7 +115,7 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung – Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "relevant_for": "Gesamtmarkt, MasterCard, Finanzwerte, Tech-Bewertungen",
       "rating": 5,
       "category": "fed"
     },
@@ -169,6 +169,13 @@
       "category": "other"
     },
     {
+      "date": "2026-06-03",
+      "event": "Terafab öffentliche Anhörung Grimes County TX — Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen",
+      "relevant_for": "Intel, Halbleiter-Sektor, Infrastruktur",
+      "rating": 3,
+      "category": "other"
+    },
+    {
       "date": "2026-06-04",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple",
@@ -214,6 +221,13 @@
       "date": "2026-06-08",
       "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0",
       "relevant_for": "Apple, Informationstechnologie",
+      "rating": 4,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — Apple Intelligence & Siri 2.0-Ankündigungen",
+      "relevant_for": "Apple, Software-Innovation, Informationstechnologie",
       "rating": 4,
       "category": "product"
     },
@@ -267,5 +281,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-20T06:55:05.253251+02:00"
+  "updated_at": "2026-05-20T07:04:23.073206+02:00"
 }

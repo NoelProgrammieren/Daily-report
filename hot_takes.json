@@ -3,9 +3,9 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — Konsens erwartet EPS von 1,76 USD auf Umsatz von 78,75 Milliarden USD mit Blackwell-Momentum und Q2-Guidance oben liegend",
+      "event_basis": "Q1 FY27 Earnings heute 20. Mai 2026 nach Börsenschluss (17:00 ET) — Konsens erwartet 78 Milliarden USD Umsatz, 1,77 USD EPS mit Blackwell-Momentum und Q2-Guidance über 86 Milliarden USD Consensus als Kurstreiber",
       "event_date": "2026-05-20",
-      "time_horizon": "heute bis 21. Mai",
+      "time_horizon": "1-2 Tage",
       "expected_move_pct": {
         "low": 5.0,
         "high": 10.0,
@@ -16,10 +16,10 @@
         "high": 265.0,
         "currency": "USD"
       },
-      "thesis": "NVIDIA's Quartalsergebnisse liefern einen kritischen Katalysator für den Tech-Sektor insgesamt. Ein Beat in Kombination mit einer Q2-Guidance von 86 Mrd. USD oder darüber könnte die Marktsorgen über Zinsen lindern und den KI-Rally fortsetzen.",
-      "risks": "NVIDIA hat in den letzten fünf Quartalen die Umsätze um 3–4% übertroffen, ist aber bei vier der letzten fünf Earnings gefallen — der Markt könnte einen Gewinn ablehnen",
+      "thesis": "NVIDIA ist das Bellwether-Event für KI-Capex-Zyklus. Ein starker Ausblick (Q2 über 86 Milliarden USD) validiert die Hyperscaler-Investitionen und könnte einen Technologie-Rally auslösen. Optionsmärkte preisen 8-10 % Bewegung ein — das Setup ist bullisch bei positivem Guidance-Überraschung.",
+      "risks": "Q2-Guidance unter 86 Milliarden USD oder China-Revenue-Klarheit fehlt — dann Enttäuschungsverkauf und Tech-Rückzug.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-20T06:55:05.253719+02:00"
+      "last_updated": "2026-05-20T07:04:23.073733+02:00"
     },
     {
       "company": "NVIDIA",
@@ -46,9 +46,9 @@
     {
       "company": "Walmart",
       "rating": 4,
-      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — E-Commerce um 27%, Werbeumsatz um 46% gegenüber Q4 erwartet starke Zahlen",
+      "event_basis": "Q1 FY27 Earnings morgen 21. Mai 2026 vor Markteröffnung (6:00 Uhr CDT) — Konsens erwartet 174,57 Milliarden USD Umsatz (+5,36 % YoY), 0,66 USD EPS (+7,9 % YoY) mit E-Commerce und Werbeumsatz-Momentum",
       "event_date": "2026-05-21",
-      "time_horizon": "1–2 Tage",
+      "time_horizon": "1 Tag",
       "expected_move_pct": {
         "low": 2.5,
         "high": 5.0,
@@ -59,10 +59,31 @@
         "high": 102.0,
         "currency": "USD"
       },
-      "thesis": "Walmarts digitale Dynamik (E-Commerce und Advertising) deutet auf Quartalsergebnisse hin, die Konsenserwartungen übertreffen. Ein Clean Beat könnte Defensive-Namen in einem unsicheren Umfeld stützen.",
-      "risks": "Gegenwind durch steigende Lohnkosten und Lieferkettendruck; Margenerweiterung ist fragwürdig.",
+      "thesis": "Walmart zeigt defensiven Konsum-Trend (Lebensmittel-Marktanteile gewinnen). Die Einzelhandels- und Werbeumsatz-Sparte (High-Margin) wächst zweistellig, was Margendruck durch Lohnkosten teilweise kompensiert. Ein Beat bei moderater Guidance-Erhöhung triggert defensiven Kauf in risiko-off-Phase.",
+      "risks": "Schwacher Konsumausblick für Q2 oder Margendruck-Warnungen; dann Verkauf in defensiven Namen.",
       "first_seen": "2026-05-18",
-      "last_updated": "2026-05-20T06:55:05.253719+02:00"
+      "last_updated": "2026-05-20T07:04:23.073733+02:00"
+    },
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Öffentliche Anhörung Terafab, Grimes County, Texas, 3. Juni 2026 — Validierung der Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen; H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD)",
+      "event_date": "2026-06-03",
+      "time_horizon": "2 Wochen",
+      "expected_move_pct": {
+        "low": 3.0,
+        "high": 8.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 105.0,
+        "high": 118.0,
+        "currency": "USD"
+      },
+      "thesis": "Intel hat Apple-Deal-Bestätigung erhalten. Die öffentliche Anhörung zu Terafab validiert die Megafab-Strategie und signalisiert klare Pfad zu zusätzlichen Kundenverpflichtungen (Google, AMD) in H2 2026. Intel verdoppelt damit sein Foundry-Kundenbuch und de-riskt Long-Term-Capex.",
+      "risks": "Regulatorische Komplikationen bei Terafab-Genehmigungen; oder H2-Kundencommitments bleiben aus (z.B. Verzögerung AMD-Deal).",
+      "first_seen": "2026-05-16",
+      "last_updated": "2026-05-20T07:04:23.073733+02:00"
     },
     {
       "company": "Apple",
@@ -78,9 +99,9 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Überhaul und iOS 27 Integration",
+      "event_basis": "WWDC 2026 Keynote, 8. Juni 2026 (10:00 PT) — Apple Intelligence Ankündigungen erwartet, Siri 2.0-Überhaul und iOS 18 Integration; validiert On-Device KI-Differenzierung",
       "event_date": "2026-06-08",
-      "time_horizon": "2–3 Wochen",
+      "time_horizon": "2,5 Wochen",
       "expected_move_pct": {
         "low": 2.0,
         "high": 6.0,
@@ -91,33 +112,12 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "Investoren erwarten Siri 2.0-/Apple Intelligence-Upgrades mit Gemini-Verbesserungen, On-Device-Modellen und macOS/iOS-Updates mit tieferer KI-Integration. Ein starker KI-Story könnte die Premium-Bewertung rechtfertigen.",
-      "risks": "KI-Features enttäuschen oder monetarisieren nicht; China-Nachfrage bleibt schwach.",
+      "thesis": "Apple hat Intel-Chip-Deal signalisiert (Diversifizierung von TSMC). WWDC wird Kern-Story: On-Device KI mit Siri 2.0 und Apple Intelligence positioniert Apple als Privacy-First-Alternative zu Cloud-KI (OpenAI). Dies rechtfertigt Premium-Bewertung gegen Konkurrenten.",
+      "risks": "Apple Intelligence-Features bleiben hinter erwarteten Fähigkeiten zurück (vs. OpenAI/Gemini); oder Siri-Überhaul wird als Inkremental eingestuft.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-20T06:55:05.253719+02:00"
-    },
-    {
-      "company": "Intel",
-      "rating": 3,
-      "event_basis": "Terafab-Öffentliche Anhörung am 3. Juni 2026 in Grimes County, Texas — Validierung der Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen. H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD).",
-      "event_date": "2026-06-03",
-      "time_horizon": "2 Wochen",
-      "expected_move_pct": {
-        "low": 3.0,
-        "high": 8.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 105.0,
-        "high": 118.0,
-        "currency": "USD"
-      },
-      "thesis": "Die 2026-Frage ist, ob 18A Intels Foundry-Verluste stoppt bevor der Markt Beweis braucht — wenn 18A-Volumen wächst aber die frühen Wafer teuer sind, kann Intel technisch auf Track und wirtschaftlich unter Druck sein. Eine positive Terafab-Anhörung mit Green-Light für Capex könnte 14A-Sichtbarkeit validieren.",
-      "risks": "Wenn die Anhörung hinausgezögert wird oder Subventionen unter Druck geraten, fällt das Narrativ zusammen; externe Kundenverpflichtungen für 14A könnten fehlen.",
-      "first_seen": "2026-05-16",
-      "last_updated": "2026-05-20T06:50:02.965376+02:00"
+      "last_updated": "2026-05-20T07:04:23.073733+02:00"
     }
   ],
   "archive": [],
-  "updated_at": "2026-05-20T06:55:05.253719+02:00"
+  "updated_at": "2026-05-20T07:04:23.073733+02:00"
 }

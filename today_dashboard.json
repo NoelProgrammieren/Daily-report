@@ -1,6 +1,6 @@
 {
-  "report_market_state": "Der Markt war heterogen: Während der S&P 500 nur -0,83% fiel, war die Schwäche in Wachstumstitel (Tech -2,14%, Kommunikation -0,97%) deutlich ausgeprägter — das spricht für eine selektive Rotation von Growth zu Value/Defensive. Russell 2000 (-0,94%) schwächer als S&P 500 deutet darauf hin, dass auch Small Caps unter Druck standen, möglicherweise wegen höherer Refinanzierungsrisiken. EM ex China (-0,70%) verloren graduell weniger, was auf relative Stabilität in Emerging Markets hindeutet. Volumen-Indikatoren lassen sich aus den Daten nicht direkt ablesen, aber die Breite des Rückgangs (4 von 5 Haupt-Indizes im Minus) und die differenzierte Sektor-Performance deuten auf ordentliche Marktbeteiligung und nicht auf Panic-Selling hin. Die Gewinner (Gesundheitswesen +1,10%, Energie +1,17%) sind defensiver/zyklischer und unterstützen das Bild von Gewinnmitnahmen bei Tech-Lieblingen.",
-  "report_sentiment": "Der VIX kletterte um 1,35 Punkte auf 18,06 — noch im komfortablen Bereich (unter 20), aber ein Anstieg deutet auf wachsende Unsicherheit hin, wahrscheinlich getrieben durch Gewinnmitnahmen bei Tech nach starkem Rally und höhere Zinserwartungen. Ein Fear & Greed-Index-Wert fehlt; basierend auf dem VIX-Niveau und der gemischten Sektor-Performance (Defensive profitieren, Growth schwächelt) lässt sich auf \"Neutral bis leicht vorsichtig\" schließen — Investoren reduzieren Risiko-Exposure, gehen aber nicht in Panic-Modus. Das 10Y-2Y-Spread von 11 Bps (normal, nicht invertiert) zeigt, dass Rezessionsängste noch nicht dominant sind; eher reflektiert die Bewegung normale Zinsmarktdynamiken und Bewertungskonsolidierung. Put-Aktivität dürfte leicht erhöht sein (VIX-Anstieg), Call-Aktivität dagegen unter Druck — typisch für einen Tag, an dem große Gewinner von gestern Gewinne realisieren.",
+  "report_market_state": "Die Marktbreite zeigte ein gemischtes Bild: Der S&P 500 verlor nur marginal (-0,16%), während Small Caps (Russell 2000 -1,11%) und EM-Titel deutlicher nachgaben, was auf eine Flucht in Sicherheit hindeutet. Der World-IT-Sektor sank um 0,36%, was die Underperformance der Mega-Cap-Tech-Gainer (Alphabet, Amazon) widerspiegelt — trotz Walmarts Gewinns und Apples Stabilität war die Breite in Growth schwach. Die Sektoren-Rotationsmuster war klar: Defensive (Gesundheit +1,10%, Energie +1,17%) schlugen Zyklische (Industrie -1,18%, Kommunikation -0,97%) und Growth (Tech -0,64%) deutlich. EM ex China mit -1,60% signalisiert, dass die Schwäche nicht US-spezifisch ist, sondern globale Konjunktur- oder Zinssorgen widerspiegelt. Volumen-Kontext fehlte in den Daten, aber die Selektivität der Bewegungen (breite Index-Schwäche bei konzentriertem Tech-Sell-off) deutet auf kalibrierte, nicht panische Verkäufe hin.",
+  "report_sentiment": "Der VIX stieg um 1,35 auf 18,06, bleibt aber im historisch gemäßigten Bereich — kein Stress-Signal, sondern erhöhte Vorsicht. Der Anstieg erfolgte unter fallenden Kursen, was auf defensives Positioning hindeutet: Anleger scheinen Absicherungen aufzubauen, ohne in Panik zu verfallen. Das 10Y-2Y-Yield-Spread auf normalem Niveau (11 bps) bedeutet, dass die Zinskurve noch nicht inversioniert ist, aber die Sell-off in Small Caps und EM suggeriert, dass Investoren strukturelle Zinsrisiken einpreisen. Der Fear & Greed-Score fehlte, lässt sich aber aus dem VIX und den Bewegungen qualitativ ableiten: Marktteilnehmer zeigen Zurückhaltung und Risiko-Aversion, nicht Extreme in eine Richtung. Die Stärke von defensiven Sektoren und die Schwäche bei Wachstum deuten auf ein Positionierungs-Szenario vor potenziellen Shocks hin — möglicherweise in Erwartung von hawkish-Notenbank-Signalen oder schwächeren Konjunkturdaten.",
   "overview_chart": {
     "ranges": {
       "1D": {
@@ -133,31 +133,36 @@
             0.0,
             1.549,
             1.034,
-            0.197
+            0.197,
+            0.041
           ],
           "eunl": [
             0.0,
             1.308,
             0.527,
-            -0.012
+            -0.012,
+            -0.112
           ],
           "xdwt": [
             0.0,
             2.733,
             1.891,
-            -0.292
+            -0.292,
+            -0.653
           ],
           "emxc": [
             0.0,
             1.609,
             -1.302,
-            -1.992
+            -1.992,
+            -3.562
           ],
           "zprr": [
             0.0,
             1.275,
             -0.609,
-            -1.544
+            -1.544,
+            -2.635
           ]
         }
       },
@@ -206,7 +211,8 @@
             5.137,
             6.766,
             6.225,
-            5.344
+            5.344,
+            5.181
           ],
           "eunl": [
             0.0,
@@ -228,7 +234,8 @@
             3.636,
             4.991,
             4.182,
-            3.623
+            3.623,
+            3.52
           ],
           "xdwt": [
             0.0,
@@ -250,7 +257,8 @@
             11.715,
             14.769,
             13.828,
-            11.389
+            11.389,
+            10.985
           ],
           "emxc": [
             0.0,
@@ -272,7 +280,8 @@
             8.656,
             10.404,
             7.241,
-            6.492
+            6.492,
+            4.786
           ],
           "zprr": [
             0.0,
@@ -294,7 +303,8 @@
             2.363,
             3.668,
             1.74,
-            0.783
+            0.783,
+            -0.333
           ]
         }
       },
@@ -667,7 +677,8 @@
             8.951,
             10.638,
             10.078,
-            9.165
+            9.165,
+            8.996
           ],
           "eunl": [
             0.0,
@@ -762,7 +773,8 @@
             8.179,
             9.594,
             8.75,
-            8.166
+            8.166,
+            8.058
           ],
           "xdwt": [
             0.0,
@@ -857,7 +869,8 @@
             16.131,
             19.305,
             18.327,
-            15.792
+            15.792,
+            15.372
           ],
           "emxc": [
             0.0,
@@ -952,7 +965,8 @@
             29.193,
             31.272,
             27.511,
-            26.62
+            26.62,
+            24.592
           ],
           "zprr": [
             0.0,
@@ -1047,7 +1061,8 @@
             14.258,
             15.715,
             13.562,
-            12.494
+            12.494,
+            11.248
           ]
         }
       },
@@ -1145,42 +1160,42 @@
     {
       "name": "S&P 500",
       "key": "sxr8",
-      "value": 682.0,
-      "change_pct": -0.83,
+      "value": 680.94,
+      "change_pct": -0.16,
       "color": "#3b82f6"
     },
     {
       "name": "MSCI World",
       "key": "eunl",
-      "value": 120.41,
-      "change_pct": -0.54,
+      "value": 120.29,
+      "change_pct": -0.1,
       "color": "#e9edf3"
     },
     {
       "name": "World IT",
       "key": "xdwt",
-      "value": 116.0,
-      "change_pct": -2.14,
+      "value": 115.58,
+      "change_pct": -0.36,
       "color": "#a78bfa"
     },
     {
       "name": "EM ex China",
       "key": "emxc",
-      "value": 38.38,
-      "change_pct": -0.7,
+      "value": 37.77,
+      "change_pct": -1.6,
       "color": "#22c55e"
     },
     {
       "name": "Russell 2000",
       "key": "zprr",
-      "value": 69.51,
-      "change_pct": -0.94,
+      "value": 68.74,
+      "change_pct": -1.11,
       "color": "#f59e0b"
     }
   ],
   "sentiment": {
     "score": null,
-    "label": "Neutral – Risikovorsicht"
+    "label": "Risiko-Aversion, verhalten defensiv"
   },
   "sectors": [
     {
@@ -1217,19 +1232,19 @@
         "change_pct": 0.38
       },
       {
-        "name": "Bitcoin",
-        "value": 76695.99,
-        "change_pct": -0.34
-      },
-      {
         "name": "MSCI World",
-        "value": 120.41,
-        "change_pct": -0.54
+        "value": 120.29,
+        "change_pct": -0.1
       },
       {
-        "name": "EM ex China",
-        "value": 38.38,
-        "change_pct": -0.7
+        "name": "S&P 500",
+        "value": 680.94,
+        "change_pct": -0.16
+      },
+      {
+        "name": "Bitcoin",
+        "value": 76767.59,
+        "change_pct": -0.24
       }
     ],
     "losers": [
@@ -1237,11 +1252,6 @@
         "name": "Boeing",
         "value": 215.01,
         "change_pct": -2.54
-      },
-      {
-        "name": "World IT",
-        "value": 116.0,
-        "change_pct": -2.14
       },
       {
         "name": "Alphabet",
@@ -1252,6 +1262,11 @@
         "name": "Amazon",
         "value": 259.34,
         "change_pct": -2.08
+      },
+      {
+        "name": "EM ex China",
+        "value": 37.77,
+        "change_pct": -1.6
       },
       {
         "name": "Tesla",

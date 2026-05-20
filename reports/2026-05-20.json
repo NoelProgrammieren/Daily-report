@@ -1,64 +1,69 @@
 {
   "date": "2026-05-20",
-  "generated_at": "2026-05-20T06:50:02.963673+02:00",
+  "generated_at": "2026-05-20T06:55:05.250974+02:00",
   "macro": {
-    "market_state": "Der S&P 500 schloss am 19. Mai (Vortag) mit minus 0,67 % bei 7.353,61 Punkten. Der Nasdaq fiel um 0,84 % auf 25.870,71 und der Dow Jones gab 0,65 % auf 49.363,88 ab.",
-    "macro_drivers": "Staatanleihen-Renditen sind der Haupttreiber: Die 30-Jahres-Rendite sprang kurzzeitig auf 5,19 % (höchster Stand in knapp 19 Jahren), und die 10-Jahres-Rendite stieg auf 4,687 %. Geopolitische Spannungen im Konflikt zwischen USA und Iran belasten ebenfalls die Stimmung. Die Inflationssorgen drücken auf die Kurse, besonders auf wachstumsorientierte Tech-Aktien.",
-    "sentiment": "Risk-off mit Fokus auf Zinsangst. Spekulanten bauen Net-Short-Positionen auf vor NVIDIA-Earnings.",
+    "market_state": "Der S&P 500 fiel um 0,67% auf 7.353,61 Punkte, der Nasdaq Composite sank um 0,84% auf 25.870,71 Punkte, und der Dow Jones Industrial Average verlor 0,65% auf 49.363,88 Punkte. Die Märkte wurden durch steigende Anleiherenditen unter Druck gesetzt, während sich Investoren auf NVIDIAs Quartalszahlen vorbereiten.",
+    "macro_drivers": "10-Jahres-Anleiherenditen erreichten ein 16-Monats-Hoch, und die 30-Jahres-Rendite stieg auf über 5,19%, das Höchste in fast zwei Jahrzehnten. Geopolitische Unsicherheit, insbesondere die Spannungen zwischen den USA und Iran, drückten auf Technologie- und Halbleiteraktien. Inflationsängste und Zinserwartungen dominieren die Marktlage.",
+    "sentiment": "Risk-off mit Vorsicht — steigende Renditen und geopolitische Spannungen bremsen Risikoappetit.",
     "sp500": "7.353,61 (-0,67 %)",
     "nasdaq": "25.870,71 (-0,84 %)",
-    "dax": "Nicht verfügbar in den Quellen"
+    "dax": "keine aktuellen Daten verfügbar"
   },
   "sectors": [
     {
       "name": "Informationstechnologie",
       "emoji": "🖥️",
       "positions_mentioned": [
-        "Apple",
         "NVIDIA",
-        "Alphabet C",
-        "Microsoft",
+        "Apple",
         "Intel"
       ],
       "news": [
         {
           "priority": "fire",
-          "title": "NVIDIA Earnings nach Börsenschluss (17:00 ET): Konsens 78 Mrd. USD Umsatz, Blackwell im Fokus",
+          "title": "NVIDIA Q1 FY27 Earnings heute nach Börsenschluss — wichtiger Katalysator",
           "rating": 5,
-          "summary": "Der Konsens erwartet für Q1 FY27 etwa 78 Mrd. USD Umsatz und 1,77 USD Gewinn pro Aktie (EPS), mit Data-Center-Umsatz nahe 73 Mrd. USD. Die Bruttomargen-Entwicklung und Q2-Guidance werden die Aktie stärker bewegen als der reine Headline-Beat, während China-Kommentare das höchste Varianz-Risiko darstellen. Der Optionsmarkt preist einen Kurs-Move von etwa 8 bis 10 % ein.",
-          "investor_relevance": "Das größte KI-Hardware-Event des Quartals — direkte Auswirkung auf gesamtes Tech-Ökosystem und Hyperscaler-Capex-Narrative."
-        }
-      ]
-    },
-    {
-      "name": "Consumer Staples & Retail",
-      "emoji": "🛒",
-      "positions_mentioned": [
-        "Walmart"
-      ],
-      "news": [
+          "summary": "NVIDIA soll mit einem Gewinn pro Aktie von 1,76 USD bei einem Umsatz von 78,75 Milliarden USD rechnen. Analysten projizieren eine Beschleunigung des Umsatzwachstums im zweiten Quartal auf 86%. Die implizierte Volatilitätsspanne liegt bei etwa 5–10% in beide Richtungen.",
+          "investor_relevance": "Entscheidender Moment für die Validierung des KI-Infrastruktur-Narrativs und des Hyperscaler-Capex-Zyklus."
+        },
         {
           "priority": "lightning",
-          "title": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT): E-Commerce und Advertising im Fokus",
-          "rating": 4,
-          "summary": "Analysten erwarten Gewinn pro Aktie von 0,65 USD und Umsatz von 174,65 Mrd. USD. Das Unternehmen guided für konstante Währung Umsatzwachstum von 3,5–4,5 %, Operating-Income-Wachstum von 4–6 % und EPS von 0,63–0,65 USD. Analysten erwarten etwa 3,9–4,5 % Same-Store-Sales-Wachstum in den USA; das Retail-/Media-/Membership-Modell mit hohen Margen beim Advertising ist kritisch für Profitabilität.",
-          "investor_relevance": "Wichtiges Barometer für US-Konsumtrends — Ad-/Membership-Sparten sind Wachstumstreiber für das Geschäft."
+          "title": "Apple präsentiert Hardware-Umstrukturierung inmitten von KI-Druck",
+          "rating": 3,
+          "summary": "Apple-Aktien erreichten am 19. Mai ein Tageshoch von 300,51 USD und ein Tief von 294,89 USD. Goldman Sachs bestätigte eine Buy-Bewertung mit Kursziel 340 USD, angesichts starker iPhone-, Mac- und Services-Dynamik. Hardware-Umstrukturierung unter Druck von KI-Integration.",
+          "investor_relevance": "Vorbereitung auf WWDC 2026 (8. Juni) mit erwarteten KI-Ankündigungen und Siri-Überarbeitung."
         }
       ]
     },
     {
-      "name": "Hardware & Halbleiter (Breitentrend)",
+      "name": "Halbleiter & Gründung",
       "emoji": "⚙️",
       "positions_mentioned": [
         "Intel"
       ],
       "news": [
         {
+          "priority": "lightning",
+          "title": "Intel Foundry gewinnt Momentum — CEO kündigt H2-Kundenbindungen an",
+          "rating": 4,
+          "summary": "Intel-CEO Lip-Bu Tan sagte, dass die Foundry-Umstrukturierung an Tempo gewinnt und verbesserte Fertigungsausbeuten externes Kundeninteresse anziehen; Intel erwartet Verpflichtungen von mehreren Foundry-Kunden in der zweiten Jahreshälfte. Intel hat seit Anfang 2026 Chipfertigungsausrüstungsbestellungen um mehr als 50% gegenüber dem Vorjahr erhöht.",
+          "investor_relevance": "Stärkung der Glaubwürdigkeit für das Foundry-Umdrehungs-Narrativ; Apple-, Google- und AMD-Gespräche stehen im Mittelpunkt."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen & Einzelhandel",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "Walmart"
+      ],
+      "news": [
+        {
           "priority": "pin",
-          "title": "Halbleitermarkt rotiert: Spekulanten bauen Short-Positionen auf vor NVIDIA-Earnings",
-          "rating": 3,
-          "summary": "Große Spekulanten in Nasdaq-100-Futures haben ihre größte Net-Short-Position seit dem Tiefpunkt von 2023 vor NVIDAs Earnings aufgebaut. Analyst Jay Goldberg von Seaport Research erwartet, dass der Halbleitermarkt kurzfristig \"choppy\" wird, obwohl die langfristige AI-Trendkraft stark bleibt; AMD und Intel könnten in ihre Zahlen wachsen, NVIDIA bleibt durch hohe Erwartungen und ernsthafte Lieferengpässe beschränkt.",
-          "investor_relevance": "Technische Warnung: Nach rapider Aufwärtsbewegung bis Anfang Mai könnten Halbleiter-Pullbacks eine Gelegenheit darstellen."
+          "title": "Walmart Q1 FY27 Earnings morgen vor Markteröffnung erwartet",
+          "rating": 4,
+          "summary": "Walmart gibt seine Q1-Quartalsergebnisse um 6 Uhr CDT und eine Telefonkonferenz um 7 Uhr CDT am Donnerstag, 21. Mai 2026. Der E-Commerce-Umsatz wuchs global um 24% und in den USA um 27%, mit Werbeeinnahmen um 46% auf 6,4 Milliarden USD.",
+          "investor_relevance": "Starke digitale Dynamik und Werbeplattform-Wachstum deuten auf solide Q1-Ergebnisse hin."
         }
       ]
     }
@@ -67,47 +72,47 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — 78 Mrd. USD Umsatz (+78 % YoY), Blackwell-Momentum (70 % Data Center), Gross-Margin-Stabilität (~75 %) und Q2-Guidance (Konsens 86+ Mrd. USD).",
+      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — Konsens erwartet EPS von 1,76 USD auf Umsatz von 78,75 Milliarden USD mit Blackwell-Momentum und Q2-Guidance oben liegend",
       "event_date": "2026-05-20",
-      "time_horizon": "1-2 Tage (Post-Earnings-Move)",
+      "time_horizon": "heute bis 21. Mai",
       "expected_move_pct": {
-        "low": 6.0,
-        "high": 12.0,
+        "low": 5.0,
+        "high": 10.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 240.0,
-        "high": 255.0,
+        "low": 245.0,
+        "high": 265.0,
         "currency": "USD"
       },
-      "thesis": "Der Markt hat bereits strikte hohe Erwartungen eingepreist — aber ein sauberer Beat (>80 Mrd. USD Umsatz) und Q2-Guidance über 86 Mrd. USD könnten den Optionsmarkt (8–10 % Move) auslösen. Die China-Commentare und GB300-Ultra-Timing-Updates sind Tipping-Points für die Upside-Überraschung.",
-      "risks": "Ein Guidance-Miss oder verschobene GB300-Ramp-Timing könnten zu Sell-Off-Reaktion führen — die Aktie ist bereits auf ATH (Allzeithoch) gelaufen."
+      "thesis": "NVIDIA's Quartalsergebnisse liefern einen kritischen Katalysator für den Tech-Sektor insgesamt. Ein Beat in Kombination mit einer Q2-Guidance von 86 Mrd. USD oder darüber könnte die Marktsorgen über Zinsen lindern und den KI-Rally fortsetzen.",
+      "risks": "NVIDIA hat in den letzten fünf Quartalen die Umsätze um 3–4% übertroffen, ist aber bei vier der letzten fünf Earnings gefallen — der Markt könnte einen Gewinn ablehnen"
     },
     {
       "company": "Walmart",
       "rating": 4,
-      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — Umsatz 174,65 Mrd. USD (+5,36 % YoY), EPS 0,65 USD (+7,9 % YoY), E-Commerce +27 % und Advertising +46 % im Q4.",
+      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — E-Commerce um 27%, Werbeumsatz um 46% gegenüber Q4 erwartet starke Zahlen",
       "event_date": "2026-05-21",
-      "time_horizon": "1 Tag",
+      "time_horizon": "1–2 Tage",
       "expected_move_pct": {
         "low": 2.5,
         "high": 5.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 93.5,
-        "high": 99.0,
+        "low": 95.5,
+        "high": 102.0,
         "currency": "USD"
       },
-      "thesis": "Defensive Konsumgeschichte mit hoher Margenqualität: E-Commerce und Advertising (hohe Spanne) sprechen für profitables Wachstum trotz Konsumangst. Q1 sollte diese Trends validieren und neue CEO-Guidance geben.",
-      "risks": "Wenn Konsumvertrauen oder Same-Store-Sales unter 3,5 % fallen, könnte Guidance für FY27 sinken — das würde Bewertungsmultipel drücken."
+      "thesis": "Walmarts digitale Dynamik (E-Commerce und Advertising) deutet auf Quartalsergebnisse hin, die Konsenserwartungen übertreffen. Ein Clean Beat könnte Defensive-Namen in einem unsicheren Umfeld stützen.",
+      "risks": "Gegenwind durch steigende Lohnkosten und Lieferkettendruck; Margenerweiterung ist fragwürdig."
     },
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Overhaul, iOS 27 & macOS Integration.",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Überhaul und iOS 27 Integration",
       "event_date": "2026-06-08",
-      "time_horizon": "2-3 Wochen",
+      "time_horizon": "2–3 Wochen",
       "expected_move_pct": {
         "low": 2.0,
         "high": 6.0,
@@ -118,81 +123,61 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "iOS 27 wird ein viel leistungsfähigeres Siri mit einer lange erwarteten Siri-2.0-Erfahrung erhalten, die eher wie ein Chatbot wirkt als der bisherige Sprachassistent mit neuem Look und natürlicheren Interaktionen. Ein klares Developer-Ecosystem-Narrative für Apple Intelligence kann den Kurs treiben, besonders wenn Hardware-Gating überzeugt.",
-      "risks": "Wenn Apple Intelligence unterspezialisiert wirkt oder sich zu sehr auf teurere Modelle beschränkt, könnte der Kurs stagnieren — Markt erwartet jetzt Konkurrenzfähigkeit mit Google Gemini."
-    },
-    {
-      "company": "Intel",
-      "rating": 3,
-      "event_basis": "Terafab-Öffentliche Anhörung am 3. Juni 2026 in Grimes County, Texas — Validierung der Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen. H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD).",
-      "event_date": "2026-06-03",
-      "time_horizon": "2 Wochen",
-      "expected_move_pct": {
-        "low": 3.0,
-        "high": 8.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 105.0,
-        "high": 118.0,
-        "currency": "USD"
-      },
-      "thesis": "Die 2026-Frage ist, ob 18A Intels Foundry-Verluste stoppt bevor der Markt Beweis braucht — wenn 18A-Volumen wächst aber die frühen Wafer teuer sind, kann Intel technisch auf Track und wirtschaftlich unter Druck sein. Eine positive Terafab-Anhörung mit Green-Light für Capex könnte 14A-Sichtbarkeit validieren.",
-      "risks": "Wenn die Anhörung hinausgezögert wird oder Subventionen unter Druck geraten, fällt das Narrativ zusammen; externe Kundenverpflichtungen für 14A könnten fehlen."
+      "thesis": "Investoren erwarten Siri 2.0-/Apple Intelligence-Upgrades mit Gemini-Verbesserungen, On-Device-Modellen und macOS/iOS-Updates mit tieferer KI-Integration. Ein starker KI-Story könnte die Premium-Bewertung rechtfertigen.",
+      "risks": "KI-Features enttäuschen oder monetarisieren nicht; China-Nachfrage bleibt schwach."
     }
   ],
   "forecast": {
-    "commentary": "Die nächsten 4–8 Wochen bleiben volatil: NVIDIA-Earnings (20. Mai) und Walmart (21. Mai) sind unmittelbare Katalysatoren mit High-Stakes-Guidance. Der Markt kämpft mit Anleiherenditen, die nach der Inflationsangst sprunghaft angestiegen sind — das belastet wachstumsorientierte Tech-Aktien. Apple und Intel profitieren potenziell von anstehenden Ankündigungen (WWDC, Terafab-Hearing), während Halbleiter-Spekulanten Short-Positionen bauen. Die Defensive (Walmart, Konsumgüter) könnte Anteile gewinnen, wenn die Renditen weiter steigen.",
+    "commentary": "Das Portfolio steht vor kritischen Katalysatoren: NVIDIAs Earnings heute und Walmarts morgiger Bericht werden Marktführerschaft und Konsumtrends definieren. Die Anleiherenditen bleiben erhöht, was den technologielastigen Index unter Druck setzt, während NVIDIA und Apple kurzfristig abhängig von Earnings-Überraschungen sind. Intels Foundry-Geschichte bleibt ein längerfristiges Spiel mit Kupferkatalysatoren im H2 2026. Im breiten Markt sollte die S&P 500 und MSCI World aufgrund von Zinspressionen und geopolitischen Risiken konservativ eingestuft werden, aber der KI-Infrastruktur-Durchsatz-Zyklus stützt weiterhin Halbleiter und Cloud-Hyperscaler.",
     "tickers": [
       {
         "company": "Apple",
         "category": "portfolio",
         "scenario": "neutral",
-        "expected_change_30d_pct": 2.5,
-        "expected_change_90d_pct": 5.0,
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 8.0,
         "uncertainty_pct": 4.0,
         "potential_rating": 3,
         "key_drivers": [
-          "WWDC 8. Juni — Apple Intelligence & Siri 2.0",
-          "iPhone 17-Zyklus im Herbst",
-          "China-Nachfrage schwach"
+          "WWDC 2026 im Juni",
+          "Apple Intelligence Ankündigungen",
+          "China-Nachfrage"
         ],
-        "thesis": "Stabile Position, aber kurzfristig fehlt der große Kurstreiber; WWDC ist Chance auf Rerating.",
+        "thesis": "Stabile iPhone-Dynamik und Service-Wachstum, aber kurzfristig abhängig von WWDC KI-Story-Lieferung.",
         "pros": [
-          "WWDC im Juni mit AI-Ankündigungen",
-          "Services-Sparte wächst zweistellig",
-          "Hohe Cash-Reserven für Rückkäufe"
+          "Q2 FY26 Umsatz +17% YoY, iPhone +22%",
+          "Services-Rekordhoch bei 31 Mrd. USD",
+          "Gross-Margin-Allzeithoch 49,3%"
         ],
         "cons": [
           "iPhone-Absatz in China rückläufig",
-          "Bewertung bereits ehrgeizig (P/E ~30x)",
-          "Wachstum unter Tech-Schnitt"
+          "Speicherkostendrücke im Q3",
+          "KI-Monetarisierungspfad unklar"
         ]
       },
       {
         "company": "NVIDIA",
         "category": "portfolio",
         "scenario": "bullish",
-        "expected_change_30d_pct": 8.0,
+        "expected_change_30d_pct": 6.0,
         "expected_change_90d_pct": 12.0,
-        "uncertainty_pct": 6.5,
+        "uncertainty_pct": 5.5,
         "potential_rating": 5,
         "key_drivers": [
           "Q1 FY27 Earnings heute",
-          "Blackwell-Momentum (70% Data Center)",
-          "Hyperscaler-Capex >$700B 2026",
-          "China-Exportpfad-Entwicklungen"
+          "Blackwell Ramp",
+          "Hyperscaler Capex"
         ],
-        "thesis": "Earnings sind Referendum auf $700B-Hyperscaler-Capex-Zyklus; Beat + starke Q2-Guidance könnte 8–12% Move auslösen.",
+        "thesis": "Earnings-Überraschung und Q2-Guidance können den Markt beruhigen und den KI-Sektor-Rückwind fortsetzen.",
         "pros": [
-          "Blackwell-Ramp ist sicher, GB300 folgt",
-          "Konsens-Umsatz $78B erreichbar",
-          "Sovereign AI ($30B+ YoY) wächst"
+          "78,75 Mrd. USD Konsens-Umsatz erwartet",
+          "Blackwell-Produkt-Mix-Stärke",
+          "Gross-Margin-Stabilität ~75%"
         ],
         "cons": [
-          "Hohe Erwartungen = Fallstricke",
-          "China-Lizenzkrise könnte reklamiert werden",
-          "Optionsmarkt preist 8–10% Volatilität ein"
+          "Markt könnte Routine-Beats ablehnen",
+          "China-Exportrisiken bleiben",
+          "Valuation bereits angespannt"
         ]
       },
       {
@@ -204,20 +189,20 @@
         "uncertainty_pct": 3.5,
         "potential_rating": 3,
         "key_drivers": [
-          "Gemini AI Rollout schärft Wettbewerb",
-          "Cloud-Capex bleibt Treiber",
-          "Antitrust-Risiken andauernd"
+          "Werbegeschäft-Trend",
+          "Cloud Capex Zyklus",
+          "KI-Integrationsfortschritt"
         ],
-        "thesis": "Solide Cloud-Dynamik, aber Apple-Deal-Integration bei Intel schadet mittelfristig Googles foundry-Plänen.",
+        "thesis": "Google profitiert von Hyperscaler-Infrastruktur-Ausgaben und starkem Werbemarkt, aber Valuation ist bereits hoch.",
         "pros": [
-          "Google Cloud-Wachstum beschleunigt sich",
-          "Gemini AI über Android skaliert",
-          "Werbegeschäft stabil, Margen gut"
+          "YouTube und Werbegeschäft-Stärke",
+          "Google Cloud erfasst Marktanteile",
+          "Cloud-Capex-Zyklus im Gang"
         ],
         "cons": [
-          "Antitrust-Druck anhaltend",
-          "Apple wendet sich Intel zu statt TSMC",
-          "Bewertung bereits hoch nach Rally"
+          "Regulatorische Unsicherheit",
+          "Suchmarkt-Sättigung",
+          "KI-Monetarisierung unbestätigt"
         ]
       },
       {
@@ -229,25 +214,24 @@
         "uncertainty_pct": 3.5,
         "potential_rating": 3,
         "key_drivers": [
-          "AWS AI-Infrastruktur-Capex",
-          "Retail-Konsumtrends weich",
-          "Custom-Silicon-Deals",
-          "Advertising-Margin-Fokus"
+          "AWS Cloud Capex",
+          "E-Commerce-Volumen",
+          "Werbeplattform-Wachstum"
         ],
-        "thesis": "AWS bleibt KI-Motor, aber Einzelhandelssparte wird von Konsumangst gebremst.",
+        "thesis": "AWS bleibt der Anker für KI-Infrastruktur-Ausgaben, aber Gegenwind durch Personalkürzungen und Zollbedenken.",
         "pros": [
-          "AWS-Capex für AI-Infrastruktur sicher",
-          "Advertising-Sparte wächst zweistellig",
-          "Margin-Fokus über Revenue-Wachstum"
+          "AWS dominiert Cloud-Capex",
+          "Advertising Momentum",
+          "Retail-Effizienzgewinne"
         ],
         "cons": [
-          "Retail-Wachstum schwächer als Walmart",
-          "Konsumvertrauen in USA fällt",
-          "Custom-Silicon noch in früher Phase"
+          "Personalkürzungen signalisieren Vorsicht",
+          "E-Commerce-Rand-Sättigung",
+          "Zoll-Lieferketten-Risiko"
         ]
       },
       {
-        "company": "S&P 500 (ETF)",
+        "company": "Core S&P 500 USD (Acc)",
         "category": "portfolio",
         "scenario": "neutral",
         "expected_change_30d_pct": 0.5,
@@ -255,99 +239,96 @@
         "uncertainty_pct": 3.5,
         "potential_rating": 2,
         "key_drivers": [
-          "Anleiherenditen-Volatilität (10Y @4,68 %)",
-          "Tech-Rotation in Defensive",
-          "NVIDIA/Earnings Swing-Events",
-          "Geopolitik (USA-Iran)"
+          "Anleiherenditen Druck",
+          "Fed-Pfad Unsicherheit",
+          "Geopolitische Spannungen"
         ],
-        "thesis": "Breiter Index leidet unter Anleiherendite-Rally; Tech-Gewichte (NVIDIA, Apple) sind zu groß für Seitwärtsbewegung.",
+        "thesis": "Breiter Index unter Druck durch steigende Renditen; Technologie-Überlastung schützt, aber Zinszyklus bleibt Gegenwind.",
         "pros": [
-          "Defensive Bestände (Utilities, Staples) stützen",
-          "Earnings-Saison liefert Bodenbildung",
-          "Geopolitik könnte sich klären"
+          "Mega-Cap-Tech-Gewichtung stützt",
+          "Hyperscaler Capex-Zyklus im Gang",
+          "Unternehmensgewinne bleiben stabil"
         ],
         "cons": [
-          "10-Jahres-Rendite über 4,6 % = Growth-Headwind",
-          "Tech-Sell-Off breitet sich aus",
-          "Volatilität bleibt erhöht"
+          "10-30J Renditen auf 2-Jahres-Hoch",
+          "Zinserwartungen steigen",
+          "Kleine Kapitalisierungen unter Druck"
         ]
       },
       {
-        "company": "MSCI World (ETF)",
+        "company": "Core MSCI World USD (Acc)",
         "category": "portfolio",
-        "scenario": "bearish",
-        "expected_change_30d_pct": -1.0,
-        "expected_change_90d_pct": 1.0,
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 2.0,
         "uncertainty_pct": 3.5,
         "potential_rating": 2,
         "key_drivers": [
-          "Europäische Zinsbahn unsicherer",
-          "EZB-Haltung zu Inflation abwartend",
-          "USD-Stärke belastet Emerging Markets",
-          "Tech-Anteil Druck (NVIDIA US-lastig)"
+          "Globale Renditen steigen",
+          "Europa-Stagnation",
+          "Tech-Übergewicht"
         ],
-        "thesis": "Globaler Index wird durch US-Anleiherendite-Schock und EM-Währungsdruck gebremst.",
+        "thesis": "Globale Märkte werden durch europäische Schwäche und Rendite-Volatilität gebremst; Tech-Dominanz ist Alleinretter.",
         "pros": [
-          "Europäische Dividenden solide",
-          "Währungsdiversifikation hilft bei USD-Schwäche",
-          "EZB könnte Zinsen senken (später im Jahr)"
+          "US-Tech-Kern bleibt stark",
+          "LVMH Luxus-Segmentierung",
+          "Diversifikation vs. reines S&P",
+          "Asia-ex-China Chancen"
         ],
         "cons": [
-          "US-Tech-Dominanz verstärkt Volatilität",
-          "China-Nachfrage-Risiken für EM-Staaten",
-          "Kursverluste noch nicht komplett abgebaut"
+          "Europa-Wirtschaft schwach",
+          "Rendite-Druck breit",
+          "FTSE, DAX unter Belastung"
         ]
       },
       {
-        "company": "MSCI Emerging Markets Ex China (ETF)",
+        "company": "MSCI World Information Technology",
         "category": "portfolio",
-        "scenario": "bearish",
-        "expected_change_30d_pct": -2.0,
-        "expected_change_90d_pct": 0.5,
-        "uncertainty_pct": 4.0,
-        "potential_rating": 1,
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.5,
+        "expected_change_90d_pct": 8.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 4,
         "key_drivers": [
-          "USD-Stärke durch Anleihen-Renditen",
-          "Indiens Valuationen schon hoch",
-          "Brasilien: Inflations-/Zinsentscheidungen",
-          "Tech-EM-Anteil schwach"
+          "NVIDIA Earnings",
+          "KI-Infrastruktur-Zyklus",
+          "Apple WWDC"
         ],
-        "thesis": "EM ex China leidet unter globalem Tech-Sell-Off und USD-Stärke; lokale Zinspfade sind unsicher.",
+        "thesis": "Tech-Sektor profitiert von Hyperscaler-Capex und KI-Infrastruktur-Ramp; Earn-In-Dynamik überlagert Renditedrücke.",
         "pros": [
-          "Indiens Cloud-Boom profitiert von AI-Capex",
-          "Risikoprämie sollte Chancen bieten",
-          "Bevölkerungs-/Wachstums-Tailwinds andauernd"
+          "NVIDIA, Apple, Broadcom führen",
+          "Halbleiter-Zyklus beschleunigt",
+          "Cloud-Capex Dauer"
         ],
         "cons": [
-          "USD-Rallye hemmt EM-Renditen massiv",
-          "Inflationsdaten könnten Zentralbanken zwingen",
-          "Tech-Sektor ist zu klein für Auftrieb"
+          "Valuation-Überdehnungen",
+          "Regulatorische Risiken",
+          "China-Export-Beschränkungen"
         ]
       },
       {
-        "company": "MSCI World Information Technology (ETF)",
+        "company": "MSCI Emerging Markets Ex China",
         "category": "portfolio",
         "scenario": "neutral",
-        "expected_change_30d_pct": 3.0,
-        "expected_change_90d_pct": 6.0,
-        "uncertainty_pct": 5.5,
-        "potential_rating": 3,
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
         "key_drivers": [
-          "NVIDIA Earnings (Mega-Weighted)",
-          "Apple WWDC (10% Anteil)",
-          "Halbleiter-Rotation in Bewegung",
-          "AI-Capex Momentum"
+          "Globale Renditen-Volatilität",
+          "Breitere EM-Währungsunstabilität",
+          "US-Zoll-Risiken"
         ],
-        "thesis": "Tech-ETF wird von NVIDIA-Earnings vollständig dominiert; Volatilität ist Chance nach Short-Aufbau.",
+        "thesis": "EM-ex-China wird durch steigende US-Renditen und US-Zoll-Unsicherheit belastet; Anruf auf strukturelle Reformen.",
         "pros": [
-          "NVIDIA-Beat würde gesamten Index treiben",
-          "Apple/Alphabet Gewichte groß genug",
-          "Semiconductor-Korrektur könnte Einstiegsmöglichkeit sein"
+          "Selektive Bewertung günstig",
+          "Indien-Wachstum fortgesetzt",
+          "Südkorea-Tech-Exposition"
         ],
         "cons": [
-          "Zu Tech-lastig in Zeiten von Anleihe-Druck",
-          "Mehrheitlich US-Tech = Rendite-Sensitivität",
-          "Halbleiter-Überbewertung ist strukturell"
+          "Kapitalabfluss-Risiko",
+          "Währungs-Volatilität",
+          "Zoll-Überraschungsrisiko"
         ]
       },
       {
@@ -356,128 +337,123 @@
         "scenario": "bullish",
         "expected_change_30d_pct": 3.5,
         "expected_change_90d_pct": 6.0,
-        "uncertainty_pct": 2.5,
+        "uncertainty_pct": 3.0,
         "potential_rating": 4,
         "key_drivers": [
-          "Q1 Earnings morgen (21. Mai)",
-          "E-Commerce +27 %, Advertising +46 %",
-          "Konsumverteidiger in Zeiten von Rendite-Sorgen",
-          "Membership >$4,3B Spannungspotenzen"
+          "Q1 FY27 Earnings morgen",
+          "E-Commerce +27%",
+          "Werbekanal +46%"
         ],
-        "thesis": "Defensive Konsumgeschichte mit Spannungsdynamiken in Advertising/Membership; Earnings-Beat würde FY27 Guidance anheben.",
+        "thesis": "Walmarts E-Commerce-Umsatz stieg um 24% global und um 27% in den USA, wobei Werbeeinnahmen um 46% auf 6,4 Mrd. USD stiegen — starker Konsumtrend trifft solide Quartalszahlen.",
         "pros": [
-          "E-Commerce-Momentum bestätigt sich",
-          "Advertising-/Membership-Mix liefert Marge",
-          "Weniger Zinssensitivität als Tech"
+          "Digitale Kanäle beschleunigen",
+          "Werbeplattform-Monetarisierung",
+          "Konsumnachfrage stabil"
         ],
         "cons": [
-          "Konsumvertrauen fällt — gleich prüfen bei EPS",
-          "SSS-Growth von <3,5 % würde Schwäche zeigen",
-          "Valuation bereits gestiegen (P/E ~28x)"
+          "Lohnkosten-Druck steigt",
+          "Zoll-Lieferketten-Kopfschmerzen",
+          "Margin-Erweiterung gefährdet"
         ]
       },
       {
         "company": "Tesla",
         "category": "watchlist",
         "scenario": "neutral",
-        "expected_change_30d_pct": 0.0,
-        "expected_change_90d_pct": 2.0,
-        "uncertainty_pct": 5.0,
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 6.0,
         "potential_rating": 2,
         "key_drivers": [
-          "Terafab-Hearing (Juni 3) — Megafab-Genehmigung",
-          "Global Absatz Trends schwach",
-          "Konkurrenz-Druck in EV",
-          "Elon/Regulierung Wildkarte"
+          "Terafab 14A Ramp",
+          "EV Zyklus-Unsicherheit",
+          "Intel Partnership"
         ],
-        "thesis": "Tesla-Spannungen: Terafab-Megafab-Deal könnte mittelfristig gewaltig sein, aber Auto-Sparte ist unter Druck.",
+        "thesis": "Tesla Terafab mit Intel 14A ist langfristiger Stütz, aber EV-Markt-Unsicherheit und Zoll-Gegenwind überschatten kurzfristige Gewinne.",
         "pros": [
-          "Terafab könnte Margin-Transformation begründen",
-          "AI-Chipfab ist Wachstum-Next-Level",
-          "Elon-Wildkarte bleibt"
+          "Intel 14A Terafab Validierung",
+          "Elon-Tech-Roadmap Glaubwürdigkeit",
+          "Energy Storage Opportunitäten"
         ],
         "cons": [
-          "EV-Autoverkäufe sind schwach",
-          "Terafab ist Langzeitwette (2028+)",
-          "Bewertung ist spekulativ"
+          "EV-Volumen-Risiken",
+          "China-Konkurrenz intensiv",
+          "Zoll-Druck auf Margen"
         ]
       },
       {
         "company": "Bitcoin",
         "category": "watchlist",
-        "scenario": "bearish",
-        "expected_change_30d_pct": -5.0,
+        "scenario": "neutral",
+        "expected_change_30d_pct": -2.0,
         "expected_change_90d_pct": 0.0,
         "uncertainty_pct": 8.0,
-        "potential_rating": 1,
+        "potential_rating": 2,
         "key_drivers": [
-          "Anleiherenditen drücken risikoaffine Assets",
-          "Makro-Unsicherheit (Iran, Inflation)",
-          "Halving-Zyklus (2024) vorbei",
-          "Regulierung andauernd"
+          "Risiko-off Sentiment",
+          "Fed Rentenzyklus",
+          "Geopolitische Volatilität"
         ],
-        "thesis": "Bitcoin leidet unter Rendite-Rally und makro-Flucht-zu-Qualität; Korrektur wahrscheinlich vor Stabilisierung.",
+        "thesis": "Kryptowährungen unter Druck durch steigende Renditen und Risk-off-Stimmung; Short-Term-Überverkauf möglich, aber Makro-Headwinds bleiben.",
         "pros": [
-          "Längerfristig Inflation-Hedge",
-          "Institutionelle Akzeptanz wächst",
-          "Dezentralisierungs-Thesis intakt"
+          "Long-term Halving Zyklus",
+          "Institutionelle Adoption",
+          "Inflation Hedge Narrativ"
         ],
         "cons": [
-          "Kurzfristig totale Korrelation zu Tech/Risiko",
-          "Regulierung bleibt Risiko",
-          "Fundamentale Katalysatoren fehlen"
+          "Höhere Realzinsen schmecken",
+          "Geopolitisches Liquidations-Risiko",
+          "Technische Unterstützungen getestet"
         ]
       },
       {
         "company": "Ethereum",
         "category": "watchlist",
-        "scenario": "bearish",
-        "expected_change_30d_pct": -7.0,
-        "expected_change_90d_pct": -2.0,
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 1.0,
         "uncertainty_pct": 8.5,
-        "potential_rating": 1,
+        "potential_rating": 2,
         "key_drivers": [
-          "Altcoin-Rotation schwach in Zeiten von Risikoangst",
-          "Staking-Renditen unter Druck",
-          "Makro-Schock domininiert",
-          "DeFi-Nutzer-Zahlen stagnieren"
+          "Staking Renditen",
+          "Makro-Zins-Druck",
+          "DeFi Adoption"
         ],
-        "thesis": "Ethereum ist Beta-2-Asset in Zeiten von Rendite-Sorgen; Korrektur stärker als Bitcoin.",
+        "thesis": "Ethereum leidet unter höheren Renditen und Risk-off-Druck; DeFi-Adoption stützt, aber makro-Widerstände überlagern.",
         "pros": [
-          "Shanghai/Dencun Upgrades bestätigen Tech-Pfad",
-          "Staking-Renditen ziehen einige Langzeitinhaber",
-          "Layer-2-Momentum (Arbitrum, Optimism)"
+          "Staking Income ~3-4%",
+          "DeFi Protocol Wachstum",
+          "Layer-2 Skalierbarkeit"
         ],
         "cons": [
-          "Noch weniger fundamentale Katalysatoren als Bitcoin",
-          "DeFi-Nutzung schwach",
-          "Regulierung (MiCA in EU) bremst"
+          "Konkurrenz von Staking-Alternativen",
+          "Realzins-Kopfschmerzen",
+          "Regulatorische Unsicherheit"
         ]
       },
       {
         "company": "Boeing",
         "category": "watchlist",
         "scenario": "bearish",
-        "expected_change_30d_pct": -3.0,
-        "expected_change_90d_pct": 0.0,
-        "uncertainty_pct": 4.0,
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": -1.0,
+        "uncertainty_pct": 5.0,
         "potential_rating": 1,
         "key_drivers": [
-          "Supply-Chain-Probleme andauernd",
-          "787-Deliveries hinten nach",
-          "Sicherheits-Thema (Tür-Furore) gelöst",
-          "Schulden-Lasten hoch"
+          "Regulatorische Sicherheitsüberprüfung",
+          "Lieferketten-Störungen",
+          "Verschuldungsrisiko"
         ],
-        "thesis": "Boeing leidet unter strukturellen Lieferketten-Problemen und bleibt Turnaround-Spielsieg ohne klare Katalysatoren.",
+        "thesis": "Boeing fiel um 2,62% im Dow aufgrund fortgesetzter Sicherheitsbedenken und Lieferketten-Druck; Rüstungsausgaben können langfristig helfen.",
         "pros": [
-          "Langfristig: Luftfahrt wächst",
-          "Pratt & Whitney Probleme sind anderer Hersteller",
-          "Militär-Aufträge stabil"
+          "US-Rüstungsausgaben steigen",
+          "Großaufträge möglich",
+          "Geopolitischer Rückenwind"
         ],
         "cons": [
-          "787-Ramp bleibt Jahre im Rückstand",
-          "Debt ist ~$60B, Cashflow schwach",
-          "Management-Vertrauen erodiert"
+          "Sicherheits-Überhang anhaltend",
+          "Lieferketten-Verwirrung",
+          "Schuldenreduktion schwierig"
         ]
       }
     ]
@@ -486,24 +462,24 @@
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings nach Börsenschluss (17:00 ET)",
-      "relevant_for": "NVIDIA, Tech-Sektor, Gesamtmarkt",
+      "relevant_for": "NVIDIA, Technologiesektor, Gesamtmarkt",
       "rating": 5
     },
     {
       "date": "2026-05-21",
-      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT)",
-      "relevant_for": "Walmart, Consumer Staples, Konsumtrends",
+      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 Uhr CDT)",
+      "relevant_for": "Walmart, Einzelhandel, Konsumtrend",
       "rating": 4
     },
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, Anleihen, Renditen",
+      "relevant_for": "Gesamtmarkt, Anleiherenditen, Finanzdienstleistungen",
       "rating": 5
     }
   ],
   "usage": {
-    "input_tokens": 55099,
-    "output_tokens": 9010
+    "input_tokens": 70406,
+    "output_tokens": 7948
   }
 }

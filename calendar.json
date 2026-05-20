@@ -31,7 +31,7 @@
     {
       "date": "2026-05-20",
       "event": "NVIDIA Q1 FY27 Earnings nach Börsenschluss (17:00 ET)",
-      "relevant_for": "NVIDIA, Informationstechnologie",
+      "relevant_for": "NVIDIA",
       "rating": 5,
       "category": "earnings"
     },
@@ -59,7 +59,7 @@
     {
       "date": "2026-05-21",
       "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT)",
-      "relevant_for": "Walmart, Consumer Staples",
+      "relevant_for": "Walmart",
       "rating": 4,
       "category": "earnings"
     },
@@ -113,6 +113,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung – Zinsentscheid (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
       "date": "2026-06-03",
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
       "relevant_for": "Intel",
@@ -138,7 +145,7 @@
       "event": "Terafab – Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
       "relevant_for": "Intel",
       "rating": 3,
-      "category": "political"
+      "category": "other"
     },
     {
       "date": "2026-06-03",
@@ -260,5 +267,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-20T06:50:02.964934+02:00"
+  "updated_at": "2026-05-20T06:55:05.253251+02:00"
 }

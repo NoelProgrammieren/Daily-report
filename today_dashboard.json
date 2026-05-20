@@ -1,6 +1,6 @@
 {
-  "report_market_state": "Die Marktbreite zeigte eine klare Bifurkation: Während der S&P 500 und Russell 2000 fast parallel sanken (-0,83% bzw. -0,94%), war der World IT-Sektor signifikant schwächer (-2,14%), was auf Konzentrations-Effekte in US-Tech hindeutet. Der MSCI World (-0,54%) blieb stabiler als der S&P 500, suggereriert, dass EM und Nicht-US-Märkte weniger betroffen waren — ein Hinweis, dass das Sell-off US-Tech-spezifisch ausfiel, nicht globale Macro-Driven. Die Technologie-Sektor insgesamt nur -0,64% (vs. World IT -2,14%) deutet auf Mega-Cap-Konzentration innerhalb IT hin: Alphabet, Amazon, Tesla zusammen trugen das Minus. Kommunikation (-0,97%) folgte unter vermutlich Cloud/Software-Namen. Das Advance/Decline-Verhältnis war somit negativ, aber nicht drastisch — eher ein moderater Pullback als ein Crash-Signal.",
-  "report_sentiment": "Der VIX-Anstieg von 1,35% auf 18,06 war moderat, deutet aber einen Stimmungs-Bruch an: Nach Phase von niedrigen Volatilitäts-Werten regt sich neue Vorsicht. Die Normalität des 10Y-2Y-Spreads (11 bps) widerspricht Panik-Szenarien; vielmehr handelt es sich um kalkulierte Gewinnmitnahmen in Tech, wo KGV-Multiples nach der Rallye der letzten Monate angespannt sind. Put/Call-Verhältnis lässt sich aus den Daten nicht präzise ableiten, aber der VIX-Anstieg trotz moderater Index-Rückgänge suggeriert, dass Investoren tail-risk hedgen — Fear-Niveau noch nicht erhöht, aber Alert-Status gestiegen. Der fehlende Fear&Greed-Wert verhindert präzise Einordnung, doch das Muster (Tech-Sell-off + VIX-Up + Defensive-Outperformance) ist typisch für \"Nervous Neutral\" — Bereitschaft zur Risiko-Reduktion, nicht Panik.",
+  "report_market_state": "Der Markt war heterogen: Während der S&P 500 nur -0,83% fiel, war die Schwäche in Wachstumstitel (Tech -2,14%, Kommunikation -0,97%) deutlich ausgeprägter — das spricht für eine selektive Rotation von Growth zu Value/Defensive. Russell 2000 (-0,94%) schwächer als S&P 500 deutet darauf hin, dass auch Small Caps unter Druck standen, möglicherweise wegen höherer Refinanzierungsrisiken. EM ex China (-0,70%) verloren graduell weniger, was auf relative Stabilität in Emerging Markets hindeutet. Volumen-Indikatoren lassen sich aus den Daten nicht direkt ablesen, aber die Breite des Rückgangs (4 von 5 Haupt-Indizes im Minus) und die differenzierte Sektor-Performance deuten auf ordentliche Marktbeteiligung und nicht auf Panic-Selling hin. Die Gewinner (Gesundheitswesen +1,10%, Energie +1,17%) sind defensiver/zyklischer und unterstützen das Bild von Gewinnmitnahmen bei Tech-Lieblingen.",
+  "report_sentiment": "Der VIX kletterte um 1,35 Punkte auf 18,06 — noch im komfortablen Bereich (unter 20), aber ein Anstieg deutet auf wachsende Unsicherheit hin, wahrscheinlich getrieben durch Gewinnmitnahmen bei Tech nach starkem Rally und höhere Zinserwartungen. Ein Fear & Greed-Index-Wert fehlt; basierend auf dem VIX-Niveau und der gemischten Sektor-Performance (Defensive profitieren, Growth schwächelt) lässt sich auf \"Neutral bis leicht vorsichtig\" schließen — Investoren reduzieren Risiko-Exposure, gehen aber nicht in Panic-Modus. Das 10Y-2Y-Spread von 11 Bps (normal, nicht invertiert) zeigt, dass Rezessionsängste noch nicht dominant sind; eher reflektiert die Bewegung normale Zinsmarktdynamiken und Bewertungskonsolidierung. Put-Aktivität dürfte leicht erhöht sein (VIX-Anstieg), Call-Aktivität dagegen unter Druck — typisch für einen Tag, an dem große Gewinner von gestern Gewinne realisieren.",
   "overview_chart": {
     "ranges": {
       "1D": {
@@ -1180,7 +1180,7 @@
   ],
   "sentiment": {
     "score": null,
-    "label": "Vorsichtig – Gewinnmitnahmen"
+    "label": "Neutral – Risikovorsicht"
   },
   "sectors": [
     {
@@ -1218,8 +1218,8 @@
       },
       {
         "name": "Bitcoin",
-        "value": 76702.99,
-        "change_pct": -0.33
+        "value": 76695.99,
+        "change_pct": -0.34
       },
       {
         "name": "MSCI World",

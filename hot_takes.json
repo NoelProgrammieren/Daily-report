@@ -3,23 +3,23 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — 78 Mrd. USD Umsatz (+78 % YoY), Blackwell-Momentum (70 % Data Center), Gross-Margin-Stabilität (~75 %) und Q2-Guidance (Konsens 86+ Mrd. USD).",
+      "event_basis": "Q1 FY27 Earnings heute nach Börsenschluss (17:00 ET, 20. Mai 2026) — Konsens erwartet EPS von 1,76 USD auf Umsatz von 78,75 Milliarden USD mit Blackwell-Momentum und Q2-Guidance oben liegend",
       "event_date": "2026-05-20",
-      "time_horizon": "1-2 Tage (Post-Earnings-Move)",
+      "time_horizon": "heute bis 21. Mai",
       "expected_move_pct": {
-        "low": 6.0,
-        "high": 12.0,
+        "low": 5.0,
+        "high": 10.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 240.0,
-        "high": 255.0,
+        "low": 245.0,
+        "high": 265.0,
         "currency": "USD"
       },
-      "thesis": "Der Markt hat bereits strikte hohe Erwartungen eingepreist — aber ein sauberer Beat (>80 Mrd. USD Umsatz) und Q2-Guidance über 86 Mrd. USD könnten den Optionsmarkt (8–10 % Move) auslösen. Die China-Commentare und GB300-Ultra-Timing-Updates sind Tipping-Points für die Upside-Überraschung.",
-      "risks": "Ein Guidance-Miss oder verschobene GB300-Ramp-Timing könnten zu Sell-Off-Reaktion führen — die Aktie ist bereits auf ATH (Allzeithoch) gelaufen.",
+      "thesis": "NVIDIA's Quartalsergebnisse liefern einen kritischen Katalysator für den Tech-Sektor insgesamt. Ein Beat in Kombination mit einer Q2-Guidance von 86 Mrd. USD oder darüber könnte die Marktsorgen über Zinsen lindern und den KI-Rally fortsetzen.",
+      "risks": "NVIDIA hat in den letzten fünf Quartalen die Umsätze um 3–4% übertroffen, ist aber bei vier der letzten fünf Earnings gefallen — der Markt könnte einen Gewinn ablehnen",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-20T06:50:02.965376+02:00"
+      "last_updated": "2026-05-20T06:55:05.253719+02:00"
     },
     {
       "company": "NVIDIA",
@@ -46,23 +46,23 @@
     {
       "company": "Walmart",
       "rating": 4,
-      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — Umsatz 174,65 Mrd. USD (+5,36 % YoY), EPS 0,65 USD (+7,9 % YoY), E-Commerce +27 % und Advertising +46 % im Q4.",
+      "event_basis": "Q1 FY27 Earnings morgen vor Markteröffnung (6:00 Uhr CDT, 21. Mai 2026) — E-Commerce um 27%, Werbeumsatz um 46% gegenüber Q4 erwartet starke Zahlen",
       "event_date": "2026-05-21",
-      "time_horizon": "1 Tag",
+      "time_horizon": "1–2 Tage",
       "expected_move_pct": {
         "low": 2.5,
         "high": 5.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 93.5,
-        "high": 99.0,
+        "low": 95.5,
+        "high": 102.0,
         "currency": "USD"
       },
-      "thesis": "Defensive Konsumgeschichte mit hoher Margenqualität: E-Commerce und Advertising (hohe Spanne) sprechen für profitables Wachstum trotz Konsumangst. Q1 sollte diese Trends validieren und neue CEO-Guidance geben.",
-      "risks": "Wenn Konsumvertrauen oder Same-Store-Sales unter 3,5 % fallen, könnte Guidance für FY27 sinken — das würde Bewertungsmultipel drücken.",
+      "thesis": "Walmarts digitale Dynamik (E-Commerce und Advertising) deutet auf Quartalsergebnisse hin, die Konsenserwartungen übertreffen. Ein Clean Beat könnte Defensive-Namen in einem unsicheren Umfeld stützen.",
+      "risks": "Gegenwind durch steigende Lohnkosten und Lieferkettendruck; Margenerweiterung ist fragwürdig.",
       "first_seen": "2026-05-18",
-      "last_updated": "2026-05-20T06:50:02.965376+02:00"
+      "last_updated": "2026-05-20T06:55:05.253719+02:00"
     },
     {
       "company": "Apple",
@@ -78,9 +78,9 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Overhaul, iOS 27 & macOS Integration.",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Apple Intelligence Ankündigungen, Siri 2.0-Überhaul und iOS 27 Integration",
       "event_date": "2026-06-08",
-      "time_horizon": "2-3 Wochen",
+      "time_horizon": "2–3 Wochen",
       "expected_move_pct": {
         "low": 2.0,
         "high": 6.0,
@@ -91,10 +91,10 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "iOS 27 wird ein viel leistungsfähigeres Siri mit einer lange erwarteten Siri-2.0-Erfahrung erhalten, die eher wie ein Chatbot wirkt als der bisherige Sprachassistent mit neuem Look und natürlicheren Interaktionen. Ein klares Developer-Ecosystem-Narrative für Apple Intelligence kann den Kurs treiben, besonders wenn Hardware-Gating überzeugt.",
-      "risks": "Wenn Apple Intelligence unterspezialisiert wirkt oder sich zu sehr auf teurere Modelle beschränkt, könnte der Kurs stagnieren — Markt erwartet jetzt Konkurrenzfähigkeit mit Google Gemini.",
+      "thesis": "Investoren erwarten Siri 2.0-/Apple Intelligence-Upgrades mit Gemini-Verbesserungen, On-Device-Modellen und macOS/iOS-Updates mit tieferer KI-Integration. Ein starker KI-Story könnte die Premium-Bewertung rechtfertigen.",
+      "risks": "KI-Features enttäuschen oder monetarisieren nicht; China-Nachfrage bleibt schwach.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-20T06:50:02.965376+02:00"
+      "last_updated": "2026-05-20T06:55:05.253719+02:00"
     },
     {
       "company": "Intel",
@@ -119,5 +119,5 @@
     }
   ],
   "archive": [],
-  "updated_at": "2026-05-20T06:50:02.965376+02:00"
+  "updated_at": "2026-05-20T06:55:05.253719+02:00"
 }

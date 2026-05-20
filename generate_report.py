@@ -149,15 +149,26 @@ COMPANY_ALIASES = {
 def _canonicalize_company(name):
     """Mappt Claude-Output-Namen auf die App.js-Schreibweise.
 
-    1. Trimmt Whitespace und entfernt das ` (ETF)`-Suffix.
-    2. Sucht in COMPANY_ALIASES nach einer kanonischen Form.
+    1. Trimmt Whitespace und entfernt häufige ETF-Suffixe ((ETF), USD (Acc), …).
+    2. Schält iShares-/Amundi-/SPDR-Issuer-Präfixe ab.
+    3. Sucht in COMPANY_ALIASES nach einer kanonischen Form.
+
+    Letzte Verteidigung gegen sich verändernde Claude-Varianten.
     """
     if not name:
         return name
     s = str(name).strip()
-    # ` (ETF)`-Suffix entfernen, falls vorhanden
-    if s.endswith(" (ETF)"):
-        s = s[:-6].strip()
+    # Direkter Alias-Treffer hat Vorrang (auch ohne Trimmen).
+    if s in COMPANY_ALIASES:
+        return COMPANY_ALIASES[s]
+
+    # Verschiedene Suffix-/Präfix-Schichten abziehen.
+    s = re.sub(r"\s*\(ETF\)\s*$", "", s)
+    s = re.sub(r"\s+(USD|EUR|GBP)\s+\(Acc\)\s*$", "", s)
+    s = re.sub(r"\s+\(Acc\)\s*$", "", s)
+    s = re.sub(r"^(iShares|Amundi|SPDR|Xtrackers|Vanguard)\s+", "", s, flags=re.IGNORECASE)
+    s = s.strip()
+
     return COMPANY_ALIASES.get(s, s)
 
 # Reine Watchlist-Werte (keine Holdings). Erscheinen im

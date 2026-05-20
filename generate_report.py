@@ -112,6 +112,15 @@ TICKER_MAP = {
     "MSCI World Information Technology": "XDWT.DE",
     "MSCI Emerging Markets Ex China": "EMXC.DE",
     "Russell 2000 U.S. Small Cap": "ZPRR.DE",
+    # App-Frontend-Schreibweisen (PORTFOLIO_COMPANIES in app.js) — case-sensitive Map!
+    "S&P 500": "SXR8.DE",
+    "MSCI World": "EUNL.DE",
+    "MSCI Emerging Markets ex China": "EMXC.DE",
+    "MSCI World Information Technology ": "XDWT.DE",  # mit/ohne trailing space sicherstellen
+    # Watchlist-Schreibweisen App.js
+    "Tesla": "TSLA",
+    "Bitcoin": "BTC-USD",
+    "Ethereum": "ETH-USD",
 }
 
 # Reine Watchlist-Werte (keine Holdings). Erscheinen im
@@ -270,12 +279,15 @@ Zusätzlich zu den Tagesnachrichten lieferst du eine Liste „Hot Takes": Untern
   - `price_target`: {`low`, `high`, `currency`}. Konkrete Preisspanne in der Heimatwährung. Beispiel: 310–325 USD → `{"low": 310.0, "high": 325.0, "currency": "USD"}`.
   - Konsistenz: aktueller Kurs + `expected_move_pct` muss zur `price_target`-Range passen.
 
-## PROGNOSE – PORTFOLIO & WATCHLIST
+## PROGNOSE – PORTFOLIO & WATCHLIST (ZWINGEND VOLLSTÄNDIG!)
 
-Liefere einen kurzen Markt-/Portfolio-Ausblick und eine quantitative Erwartung für **zwei Gruppen**:
+Liefere für die **gesamte folgende Liste** (13 Einträge) eine Prognose. KEINE Position darf fehlen — auch ETFs und Kryptos bekommen einen Forecast-Eintrag, weil das Frontend für jeden Eintrag eine Karte rendert. Lieber konservative Erwartungswerte als ausgelassene Karten:
 
-1. **Portfolio (`category: "portfolio"`):** 3–5 Kern-Holdings (z.B. Apple, NVIDIA, Microsoft, Amazon, Alphabet C).
-2. **Watchlist (`category: "watchlist"`):** ALLE 5 Watchlist-Werte zwingend — Walmart, Oracle, MSCI World Health Care, Boeing, Airbus.
+1. **Portfolio (`category: "portfolio"`, 8 Einträge):**
+   - Apple, NVIDIA, Alphabet (C), Amazon
+   - S&P 500 (ETF), MSCI World (ETF), MSCI Emerging Markets ex China (ETF), MSCI World Information Technology (ETF)
+2. **Watchlist (`category: "watchlist"`, 5 Einträge):**
+   - Walmart, Tesla, Bitcoin, Ethereum, Boeing
 
 Für jeden Eintrag:
 - `expected_change_30d_pct` (≈ 4 Wochen) PFLICHT
@@ -406,9 +418,9 @@ Gib AUSSCHLIESSLICH gültiges JSON aus – keine einleitenden Sätze, kein Markd
 ```
 
 **Wichtige Regeln:**
-- Sektoren NUR aufnehmen wenn berichtenswert (keine leeren Einträge!)
+- `sectors` MUSS **mindestens 3 Einträge** enthalten — auch wenn ein Sektor heute keine harten News hat. In dem Fall: 1-Satz-Wochen-/Trend-Einordnung statt News (z.B. „Diese Woche keine spezifischen Treiber — Sektor folgt dem Gesamtmarkt im Rahmen der Rotation aus Tech in Defensives"). KEIN leerer Sektor-Eintrag, jedes `sectors[]` MUSS mindestens 1 `news`-Item haben.
 - `hot_takes` darf leer sein wenn heute nichts überzeugendes da ist. NIEMALS spekulative Picks füllen.
-- `forecast.tickers`: 3–5 Portfolio-Holdings (`category: "portfolio"`) **PLUS** alle 5 Watchlist-Werte (`category: "watchlist"`) — also typischerweise 8–10 Einträge gesamt. Jeder Eintrag bekommt `category`, `potential_rating` (1–5), `thesis` (1 Satz!), `pros` (2–4 Stichpunkte), `cons` (2–4 Stichpunkte) und `key_drivers` (2–4 Tags). `scenario` ist eines von: "bullish", "neutral", "bearish".
+- `forecast.tickers`: ZWINGEND alle 13 Einträge (8 Portfolio + 5 Watchlist) aus der oben gelisteten Pflicht-Liste. Jeder Eintrag bekommt `category`, `potential_rating` (1–5), `thesis` (1 Satz!), `pros` (2–4 Stichpunkte), `cons` (2–4 Stichpunkte) und `key_drivers` (2–4 Tags). `scenario` ist eines von: "bullish", "neutral", "bearish". Für ETFs und Kryptos: Treiber sind makro/breit (z.B. „Fed-Pfad", „Halbleiter-Capex", „Halving-Zyklus") — auch wenn dünn, KEIN Eintrag darf ausgelassen werden.
 - `expected_change_*_pct` und `uncertainty_pct`: Zahlen in Prozent (z.B. `2.5` für +2,5 %). `uncertainty_pct` ist die halbe Bandbreite um die Erwartung (Bandbreite = expected ± uncertainty).
 - `price_change` in news weglassen wenn nicht relevant
 - `outlook` = Ausblick nächste Tage / diese Woche (3-7 Punkte)
@@ -953,6 +965,7 @@ def _build_forecast_projection(ticker: dict, last_close, last_date) -> dict:
             "expected_change_90d_pct": exp_90,
             "uncertainty_pct": unc,
             "path": [],
+            "projection": {"dates": [], "expected_path": [], "upper_band": [], "lower_band": []},
         }
 
     try:
@@ -979,11 +992,22 @@ def _build_forecast_projection(ticker: dict, last_close, last_date) -> dict:
             "lower": round(lower, 2),
             "upper": round(upper, 2),
         })
+
+    # Beide Strukturen zurückgeben:
+    # - `path` = Liste-of-Objects (alte Welle-4-Form, evtl. von anderen Konsumenten genutzt)
+    # - `projection.*` = parallele Arrays (Form, die das Frontend in renderForecastChart liest)
+    projection_block = {
+        "dates":         [p["date"]    for p in points],
+        "expected_path": [p["central"] for p in points],
+        "upper_band":    [p["upper"]   for p in points],
+        "lower_band":    [p["lower"]   for p in points],
+    }
     return {
         "expected_change_30d_pct": exp_30,
         "expected_change_90d_pct": exp_90,
         "uncertainty_pct": unc,
         "path": points,
+        "projection": projection_block,
     }
 
 
@@ -1159,19 +1183,20 @@ INPUT: Du erhältst aggregierte Marktdaten (Top-Gainer + Top-Loser des Tages, 5 
 OUTPUT: Strikt nur dieses JSON-Objekt, kein Vor- oder Nachtext, keine Code-Fences:
 
 {
-  "summary": "5-7 Sätze über den heutigen Handelstag mit konkreten Zahlen (Indizes-Bewegung, Top-Bewegungen, was hat sie ausgelöst).",
-  "next_day_outlook": "4-6 Sätze über morgen mit Sektor-Profiteur-Hinweisen.",
-  "report_market_state": "3-4 Sätze über Marktbreite, Tech-Beta, Sektor-Rotation, USD/EM-Effekt.",
-  "report_sentiment": "3-4 Sätze über VIX, Put/Call-Stimmung, Fear&Greed.",
+  "summary": "8-12 Sätze, ca. 800-1100 Zeichen. Beschreibe den heutigen Handelstag KONKRET und BEGRÜNDET: (1) was haben die wichtigsten Indizes gemacht — Tages-%-Δ der 5 Portfolio-ETFs. (2) WARUM — welche Makro-Faktoren (Inflationsdaten, Zinsentscheidungen, Geopolitik, Earnings-Erwartungen), welche Branchen-News, welche Einzelaktien-Bewegungen haben den Markt getrieben? Nenne MINDESTENS 2-3 konkrete Ursachen mit Zahlen oder Eigennamen. (3) Sektor-Rotation: welche Sektoren liefen vorne, welche hinten, was steckt dahinter? (4) Wo war die Konzentration des Ab-/Aufwärtsschwungs (z.B. Tech-Mega-Caps, Energie, Defensives)?",
+  "next_day_outlook": "7-10 Sätze, ca. 600-900 Zeichen. Erkläre, was morgen kommt und WARUM es relevant ist: (1) anstehende Daten/Events (CPI, FOMC, Earnings-Releases, Notenbank-Sprecher, ZEW, ISM etc.). (2) welche Sektoren könnten profitieren oder verlieren je nach Ausgang — mit konkreter Begründung („wenn X, dann Y, weil Z"). (3) konkrete Aktien/ETFs, die im Fokus stehen. (4) wesentliche Risiken: Inflation, Geopolitik, Konzentrations-Effekte. Sei spezifisch, nicht generisch.",
+  "report_market_state": "5-7 Sätze über Marktbreite (Adv/Decline-Verhältnis), Tech-Beta zum Index, Sektor-Rotation, USD/EM-Effekt, Volumen-Indikatoren. Konkrete Zahlen wenn vorhanden, sonst plausible qualitative Bewertung.",
+  "report_sentiment": "5-7 Sätze über VIX (mit Wert + Δ), Put/Call-Stimmung qualitativ ableiten, MOVE-Index falls ableitbar, Fear&Greed-Wert + Einordnung, Positionierung der Investoren vor anstehenden Events.",
   "sentiment_label": "1-3 Wörter passend zum F&G-Score (z.B. 'Neutral – Vorsichtig', 'Extreme Gier', 'Risiko-Aversion')."
 }
 
 REGELN:
-- KEINE erfundenen Zahlen. Verwende ausschließlich die Werte aus dem Input.
-- Wenn Daten fehlen, formuliere allgemeiner statt zu erfinden.
-- Fachbegriffe (VIX, MOVE, Adv/Decline, Tech-Beta) kommen unkommentiert vor — das Frontend ergänzt Tooltips.
+- KEINE erfundenen Zahlen. Verwende ausschließlich die Werte aus dem Input. Wenn ein Wert fehlt, formuliere qualitativ („leicht erhöht", „nahe Normalniveau") statt zu erfinden.
+- Begründe IMMER, warum etwas passiert ist — kein „der Markt fiel" ohne Ursache.
+- Fachbegriffe (VIX, MOVE, Adv/Decline, Tech-Beta, KGV) kommen unkommentiert vor — das Frontend ergänzt Tooltips.
 - Verwende deutsche Anführungszeichen „...".
 - Keine Sterne, kein Markdown — Plain Text in den JSON-Strings.
+- Beachte die ungefähren Längen-Vorgaben: lieber ausführlich-erklärend als knapp.
 """
 
 
@@ -1499,7 +1524,8 @@ def generate_report() -> None:
         "Halte dich strikt an die Reporting-Prinzipien (Qualität vor Quantität). "
         "Aktualisiere den Kalender mit neu entdeckten wichtigen Terminen. "
         "Aktualisiere oder ergänze Hot Takes (rollierend) — nur an konkrete Events gekoppelt, niemals geraten. "
-        "Liefere `forecast.tickers` für 3–6 Kern-Portfolio-Positionen. "
+        "Liefere `forecast.tickers` ZWINGEND für ALLE 13 Pflicht-Einträge (8 Portfolio inkl. ETFs + 5 Watchlist inkl. Kryptos) — KEINE Karte darf leer bleiben. "
+        "Liefere `sectors` ZWINGEND mit mindestens 3 Branchen. "
         "Gib NUR das JSON aus, kein anderer Text."
     )
 

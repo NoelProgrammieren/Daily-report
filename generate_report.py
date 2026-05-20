@@ -116,12 +116,49 @@ TICKER_MAP = {
     "S&P 500": "SXR8.DE",
     "MSCI World": "EUNL.DE",
     "MSCI Emerging Markets ex China": "EMXC.DE",
-    "MSCI World Information Technology ": "XDWT.DE",  # mit/ohne trailing space sicherstellen
     # Watchlist-Schreibweisen App.js
     "Tesla": "TSLA",
     "Bitcoin": "BTC-USD",
     "Ethereum": "ETH-USD",
 }
+
+# Wenn Claude in `company` Felder unsaubere Varianten liefert (z.B. „Alphabet C",
+# „S&P 500 (ETF)"), mappen wir sie auf die kanonische App.js-Schreibweise.
+# Sonst findet das Frontend (Map.get) keinen Match → leere Karte.
+COMPANY_ALIASES = {
+    "Alphabet C": "Alphabet",
+    "Alphabet (C)": "Alphabet",
+    "Alphabet Inc. C": "Alphabet",
+    "Alphabet Inc.": "Alphabet",
+    "S&P 500 (ETF)": "S&P 500",
+    "Core S&P 500": "S&P 500",
+    "Core S&P 500 (ETF)": "S&P 500",
+    "MSCI World (ETF)": "MSCI World",
+    "Core MSCI World": "MSCI World",
+    "Core MSCI World (ETF)": "MSCI World",
+    "MSCI Emerging Markets Ex China": "MSCI Emerging Markets ex China",
+    "MSCI Emerging Markets Ex China (ETF)": "MSCI Emerging Markets ex China",
+    "MSCI Emerging Markets ex China (ETF)": "MSCI Emerging Markets ex China",
+    "MSCI EM ex China": "MSCI Emerging Markets ex China",
+    "MSCI World Information Technology (ETF)": "MSCI World Information Technology",
+    "MSCI World IT": "MSCI World Information Technology",
+    "World IT": "MSCI World Information Technology",
+}
+
+
+def _canonicalize_company(name):
+    """Mappt Claude-Output-Namen auf die App.js-Schreibweise.
+
+    1. Trimmt Whitespace und entfernt das ` (ETF)`-Suffix.
+    2. Sucht in COMPANY_ALIASES nach einer kanonischen Form.
+    """
+    if not name:
+        return name
+    s = str(name).strip()
+    # ` (ETF)`-Suffix entfernen, falls vorhanden
+    if s.endswith(" (ETF)"):
+        s = s[:-6].strip()
+    return COMPANY_ALIASES.get(s, s)
 
 # Reine Watchlist-Werte (keine Holdings). Erscheinen im
 # Portfolio-&-Watchlist-Tab in einer separaten Sektion.
@@ -858,7 +895,9 @@ def fetch_forecast_data(forecast: dict) -> dict:
 
     result = []
     for t in tickers:
-        company = t.get("company", "")
+        # Claude-Output kann unsaubere Varianten enthalten — auf App.js-Schreibweise
+        # normalisieren, damit (a) TICKER_MAP matcht und (b) Frontend-Lookup klappt.
+        company = _canonicalize_company(t.get("company", ""))
         symbol = TICKER_MAP.get(company)
         history = []
         last_close = None

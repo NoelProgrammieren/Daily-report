@@ -51,7 +51,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          PATHS="reports calendar.json hot_takes.json forecast_data.json market_indices.json"
+          PATHS="reports calendar.json hot_takes.json forecast_data.json market_indices.json today_overview.json today_dashboard.json"
           if [ -n "$(git status --porcelain $PATHS)" ]; then
             git add $PATHS
             git commit -m "Daily report $(date -u +%Y-%m-%d)"

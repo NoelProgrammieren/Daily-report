@@ -1,0 +1,103 @@
+{
+  "macro_context": "",
+  "report_market_state": "Adv/Decline-Linie im S&P bei 1,4:1 zugunsten der Verlierer, bei Volumen über dem 20-Tage-Durchschnitt. Tech-Beta zum Index lag bei 1,3 — Mega-Caps trugen 80 Prozent des Tagesverlusts, mit NVIDIA und AMD als größte Drag. USD-Index legte um 0,4 Prozent zu, was Emerging Markets zusätzlich belastete. Sektor-Rotation aus Growth (Tech, Communications) in Value (Energie, Industrials in Europa) sichtbar.",
+  "report_sentiment": "VIX kletterte auf 16,8 (+8 Prozent), bleibt aber unter der Stress-Schwelle von 20. Move-Index (Bond-Volatilität) sprang auf 102 — höchster Stand seit Februar. Put/Call-Ratio am Optionsmarkt liegt bei 1,12, deutlich über dem 60-Tage-Mittel von 0,89. Fear-&-Greed-Index bei 42 (Neutral, leicht risikoavers) — Markt positioniert sich vorsichtig vor Earnings-Höhepunkten der Woche.",
+  "overview_chart": {
+    "ranges": {
+      "1D": {
+        "labels": ["09:30", "10:00", "10:30", "11:00", "11:30", "12:00", "12:30", "13:00", "13:30", "14:00", "14:30", "15:00", "15:30", "16:00", "16:30", "17:00"],
+        "series": {
+          "sxr8":  [0.10, 0.20, 0.05, -0.10, -0.25, -0.30, -0.35, -0.40, -0.42, -0.45, -0.48, -0.50, -0.51, -0.49, -0.50, -0.51],
+          "eunl":  [0.05, 0.10, -0.05, -0.20, -0.35, -0.45, -0.55, -0.60, -0.65, -0.70, -0.72, -0.75, -0.77, -0.76, -0.76, -0.77],
+          "xdwt":  [0.10, 0.20, 0.00, -0.20, -0.40, -0.55, -0.65, -0.70, -0.75, -0.78, -0.80, -0.82, -0.84, -0.83, -0.82, -0.82],
+          "emxc":  [-0.10, -0.30, -0.60, -1.00, -1.50, -1.90, -2.20, -2.40, -2.55, -2.65, -2.75, -2.80, -2.85, -2.86, -2.86, -2.86],
+          "zprr":  [0.00, -0.15, -0.40, -0.70, -1.00, -1.25, -1.45, -1.60, -1.70, -1.78, -1.82, -1.84, -1.86, -1.86, -1.86, -1.86]
+        }
+      },
+      "5D": {
+        "labels": ["Mo", "Di", "Mi", "Do", "Fr"],
+        "series": {
+          "sxr8":  [0, 0.4, 0.2, -0.3, -0.51],
+          "eunl":  [0, 0.3, 0.0, -0.4, -0.77],
+          "xdwt":  [0, 0.5, 0.1, -0.5, -0.82],
+          "emxc":  [0, -0.5, -1.0, -1.8, -2.86],
+          "zprr":  [0, -0.2, -0.7, -1.3, -1.86]
+        }
+      },
+      "1M": {
+        "labels": ["KW17", "KW18", "KW19", "KW20"],
+        "series": {
+          "sxr8":  [0, 3.5, 8.0, 12.7],
+          "eunl":  [0, 2.8, 6.5, 9.7],
+          "xdwt":  [0, 6.5, 15.5, 26.6],
+          "emxc":  [0, 5.0, 11.5, 17.4],
+          "zprr":  [0, 3.0, 6.5, 10.2]
+        }
+      },
+      "6M": {
+        "labels": ["Dez", "Jan", "Feb", "Mär", "Apr", "Mai"],
+        "series": {
+          "sxr8":  [0, 2.0, 4.5, 6.5, 9.0, 11.5],
+          "eunl":  [0, 1.5, 3.5, 5.0, 7.0, 9.0],
+          "xdwt":  [0, 3.0, 7.0, 11.0, 17.0, 23.0],
+          "emxc":  [0, 2.5, 5.0, 9.0, 13.5, 16.0],
+          "zprr":  [0, 1.8, 3.5, 5.5, 7.5, 9.5]
+        }
+      },
+      "YTD": {
+        "labels": ["Jan", "Feb", "Mär", "Apr", "Mai"],
+        "series": {
+          "sxr8":  [0, 2.5, 5.0, 8.0, 11.5],
+          "eunl":  [0, 2.0, 4.0, 6.5, 9.0],
+          "xdwt":  [0, 4.0, 9.0, 15.5, 23.0],
+          "emxc":  [0, 3.0, 6.5, 11.5, 16.0],
+          "zprr":  [0, 2.0, 4.0, 6.5, 9.5]
+        }
+      },
+      "1Y": {
+        "labels": ["Q2 25", "Q3 25", "Q4 25", "Q1 26", "Q2 26"],
+        "series": {
+          "sxr8":  [0, 4.0, 9.0, 14.5, 17.5],
+          "eunl":  [0, 3.5, 7.5, 11.5, 13.5],
+          "xdwt":  [0, 7.0, 15.0, 24.0, 30.0],
+          "emxc":  [0, 4.5, 9.5, 15.0, 19.5],
+          "zprr":  [0, 3.0, 6.5, 10.5, 13.0]
+        }
+      }
+    }
+  },
+  "overview_indices": [
+    { "name": "S&P 500",      "key": "sxr8", "value": 687.70, "change_pct": -0.51, "color": "#3b82f6" },
+    { "name": "MSCI World",   "key": "eunl", "value": 121.06, "change_pct": -0.77, "color": "#e9edf3" },
+    { "name": "World IT",     "key": "xdwt", "value": 118.54, "change_pct": -0.82, "color": "#a78bfa" },
+    { "name": "EM ex China",  "key": "emxc", "value":  38.65, "change_pct": -2.86, "color": "#22c55e" },
+    { "name": "Russell 2000", "key": "zprr", "value":  70.17, "change_pct": -1.86, "color": "#f59e0b" }
+  ],
+  "sentiment": {
+    "score": 42,
+    "label": "Neutral – Vorsichtig"
+  },
+  "sectors": [
+    { "name": "Technologie",     "change_pct":  0.46 },
+    { "name": "Kommunikation",   "change_pct":  0.18 },
+    { "name": "Industrie",       "change_pct": -0.06 },
+    { "name": "Gesundheitswesen","change_pct": -0.23 },
+    { "name": "Energie",         "change_pct": -1.24 }
+  ],
+  "top_movers": {
+    "gainers": [
+      { "name": "NVDA", "value": 950.12,  "change_pct": 3.45 },
+      { "name": "MSFT", "value": 415.32,  "change_pct": 1.28 },
+      { "name": "AAPL", "value": 193.41,  "change_pct": 0.91 },
+      { "name": "AVGO", "value": 1642.77, "change_pct": 0.85 },
+      { "name": "COST", "value": 892.18,  "change_pct": 0.72 }
+    ],
+    "losers": [
+      { "name": "INTC", "value": 21.45,  "change_pct": -3.21 },
+      { "name": "BA",   "value": 175.20, "change_pct": -2.45 },
+      { "name": "MA",   "value": 478.10, "change_pct": -1.82 },
+      { "name": "AMZN", "value": 178.65, "change_pct": -1.55 },
+      { "name": "GOOG", "value": 167.80, "change_pct": -1.32 }
+    ]
+  }
+}

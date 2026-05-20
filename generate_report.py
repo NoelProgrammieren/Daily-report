@@ -20,6 +20,8 @@ CALENDAR_FILE = ROOT / "calendar.json"
 HOT_TAKES_FILE = ROOT / "hot_takes.json"
 FORECAST_FILE = ROOT / "forecast_data.json"
 MARKET_INDICES_FILE = ROOT / "market_indices.json"
+TODAY_OVERVIEW_FILE = ROOT / "today_overview.json"
+TODAY_DASHBOARD_FILE = ROOT / "today_dashboard.json"
 REPORTS_DIR.mkdir(exist_ok=True)
 
 BERLIN = ZoneInfo("Europe/Berlin")
@@ -31,6 +33,42 @@ MARKET_INDICES = [
     {"name": "MSCI World IT", "short": "World IT", "ticker": "XDWT.DE"},
     {"name": "MSCI EM ex China", "short": "EM ex China", "ticker": "EMXC.DE"},
     {"name": "Russell 2000 US Small Cap", "short": "Russell 2000", "ticker": "ZPRR.DE"},
+]
+
+# Chart-Farben für overview_chart-Series (Frontend Marktübersicht-Linien).
+ETF_COLORS = {
+    "SXR8.DE": "#3b82f6",   # S&P 500 – blue
+    "EUNL.DE": "#e9edf3",   # MSCI World – off-white
+    "XDWT.DE": "#a78bfa",   # World IT – purple
+    "EMXC.DE": "#22c55e",   # EM ex China – green
+    "ZPRR.DE": "#f59e0b",   # Russell 2000 – orange
+}
+
+# 5 SPDR-Sektor-ETFs als Proxy für Sektor-Tagesperformance.
+SECTOR_PROXIES = [
+    ("Technologie",      "XLK"),
+    ("Kommunikation",    "XLC"),
+    ("Industrie",        "XLI"),
+    ("Gesundheitswesen", "XLV"),
+    ("Energie",          "XLE"),
+]
+
+# Universum für Top-Mover-Berechnung: Portfolio + Watchlist (yfinance-Ticker).
+TOP_MOVERS_UNIVERSE = [
+    ("Apple",      "AAPL"),
+    ("NVIDIA",     "NVDA"),
+    ("Alphabet",   "GOOG"),
+    ("Amazon",     "AMZN"),
+    ("Walmart",    "WMT"),
+    ("Tesla",      "TSLA"),
+    ("Boeing",     "BA"),
+    ("Bitcoin",    "BTC-USD"),
+    ("Ethereum",   "ETH-USD"),
+    ("S&P 500",    "SXR8.DE"),
+    ("MSCI World", "EUNL.DE"),
+    ("World IT",   "XDWT.DE"),
+    ("EM ex China","EMXC.DE"),
+    ("Russell 2000","ZPRR.DE"),
 ]
 
 # Mapping deutsche/Anzeige-Namen → yfinance-Ticker (Portfolio + Watchlist).
@@ -1109,6 +1147,305 @@ def _fetch_fear_greed() -> dict:
         return {}
 
 
+# ============================================================
+# Today-Dashboard / Today-Overview (täglich neu)
+# ============================================================
+
+TODAY_PROSE_PROMPT = """Du bist Finanzredakteur für einen deutschsprachigen Tages-Marktbericht.
+Schreibe für einen interessierten Laien — konkret, Zahlen-getrieben, ohne Floskeln.
+
+INPUT: Du erhältst aggregierte Marktdaten (Top-Gainer + Top-Loser des Tages, 5 Sektor-Veränderungen, VIX, Yield-Spread, Fear&Greed-Score) plus ein 1-Satz-Macro-Kontext.
+
+OUTPUT: Strikt nur dieses JSON-Objekt, kein Vor- oder Nachtext, keine Code-Fences:
+
+{
+  "summary": "5-7 Sätze über den heutigen Handelstag mit konkreten Zahlen (Indizes-Bewegung, Top-Bewegungen, was hat sie ausgelöst).",
+  "next_day_outlook": "4-6 Sätze über morgen mit Sektor-Profiteur-Hinweisen.",
+  "report_market_state": "3-4 Sätze über Marktbreite, Tech-Beta, Sektor-Rotation, USD/EM-Effekt.",
+  "report_sentiment": "3-4 Sätze über VIX, Put/Call-Stimmung, Fear&Greed.",
+  "sentiment_label": "1-3 Wörter passend zum F&G-Score (z.B. 'Neutral – Vorsichtig', 'Extreme Gier', 'Risiko-Aversion')."
+}
+
+REGELN:
+- KEINE erfundenen Zahlen. Verwende ausschließlich die Werte aus dem Input.
+- Wenn Daten fehlen, formuliere allgemeiner statt zu erfinden.
+- Fachbegriffe (VIX, MOVE, Adv/Decline, Tech-Beta) kommen unkommentiert vor — das Frontend ergänzt Tooltips.
+- Verwende deutsche Anführungszeichen „...".
+- Keine Sterne, kein Markdown — Plain Text in den JSON-Strings.
+"""
+
+
+def _fetch_overview_chart_series(yf_module) -> dict:
+    """Lädt Zeitreihen für die 5 ETFs in 6 Zeiträumen, normalisiert auf %-Δ vom Baseline.
+
+    Output-Struktur passt zu today_dashboard.json[overview_chart][ranges].
+    Bei Fehler → leere Series-Listen (Frontend zeigt dann nichts an, statt zu crashen).
+    """
+    range_configs = [
+        ("1D",  {"period": "1d",  "interval": "30m"}),
+        ("5D",  {"period": "5d",  "interval": "1d"}),
+        ("1M",  {"period": "1mo", "interval": "1d"}),
+        ("6M",  {"period": "6mo", "interval": "1wk"}),
+        ("YTD", {"period": "ytd", "interval": "1d"}),
+        ("1Y",  {"period": "1y",  "interval": "1mo"}),
+    ]
+    ranges: dict = {}
+
+    for range_key, params in range_configs:
+        labels: list = []
+        series: dict = {}
+
+        for idx in MARKET_INDICES:
+            ticker = idx["ticker"]
+            key = ticker.split(".")[0].lower()
+            series[key] = []
+            try:
+                hist = yf_module.Ticker(ticker).history(
+                    period=params["period"], interval=params["interval"], auto_adjust=True
+                )
+                if hist.empty:
+                    continue
+                closes = [float(c) for c in hist["Close"].dropna()]
+                if not closes or closes[0] == 0:
+                    continue
+                base = closes[0]
+                pct_series = [round((c / base - 1) * 100, 3) for c in closes]
+                series[key] = pct_series
+
+                # Labels einmal pro Range setzen (vom ersten verfügbaren Ticker).
+                if not labels:
+                    idx_obj = hist.index
+                    if range_key == "1D":
+                        labels = [t.strftime("%H:%M") for t in idx_obj]
+                    elif range_key == "5D":
+                        wd = ["Mo", "Di", "Mi", "Do", "Fr", "Sa", "So"]
+                        labels = [wd[t.weekday()] for t in idx_obj]
+                    elif range_key == "1M":
+                        labels = [f"KW{t.isocalendar().week}" for t in idx_obj]
+                    elif range_key == "6M":
+                        months_de = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+                                     "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+                        labels = [months_de[t.month - 1] for t in idx_obj]
+                    elif range_key == "YTD":
+                        months_de = ["Jan", "Feb", "Mär", "Apr", "Mai", "Jun",
+                                     "Jul", "Aug", "Sep", "Okt", "Nov", "Dez"]
+                        # Nur jeden ~Monatswechsel labeln; Rest leer.
+                        labels = []
+                        last_month = None
+                        for t in idx_obj:
+                            if t.month != last_month:
+                                labels.append(months_de[t.month - 1])
+                                last_month = t.month
+                            else:
+                                labels.append("")
+                    elif range_key == "1Y":
+                        labels = [f"Q{(t.month-1)//3 + 1} {t.strftime('%y')}" for t in idx_obj]
+            except Exception as e:
+                print(f"  overview_chart {range_key}/{ticker} Fehler: {e}")
+                continue
+
+        ranges[range_key] = {"labels": labels, "series": series}
+        print(f"  overview_chart {range_key}: {len(labels)} Labels, "
+              f"{sum(1 for v in series.values() if v)} Series mit Daten")
+
+    return ranges
+
+
+def _fetch_sectors_changes(yf_module) -> list:
+    """Lädt Tages-%-Δ für 5 SPDR-Sektor-ETFs als Sektor-Proxies."""
+    result = []
+    for sector_name, ticker in SECTOR_PROXIES:
+        change_pct = None
+        try:
+            hist = yf_module.Ticker(ticker).history(period="5d", auto_adjust=True)
+            closes = [float(c) for c in hist["Close"].dropna()] if not hist.empty else []
+            if len(closes) >= 2 and closes[-2]:
+                change_pct = round((closes[-1] / closes[-2] - 1) * 100, 2)
+        except Exception as e:
+            print(f"  Sektor {sector_name} ({ticker}) Fehler: {e}")
+        result.append({"name": sector_name, "change_pct": change_pct})
+    print(f"  sectors: {sum(1 for s in result if s['change_pct'] is not None)}/{len(result)} mit Daten")
+    return result
+
+
+def _fetch_top_movers(yf_module) -> dict:
+    """Berechnet Top-5-Gainer + Top-5-Loser aus Portfolio + Watchlist."""
+    movers = []
+    for display_name, ticker in TOP_MOVERS_UNIVERSE:
+        try:
+            hist = yf_module.Ticker(ticker).history(period="5d", auto_adjust=True)
+            closes = [float(c) for c in hist["Close"].dropna()] if not hist.empty else []
+            if len(closes) >= 2 and closes[-2]:
+                change_pct = round((closes[-1] / closes[-2] - 1) * 100, 2)
+                movers.append({
+                    "name": display_name,
+                    "value": round(closes[-1], 2),
+                    "change_pct": change_pct,
+                })
+        except Exception as e:
+            print(f"  top_movers {display_name} ({ticker}) Fehler: {e}")
+
+    movers_sorted = sorted(movers, key=lambda m: m["change_pct"], reverse=True)
+    gainers = movers_sorted[:5]
+    losers = list(reversed(movers_sorted[-5:]))
+    print(f"  top_movers: {len(gainers)} Gainer, {len(losers)} Loser (Universum: {len(movers)})")
+    return {"gainers": gainers, "losers": losers}
+
+
+def _generate_today_prose(client, model_id: str, *,
+                          macro_summary: str, indices: list, sectors: list,
+                          top_movers: dict, fear_greed: dict, risk_indicators: dict) -> dict:
+    """Eine zusätzliche Claude-Haiku-Call (kein web_search) für die Prose-Felder.
+
+    Bei Parse-Fehler → repair_json_with_claude-Fallback. Bei totalem Fehler → leeres Dict.
+    """
+    # Kompakter Input-Context als Plain-Text-Block.
+    vix = (risk_indicators or {}).get("vix", {})
+    yld = (risk_indicators or {}).get("yield_spread_10y_2y", {})
+
+    def _fmt_pct(v):
+        return f"{v:+.2f}%" if isinstance(v, (int, float)) else "—"
+
+    indices_lines = [
+        f"  • {idx['short']}: {idx.get('last_close','—')} ({_fmt_pct(idx.get('change_pct'))})"
+        for idx in indices
+    ]
+    sector_lines = [
+        f"  • {s['name']}: {_fmt_pct(s.get('change_pct'))}" for s in sectors
+    ]
+    gainer_lines = [
+        f"  • {m['name']}: {m['value']} ({_fmt_pct(m['change_pct'])})"
+        for m in (top_movers.get("gainers") or [])
+    ]
+    loser_lines = [
+        f"  • {m['name']}: {m['value']} ({_fmt_pct(m['change_pct'])})"
+        for m in (top_movers.get("losers") or [])
+    ]
+
+    user_msg = "\n".join([
+        f"DATUM: {datetime.now(BERLIN).strftime('%A, %d. %B %Y')}",
+        "",
+        "MARKTBREITE — Tages-%-Δ der 5 Portfolio-ETFs:",
+        *indices_lines,
+        "",
+        "SEKTOREN (SPDR-Proxies):",
+        *sector_lines,
+        "",
+        "TOP-GAINER (Portfolio + Watchlist):",
+        *gainer_lines,
+        "",
+        "TOP-LOSER:",
+        *loser_lines,
+        "",
+        f"VIX: {vix.get('value','—')} ({_fmt_pct(vix.get('change_pct'))})",
+        f"Yield-Spread 10Y-2Y: {yld.get('value_bps','—')} bps ({yld.get('interpretation','—')})",
+        f"Fear & Greed: {fear_greed.get('score','—')} ({fear_greed.get('rating','—')})",
+        "",
+        f"MACRO-KONTEXT (aus Tagesbericht): {macro_summary or '—'}",
+        "",
+        "Erzeuge das JSON exakt nach Schema.",
+    ])
+
+    try:
+        response = client.messages.create(
+            model=model_id,
+            max_tokens=2500,
+            system=TODAY_PROSE_PROMPT,
+            messages=[{"role": "user", "content": user_msg}],
+        )
+        text_blocks = [b for b in response.content if b.type == "text"]
+        if not text_blocks:
+            raise RuntimeError("Kein Text-Block in der Prose-Antwort.")
+        raw_text = text_blocks[-1].text
+        try:
+            return extract_json(raw_text)
+        except json.JSONDecodeError as e:
+            print(f"[today-prose] Parse-Fehler ({e}), versuche Claude-Repair…")
+            try:
+                return repair_json_with_claude(client, model_id, raw_text, str(e))
+            except Exception as e2:
+                print(f"[today-prose] Repair fehlgeschlagen: {e2}")
+                return {}
+    except Exception as e:
+        print(f"[today-prose] API-Call fehlgeschlagen: {e}")
+        return {}
+
+
+def write_today_dashboard_and_overview(client, model_id: str, *,
+                                       data: dict, indices_payload: dict) -> None:
+    """Schreibt today_overview.json + today_dashboard.json (täglich frisch).
+
+    Best-effort: einzelne Sub-Schritt-Fehler hinterlassen Defaults statt zu crashen.
+    Vorhandene Dateien bleiben unangetastet, wenn der gesamte Block fehlschlägt.
+    """
+    try:
+        import yfinance as yf
+    except ImportError:
+        print("yfinance nicht installiert — today_dashboard/overview übersprungen.")
+        return
+
+    print(f"[{datetime.now(BERLIN).strftime('%H:%M:%S')}] Baue today_dashboard.json + today_overview.json…")
+
+    overview_ranges = _fetch_overview_chart_series(yf)
+    sectors = _fetch_sectors_changes(yf)
+    top_movers = _fetch_top_movers(yf)
+
+    fear_greed = indices_payload.get("fear_greed") or {}
+    risk_indicators = indices_payload.get("risk_indicators") or {}
+    macro_summary = (data.get("macro", {}) or {}).get("summary", "")
+
+    prose = _generate_today_prose(
+        client, model_id,
+        macro_summary=macro_summary,
+        indices=indices_payload.get("indices", []),
+        sectors=sectors,
+        top_movers=top_movers,
+        fear_greed=fear_greed,
+        risk_indicators=risk_indicators,
+    )
+
+    today_overview = {
+        "generated_at": datetime.now(BERLIN).isoformat(),
+        "summary": prose.get("summary", ""),
+        "next_day_outlook": prose.get("next_day_outlook", ""),
+    }
+    TODAY_OVERVIEW_FILE.write_text(
+        json.dumps(today_overview, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"  today_overview.json: summary={len(today_overview['summary'])} Zeichen, "
+          f"outlook={len(today_overview['next_day_outlook'])} Zeichen")
+
+    overview_indices_block = []
+    for idx in indices_payload.get("indices", []):
+        ticker = idx.get("ticker", "")
+        overview_indices_block.append({
+            "name": idx.get("short") or idx.get("name") or ticker,
+            "key": ticker.split(".")[0].lower(),
+            "value": idx.get("last_close"),
+            "change_pct": idx.get("change_pct"),
+            "color": ETF_COLORS.get(ticker, "#94a3b8"),
+        })
+
+    today_dashboard = {
+        "report_market_state": prose.get("report_market_state", ""),
+        "report_sentiment": prose.get("report_sentiment", ""),
+        "overview_chart": {"ranges": overview_ranges},
+        "overview_indices": overview_indices_block,
+        "sentiment": {
+            "score": fear_greed.get("score"),
+            "label": prose.get("sentiment_label") or (fear_greed.get("rating") or "—"),
+        },
+        "sectors": sectors,
+        "top_movers": top_movers,
+    }
+    TODAY_DASHBOARD_FILE.write_text(
+        json.dumps(today_dashboard, indent=2, ensure_ascii=False), encoding="utf-8"
+    )
+    print(f"  today_dashboard.json: {len(overview_indices_block)} Indizes, "
+          f"{len(sectors)} Sektoren, "
+          f"{len(top_movers.get('gainers', []))}/{len(top_movers.get('losers', []))} Gainer/Loser")
+
+
 def update_index() -> None:
     reports = []
     for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True):
@@ -1272,6 +1609,17 @@ def generate_report() -> None:
     )
     filled = sum(1 for x in indices_payload.get("indices", []) if x.get("last_close") is not None)
     print(f"Markt-Indizes gespeichert: {filled}/{len(indices_payload.get('indices', []))} mit Daten.")
+
+    # Today-Dashboard + Today-Overview (täglich frisch).
+    # Hard-isoliert via try/except: ein Fehler hier darf den Rest des Runs nicht abbrechen,
+    # alte JSONs bleiben in dem Fall stehen.
+    try:
+        write_today_dashboard_and_overview(
+            client, model_id,
+            data=data, indices_payload=indices_payload,
+        )
+    except Exception as e:
+        print(f"[today-dashboard] Block fehlgeschlagen: {e} — vorhandene JSONs bleiben unverändert.")
 
     update_index()
     print("Index aktualisiert.")

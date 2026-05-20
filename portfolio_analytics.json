@@ -1,0 +1,25 @@
+{
+  "generated_at": "2026-05-19T08:30:00+02:00",
+  "allocation": {
+    "etf": 74.09,
+    "stock": 25.91
+  },
+  "positions": [
+    { "name": "Core S&P 500 USD (Acc)", "type": "etf", "pct": 23.84, "symbol": "SXR8.DE" },
+    { "name": "Core MSCI World USD (Acc)", "type": "etf", "pct": 21.56, "symbol": "EUNL.DE" },
+    { "name": "MSCI World Information Technology", "type": "etf", "pct": 17.91, "symbol": "XDWT.DE" },
+    { "name": "MSCI Emerging Markets ex China", "type": "etf", "pct": 7.46, "symbol": "EMXC.DE" },
+    { "name": "Russell 2000 U.S. Small Cap", "type": "etf", "pct": 3.33, "symbol": "ZPRR.DE" },
+    { "name": "Apple", "type": "stock", "pct": 9.94, "symbol": "AAPL" },
+    { "name": "NVIDIA", "type": "stock", "pct": 5.09, "symbol": "NVDA" },
+    { "name": "Alphabet (C)", "type": "stock", "pct": 2.43, "symbol": "GOOG" },
+    { "name": "MasterCard", "type": "stock", "pct": 2.04, "symbol": "MA" },
+    { "name": "Microsoft", "type": "stock", "pct": 1.97, "symbol": "MSFT" },
+    { "name": "Intel", "type": "stock", "pct": 1.53, "symbol": "INTC" },
+    { "name": "Amazon.com", "type": "stock", "pct": 1.33, "symbol": "AMZN" },
+    { "name": "Berkshire Hathaway (B)", "type": "stock", "pct": 0.67, "symbol": "BRK-B" },
+    { "name": "LVMH Moët Hennessy", "type": "stock", "pct": 0.53, "symbol": "MC.PA" },
+    { "name": "Hermes", "type": "stock", "pct": 0.39, "symbol": "RMS.PA" },
+    { "name": "Air France-KLM", "type": "stock", "pct": 0.01, "symbol": "AF.PA" }
+  ]
+}

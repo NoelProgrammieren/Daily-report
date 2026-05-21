@@ -3,27 +3,6 @@
     {
       "company": "NVIDIA",
       "rating": 5,
-      "event_basis": "Q1 FY27 Earnings heute 20. Mai 2026 nach Börsenschluss (17:00 ET) — Konsens erwartet 78 Milliarden USD Umsatz, 1,77 USD EPS mit Blackwell-Momentum und Q2-Guidance über 86 Milliarden USD Consensus als Kurstreiber",
-      "event_date": "2026-05-20",
-      "time_horizon": "1-2 Tage",
-      "expected_move_pct": {
-        "low": 5.0,
-        "high": 10.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 245.0,
-        "high": 265.0,
-        "currency": "USD"
-      },
-      "thesis": "NVIDIA ist das Bellwether-Event für KI-Capex-Zyklus. Ein starker Ausblick (Q2 über 86 Milliarden USD) validiert die Hyperscaler-Investitionen und könnte einen Technologie-Rally auslösen. Optionsmärkte preisen 8-10 % Bewegung ein — das Setup ist bullisch bei positivem Guidance-Überraschung.",
-      "risks": "Q2-Guidance unter 86 Milliarden USD oder China-Revenue-Klarheit fehlt — dann Enttäuschungsverkauf und Tech-Rückzug.",
-      "first_seen": "2026-05-13",
-      "last_updated": "2026-05-20T07:04:23.073733+02:00"
-    },
-    {
-      "company": "NVIDIA",
-      "rating": 5,
       "event_basis": "Q1 FY27 Earnings on 2026-05-22 (after market close). CEO Huang's participation in US-China summit signals potential export pathway recovery; hyperscaler capex spending on track for $725B+ combined annually.",
       "event_date": "2026-05-22",
       "time_horizon": "1-2 weeks",
@@ -44,46 +23,25 @@
       "last_updated": "2026-05-15T23:28:32.036624+02:00"
     },
     {
-      "company": "Walmart",
-      "rating": 4,
-      "event_basis": "Q1 FY27 Earnings morgen 21. Mai 2026 vor Markteröffnung (6:00 Uhr CDT) — Konsens erwartet 174,57 Milliarden USD Umsatz (+5,36 % YoY), 0,66 USD EPS (+7,9 % YoY) mit E-Commerce und Werbeumsatz-Momentum",
-      "event_date": "2026-05-21",
-      "time_horizon": "1 Tag",
-      "expected_move_pct": {
-        "low": 2.5,
-        "high": 5.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 95.5,
-        "high": 102.0,
-        "currency": "USD"
-      },
-      "thesis": "Walmart zeigt defensiven Konsum-Trend (Lebensmittel-Marktanteile gewinnen). Die Einzelhandels- und Werbeumsatz-Sparte (High-Margin) wächst zweistellig, was Margendruck durch Lohnkosten teilweise kompensiert. Ein Beat bei moderater Guidance-Erhöhung triggert defensiven Kauf in risiko-off-Phase.",
-      "risks": "Schwacher Konsumausblick für Q2 oder Margendruck-Warnungen; dann Verkauf in defensiven Namen.",
-      "first_seen": "2026-05-18",
-      "last_updated": "2026-05-20T07:04:23.073733+02:00"
-    },
-    {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Öffentliche Anhörung Terafab, Grimes County, Texas, 3. Juni 2026 — Validierung der Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen; H2 2026 externe Kundencommitments für 14A erwartet (Apple, Google, AMD)",
+      "event_basis": "Terafab öffentliche Anhörung in Grimes County, Texas am 3. Juni 2026 — Intel/Tesla/SpaceX Megafab-Steuervergünstigungen unter Druck. Intel Q1 2026 Ergebnisse zeigten Foundry-Umsatz +16 % YoY auf 5,42 Mrd. USD; CEO bestätigt Kundenzusagen in H2 2026 (Apple, Google, AMD möglich).",
       "event_date": "2026-06-03",
       "time_horizon": "2 Wochen",
       "expected_move_pct": {
-        "low": 3.0,
-        "high": 8.0,
+        "low": 2.0,
+        "high": 7.0,
         "direction": "up"
       },
       "price_target": {
-        "low": 105.0,
-        "high": 118.0,
+        "low": 110.0,
+        "high": 125.0,
         "currency": "USD"
       },
-      "thesis": "Intel hat Apple-Deal-Bestätigung erhalten. Die öffentliche Anhörung zu Terafab validiert die Megafab-Strategie und signalisiert klare Pfad zu zusätzlichen Kundenverpflichtungen (Google, AMD) in H2 2026. Intel verdoppelt damit sein Foundry-Kundenbuch und de-riskt Long-Term-Capex.",
-      "risks": "Regulatorische Komplikationen bei Terafab-Genehmigungen; oder H2-Kundencommitments bleiben aus (z.B. Verzögerung AMD-Deal).",
+      "thesis": "Terafab-Genehmigung am 3. Juni validiert Intel/Tesla-Partnership und verstärkt Narrative von US-Staatsgeld + Foundry-Momentum. 14A/18A PDK und Yield-Verbesserungen deuten auf erste externe Kunden-Tapeouts hin (Q3/Q4 2026). Aktie notiert nach 300+-%-Rally seit März 2025 reif für Profit-taking, aber positive Macro (US CHIPS-Agenda) stützt.",
+      "risks": "Valuation auf extremem Niveau (Intel +174 % YTD) — jeden Rücktritt in Foundry-Bestätigungen oder Gegenwind vom Terafab-Hearing könnte starke Korrektur auslösen. 18A-Yield reicht möglicherweise nicht für externe Volume-Commitments.",
       "first_seen": "2026-05-16",
-      "last_updated": "2026-05-20T07:04:23.073733+02:00"
+      "last_updated": "2026-05-21T20:54:38.155626+02:00"
     },
     {
       "company": "Apple",
@@ -99,12 +57,12 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote, 8. Juni 2026 (10:00 PT) — Apple Intelligence Ankündigungen erwartet, Siri 2.0-Überhaul und iOS 18 Integration; validiert On-Device KI-Differenzierung",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — Apple Intelligence Ankündigungen erwartet (On-Device KI, Siri 2.0, iOS 18 Integration). Q2 FY26 Ergebnisse zeigten Umsatz 111,2 Mrd. USD (+17 % YoY), iPhone +22 %, Services Allzeit-Rekord. CEO-Übergabe auf John Ternus (1. Sept. 2026) schafft Führungs-Klarheit.",
       "event_date": "2026-06-08",
-      "time_horizon": "2,5 Wochen",
+      "time_horizon": "2–3 Wochen",
       "expected_move_pct": {
-        "low": 2.0,
-        "high": 6.0,
+        "low": 1.5,
+        "high": 5.0,
         "direction": "up"
       },
       "price_target": {
@@ -112,12 +70,55 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "Apple hat Intel-Chip-Deal signalisiert (Diversifizierung von TSMC). WWDC wird Kern-Story: On-Device KI mit Siri 2.0 und Apple Intelligence positioniert Apple als Privacy-First-Alternative zu Cloud-KI (OpenAI). Dies rechtfertigt Premium-Bewertung gegen Konkurrenten.",
-      "risks": "Apple Intelligence-Features bleiben hinter erwarteten Fähigkeiten zurück (vs. OpenAI/Gemini); oder Siri-Überhaul wird als Inkremental eingestuft.",
+      "thesis": "WWDC könnte Apple Intelligence-Details offenbaren und iOS-18-Strategie validieren — on-device KI differentiation vs. Cloud-Konkurrenten (Google, OpenAI) ist Kern-Strategie. Aktienkurs bereits bei Allzeit-Höhen; Katalysator ist Ausmaß der KI-Features und ihre Umsatzrelevanz (App Store Adoption, Services-Upsell).",
+      "risks": "Erwartungen bereits hoch preisgegeben — Enttäuschung bei KI-Features oder Services-Pricing-Modell könnte Kurs korrigieren. Valuation (P/E 36.17) lässt wenig Spielraum für schwache Ankündigungen; China-Nachfrage bleibt strukturell Sorge.",
       "first_seen": "2026-05-14",
+      "last_updated": "2026-05-21T20:54:38.155626+02:00"
+    },
+    {
+      "company": "Walmart",
+      "rating": 3,
+      "event_basis": "Q1 FY27 Earnings am 21. Mai 2026 vor Markteröffnung (6:00 CDT) — Umsatz + 7,3 % YoY (177,75 Mrd. USD), EPS 0,66 USD inline, aber Guidance warnt vor Brennstoff-Gegenwind; schwache Consumer-Discretionary-Nachfrage bestätigt Konsumabflachung.",
+      "event_date": "2026-05-21",
+      "time_horizon": "1–4 Wochen",
+      "expected_move_pct": {
+        "low": -4.0,
+        "high": 0.5,
+        "direction": "down"
+      },
+      "price_target": {
+        "low": 91.0,
+        "high": 98.0,
+        "currency": "USD"
+      },
+      "thesis": "Walmart-Guidance warnt vor Brennstoffkosten und defensiven Konsum-Patterns (Lebensmittel vs. Luxus) — Markt sah das als Konjunktur-Warnsignal. Aktie fiel -6,4 % auf Enttäuschung. Kurzfristig bleibt Druck, da Konsumrückgang keine schnelle Recovery erwartet.",
+      "risks": "Überverkauf könnte Rebound auslösen, wenn Öl- / Energiepreise fallen; E-Commerce-Wachstum und Marketplace-Fees bilden Margenstütze — könnte Anleger anziehen. Consensus revidiert derzeit nach unten.",
+      "first_seen": "2026-05-18",
+      "last_updated": "2026-05-21T20:54:38.155626+02:00"
+    }
+  ],
+  "archive": [
+    {
+      "company": "NVIDIA",
+      "rating": 5,
+      "event_basis": "Q1 FY27 Earnings heute 20. Mai 2026 nach Börsenschluss (17:00 ET) — Konsens erwartet 78 Milliarden USD Umsatz, 1,77 USD EPS mit Blackwell-Momentum und Q2-Guidance über 86 Milliarden USD Consensus als Kurstreiber",
+      "event_date": "2026-05-20",
+      "time_horizon": "1-2 Tage",
+      "expected_move_pct": {
+        "low": 5.0,
+        "high": 10.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 245.0,
+        "high": 265.0,
+        "currency": "USD"
+      },
+      "thesis": "NVIDIA ist das Bellwether-Event für KI-Capex-Zyklus. Ein starker Ausblick (Q2 über 86 Milliarden USD) validiert die Hyperscaler-Investitionen und könnte einen Technologie-Rally auslösen. Optionsmärkte preisen 8-10 % Bewegung ein — das Setup ist bullisch bei positivem Guidance-Überraschung.",
+      "risks": "Q2-Guidance unter 86 Milliarden USD oder China-Revenue-Klarheit fehlt — dann Enttäuschungsverkauf und Tech-Rückzug.",
+      "first_seen": "2026-05-13",
       "last_updated": "2026-05-20T07:04:23.073733+02:00"
     }
   ],
-  "archive": [],
-  "updated_at": "2026-05-20T07:04:23.073733+02:00"
+  "updated_at": "2026-05-21T20:54:38.155626+02:00"
 }

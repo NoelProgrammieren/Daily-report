@@ -1,0 +1,529 @@
+```json
+{
+  "macro": {
+    "market_state": "<cite index=\"21-1,21-22,21-23\">Der Dow Jones erreichte ein neues Allzeit-Hoch bei 50.723,95 Punkten, mit einem Anstieg von 0,87 %. S&P 500 und Nasdaq legten moderat zu mit +0,63 % bzw. +0,50 %.</cite> <cite index=\"26-3,26-4\">Die Hoffnung auf ein Abkommen zwischen den USA und dem Iran treibt Wall Street an, wobei der S&P 500 auf die achte Woche in Folge mit Gewinnen zusteuert.</cite>",
+    "macro_drivers": "<cite index=\"26-5,26-6\">Die Zweijahres-Anleiherendite erreichte das höchste Niveau seit Februar 2025, da Fed-Gouverneur Christopher Waller signalisiert, dass die nächste Zinsänderung genauso wahrscheinlich eine Erhöhung wie eine Senkung ist. Geldmärkte preisen eine Zinserhöhung bis Dezember vollständig ein.</cite> <cite index=\"21-14,21-15\">Ölpreise stiegen: West Texas Intermediate stieg 1,8 % auf 98,05 USD pro Barrel, Brent-Rohöl gewann 2,31 % auf 105 USD pro Barrel.</cite> Geopolitische Entspannungssignale (Iran-Deal-Hoffnung) treiben Risiko-on-Stimmung; Tech-Sektor hinkt hinterher trotz NVIDIA-Earnings.",
+    "sentiment": "Risk-on, mit Fokus auf Kriegs-Entspannung und Fed-Klarheit. Kleine Skepsis bei Tech-Bewertungen.",
+    "sp500": "7.445,72 (+0,17 %)",
+    "nasdaq": "26.293,10 (+0,09 %)",
+    "dax": "Daten nicht aktuell verfügbar – letzte Referenz ca. 24.600–24.700 (leicht unter Trend)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "NVIDIA",
+        "Alphabet C",
+        "Microsoft",
+        "Intel",
+        "Apple",
+        "Amazon"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "NVIDIA Q1 FY27: Explosiver Beat mit 81,6 Mrd. USD Umsatz – Guidance übertrifft, Dividend 25× erhöht",
+          "rating": 5,
+          "summary": "<cite index=\"2-1,2-2\">NVIDIA meldete Rekord-Umsatz von 81,6 Milliarden USD für Q1 FY27, ein Anstieg um 85 % gegenüber dem Vorjahr und 20 % sequenziell. Der GAAP-Nettogewinn erreichte 58,3 Milliarden USD mit verwässertem EPS von 2,39 USD, während das nicht-GAAP-EPS 1,87 USD betrug und um 140 % yoy stieg.</cite> <cite index=\"6-7\">NVIDIA erwartet für Q2 FY27 Umsatz von 91,0 Milliarden USD, plus oder minus 2 %.</cite> <cite index=\"6-5,6-6\">Die Quartalsdividende wurde von 0,01 auf 0,25 USD pro Aktie erhöht und wird am 26. Juni 2026 an Aktionäre gezahlt, die am 4. Juni im Verzeichnis eingetragen sind.</cite> <cite index=\"5-8,5-9\">Der Verwaltungsrat genehmigte eine neue 80-Milliarden-Dollar-Rückkaufsermächtigung, zusätzlich zu den verbleibenden 38,5 Milliarden USD. Die Gesamtrückgabe an Aktionäre in Q1 betrug ein Rekord von 20 Milliarden USD.</cite>",
+          "price_change": "-1,5 % (After-Hours)",
+          "investor_relevance": "<cite index=\"5-1\">Die Q2-Anleitung von 91 Milliarden USD ließ Wall Street Modelle überarbeiten, signalisiert aber Verwirrung über die Dividenden-/Buyback-Signale (Übergang von Pure-Growth zu Kapitalrückgabe-Modus).</cite>"
+        },
+        {
+          "priority": "lightning",
+          "title": "Qualcomm springt um 12 % — Halbleiter-Sektor im Fokus",
+          "rating": 4,
+          "summary": "<cite index=\"22-3\">Der Nasdaq-100 ETF QQQ stieg um 0,9 %, getrieben durch Qualcomm Inc (QCOM) mit einem Sprung von 12 %.</cite> <cite index=\"23-13\">AI- und Halbleiterunternehmen wie Qualcomm, AMD, Intel und Broadcom führten die Marktgewinne an.</cite>",
+          "investor_relevance": "Breite Halbleiter-Erholung signalisiert Zuversicht in KI-Capex-Zyklus trotz NVIDIA-Mixed-Reaction."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard",
+        "Berkshire Hathaway B"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Finanzsektor im Aufwind — Zinserhöhungs-Erwartungen steigen, Dow-Performance stark",
+          "rating": 3,
+          "summary": "<cite index=\"26-5,26-6\">Zweijahres-Anleiherenditen erreichen das höchste Niveau seit Februar 2025. Fed-Gouverneur Waller deutet an, dass die nächste Zinsänderung genauso wahrscheinlich eine Erhöhung wie eine Senkung ist. Geldmärkte preisen eine Zinserhöhung bis Dezember vollständig ein.</cite> <cite index=\"21-20\">Merck (+5,34 %) und Caterpillar (+2,71 %) führten die Dow-Gewinne an.</cite>",
+          "investor_relevance": "Höhere Renditen stützen Bankgewinne, aber Zinserhöhungs-Risiken können Kreditqualität belasten. MasterCard (als Transaktionsvolumen-Proxy) bleibt vom Konsumtrend abhängig."
+        }
+      ]
+    },
+    {
+      "name": "Industrielle Fertigung & Halbleiter-Ausrüstung",
+      "emoji": "🏭",
+      "positions_mentioned": [
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "Intel Foundry Momentum hält an — Q2-Guidance zwischen 13,8–14,8 Mrd. USD, Terafab-Deal bestätigt",
+          "rating": 4,
+          "summary": "<cite index=\"19-4\">Intel erwartet Q2-Umsatz zwischen 13,8–14,8 Milliarden USD, ein Anstieg von 2–9 % sequenziell; die mittlere Bruttomarge wird auf 39 % (non-GAAP) geschätzt, mit EPS von 0,20 USD.</cite> <cite index=\"20-6\">Intels KI-bezogene Geschäfte machen nun 60 % der Einnahmen aus und wuchsen 40 % yoy.</cite> <cite index=\"18-8,18-9\">Intel ist eines von nur drei globalen Unternehmen, die fortschrittlichste Verpackung anbietet und schafft so einen neuen Engpass bei der Herstellung ausreichender Chips für KI. CFO David Zinsner teilte CNBC mit, dass die fortschrittliche Verpackung nach zuvor geschätzten Hunderten von Millionen nun Milliarden Dollar pro Kunde bringt.</cite>",
+          "investor_relevance": "Foundry-Strategie stabilisiert sich mit Kundensicherheit (Apple, Google, AMD, Tesla Terafab). Die Öffentliche Anhörung am 3. Juni in Grimes County, Texas, wird Steuervergünstigungen für Megafab entscheiden — kritisch für Intel-Lieferketten-Hoffnungen."
+        }
+      ]
+    },
+    {
+      "name": "Consumer Staples & Einzelhandel",
+      "emoji": "🛒",
+      "positions_mentioned": [
+        "Walmart"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Walmart schlägt Kern-Einnahmen, gibt aber schwache Aussichten vor — Treibstoffkosten drücken Margen",
+          "rating": 3,
+          "summary": "<cite index=\"25-2,25-3\">Walmart's Guidance war nicht überzeugend, trotz übertroffener Einnahmen; höhere Treibstoffkosten belasten die Geschäfte.</cite> <cite index=\"30-11\">Walmart war 2 % unter Druck, obwohl es die Headline-Earnings-Metriken des letzten Quartals schlug, belastet durch eine Warnung, dass höhere Treibstoffkosten das Geschäft beeinträchtigen könnten, wenn sie länger andauern.</cite>",
+          "investor_relevance": "Verbrauchertrendmesser zeigt Stabilität, aber Kostendruck wächst. Zollrisiken (erwähnt im Kontext) könnten Lieferketten-Kosten im H2 2026 verschärfen."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "NVIDIA",
+      "rating": 4,
+      "event_basis": "Q1 FY27 Earnings am 20. Mai 2026 gemeldet — Record-Umsatz 81,6 Mrd. USD (+85 % yoy), Q2-Guidance 91 Mrd. USD (+16 % qoq) übertrifft Konsens. Bruttomarge 74,9 %, Dividenden-/Buyback-Signal verschiebt Wachstums-Narrative zu Kapitalrückgabe-Modus.",
+      "event_date": "2026-05-20",
+      "time_horizon": "2-3 Wochen",
+      "expected_move_pct": {
+        "low": -2.0,
+        "high": 8.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 310.0,
+        "high": 335.0,
+        "currency": "USD"
+      },
+      "thesis": "NVIDIA-Aktien könnten sich nach der Earnings-Reaktion stabilisieren, da Investoren die massive Capex-Versicherung (91 Mrd. Q2-Guidance) und die Beweis-of-Life bei Dividenden/Buybacks akzeptieren. Die Sorge über Guidance-Konservatismus (unter Konsens-Obergrenze) wird verfliegen, wenn H2-Capex-Trends bestätigt werden.",
+      "risks": "OpenAI-, SpaceX- und Anthropic-IPO-Ankündigungen könnten Venture-Capital-Zittern auslösen und alternative ‚AI-bets' für Retail attraktiver machen. Zinserhöhungs-Signale (Fed Waller) könnten Growth-Multiples unter Druck setzen."
+    },
+    {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete Ankündigungen: iOS 27 mit Siri 2.0 (KI-Chatbot), Apple Intelligence Framework, mögliche faltbare iPhone-UI-Updates. Google-Gemini-Partnership für KI-Backend bestätigt (Frühjahr 2026).",
+      "event_date": "2026-06-08",
+      "time_horizon": "2-3 Wochen",
+      "expected_move_pct": {
+        "low": 1.5,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 305.0,
+        "high": 320.0,
+        "currency": "USD"
+      },
+      "thesis": "WWDC könnte die Apple-Intelligence-Narration von \"verspätet\" zu \"strategisch positioniert\" reframen, wenn Siri 2.0 mit Gemini-Integration Konkurrenzfähigkeit zu Android/Windows zeigt. Positive Reaktion wahrscheinlich, wenn Demo-Qualität hoch ist und Entwickler-Tools Klarheit schaffen.",
+      "risks": "Wenn Siri-Rebranding oder Gemini-Abhängigkeit als Zugständnis wahrgenommen wird, könnte Aktienkurs nach unten unter Druck geraten. Foldable iPhone ohne Produktionsfahrplan könnte als Vaporware kritisiert werden."
+    },
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Terafab öffentliche Anhörung in Grimes County, Texas, am 3. Juni 2026 — Intel/Tesla/SpaceX Megafab-Steuervergünstigungen unter Überprüfung. Q1-Foundry-Umsatz 5,4 Mrd. USD bestätigt; externe Kundenumsätze 174 Mio. USD (Tesla Terafab-Kunde). Advanced Packaging Backlog in Milliarden (CFO bestätigt).",
+      "event_date": "2026-06-03",
+      "time_horizon": "1-2 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 110.0,
+        "high": 125.0,
+        "currency": "USD"
+      },
+      "thesis": "Falls Grimes County Steuervergünstigungen für Megafab bestätigt werden, könnte Intels Foundry-Capex-Planung transparent und committed wirken. Tesla/Musk-Partnership-Signal mit staatlicher Unterstützung könnte Kurs +5–7 % triggern; Best-case: Fed-Unterstützungs-Signal verstärkt Comeback-Narrative.",
+      "risks": "Lokale Opposition oder Steuervergünstigungs-Verhandlungen könnten verzögern oder gekürzt werden. Terafab wird möglicherweise als dilutiv für Intels Capex-Priorisierung kritisiert, wenn Apple/Google-Deals zeitlich unklar bleiben."
+    }
+  ],
+  "forecast": {
+    "commentary": "Die nächsten 4–8 Wochen werden von zwei großen Katalysatoren geprägt: NVIDIA Q2-Guidance-Validierung (H2-Capex-Zyklus) und WWDC/Terafab-Ankündigungen (Apple/Intel Strategie-Klarheit). Der Gesamtmarkt wird durch sinkende Zinserwartungen vs. Fed-Hawkishness hinein zerrissen; Geopolitik (Iran-Deal-Hoffnung) reduziert Safe-Haven-Nachfrage nach Gold/Treasuries, treibt aber Tech-Bewertungs-Ängste bei höheren 2y-Yields. Halbgefüllte Orderbücher bei Halbleitern, starke Konsumausgaben (Walmart trotz Warnungen) und anhaltende KI-Capex-Dynamik stützen Large-Cap-Tech, aber Valuation-Rotationen zu Small-Cap/Defensiven (Russell 2000 +0,96 % heute) können 1–2 Wochen anhalten, bis Klarheit zu Fed-Weg vorliegt. Watchlist-Positionen (Tesla, Bitcoin, Boeing) werden von übergeordneten Trends dominiert: Tech-IPO-Pipeline schwächt Krypto-Momentum (Bitcoin 77.686, -0,38 %), während Boeing von Rüstungs-Auftragsfluss abhängig bleibt (nicht gemeldet, aber Rüstungs-Sektor im Aufwind).",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.5,
+        "expected_change_90d_pct": 7.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 4,
+        "key_drivers": [
+          "WWDC 2026 Keynote (8. Juni) — Siri 2.0 & Apple Intelligence Demo",
+          "iPhone 17-Zyklus-Vorfreude (Launch Sept. 2026)",
+          "China-Nachfrage-Trend (aktuell unter Druck)",
+          "Services-Sparte Allzeit-Rekord (Margins)"
+        ],
+        "thesis": "WWDC könnte KI-Erzählung von verspätet zu strategisch umrahmen; solange Siri-Demo nicht enttäuscht, sollte +2–4 % kurzfristig realistisch sein, mit September-Zyklus-Hoffnung den Hoffnungsverlauf für 3 Monate stützen.",
+        "pros": [
+          "WWDC Siri 2.0 & iOS 27 Demo im Juni geplant",
+          "Services-Geschäft wächst zweistellig, hohe Margen",
+          "iPhone 17 Upgrade-Zyklus September-gestartet",
+          "Enterprise-KI-Anfragen steigen (SAP, Salesforce Integrationen)"
+        ],
+        "cons": [
+          "China-iPhone-Nachfrage weiterhin unter Druck",
+          "Bewertung bereits >150x Gewinn auf 5y Basis ambitioniert",
+          "Konkurrenz von Samsung/Android KI-Integration intensiviert",
+          "Foldable iPhone ohne Production Timeline noch Vaporware"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Q2 FY27 Guidance (91 Mrd. USD, +16 % qoq) Validierung",
+          "Blackwell Ramp & GB300 Ultra Production Readiness",
+          "China-Export-Pfad Unsicherheit (H200 Lizenz)",
+          "Hyperscaler Capex Sustain-Test ($725B+ combined 2026)"
+        ],
+        "thesis": "NVIDIA hat schon starkgeleistet (81.6B Q1), aber der Kurs dämpfelt nicht, weil Guidance unten bei Konsens-Obergrenze liegt und Zinserhöhungs-Ängste Large-Cap-Gewinnmultiples unter Druck setzen. Könnten sich erholen, wenn Zins-Panik verebbt und H2-Capex-Bestätigungen kommen.",
+        "pros": [
+          "Record Q1 Revenue (81.6B) bestätigt KI-Capex-Zyklus",
+          "Free Cash Flow 48.6B (Rekord) rechtfertigt 80B Buyback",
+          "Dividend 25x erhöht signalisiert CEO-Vertrauen in Sustain-Profitabilität",
+          "Blackwell + GB300 Ultra führen Margin-Expansion"
+        ],
+        "cons": [
+          "Q2-Guidance (91B) unter Analyst-Obergrenze von ~92B",
+          "China-Umsatz bleibt unter 15% Revenue Cap (Regulierung Risiko)",
+          "Zinserhöhungs-Ängste (Fed Waller 2y-Yield +50bps) drücken Growth-Multiple",
+          "OpenAI/SpaceX IPO Ankündigungen können KI-Narrative diversifizieren"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Google Cloud Next 2026 (laufend, Montag—Mittwoch)",
+          "Gemini Integration in Workspace, Android, Search",
+          "WWDC Apple-Gemini Partnership Announcement (8. Juni)",
+          "AI-Ad-Produkt-Monetisierung Q2–Q3 2026"
+        ],
+        "thesis": "Alphabet profitiert indirekt von Apple-Partnerschaft (Siri-Backend), behält aber breite Android/Cloud KI-Stellung. Kurs-Potenzial begrenzt auf 1–2 % kurzfristig, da KI-Optimismus bereits eingepreist ist; mittelfristig (3 Monate) von Ad-Monetisierung abhängig.",
+        "pros": [
+          "Google Cloud Next zeigt Gemini-Momentum & Kundengewinne",
+          "Apple Siri-Partnership Legitimität für Google KI-Infrastruktur",
+          "Android KI-Features breite Marktabdeckung (250M+ Vehicles)",
+          "Search-Integration KI-Monetisierung Q3–Q4 frühest"
+        ],
+        "cons": [
+          "KI-Umsatz-Beitrag noch minimal (<2% Core Revenue)",
+          "Regulierungs-Risiken (Antitrust USA/EU) belasten Cloud-Expansion",
+          "Microsoft Copilot+PC Marktanteil-Gewinne bei Enterprises",
+          "Ad-Market Headwind von Zinsen & Konjunktur-Schwäche"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS Capex Scale (Teil $725B Hyperscaler Konsortium)",
+          "Intel Foundry Potential Customer (Terafab Deal TBD)",
+          "E-Commerce Holiday Inventory Build (Juni–August)",
+          "Advertising-Sparte Doppel-stelliges Wachstum"
+        ],
+        "thesis": "Amazon profitiert als AWS-Hyperscaler von NVIDIA/Intel KI-Capex, aber spezifische Catalyst-Events begrenzt bis später im Jahr. Kurzfristig +1–3 % realistisch auf breite Tech-Erholung; Mittelfristig von Holiday-Inventar und Cloud-Margin-Verbesserung abhängig.",
+        "pros": [
+          "AWS KI-Service-Umsätze wachsen 40%+ yoy",
+          "Advertising (Amazon Ads) Doppelstelliges Wachstum, hohe Margen",
+          "Intel Foundry Potential Customer (Bestätigung TBD Juni)",
+          "E-Commerce Konsumtrend stabil (Walmart bestätigte Trends)"
+        ],
+        "cons": [
+          "AWS Capex Investitionen drücken kurzfristige Profitabilität",
+          "Einzelhandels-Margen unter Druck (Zoll-Risiko erwähnt)",
+          "Konkurrenz von Broadcom/ASIC Custom Silicon reduziert NVIDIA-Abhängigkeit",
+          "Churn Risk bei Großkunden, falls KI-ROI Enttäuschungen kommen"
+        ]
+      },
+      {
+        "company": "Core S&P 500 USD (Acc)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.2,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Zinserhöhungs-Pfad Unsicherheit (Fed Waller hawkish, 2y-Yield +50bps)",
+          "Iran-Deal-Hoffnung treibt Risk-on, aber Ölpreise volatil",
+          "Earnings-Saison stark (Q1 EPS +27,8% yoy) aber Guidance vorsichtig",
+          "Tech-Rotation zu Small-Cap/Defensiven (Russell 2000 +0,96% heute)"
+        ],
+        "thesis": "S&P 500 stellt sich auf 8. Gewinnwoche ein, aber Zinserhöhungs-Ängste begrenzen upside. Geopolitische Erleichterung (Iran-Deal) positiv kurzfristig, kann aber schnell umkehren. Erwarten +0,5–2,0 % in nächsten 4 Wochen, +2–4 % über 3 Monate, wenn Fed-Waller-Signale weichen.",
+        "pros": [
+          "Q1 EPS-Wachstum +27,8% yoy (stärkstes seit Q4 2021)",
+          "Konsumtrends stabil (Walmart, Costco Bestätigungen)",
+          "Iran-Deal-Hoffnung reduziert Ölpreisdruck temporär",
+          "Broadindex-Index-Gains unterstützen durch ARM/Halbleiter-Rallyes"
+        ],
+        "cons": [
+          "Zinserhöhungs-Preisung drückt Growth-Multiple, 2y @ Jahres-Hoch",
+          "Valuation-Rotation zu Small-Caps suggeriert Large-Cap-Sättigung",
+          "Tech-Concentrierung (Mag 7) Risiko bei Zins-Schock",
+          "Treibstoff-Kosten Inflation Risiko (Öl über 100, Walmart gewarnt)"
+        ]
+      },
+      {
+        "company": "Core MSCI World USD (Acc)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.8,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "EZB Sitzung 12. Juni (Geldpolitische Entscheidung)",
+          "European Tech Exposure (SAP, Siemens, ASML) KI-Zyklus",
+          "UK/Europe Defensives Übergewicht (Versorger, Pharma, Bankensektor)",
+          "Währungs-Headwinds (EUR vs USD Volatilität bei Zinsdivergenzen)"
+        ],
+        "thesis": "MSCI World ETF bietet breitere Diversifizierung als S&P 500 allein, aber läuft S&P hinterher wegen Lower Tech-Concentration und EZB-Zinsvorsicht. Erwarten +0,5–1,5 % in 4 Wochen, +2–3 % über 3 Monate, wenn EZB-Clarifying (12. Juni) Ängste abbaut und Europe-Capex-Signale kommen.",
+        "pros": [
+          "EZB Zinsentscheid Klarheit 12. Juni könnte EUR stärken",
+          "European Tech (SAP, ASML) von KI-Capex Zyklus profitieren",
+          "Defensive Sektoren (Pharma, Utilities) Ballast bei Volatilität",
+          "Emerging Markets Weighting Diversifikation gegen US-Zins-Schock"
+        ],
+        "cons": [
+          "EZB dürfte hawkisher werden (Inflation-Druck), aber langsamer als Fed",
+          "European Growth Schwäche (Deutschland Rezessions-Risiken erwähnt)",
+          "Währungs-Headwinds (EUR-Schwäche) drücken US-Anleger-Rückkehr",
+          "China-Exposure über Emerging Markets Anteil, geopolitische Risiken"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 6.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "NVIDIA/Intel/Qualcomm Bounce nach Earnings",
+          "WWDC (8. Juni) & Terafab Anhörung (3. Juni) Tech-Catalysts",
+          "H2-Capex-Validation (Google Cloud Next laufend, AWS re:Invent Sept.)",
+          "Zinserhöhungs-Ängste könnten weichen, wenn Fed-Signale schwächer"
+        ],
+        "thesis": "Tech-ETF sollte stärker performen als Gesamtmarkt, wenn WWDC/Terafab positivfallen und Halbleiter-Rally anhält. +2–4 % in 4 Wochen realistisch, +5–8 % über 3 Monate, wenn KI-Capex-Zyklus Bestätigung und Zins-Panik verfliegt.",
+        "pros": [
+          "Halbleiter-Sektor (QCOM +12% heute) zeigt Kaufdruck",
+          "NVIDIA/Apple/Intel Catalysts Juni (Earnings, WWDC, Terafab)",
+          "H2-Capex Guidance Cycles (Google, Amazon Cloud Events)",
+          "Zinserhöhungs-Ängste könnten übertrieben sein (Fed hawkish, aber graduell)"
+        ],
+        "cons": [
+          "Valuation-Multiples bei Tech bereits 20–25x (hoch-zyklisch)",
+          "Zinsschock könnte Growth-Sektor schnell verkaufen erzwingen",
+          "China-Regulierungs-Risiken (TikTok, Chipexporte) ungelöst",
+          "Rotation zu Small-Cap/Defensiven kann Outflow-Druck verursachen"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "EM Währungs-Volatilität bei US-Zinserhöhungs-Ängsten",
+          "Emerging Market Tech (Taiwan, S. Korea) KI-Capex Exposure",
+          "Rohstoff-Preise (Öl über 100, Kupfer) unterstützen EM-Exporteure",
+          "China-Exclusion reduziert Geopolitik-Risiken, schließt aber KI-Potenzial aus"
+        ],
+        "thesis": "EM ex China ETF schaukelt auf Iran-Deal-Hoffnung, aber Zinserhöhungs-Ängste schwächen EM-Währungen. Erwarten +0,5–2,0 % in 4 Wochen, +2–3 % über 3 Monate, wenn Fed-Signale klarer werden und EM-Valuation-Spreads anziehen.",
+        "pros": [
+          "Rohstoff-Preise (Öl, Kupfer) unterstützen EM-Exporteure kurzfristig",
+          "Taiwan/Samsung Halbleiter-Exposure vom KI-Capex Zyklus profitiert",
+          "China-Exclusion reduziert geopolitische/Regulierungs-Risiken",
+          "Valuation-Spreads vs. USA attraktiv bei Zins-Konvergenz"
+        ],
+        "cons": [
+          "USD-Stärke (bei Zinserhöhungs-Erwartungen) drückt EM-Währungen",
+          "EM-Zentralbanken langsamer bei Zins-Reaktion als Fed",
+          "Emerging Market Growth-Schwäche bei EM-China abgeschnitten",
+          "Geopolitik (USA–China, Iran) immer noch EM-Volatilität-Treiber"
+        ]
+      },
+      {
+        "company": "Russell 2000 U.S. Small Cap",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Risk-on Rotation heute (Russell +0,96%, Dow +0,87%)",
+          "Iran-Deal-Hoffnung reduziert Safe-Haven-Flucht zu Large-Cap-Defensiven",
+          "Kleine Unternehmen profitieren von Zinserhöhungs-Ängste-Abflauen",
+          "Earnings Strength (Q1 +27,8% yoy) Small-Caps mit weniger Bewertungs-Inflation"
+        ],
+        "thesis": "Russell 2000 outperformt heute und könnte Momentum über Juni halten, wenn Zinserhöhungs-Panik verfliegt und EM/Defensiv-Flucht endet. +2–3,5 % in 4 Wochen realistisch, +4–6 % über 3 Monate, wenn Large-Cap-Rotation weitergehen und Small-Cap-Earnings-Überraschungen kommen.",
+        "pros": [
+          "Russell +0,96% heute, outperformt S&P 500 (+0,17%)",
+          "Risk-on-Stimmung (Iran-Deal) begünstigt Kleine Unternehmen",
+          "Q1 Earnings-Überraschungen Small-Caps höher als Large-Caps",
+          "Zinssenkung-Hoffnung (mittel-bis-längerfristig) begünstigt Small-Cap-Leverage"
+        ],
+        "cons": [
+          "Kleinere Unternehmen volatiler bei Konjunktur-Schocks",
+          "Treibstoff-Kosten-Inflation (Öl über 100) trifft kleine Exporteure harder",
+          "Zollrisiken (Trump Admin erwähnt) drücken Small-Biz-Margins stärker",
+          "Liquidität bei Zins-Schocks kann schnell versiegen"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Konsumdaten stabil, aber Treibstoff-Kosten-Warnungen",
+          "Zollrisiken (Trump) könnten Lieferketten-Kosten H2 2026 verschärfen",
+          "E-Commerce Wachstum (zweistellig) Margin-Hoffnung",
+          "Defensives Konsumtrend könnte Aufwind sein, wenn Rezessions-Ängste wachsen"
+        ],
+        "thesis": "Walmart schlug Earnings, gab aber Guidance-Warnung (Treibstoff-Kosten). Kurzfristig +0,5–1,5 %, mittelfristig +2–3 % abhängig davon, ob Konsumtrends stabil bleiben und Treibstoff-Preise fallen. Defensives Schild bei Zins-Schocks.",
+        "pros": [
+          "Konsumtrends stabil bestätigt durch Earnings",
+          "E-Commerce Doppelstelliges Wachstum & Margin-Verbesserung",
+          "Defensive Position schützt bei Zins-Volatilität",
+          "Lohn-Druck begrenzt durch Automation & Effizienz-Gewinne"
+        ],
+        "cons": [
+          "Treibstoff-Kosten-Warnung drückt kurz-/mittelfristig Margen",
+          "Zollrisiken (Trump Admin) könnten Supply-Kosten Q3–Q4 verschärfen",
+          "Konsumausgaben können schnell schwächer bei Zins-Schock",
+          "Konkurrenz von Amazon Fresh e-Commerce drückt traditionelle Marginen"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Terafab Megafab Collaboration (Anhörung 3. Juni, Steuervergünstigungen TBD)",
+          "Cybertruck Ramp-Up (Produktion Q2–Q3 2026)",
+          "EV-Markt Nachfrage Volatilität bei Zoll-Risiken",
+          "AI/Autonome Fahrfunktionen (Delayed) Software-Monetisierung"
+        ],
+        "thesis": "Tesla Terafab News könnte Chip-Zukunfts-Sicherheit signalisieren und +2–3 % triggern, aber EV-Nachfrage-Risiken bleiben. Mittelfristig abhängig von Cybertruck Production Ramp und Zoll-Risiken. +1–3 % in 4 Wochen, +3–5 % über 3 Monate, wenn Terafab/Cybertruck Momentum bestätigt wird.",
+        "pros": [
+          "Terafab Megafab Intel/SpaceX Collaboration Steuervergünstigungen (Juni 3)",
+          "Cybertruck Ramp-Up Q2–Q3 könnte Capex-Narrative verbessern",
+          "Energy Storage Business Zweistelliges Wachstum (Margin-Hebel)",
+          "Full Self-Driving Software Monetisierung noch ungenutzt (Potenzial)"
+        ],
+        "cons": [
+          "EV-Nachfrage Unsicherheit bei Zollrisiken & Konjunktur-Schwäche",
+          "Cybertruck Produktion komplexer als S/3/Y, könnte Margen drücken",
+          "FSD Delayed & Regulierungs-Risiken (Autonomous Driving rechtlich unklar)",
+          "China EV-Konkurrenz BYD/NIO intensiv, Marge-Druck weltweit"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Zinserhöhungs-Ängste reduzieren Risk-on Crypto-Demand",
+          "OpenAI/SpaceX/Anthropic IPO-Pipeline könnte VC-Kapital-Zittern verursachen",
+          "Fed Waller Hawkish-Signale (2y-Yield +50bps) drücken Risk-Appetite",
+          "Halving-Zyklus Saturation (2024–2026) könnte neue Bull-Case weniger überzeugend machen"
+        ],
+        "thesis": "Bitcoin steht unter Druck von Zinserhöhungs-Ängsten & geopolitischer Risiko-Verschiebung weg von Safe-Haven. IPO-Pipeline (OpenAI, SpaceX) könnte VC-Liquidity-Schwäche verursachen, die Crypto-Verkäufe triggert. Erwarten -2 % bis 0 % in 4 Wochen, dann +1–3 % über 3 Monate, wenn Zins-Ängste verfliegen und Halving-Zyklus-Rückspieler zurückkommen.",
+        "pros": [
+          "Halving 2024 Zyklus-Boom längerfristig bullish",
+          "Institutional Adoption (ETF Flows) strukturell länger-fristig positiv",
+          "Fiat-Stimulus-Ängste (Zentralbanken) taugen zu Bitcoin Safe-Haven Narrativen",
+          "Geopolitik-Derisking könnte Risk-on Crypto-Demand wieder auslösen"
+        ],
+        "cons": [
+          "Zinserhöhungs-Ängste & Fed Waller Hawkish-Signale drücken Crypto-Demand",
+          "OpenAI/SpaceX IPO-Ankündigungen könnten VC-Flucht verursachen",
+          "Regulatory Risiken (CFTC, SEC Clarity noch ausstehend)",
+          "Halving-Zyklus Saturation könnten neue Buyer-Wave weniger überzeugend machen"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 1.5,
+        "uncertainty_pct": 8.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Zinserhöhungs-Ängste & Risk-off Crypto-Verkäufe (wie Bitcoin)",
+          "Layer-2 Scaling & DeFi-Adoption längerfristiger Treiber (Q3–Q4 2026)",
+          "Enterprise Blockchain Adoption (JP Morgan, Goldman Sachs Initiativen) Potenzial",
+          "Regulatory Clarity (SEC ETF Approval Q2 2026 möglich) volatil"
+        ],
+        "thesis": "Ethereum folgt Bitcoin bei Zinserhöhungs-Angst, aber mit etwas tieferen Drawdowns wegen geringerer Institutionaler Adoption relativ zu Bitcoin. Erwarten -2 bis -1 % in 4 Wochen, dann +1–2 % über 3 Monate, wenn DeFi-Adoption & Layer-2-Scaling Narrativ wieder Zug bekommt. Regulatory Clarity könnte kurzfristig ±5 % Trigger sein.",
+        "pros": [
+          "Layer-2 Skalierbarkeit (Arbitrum, Optimism) DeFi-Adoption-Boost",
+          "Enterprise Blockchain (JPM, Goldman) Potenzial für Business-Anwendungen",
+          "Staking Yields (+3–5% pa) attraktiv bei höheren Zinsen",
+          "SEC ETF Approval (Q2 möglich) könnte Institutional Inflows auslösen"
+        ],
+        "cons": [
+          "Bitcoin Risk-off Drawdowns Ethereum stärker treffen (weniger Institutional Floor)",
+          "Regulatory Risiken (SEC, CFTC Clarity noch ausstehend) höher als Bitcoin",
+          "DeFi Smart Contract Risiken (Hacks, exploits) diskriminieren langsame Adoption",
+          "Konkurrenz von Solana/Polygon EVM-Kompatibilität könnte Marktanteile nehmen"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Rüstungs-Sektor Tailwinds (geopolitische Spannungen, Auftrags-Pipeline)",
+          "Commercial Aerospace Recovery (nach 737 MAX-Krise) Produktions-Ramp",
+          "Defense Contracts (F-15, P-8 Poseidon) Backlog stabil",
+          "Lieferketten-Stabilisierung & Arbeitskosten

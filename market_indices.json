@@ -1,18 +1,16 @@
 {
-  "updated_at": "2026-05-21T20:54:46.273585+02:00",
+  "updated_at": "2026-05-25T20:23:19.707543+02:00",
   "indices": [
     {
       "name": "Core S&P 500",
       "short": "S&P 500",
       "ticker": "SXR8.DE",
-      "last_close": 687.28,
-      "prev_close": 686.26,
-      "change_pct": 0.15,
+      "last_close": 696.54,
+      "prev_close": 694.82,
+      "change_pct": 0.25,
       "currency": "EUR",
-      "last_date": "2026-05-21",
+      "last_date": "2026-05-25",
       "sparkline": [
-        624.24,
-        625.72,
         625.66,
         632.8,
         636.98,
@@ -40,21 +38,21 @@
         682.0,
         680.94,
         686.26,
-        687.28
+        687.28,
+        694.82,
+        696.54
       ]
     },
     {
       "name": "MSCI World",
       "short": "MSCI World",
       "ticker": "EUNL.DE",
-      "last_close": 121.52,
-      "prev_close": 121.36,
-      "change_pct": 0.14,
+      "last_close": 123.5,
+      "prev_close": 122.85,
+      "change_pct": 0.53,
       "currency": "EUR",
-      "last_date": "2026-05-21",
+      "last_date": "2026-05-25",
       "sparkline": [
-        112.68,
-        112.95,
         112.94,
         114.2,
         114.64,
@@ -82,21 +80,21 @@
         120.41,
         120.29,
         121.36,
-        121.52
+        121.52,
+        122.85,
+        123.5
       ]
     },
     {
       "name": "MSCI World IT",
       "short": "World IT",
       "ticker": "XDWT.DE",
-      "last_close": 117.98,
-      "prev_close": 117.8,
-      "change_pct": 0.15,
+      "last_close": 121.42,
+      "prev_close": 120.38,
+      "change_pct": 0.86,
       "currency": "EUR",
-      "last_date": "2026-05-21",
+      "last_date": "2026-05-25",
       "sparkline": [
-        96.24,
-        97.62,
         98.07,
         99.44,
         101.32,
@@ -124,21 +122,21 @@
         116.0,
         115.58,
         117.8,
-        117.98
+        117.98,
+        120.38,
+        121.42
       ]
     },
     {
       "name": "MSCI EM ex China",
       "short": "EM ex China",
       "ticker": "EMXC.DE",
-      "last_close": 38.99,
-      "prev_close": 38.75,
-      "change_pct": 0.62,
+      "last_close": 40.67,
+      "prev_close": 39.62,
+      "change_pct": 2.66,
       "currency": "EUR",
-      "last_date": "2026-05-21",
+      "last_date": "2026-05-25",
       "sparkline": [
-        34.35,
-        34.71,
         34.58,
         35.37,
         35.55,
@@ -166,21 +164,21 @@
         38.38,
         37.77,
         38.75,
-        38.99
+        38.99,
+        39.62,
+        40.67
       ]
     },
     {
       "name": "Russell 2000 US Small Cap",
       "short": "Russell 2000",
       "ticker": "ZPRR.DE",
-      "last_close": 70.88,
-      "prev_close": 70.24,
-      "change_pct": 0.91,
+      "last_close": 72.89,
+      "prev_close": 72.0,
+      "change_pct": 1.24,
       "currency": "EUR",
-      "last_date": "2026-05-21",
+      "last_date": "2026-05-25",
       "sparkline": [
-        65.5,
-        65.49,
         65.6,
         66.99,
         66.8,
@@ -208,17 +206,17 @@
         69.51,
         68.74,
         70.24,
-        70.88
+        70.88,
+        72.0,
+        72.89
       ]
     }
   ],
   "risk_indicators": {
     "vix": {
-      "value": 16.88,
-      "change_pct": -3.21,
+      "value": 16.59,
+      "change_pct": -0.66,
       "sparkline": [
-        19.23,
-        19.12,
         18.36,
         18.17,
         17.94,
@@ -246,7 +244,9 @@
         17.82,
         18.06,
         17.44,
-        16.88
+        16.76,
+        16.7,
+        16.59
       ]
     },
     "yield_spread_10y_2y": {
@@ -254,7 +254,7 @@
       "change_bps": 0,
       "interpretation": "normal",
       "y10_pct": 0.456,
-      "y2_pct": 0.358
+      "y2_pct": 0.359
     }
   }
 }

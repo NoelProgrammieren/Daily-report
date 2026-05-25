@@ -1,17 +1,6 @@
 {
   "takes": [
     {
-      "company": "NVIDIA",
-      "rating": 5,
-      "event_basis": "Q1 FY27 Earnings on 2026-05-22 (after market close). CEO Huang's participation in US-China summit signals potential export pathway recovery; hyperscaler capex spending on track for $725B+ combined annually.",
-      "event_date": "2026-05-22",
-      "time_horizon": "1-2 weeks",
-      "thesis": "CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports, removing regulatory headwinds on Chinese demand. Combined with sustained AI capex momentum and hyperscaler combined 2026 spending projections tracking near $725 billion, above earlier expectations, NVIDIA positioned for earnings beat and raised guidance.",
-      "risks": "Geopolitical detente could reverse if US-Iran tensions escalate; inflation surprise may prompt Warsh Fed to signal rate-hold policy extending into H2 2026.",
-      "first_seen": "2026-05-13",
-      "last_updated": "2026-05-13T16:59:17.634691+02:00"
-    },
-    {
       "company": "Intel",
       "rating": 5,
       "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla. Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.",
@@ -25,9 +14,9 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Terafab öffentliche Anhörung in Grimes County, Texas am 3. Juni 2026 — Intel/Tesla/SpaceX Megafab-Steuervergünstigungen unter Druck. Intel Q1 2026 Ergebnisse zeigten Foundry-Umsatz +16 % YoY auf 5,42 Mrd. USD; CEO bestätigt Kundenzusagen in H2 2026 (Apple, Google, AMD möglich).",
+      "event_basis": "Terafab öffentliche Anhörung Grimes County TX (3. Juni 2026) — Intel/Tesla/SpaceX Megafab-Steuervergünstigungen unter Druck",
       "event_date": "2026-06-03",
-      "time_horizon": "2 Wochen",
+      "time_horizon": "1 Woche",
       "expected_move_pct": {
         "low": 2.0,
         "high": 7.0,
@@ -38,10 +27,10 @@
         "high": 125.0,
         "currency": "USD"
       },
-      "thesis": "Terafab-Genehmigung am 3. Juni validiert Intel/Tesla-Partnership und verstärkt Narrative von US-Staatsgeld + Foundry-Momentum. 14A/18A PDK und Yield-Verbesserungen deuten auf erste externe Kunden-Tapeouts hin (Q3/Q4 2026). Aktie notiert nach 300+-%-Rally seit März 2025 reif für Profit-taking, aber positive Macro (US CHIPS-Agenda) stützt.",
-      "risks": "Valuation auf extremem Niveau (Intel +174 % YTD) — jeden Rücktritt in Foundry-Bestätigungen oder Gegenwind vom Terafab-Hearing könnte starke Korrektur auslösen. 18A-Yield reicht möglicherweise nicht für externe Volume-Commitments.",
+      "thesis": "Terafab-Anhörung könnte Steueranreize für Megafab-Finanzierung validieren und damit die Foundry-Fähigkeit Intels unterstreichen. Q1-Foundry-Umsatz wuchs bereits 16 Prozent YoY; politische Genehmigung wäre langfristiger Katalysator für Kostenstruktur.",
+      "risks": "Politische Verzögerung oder Widerstand könnten Kurs-Auftrieb bremsen. Bewertung ist auch nach April-Rally noch ambitioniert (904x trailing P/E).",
       "first_seen": "2026-05-16",
-      "last_updated": "2026-05-21T20:54:38.155626+02:00"
+      "last_updated": "2026-05-25T20:23:13.252725+02:00"
     },
     {
       "company": "Apple",
@@ -57,9 +46,9 @@
     {
       "company": "Apple",
       "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — Apple Intelligence Ankündigungen erwartet (On-Device KI, Siri 2.0, iOS 18 Integration). Q2 FY26 Ergebnisse zeigten Umsatz 111,2 Mrd. USD (+17 % YoY), iPhone +22 %, Services Allzeit-Rekord. CEO-Übergabe auf John Ternus (1. Sept. 2026) schafft Führungs-Klarheit.",
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete iOS 27 & Apple Intelligence Ankündigungen",
       "event_date": "2026-06-08",
-      "time_horizon": "2–3 Wochen",
+      "time_horizon": "2 Wochen",
       "expected_move_pct": {
         "low": 1.5,
         "high": 5.0,
@@ -70,10 +59,23 @@
         "high": 320.0,
         "currency": "USD"
       },
-      "thesis": "WWDC könnte Apple Intelligence-Details offenbaren und iOS-18-Strategie validieren — on-device KI differentiation vs. Cloud-Konkurrenten (Google, OpenAI) ist Kern-Strategie. Aktienkurs bereits bei Allzeit-Höhen; Katalysator ist Ausmaß der KI-Features und ihre Umsatzrelevanz (App Store Adoption, Services-Upsell).",
-      "risks": "Erwartungen bereits hoch preisgegeben — Enttäuschung bei KI-Features oder Services-Pricing-Modell könnte Kurs korrigieren. Valuation (P/E 36.17) lässt wenig Spielraum für schwache Ankündigungen; China-Nachfrage bleibt strukturell Sorge.",
+      "thesis": "WWDC-Keynote ist der Katalysator für Siri 2.0 und On-Device-KI-Features, die Apple von Hyperscaler-Capex-Rüstung unterscheiden. Markieren könnte Rückkehr zu Apple-spezifischen KI-Narrativ, statt Abhängigkeit von Google-Partnerschaft.",
+      "risks": "Wenn KI-Ankündigungen nicht über Erwartungen hinausgehen oder als inkrementell wahrgenommen werden, könnte Kurs post-event korrigieren.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-21T20:54:38.155626+02:00"
+      "last_updated": "2026-05-25T20:23:13.252725+02:00"
+    }
+  ],
+  "archive": [
+    {
+      "company": "NVIDIA",
+      "rating": 5,
+      "event_basis": "Q1 FY27 Earnings on 2026-05-22 (after market close). CEO Huang's participation in US-China summit signals potential export pathway recovery; hyperscaler capex spending on track for $725B+ combined annually.",
+      "event_date": "2026-05-22",
+      "time_horizon": "1-2 weeks",
+      "thesis": "CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports, removing regulatory headwinds on Chinese demand. Combined with sustained AI capex momentum and hyperscaler combined 2026 spending projections tracking near $725 billion, above earlier expectations, NVIDIA positioned for earnings beat and raised guidance.",
+      "risks": "Geopolitical detente could reverse if US-Iran tensions escalate; inflation surprise may prompt Warsh Fed to signal rate-hold policy extending into H2 2026.",
+      "first_seen": "2026-05-13",
+      "last_updated": "2026-05-13T16:59:17.634691+02:00"
     },
     {
       "company": "Walmart",
@@ -95,9 +97,7 @@
       "risks": "Überverkauf könnte Rebound auslösen, wenn Öl- / Energiepreise fallen; E-Commerce-Wachstum und Marketplace-Fees bilden Margenstütze — könnte Anleger anziehen. Consensus revidiert derzeit nach unten.",
       "first_seen": "2026-05-18",
       "last_updated": "2026-05-21T20:54:38.155626+02:00"
-    }
-  ],
-  "archive": [
+    },
     {
       "company": "NVIDIA",
       "rating": 5,
@@ -117,8 +117,12 @@
       "thesis": "NVIDIA ist das Bellwether-Event für KI-Capex-Zyklus. Ein starker Ausblick (Q2 über 86 Milliarden USD) validiert die Hyperscaler-Investitionen und könnte einen Technologie-Rally auslösen. Optionsmärkte preisen 8-10 % Bewegung ein — das Setup ist bullisch bei positivem Guidance-Überraschung.",
       "risks": "Q2-Guidance unter 86 Milliarden USD oder China-Revenue-Klarheit fehlt — dann Enttäuschungsverkauf und Tech-Rückzug.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-20T07:04:23.073733+02:00"
+      "last_updated": "2026-05-20T07:04:23.073733+02:00",
+      "performance": {
+        "status": "pending",
+        "evaluated_at": null
+      }
     }
   ],
-  "updated_at": "2026-05-21T20:54:38.155626+02:00"
+  "updated_at": "2026-05-25T20:23:13.252725+02:00"
 }

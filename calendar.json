@@ -1,55 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-05-21",
-      "event": "Walmart Q1 Earnings & Guidance",
-      "relevant_for": "Walmart",
-      "rating": 4,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-21",
-      "event": "Walmart Q1 FY27 Earnings (vor Markteröffnung)",
-      "relevant_for": "Walmart",
-      "rating": 4,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-21",
-      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 Uhr CDT)",
-      "relevant_for": "Walmart",
-      "rating": 4,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-21",
-      "event": "Walmart Q1 FY27 Earnings vor Markteröffnung (6:00 CDT)",
-      "relevant_for": "Walmart, Einzelhandelsektor, Konsumtrends",
-      "rating": 4,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-22",
-      "event": "NVIDIA Q1 Earnings (nach Börse)",
-      "relevant_for": "NVIDIA, Halbleiter-Sektor, IT-ETFs",
-      "rating": 5,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-22",
-      "event": "NVIDIA Q1 Earnings (nach Börsenschluss)",
-      "relevant_for": "NVIDIA, MSCI World IT ETF, Core S&P 500",
-      "rating": 5,
-      "category": "earnings"
-    },
-    {
-      "date": "2026-05-22",
-      "event": "NVIDIA Q1 FY27 Earnings (after market close)",
-      "relevant_for": "NVIDIA, semiconductor sector",
-      "rating": 5,
-      "category": "earnings"
-    },
-    {
       "date": "2026-05-28",
       "event": "FOMC Sitzung & Zinsentscheid",
       "relevant_for": "Gesamtmarkt, Anleihenrenditen, Zinserwartungen",
@@ -80,9 +31,16 @@
     {
       "date": "2026-05-28",
       "event": "FOMC Sitzung – Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
+      "relevant_for": "Gesamtmarkt, MasterCard, Berkshire Hathaway",
       "rating": 5,
       "category": "fed"
+    },
+    {
+      "date": "2026-06-02",
+      "event": "Intel Computex Keynote — CEO Lip-Bu Tan spricht zu AI-Compute",
+      "relevant_for": "Intel",
+      "rating": 3,
+      "category": "product"
     },
     {
       "date": "2026-06-03",
@@ -143,7 +101,7 @@
     {
       "date": "2026-06-03",
       "event": "Terafab öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
-      "relevant_for": "Intel, Tesla",
+      "relevant_for": "Intel",
       "rating": 3,
       "category": "political"
     },
@@ -220,7 +178,7 @@
     {
       "date": "2026-06-12",
       "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Europäische Märkte, MSCI World",
+      "relevant_for": "Europäische Märkte, Gesamtmarkt",
       "rating": 4,
       "category": "fed"
     },
@@ -241,7 +199,7 @@
     {
       "date": "2026-07-29",
       "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
-      "relevant_for": "Microsoft",
+      "relevant_for": "Microsoft, Cloud-Sektor",
       "rating": 5,
       "category": "earnings"
     },
@@ -253,5 +211,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-21T20:54:38.155200+02:00"
+  "updated_at": "2026-05-25T20:23:13.252296+02:00"
 }

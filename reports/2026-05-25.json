@@ -1,0 +1,504 @@
+{
+  "date": "2026-05-25",
+  "generated_at": "2026-05-25T20:23:13.251085+02:00",
+  "macro": {
+    "market_state": "Die Märkte konsolidieren nach dem verlängerten Wochenende (Montag war Memorial Day in den USA). Die USA stehen unter deflationären Tendenzen, während die Notenbank ihr stabiles Zinsniveau beibehält und vor der FOMC-Sitzung am 28. Mai abwartet.",
+    "macro_drivers": "Zinsen bleiben stabil vor FOMC-Entscheidung am Donnerstag 28. Mai 2026. Iran-Konflikt beruhigt sich, was Energiepreise unter Druck setzt. AI-Capex-Boom bleibt das zentrale Marktthema: Die vier großen Hyperscaler (Alphabet, Amazon, Microsoft, Meta) planen 2026-Ausgaben von etwa 700 Milliarden Dollar für Infrastruktur. Dies verschärft Free-Cash-Flow-Risiken, treibt aber weiterhin Halbleiter- und Energienachfrage.",
+    "sentiment": "Risk-on bei Mega-Cap-Tech, aber differenziert — Apple & Alphabet profitieren, Meta und Microsoft stehen unter Druck. CPUs (Intel) heißer als erwartet.",
+    "sp500": "5.840 (+0,2 %)",
+    "nasdaq": "18.905 (-0,3 %)",
+    "dax": "19.325 (+0,1 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet C",
+        "Microsoft",
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "NVIDIA schlägt Erwartungen um Breites Stück — Umsatz 81,6 Mrd. USD, Gewinn pro Aktie 1,87 USD (Konsens: 1,78 USD)",
+          "rating": 5,
+          "summary": "Nvidia meldete am 20. Mai ein Rekordgewinn von 58,3 Milliarden USD für Q1 FY2027 (Februar–April), ein Anstieg von 37 Prozent zum Vorquartal und über 200 Prozent Jahr-zu-Jahr. Der Umsatz sprang auf 81,6 Milliarden USD, um 20 Prozent vom Prior Quarter und 85 Prozent im Jahresvergleich. Nvidia prognostiziert Umsatz für das aktuelle Quartal auf 91 Milliarden USD, über den meisten Analystenschätzungen. Das Unternehmen erhöht seine Aktienrückkäufe um zusätzliche 80 Milliarden USD und hebt die vierteljährliche Dividende pro Aktie von 0,01 USD auf 0,25 USD an.",
+          "investor_relevance": "Position ist nach starkem Q1-Beat gestern im Portfolio — Aktienkurs fiel um 1,3 Prozent nach-Börsenschluss, da Erwartungen bereits eingepreist waren."
+        },
+        {
+          "priority": "lightning",
+          "title": "Intel treibt Foundry-Momentum — Q1 Foundry-Umsatz +16 Prozent YoY auf 5,42 Milliarden USD",
+          "rating": 4,
+          "summary": "Intels Data Center & AI Segment zeigte 22 Prozent Jahr-zu-Jahr-Wachstum in Q1 auf 5,1 Milliarden USD. Das Intel Foundry Segment verzeichnete Umsatzwachstum von 16 Prozent Jahr-zu-Jahr auf 5,4 Milliarden USD. Beide Geschäftsbereiche könnten mit gesunden Wachstumsraten fortfahren, insbesondere da die Nachfrage nach Intels Produkten das Angebot übersteigt, speziell für seine Server-Prozessoren. Foundry-Kundenzusagen mit Apple, Google und AMD stehen unter fortgeschrittener Diskussion.",
+          "investor_relevance": "Intel-Position ⚠️ volatile: Terafab-Anhörung am 3. Juni könnte weitere Kapitalbestätigung bringen. Apple-Deal-Bestätigung steht aus."
+        },
+        {
+          "priority": "pin",
+          "title": "Apple legt Augenmerk auf WWDC 2026 (8. Juni) — iOS 27 mit erwarteten KI-Features",
+          "rating": 4,
+          "summary": "Apple lenkt die Aufmerksamkeit auf iOS 27, das während der WWDC 2026 Keynote am Montag, 8. Juni um 10 Uhr enthüllt wird. Apple wird voraussichtlich mindestens 15 weitere Produkte später im Jahr veröffentlichen, darunter ein intelligentes Home-Hub-System, ein faltbares iPhone Ultra, ein überarbeitetes MacBook Ultra mit OLED-Display und lange erwartete Updates für Apple TV, HomePod und HomePod mini.",
+          "investor_relevance": "Apple-Position stabil — Hauptkatalysat nächste Woche auf WWDC, erwartet KI-Ankündigungen und Siri 2.0."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard",
+        "Berkshire Hathaway B"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Berkshire Hathaway verkauft komplette MasterCard- und Visa-Positionen — portfolio-Neuausrichtung unter neuem CEO Greg Abel",
+          "rating": 5,
+          "summary": "Während Greg Abels erstem Quartal als CEO der Holding verkaufte Berkshire seine Anteile an Visa und Mastercard, die vermutlich von Todd Combs verwaltet wurden, der kürzlich das Unternehmen verließ. Berkshire liquidierte nahezu 2,91 Milliarden USD Visa-Bestände und 2,28 Milliarden USD Mastercard-Anteile. Gleichzeitig erhöhte Berkshire seine Alphabet-Position um 224 Prozent im ersten Quartal; mit einem Marktwert von 16,6 Milliarden USD ist Google nun das siebtgrößte Eigenkapitalinvestment der Holding.",
+          "investor_relevance": "MasterCard-Position im Portfolio reduziert sich von einem Long-Hoffnungsträger zu Risiko — Exit eines großen Supports signalisiert strukturelle Bedenken bei Payment-Networks trotz solider Quartalszahlen."
+        },
+        {
+          "priority": "pin",
+          "title": "Visa meldet solides Q1-Wachstum — Value-Added-Services +27 Prozent YoY auf 3,3 Milliarden USD",
+          "rating": 3,
+          "summary": "Visas Finanzchef meldete das stärkste Quartalswachstum der letzten zehn Jahre (außerhalb des Pandemie-Rebound). Value-Added Services Umsatz erreichte 3,3 Milliarden USD, 30 Prozent des Gesamtumsatzes mit 27 Prozent Jahr-zu-Jahr-Wachstum. Das Commercial- und Money-Transfer-Geschäft wuchs 24 Prozent; US-Zahlungsvolumen zog an.",
+          "investor_relevance": "Watch-Position — Visa bleibt operativ stark, aber Berkshire-Exit zeugt von Verunsicherung über AI & Stablecoin-Risiken für traditionelle Zahlungsnetzwerke."
+        }
+      ]
+    },
+    {
+      "name": "Cloud-Computing & KI-Infrastruktur",
+      "emoji": "☁️",
+      "positions_mentioned": [
+        "Alphabet C",
+        "Amazon",
+        "Microsoft"
+      ],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "Alphabet Google Cloud wächst 63 Prozent YoY — längerstes dreites Quartal mit Beschleunigung",
+          "rating": 4,
+          "summary": "Alphabets Google Cloud-Umsatz sprang 63 Prozent Jahr-zu-Jahr auf 20 Milliarden USD, weit über Microsofts Azure-Wachstum von 40 Prozent und Amazons AWS-Wachstum von 28 Prozent im gleichen Zeitraum. Google Clouds Betriebsergebnis kletterte auf 6,6 Milliarden USD von 2,2 Milliarden vor einem Jahr; die Betriebsmarge wuchs auf 32,9 Prozent von 17,8 Prozent. Der Cloud-Auftragsbestand verdoppelte sich auf über 460 Milliarden USD von rund 240 Milliarden Ende 2025; Management erwartet, über 230 Milliarden davon in den nächsten 24 Monaten als Umsatz zu erkennen.",
+          "investor_relevance": "Alphabet-Position profitiert — Cloud-Dynamik ist stärker als bei Konkurrenten; Backlog-Verdopplung bedeutet sichere Umsatzquelle und validiert KI-Investitionen."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete iOS 27 & Apple Intelligence Ankündigungen",
+      "event_date": "2026-06-08",
+      "time_horizon": "2 Wochen",
+      "expected_move_pct": {
+        "low": 1.5,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 305.0,
+        "high": 320.0,
+        "currency": "USD"
+      },
+      "thesis": "WWDC-Keynote ist der Katalysator für Siri 2.0 und On-Device-KI-Features, die Apple von Hyperscaler-Capex-Rüstung unterscheiden. Markieren könnte Rückkehr zu Apple-spezifischen KI-Narrativ, statt Abhängigkeit von Google-Partnerschaft.",
+      "risks": "Wenn KI-Ankündigungen nicht über Erwartungen hinausgehen oder als inkrementell wahrgenommen werden, könnte Kurs post-event korrigieren."
+    },
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Terafab öffentliche Anhörung Grimes County TX (3. Juni 2026) — Intel/Tesla/SpaceX Megafab-Steuervergünstigungen unter Druck",
+      "event_date": "2026-06-03",
+      "time_horizon": "1 Woche",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 110.0,
+        "high": 125.0,
+        "currency": "USD"
+      },
+      "thesis": "Terafab-Anhörung könnte Steueranreize für Megafab-Finanzierung validieren und damit die Foundry-Fähigkeit Intels unterstreichen. Q1-Foundry-Umsatz wuchs bereits 16 Prozent YoY; politische Genehmigung wäre langfristiger Katalysator für Kostenstruktur.",
+      "risks": "Politische Verzögerung oder Widerstand könnten Kurs-Auftrieb bremsen. Bewertung ist auch nach April-Rally noch ambitioniert (904x trailing P/E)."
+    }
+  ],
+  "forecast": {
+    "commentary": "Die nächsten 4–8 Wochen dürften von zwei zentralen Treibern geprägt sein: (1) FOMC-Entscheidung am 28. Mai und (2) Mega-Cap-Earnings-Katalysatoren (Apple WWDC 8. Juni, Intel Terafab 3. Juni, Microsoft Q4 29. Juli). Das Mega-Cap-Tech-Narrative spaltet sich: Apple & Alphabet profitieren von stärkerer Cloud-Dynamik und eigenständigen KI-Features, während Microsoft & Meta unter Druck stehen wegen massiver Capex ohne klare Renditen. Intel erlebt Renaissance nach Foundry-Deals, trägt aber Bewertungsrisiko. Breitere S&P-500 und MSCI-Indizes stabilisieren sich, aber Volatilität bleibt erhöht.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.5,
+        "expected_change_90d_pct": 6.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 4,
+        "key_drivers": [
+          "WWDC 2026 (8. Juni)",
+          "iOS 27 Apple Intelligence",
+          "Services-Wachstum",
+          "iPhone 18 Zyklus"
+        ],
+        "thesis": "WWDC-Keynote und iOS 27 mit KI-Features sind nächste große Katalysatoren; Services-Sektor bleibt Wachstumstreiber.",
+        "pros": [
+          "WWDC-Katalysator (8. Juni) mit Apple Intelligence",
+          "Services-Marge wächst über 77 Prozent Gross Margin",
+          "2,5 Mrd. aktive Geräte für Monetarisierung",
+          "Niedrigere Capex-Belastung vs. Hyperscaler"
+        ],
+        "cons": [
+          "iPhone-Absatz in China weiter unter Druck",
+          "Bewertung bereits ambitioniert",
+          "Makro-Abschwächung könnte Consumer-Nachfrage treffen"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 5.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Q1 Beat bestätigt, Erwartungen eingepreist",
+          "China-Exporte bleiben unsicher",
+          "Nächste Earnings August 2026"
+        ],
+        "thesis": "Nach massivem Beat vor 5 Tagen und +1,3 Prozent nach-Börsenschluss-Korrektur bleibt kurzfristig Konsolidierungspflicht; Forward P/E ~30x preist starkes Wachstum ein.",
+        "pros": [
+          "Trillion-Dollar-Auftragsbuch bis 2027 bestätigt",
+          "Hyperscaler-Capex 700 Mrd. USD 2026 supportet Chip-Nachfrage",
+          "80 Mrd. USD Aktienrückkauf & 25x Dividenden-Erhöhung"
+        ],
+        "cons": [
+          "Sky-high Erwartungen limitieren Überraschungs-Spielraum",
+          "China-Exportverbot bleibt strukturelle Kopflast",
+          "Wettbewerb von AMD & Intel CPU-Renaissance"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Google Cloud +63 Prozent YoY",
+          "Backlog verdoppelt auf 460 Mrd. USD",
+          "Capex-Guidance erhöht auf 180–190 Mrd. USD"
+        ],
+        "thesis": "Alphabet outperformt Cloud-Konkurrenten mit 63-Prozent-Google-Cloud-Wachstum; massive Backlog-Verdopplung derischt Umsatzvisibilität.",
+        "pros": [
+          "Google Cloud wächst schneller als Azure & AWS",
+          "Operating Margin auf 32,9 Prozent — profitables Wachstum",
+          "AI-Generative-Products +800 Prozent YoY",
+          "460 Mrd. USD Backlog sichert 24-Monate Revenue"
+        ],
+        "cons": [
+          "Capex-Erhöhung auf 180–190 Mrd. USD belastet Free Cash Flow",
+          "CFO signalisiert 2027-Capex nochmal erheblich höher",
+          "Margin-Kompressionrisiko wenn AI-Returns verzögert"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS +28 Prozent YoY, aber langsamer als Google Cloud",
+          "Capex 44,2 Mrd. USD Q1 — höchste unter Hyperscalern",
+          "Free Cash Flow unter Druck (1,2 Mrd. USD TTM vs. 25,9 Mrd. USD vor Jahr)"
+        ],
+        "thesis": "Amazon führt in absoluten Capex-Ausgaben, aber Google Cloud gewinnt Wachstumsgeschichte; Free-Cash-Flow-Kompression bleibt Risiko.",
+        "pros": [
+          "AWS größter Cloud-Provider absolut (37,6 Mrd. USD)",
+          "AI-Partnership mit Anthropic (5 GW) und Cerebs",
+          "Retail-Seite stabil, Effizienzgewinne senken Betriebskosten"
+        ],
+        "cons": [
+          "Google Cloud wächst 63 Prozent vs. 28 Prozent bei AWS",
+          "Capex-Boom komprimiert Free Cash Flow dramatisch",
+          "Anleger skeptisch über Rückkehrquoten der Infrastruktur-Invasion"
+        ]
+      },
+      {
+        "company": "S&P 500 USD (Core ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "FOMC 28. Mai — Zinsstabilität erwartet",
+          "Mega-Cap-Tech führt Index, aber Breite rotiert defensiv",
+          "Iran-Konflikt Entspannung sendet Energie-Druck"
+        ],
+        "thesis": "Breeiter Index profitiert von stabiler Geldpolitik, aber Mega-Cap-Konzentration limitiert Aufwärtspotenzial.",
+        "pros": [
+          "FOMC hält Leitzins stabil — kein Schock-Risiko",
+          "Earnings-Saison zeigt Wachstum trotz Capex-Lasten",
+          "AI-Capex stützt Halbleiter & Energienachfrage"
+        ],
+        "cons": [
+          "Bewertung auf historisch hohen Niveaus",
+          "Breite (Small-Cap, Mittelständler) lagging Tech",
+          "Geopolitik & Zinsunsicherheit (Dezember FOMC offen)"
+        ]
+      },
+      {
+        "company": "MSCI World USD (Core ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Internationale Tech-Rotation",
+          "Europäische Zinsaussichten fragil",
+          "Schwaches Wachstum außerhalb USA"
+        ],
+        "thesis": "Globaler Index trägt US-Tech-Schwerpunkt; Europäischer & Emerging-Markets-Anteil limitiert Aufwärtsmomentum.",
+        "pros": [
+          "US-Mega-Cap-Wachstum unterstützt Index",
+          "Emerging Markets profitieren von AI-Demand",
+          "Branchen-Diversifikation reduziert Einzelrisiko"
+        ],
+        "cons": [
+          "Europäische Schwäche bremst Breite",
+          "EZB-Pfad unsicher (12. Juni Sitzung)",
+          "China-Konjunktur wackelt unter Geopolitik"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 1.5,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Commodity-Druck durch Iran-Entspannung",
+          "Technologie-Nachfrage stützt",
+          "Währungsvolatilität"
+        ],
+        "thesis": "Schwache Konjunktur außerhalb China limitiert Wachstum; AI-Chip-Nachfrage ist echter Bright Spot.",
+        "pros": [
+          "AI-Sektor stützt Technologie-Allocation",
+          "Bewertungen günstiger als Entwickelte Märkte",
+          "Strukturelles Wachstum in Infrastruktur & Energie"
+        ],
+        "cons": [
+          "Energie-Überangebot aus Iran-Deal senkt Rohstoff-Preise",
+          "Geopolitik bleibt Schleier-Faktor",
+          "Währungsrisiken bleiben hoch"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Mega-Cap Earnings-Katalysatoren (Apple, Intel, NVIDIA)",
+          "CPU-Renaissance (Intel + AMD)",
+          "Cloud-Wachstum bleibt Superior"
+        ],
+        "thesis": "Tech-ETF profitiert von Super-Zyklus: Mega-Cap-KI-Ausgaben + CPU-Revitalisierung + Cloud-Profitabilität.",
+        "pros": [
+          "NVIDIA Beat, Intel Foundry, Apple WWDC",
+          "Google Cloud 63 Prozent Wachstum validiert Capex",
+          "Small-Cap Halbleiter partizipieren vom Boom"
+        ],
+        "cons": [
+          "Bewertungen ambitioniert nach Rally",
+          "China-Exporte unsicher",
+          "Durchschnittliche Industrie-Margen unter Druck"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 2.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "US Consumer stabiler als erwartet",
+          "Inflation moderat",
+          "E-Commerce-Wachstum zweistellig"
+        ],
+        "thesis": "Walmart bleibt defensiv-stabiles Consumer-Barometer; keine großen Katalysatoren in nächsten 4 Wochen.",
+        "pros": [
+          "US-Konsumausgaben robust durch Arbeitsmarkt",
+          "E-Commerce-Sparte wächst zweistellig",
+          "Margin-Management unter Druck stabilisiert"
+        ],
+        "cons": [
+          "Lohnkosten-Inflation belastet Marge",
+          "Zoll-Risiko bleibt (Trump-Admin)",
+          "Private-Label-Wettbewerb intensiv"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": -1.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Terafab-Anhörung 3. Juni könnte Elon-Priorisierung signalisieren",
+          "EV-Markt-Dynamik unter Druck",
+          "Keine neuen Produkt-Ankündigungen unmittelbar"
+        ],
+        "thesis": "Tesla fehlen kurzfristige Katalysatoren; Terafab ist Musk-Nebenleistung statt Tesla-Fokus.",
+        "pros": [
+          "Terafab (gemeinsam mit Intel/SpaceX) signalisiert Tech-Ambition",
+          "Energy-Business wächst, margins verbessern sich",
+          "Cybertruck-Produktion rampiert auf"
+        ],
+        "cons": [
+          "EV-Markt saturiert, Wettbewerb intensiv",
+          "Margen unter Druck (Preiskonkurrenz)",
+          "Keine Earnings vor Juli — Katalysator-Lücke"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Fed-Zinspfad (28. Mai)",
+          "Geopolitik (Iran-Entspannung sendet Safe-Haven-Druck)",
+          "Halving-Zyklus-Phase stabil"
+        ],
+        "thesis": "Bitcoin reagiert volatil auf Makro-Signale; FOMC-Stabilität könnte Aufwärtsdruck geben, aber Unsicherheit bleibt hoch.",
+        "pros": [
+          "Fed-Stabilität supportet Risk-Assets",
+          "Institutional Adoption nimmt zu",
+          "Inflation-Hedge-Narrative bleibt relevant"
+        ],
+        "cons": [
+          "Makro-Unsicherheit (Dezember FOMC) sendet Voraussicht-Risiko",
+          "Geopolitik-Entspannung reduziert Safe-Haven-Appeal",
+          "Regulierung bleibt strukturelle Kopflast"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 7.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Smart-Contract-Aktivität stabil",
+          "Staking-Yields kompetitiv",
+          "DeFi-Volumen seitwärts"
+        ],
+        "thesis": "Ethereum trägt fundamentale Stabilität, aber fehlen explosive Katalysatoren; korreliert mit Bitcoin & Makro.",
+        "pros": [
+          "Staking-Yields attraktiv (5–7 Prozent APY)",
+          "DeFi-Ecosystem wächst moderat",
+          "Layer-2-Lösungen (Arbitrum, Optimism) skalieren"
+        ],
+        "cons": [
+          "Volumen-Druck & Konkurrenz von Solana/Base",
+          "Regulierungs-Unsicherheit (SEC-Richtung)",
+          "Makro-Zinsrisiko größer als Blockchain-Fundamentals"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": -2.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 1,
+        "key_drivers": [
+          "Sicherheits-Nachfragen andauernd",
+          "Lieferketten-Engpässe persistent",
+          "FAA-Audit unter Druck"
+        ],
+        "thesis": "Boeing bleibt unter strukturellem Druck durch Sicherheits-Narrative & Fertigungs-Herausforderungen; kurzfristig keine Katalysatoren.",
+        "pros": [
+          "Langfristige Backlog bleibt groß (Jahrzehnte)",
+          "Defense-Segment stabil unter Geopolitik",
+          "SpaceX-Competition begrenzt auf Raumfahrt"
+        ],
+        "cons": [
+          "Sicherheitskultur-Probleme untergraben Vertrauen",
+          "Quality-Control-Kosten steigen",
+          "Lieferkette-Engpässe verzögern Auslieferungen"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-05-28",
+      "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
+      "relevant_for": "Gesamtmarkt, MasterCard, Berkshire Hathaway, S&P 500",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-02",
+      "event": "Intel CEO Lip-Bu Tan Computex Keynote (1:30 PM Taiwan-Zeit)",
+      "relevant_for": "Intel, Halbleiter-Sektor",
+      "rating": 3,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-03",
+      "event": "Terafab öffentliche Anhörung Grimes County TX (Steuervergünstigungen Intel/Tesla/SpaceX Megafab)",
+      "relevant_for": "Intel",
+      "rating": 4,
+      "category": "political"
+    },
+    {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0",
+      "relevant_for": "Apple",
+      "rating": 4,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "EZB Sitzung & Geldpolitische Entscheidung",
+      "relevant_for": "Europäische Märkte, DAX, MSCI World",
+      "rating": 4,
+      "category": "fed"
+    }
+  ],
+  "usage": {
+    "input_tokens": 73768,
+    "output_tokens": 9605
+  }
+}

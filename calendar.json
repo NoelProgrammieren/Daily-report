@@ -1,118 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-05-28",
-      "event": "FOMC Sitzung & Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, Anleihenrenditen, Zinserwartungen",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-05-28",
-      "event": "FOMC Sitzung – Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan, Rate-sensitive Tech",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-05-28",
-      "event": "FOMC Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, MasterCard, JPMorgan",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-05-28",
-      "event": "FOMC Sitzung & Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, Anleiherenditen, Geldpolitik",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-05-28",
-      "event": "FOMC Sitzung – Zinsentscheid (16:30 ET)",
-      "relevant_for": "Gesamtmarkt, MasterCard, Berkshire Hathaway",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-02",
-      "event": "Intel Computex Keynote — CEO Lip-Bu Tan spricht zu AI-Compute",
-      "relevant_for": "Intel",
-      "rating": 3,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab – Öffentliche Anhörung Grimes County TX (Steueranreize Intel/SpaceX/Tesla-Megafab)",
-      "relevant_for": "Intel",
-      "rating": 3,
-      "category": "other"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab – Öffentliche Anhörung Grimes County TX",
-      "relevant_for": "Intel, Foundry-Validation",
-      "rating": 3,
-      "category": "political"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab – Public Hearing Grimes County TX (Intel/Tesla/SpaceX megafab tax incentives)",
-      "relevant_for": "Intel, Tesla, Infrastruktur",
-      "rating": 3,
-      "category": "political"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab – Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
-      "relevant_for": "Intel",
-      "rating": 3,
-      "category": "other"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab Öffentliche Anhörung Grimes County TX – Intel/Tesla/SpaceX Megafab Steuervergünstigungen",
-      "relevant_for": "Intel, geopolitische Halbleiterstruktur",
-      "rating": 3,
-      "category": "political"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab Steuervergünstigungen)",
-      "relevant_for": "Intel",
-      "rating": 3,
-      "category": "political"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab Öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
-      "relevant_for": "Intel, Tesla",
-      "rating": 3,
-      "category": "other"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab öffentliche Anhörung Grimes County TX — Intel/Tesla/SpaceX-Megafab-Steuervergünstigungen",
-      "relevant_for": "Intel, Halbleiter-Sektor, Infrastruktur",
-      "rating": 3,
-      "category": "other"
-    },
-    {
-      "date": "2026-06-03",
-      "event": "Terafab öffentliche Anhörung Grimes County TX (Intel/Tesla/SpaceX Megafab-Steuervergünstigungen)",
-      "relevant_for": "Intel",
-      "rating": 3,
-      "category": "political"
-    },
-    {
-      "date": "2026-06-04",
-      "event": "Apple WWDC Keynote",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
       "date": "2026-06-08",
       "event": "Apple WWDC Keynote",
       "relevant_for": "Apple, Informationstechnologie",
@@ -162,6 +50,20 @@
       "category": "product"
     },
     {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0-Ankündigungen",
+      "relevant_for": "Apple",
+      "rating": 4,
+      "category": "product"
+    },
+    {
+      "date": "2026-06-11",
+      "event": "NVIDIA CEO Huang testet vor US-Senat Banking Committee zu China-Chipverkäufen & Export Controls",
+      "relevant_for": "NVIDIA, Geopolitik",
+      "rating": 4,
+      "category": "political"
+    },
+    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -178,7 +80,7 @@
     {
       "date": "2026-06-12",
       "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Europäische Märkte, Gesamtmarkt",
+      "relevant_for": "Gesamtmarkt, Europäische Aktien",
       "rating": 4,
       "category": "fed"
     },
@@ -211,5 +113,5 @@
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-05-25T20:23:13.252296+02:00"
+  "updated_at": "2026-06-05T20:55:18.120526+02:00"
 }

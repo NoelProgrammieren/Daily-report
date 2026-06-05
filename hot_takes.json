@@ -1,15 +1,59 @@
 {
   "takes": [
     {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 10:00 PT — iOS 27, Siri 2.0 (mit Google-Gemini), erweiterte Apple Intelligence sind zentrale Katalysatoren. Wall Street stuft Event als Jahres-AI-Test für Apple ein.",
+      "event_date": "2026-06-08",
+      "time_horizon": "2-3 Tage",
+      "expected_move_pct": {
+        "low": 1.5,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 305.0,
+        "high": 320.0,
+        "currency": "USD"
+      },
+      "thesis": "Wedbush ($400 Ziel), Bank of America ($380) und Morgan Stanley ($365–385, Bull-Case $440) haben Kursziele massiv erhöht. Erfolgreiche Siri 2.0-Demo könnte AI-Bewertungslücke zu Microsoft/Alphabet schließen und Momentum zurückbringen.",
+      "risks": "Unzureichend beeindruckende Demo, anhaltend kritische Rezension zu Datenschutz oder Abhängigkeit von Google — Ziel verfehlt.",
+      "first_seen": "2026-05-14",
+      "last_updated": "2026-06-05T20:55:18.120863+02:00"
+    },
+    {
       "company": "Intel",
-      "rating": 5,
-      "event_basis": "Apple-Deal ist bestätigt; Foundry-Roadmap-Updates werden im H2 2026 erwartet. Die Foundry soll 2027 Breakeven erreichen dank Deals mit Amazon, Microsoft, dem US-Staat und Tesla. Neue Chipfabrik in Chandler, Arizona, ist in hoher Serienproduktion.",
+      "rating": 3,
+      "event_basis": "Intel-Apple-Deal ist bestätigt; neue Foundry-Partnerschaft (Amazon, Microsoft, US-Staat, Tesla) soll 2027 Break-Even ermöglichen. Fabrik in Chandler, Arizona in Serie. H2 2026 Roadmap-Updates erwartet.",
       "event_date": "2026-06-30",
-      "time_horizon": "2-4 Wochen (über Terafab Hearing hinaus)",
-      "thesis": "Der Apple-Deal validiert Intels Fertigungskompetenzen und könnte zusätzliche hochkarätige Foundry-Kunden anziehen. Intel hat strukturell die Chance, von der TSMC-Kapazitätskrise zu profitieren, solange die Qualitäts- und Yield-Ausführung stimmt. Die vorläufige Vereinbarung könnte sich in 2026-2027 zu vollständigen Produktionsverpflichtungen ausweiten.",
-      "risks": "Yield- oder Qualitätsprobleme könnten Deal-Momentum zerstören. Hohe Bewertung (>100x Forward-P/E) aktuell für massive Erfolgserfordernisse. Geopolitische/sanktionäre Risiken rund um Chipexporte, insbesondere für Advanced Node.",
+      "time_horizon": "3-4 Wochen",
+      "expected_move_pct": {
+        "low": -3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Intel ist unter Druck (heute -9 %), aber strategische Partnerschaften und Foundry-Rahmenverträge geben Hoffnung. Bestätigungsevent H2-Roadmap könnte stabilisieren — Beweis, dass Tan-Turnaround funktioniert.",
+      "risks": "Weitere Halbleiter-Abschwächung, Foundry-Margen-Dilution, Konkurrenz von TSMC/Samsung bleibt unüberwindbar.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-15T23:28:32.036624+02:00"
+      "last_updated": "2026-06-05T20:55:18.120863+02:00"
+    }
+  ],
+  "archive": [
+    {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. Apple hit all-time intraday high of $290.33, now at $300.",
+      "event_date": "2026-06-04",
+      "time_horizon": "3-4 weeks",
+      "thesis": "Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
+      "risks": "Stock at all-time highs with sentiment elevated; any product announcement shortfall or delayed Intel ramp could trigger profit-taking.",
+      "first_seen": "2026-05-14",
+      "last_updated": "2026-05-14T09:43:37.554205+02:00"
     },
     {
       "company": "Intel",
@@ -33,40 +77,6 @@
       "last_updated": "2026-05-25T20:23:13.252725+02:00"
     },
     {
-      "company": "Apple",
-      "rating": 4,
-      "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. Apple hit all-time intraday high of $290.33, now at $300.",
-      "event_date": "2026-06-04",
-      "time_horizon": "3-4 weeks",
-      "thesis": "Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
-      "risks": "Stock at all-time highs with sentiment elevated; any product announcement shortfall or delayed Intel ramp could trigger profit-taking.",
-      "first_seen": "2026-05-14",
-      "last_updated": "2026-05-14T09:43:37.554205+02:00"
-    },
-    {
-      "company": "Apple",
-      "rating": 4,
-      "event_basis": "WWDC 2026 Keynote am 8. Juni 2026 (10:00 PT) — erwartete iOS 27 & Apple Intelligence Ankündigungen",
-      "event_date": "2026-06-08",
-      "time_horizon": "2 Wochen",
-      "expected_move_pct": {
-        "low": 1.5,
-        "high": 5.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 305.0,
-        "high": 320.0,
-        "currency": "USD"
-      },
-      "thesis": "WWDC-Keynote ist der Katalysator für Siri 2.0 und On-Device-KI-Features, die Apple von Hyperscaler-Capex-Rüstung unterscheiden. Markieren könnte Rückkehr zu Apple-spezifischen KI-Narrativ, statt Abhängigkeit von Google-Partnerschaft.",
-      "risks": "Wenn KI-Ankündigungen nicht über Erwartungen hinausgehen oder als inkrementell wahrgenommen werden, könnte Kurs post-event korrigieren.",
-      "first_seen": "2026-05-14",
-      "last_updated": "2026-05-25T20:23:13.252725+02:00"
-    }
-  ],
-  "archive": [
-    {
       "company": "NVIDIA",
       "rating": 5,
       "event_basis": "Q1 FY27 Earnings on 2026-05-22 (after market close). CEO Huang's participation in US-China summit signals potential export pathway recovery; hyperscaler capex spending on track for $725B+ combined annually.",
@@ -75,7 +85,15 @@
       "thesis": "CEO Huang's participation in US delegation summit with China suggests potential pathway for advanced chip exports, removing regulatory headwinds on Chinese demand. Combined with sustained AI capex momentum and hyperscaler combined 2026 spending projections tracking near $725 billion, above earlier expectations, NVIDIA positioned for earnings beat and raised guidance.",
       "risks": "Geopolitical detente could reverse if US-Iran tensions escalate; inflation surprise may prompt Warsh Fed to signal rate-hold policy extending into H2 2026.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-05-13T16:59:17.634691+02:00"
+      "last_updated": "2026-05-13T16:59:17.634691+02:00",
+      "performance": {
+        "status": "no_target",
+        "price_at_event": 215.08,
+        "price_14d_after": 204.91,
+        "pct_change_14d": -4.73,
+        "in_target_range": null,
+        "evaluated_at": "2026-06-05"
+      }
     },
     {
       "company": "Walmart",
@@ -96,7 +114,15 @@
       "thesis": "Walmart-Guidance warnt vor Brennstoffkosten und defensiven Konsum-Patterns (Lebensmittel vs. Luxus) — Markt sah das als Konjunktur-Warnsignal. Aktie fiel -6,4 % auf Enttäuschung. Kurzfristig bleibt Druck, da Konsumrückgang keine schnelle Recovery erwartet.",
       "risks": "Überverkauf könnte Rebound auslösen, wenn Öl- / Energiepreise fallen; E-Commerce-Wachstum und Marketplace-Fees bilden Margenstütze — könnte Anleger anziehen. Consensus revidiert derzeit nach unten.",
       "first_seen": "2026-05-18",
-      "last_updated": "2026-05-21T20:54:38.155626+02:00"
+      "last_updated": "2026-05-21T20:54:38.155626+02:00",
+      "performance": {
+        "status": "miss",
+        "price_at_event": 121.34,
+        "price_14d_after": 117.74,
+        "pct_change_14d": -2.97,
+        "in_target_range": false,
+        "evaluated_at": "2026-06-05"
+      }
     },
     {
       "company": "NVIDIA",
@@ -119,10 +145,14 @@
       "first_seen": "2026-05-13",
       "last_updated": "2026-05-20T07:04:23.073733+02:00",
       "performance": {
-        "status": "pending",
-        "evaluated_at": null
+        "status": "miss",
+        "price_at_event": 223.21,
+        "price_14d_after": 214.5,
+        "pct_change_14d": -3.9,
+        "in_target_range": false,
+        "evaluated_at": "2026-06-05"
       }
     }
   ],
-  "updated_at": "2026-05-25T20:23:13.252725+02:00"
+  "updated_at": "2026-06-05T20:55:18.120863+02:00"
 }

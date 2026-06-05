@@ -1,0 +1,482 @@
+{
+  "date": "2026-06-05",
+  "generated_at": "2026-06-05T20:55:18.119450+02:00",
+  "macro": {
+    "market_state": "Märkte unter Druck: Der S&P 500 fiel um -1,60 %, der Nasdaq um -0,70 %. Tech-Titel erleben Gewinnmitnahmen nach Broadcom-Warnung zu AI-Chip-Nachfrage. Die Halbleiter-Schwäche zieht die gesamte Tech-Branche nach unten.",
+    "macro_drivers": "Broadcoms enttäuschender AI-Chip-Ausblick hat eine Verkaufswelle in Semiconductors ausgelöst. Ein stärkeres US-Arbeitsmarktbild (172.000 neue Stellen im Mai) treibt Renditen nach oben und belastet wachstumsorientierte Titel. Geopolitische Spannungen mit dem Iran und Ölpreis-Volatilität bleiben Risiken.",
+    "sentiment": "Risk-off mit Fokus auf Gewinnmitnahmen — Anleger rotieren aus Tech in Defensive Sektoren. Sorgen wegen überteuerter AI-Bewertungen nehmen zu.",
+    "sp500": "5.842 (-1,6 %)",
+    "nasdaq": "26.600 (-0,7 %)",
+    "dax": "19.200 (+0,2 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet C",
+        "Microsoft",
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Broadcom-Warnung löst Halbleiter-Ausverkauf aus — NVIDIA, AMD und Intel unter Druck",
+          "rating": 5,
+          "summary": "Broadcoms enttäuschendes AI-Chip-Umsatz-Ziel hat eine massive Verkaufswelle in der Halbleiter-Branche ausgelöst. NVIDIA fiel intraday um 4,9 %, Intel stürzte um über 9 % ab. Der Sektor kämpft mit Profitnahmen nach einem extremen Rally. Branchenbeobachter warnen vor aufgeweichtem AI-Nachfrage-Wachstum.",
+          "price_change": "-5,0 % (Sektor)",
+          "investor_relevance": "Direkter Treffer auf 50 % des Portfolios (Tech-fokussiert). Starke Gewinnmitnahmen deuten auf Neubewertung AI-getriebener Wachstumserwartungen hin."
+        },
+        {
+          "priority": "lightning",
+          "title": "Apple WWDC 2026 Keynote am 8. Juni — Siri 2.0 & iOS 27 als Hauptkatalysten",
+          "rating": 4,
+          "summary": "Apple wird am Montag, 8. Juni 2026, 10:00 PT (13:00 ET) die WWDC-Keynote streamen. Erwartet werden iOS 27, verbesserte Siri mit Chatbot-Features (mit Google-Gemini-Unterstützung) und erweiterte Apple Intelligence. Morgan Stanley sieht Bull-Case bis 365–385 USD, mit Upside zu 440 USD bei gelungener AI-Story.",
+          "investor_relevance": "Kritischer Test für Apples AI-Glaubwürdigkeit nach Verzögerungen. Der Markt hat hohe Erwartungen — Überraschungen (positiv oder negativ) könnten +5 bis -3 % bewegen."
+        },
+        {
+          "priority": "pin",
+          "title": "Alphabet plant 80-Milliarden-Dollar-Kapitalerhöhung zur Finanzierung AI-Infrastruktur",
+          "rating": 3,
+          "summary": "Alphabet kündigte Pläne an, 80 Mrd. USD über Aktienemissionen und börsennotierte Angebote ab Q3 2026 zu beschaffen. Ziel ist die Finanzierung von AI-Datenzentren (Capex 2026: 180–190 Mrd. USD, signifikant höher 2027). Aktie fiel 2 % im Pre-Market.",
+          "investor_relevance": "Verdünnung für Aktionäre, aber strategisch notwendig für AI-Führerschaft. Google Cloud wächst 63 % YoY — Investitionen sind gerechtfertigt."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard",
+        "Berkshire Hathaway B"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Finanzsektor schlägt Tech in Rotation — Defensive Käufe nach Chip-Ausverkauf",
+          "rating": 3,
+          "summary": "JPMorgan (+3,3 %), Visa (+2,5 %) und Finanz-ETFs profitierten von Flucht aus Tech. Der Dow stieg trotz Tech-Verluste auf Rekordhoch, angetrieben durch Healthcare und Finanzwerte. Muster deutet auf Sektorrotation aus AI-Titeln in Defensives hin.",
+          "investor_relevance": "MasterCard (2 % Portfolio) könnte von Rotation-Flows profitieren. Langfristig: Starke Kreditnachfrage durch Unternehmen gestützt wird stabilem Arbeitsmarkt."
+        }
+      ]
+    },
+    {
+      "name": "Verbrauchsgüter & Defensive",
+      "emoji": "🛒",
+      "positions_mentioned": [
+        "Walmart"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Consumer Staples Sektor klettert +2 % — Profiteur der Tech-Flucht",
+          "rating": 3,
+          "summary": "Procter & Gamble (+5 %), Clorox (+5 %), Walmart (+2 %) führen defensiven Aufschwung an. Consumer Staples notiert bei +2,0 % — beste Performance unter S&P 500 Sub-Indizes. Muster zeigt klassische Risk-off-Rotation.",
+          "investor_relevance": "Watch-Position Walmart profitiert von Flucht in Stabilitätswerte. Konsumsendenzen bleiben robust — solide Grundlage für Massenkonsumgüter."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Apple",
+      "rating": 4,
+      "event_basis": "WWDC 2026 Keynote am 8. Juni 10:00 PT — iOS 27, Siri 2.0 (mit Google-Gemini), erweiterte Apple Intelligence sind zentrale Katalysatoren. Wall Street stuft Event als Jahres-AI-Test für Apple ein.",
+      "event_date": "2026-06-08",
+      "time_horizon": "2-3 Tage",
+      "expected_move_pct": {
+        "low": 1.5,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 305.0,
+        "high": 320.0,
+        "currency": "USD"
+      },
+      "thesis": "Wedbush ($400 Ziel), Bank of America ($380) und Morgan Stanley ($365–385, Bull-Case $440) haben Kursziele massiv erhöht. Erfolgreiche Siri 2.0-Demo könnte AI-Bewertungslücke zu Microsoft/Alphabet schließen und Momentum zurückbringen.",
+      "risks": "Unzureichend beeindruckende Demo, anhaltend kritische Rezension zu Datenschutz oder Abhängigkeit von Google — Ziel verfehlt."
+    },
+    {
+      "company": "Intel",
+      "rating": 3,
+      "event_basis": "Intel-Apple-Deal ist bestätigt; neue Foundry-Partnerschaft (Amazon, Microsoft, US-Staat, Tesla) soll 2027 Break-Even ermöglichen. Fabrik in Chandler, Arizona in Serie. H2 2026 Roadmap-Updates erwartet.",
+      "event_date": "2026-06-30",
+      "time_horizon": "3-4 Wochen",
+      "expected_move_pct": {
+        "low": -3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Intel ist unter Druck (heute -9 %), aber strategische Partnerschaften und Foundry-Rahmenverträge geben Hoffnung. Bestätigungsevent H2-Roadmap könnte stabilisieren — Beweis, dass Tan-Turnaround funktioniert.",
+      "risks": "Weitere Halbleiter-Abschwächung, Foundry-Margen-Dilution, Konkurrenz von TSMC/Samsung bleibt unüberwindbar."
+    }
+  ],
+  "forecast": {
+    "commentary": "Portfolio und Markt erleben Konsolidierung nach extremem AI-Rally. Broadcom-Warnung löste massive Profitnahmen in Semicondors/Tech aus, während Defensives profitiert. Apple-WWDC ist unmittelbar ein Katalysator für die Position (9,94 % des Portfolios). Nächste 4 Wochen kritisch: Märkte prüfen, ob AI-Capex-Investitionen rentabel werden oder nur Bubble-Zeichen sind. ECB-Sitzung 12. Juni wird Zinserwartungen neu bewerten — fallende Fed-Zinsen stützen Tech mittelfristig, aber Short-Seller profitieren von Volatilität.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.5,
+        "expected_change_90d_pct": 8.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "WWDC 8. Juni Siri 2.0 Reveal",
+          "Google-Partnerschaft AI-Glaubwürdigkeit",
+          "iPhone-17-Zyklus im H2 2026"
+        ],
+        "thesis": "WWDC ist Make-or-Break für AI-Story; Wedbush & BofA Upgrades signalisieren Upside-Potenzial auf 380–400 USD.",
+        "pros": [
+          "Siri 2.0 mit Gemini-Integration löst Erwartungs-Backlog",
+          "Services-Segment wächst stabil 15+ % YoY",
+          "Hohe Cashflow-Generierung stützt Rückkäufe"
+        ],
+        "cons": [
+          "iPhone-Absatz in China rückläufig",
+          "Abhängigkeit von Google bei AI sichtbar",
+          "Gewinnmitnahmen nach 2-Monats-Rally unwahrscheinlich sofort"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Broadcom-Warnung bremst Sektor",
+          "Q2 Guidance 91 Mrd. USD Umsatz",
+          "Rubin-Ramp & China-Exporte"
+        ],
+        "thesis": "Massive Gewinnmitnahmen nach 17 % YTD-Rally; Broadcom-Schwäche schürt Angst vor Demand-Abschwächung, aber NVIDIA-Fundamentals bleiben stark.",
+        "pros": [
+          "Blockbuster Q1 FY27 Earnings (85 % YoY Wachstum)",
+          "Rubin-Sampling & GPU-Nachfrage ungebrochen",
+          "Analyst-Targets 298 USD ~ +35 % Upside"
+        ],
+        "cons": [
+          "Broadcom-Warnung schürt Duopol-Sorgen",
+          "Custom-Chip-Konkurrenz (Google, Meta, Amazon) nimmt zu",
+          "Bewertung auf Forward-P/E 25 ambitioniert gegeben Zyklusrisiko"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 6.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "80-Mrd. Kapitalerhöhung ab Q3",
+          "Google Cloud +63 % YoY Wachstum",
+          "Capex-Guidance Erhöhung 2026-2027"
+        ],
+        "thesis": "80-Mrd.-Angebot bremst kurzfristig; aber Google Cloud Momentum und Search-AI-Integration bleiben langfristig Stärken.",
+        "pros": [
+          "Google Cloud als Gewinner AI-Build-out (63 % YoY)",
+          "Search-Integrationen (AI Overviews) treiben Nutzer-Engagement",
+          "Backlog fast verdoppelt in 3 Monaten"
+        ],
+        "cons": [
+          "Massive Kapitalerhöhung verwässert Aktien",
+          "Capex explodiert 2027 über 190 Mrd. USD",
+          "Rendite auf AI-Invests noch unbewiesen"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS +28 % YoY Wachstum, aber AI-Capex drückt FCF",
+          "Retail-Margen unter Druck durch Logistik-Kosten",
+          "AI-Dienste & Custom Chips (Trainium/Inferentia)"
+        ],
+        "thesis": "AWS ist Cloud-Gewinner, aber Capex-Bludgeoning (200 Mrd. 2026) reduziert Free Cash Flow auf 1,2 Mrd. TTM — Investoren skeptisch.",
+        "pros": [
+          "AWS bleibt Cashcow mit 28 % Wachstum",
+          "Custom-Chip-Initiative reduziert NVIDIA-Abhängigkeit",
+          "Advertising-Segment wächst zweistellig"
+        ],
+        "cons": [
+          "FCF kollabiert von 25,9 Mrd. auf 1,2 Mrd. TTM wegen Capex",
+          "Retail-Margen erodieren unter Wettbewerbsdruck",
+          "Payoff auf AI-Investitionen noch unklar"
+        ]
+      },
+      {
+        "company": "S&P 500 (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Tech-Sektor-Volatilität + Gewinnmitnahmen",
+          "Arbeitsmarkt-Resilienz (172k Stellen Mai)",
+          "Fed-Pfad unklar, Zinsen nach oben bei starken Daten"
+        ],
+        "thesis": "Index pendelt bei Rekordhoch; starker Arbeitsmarkt stützt, aber Tech-Selloff bremst. Rotation in Defensive moderiert Gesamtgewinn.",
+        "pros": [
+          "Breite Gewinn-Überraschungen (85 % YoY)",
+          "Defensive Sektoren (Staples, Healthcare, Financials) im Aufschwung",
+          "10 Wochen Gewinn-Streak — Momentum stark"
+        ],
+        "cons": [
+          "Tech-Konzentration (Magnificent 7) riskant",
+          "Broadcom-Schwäche signalisiert AI-Demand-Verlangsamung",
+          "Bewertungen auf historischen Hochs — wenig Puffer"
+        ]
+      },
+      {
+        "company": "MSCI World (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "US Tech-Schwäche bremst globalen Index",
+          "Europäische Defensives (Pharma, Utilities) stabil",
+          "EZB-Sitzung 12. Juni — Zinserwartungen"
+        ],
+        "thesis": "MSCI World folgt S&P 500 mit Verzögerung; europäische Bottom-Up-Werte stabilisieren, aber US-Tech-Dominanz drückt.",
+        "pros": [
+          "Geografische Diversifikation puffert US-Schwäche",
+          "EZB könnte Zinssenkungen signalisieren — supportiv",
+          "Emerging Markets nicht im Index, reduziert China-Risiko"
+        ],
+        "cons": [
+          "50 % des Index ist US-Tech — nicht wirklich diversifiziert",
+          "Europäische Wirtschaft läuft unter Kapazität",
+          "Eurozone-Inflation noch nicht komplett besiegt"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China (ETF)",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "US-Zinsen hoch wegen Arbeitsmarkt",
+          "Kapitalflucht zu sicheren Häfen (Dollar-Stärke)",
+          "Emerging-Market-Währungen unter Druck"
+        ],
+        "thesis": "Rising US Rates = outflow pressure; EM ohne China bietet keine China-Hedge-Benefits, nur Schwellenländer-Volatilität.",
+        "pros": [
+          "China-Ausschluss reduziert geopolitisches Risiko",
+          "Einige EM-Länder (Indien, Brasilien) gutes Wachstum",
+          "Bewertungen niedrig relativ zu entwickelten Märkten"
+        ],
+        "cons": [
+          "USD-Stärke bremst EM-Valuationen in USD",
+          "Ohne China fehlt der Größen-Anker",
+          "Geopolitische Risiken (Iran, Naher Osten) treffen EM stärker"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology (ETF)",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 5.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Broadcom-Warnung zu AI-Demand",
+          "NVIDIA, AMD, Micron unter massivem Druck",
+          "Chips-ETF SOXX schlechtester Tag seit März"
+        ],
+        "thesis": "17,91 % Portfolio-Gewicht in Tech-ETF ist überhaupt & analog zum Single-Stock Risk; Broadcom-Shock vergrößert Korrektur-Potenzial.",
+        "pros": [
+          "Verdünnung von Einzelstock-Risiken (vs. NVIDIA 5 %)",
+          "Long-term AI-Trend bleibt intakt",
+          "Breitere Halbleiter-Basis (nicht nur GPUs)"
+        ],
+        "cons": [
+          "Heute -5 % Sektor-Move — doppelt so schlecht wie Markt",
+          "Broadcom-Guidance reissue schlägt Confidence",
+          "Weiterer Downside-Risk, wenn Demand-Revision anhält"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Consumer Staples +2 % heute — Sektor-Rotation",
+          "Arbeitsmarkt robust — Konsumenten-Kraft bleibt",
+          "E-Commerce-Wachstum zweistellig"
+        ],
+        "thesis": "Walmart profitiert von Risk-off-Rotation und stabilen Konsumentenausgaben; Heute +2 % bei Tech-Selloff zeigt defensive Kraft.",
+        "pros": [
+          "Konsum-Stabilität durch stabilen Arbeitsmarkt",
+          "Marginenverbesserungen durch Skalierung",
+          "HealthTech & Advertising sind schnelle Wachstums-Segmente"
+        ],
+        "cons": [
+          "Lohnkostenruck durch Mindestlohn-Erhöhungen",
+          "Zoll-Unsicherheit drückt Handelskosten",
+          "Wettbewerb von Amazon auf den Absatz"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Tech-Sektor-Schwäche drückt auf Wachstumswerte",
+          "EV-Markt-Konkurrenz verschärft sich (China, EU)",
+          "Elon-Risiken: SpaceX IPO Distraction, Trump-Politique"
+        ],
+        "thesis": "Tesla ist Opfer breiter Tech-Profitnahmen; Fundamental ist EV-Markt fragmentierend — wenig Kurskatalysten bis Q3 Earnings.",
+        "pros": [
+          "Technologische Leaderschaft in autonomem Fahren",
+          "Neue Modelle (Tesla Two, Semi) im Ramp",
+          "Gigafactory-Expansion (Berlin, Austin) voranschreitend"
+        ],
+        "cons": [
+          "Konkurrenz von etablierten Herstellern (VW, Ford, GM) intensiviert",
+          "Chinesische EV-Anbieter (BYD) preisgünstiger",
+          "Elon's Ablenkungen (X, Neuralink, SpaceX) Governance-Risik"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -5.0,
+        "expected_change_90d_pct": 0.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Krypto unter Druck; BTC -3,5 % heute",
+          "Massive ETF-Outflows in dieser Woche",
+          "Kapital fließt zu AI-Infrastruktur-Trades"
+        ],
+        "thesis": "Bitcoin bei 61.914 USD — schlechteste Woche seit Februar. Kapitalmigration weg von spekulativen Assets hin zu Tech-Hardware überwältigt Halving-Narrative.",
+        "pros": [
+          "Halving-Zyklus (April 2024) mittelfristig supportiv",
+          "Institutional Adoption (Spot-ETFs) bleiben",
+          "Makro-Szenarien (schwache Zinsen 2027) bullish mittelfristig"
+        ],
+        "cons": [
+          "ETF-Outflows in Rekordvolumen; technisches Verkaufs-Signal",
+          "Crypto-Spekulanten rotation in AI-Plays — nicht-zurückkehr",
+          "Regulatory-Headwinds (US, EU) belasten Sentiment"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -6.0,
+        "expected_change_90d_pct": -1.0,
+        "uncertainty_pct": 9.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "ETH mitkaufen auf BTC-Verkaufswelle",
+          "DeFi-Volumen niedrig; Layer-2-Konkurrenz",
+          "Staking-Yields unter Druck"
+        ],
+        "thesis": "Ethereum ist strukturell schwächer als Bitcoin — keine Halving, umfangreichere Konkurrenz durch Solana/Layer-2s. Capital-Outflows accelerieren.",
+        "pros": [
+          "Shanghai-Upgrade (Staking) stabilisiert langfristig",
+          "DeFi-Produktivität ermöglicht positive Cashflows",
+          "Rollups (Arbitrum, Optimism) Netzwerk-Effekt"
+        ],
+        "cons": [
+          "BTC ist Digital Gold; ETH hat schwächere narrative",
+          "Konkurrenz von Solana, Polygon spitz zu",
+          "Staking-APY fällt — minder attraktiv für Holder"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Luftfahrtsektor stabil — Tourismus-Genesung",
+          "Defence Budget-Stärkung unter Trump",
+          "Produktionsrückstau noch nicht aufgelöst"
+        ],
+        "thesis": "Boeing profitiert von Defence-Spending, aber Kommerz-Flugzeug-Produktion bleibt fragmentiert. Keine unmittelbaren Kurstreiber bis Quartalszahlen.",
+        "pros": [
+          "Globale Flugverkehr +7–10 % 2026 erwartet",
+          "Defence-Portfolio gestärkt durch Geopolitik",
+          "Kostensenkungs-Maßnahmen verbessern Margen"
+        ],
+        "cons": [
+          "Supply-Chain-Probleme (Max 7 Return) noch nicht gelöst",
+          "Konkurrenz von Airbus verschärft sich",
+          "Reputationsrisiko (Safety-Skandale) noch nicht vollständig begraben"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-06-08",
+      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Siri 2.0, Apple Intelligence",
+      "relevant_for": "Apple, Markt-Sentiment zu AI im Tech",
+      "rating": 4
+    },
+    {
+      "date": "2026-06-11",
+      "event": "NVIDIA CEO Huang testet vor Senat Banking Committee zu China-Chiprückhalt",
+      "relevant_for": "NVIDIA, Geopolitisches Risiko, Export Controls",
+      "rating": 4
+    },
+    {
+      "date": "2026-06-12",
+      "event": "EZB Sitzung & Geldpolitische Entscheidung — Zinsausblick",
+      "relevant_for": "Gesamtmarkt, Euro-Sektor, Bewertungen",
+      "rating": 4
+    },
+    {
+      "date": "2026-06-12",
+      "event": "SpaceX IPO Debut an NASDAQ (geplant) — neuer Space-Tech-Sektor-Punkt",
+      "relevant_for": "Tech-Branche, Raumfahrt-Ökosystem, Elon-Narrative",
+      "rating": 3
+    }
+  ],
+  "usage": {
+    "input_tokens": 62434,
+    "output_tokens": 8469
+  }
+}

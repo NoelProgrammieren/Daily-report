@@ -1,6 +1,29 @@
 {
   "takes": [
     {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Google hat Intel damit beauftragt, mehr als 3 Millionen TPU-Chips bis 2028 herzustellen; NVIDIA evaluiert Intels 18A-Prozess und erweiterte Verpackungstechnologien für eine Grafikprozessor-Mehrfach-Chip-Konstruktion. Mehrere Hyperscaler (Google, Tesla, Microsoft, AWS) bewegen sich jetzt bei Foundry-Engagements. Nächster Katalysator: Q3/Q4 2026 Customer-Ankündigungen.",
+      "event_date": "2026-06-30",
+      "time_horizon": "2-4 Wochen",
+      "expected_move_pct": {
+        "low": 3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Google-TPU-Deal + potenzielle NVIDIA-Engagements signalisieren, dass Hyper-Skalenbauer ernst machen mit Lieferketten-Diversifizierung. Intels 18A/14A-Validierung durch externe Kunden wird zum wirtschaftlichen Wendepunkt.",
+      "risks": "Intels SEC-Unterlagen haben wiederholt Risiken vermerkt, dass externen Kunden-Volumen begrenzt bleibt; die bloße Prozessläufigkeit ohne externe Volumen, Vertrauen und Skalierbarkeit, die ein Foundry-Geschäft benötigt, wurde bislang nicht demonstriert.",
+      "first_seen": "2026-05-13",
+      "last_updated": "2026-06-12T20:59:27.170801+02:00"
+    }
+  ],
+  "archive": [
+    {
       "company": "Apple",
       "rating": 4,
       "event_basis": "WWDC 2026 Keynote am 8. Juni 10:00 PT — iOS 27, Siri 2.0 (mit Google-Gemini), erweiterte Apple Intelligence sind zentrale Katalysatoren. Wall Street stuft Event als Jahres-AI-Test für Apple ein.",
@@ -22,29 +45,6 @@
       "last_updated": "2026-06-05T20:55:18.120863+02:00"
     },
     {
-      "company": "Intel",
-      "rating": 3,
-      "event_basis": "Intel-Apple-Deal ist bestätigt; neue Foundry-Partnerschaft (Amazon, Microsoft, US-Staat, Tesla) soll 2027 Break-Even ermöglichen. Fabrik in Chandler, Arizona in Serie. H2 2026 Roadmap-Updates erwartet.",
-      "event_date": "2026-06-30",
-      "time_horizon": "3-4 Wochen",
-      "expected_move_pct": {
-        "low": -3.0,
-        "high": 7.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 26.0,
-        "high": 32.0,
-        "currency": "USD"
-      },
-      "thesis": "Intel ist unter Druck (heute -9 %), aber strategische Partnerschaften und Foundry-Rahmenverträge geben Hoffnung. Bestätigungsevent H2-Roadmap könnte stabilisieren — Beweis, dass Tan-Turnaround funktioniert.",
-      "risks": "Weitere Halbleiter-Abschwächung, Foundry-Margen-Dilution, Konkurrenz von TSMC/Samsung bleibt unüberwindbar.",
-      "first_seen": "2026-05-13",
-      "last_updated": "2026-06-05T20:55:18.120863+02:00"
-    }
-  ],
-  "archive": [
-    {
       "company": "Apple",
       "rating": 4,
       "event_basis": "Intel diversification deal validation; path to WWDC (June 4) with expected AI announcements. Apple hit all-time intraday high of $290.33, now at $300.",
@@ -53,7 +53,11 @@
       "thesis": "Deal would gain steady stream of demand for Intel foundry, key milestone for contract manufacturing. WWDC catalyst sets up product strategy for 2026-27 iPhone/Mac cycle with manufacturing optionality. Supply chain diversification reduces TSMC concentration risk.",
       "risks": "Stock at all-time highs with sentiment elevated; any product announcement shortfall or delayed Intel ramp could trigger profit-taking.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-05-14T09:43:37.554205+02:00"
+      "last_updated": "2026-05-14T09:43:37.554205+02:00",
+      "performance": {
+        "status": "pending",
+        "evaluated_at": null
+      }
     },
     {
       "company": "Intel",
@@ -74,7 +78,11 @@
       "thesis": "Terafab-Anhörung könnte Steueranreize für Megafab-Finanzierung validieren und damit die Foundry-Fähigkeit Intels unterstreichen. Q1-Foundry-Umsatz wuchs bereits 16 Prozent YoY; politische Genehmigung wäre langfristiger Katalysator für Kostenstruktur.",
       "risks": "Politische Verzögerung oder Widerstand könnten Kurs-Auftrieb bremsen. Bewertung ist auch nach April-Rally noch ambitioniert (904x trailing P/E).",
       "first_seen": "2026-05-16",
-      "last_updated": "2026-05-25T20:23:13.252725+02:00"
+      "last_updated": "2026-05-25T20:23:13.252725+02:00",
+      "performance": {
+        "status": "pending",
+        "evaluated_at": null
+      }
     },
     {
       "company": "NVIDIA",
@@ -154,5 +162,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-05T20:55:18.120863+02:00"
+  "updated_at": "2026-06-12T20:59:27.170801+02:00"
 }

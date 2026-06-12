@@ -1,21 +1,16 @@
 {
-  "updated_at": "2026-06-05T20:55:30.077308+02:00",
+  "updated_at": "2026-06-12T20:59:35.149715+02:00",
   "indices": [
     {
       "name": "Core S&P 500",
       "short": "S&P 500",
       "ticker": "SXR8.DE",
-      "last_close": 698.3,
-      "prev_close": 700.74,
-      "change_pct": -0.35,
+      "last_close": 691.86,
+      "prev_close": 681.24,
+      "change_pct": 1.56,
       "currency": "EUR",
-      "last_date": "2026-06-05",
+      "last_date": "2026-06-12",
       "sparkline": [
-        655.72,
-        655.14,
-        653.38,
-        655.38,
-        656.58,
         661.44,
         666.0,
         671.46,
@@ -40,24 +35,24 @@
         703.94,
         701.76,
         700.74,
-        698.3
+        698.3,
+        693.26,
+        682.52,
+        681.7,
+        681.24,
+        691.86
       ]
     },
     {
       "name": "MSCI World",
       "short": "MSCI World",
       "ticker": "EUNL.DE",
-      "last_close": 123.33,
-      "prev_close": 123.91,
-      "change_pct": -0.46,
+      "last_close": 122.9,
+      "prev_close": 120.89,
+      "change_pct": 1.67,
       "currency": "EUR",
-      "last_date": "2026-06-05",
+      "last_date": "2026-06-12",
       "sparkline": [
-        116.72,
-        116.63,
-        116.25,
-        116.34,
-        117.04,
         117.4,
         118.24,
         119.57,
@@ -82,24 +77,24 @@
         124.3,
         123.89,
         123.91,
-        123.33
+        123.33,
+        122.62,
+        120.93,
+        120.69,
+        120.89,
+        122.9
       ]
     },
     {
       "name": "MSCI World IT",
       "short": "World IT",
       "ticker": "XDWT.DE",
-      "last_close": 122.86,
-      "prev_close": 126.16,
-      "change_pct": -2.62,
+      "last_close": 121.24,
+      "prev_close": 118.3,
+      "change_pct": 2.49,
       "currency": "EUR",
-      "last_date": "2026-06-05",
+      "last_date": "2026-06-12",
       "sparkline": [
-        108.02,
-        107.62,
-        106.26,
-        107.46,
-        106.5,
         108.14,
         109.94,
         111.88,
@@ -124,24 +119,24 @@
         129.54,
         128.78,
         126.16,
-        122.86
+        122.86,
+        122.92,
+        118.26,
+        117.58,
+        118.3,
+        121.24
       ]
     },
     {
       "name": "MSCI EM ex China",
       "short": "EM ex China",
       "ticker": "EMXC.DE",
-      "last_close": 39.99,
-      "prev_close": 41.62,
-      "change_pct": -3.9,
+      "last_close": 41.35,
+      "prev_close": 39.95,
+      "change_pct": 3.5,
       "currency": "EUR",
-      "last_date": "2026-06-05",
+      "last_date": "2026-06-12",
       "sparkline": [
-        36.9,
-        36.97,
-        36.44,
-        36.62,
-        36.76,
         37.44,
         38.4,
         39.4,
@@ -166,24 +161,24 @@
         42.7,
         42.38,
         41.62,
-        39.99
+        39.99,
+        39.86,
+        39.62,
+        39.28,
+        39.95,
+        41.35
       ]
     },
     {
       "name": "Russell 2000 US Small Cap",
       "short": "Russell 2000",
       "ticker": "ZPRR.DE",
-      "last_close": 72.66,
-      "prev_close": 73.52,
-      "change_pct": -1.17,
+      "last_close": 74.61,
+      "prev_close": 72.82,
+      "change_pct": 2.46,
       "currency": "EUR",
-      "last_date": "2026-06-05",
+      "last_date": "2026-06-12",
       "sparkline": [
-        69.21,
-        69.14,
-        68.45,
-        68.29,
-        69.01,
         69.77,
         70.63,
         71.33,
@@ -208,20 +203,20 @@
         73.33,
         72.84,
         73.52,
-        72.66
+        72.66,
+        72.5,
+        71.71,
+        72.18,
+        72.82,
+        74.61
       ]
     }
   ],
   "risk_indicators": {
     "vix": {
-      "value": 19.33,
-      "change_pct": 25.52,
+      "value": 18.2,
+      "change_pct": -6.38,
       "sparkline": [
-        18.02,
-        17.83,
-        18.81,
-        16.89,
-        16.99,
         18.29,
         17.38,
         17.39,
@@ -246,14 +241,19 @@
         15.77,
         16.06,
         15.4,
-        19.33
+        21.51,
+        18.92,
+        19.87,
+        22.22,
+        19.44,
+        18.2
       ]
     },
     "yield_spread_10y_2y": {
       "value_bps": 9,
-      "change_bps": 1,
+      "change_bps": 0,
       "interpretation": "normal",
-      "y10_pct": 0.454,
+      "y10_pct": 0.448,
       "y2_pct": 0.362
     }
   }

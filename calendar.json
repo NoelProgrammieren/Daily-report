@@ -1,69 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-06-08",
-      "event": "Apple WWDC Keynote",
-      "relevant_for": "Apple, Informationstechnologie",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote & Platforms State of the Union (10:00 PT)",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (Montag, 10:00 PT)",
-      "relevant_for": "Apple, KI-Ankündigungen, Siri 2.0",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (10:00 PT)",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (10:00 PT) — erwartete Apple Intelligence & Siri-Ankündigungen",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (10:00 PT) — Apple Intelligence & Siri 2.0-Ankündigungen",
-      "relevant_for": "Apple, Software-Innovation, Informationstechnologie",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-08",
-      "event": "Apple WWDC 2026 Keynote (10:00 PT) — iOS 27, Apple Intelligence, Siri 2.0-Ankündigungen",
-      "relevant_for": "Apple",
-      "rating": 4,
-      "category": "product"
-    },
-    {
-      "date": "2026-06-11",
-      "event": "NVIDIA CEO Huang testet vor US-Senat Banking Committee zu China-Chipverkäufen & Export Controls",
-      "relevant_for": "NVIDIA, Geopolitik",
-      "rating": 4,
-      "category": "political"
-    },
-    {
       "date": "2026-06-12",
       "event": "ECB Sitzung",
       "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
@@ -83,6 +20,41 @@
       "relevant_for": "Gesamtmarkt, Europäische Aktien",
       "rating": 4,
       "category": "fed"
+    },
+    {
+      "date": "2026-06-12",
+      "event": "EZB-Sitzung & Geldpolitische Entscheidung – Zinserhöhung um 25 Basispunkte verkündet",
+      "relevant_for": "Gesamtmarkt, EUR, Europäische Indizes, MasterCard (International-Exposure)",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-16",
+      "event": "FOMC-Sitzung beginnt; Bank of Japan Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, S&P 500, NASDAQ, USD",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC Zinsentscheid, Mai Einzelhandelsumsätze, ausstehende Hausverkäufe",
+      "relevant_for": "Gesamtmarkt, S&P 500, Finanzdienstleistungen, Konsumtitel",
+      "rating": 5,
+      "category": "fed"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "Nächste EZB-Sitzung",
+      "relevant_for": "Europäischer Markt, EUR, DAX",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, MSCI World IT ETF, Cloud-Sektor",
+      "rating": 5,
+      "category": "earnings"
     },
     {
       "date": "2026-07-29",
@@ -111,7 +83,14 @@
       "relevant_for": "Microsoft, Cloud-Sektor",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings-Event (ggf. Duplikat mit 28. Juli)",
+      "relevant_for": "Microsoft, MSCI World IT ETF",
+      "rating": 5,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-06-05T20:55:18.120526+02:00"
+  "updated_at": "2026-06-12T20:59:27.170500+02:00"
 }

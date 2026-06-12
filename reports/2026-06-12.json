@@ -1,0 +1,454 @@
+{
+  "date": "2026-06-12",
+  "generated_at": "2026-06-12T20:59:27.169499+02:00",
+  "macro": {
+    "market_state": "Der S&P 500 notierte unverändert, der Dow Jones stieg um 0,57 %, während der Nasdaq um 0,30 % nachgab. Die Märkte bewegen sich in einer gemischten Stimmung zwischen Hoffnung auf einen US-Iran-Deal und Volatilität rund um das SpaceX-IPO.",
+    "macro_drivers": "Die USA und der Iran könnten einen Friedensabkommen unterzeichnen, das eine US-Verpflichtung zur Aufhebung der Ölsanktionen und dem Iranischen Versprechen, die Straße von Hormuz innerhalb von 30 Tagen wiederzueröffnen, beinhaltet. Die EZB erhöhte die Leitzinssätze um 25 Basispunkte, mit Wirkung vom 17. Juni 2026, was europäische Märkte unter Druck setzt. KI-Infrastrukturunternehmen schwanken vor dem SpaceX-IPO, das 75 Milliarden Dollar für Investitionen in Rechenzentren aufbringt.",
+    "sentiment": "Risikobereitschaft mit Vorsicht – Friedensgespräche stützen Kurse, aber Tech-Volatilität und EZB-Zinserhöhung bremsen Euphorie.",
+    "sp500": "7.407 (+0,0 %)",
+    "nasdaq": "25.798 (-0,3 %)",
+    "dax": "19.280 (-0,8 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet C",
+        "Amazon",
+        "Microsoft"
+      ],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "SpaceX IPO mit enormer Überzeichnung und Liquiditätsabfluss aus Tech",
+          "rating": 4,
+          "summary": "SpaceX ging öffentlich unter dem Tickersymbol SPCX mit einem festen Angebotspreis von 135 Dollar je Aktie in Handel, was das Unternehmen mit etwa 1,77 Billionen Dollar bewertet. Das IPO ist übervierfach überzeichnet und soll 75 Milliarden Dollar für Investitionen in Rechenzentren und Rechenkapazität aufbringen. Die massive Kapitalerhebung könnte kurzfristig Liquidität aus Tech-Aktien abziehen.",
+          "investor_relevance": "Großes IPO-Risiko: Historisch signalisieren solche Mega-IPOs Markttoppen und können zu kurzfristiger Volatilität in Tech führen."
+        },
+        {
+          "priority": "pin",
+          "title": "Apple und Amazon schwächeln im Intraday-Handel",
+          "rating": 2,
+          "summary": "Amazon fiel um 2,17 % und Apple um 1,95 % inmitten der gemischten Marktrotation und SpaceX-IPO-Nervosität. Beide Hyperscaler waren unter den größten Technologie-Verlierern des Tages.",
+          "investor_relevance": "Kurzfristige Softness bei Top-Positionen; keine fundamentalen Katalysatoren, aber Anzeichen von Gewinnmitnahmen."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard",
+        "Berkshire Hathaway B"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Finanzsektor profitiert von Zinserwartungsanpassung nach EZB-Hike",
+          "rating": 3,
+          "summary": "JPMorgan und Goldman Sachs zogen höher, um den Finanzsektor zu stützen. Die EZB erhöhte die Leitzinssätze um 25 Basispunkte, was die Einlagensätze auf 2,25 % hebt. Höhere Zinsen sollten den Nettobetrieb von Kreditgebern stützen, könnten aber wirtschaftliche Aktivität bremsen.",
+          "investor_relevance": "Kursmärker für Finanzdienstleister positiv auf kurzfristige Sicht; Rentabilitätsverbesserung, aber Risiko für breitere Konjunktur."
+        }
+      ]
+    },
+    {
+      "name": "Halbleiter & Foundry",
+      "emoji": "🔌",
+      "positions_mentioned": [
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Google ordert über 3 Millionen TPU-Chips bei Intel für 2028",
+          "rating": 4,
+          "summary": "Berichten zufolge hat Google Intel damit beauftragt, mehr als 3 Millionen TPU-Chips bis 2028 herzustellen, nach umfassender Validierung der erweiterten Verpackungsfähigkeiten. Das könnte etwa die Hälfte von Googles erwarteter TPU-Produktion zwischen 2027 und 2028 ausmachen. Dies ist ein großer strategischer Erfolg für Intels Foundry-Strategie.",
+          "investor_relevance": "Starkes Zeichen für Intels Foundry-Credibilität; diversifiziert Googles Lieferkette weg von reiner TSMC-Abhängigkeit. Liefert klaren Katalysator für Intels 14A-Ramp."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Google hat Intel damit beauftragt, mehr als 3 Millionen TPU-Chips bis 2028 herzustellen; NVIDIA evaluiert Intels 18A-Prozess und erweiterte Verpackungstechnologien für eine Grafikprozessor-Mehrfach-Chip-Konstruktion. Mehrere Hyperscaler (Google, Tesla, Microsoft, AWS) bewegen sich jetzt bei Foundry-Engagements. Nächster Katalysator: Q3/Q4 2026 Customer-Ankündigungen.",
+      "event_date": "2026-06-30",
+      "time_horizon": "2-4 Wochen",
+      "expected_move_pct": {
+        "low": 3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Google-TPU-Deal + potenzielle NVIDIA-Engagements signalisieren, dass Hyper-Skalenbauer ernst machen mit Lieferketten-Diversifizierung. Intels 18A/14A-Validierung durch externe Kunden wird zum wirtschaftlichen Wendepunkt.",
+      "risks": "Intels SEC-Unterlagen haben wiederholt Risiken vermerkt, dass externen Kunden-Volumen begrenzt bleibt; die bloße Prozessläufigkeit ohne externe Volumen, Vertrauen und Skalierbarkeit, die ein Foundry-Geschäft benötigt, wurde bislang nicht demonstriert."
+    }
+  ],
+  "forecast": {
+    "commentary": "Das Portfolio wird von gemischten Makrofaktoren geprägt: Während ein US-Iran-Deal die Ölpreise entlastet und Risikoappetit stützt, legt die EZB-Zinserhöhung Europäische Aktien unter Druck. Die Tech-Volatilität rund um das SpaceX-IPO (75 Milliarden Dollar Kapitalflusses) könnte kurzfristig zu Gewinnmitnahmen führen. Intels Foundry-Erfolg (Google, Tesla, Microsoft, AWS) stellt einen strukturellen Wendepunkt dar. Für die nächsten 4 Wochen: S&P 500 sollte neutral bis leicht positiv abschneiden (+1-2 %), abhängig von FOMC-Signalen nächste Woche. Tech-Rotation weiter möglich; Hyper-Skalenbauer unter Verkaufsdruck vor Earnings (Microsoft 28. Juli).",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "WWDC im Juni (KI-Features)",
+          "iPhone-17-Zyklus",
+          "Lieferketten-Druck China"
+        ],
+        "thesis": "Bewertung bereits anspruchsvoll; wäre Pullback vor Katalysator (WWDC) erwartet, dann Bounce.",
+        "pros": [
+          "Services-Sparte wächst zweistellig",
+          "Hohe Margen trotz Sättigung",
+          "Rückkaufprogramm supportet Kurs"
+        ],
+        "cons": [
+          "iPhone-Absatz in China rückläufig",
+          "Wettbewerb vom Smartphone-Markt",
+          "KI-Upside bereits eingepreist"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 8.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Hyperscaler-Capex ungebremst",
+          "Intels Foundry-Erfolg stärkt NVIDIA-Positionierung",
+          "H100/H200-Nachfrage"
+        ],
+        "thesis": "Intels Foundry-Erfolg bestätigt Hyper-Skalenbauer-Engagement in Diversifizierung; NVIDIA bleibt der primäre GPU-Lieferant für Fallback-Kapazität.",
+        "pros": [
+          "Hyper-Skalenbauer halten Capex-Tempo",
+          "NVIDIA bleibt Quasi-Monopolist bei GPUs",
+          "Datenzentrum-Zyklus weiterhin robust"
+        ],
+        "cons": [
+          "Bewertung auf historischen Höchsten",
+          "Potenzielle Margin-Kompression durch ASP-Druck",
+          "AMD/Intels EMIB könnten Konkurrenz verschärfen"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Intels Foundry-Partnerschaft (3M TPU 2028)",
+          "Gemini-Modell-Momentum",
+          "Search-Wettbewerb bleibt"
+        ],
+        "thesis": "Google's TPU-Fabrikation bei Intel stärkt eigene AI-Agenda; sichert Unabhängigkeit von TSMC, Margen-Upside später.",
+        "pros": [
+          "Gemini überzeugt bei KI-Benchmarks",
+          "Cloud-Wachstum 30%+ YoY",
+          "TPU-Fab-Flexibilität sinkt Kosten langfristig"
+        ],
+        "cons": [
+          "Konzerndiskont in Bewertung bleibt",
+          "YouTube-Wachstum verlangsamt sich",
+          "Regulatory Risk bleibt präsent"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "AWS-Beteiligung an Foundry (Intel)",
+          "Hyperscaler-Capex bleibt",
+          "Retail-Gegenwind weiterhin"
+        ],
+        "thesis": "AWS-Engagement bei Intels 14A signalisiert Vertrauen; aber Retail-Druck und Margin-Erwartungen belasten kurzfristig.",
+        "pros": [
+          "AWS-Wachstum 40%+ bleibt robust",
+          "Intel-Partnerschaft sichert Chip-Souveränität",
+          "Advertising bleibt High-Margin"
+        ],
+        "cons": [
+          "Retail-Margin-Druck hält an",
+          "Advertising-Wettbewerb verschärft sich",
+          "Capex-Belastung für Data-Center bleibt"
+        ]
+      },
+      {
+        "company": "S&P 500 (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 2.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "FOMC nächste Woche (Zins-Pfad)",
+          "US-Iran-Friedens-Deal (Ölpreise)",
+          "Earnings-Saison startet Juli"
+        ],
+        "thesis": "Breiter Index sollte vom Iran-Deal und Zinssenkungshoffnungen gehoben werden; Tech-Rotation könnte Gewinne cappen.",
+        "pros": [
+          "Iran-Deal drückt Ölpreise",
+          "Wirtschaftswachstum solide in USA",
+          "Earnings-Überraschungen wahrscheinlich"
+        ],
+        "cons": [
+          "Tech-Konzentration bleibt Risiko",
+          "EZB-Zinserhöhung dampft Europäer",
+          "Geopolitisches Risiko weiterhin erhöht"
+        ]
+      },
+      {
+        "company": "MSCI World (ETF)",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -0.5,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 2.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "EZB-Zinserhöhung belastet Europa",
+          "UK/Europa-Stagnation",
+          "USD-Stärke"
+        ],
+        "thesis": "EZB-Hike drückt europäische Kurse; globale Entwicklungsländer unter Druck vom USD-Stärke-Zyklus.",
+        "pros": [
+          "Emerging Markets bieten Value",
+          "UK-Inflation scheint unter Kontrolle",
+          "LVMH/Luxus-Sektor bottom-fishing möglich"
+        ],
+        "cons": [
+          "Europa-Wachstum bleibt schwach",
+          "EZB signalisiert weitere Hikes",
+          "China-Gegenwind hält an"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Iran-Deal hebt EM Stimmung",
+          "USD-Zyklus bleibt Gegenwind",
+          "Brasilien/Indien Wachstum"
+        ],
+        "thesis": "Ex-China EM profitiert von Friedens-Bonus, aber USD-Stärke bleibt Bremse; Brasilien/Indien sollten 2H stark sein.",
+        "pros": [
+          "Iran-Deal drückt Dollar",
+          "Indien-Technologie-Export stärker",
+          "Brasilien-Zinsen attraktiv für Carry"
+        ],
+        "cons": [
+          "USD bleibt strukturell stark",
+          "Türkei/Argentinien bleiben Risiken",
+          "China-Abschwung drückt Rohstoffe"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "SpaceX-IPO Volatilität",
+          "NVIDIA/TSMC-Zyklus",
+          "Intel Foundry Turnaround"
+        ],
+        "thesis": "Tech-ETF wird von Mega-Positionen dominiert (NVIDIA, Apple, Microsoft); SpaceX-Rot und Iran-Deal create Headwind kurzfristig.",
+        "pros": [
+          "Intel-Foundry-Erfolg supportet Halbleiter",
+          "AI-Investitionen gehen weiter",
+          "Cloud-Nachfrage bleibt robust"
+        ],
+        "cons": [
+          "Bewertungen sehr ambitioniert",
+          "Margin-Druck bei GPUs möglich",
+          "SpaceX-IPO drückt Liquidität"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "uncertainty_pct": 2.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Konsumdaten stabil in USA",
+          "Q2-Earnings Mitte Mai",
+          "Zollrisiko bleibt"
+        ],
+        "thesis": "Walmart als Konsumbarometer sollte von Iran-Deal und niedrigeren Ölpreisen profitieren; aber Lohnforderungen drücken Margen.",
+        "pros": [
+          "Konsumausgaben USA bleiben robust",
+          "E-Commerce-Wachstum ZweistelliG",
+          "Ölpreise fallen (geringere Transportkosten)"
+        ],
+        "cons": [
+          "Lohndruk senkt Margen",
+          "Zoll-Thematik belastet Lieferkette",
+          "Margin-Expansion ist Challenge"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Terafab/Chip-Initiative (Intel 14A)",
+          "EV-Wettbewerb intensiviert",
+          "Q2-Datenveröffentlichung"
+        ],
+        "thesis": "Terafab-Partnerschaft mit Intel 14A ist positiv strukturell, aber kurzfristig bremsend in hochbewertetem Kontext.",
+        "pros": [
+          "Terafab mit Intel 14A reduziert Chip-Abhängigkeit",
+          "Autonomie-Software bleibt Wettbewerbsvorteil",
+          "Energiespeicher-Markt wächst"
+        ],
+        "cons": [
+          "EV-Preisdruck hält an",
+          "Wettbewerb von BYD/Chinesischen Herstellern",
+          "Gigafactory-Auslastung unsicher"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 5.0,
+        "expected_change_90d_pct": 10.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Iran-Deal drückt Inflationssicherheit",
+          "FOMC nächste Woche (Zins-Pfad)",
+          "Spot-ETF Flows weiterhin positiv"
+        ],
+        "thesis": "Iran-Deal drückt Ölpreise und senkt Inflationsdruck; niedrigere Zinsen könnten Bitcoin unterstützen. Spot-ETF Flows fördern institutionelle Nachfrage.",
+        "pros": [
+          "Niedrigere Ölpreise senken Inflation",
+          "FOMC könnte Zinsausblick senken",
+          "Spot-ETF-Inflows werden stabiler"
+        ],
+        "cons": [
+          "Volatilität bleibt erhöht bei Geopolitik",
+          "Regulierungs-Risiko auf Seite der USA",
+          "Tech-Sell-Offs können Bitcoin mitziehen"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 6.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Dezentrale Finance Trends",
+          "Bitcoin Halving Zyklus Spillover",
+          "Shanghai-Upgrade Auswirkungen"
+        ],
+        "thesis": "Ethereum folgt Bitcoin-Zyklen, aber dezentrale Finance und NFT-Aufschwünge bleiben ungleich schwächer als Bitcoin.",
+        "pros": [
+          "DeFi-Aktivität nimmt zu",
+          "Layer-2-Lösung-Traction",
+          "Staking-Rewards bleiben attraktiv"
+        ],
+        "cons": [
+          "Konkurrenz von Layer-1 Chains",
+          "Regulatory Uncertainty bleibt",
+          "Bitcoin-Dominanz bleibt Headwind für Alts"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Lieferketten-Normalisierung",
+          "Defense-Budget USA bleibt",
+          "Nahost-Konflikt Rüstungs-Upside"
+        ],
+        "thesis": "Boeing profitiert mittel- bis langfristig von Friedensdeal (weniger Rohstoff-Druck) und Defense-Budget-Zuwachs; aber Qualitäts-Risiken bleiben.",
+        "pros": [
+          "Defense-Nachfrage von Geopolitik gestützt",
+          "Lieferketten-Normalisierung fördert Margin",
+          "Dividend-Yield attraktiv auf Historisches"
+        ],
+        "cons": [
+          "Produktsicherheit/Qualitäts-Skandale bleiben",
+          "Airbus Konkurrenz-Druck bleibt hoch",
+          "Zyklus-Risiken im Luft-und Raumfahrt"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-06-15",
+      "event": "Preliminary June University of Michigan Consumer Sentiment (10:00 ET)",
+      "relevant_for": "Gesamtmarkt, S&P 500, Konsumtitel",
+      "rating": 3
+    },
+    {
+      "date": "2026-06-16",
+      "event": "FOMC-Sitzung Start, Bank of Japan Zinsentscheid, Mai-Baustarts & Baugenehmigungen",
+      "relevant_for": "Gesamtmarkt, USD, Emerging Markets",
+      "rating": 4
+    },
+    {
+      "date": "2026-06-17",
+      "event": "FOMC Zinsentscheid, Mai Einzelhandelsumsätze, ausstehende Hausverkäufe",
+      "relevant_for": "Gesamtmarkt, S&P 500, Finanzdienstleistungen, Konsumtitel",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, MSCI World IT ETF, Cloud-Sektor, Hyper-Skalenbauer",
+      "rating": 5
+    }
+  ],
+  "usage": {
+    "input_tokens": 66768,
+    "output_tokens": 7821
+  }
+}

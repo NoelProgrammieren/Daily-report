@@ -1,48 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-06-12",
-      "event": "ECB Sitzung",
-      "relevant_for": "Gesamtmarkt, LVMH, Europäische Finanzdienstleistungen",
-      "rating": 4,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-12",
-      "event": "ECB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Europäische Märkte, Gesamtmarkt",
-      "rating": 4,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-12",
-      "event": "EZB Sitzung & Geldpolitische Entscheidung",
-      "relevant_for": "Gesamtmarkt, Europäische Aktien",
-      "rating": 4,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-12",
-      "event": "EZB-Sitzung & Geldpolitische Entscheidung – Zinserhöhung um 25 Basispunkte verkündet",
-      "relevant_for": "Gesamtmarkt, EUR, Europäische Indizes, MasterCard (International-Exposure)",
-      "rating": 4,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-16",
-      "event": "FOMC-Sitzung beginnt; Bank of Japan Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, S&P 500, NASDAQ, USD",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
-      "date": "2026-06-17",
-      "event": "FOMC Zinsentscheid, Mai Einzelhandelsumsätze, ausstehende Hausverkäufe",
-      "relevant_for": "Gesamtmarkt, S&P 500, Finanzdienstleistungen, Konsumtitel",
-      "rating": 5,
-      "category": "fed"
-    },
-    {
       "date": "2026-07-23",
       "event": "Nächste EZB-Sitzung",
       "relevant_for": "Europäischer Markt, EUR, DAX",
@@ -50,9 +8,16 @@
       "category": "fed"
     },
     {
+      "date": "2026-07-23",
+      "event": "EZB-Ratensitzung – Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, MasterCard, europäische Technologie",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
-      "relevant_for": "Microsoft, MSCI World IT ETF, Cloud-Sektor",
+      "relevant_for": "Microsoft, Cloud-Infrastruktur, KI-Services-Segment",
       "rating": 5,
       "category": "earnings"
     },
@@ -90,7 +55,14 @@
       "relevant_for": "Microsoft, MSCI World IT ETF",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings-Telekonferenz",
+      "relevant_for": "Microsoft, Azure AI, Cloud-Margins",
+      "rating": 5,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-06-12T20:59:27.170500+02:00"
+  "updated_at": "2026-06-19T20:29:33.486235+02:00"
 }

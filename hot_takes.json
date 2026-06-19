@@ -3,9 +3,9 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Google hat Intel damit beauftragt, mehr als 3 Millionen TPU-Chips bis 2028 herzustellen; NVIDIA evaluiert Intels 18A-Prozess und erweiterte Verpackungstechnologien für eine Grafikprozessor-Mehrfach-Chip-Konstruktion. Mehrere Hyperscaler (Google, Tesla, Microsoft, AWS) bewegen sich jetzt bei Foundry-Engagements. Nächster Katalysator: Q3/Q4 2026 Customer-Ankündigungen.",
+      "event_basis": "Nächste Katalysatoren: Q3/Q4 2026 Kundenankündigungen (Apple, weitere Hyperscaler); 18A-P Risk Production Validation; 14A PDK-Zertifizierungen für Großkunden.",
       "event_date": "2026-06-30",
-      "time_horizon": "2-4 Wochen",
+      "time_horizon": "2-6 Wochen",
       "expected_move_pct": {
         "low": 3.0,
         "high": 7.0,
@@ -16,10 +16,10 @@
         "high": 32.0,
         "currency": "USD"
       },
-      "thesis": "Google-TPU-Deal + potenzielle NVIDIA-Engagements signalisieren, dass Hyper-Skalenbauer ernst machen mit Lieferketten-Diversifizierung. Intels 18A/14A-Validierung durch externe Kunden wird zum wirtschaftlichen Wendepunkt.",
-      "risks": "Intels SEC-Unterlagen haben wiederholt Risiken vermerkt, dass externen Kunden-Volumen begrenzt bleibt; die bloße Prozessläufigkeit ohne externe Volumen, Vertrauen und Skalierbarkeit, die ein Foundry-Geschäft benötigt, wurde bislang nicht demonstriert.",
+      "thesis": "Neue Foundry-Führungsstruktur und bestätigte Großaufträge (Google 3M TPUs, NVIDIA 18A-Evaluierung) signalisieren operative Verbesserungen und Kundengewinnung. 18A-P hat Risikoserienproduktion erreicht mit besserer Leistung und voller Design-Regelkompatibilität; Apple-Deal wird in H2 2026 erwartet.",
+      "risks": "Renditen sind noch unter profitablem Niveau, und Intel muss noch die Skalierbarkeit und Yield-Konsistenz über multiple externe Kunden hinweg beweisen — ein Risiko, das bisherige Ergebnisse nicht entschärft haben.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-06-12T20:59:27.170801+02:00"
+      "last_updated": "2026-06-19T20:29:33.486495+02:00"
     }
   ],
   "archive": [
@@ -42,7 +42,11 @@
       "thesis": "Wedbush ($400 Ziel), Bank of America ($380) und Morgan Stanley ($365–385, Bull-Case $440) haben Kursziele massiv erhöht. Erfolgreiche Siri 2.0-Demo könnte AI-Bewertungslücke zu Microsoft/Alphabet schließen und Momentum zurückbringen.",
       "risks": "Unzureichend beeindruckende Demo, anhaltend kritische Rezension zu Datenschutz oder Abhängigkeit von Google — Ziel verfehlt.",
       "first_seen": "2026-05-14",
-      "last_updated": "2026-06-05T20:55:18.120863+02:00"
+      "last_updated": "2026-06-05T20:55:18.120863+02:00",
+      "performance": {
+        "status": "pending",
+        "evaluated_at": null
+      }
     },
     {
       "company": "Apple",
@@ -55,8 +59,12 @@
       "first_seen": "2026-05-14",
       "last_updated": "2026-05-14T09:43:37.554205+02:00",
       "performance": {
-        "status": "pending",
-        "evaluated_at": null
+        "status": "no_target",
+        "price_at_event": 311.23,
+        "price_14d_after": 298.01,
+        "pct_change_14d": -4.25,
+        "in_target_range": null,
+        "evaluated_at": "2026-06-19"
       }
     },
     {
@@ -80,8 +88,12 @@
       "first_seen": "2026-05-16",
       "last_updated": "2026-05-25T20:23:13.252725+02:00",
       "performance": {
-        "status": "pending",
-        "evaluated_at": null
+        "status": "hit",
+        "price_at_event": 112.71,
+        "price_14d_after": 121.1,
+        "pct_change_14d": 7.44,
+        "in_target_range": true,
+        "evaluated_at": "2026-06-19"
       }
     },
     {
@@ -162,5 +174,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-12T20:59:27.170801+02:00"
+  "updated_at": "2026-06-19T20:29:33.486495+02:00"
 }

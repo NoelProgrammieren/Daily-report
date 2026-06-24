@@ -1,0 +1,487 @@
+{
+  "date": "2026-06-24",
+  "generated_at": "2026-06-24T20:28:46.530490+02:00",
+  "macro": {
+    "market_state": "Der Markt zeigt sich am Mittwoch leicht erholt nach dem Technik-Ausverkauf vom Vortag. Der S&P 500 steht bei 7.380 Punkten (+0,20 %), der Nasdaq Composite bei 25.783 Punkten (+0,77 %), der DAX bei 24.678 Punkten (-0,86 %).",
+    "macro_drivers": "Die Halbleiter- und AI-Infrastruktur-Branche bleibt unter Druck: Investoren zweifeln an den Renditen der massiven KI-Investitionen durch Hyperscaler. Dazu kam ein Bericht über SK Hynix, die Produktion fortschrittlicher AI-Chips drosseln und stärker auf herkömmliche Speicher setzen — ein Signal für schwächere Nachfrage. Energiepreise sind gefallen (Brent unter 74 USD), was die Notenbankpolitik beeinflusst. Anleiherenditen sind leicht rückläufig.",
+    "sentiment": "Risk-off / Vorsicht · Semiconductor-Verkäufe, Gewinnerwartungs-Rekalibration, KI-Ausgaben-Skeptizismus",
+    "sp500": "7.380 (+0,20 %)",
+    "nasdaq": "25.783 (+0,77 %)",
+    "dax": "24.678 (-0,86 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet C",
+        "Microsoft",
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Halbleiterkrise verschärft sich: Micron-Earnings stehen auf dem Schirm",
+          "rating": 5,
+          "summary": "Die Halbleiterbranche leidet unter Druck durch Gewinnzweifel an den AI-Investitionen der Tech-Hyperscaler. NVIDIA fiel am Dienstag um 3,2 %, Micron um 11,4 % — beide stehen nun auf Watch-Liste für Today's Earnings. Der Verkauf wurde durch Bericht über SK Hynix' Drosselung der fortgeschrittenen Chip-Produktion verstärkt, was auf Nachfrageschwäche deutet.",
+          "price_change": "NVDA -3,2 %, MU -11,4 %, SMH-ETF -6,5 %",
+          "investor_relevance": "Meine NVIDIA-Position (5,09 % des Portfolios) und der Tech-fokussierte MSCI-IT-ETF (17,91 %) sind direkt exponiert. Micron-Earnings heute nach Börsenschluss könnten weitere Marktbewegungen auslösen."
+        },
+        {
+          "priority": "lightning",
+          "title": "Intel bleibt im Fokus: Apple-Deal und Foundry-Katalysatoren",
+          "rating": 4,
+          "summary": "Intels jüngste Auftragsvergabe durch Google (über 3 Millionen Tensor Processing Units für 2028) und erweiterte Cadence-Partnerschaft auf dem 14A-Knoten (für Design-Optimierung) stabilisieren die Foundry-Story. Intel 18A-P ist nun in Risikoertigung mit verbessertem Thermal-Design. Die Apple-Deal-Ankündigung vom 18. Juni trieb den Kurs damals um 10,5 % nach oben.",
+          "price_change": "N/A (Catalyst-Fortschritt, nicht tagesaktuelle Bewegung)",
+          "investor_relevance": "Intel ist volatile Position (1,53 % des Portfolios) mit strukturellem Turnaround-Potenzial. Die Foundry-Validierung durch Google und Cadence stärkt mittelfristig die Thesis. Nächste Konkurrenz-Katalysatoren: Q3/Q4 2026 Kundenbewährungen."
+        },
+        {
+          "priority": "pin",
+          "title": "Microsoft-Earnings nächste Woche, Power-Deal mit Chevron stabilisiert",
+          "rating": 3,
+          "summary": "Microsoft notierte heute bei 373,20 USD (-0,52 % Pre-Market gegenüber Vortag). Der 20-Jahres-Energievertragsabschluss mit Chevron für AI-Data-Center in West-Texas signalisiert Fortsetzung der Infrastruktur-Investitionen. Q4-Earnings stehen auf 28.–29. Juli an — Critical Event für Azure/AI-Cloud-Wachstum.",
+          "price_change": "+0,62 % am 24.06. (Intraday-Rebound nach Dienstag-Ausverkauf)",
+          "investor_relevance": "Microsoft ist 1,97 % des Portfolios. Der langfristige Trend bleibt positiv, aber Kurzzeitig steht Bewährung der KI-Ausgaben-Rendite auf der Agenda. Goldman Sachs sieht \"unbegrenzte\" Azure-Tailwinds — Analyst-Zielkurs 565,62 USD."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard",
+        "Berkshire Hathaway B"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Berkshire Hathaway kappt MasterCard-Position komplett — strategische Neuausrichtung unter Greg Abel",
+          "rating": 5,
+          "summary": "Berkshire Hathaway verkaufte im Q1 2026 3,99 Millionen MasterCard-Aktien zu durchschnittlich 525,64 USD — eine 15-Jahres-Position komplett abgebaut. Der Abgang erfolgte unter neuem CEO Greg Abel und ist Zeichen einer Strategie-Neuausrichtung (ehemaliger Payments-Experte Todd Combs ist zu JPMorgan Chase gewechselt). Trotz solider MasterCard-Fundamentals (Value-Added-Services wachsen schnell, Stablecoin-Expansion geplant) signalisiert der Exit Berkshires Abkehr vom Fintech-Fokus.",
+          "price_change": "MA: Position komplett gelöst; Aktie selber relativ stabil (im Mid-500er-Bereich)",
+          "investor_relevance": "Meine MasterCard-Position ist 2,04 % des Portfolios. Der Berkshire-Abgang ist kein Fundamental-Signal gegen MA selbst, sondern widerspiegelt Portfolioumschwung bei Berkshire (Fokus auf Infrastruktur/Fluglinien statt Payments). Für Langfristinvestor kein unmittelbarer Handlungsbedarf, da die Card-Netzwerk-Moats intakt bleiben."
+        },
+        {
+          "priority": "pin",
+          "title": "Berkshire diversifiziert in Infrastruktur: Delta Air Lines, Magnis-Technologien",
+          "rating": 2,
+          "summary": "Unter Greg Abel übernimmt Berkshire neue Positionen: über 39,8 Millionen Delta-Aktien für 3,28 Mrd. USD, was Buffetts 2020er COVID-Verkauf widerspricht. Die Bewegung signalisiert Glaube an Travel-Recovery und Legacy-Asset-Revaluation. Dies zeigt Abkehr vom reinen Tech/Payments-Fokus.",
+          "price_change": "N/A",
+          "investor_relevance": "Berkshire Hathaway B ist nur 0,67 % meines Portfolios — eher Tracking-Position. Die neuen Strategien unter Abel könnten die BRKA/BRKB-Renditen beeinflussen, aber kein unmittelbarer Impact auf meine Holdings."
+        }
+      ]
+    },
+    {
+      "name": "Halbleiter & Chipinfrastruktur (Erweitert)",
+      "emoji": "🔌",
+      "positions_mentioned": [
+        "Intel",
+        "NVIDIA"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Halbleiterkrise: Breiter Ausverkauf, SK Hynix bremst Produktion fortschrittlicher Chips",
+          "rating": 5,
+          "summary": "Am 23. Juni kam es zu globalem Halbleiter-Ausverkauf (VanEck SMH-ETF -6,5 % im Tagesverlauf). SK Hynix kündigte an, Produktion fortgeschrittener AI-Chips zu drosseln und stattdessen Kapazität in Standard-DRAM zu verlagern — ein Signal dafür, dass die Hyperscaler-Nachfrage nach Top-Tier-Memory gebremst ist. Micron sank -13,2 %, Broadcom -3,1 %, AMD -5,8 %. Der Sektor wurde durch Gewinnzweifel an AI-ROI erschüttert.",
+          "price_change": "SMH (Semiconductor ETF): -6,5 % (Dienstag)",
+          "investor_relevance": "Meine Positionen: NVIDIA 5,09 %, MSCI World Tech-ETF 17,91 % — beide exponiert gegenüber Chip-Verkäufen. Der Sektor-Stress könnte bis Micron-Earnings (heute nach US-Close) andauern. Langfristig bleibt KI-Capex-Story intakt, aber kurzfristig dominiert Ernüchterung."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Weitere Foundry-Katalysatoren Q3/Q4 2026: Google TPU-Bestellung (3M Units für 2028), Apple-Chip-Deal (Juni 18), Cadence 14A Design-Partnerschaft, Intel 18A-P in Risikoertigung. Nächste Validierungs-Events sind Kundenbewährungen durch Hyperscaler.",
+      "event_date": "2026-06-30",
+      "time_horizon": "2-4 Wochen bis Katalysator-Vollzug",
+      "expected_move_pct": {
+        "low": 3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Intels Foundry-Transformation erhält konkrete Validierung durch Google (3M TPU-Aufträge 2028) und Apple-Deal (18A-P Risikoertigung abgeschlossen). Nächste Gewinntreiber sind Kundenbewährungen in Q3/Q4 2026 und 14A PDK-Zertifizierungen.",
+      "risks": "Weitere Halbleiter-Markt-Volatilität, Konkurrenzdruck von TSMC/Samsung, Ausführungsrisiko beim Foundry-Turnaround, geopolitisches Risiko bei US-China-Chiphandel."
+    }
+  ],
+  "forecast": {
+    "commentary": "Das Portfolio und die Watchlist werden in den nächsten 4 Wochen von KI-Capex-Erwartungsmanagement geprägt sein. Nach dem Dienstags-Halbleiter-Ausverkauf könnte Micron-Earnings heute (24.06.) und Microsoft Q4-Earnings nächste Woche (28.–29.07.) als Benchmark-Events dienen, ob die Hyperscaler-Investitionen ROI bringen. Der Sektor bleibt antizyklisch anfällig — ein positives Signal von Micron könnte zu Rebound führen, negativer Earnings Miss weitere Abverkäufe auslösen. Langfristig (3 Monate) sollten Apple WWDC-Präsentation (Juni), Nvidia-Katalysatoren (neue Generationen) und Microsoft Azure-Guidance stabilisierend wirken. Defensive Sektoren und Small Caps (Russell 2000 +1,3 % heute) profitieren von der Rotation aus Big Tech.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "WWDC im Juni (KI-Features)",
+          "iPhone-China-Nachfrage",
+          "Services-Wachstum",
+          "Bewertung reif"
+        ],
+        "thesis": "Apple bleibt defensive Tech-Position mit stabilen Diensten, aber kurzfristig fehlt ein großer Kurstreiber über die WWDC-Präsentation hinaus.",
+        "pros": [
+          "Services-Segment wächst zweistellig, hohe Margen",
+          "WWDC Juni: neue KI-Features in iOS/macOS erwartet",
+          "Aktienrückkäufe & Dividende stützen Kurs"
+        ],
+        "cons": [
+          "iPhone-Absatz in China weiterhin rückläufig",
+          "Bewertung bereits ambitioniert (Forward P/E > 25x)",
+          "Halbleiter-Stress belastet Lieferkette"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "SK Hynix Produktionsdrosselung",
+          "AI-ROI-Zweifel",
+          "Micron-Earnings",
+          "China-Restriktionen"
+        ],
+        "thesis": "NVIDIA steht unter kurzfristigem Verkaufsdruck wegen globaler Halbleiter-Sorgen und Gewinnzweifeln; Langfristig bleibt die GPU-Leadership intakt, aber Kurzfrist-Volatilität hoch.",
+        "pros": [
+          "Dominante Marktposition in AI-Accelerators bleibt unangetastet",
+          "Hohe Earnings-Überraschungs-Historie gibt Vertrauen",
+          "Neue GPU-Generationen (Blackwell) rampen 2026–2027"
+        ],
+        "cons": [
+          "Halbleiter-Sektor-Rotations-Verkauf seit Dienstag",
+          "SK Hynix-Signal: AI-Memory-Nachfrage schwächer als erwartet",
+          "Valuation fragil bei Gewinnzweifel — aktuell ~35x P/E"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Google TPU 2028 Order (Foundry-Validierung)",
+          "Dow-Index-Neuaufnahme (24.06.)",
+          "Ad-Growth",
+          "AI-Talent-Sorgen"
+        ],
+        "thesis": "Alphabet profitiert indirekt von eigener Foundry-Strategie (Google TPU bei Intel), bleibt aber Halbleiter-Volatilität ausgesetzt; Dow-Aufnahme könnte kurzfristig Unterstützung geben.",
+        "pros": [
+          "Dow-Index-Aufnahme ab 24.06. = Index-Inflows",
+          "Google TPU-Ordnung an Intel stabilisiert eigene Supply-Chain",
+          "Advertising Recovery + Cloud-Wachstum halten Fundamentals stark"
+        ],
+        "cons": [
+          "KI-Talentabgänge (Deepmind-Sorgen), Morale-Thema",
+          "Halbleiter-Sektor-Druck belastet indirekt",
+          "Regulatorsicher Druck (Antitrust) andauert"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 5.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS-Cloud-Growth",
+          "AI-Infrastructure-Ausgaben",
+          "E-Commerce-Saisonalität",
+          "Halbleiter-Expos."
+        ],
+        "thesis": "Amazon profitiert von AWS/Cloud-Capex-Nachfrage, ist aber über Custom-Trainium-Chips und Cloud-Infra der Halbleiter-Volatilität ausgesetzt.",
+        "pros": [
+          "AWS wächst 18–20 % YoY, starke AI-Infrastruktur-Nachfrage",
+          "Advertising-Sparte verdoppelt sich jährlich",
+          "Custom Chips (Trainium) reduzieren Abhängigkeit von NVIDIA"
+        ],
+        "cons": [
+          "Retail-Sparte unter Druck von Walmart/Discounter",
+          "Capex-Anstieg belastet kurzfristige Cash-Flows",
+          "Halbleiter-Sektor-Verkäufe belasten Cloud-Infrastruktur-Narrative"
+        ]
+      },
+      {
+        "company": "S&P 500 (Core S&P 500 USD Acc)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Tech-Halbleiter-Rotation",
+          "Fed-Zinspfad",
+          "Unternehmens-Earnings (Q2 ab Juli)"
+        ],
+        "thesis": "Der Breitmarkt-Index leidet unter Mega-Cap-Tech-Volatilität, profitiert aber von Rotation in Small Caps und Defensives; mittelfristig stabilisierend wenn Earnings robust bleiben.",
+        "pros": [
+          "Breite Diversifikation reduziert Tech-Konzentrations-Risiko",
+          "Dow-Komponenten (Industrials, Financials) halten sich relativ gut",
+          "Earnings-Saison 2026 erwartet solides Wachstum (7–9 %)"
+        ],
+        "cons": [
+          "Mega-Cap-Tech (Apple, MSFT, NVDA, GOOGL, AMZN) dominiert Gewichtung",
+          "Halbleiter-Crash steckt an; Index-VIX erhöht sich",
+          "Zinserwartung schwierig: Inflation im Auge, aber Geldpolitik ungewiss"
+        ]
+      },
+      {
+        "company": "MSCI World (Core MSCI World USD Acc)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "US-Tech-Dominanz",
+          "Europäische Rotation",
+          "DAX-Rüstungs-Druck (Rheinmetall)"
+        ],
+        "thesis": "MSCI World bleibt von US-Tech-Schwergewichten geprägt; europäische Komponenten (DAX -0,86 %) bekommen Gegenwind durch Rüstungs-Kürzungen (Rheinmetall -18,6 %).",
+        "pros": [
+          "Geografische Diversifikation vs. reiner US-Fokus",
+          "Europäische Aktien (Sanofi, Siemens) zeigen relativen Halt",
+          "Emerging Markets (Ex China) bieten Aufwärtspotenzial (Zinsdruck weicht)"
+        ],
+        "cons": [
+          "US-Komponenten wiegen 60+ %, bleiben Tech-anfällig",
+          "Deutsche Rüstung: Regierungskürzungen von Rüstungs-Programmen (6 Zerstörer gestrichen)",
+          "EZB-Rat (23.07.) könnte weitere Volatilität bringen (mögliche Zinssenkung)"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Indien-Growth",
+          "Tapering der Überverkauf-Panik",
+          "Yen-Abschwächung"
+        ],
+        "thesis": "Schwellenländer (ohne China) profitieren von Rotation aus Tech-Schwerpunkt; Indien wächst 6+ %, Brasilien/ASEAN-Länder zeigen relativen Halt.",
+        "pros": [
+          "Indien-Wirtschaft wächst 6+ % YoY, noch nicht overvalued",
+          "Yen-Abschwächung hilft japanischen und SE-Asian Exporteuren",
+          "Relative Rotation aus US-Tech zu Schwellenländern im Frühjahr 2026"
+        ],
+        "cons": [
+          "China-Risiko (indirekt über Rohstoffe, Handelspartner)",
+          "Höhere Zinsen in den USA drücken auf EM-Währungen",
+          "Geopolitische Risiken (Südchinesisches Meer, Indien-Pakistan)"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -3.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "Halbleiter-Volatilität",
+          "AI-ROI-Zweifel",
+          "Valuation-Abschlag"
+        ],
+        "thesis": "Reiner Tech-Sektor-ETF ist am meisten exponiert gegenüber Halbleiter-Ausverkauf und KI-Gewinnzweifeln; Kurzfristig abwartend bis Micron/MSFT-Earnings.",
+        "pros": [
+          "Diversifiziert über globale Tech-Player (SMCI, SAP, Accenture, TSMC)",
+          "Sektor bleibt für strukturelle KI/Cloud-Trends relevant",
+          "Nach-Verkauf könnte Einstiegschance bieten"
+        ],
+        "cons": [
+          "Halbleiter-Crash (-6,5 % SMH heute) schleift ETF runter",
+          "NVIDIA/TSMC/Broadcom-Gewichte fallen stark",
+          "Valuation bleibt fragil — KGV 25+ bei Gewinnzweifeln"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Konsumtrends stabil",
+          "E-Commerce-Wachstum 15+ %",
+          "Low-Income-Kunden resilient"
+        ],
+        "thesis": "Walmart bleibt Konsumbar-Gewinner in wirtschaftlich angespanntem Umfeld; stabiles Umsatzwachstum und margin-positive Operationen unterstützen Kurs.",
+        "pros": [
+          "Verbraucherausgaben auf Lebensmittel/Essentials konzentriert sich",
+          "E-Commerce wächst 15+ % YoY, profitabel",
+          "Defensive Qualität: weniger Tech-Abschwung, eher Inflations-Gewinner"
+        ],
+        "cons": [
+          "Lohnkosten-Druck bleibt ein Margendampfer",
+          "Großer Wettbewerb von Amazon Fresh/Discountern",
+          "Makro-Risiko: Falls Konsumkraft einbricht"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -3.5,
+        "expected_change_90d_pct": 0.5,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "Halbleiter-Krisis-Ansteckung",
+          "EV-Absatzflaute",
+          "Konkurrenz-Druck (BYD, Xiaomi)"
+        ],
+        "thesis": "Tesla leidet doppelt: erstens von Halbleiter-Markt-Volatilität (EV-Chips unter Druck), zweitens von nachlassendem EV-Absatz in Nordamerika/Europa.",
+        "pros": [
+          "Energiespeicher-Sparte (Powerwall) wächst dynamisch",
+          "Supercharger-Netzwerk bleibt Moat",
+          "Mögliche Robotaxi-Ankündigung könnte Narrative shiften"
+        ],
+        "cons": [
+          "EV-Absatz Nordamerika: YoY-Wachstum stagniert/negativ",
+          "Chinesischer Wettbewerb (BYD, Xiaomi EV) verschärft sich",
+          "Halbleiter-Knappheit für Autonomous-Driving-Entwicklung hinderlich"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 8.0,
+        "uncertainty_pct": 10.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Makro-Zinssätze (Fed)",
+          "Geldmenge (M2)",
+          "Geopolitik (Iran-Deals)",
+          "Risk-On/Off-Rotation"
+        ],
+        "thesis": "Bitcoin fällt heute (-2,2 %) auf 61.066 USD wegen kurzfristiger Risk-Off-Stimmung; längerfristig bleibt Krypto antizyklisch zu Aktien bei makro-Realignment.",
+        "pros": [
+          "Inflation-Hedge-Funktion bleibt intakt",
+          "Fed-Zinssenkungen (ab H2 2026 möglich) könnten Angebot unterstützen",
+          "Institutionelle Adoption wächst (Spot BTC ETFs solide)"
+        ],
+        "cons": [
+          "Höhere Zinsen = Opportunität-Kosten für Crypto (Cash attraktiver)",
+          "Kurzfristige Tech-Rotation drückt auf Risk Assets",
+          "Regulierungsrisiko: Fed/SEC könnten restriktiver werden"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -4.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 12.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "DeFi-Volatilität",
+          "Shanghai/Dencun-Upgrades",
+          "Staking-Renditen",
+          "Alt-Crypto-Rotation"
+        ],
+        "thesis": "Ethereum bleibt volatiler als Bitcoin und leidet stärker unter Risk-Off; Technische Upgrades (Dencun, Shanghai) zu spät für kurzfristige Erholung.",
+        "pros": [
+          "Dencun (Blobs) reduziert Layer-2-Gebühren — bullish für Ecosystem",
+          "DeFi-TVL stabilisiert sich auf 120+ Mrd. USD-Level",
+          "Shanghai-Merge-Validierung erhöht Stake-Rate"
+        ],
+        "cons": [
+          "Höhere Volatilität vs. BTC = stärkere Drawdowns in Risk-Off",
+          "Anwendungs-Volatilität: DeFi-Exploits, Bridge-Risiken",
+          "Konkurrenz von Solana (SOL) + anderen L1-Chains"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Sicherheits-/Qualitäts-Themen",
+          "Max-Rückkehr",
+          "Defense-Orders",
+          "Lieferketten-Strain"
+        ],
+        "thesis": "Boeing bleibt unter Korrektur-Druck wegen anhaltender Qualitäts-Sorgen und Max-Produktions-Herausforderungen; mittelfristig profitiert von Air-Rebound, kurzfristig kein Catalyst.",
+        "pros": [
+          "Max 10-Rückkehr — 737 bleibt Volumen-Rückgrat",
+          "Defense-Aufträge (Rüstungsausgaben) stabilisieren Geschäft",
+          "Commercial-Air-Traffic weiterhin auf Wachstumspfad post-COVID"
+        ],
+        "cons": [
+          "Quality-Skandale (Türluke, Risse) müssen restituiert werden",
+          "Lieferketten-Strain hält Production-Rate niedrig",
+          "Wettbewerb von Airbus A220/A320neo bleibt scharf"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-06-24",
+      "event": "Micron Technology (MU) Earnings nach Börsenschluss",
+      "relevant_for": "Halbleiter-Sektor, NVIDIA, MSCI World Tech-ETF",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-07-23",
+      "event": "EZB Ratensitzung — Zinsentscheid (erwartet: 25 BPS Senkung)",
+      "relevant_for": "DAX, Europäische Werte, Anleihe-Renditen, EUR/USD",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, Cloud-Sektor, AI-Infrastructure, Azure Guidance",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Microsoft Q4 FY2026 Earnings-Telekonferenz (Klarstellung zur Cloud/AI-Strategie)",
+      "relevant_for": "Microsoft, Cloud-Sektor, AI-Adoption-Trend",
+      "rating": 4,
+      "category": "earnings"
+    }
+  ],
+  "usage": {
+    "input_tokens": 72500,
+    "output_tokens": 9099
+  }
+}

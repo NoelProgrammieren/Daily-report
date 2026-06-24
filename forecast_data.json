@@ -1,6 +1,6 @@
 {
-  "updated_at": "2026-06-19T20:29:40.573970+02:00",
-  "commentary": "Das Portfolio bleibt von KI-Infrastruktur-Investitionen geprägt, die NVIDIA, Apple und Alphabet stützen. Intel gewinnt Momentum durch konkrete Kundendeals, riskiert aber operative Ausführung. Berkshire-Hathaway-Ausstieg aus MasterCard schafft kurzfristigen Druck, aber Konsumtrends stabilisieren den Sektor. Breitmarktzyklus folgt Notenbank-Signalen; Fed-Ratenanzeichen für H2 2026 werden zum Schlüsseltreiber.",
+  "updated_at": "2026-06-24T20:28:51.666950+02:00",
+  "commentary": "Das Portfolio und die Watchlist werden in den nächsten 4 Wochen von KI-Capex-Erwartungsmanagement geprägt sein. Nach dem Dienstags-Halbleiter-Ausverkauf könnte Micron-Earnings heute (24.06.) und Microsoft Q4-Earnings nächste Woche (28.–29.07.) als Benchmark-Events dienen, ob die Hyperscaler-Investitionen ROI bringen. Der Sektor bleibt antizyklisch anfällig — ein positives Signal von Micron könnte zu Rebound führen, negativer Earnings Miss weitere Abverkäufe auslösen. Langfristig (3 Monate) sollten Apple WWDC-Präsentation (Juni), Nvidia-Katalysatoren (neue Generationen) und Microsoft Azure-Guidance stabilisierend wirken. Defensive Sektoren und Small Caps (Russell 2000 +1,3 % heute) profitieren von der Rotation aus Big Tech.",
   "tickers": [
     {
       "company": "Apple",
@@ -8,18 +8,6 @@
       "category": "portfolio",
       "potential_rating": 3,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 273.43
-        },
-        {
-          "date": "2026-02-11",
-          "close": 275.25
-        },
-        {
-          "date": "2026-02-12",
-          "close": 261.49
-        },
         {
           "date": "2026-02-13",
           "close": 255.54
@@ -367,97 +355,110 @@
         {
           "date": "2026-06-18",
           "close": 298.01
+        },
+        {
+          "date": "2026-06-22",
+          "close": 297.01
+        },
+        {
+          "date": "2026-06-23",
+          "close": 294.3
+        },
+        {
+          "date": "2026-06-24",
+          "close": 295.9
         }
       ],
-      "last_close": 298.01,
-      "last_date": "2026-06-18",
+      "last_close": 295.9,
+      "last_date": "2026-06-24",
       "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Stabile Geschäfte und KI-Innovation, aber China-Rückenwind fehlt und Bewertung ist ambitioniert.",
+      "thesis": "Apple bleibt defensive Tech-Position mit stabilen Diensten, aber kurzfristig fehlt ein großer Kurstreiber über die WWDC-Präsentation hinaus.",
       "pros": [
-        "WWDC im Juni mit neuen KI-Features für iPhone/Mac",
-        "Services-Sparte wächst zweistellig",
-        "Installierte Basis wächst, Upgrade-Zyklus stabil"
+        "Services-Segment wächst zweistellig, hohe Margen",
+        "WWDC Juni: neue KI-Features in iOS/macOS erwartet",
+        "Aktienrückkäufe & Dividende stützen Kurs"
       ],
       "cons": [
-        "iPhone-Absatz in China unter Druck",
-        "Bewertung (PE) bereits am oberen Ende",
-        "Großer Insider-Verkauf deutet auf Sättigung hin"
+        "iPhone-Absatz in China weiterhin rückläufig",
+        "Bewertung bereits ambitioniert (Forward P/E > 25x)",
+        "Halbleiter-Stress belastet Lieferkette"
       ],
       "key_drivers": [
-        "WWDC Juni mit KI-Features",
-        "iPhone-Zyklus & China-Nachfrage",
-        "Insider-Verkäufe (neutral zu beachten)"
+        "WWDC im Juni (KI-Features)",
+        "iPhone-China-Nachfrage",
+        "Services-Wachstum",
+        "Bewertung reif"
       ],
       "forecast": {
         "expected_change_30d_pct": 2.0,
-        "expected_change_90d_pct": 5.0,
-        "uncertainty_pct": 3.5,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 4.5,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 299.4,
-            "lower": 294.36,
-            "upper": 304.44
+            "date": "2026-07-01",
+            "central": 297.28,
+            "lower": 290.85,
+            "upper": 303.71
           },
           {
-            "date": "2026-07-02",
-            "central": 300.79,
-            "lower": 293.67,
-            "upper": 307.92
+            "date": "2026-07-08",
+            "central": 298.66,
+            "lower": 289.57,
+            "upper": 307.76
           },
           {
-            "date": "2026-07-18",
-            "central": 303.97,
-            "lower": 293.54,
-            "upper": 314.4
+            "date": "2026-07-24",
+            "central": 301.82,
+            "lower": 288.5,
+            "upper": 315.13
           },
           {
-            "date": "2026-08-17",
-            "central": 308.44,
-            "lower": 293.69,
-            "upper": 323.19
+            "date": "2026-08-23",
+            "central": 307.0,
+            "lower": 288.17,
+            "upper": 325.83
           },
           {
-            "date": "2026-09-16",
-            "central": 312.91,
-            "lower": 294.84,
-            "upper": 330.98
+            "date": "2026-09-22",
+            "central": 312.17,
+            "lower": 289.11,
+            "upper": 335.24
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            299.4,
-            300.79,
-            303.97,
-            308.44,
-            312.91
+            297.28,
+            298.66,
+            301.82,
+            307.0,
+            312.17
           ],
           "upper_band": [
-            304.44,
-            307.92,
-            314.4,
-            323.19,
-            330.98
+            303.71,
+            307.76,
+            315.13,
+            325.83,
+            335.24
           ],
           "lower_band": [
-            294.36,
-            293.67,
-            293.54,
-            293.69,
-            294.84
+            290.85,
+            289.57,
+            288.5,
+            288.17,
+            289.11
           ]
         }
       },
-      "last_close_eur": 259.57,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 260.45,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 29,
         "hold": 15,
@@ -465,26 +466,14 @@
         "target_mean": 314.42,
         "currency": "USD"
       },
-      "insider_purchases_90d": 412819
+      "insider_purchases_90d": 443163
     },
     {
       "company": "NVIDIA",
       "symbol": "NVDA",
       "category": "portfolio",
-      "potential_rating": 4,
+      "potential_rating": 2,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 188.31
-        },
-        {
-          "date": "2026-02-11",
-          "close": 189.82
-        },
-        {
-          "date": "2026-02-12",
-          "close": 186.71
-        },
         {
           "date": "2026-02-13",
           "close": 182.59
@@ -832,97 +821,110 @@
         {
           "date": "2026-06-18",
           "close": 210.69
+        },
+        {
+          "date": "2026-06-22",
+          "close": 208.65
+        },
+        {
+          "date": "2026-06-23",
+          "close": 200.04
+        },
+        {
+          "date": "2026-06-24",
+          "close": 198.46
         }
       ],
-      "last_close": 210.69,
-      "last_date": "2026-06-18",
+      "last_close": 198.46,
+      "last_date": "2026-06-24",
       "currency": "USD",
-      "scenario": "bullish",
-      "thesis": "Datencenter-Dominanz bleibt, PC-Expansion eröffnet neue Marktchancen — KI-Infrastruktur-Boom trägt noch 1–2 Quartale.",
+      "scenario": "bearish",
+      "thesis": "NVIDIA steht unter kurzfristigem Verkaufsdruck wegen globaler Halbleiter-Sorgen und Gewinnzweifeln; Langfristig bleibt die GPU-Leadership intakt, aber Kurzfrist-Volatilität hoch.",
       "pros": [
-        "Datencenter-Nachfrage durch Google/AWS/Azure bleibt robust",
-        "RTX Spark erobert neuen Consumer-AI-PC-Markt",
-        "Wettbewerb (AMD, Intel) noch nicht reif für Marktanteilsverluste"
+        "Dominante Marktposition in AI-Accelerators bleibt unangetastet",
+        "Hohe Earnings-Überraschungs-Historie gibt Vertrauen",
+        "Neue GPU-Generationen (Blackwell) rampen 2026–2027"
       ],
       "cons": [
-        "Bewertung basiert auf perfekter Ausführung",
-        "Custom-Chips der Hyperscaler langfristig Risiko",
-        "Geopolitisches Risiko (China-Restriktionen)"
+        "Halbleiter-Sektor-Rotations-Verkauf seit Dienstag",
+        "SK Hynix-Signal: AI-Memory-Nachfrage schwächer als erwartet",
+        "Valuation fragil bei Gewinnzweifel — aktuell ~35x P/E"
       ],
       "key_drivers": [
-        "Hyperscaler-Capex-Zyklus",
-        "KI-Chip-Nachfrage anhaltend",
-        "PC-Markt-Eintritt (RTX Spark)"
+        "SK Hynix Produktionsdrosselung",
+        "AI-ROI-Zweifel",
+        "Micron-Earnings",
+        "China-Restriktionen"
       ],
       "forecast": {
-        "expected_change_30d_pct": 4.5,
-        "expected_change_90d_pct": 10.0,
-        "uncertainty_pct": 5.0,
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 8.0,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 212.9,
-            "lower": 207.81,
-            "upper": 217.99
+            "date": "2026-07-01",
+            "central": 197.3,
+            "lower": 189.63,
+            "upper": 204.97
           },
           {
-            "date": "2026-07-02",
-            "central": 215.11,
-            "lower": 207.92,
-            "upper": 222.31
+            "date": "2026-07-08",
+            "central": 196.14,
+            "lower": 185.3,
+            "upper": 206.99
           },
           {
-            "date": "2026-07-18",
-            "central": 220.17,
-            "lower": 209.64,
-            "upper": 230.71
+            "date": "2026-07-24",
+            "central": 193.5,
+            "lower": 177.62,
+            "upper": 209.38
           },
           {
-            "date": "2026-08-17",
-            "central": 225.97,
-            "lower": 211.07,
-            "upper": 240.86
+            "date": "2026-08-23",
+            "central": 198.96,
+            "lower": 176.5,
+            "upper": 221.41
           },
           {
-            "date": "2026-09-16",
-            "central": 231.76,
-            "lower": 213.51,
-            "upper": 250.01
+            "date": "2026-09-22",
+            "central": 204.41,
+            "lower": 176.91,
+            "upper": 231.91
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            212.9,
-            215.11,
-            220.17,
-            225.97,
-            231.76
+            197.3,
+            196.14,
+            193.5,
+            198.96,
+            204.41
           ],
           "upper_band": [
-            217.99,
-            222.31,
-            230.71,
-            240.86,
-            250.01
+            204.97,
+            206.99,
+            209.38,
+            221.41,
+            231.91
           ],
           "lower_band": [
-            207.81,
-            207.92,
-            209.64,
-            211.07,
-            213.51
+            189.63,
+            185.3,
+            177.62,
+            176.5,
+            176.91
           ]
         }
       },
-      "last_close_eur": 183.51,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 174.69,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 59,
         "hold": 2,
@@ -930,7 +932,7 @@
         "target_mean": 298.93,
         "currency": "USD"
       },
-      "insider_purchases_90d": 61375018
+      "insider_purchases_90d": 61261698
     },
     {
       "company": "Alphabet",
@@ -938,18 +940,6 @@
       "category": "portfolio",
       "potential_rating": 3,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 318.21
-        },
-        {
-          "date": "2026-02-11",
-          "close": 310.92
-        },
-        {
-          "date": "2026-02-12",
-          "close": 308.97
-        },
         {
           "date": "2026-02-13",
           "close": 305.62
@@ -1297,97 +1287,110 @@
         {
           "date": "2026-06-18",
           "close": 367.46
+        },
+        {
+          "date": "2026-06-22",
+          "close": 348.78
+        },
+        {
+          "date": "2026-06-23",
+          "close": 346.08
+        },
+        {
+          "date": "2026-06-24",
+          "close": 344.84
         }
       ],
-      "last_close": 367.46,
-      "last_date": "2026-06-18",
+      "last_close": 344.84,
+      "last_date": "2026-06-24",
       "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Google sichert KI-Technologie ab und skaliert Produktion mit Intel, aber Search-Umsatzdruck und Regulierung bleiben latente Risiken.",
+      "thesis": "Alphabet profitiert indirekt von eigener Foundry-Strategie (Google TPU bei Intel), bleibt aber Halbleiter-Volatilität ausgesetzt; Dow-Aufnahme könnte kurzfristig Unterstützung geben.",
       "pros": [
-        "TPU-Produktion mit Intel gesichert (3M Chips bis 2028)",
-        "Gemini-Integration in Ads & Search",
-        "YouTube-Advertising bleibt Cashcow"
+        "Dow-Index-Aufnahme ab 24.06. = Index-Inflows",
+        "Google TPU-Ordnung an Intel stabilisiert eigene Supply-Chain",
+        "Advertising Recovery + Cloud-Wachstum halten Fundamentals stark"
       ],
       "cons": [
-        "Regulatorische Druck auf Wettbewerb (antitrust)",
-        "OpenAI/ChatGPT-Konkurrenz in AI-Services",
-        "Cloud-Wachstum teuer (Server-Investitionen)"
+        "KI-Talentabgänge (Deepmind-Sorgen), Morale-Thema",
+        "Halbleiter-Sektor-Druck belastet indirekt",
+        "Regulatorsicher Druck (Antitrust) andauert"
       ],
       "key_drivers": [
-        "Google Search & Cloud-Wachstum",
-        "Gemini-KI-Integration",
-        "TPU-Foundry-Strategie"
+        "Google TPU 2028 Order (Foundry-Validierung)",
+        "Dow-Index-Neuaufnahme (24.06.)",
+        "Ad-Growth",
+        "AI-Talent-Sorgen"
       ],
       "forecast": {
-        "expected_change_30d_pct": 2.5,
-        "expected_change_90d_pct": 6.0,
-        "uncertainty_pct": 3.5,
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 5.0,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 369.6,
-            "lower": 363.39,
-            "upper": 375.82
+            "date": "2026-07-01",
+            "central": 346.05,
+            "lower": 337.72,
+            "upper": 354.38
           },
           {
-            "date": "2026-07-02",
-            "central": 371.75,
-            "lower": 362.96,
-            "upper": 380.53
+            "date": "2026-07-08",
+            "central": 347.25,
+            "lower": 335.48,
+            "upper": 359.03
           },
           {
-            "date": "2026-07-18",
-            "central": 376.65,
-            "lower": 363.79,
-            "upper": 389.51
+            "date": "2026-07-24",
+            "central": 350.01,
+            "lower": 332.77,
+            "upper": 367.25
           },
           {
-            "date": "2026-08-17",
-            "central": 383.08,
-            "lower": 364.89,
-            "upper": 401.27
+            "date": "2026-08-23",
+            "central": 354.32,
+            "lower": 329.94,
+            "upper": 378.71
           },
           {
-            "date": "2026-09-16",
-            "central": 389.51,
-            "lower": 367.23,
-            "upper": 411.78
+            "date": "2026-09-22",
+            "central": 358.63,
+            "lower": 328.77,
+            "upper": 388.5
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            369.6,
-            371.75,
-            376.65,
-            383.08,
-            389.51
+            346.05,
+            347.25,
+            350.01,
+            354.32,
+            358.63
           ],
           "upper_band": [
-            375.82,
-            380.53,
-            389.51,
-            401.27,
-            411.78
+            354.38,
+            359.03,
+            367.25,
+            378.71,
+            388.5
           ],
           "lower_band": [
-            363.39,
-            362.96,
-            363.79,
-            364.89,
-            367.23
+            337.72,
+            335.48,
+            332.77,
+            329.94,
+            328.77
           ]
         }
       },
-      "last_close_eur": 320.06,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 303.53,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 58,
         "hold": 7,
@@ -1401,20 +1404,8 @@
       "company": "Amazon",
       "symbol": "AMZN",
       "category": "portfolio",
-      "potential_rating": 4,
+      "potential_rating": 3,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 206.96
-        },
-        {
-          "date": "2026-02-11",
-          "close": 204.08
-        },
-        {
-          "date": "2026-02-12",
-          "close": 199.6
-        },
         {
           "date": "2026-02-13",
           "close": 198.79
@@ -1762,97 +1753,110 @@
         {
           "date": "2026-06-18",
           "close": 244.39
+        },
+        {
+          "date": "2026-06-22",
+          "close": 232.79
+        },
+        {
+          "date": "2026-06-23",
+          "close": 234.11
+        },
+        {
+          "date": "2026-06-24",
+          "close": 237.65
         }
       ],
-      "last_close": 244.39,
-      "last_date": "2026-06-18",
+      "last_close": 237.65,
+      "last_date": "2026-06-24",
       "currency": "USD",
-      "scenario": "bullish",
-      "thesis": "AWS-Capex und Custom-Chip-Skalierung treiben Gewinnwachstum; Cloud-AI-Services bieten hohes Multiplikator-Potenzial.",
+      "scenario": "neutral",
+      "thesis": "Amazon profitiert von AWS/Cloud-Capex-Nachfrage, ist aber über Custom-Trainium-Chips und Cloud-Infra der Halbleiter-Volatilität ausgesetzt.",
       "pros": [
-        "Custom-Chip-Geschäft (Trainium/Graviton) über 20B USD Laufrate",
-        "AWS-Margen durch KI-Services expandierbar",
-        "Advertising-Business wächst schnell"
+        "AWS wächst 18–20 % YoY, starke AI-Infrastruktur-Nachfrage",
+        "Advertising-Sparte verdoppelt sich jährlich",
+        "Custom Chips (Trainium) reduzieren Abhängigkeit von NVIDIA"
       ],
       "cons": [
-        "Massive Capex-Ausgaben (200B USD 2026) drücken kurzfristig Gewinn",
-        "Retail-Marge komprimiert durch Konkurrenz",
-        "AWS-Preisdruck durch Konkurrenz (Azure, Google Cloud)"
+        "Retail-Sparte unter Druck von Walmart/Discounter",
+        "Capex-Anstieg belastet kurzfristige Cash-Flows",
+        "Halbleiter-Sektor-Verkäufe belasten Cloud-Infrastruktur-Narrative"
       ],
       "key_drivers": [
-        "AWS Cloud-Infrastruktur & KI",
-        "Custom-Chip-Geschäft (Trainium)",
-        "E-Commerce-Margenverbesserung"
+        "AWS-Cloud-Growth",
+        "AI-Infrastructure-Ausgaben",
+        "E-Commerce-Saisonalität",
+        "Halbleiter-Expos."
       ],
       "forecast": {
-        "expected_change_30d_pct": 3.0,
-        "expected_change_90d_pct": 7.5,
-        "uncertainty_pct": 4.0,
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 5.5,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 246.1,
-            "lower": 241.38,
-            "upper": 250.82
+            "date": "2026-07-01",
+            "central": 238.2,
+            "lower": 231.89,
+            "upper": 244.52
           },
           {
-            "date": "2026-07-02",
-            "central": 247.81,
-            "lower": 241.13,
-            "upper": 254.49
+            "date": "2026-07-08",
+            "central": 238.76,
+            "lower": 229.83,
+            "upper": 247.69
           },
           {
-            "date": "2026-07-18",
-            "central": 251.72,
-            "lower": 241.95,
-            "upper": 261.5
+            "date": "2026-07-24",
+            "central": 240.03,
+            "lower": 226.96,
+            "upper": 253.1
           },
           {
-            "date": "2026-08-17",
-            "central": 257.22,
-            "lower": 243.4,
-            "upper": 271.05
+            "date": "2026-08-23",
+            "central": 244.19,
+            "lower": 225.7,
+            "upper": 262.67
           },
           {
-            "date": "2026-09-16",
-            "central": 262.72,
-            "lower": 245.79,
-            "upper": 279.65
+            "date": "2026-09-22",
+            "central": 248.34,
+            "lower": 225.71,
+            "upper": 270.98
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            246.1,
-            247.81,
-            251.72,
-            257.22,
-            262.72
+            238.2,
+            238.76,
+            240.03,
+            244.19,
+            248.34
           ],
           "upper_band": [
-            250.82,
-            254.49,
-            261.5,
-            271.05,
-            279.65
+            244.52,
+            247.69,
+            253.1,
+            262.67,
+            270.98
           ],
           "lower_band": [
-            241.38,
-            241.13,
-            241.95,
-            243.4,
-            245.79
+            231.89,
+            229.83,
+            226.96,
+            225.7,
+            225.71
           ]
         }
       },
-      "last_close_eur": 212.86,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 209.18,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 63,
         "hold": 4,
@@ -1863,904 +1867,80 @@
       "insider_purchases_90d": 1539915
     },
     {
-      "company": "S&P 500",
-      "symbol": "SXR8.DE",
+      "company": "S&P 500 (Core S&P 500 USD Acc)",
+      "symbol": null,
       "category": "portfolio",
-      "potential_rating": 3,
-      "history": [
-        {
-          "date": "2026-02-11",
-          "close": 626.9
-        },
-        {
-          "date": "2026-02-12",
-          "close": 620.74
-        },
-        {
-          "date": "2026-02-13",
-          "close": 619.36
-        },
-        {
-          "date": "2026-02-16",
-          "close": 618.28
-        },
-        {
-          "date": "2026-02-17",
-          "close": 619.9
-        },
-        {
-          "date": "2026-02-18",
-          "close": 626.58
-        },
-        {
-          "date": "2026-02-19",
-          "close": 625.76
-        },
-        {
-          "date": "2026-02-20",
-          "close": 627.44
-        },
-        {
-          "date": "2026-02-23",
-          "close": 622.02
-        },
-        {
-          "date": "2026-02-24",
-          "close": 625.46
-        },
-        {
-          "date": "2026-02-25",
-          "close": 630.04
-        },
-        {
-          "date": "2026-02-26",
-          "close": 627.88
-        },
-        {
-          "date": "2026-02-27",
-          "close": 624.02
-        },
-        {
-          "date": "2026-03-02",
-          "close": 629.62
-        },
-        {
-          "date": "2026-03-03",
-          "close": 627.5
-        },
-        {
-          "date": "2026-03-04",
-          "close": 633.44
-        },
-        {
-          "date": "2026-03-05",
-          "close": 632.34
-        },
-        {
-          "date": "2026-03-09",
-          "close": 622.4
-        },
-        {
-          "date": "2026-03-10",
-          "close": 628.8
-        },
-        {
-          "date": "2026-03-11",
-          "close": 628.04
-        },
-        {
-          "date": "2026-03-12",
-          "close": 624.7
-        },
-        {
-          "date": "2026-03-13",
-          "close": 624.6
-        },
-        {
-          "date": "2026-03-16",
-          "close": 625.36
-        },
-        {
-          "date": "2026-03-17",
-          "close": 626.18
-        },
-        {
-          "date": "2026-03-18",
-          "close": 622.36
-        },
-        {
-          "date": "2026-03-19",
-          "close": 613.34
-        },
-        {
-          "date": "2026-03-20",
-          "close": 608.52
-        },
-        {
-          "date": "2026-03-23",
-          "close": 610.16
-        },
-        {
-          "date": "2026-03-24",
-          "close": 609.3
-        },
-        {
-          "date": "2026-03-25",
-          "close": 613.26
-        },
-        {
-          "date": "2026-03-26",
-          "close": 607.2
-        },
-        {
-          "date": "2026-03-27",
-          "close": 597.92
-        },
-        {
-          "date": "2026-03-30",
-          "close": 600.44
-        },
-        {
-          "date": "2026-03-31",
-          "close": 600.12
-        },
-        {
-          "date": "2026-04-01",
-          "close": 610.3
-        },
-        {
-          "date": "2026-04-02",
-          "close": 611.58
-        },
-        {
-          "date": "2026-04-07",
-          "close": 608.66
-        },
-        {
-          "date": "2026-04-08",
-          "close": 621.66
-        },
-        {
-          "date": "2026-04-09",
-          "close": 624.24
-        },
-        {
-          "date": "2026-04-10",
-          "close": 625.72
-        },
-        {
-          "date": "2026-04-13",
-          "close": 625.66
-        },
-        {
-          "date": "2026-04-14",
-          "close": 632.8
-        },
-        {
-          "date": "2026-04-15",
-          "close": 636.98
-        },
-        {
-          "date": "2026-04-16",
-          "close": 642.18
-        },
-        {
-          "date": "2026-04-17",
-          "close": 649.4
-        },
-        {
-          "date": "2026-04-20",
-          "close": 647.4
-        },
-        {
-          "date": "2026-04-21",
-          "close": 648.46
-        },
-        {
-          "date": "2026-04-22",
-          "close": 652.96
-        },
-        {
-          "date": "2026-04-23",
-          "close": 655.76
-        },
-        {
-          "date": "2026-04-24",
-          "close": 655.72
-        },
-        {
-          "date": "2026-04-27",
-          "close": 655.14
-        },
-        {
-          "date": "2026-04-28",
-          "close": 653.38
-        },
-        {
-          "date": "2026-04-29",
-          "close": 655.38
-        },
-        {
-          "date": "2026-04-30",
-          "close": 656.58
-        },
-        {
-          "date": "2026-05-04",
-          "close": 661.44
-        },
-        {
-          "date": "2026-05-05",
-          "close": 666.0
-        },
-        {
-          "date": "2026-05-06",
-          "close": 671.46
-        },
-        {
-          "date": "2026-05-07",
-          "close": 673.66
-        },
-        {
-          "date": "2026-05-08",
-          "close": 674.76
-        },
-        {
-          "date": "2026-05-11",
-          "close": 677.06
-        },
-        {
-          "date": "2026-05-12",
-          "close": 673.5
-        },
-        {
-          "date": "2026-05-13",
-          "close": 680.66
-        },
-        {
-          "date": "2026-05-14",
-          "close": 691.2
-        },
-        {
-          "date": "2026-05-15",
-          "close": 687.7
-        },
-        {
-          "date": "2026-05-18",
-          "close": 682.0
-        },
-        {
-          "date": "2026-05-19",
-          "close": 680.94
-        },
-        {
-          "date": "2026-05-20",
-          "close": 686.26
-        },
-        {
-          "date": "2026-05-21",
-          "close": 687.28
-        },
-        {
-          "date": "2026-05-22",
-          "close": 694.82
-        },
-        {
-          "date": "2026-05-25",
-          "close": 696.54
-        },
-        {
-          "date": "2026-05-26",
-          "close": 695.74
-        },
-        {
-          "date": "2026-05-27",
-          "close": 694.5
-        },
-        {
-          "date": "2026-05-28",
-          "close": 697.68
-        },
-        {
-          "date": "2026-05-29",
-          "close": 698.9
-        },
-        {
-          "date": "2026-06-01",
-          "close": 702.42
-        },
-        {
-          "date": "2026-06-02",
-          "close": 703.94
-        },
-        {
-          "date": "2026-06-03",
-          "close": 701.76
-        },
-        {
-          "date": "2026-06-04",
-          "close": 700.74
-        },
-        {
-          "date": "2026-06-05",
-          "close": 698.3
-        },
-        {
-          "date": "2026-06-08",
-          "close": 693.26
-        },
-        {
-          "date": "2026-06-09",
-          "close": 682.52
-        },
-        {
-          "date": "2026-06-10",
-          "close": 681.7
-        },
-        {
-          "date": "2026-06-11",
-          "close": 681.24
-        },
-        {
-          "date": "2026-06-12",
-          "close": 691.86
-        },
-        {
-          "date": "2026-06-15",
-          "close": 701.6
-        },
-        {
-          "date": "2026-06-16",
-          "close": 699.68
-        },
-        {
-          "date": "2026-06-17",
-          "close": 698.02
-        },
-        {
-          "date": "2026-06-18",
-          "close": 701.66
-        },
-        {
-          "date": "2026-06-19",
-          "close": 703.54
-        }
-      ],
-      "last_close": 703.54,
-      "last_date": "2026-06-19",
-      "currency": "EUR",
+      "potential_rating": 2,
+      "history": [],
+      "last_close": null,
+      "last_date": null,
+      "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Breitmarkt folgt Notenbank-Signalen; Tech-Überwichtung verleiht Index Volatilität, aber Fundamentals solide.",
+      "thesis": "Der Breitmarkt-Index leidet unter Mega-Cap-Tech-Volatilität, profitiert aber von Rotation in Small Caps und Defensives; mittelfristig stabilisierend wenn Earnings robust bleiben.",
       "pros": [
-        "Unternehmensgewinne (EPS) wachsen 8-10% 2026",
-        "KI-Investitionen verdienen Multiplizierer",
-        "Anleiherenditen moderat (Risiko-Assets attraktiv)"
+        "Breite Diversifikation reduziert Tech-Konzentrations-Risiko",
+        "Dow-Komponenten (Industrials, Financials) halten sich relativ gut",
+        "Earnings-Saison 2026 erwartet solides Wachstum (7–9 %)"
       ],
       "cons": [
-        "Bewertung (PE) am oberen Quartil historisch",
-        "Tech-Abhängigkeit verstärkt Rotation-Risiko",
-        "Rezessions-Warnsignale (Renditekurve invertiert)"
+        "Mega-Cap-Tech (Apple, MSFT, NVDA, GOOGL, AMZN) dominiert Gewichtung",
+        "Halbleiter-Crash steckt an; Index-VIX erhöht sich",
+        "Zinserwartung schwierig: Inflation im Auge, aber Geldpolitik ungewiss"
       ],
       "key_drivers": [
-        "Fed-Ratespath & Inflation",
-        "Tech-Dominanz (7 Stocks)",
-        "Unternehmensgewinne 2026"
+        "Tech-Halbleiter-Rotation",
+        "Fed-Zinspfad",
+        "Unternehmens-Earnings (Q2 ab Juli)"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 4.0,
-        "uncertainty_pct": 2.5,
-        "path": [
-          {
-            "date": "2026-06-26",
-            "central": 706.0,
-            "lower": 697.51,
-            "upper": 714.5
-          },
-          {
-            "date": "2026-07-03",
-            "central": 708.46,
-            "lower": 696.45,
-            "upper": 720.48
-          },
-          {
-            "date": "2026-07-19",
-            "central": 714.09,
-            "lower": 696.5,
-            "upper": 731.68
-          },
-          {
-            "date": "2026-08-18",
-            "central": 722.89,
-            "lower": 698.01,
-            "upper": 747.76
-          },
-          {
-            "date": "2026-09-17",
-            "central": 731.68,
-            "lower": 701.22,
-            "upper": 762.15
-          }
-        ],
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 4.0,
+        "path": [],
         "projection": {
-          "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
-          ],
-          "expected_path": [
-            706.0,
-            708.46,
-            714.09,
-            722.89,
-            731.68
-          ],
-          "upper_band": [
-            714.5,
-            720.48,
-            731.68,
-            747.76,
-            762.15
-          ],
-          "lower_band": [
-            697.51,
-            696.45,
-            696.5,
-            698.01,
-            701.22
-          ]
+          "dates": [],
+          "expected_path": [],
+          "upper_band": [],
+          "lower_band": []
         }
       }
     },
     {
-      "company": "MSCI World",
-      "symbol": "EUNL.DE",
+      "company": "MSCI World (Core MSCI World USD Acc)",
+      "symbol": null,
       "category": "portfolio",
       "potential_rating": 2,
-      "history": [
-        {
-          "date": "2026-02-11",
-          "close": 113.4
-        },
-        {
-          "date": "2026-02-12",
-          "close": 112.39
-        },
-        {
-          "date": "2026-02-13",
-          "close": 112.25
-        },
-        {
-          "date": "2026-02-16",
-          "close": 112.0
-        },
-        {
-          "date": "2026-02-17",
-          "close": 112.33
-        },
-        {
-          "date": "2026-02-18",
-          "close": 113.54
-        },
-        {
-          "date": "2026-02-19",
-          "close": 113.35
-        },
-        {
-          "date": "2026-02-20",
-          "close": 113.76
-        },
-        {
-          "date": "2026-02-23",
-          "close": 112.93
-        },
-        {
-          "date": "2026-02-24",
-          "close": 113.43
-        },
-        {
-          "date": "2026-02-25",
-          "close": 114.27
-        },
-        {
-          "date": "2026-02-26",
-          "close": 114.04
-        },
-        {
-          "date": "2026-02-27",
-          "close": 113.54
-        },
-        {
-          "date": "2026-03-02",
-          "close": 113.96
-        },
-        {
-          "date": "2026-03-03",
-          "close": 112.61
-        },
-        {
-          "date": "2026-03-04",
-          "close": 113.85
-        },
-        {
-          "date": "2026-03-05",
-          "close": 113.31
-        },
-        {
-          "date": "2026-03-09",
-          "close": 111.51
-        },
-        {
-          "date": "2026-03-10",
-          "close": 113.04
-        },
-        {
-          "date": "2026-03-11",
-          "close": 112.64
-        },
-        {
-          "date": "2026-03-12",
-          "close": 112.03
-        },
-        {
-          "date": "2026-03-13",
-          "close": 111.87
-        },
-        {
-          "date": "2026-03-16",
-          "close": 112.18
-        },
-        {
-          "date": "2026-03-17",
-          "close": 112.44
-        },
-        {
-          "date": "2026-03-18",
-          "close": 111.72
-        },
-        {
-          "date": "2026-03-19",
-          "close": 109.86
-        },
-        {
-          "date": "2026-03-20",
-          "close": 108.72
-        },
-        {
-          "date": "2026-03-23",
-          "close": 109.15
-        },
-        {
-          "date": "2026-03-24",
-          "close": 109.12
-        },
-        {
-          "date": "2026-03-25",
-          "close": 110.18
-        },
-        {
-          "date": "2026-03-26",
-          "close": 109.02
-        },
-        {
-          "date": "2026-03-27",
-          "close": 107.47
-        },
-        {
-          "date": "2026-03-30",
-          "close": 108.21
-        },
-        {
-          "date": "2026-03-31",
-          "close": 108.06
-        },
-        {
-          "date": "2026-04-01",
-          "close": 110.36
-        },
-        {
-          "date": "2026-04-02",
-          "close": 110.38
-        },
-        {
-          "date": "2026-04-07",
-          "close": 109.72
-        },
-        {
-          "date": "2026-04-08",
-          "close": 112.49
-        },
-        {
-          "date": "2026-04-09",
-          "close": 112.68
-        },
-        {
-          "date": "2026-04-10",
-          "close": 112.95
-        },
-        {
-          "date": "2026-04-13",
-          "close": 112.94
-        },
-        {
-          "date": "2026-04-14",
-          "close": 114.2
-        },
-        {
-          "date": "2026-04-15",
-          "close": 114.64
-        },
-        {
-          "date": "2026-04-16",
-          "close": 115.32
-        },
-        {
-          "date": "2026-04-17",
-          "close": 116.7
-        },
-        {
-          "date": "2026-04-20",
-          "close": 116.2
-        },
-        {
-          "date": "2026-04-21",
-          "close": 116.04
-        },
-        {
-          "date": "2026-04-22",
-          "close": 116.57
-        },
-        {
-          "date": "2026-04-23",
-          "close": 116.96
-        },
-        {
-          "date": "2026-04-24",
-          "close": 116.72
-        },
-        {
-          "date": "2026-04-27",
-          "close": 116.63
-        },
-        {
-          "date": "2026-04-28",
-          "close": 116.25
-        },
-        {
-          "date": "2026-04-29",
-          "close": 116.34
-        },
-        {
-          "date": "2026-04-30",
-          "close": 117.04
-        },
-        {
-          "date": "2026-05-04",
-          "close": 117.4
-        },
-        {
-          "date": "2026-05-05",
-          "close": 118.24
-        },
-        {
-          "date": "2026-05-06",
-          "close": 119.57
-        },
-        {
-          "date": "2026-05-07",
-          "close": 119.6
-        },
-        {
-          "date": "2026-05-08",
-          "close": 119.54
-        },
-        {
-          "date": "2026-05-11",
-          "close": 119.93
-        },
-        {
-          "date": "2026-05-12",
-          "close": 119.15
-        },
-        {
-          "date": "2026-05-13",
-          "close": 120.43
-        },
-        {
-          "date": "2026-05-14",
-          "close": 122.0
-        },
-        {
-          "date": "2026-05-15",
-          "close": 121.06
-        },
-        {
-          "date": "2026-05-18",
-          "close": 120.41
-        },
-        {
-          "date": "2026-05-19",
-          "close": 120.29
-        },
-        {
-          "date": "2026-05-20",
-          "close": 121.36
-        },
-        {
-          "date": "2026-05-21",
-          "close": 121.52
-        },
-        {
-          "date": "2026-05-22",
-          "close": 122.85
-        },
-        {
-          "date": "2026-05-25",
-          "close": 123.5
-        },
-        {
-          "date": "2026-05-26",
-          "close": 123.11
-        },
-        {
-          "date": "2026-05-27",
-          "close": 122.82
-        },
-        {
-          "date": "2026-05-28",
-          "close": 123.18
-        },
-        {
-          "date": "2026-05-29",
-          "close": 123.42
-        },
-        {
-          "date": "2026-06-01",
-          "close": 123.77
-        },
-        {
-          "date": "2026-06-02",
-          "close": 124.3
-        },
-        {
-          "date": "2026-06-03",
-          "close": 123.89
-        },
-        {
-          "date": "2026-06-04",
-          "close": 123.91
-        },
-        {
-          "date": "2026-06-05",
-          "close": 123.33
-        },
-        {
-          "date": "2026-06-08",
-          "close": 122.62
-        },
-        {
-          "date": "2026-06-09",
-          "close": 120.93
-        },
-        {
-          "date": "2026-06-10",
-          "close": 120.69
-        },
-        {
-          "date": "2026-06-11",
-          "close": 120.89
-        },
-        {
-          "date": "2026-06-12",
-          "close": 122.9
-        },
-        {
-          "date": "2026-06-15",
-          "close": 124.27
-        },
-        {
-          "date": "2026-06-16",
-          "close": 124.12
-        },
-        {
-          "date": "2026-06-17",
-          "close": 124.21
-        },
-        {
-          "date": "2026-06-18",
-          "close": 124.64
-        },
-        {
-          "date": "2026-06-19",
-          "close": 124.81
-        }
-      ],
-      "last_close": 124.81,
-      "last_date": "2026-06-19",
-      "currency": "EUR",
+      "history": [],
+      "last_close": null,
+      "last_date": null,
+      "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Globale Märkte bremsen durch Europa-Schwäche; US-Tech trägt Index, aber Emerging Markets kämpfen mit Zins-Gegenwind.",
+      "thesis": "MSCI World bleibt von US-Tech-Schwergewichten geprägt; europäische Komponenten (DAX -0,86 %) bekommen Gegenwind durch Rüstungs-Kürzungen (Rheinmetall -18,6 %).",
       "pros": [
-        "EZB dürfte Senkungen ab H2 2026 signalisieren",
-        "US-Tech-Dominanz stabilisiert Valuations",
-        "Corporate-Gewinne solide über Regionen hinweg"
+        "Geografische Diversifikation vs. reiner US-Fokus",
+        "Europäische Aktien (Sanofi, Siemens) zeigen relativen Halt",
+        "Emerging Markets (Ex China) bieten Aufwärtspotenzial (Zinsdruck weicht)"
       ],
       "cons": [
-        "Europa-Stagnation (Energie, Regulierung) belastet",
-        "China-Wachstum verlangsamt (EV-Überkapazität)",
-        "Zinsparität US/EU behindert Kapitalflüsse zu Emerging Markets"
+        "US-Komponenten wiegen 60+ %, bleiben Tech-anfällig",
+        "Deutsche Rüstung: Regierungskürzungen von Rüstungs-Programmen (6 Zerstörer gestrichen)",
+        "EZB-Rat (23.07.) könnte weitere Volatilität bringen (mögliche Zinssenkung)"
       ],
       "key_drivers": [
-        "Regionale Divergenz (US > Europa)",
-        "EZB-Ratespath",
-        "Geopolitik (Iran-Krieg, China)"
+        "US-Tech-Dominanz",
+        "Europäische Rotation",
+        "DAX-Rüstungs-Druck (Rheinmetall)"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.0,
+        "expected_change_30d_pct": 0.0,
         "expected_change_90d_pct": 3.0,
-        "uncertainty_pct": 2.5,
-        "path": [
-          {
-            "date": "2026-06-26",
-            "central": 125.1,
-            "lower": 123.59,
-            "upper": 126.61
-          },
-          {
-            "date": "2026-07-03",
-            "central": 125.39,
-            "lower": 123.26,
-            "upper": 127.52
-          },
-          {
-            "date": "2026-07-19",
-            "central": 126.06,
-            "lower": 122.94,
-            "upper": 129.18
-          },
-          {
-            "date": "2026-08-18",
-            "central": 127.31,
-            "lower": 122.89,
-            "upper": 131.72
-          },
-          {
-            "date": "2026-09-17",
-            "central": 128.55,
-            "lower": 123.15,
-            "upper": 133.96
-          }
-        ],
+        "uncertainty_pct": 4.5,
+        "path": [],
         "projection": {
-          "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
-          ],
-          "expected_path": [
-            125.1,
-            125.39,
-            126.06,
-            127.31,
-            128.55
-          ],
-          "upper_band": [
-            126.61,
-            127.52,
-            129.18,
-            131.72,
-            133.96
-          ],
-          "lower_band": [
-            123.59,
-            123.26,
-            122.94,
-            122.89,
-            123.15
-          ]
+          "dates": [],
+          "expected_path": [],
+          "upper_band": [],
+          "lower_band": []
         }
       }
     },
@@ -2768,20 +1948,8 @@
       "company": "MSCI Emerging Markets ex China",
       "symbol": "EMXC.DE",
       "category": "portfolio",
-      "potential_rating": 2,
+      "potential_rating": 4,
       "history": [
-        {
-          "date": "2026-02-11",
-          "close": 34.01
-        },
-        {
-          "date": "2026-02-12",
-          "close": 34.03
-        },
-        {
-          "date": "2026-02-13",
-          "close": 33.97
-        },
         {
           "date": "2026-02-16",
           "close": 34.12
@@ -3125,92 +2293,104 @@
         {
           "date": "2026-06-19",
           "close": 43.87
+        },
+        {
+          "date": "2026-06-22",
+          "close": 44.81
+        },
+        {
+          "date": "2026-06-23",
+          "close": 42.48
+        },
+        {
+          "date": "2026-06-24",
+          "close": 42.51
         }
       ],
-      "last_close": 43.87,
-      "last_date": "2026-06-19",
+      "last_close": 42.51,
+      "last_date": "2026-06-24",
       "currency": "EUR",
-      "scenario": "bearish",
-      "thesis": "Höhere US-Zinsen und stärker Dollar belasten EM-Valuationen; Rohstoffe unter Druck durch schwächere China-Nachfrage.",
+      "scenario": "bullish",
+      "thesis": "Schwellenländer (ohne China) profitieren von Rotation aus Tech-Schwerpunkt; Indien wächst 6+ %, Brasilien/ASEAN-Länder zeigen relativen Halt.",
       "pros": [
-        "Indien wächst 6-7%, strukturelle Aufwärtstrends",
-        "Energiewende begünstigt Rohstoffe mittelfristig",
-        "Diversifikation gegen US-Tech-Risiko"
+        "Indien-Wirtschaft wächst 6+ % YoY, noch nicht overvalued",
+        "Yen-Abschwächung hilft japanischen und SE-Asian Exporteuren",
+        "Relative Rotation aus US-Tech zu Schwellenländern im Frühjahr 2026"
       ],
       "cons": [
-        "Zins-Rückkehr USD drückt EM-Assets",
-        "Rohstoff-Zyklen schwächen sich ab",
-        "Geopolitische Risiken (Iran, Handelskrieg)"
+        "China-Risiko (indirekt über Rohstoffe, Handelspartner)",
+        "Höhere Zinsen in den USA drücken auf EM-Währungen",
+        "Geopolitische Risiken (Südchinesisches Meer, Indien-Pakistan)"
       ],
       "key_drivers": [
-        "US-Zinsen höher gehalten",
-        "Rohstoff-Preise volatile",
-        "EM-Währungen schwach"
+        "Indien-Growth",
+        "Tapering der Überverkauf-Panik",
+        "Yen-Abschwächung"
       ],
       "forecast": {
-        "expected_change_30d_pct": -1.5,
-        "expected_change_90d_pct": 1.0,
-        "uncertainty_pct": 3.5,
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 5.0,
         "path": [
           {
-            "date": "2026-06-26",
-            "central": 43.72,
-            "lower": 42.97,
+            "date": "2026-07-01",
+            "central": 42.76,
+            "lower": 41.73,
+            "upper": 43.78
+          },
+          {
+            "date": "2026-07-08",
+            "central": 43.01,
+            "lower": 41.55,
             "upper": 44.46
           },
           {
-            "date": "2026-07-03",
-            "central": 43.56,
-            "lower": 42.51,
-            "upper": 44.61
+            "date": "2026-07-24",
+            "central": 43.57,
+            "lower": 41.45,
+            "upper": 45.7
           },
           {
-            "date": "2026-07-19",
-            "central": 43.21,
-            "lower": 41.68,
-            "upper": 44.75
+            "date": "2026-08-23",
+            "central": 44.21,
+            "lower": 41.2,
+            "upper": 47.22
           },
           {
-            "date": "2026-08-18",
-            "central": 43.76,
-            "lower": 41.59,
-            "upper": 45.93
-          },
-          {
-            "date": "2026-09-17",
-            "central": 44.31,
-            "lower": 41.65,
-            "upper": 46.97
+            "date": "2026-09-22",
+            "central": 44.85,
+            "lower": 41.17,
+            "upper": 48.53
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            43.72,
-            43.56,
-            43.21,
-            43.76,
-            44.31
+            42.76,
+            43.01,
+            43.57,
+            44.21,
+            44.85
           ],
           "upper_band": [
+            43.78,
             44.46,
-            44.61,
-            44.75,
-            45.93,
-            46.97
+            45.7,
+            47.22,
+            48.53
           ],
           "lower_band": [
-            42.97,
-            42.51,
-            41.68,
-            41.59,
-            41.65
+            41.73,
+            41.55,
+            41.45,
+            41.2,
+            41.17
           ]
         }
       }
@@ -3219,20 +2399,8 @@
       "company": "MSCI World Information Technology",
       "symbol": "XDWT.DE",
       "category": "portfolio",
-      "potential_rating": 4,
+      "potential_rating": 1,
       "history": [
-        {
-          "date": "2026-02-11",
-          "close": 97.24
-        },
-        {
-          "date": "2026-02-12",
-          "close": 95.32
-        },
-        {
-          "date": "2026-02-13",
-          "close": 94.76
-        },
         {
           "date": "2026-02-16",
           "close": 94.29
@@ -3576,92 +2744,104 @@
         {
           "date": "2026-06-19",
           "close": 125.74
+        },
+        {
+          "date": "2026-06-22",
+          "close": 126.26
+        },
+        {
+          "date": "2026-06-23",
+          "close": 122.72
+        },
+        {
+          "date": "2026-06-24",
+          "close": 122.98
         }
       ],
-      "last_close": 125.74,
-      "last_date": "2026-06-19",
+      "last_close": 122.98,
+      "last_date": "2026-06-24",
       "currency": "EUR",
-      "scenario": "bullish",
-      "thesis": "Tech-Sektor wird von KI-Ausgaben und Cloud-Expansion getragen; Infrastruktur-Zyklus hat noch 2-3 Jahre Laufzeit.",
+      "scenario": "bearish",
+      "thesis": "Reiner Tech-Sektor-ETF ist am meisten exponiert gegenüber Halbleiter-Ausverkauf und KI-Gewinnzweifeln; Kurzfristig abwartend bis Micron/MSFT-Earnings.",
       "pros": [
-        "Hyperscaler-Capex über 700B USD 2026 erwartet",
-        "Halbleiter-Knappheit treibt Preise & Margen",
-        "Software-Margen expandieren (KI-Services)"
+        "Diversifiziert über globale Tech-Player (SMCI, SAP, Accenture, TSMC)",
+        "Sektor bleibt für strukturelle KI/Cloud-Trends relevant",
+        "Nach-Verkauf könnte Einstiegschance bieten"
       ],
       "cons": [
-        "Bewertung (PEG-Ratio) am oberen Ende",
-        "Zinsanstieg drückt Multiples",
-        "Überkapazität in Chips möglich (2H 2026+)"
+        "Halbleiter-Crash (-6,5 % SMH heute) schleift ETF runter",
+        "NVIDIA/TSMC/Broadcom-Gewichte fallen stark",
+        "Valuation bleibt fragil — KGV 25+ bei Gewinnzweifeln"
       ],
       "key_drivers": [
-        "KI-Infrastruktur-Capex",
-        "Halbleiter-Nachfrage",
-        "Cloud-Services-Wachstum"
+        "Halbleiter-Volatilität",
+        "AI-ROI-Zweifel",
+        "Valuation-Abschlag"
       ],
       "forecast": {
-        "expected_change_30d_pct": 3.5,
-        "expected_change_90d_pct": 8.0,
-        "uncertainty_pct": 4.5,
+        "expected_change_30d_pct": -3.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 7.0,
         "path": [
           {
-            "date": "2026-06-26",
-            "central": 126.77,
-            "lower": 124.03,
-            "upper": 129.5
+            "date": "2026-07-01",
+            "central": 122.12,
+            "lower": 117.96,
+            "upper": 126.28
           },
           {
-            "date": "2026-07-03",
-            "central": 127.79,
-            "lower": 123.93,
-            "upper": 131.66
+            "date": "2026-07-08",
+            "central": 121.26,
+            "lower": 115.38,
+            "upper": 127.14
           },
           {
-            "date": "2026-07-19",
-            "central": 130.14,
-            "lower": 124.48,
-            "upper": 135.8
+            "date": "2026-07-24",
+            "central": 119.29,
+            "lower": 110.68,
+            "upper": 127.9
           },
           {
-            "date": "2026-08-18",
-            "central": 132.97,
-            "lower": 124.97,
-            "upper": 140.97
+            "date": "2026-08-23",
+            "central": 122.37,
+            "lower": 110.19,
+            "upper": 134.54
           },
           {
-            "date": "2026-09-17",
-            "central": 135.8,
-            "lower": 126.0,
-            "upper": 145.6
+            "date": "2026-09-22",
+            "central": 125.44,
+            "lower": 110.53,
+            "upper": 140.35
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            126.77,
-            127.79,
-            130.14,
-            132.97,
-            135.8
+            122.12,
+            121.26,
+            119.29,
+            122.37,
+            125.44
           ],
           "upper_band": [
-            129.5,
-            131.66,
-            135.8,
-            140.97,
-            145.6
+            126.28,
+            127.14,
+            127.9,
+            134.54,
+            140.35
           ],
           "lower_band": [
-            124.03,
-            123.93,
-            124.48,
-            124.97,
-            126.0
+            117.96,
+            115.38,
+            110.68,
+            110.19,
+            110.53
           ]
         }
       }
@@ -3672,18 +2852,6 @@
       "category": "watchlist",
       "potential_rating": 4,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 126.2
-        },
-        {
-          "date": "2026-02-11",
-          "close": 128.26
-        },
-        {
-          "date": "2026-02-12",
-          "close": 133.11
-        },
         {
           "date": "2026-02-13",
           "close": 133.36
@@ -4031,97 +3199,109 @@
         {
           "date": "2026-06-18",
           "close": 117.18
+        },
+        {
+          "date": "2026-06-22",
+          "close": 117.18
+        },
+        {
+          "date": "2026-06-23",
+          "close": 119.42
+        },
+        {
+          "date": "2026-06-24",
+          "close": 119.56
         }
       ],
-      "last_close": 117.18,
-      "last_date": "2026-06-18",
+      "last_close": 119.56,
+      "last_date": "2026-06-24",
       "currency": "USD",
       "scenario": "bullish",
-      "thesis": "Walmart profitiert von stabilen US-Konsumausgaben und E-Commerce-Wachstum; Marge-Erholung durch Effizienzgewinne.",
+      "thesis": "Walmart bleibt Konsumbar-Gewinner in wirtschaftlich angespanntem Umfeld; stabiles Umsatzwachstum und margin-positive Operationen unterstützen Kurs.",
       "pros": [
-        "Konsumausgaben robust (niedrige Arbeitslosigkeit, Lohnwachstum)",
-        "E-Commerce wächst 12-15% YoY",
-        "Operational Leverage durch Tech-Investitionen"
+        "Verbraucherausgaben auf Lebensmittel/Essentials konzentriert sich",
+        "E-Commerce wächst 15+ % YoY, profitabel",
+        "Defensive Qualität: weniger Tech-Abschwung, eher Inflations-Gewinner"
       ],
       "cons": [
-        "Lohn-Inflationsdruck bleibt latent",
-        "Zoll-Risiken auf China-Importe",
-        "Konkurrenz von Amazon (Preis, Convenience)"
+        "Lohnkosten-Druck bleibt ein Margendampfer",
+        "Großer Wettbewerb von Amazon Fresh/Discountern",
+        "Makro-Risiko: Falls Konsumkraft einbricht"
       ],
       "key_drivers": [
-        "Konsumausgaben stabil",
-        "E-Commerce-Wachstum zweistellig",
-        "Operating-Leverage-Verbesserung"
+        "Konsumtrends stabil",
+        "E-Commerce-Wachstum 15+ %",
+        "Low-Income-Kunden resilient"
       ],
       "forecast": {
-        "expected_change_30d_pct": 2.5,
-        "expected_change_90d_pct": 5.0,
-        "uncertainty_pct": 2.5,
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 3.0,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 117.86,
-            "lower": 116.45,
-            "upper": 119.28
+            "date": "2026-07-01",
+            "central": 120.12,
+            "lower": 118.39,
+            "upper": 121.85
           },
           {
-            "date": "2026-07-02",
-            "central": 118.55,
-            "lower": 116.55,
-            "upper": 120.55
+            "date": "2026-07-08",
+            "central": 120.68,
+            "lower": 118.23,
+            "upper": 123.13
           },
           {
-            "date": "2026-07-18",
-            "central": 120.11,
-            "lower": 117.18,
-            "upper": 123.04
+            "date": "2026-07-24",
+            "central": 121.95,
+            "lower": 118.36,
+            "upper": 125.54
           },
           {
-            "date": "2026-08-17",
-            "central": 121.57,
-            "lower": 117.43,
-            "upper": 125.72
+            "date": "2026-08-23",
+            "central": 123.45,
+            "lower": 118.37,
+            "upper": 128.52
           },
           {
-            "date": "2026-09-16",
-            "central": 123.04,
-            "lower": 117.96,
-            "upper": 128.11
+            "date": "2026-09-22",
+            "central": 124.94,
+            "lower": 118.73,
+            "upper": 131.15
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            117.86,
-            118.55,
-            120.11,
-            121.57,
-            123.04
+            120.12,
+            120.68,
+            121.95,
+            123.45,
+            124.94
           ],
           "upper_band": [
-            119.28,
-            120.55,
-            123.04,
-            125.72,
-            128.11
+            121.85,
+            123.13,
+            125.54,
+            128.52,
+            131.15
           ],
           "lower_band": [
-            116.45,
-            116.55,
-            117.18,
-            117.43,
-            117.96
+            118.39,
+            118.23,
+            118.36,
+            118.37,
+            118.73
           ]
         }
       },
-      "last_close_eur": 102.06,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 105.24,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 37,
         "hold": 4,
@@ -4135,20 +3315,8 @@
       "company": "Tesla",
       "symbol": "TSLA",
       "category": "watchlist",
-      "potential_rating": 2,
+      "potential_rating": 1,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 425.21
-        },
-        {
-          "date": "2026-02-11",
-          "close": 428.27
-        },
-        {
-          "date": "2026-02-12",
-          "close": 417.07
-        },
         {
           "date": "2026-02-13",
           "close": 417.44
@@ -4496,105 +3664,117 @@
         {
           "date": "2026-06-18",
           "close": 400.49
+        },
+        {
+          "date": "2026-06-22",
+          "close": 405.05
+        },
+        {
+          "date": "2026-06-23",
+          "close": 381.61
+        },
+        {
+          "date": "2026-06-24",
+          "close": 377.29
         }
       ],
-      "last_close": 400.49,
-      "last_date": "2026-06-18",
+      "last_close": 377.29,
+      "last_date": "2026-06-24",
       "currency": "USD",
-      "scenario": "neutral",
-      "thesis": "Tesla balanciert zwischen reifen EV-Märkten und neuen KI-/Energiespeicher-Chancen; Kurzfristiges Setup eher schwach, Langfristpotenzial bleibt.",
+      "scenario": "bearish",
+      "thesis": "Tesla leidet doppelt: erstens von Halbleiter-Markt-Volatilität (EV-Chips unter Druck), zweitens von nachlassendem EV-Absatz in Nordamerika/Europa.",
       "pros": [
-        "Terafab AI-Datencenter-Initiative unter Intel 14A Contracts",
-        "Energie-Speicher-Geschäft wächst schnell",
-        "Autonomie-Softwareentwicklung (FSD Supervised)"
+        "Energiespeicher-Sparte (Powerwall) wächst dynamisch",
+        "Supercharger-Netzwerk bleibt Moat",
+        "Mögliche Robotaxi-Ankündigung könnte Narrative shiften"
       ],
       "cons": [
-        "EV-Absatz-Sättigung in US/Europa (Preisdruck)",
-        "China-Markt Konkurrenz (BYD überholte Tesla 2025)",
-        "Bewertung hoch relativ zu Branche"
+        "EV-Absatz Nordamerika: YoY-Wachstum stagniert/negativ",
+        "Chinesischer Wettbewerb (BYD, Xiaomi EV) verschärft sich",
+        "Halbleiter-Knappheit für Autonomous-Driving-Entwicklung hinderlich"
       ],
       "key_drivers": [
-        "EV-Markt-Sättigung in entwickelten Märkten",
-        "Terafab AI-Hub in Austin (langfristig)",
-        "Konkurrenz von BYD, traditionellen OEMs"
+        "Halbleiter-Krisis-Ansteckung",
+        "EV-Absatzflaute",
+        "Konkurrenz-Druck (BYD, Xiaomi)"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 3.5,
-        "uncertainty_pct": 4.5,
+        "expected_change_30d_pct": -3.5,
+        "expected_change_90d_pct": 0.5,
+        "uncertainty_pct": 8.0,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 401.89,
-            "lower": 393.19,
-            "upper": 410.6
+            "date": "2026-07-01",
+            "central": 374.21,
+            "lower": 359.63,
+            "upper": 388.79
           },
           {
-            "date": "2026-07-02",
-            "central": 403.29,
-            "lower": 390.98,
-            "upper": 415.6
+            "date": "2026-07-08",
+            "central": 371.13,
+            "lower": 350.51,
+            "upper": 391.75
           },
           {
-            "date": "2026-07-18",
-            "central": 406.5,
-            "lower": 388.48,
-            "upper": 424.52
+            "date": "2026-07-24",
+            "central": 364.08,
+            "lower": 333.9,
+            "upper": 394.27
           },
           {
-            "date": "2026-08-17",
-            "central": 410.5,
-            "lower": 385.02,
-            "upper": 435.99
+            "date": "2026-08-23",
+            "central": 371.63,
+            "lower": 328.95,
+            "upper": 414.32
           },
           {
-            "date": "2026-09-16",
-            "central": 414.51,
-            "lower": 383.29,
-            "upper": 445.72
+            "date": "2026-09-22",
+            "central": 379.18,
+            "lower": 326.9,
+            "upper": 431.46
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            401.89,
-            403.29,
-            406.5,
-            410.5,
-            414.51
+            374.21,
+            371.13,
+            364.08,
+            371.63,
+            379.18
           ],
           "upper_band": [
-            410.6,
-            415.6,
-            424.52,
-            435.99,
-            445.72
+            388.79,
+            391.75,
+            394.27,
+            414.32,
+            431.46
           ],
           "lower_band": [
-            393.19,
-            390.98,
-            388.48,
-            385.02,
-            383.29
+            359.63,
+            350.51,
+            333.9,
+            328.95,
+            326.9
           ]
         }
       },
-      "last_close_eur": 348.83,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 332.09,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 23,
         "hold": 18,
         "sell": 6,
-        "target_mean": 420.55,
+        "target_mean": 421.16,
         "currency": "USD"
       },
-      "insider_purchases_90d": 367723
+      "insider_purchases_90d": 304328353
     },
     {
       "company": "Bitcoin",
@@ -4602,26 +3782,6 @@
       "category": "watchlist",
       "potential_rating": 2,
       "history": [
-        {
-          "date": "2026-03-22",
-          "close": 67845.21
-        },
-        {
-          "date": "2026-03-23",
-          "close": 70914.86
-        },
-        {
-          "date": "2026-03-24",
-          "close": 70517.86
-        },
-        {
-          "date": "2026-03-25",
-          "close": 71309.88
-        },
-        {
-          "date": "2026-03-26",
-          "close": 68791.62
-        },
         {
           "date": "2026-03-27",
           "close": 66338.38
@@ -4951,130 +4111,135 @@
           "close": 65600.64
         },
         {
+          "date": "2026-06-17",
+          "close": 64418.45
+        },
+        {
           "date": "2026-06-18",
           "close": 62896.47
         },
         {
           "date": "2026-06-19",
-          "close": 63059.15
+          "close": 63540.84
+        },
+        {
+          "date": "2026-06-20",
+          "close": 64239.68
+        },
+        {
+          "date": "2026-06-21",
+          "close": 63237.54
+        },
+        {
+          "date": "2026-06-22",
+          "close": 63952.11
+        },
+        {
+          "date": "2026-06-23",
+          "close": 62668.02
+        },
+        {
+          "date": "2026-06-24",
+          "close": 59729.59
         }
       ],
-      "last_close": 63059.15,
-      "last_date": "2026-06-19",
+      "last_close": 59729.59,
+      "last_date": "2026-06-24",
       "currency": "USD",
       "scenario": "neutral",
-      "thesis": "Bitcoin bleibt volatil; Notenbank-Signale lenken Flüsse — Korrektur-Potenzial bei höheren Zinsen, Aufwärtspotenzial bei Fed-Pivot.",
+      "thesis": "Bitcoin fällt heute (-2,2 %) auf 61.066 USD wegen kurzfristiger Risk-Off-Stimmung; längerfristig bleibt Krypto antizyklisch zu Aktien bei makro-Realignment.",
       "pros": [
-        "Spot-BTC-ETFs in US stabilisieren Nachfrage",
-        "Geopolitische Risiken (Iran, Ukraine) stützen Safe-Haven-Nachfrage",
-        "Halving-Zyklus 2024 strukturell positiv bis 2025/26"
+        "Inflation-Hedge-Funktion bleibt intakt",
+        "Fed-Zinssenkungen (ab H2 2026 möglich) könnten Angebot unterstützen",
+        "Institutionelle Adoption wächst (Spot BTC ETFs solide)"
       ],
       "cons": [
-        "Zinserhöhungen drücken Valuations (BTC ist zinslos)",
-        "Regulatorische Risiken (SEC, CFTC)",
-        "Volatilität bleibt hoch, Liquidität in Marktturbulenzen gefährdet"
+        "Höhere Zinsen = Opportunität-Kosten für Crypto (Cash attraktiver)",
+        "Kurzfristige Tech-Rotation drückt auf Risk Assets",
+        "Regulierungsrisiko: Fed/SEC könnten restriktiver werden"
       ],
       "key_drivers": [
-        "Makro-Zinserwartungen",
-        "Institutionelle Adoption & ETFs",
-        "Geopolitische Risiko-Prämie"
+        "Makro-Zinssätze (Fed)",
+        "Geldmenge (M2)",
+        "Geopolitik (Iran-Deals)",
+        "Risk-On/Off-Rotation"
       ],
       "forecast": {
-        "expected_change_30d_pct": 2.0,
-        "expected_change_90d_pct": 5.0,
-        "uncertainty_pct": 6.0,
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 8.0,
+        "uncertainty_pct": 10.0,
         "path": [
           {
-            "date": "2026-06-26",
-            "central": 63353.43,
-            "lower": 61525.8,
-            "upper": 65181.05
+            "date": "2026-07-01",
+            "central": 59520.54,
+            "lower": 56635.32,
+            "upper": 62405.75
           },
           {
-            "date": "2026-07-03",
-            "central": 63647.7,
-            "lower": 61063.05,
-            "upper": 66232.36
+            "date": "2026-07-08",
+            "central": 59311.48,
+            "lower": 55231.18,
+            "upper": 63391.79
           },
           {
-            "date": "2026-07-19",
-            "central": 64320.33,
-            "lower": 60536.78,
-            "upper": 68103.88
+            "date": "2026-07-24",
+            "central": 58833.65,
+            "lower": 52860.69,
+            "upper": 64806.61
           },
           {
-            "date": "2026-08-18",
-            "central": 65266.22,
-            "lower": 59915.47,
-            "upper": 70616.97
+            "date": "2026-08-23",
+            "central": 61670.8,
+            "lower": 53223.76,
+            "upper": 70117.84
           },
           {
-            "date": "2026-09-17",
-            "central": 66212.11,
-            "lower": 59658.81,
-            "upper": 72765.41
+            "date": "2026-09-22",
+            "central": 64507.96,
+            "lower": 54162.49,
+            "upper": 74853.43
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            63353.43,
-            63647.7,
-            64320.33,
-            65266.22,
-            66212.11
+            59520.54,
+            59311.48,
+            58833.65,
+            61670.8,
+            64507.96
           ],
           "upper_band": [
-            65181.05,
-            66232.36,
-            68103.88,
-            70616.97,
-            72765.41
+            62405.75,
+            63391.79,
+            64806.61,
+            70117.84,
+            74853.43
           ],
           "lower_band": [
-            61525.8,
-            61063.05,
-            60536.78,
-            59915.47,
-            59658.81
+            56635.32,
+            55231.18,
+            52860.69,
+            53223.76,
+            54162.49
           ]
         }
       },
-      "last_close_eur": 54924.79,
-      "fx_rate_eurusd": 1.1481
+      "last_close_eur": 52574.24,
+      "fx_rate_eurusd": 1.1361
     },
     {
       "company": "Ethereum",
       "symbol": "ETH-USD",
       "category": "watchlist",
-      "potential_rating": 2,
+      "potential_rating": 1,
       "history": [
-        {
-          "date": "2026-03-22",
-          "close": 2053.05
-        },
-        {
-          "date": "2026-03-23",
-          "close": 2152.15
-        },
-        {
-          "date": "2026-03-24",
-          "close": 2155.7
-        },
-        {
-          "date": "2026-03-25",
-          "close": 2168.02
-        },
-        {
-          "date": "2026-03-26",
-          "close": 2059.58
-        },
         {
           "date": "2026-03-27",
           "close": 1991.27
@@ -5404,104 +4569,128 @@
           "close": 1790.4
         },
         {
+          "date": "2026-06-17",
+          "close": 1747.89
+        },
+        {
           "date": "2026-06-18",
           "close": 1709.53
         },
         {
           "date": "2026-06-19",
-          "close": 1701.74
+          "close": 1710.98
+        },
+        {
+          "date": "2026-06-20",
+          "close": 1739.3
+        },
+        {
+          "date": "2026-06-21",
+          "close": 1704.58
+        },
+        {
+          "date": "2026-06-22",
+          "close": 1726.51
+        },
+        {
+          "date": "2026-06-23",
+          "close": 1665.44
+        },
+        {
+          "date": "2026-06-24",
+          "close": 1577.92
         }
       ],
-      "last_close": 1701.74,
-      "last_date": "2026-06-19",
+      "last_close": 1577.92,
+      "last_date": "2026-06-24",
       "currency": "USD",
-      "scenario": "neutral",
-      "thesis": "Ethereum folgt Bitcoin-Zyklen, aber DeFi-Fundamentals (Staking, DAOs) bieten langfristigen Kurs-Support — kurzfristiges Setup schwach bei Zinssorgen.",
+      "scenario": "bearish",
+      "thesis": "Ethereum bleibt volatiler als Bitcoin und leidet stärker unter Risk-Off; Technische Upgrades (Dencun, Shanghai) zu spät für kurzfristige Erholung.",
       "pros": [
-        "ETH-Staking-Yield (3-4%) lockt Kapitalanleger",
-        "DeFi & NFT-Nachfrage erholt sich bei KI-Integration (Agents)",
-        "Layer-2-Skalierungslösungen verbessern Nutzerfreundlichkeit"
+        "Dencun (Blobs) reduziert Layer-2-Gebühren — bullish für Ecosystem",
+        "DeFi-TVL stabilisiert sich auf 120+ Mrd. USD-Level",
+        "Shanghai-Merge-Validierung erhöht Stake-Rate"
       ],
       "cons": [
-        "Zinserhöhungen drücken Crypto-Valuationen",
-        "Konkurrenz durch Solana, andere Chain",
-        "Regulatorische Unsicherheit (GFCI, SEC)",
-        "Technische Schwäche bei Bitcoin-Korrektionen"
+        "Höhere Volatilität vs. BTC = stärkere Drawdowns in Risk-Off",
+        "Anwendungs-Volatilität: DeFi-Exploits, Bridge-Risiken",
+        "Konkurrenz von Solana (SOL) + anderen L1-Chains"
       ],
       "key_drivers": [
-        "Smart-Contract-Adoption & DeFi",
-        "Makro-Zinsumfeld",
-        "ETH-Staking-Renditen"
+        "DeFi-Volatilität",
+        "Shanghai/Dencun-Upgrades",
+        "Staking-Renditen",
+        "Alt-Crypto-Rotation"
       ],
       "forecast": {
-        "expected_change_30d_pct": 1.5,
-        "expected_change_90d_pct": 4.0,
-        "uncertainty_pct": 6.5,
+        "expected_change_30d_pct": -4.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 12.0,
         "path": [
           {
-            "date": "2026-06-26",
-            "central": 1707.7,
-            "lower": 1654.26,
-            "upper": 1761.13
+            "date": "2026-07-01",
+            "central": 1563.19,
+            "lower": 1471.73,
+            "upper": 1654.66
           },
           {
-            "date": "2026-07-03",
-            "central": 1713.65,
-            "lower": 1638.09,
-            "upper": 1789.22
+            "date": "2026-07-08",
+            "central": 1548.47,
+            "lower": 1419.11,
+            "upper": 1677.82
           },
           {
-            "date": "2026-07-19",
-            "central": 1727.27,
-            "lower": 1616.65,
-            "upper": 1837.88
+            "date": "2026-07-24",
+            "central": 1514.8,
+            "lower": 1325.45,
+            "upper": 1704.15
           },
           {
-            "date": "2026-08-18",
-            "central": 1748.54,
-            "lower": 1592.11,
-            "upper": 1904.97
+            "date": "2026-08-23",
+            "central": 1585.81,
+            "lower": 1318.03,
+            "upper": 1853.59
           },
           {
-            "date": "2026-09-17",
-            "central": 1769.81,
-            "lower": 1578.22,
-            "upper": 1961.4
+            "date": "2026-09-22",
+            "central": 1656.82,
+            "lower": 1328.85,
+            "upper": 1984.78
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-26",
-            "2026-07-03",
-            "2026-07-19",
-            "2026-08-18",
-            "2026-09-17"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            1707.7,
-            1713.65,
-            1727.27,
-            1748.54,
-            1769.81
+            1563.19,
+            1548.47,
+            1514.8,
+            1585.81,
+            1656.82
           ],
           "upper_band": [
-            1761.13,
-            1789.22,
-            1837.88,
-            1904.97,
-            1961.4
+            1654.66,
+            1677.82,
+            1704.15,
+            1853.59,
+            1984.78
           ],
           "lower_band": [
-            1654.26,
-            1638.09,
-            1616.65,
-            1592.11,
-            1578.22
+            1471.73,
+            1419.11,
+            1325.45,
+            1318.03,
+            1328.85
           ]
         }
       },
-      "last_close_eur": 1482.22,
-      "fx_rate_eurusd": 1.1481
+      "last_close_eur": 1388.89,
+      "fx_rate_eurusd": 1.1361
     },
     {
       "company": "Boeing",
@@ -5509,18 +4698,6 @@
       "category": "watchlist",
       "potential_rating": 2,
       "history": [
-        {
-          "date": "2026-02-10",
-          "close": 242.59
-        },
-        {
-          "date": "2026-02-11",
-          "close": 236.26
-        },
-        {
-          "date": "2026-02-12",
-          "close": 239.35
-        },
         {
           "date": "2026-02-13",
           "close": 242.96
@@ -5868,98 +5045,110 @@
         {
           "date": "2026-06-18",
           "close": 222.72
+        },
+        {
+          "date": "2026-06-22",
+          "close": 220.83
+        },
+        {
+          "date": "2026-06-23",
+          "close": 216.71
+        },
+        {
+          "date": "2026-06-24",
+          "close": 221.74
         }
       ],
-      "last_close": 222.72,
-      "last_date": "2026-06-18",
+      "last_close": 221.74,
+      "last_date": "2026-06-24",
       "currency": "USD",
-      "scenario": "bearish",
-      "thesis": "Boeing kämpft mit Produktionsproblemen und Lieferkettenengpässen; Defense-Sparte (MQ-28) bietet Aufwindpotenzial, reicht aber nicht zur nahen Kursstützung.",
+      "scenario": "neutral",
+      "thesis": "Boeing bleibt unter Korrektur-Druck wegen anhaltender Qualitäts-Sorgen und Max-Produktions-Herausforderungen; mittelfristig profitiert von Air-Rebound, kurzfristig kein Catalyst.",
       "pros": [
-        "737-MAX-Nachfrage robust (Backlog 5000+ Flugzeuge)",
-        "Defense & Space-Sparte wächst (MQ-28 validierte neue Fähigkeit)",
-        "Langfristiger Luftfahrtsektor-Boom (mehr Flieger bis 2040)"
+        "Max 10-Rückkehr — 737 bleibt Volumen-Rückgrat",
+        "Defense-Aufträge (Rüstungsausgaben) stabilisieren Geschäft",
+        "Commercial-Air-Traffic weiterhin auf Wachstumspfad post-COVID"
       ],
       "cons": [
-        "Produktionsverzögerungen bleiben Risiko (737-10 Ramp)",
-        "Lieferketten-Inflation drückt Margen",
-        "Sicherheits-/Qualitätsprobleme könnten zu Produktionsstops führen",
-        "Geopolitik könnte Defense-Aufträge unter Druck setzen"
+        "Quality-Skandale (Türluke, Risse) müssen restituiert werden",
+        "Lieferketten-Strain hält Production-Rate niedrig",
+        "Wettbewerb von Airbus A220/A320neo bleibt scharf"
       ],
       "key_drivers": [
-        "Produktionsstabilität & Lieferkettendruck",
-        "737-MAX-Nachfrage",
-        "Defense-Aufträge (MQ-28)"
+        "Sicherheits-/Qualitäts-Themen",
+        "Max-Rückkehr",
+        "Defense-Orders",
+        "Lieferketten-Strain"
       ],
       "forecast": {
-        "expected_change_30d_pct": -2.0,
-        "expected_change_90d_pct": 0.5,
-        "uncertainty_pct": 4.0,
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 6.0,
         "path": [
           {
-            "date": "2026-06-25",
-            "central": 221.68,
-            "lower": 217.38,
-            "upper": 225.98
+            "date": "2026-07-01",
+            "central": 222.0,
+            "lower": 215.57,
+            "upper": 228.43
           },
           {
-            "date": "2026-07-02",
-            "central": 220.64,
-            "lower": 214.56,
-            "upper": 226.73
+            "date": "2026-07-08",
+            "central": 222.26,
+            "lower": 213.17,
+            "upper": 231.35
           },
           {
-            "date": "2026-07-18",
-            "central": 218.27,
-            "lower": 209.36,
-            "upper": 227.17
+            "date": "2026-07-24",
+            "central": 222.85,
+            "lower": 209.54,
+            "upper": 236.15
           },
           {
-            "date": "2026-08-17",
-            "central": 221.05,
-            "lower": 208.45,
-            "upper": 233.65
+            "date": "2026-08-23",
+            "central": 226.17,
+            "lower": 207.36,
+            "upper": 244.99
           },
           {
-            "date": "2026-09-16",
-            "central": 223.83,
-            "lower": 208.4,
-            "upper": 239.26
+            "date": "2026-09-22",
+            "central": 229.5,
+            "lower": 206.46,
+            "upper": 252.54
           }
         ],
         "projection": {
           "dates": [
-            "2026-06-25",
-            "2026-07-02",
-            "2026-07-18",
-            "2026-08-17",
-            "2026-09-16"
+            "2026-07-01",
+            "2026-07-08",
+            "2026-07-24",
+            "2026-08-23",
+            "2026-09-22"
           ],
           "expected_path": [
-            221.68,
-            220.64,
-            218.27,
-            221.05,
-            223.83
+            222.0,
+            222.26,
+            222.85,
+            226.17,
+            229.5
           ],
           "upper_band": [
-            225.98,
-            226.73,
-            227.17,
-            233.65,
-            239.26
+            228.43,
+            231.35,
+            236.15,
+            244.99,
+            252.54
           ],
           "lower_band": [
-            217.38,
-            214.56,
-            209.36,
-            208.45,
-            208.4
+            215.57,
+            213.17,
+            209.54,
+            207.36,
+            206.46
           ]
         }
       },
-      "last_close_eur": 193.99,
-      "fx_rate_eurusd": 1.1481,
+      "last_close_eur": 195.18,
+      "fx_rate_eurusd": 1.1361,
       "analyst_consensus": {
         "buy": 21,
         "hold": 5,
@@ -5970,5 +5159,5 @@
       "insider_purchases_90d": 190709
     }
   ],
-  "fx_rate_eurusd": 1.1481
+  "fx_rate_eurusd": 1.1361
 }

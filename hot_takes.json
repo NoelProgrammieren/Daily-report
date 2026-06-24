@@ -3,9 +3,9 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Nächste Katalysatoren: Q3/Q4 2026 Kundenankündigungen (Apple, weitere Hyperscaler); 18A-P Risk Production Validation; 14A PDK-Zertifizierungen für Großkunden.",
+      "event_basis": "Weitere Foundry-Katalysatoren Q3/Q4 2026: Google TPU-Bestellung (3M Units für 2028), Apple-Chip-Deal (Juni 18), Cadence 14A Design-Partnerschaft, Intel 18A-P in Risikoertigung. Nächste Validierungs-Events sind Kundenbewährungen durch Hyperscaler.",
       "event_date": "2026-06-30",
-      "time_horizon": "2-6 Wochen",
+      "time_horizon": "2-4 Wochen bis Katalysator-Vollzug",
       "expected_move_pct": {
         "low": 3.0,
         "high": 7.0,
@@ -16,10 +16,10 @@
         "high": 32.0,
         "currency": "USD"
       },
-      "thesis": "Neue Foundry-Führungsstruktur und bestätigte Großaufträge (Google 3M TPUs, NVIDIA 18A-Evaluierung) signalisieren operative Verbesserungen und Kundengewinnung. 18A-P hat Risikoserienproduktion erreicht mit besserer Leistung und voller Design-Regelkompatibilität; Apple-Deal wird in H2 2026 erwartet.",
-      "risks": "Renditen sind noch unter profitablem Niveau, und Intel muss noch die Skalierbarkeit und Yield-Konsistenz über multiple externe Kunden hinweg beweisen — ein Risiko, das bisherige Ergebnisse nicht entschärft haben.",
+      "thesis": "Intels Foundry-Transformation erhält konkrete Validierung durch Google (3M TPU-Aufträge 2028) und Apple-Deal (18A-P Risikoertigung abgeschlossen). Nächste Gewinntreiber sind Kundenbewährungen in Q3/Q4 2026 und 14A PDK-Zertifizierungen.",
+      "risks": "Weitere Halbleiter-Markt-Volatilität, Konkurrenzdruck von TSMC/Samsung, Ausführungsrisiko beim Foundry-Turnaround, geopolitisches Risiko bei US-China-Chiphandel.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-06-19T20:29:33.486495+02:00"
+      "last_updated": "2026-06-24T20:28:46.531699+02:00"
     }
   ],
   "archive": [
@@ -44,8 +44,12 @@
       "first_seen": "2026-05-14",
       "last_updated": "2026-06-05T20:55:18.120863+02:00",
       "performance": {
-        "status": "pending",
-        "evaluated_at": null
+        "status": "miss",
+        "price_at_event": 301.54,
+        "price_14d_after": 297.01,
+        "pct_change_14d": -1.5,
+        "in_target_range": false,
+        "evaluated_at": "2026-06-24"
       }
     },
     {
@@ -174,5 +178,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-19T20:29:33.486495+02:00"
+  "updated_at": "2026-06-24T20:28:46.531699+02:00"
 }

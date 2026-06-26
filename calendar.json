@@ -1,13 +1,6 @@
 {
   "events": [
     {
-      "date": "2026-06-24",
-      "event": "Micron Technology Q3 FY2026 Earnings nach US-Börsenschluss",
-      "relevant_for": "NVIDIA, Halbleiter-Sektor, MSCI World Information Technology",
-      "rating": 5,
-      "category": "earnings"
-    },
-    {
       "date": "2026-07-23",
       "event": "Nächste EZB-Sitzung",
       "relevant_for": "Europäischer Markt, EUR, DAX",
@@ -29,9 +22,23 @@
       "category": "fed"
     },
     {
+      "date": "2026-07-23",
+      "event": "EZB-Sitzung – Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, europäische Indizes, MasterCard",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
       "relevant_for": "Microsoft, Cloud-Infrastructure, AI-Cloud-Narrative",
+      "rating": 5,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
+      "relevant_for": "Microsoft, Cloud-Stocks, NVIDIA",
       "rating": 5,
       "category": "earnings"
     },
@@ -76,7 +83,14 @@
       "relevant_for": "Microsoft, Azure AI, Cloud-Margins",
       "rating": 5,
       "category": "earnings"
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Apple Q3 FY2026 Earnings",
+      "relevant_for": "Apple, Consumer Tech, Speicherkostendruck",
+      "rating": 4,
+      "category": "earnings"
     }
   ],
-  "updated_at": "2026-06-24T20:28:46.531382+02:00"
+  "updated_at": "2026-06-26T20:23:57.571758+02:00"
 }

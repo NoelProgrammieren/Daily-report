@@ -3,9 +3,9 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Weitere Foundry-Katalysatoren Q3/Q4 2026: Google TPU-Bestellung (3M Units für 2028), Apple-Chip-Deal (Juni 18), Cadence 14A Design-Partnerschaft, Intel 18A-P in Risikoertigung. Nächste Validierungs-Events sind Kundenbewährungen durch Hyperscaler.",
+      "event_basis": "Apple-Intel Chip-Partnerschaft (18. Juni 2026, Trump-Ankündigung), 18A-P Risk-Produktion (16. Juni), BofA Doppel-Upgrade (ca. 10. Juni), Seok-Hee Lee Ernennung (18. Juni)",
       "event_date": "2026-06-30",
-      "time_horizon": "2-4 Wochen bis Katalysator-Vollzug",
+      "time_horizon": "2–3 Wochen",
       "expected_move_pct": {
         "low": 3.0,
         "high": 7.0,
@@ -16,10 +16,31 @@
         "high": 32.0,
         "currency": "USD"
       },
-      "thesis": "Intels Foundry-Transformation erhält konkrete Validierung durch Google (3M TPU-Aufträge 2028) und Apple-Deal (18A-P Risikoertigung abgeschlossen). Nächste Gewinntreiber sind Kundenbewährungen in Q3/Q4 2026 und 14A PDK-Zertifizierungen.",
-      "risks": "Weitere Halbleiter-Markt-Volatilität, Konkurrenzdruck von TSMC/Samsung, Ausführungsrisiko beim Foundry-Turnaround, geopolitisches Risiko bei US-China-Chiphandel.",
+      "thesis": "Intel Foundry hat konkrete Katalysatoren: Apple-Deal signalisiert Kundenbewährung, 18A-P bestätigt Process-Roadmap-Fortschritt, Seok-Hee Lee Ernennung deutet Leadership-Stabilität. Nächste Earnings (23. Juli) werden Management-Bestätigung zum Apple-Umfang bringen. Technische Stärke (BofA-Upgrade, 6–11 % Move am 18. Juni) zeigt institutionelles Momentum.",
+      "risks": "Keine offizielle Bestätigung von Apple/Intel bis dato; Deal-Scope könnte kleiner ausfallen als erwartet; Foundry-Profitabilität bleibt unter Druck.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-06-24T20:28:46.531699+02:00"
+      "last_updated": "2026-06-26T20:23:57.572024+02:00"
+    },
+    {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 (mehrfach im Kalender bestätigt); Cloud-Business ARR 123 % YoY Growth im Q3, Azure-Nachfrage robust weiterhin",
+      "event_date": "2026-07-28",
+      "time_horizon": "1 Monat",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft rapportiert Q3 als Rekorquartal mit Cloud-Revenue über 54 Milliarden USD (+ 29 % YoY) und AI-ARR bei 37 Milliarden auf 123 % Growth. Q4-Earnings erwarten Analysten EPS 4,24 USD und Revenue 87,57 Mrd. USD. Azure-Kapazitäts-Engpässe schaffen Premium für längerfristige Commitments (OpenAI, Anthropic).",
+      "risks": "Speicherkosten-Schock könnte Capex-Guidance senken; Konkurrenz von NVIDIA/AMD bei GPU-Nachfrage intensiviert sich; Datenschutz-Bedenken bei Copilot könnten Kosten erhöhen.",
+      "first_seen": "2026-06-26",
+      "last_updated": "2026-06-26T20:23:57.572024+02:00"
     }
   ],
   "archive": [
@@ -178,5 +199,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-24T20:28:46.531699+02:00"
+  "updated_at": "2026-06-26T20:23:57.572024+02:00"
 }

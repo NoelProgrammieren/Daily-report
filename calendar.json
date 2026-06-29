@@ -1,6 +1,20 @@
 {
   "events": [
     {
+      "date": "2026-07-02",
+      "event": "Nonfarm Payrolls (Juni) – Arbeitsmarktbericht",
+      "relevant_for": "Gesamtmarkt, Fed-Pfad",
+      "rating": 5,
+      "category": "economic"
+    },
+    {
+      "date": "2026-07-02",
+      "event": "ISM Manufacturing Index (Juni)",
+      "relevant_for": "Industrie, Wirtschaftsseniorität",
+      "rating": 3,
+      "category": "economic"
+    },
+    {
       "date": "2026-07-23",
       "event": "Nächste EZB-Sitzung",
       "relevant_for": "Europäischer Markt, EUR, DAX",
@@ -24,14 +38,14 @@
     {
       "date": "2026-07-23",
       "event": "EZB-Sitzung – Zinsentscheid",
-      "relevant_for": "Gesamtmarkt, europäische Indizes, MasterCard",
+      "relevant_for": "Europa, MSCI World, Devisenmärkte",
       "rating": 4,
       "category": "fed"
     },
     {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
-      "relevant_for": "Microsoft, Cloud-Infrastructure, AI-Cloud-Narrative",
+      "relevant_for": "Microsoft, Tech, Cloud-Sektor",
       "rating": 5,
       "category": "earnings"
     },
@@ -87,10 +101,10 @@
     {
       "date": "2026-07-29",
       "event": "Apple Q3 FY2026 Earnings",
-      "relevant_for": "Apple, Consumer Tech, Speicherkostendruck",
+      "relevant_for": "Apple, Konsumtrends, China-Nachfrage",
       "rating": 4,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-06-26T20:23:57.571758+02:00"
+  "updated_at": "2026-06-29T21:00:07.271242+02:00"
 }

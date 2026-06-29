@@ -24,9 +24,9 @@
     {
       "company": "Microsoft",
       "rating": 4,
-      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 (mehrfach im Kalender bestätigt); Cloud-Business ARR 123 % YoY Growth im Q3, Azure-Nachfrage robust weiterhin",
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026; Cloud-Business (Azure) zeigte 39–40 % YoY-Wachstum in Q3, Nachfrage weiterhin robust",
       "event_date": "2026-07-28",
-      "time_horizon": "1 Monat",
+      "time_horizon": "4 Wochen",
       "expected_move_pct": {
         "low": 2.0,
         "high": 5.0,
@@ -37,10 +37,10 @@
         "high": 445.0,
         "currency": "USD"
       },
-      "thesis": "Microsoft rapportiert Q3 als Rekorquartal mit Cloud-Revenue über 54 Milliarden USD (+ 29 % YoY) und AI-ARR bei 37 Milliarden auf 123 % Growth. Q4-Earnings erwarten Analysten EPS 4,24 USD und Revenue 87,57 Mrd. USD. Azure-Kapazitäts-Engpässe schaffen Premium für längerfristige Commitments (OpenAI, Anthropic).",
-      "risks": "Speicherkosten-Schock könnte Capex-Guidance senken; Konkurrenz von NVIDIA/AMD bei GPU-Nachfrage intensiviert sich; Datenschutz-Bedenken bei Copilot könnten Kosten erhöhen.",
+      "thesis": "Microsoft prognostiziert Azure-Cloud-Wachstum zwischen 39 % und 40 %, über dem StreetAccount-Konsens von 37 %, mit über 20 Mio. zahlenden Seats für Copilot. Wenn Q4 diese Erwartungen erfüllt oder übertrifft, sollte der Kurs reagieren.",
+      "risks": "Makro-Schwäche, höhere-als-erwartete Capex-Ausgaben oder niedrigere Cloud-Auslastung könnten Beat torpedieren.",
       "first_seen": "2026-06-26",
-      "last_updated": "2026-06-26T20:23:57.572024+02:00"
+      "last_updated": "2026-06-29T21:00:07.271594+02:00"
     }
   ],
   "archive": [
@@ -199,5 +199,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-26T20:23:57.572024+02:00"
+  "updated_at": "2026-06-29T21:00:07.271594+02:00"
 }

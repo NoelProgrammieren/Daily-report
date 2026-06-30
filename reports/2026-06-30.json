@@ -1,0 +1,503 @@
+{
+  "date": "2026-06-30",
+  "generated_at": "2026-06-30T20:29:59.953079+02:00",
+  "macro": {
+    "market_state": "US-Märkte zeigen zum Ende des zweiten Quartals Stabilisierung. Der Schock der Broadcom-Warnung (3. Juni) hat sich gelegt; die Halbleiter haben sich von dem 10%-Rutsch vom 5. Juni teilweise erholt. Geopolitische Spannungen und Fed-Unsicherheit bleiben, verdrängen aber allmählich den reinen Tech-Verkauf.",
+    "macro_drivers": "Inflation bleibt erhöht, Arbeitsmarkt stabil bis warm. Federal Reserve signalisiert, dass der Zinserhöhungszyklus nicht abgeschlossen sein könnte — Kevin Warsh wird erster FOMC-Vorsitzender nach Jerome Powell. EZB wird am 23. Juli tagen. Geopolitische Unsicherheiten (Iran-Konflikt) drücken auf Cross-Border-Zahlungsvolumina, etwas Druck auf Reiseausgaben. Tech-Sektor preist Kapazitätszwang bei Hyperscalern ein — Azure, GPU-Supply bleiben Engpässe.",
+    "sentiment": "Abwartend bis moderat vorsichtig (Risk-on). Tech-Gegenwinde, aber keine Panik. KI-Story intakt, aber Bewertung unter Druck.",
+    "sp500": "5.542 (+0,2 %)",
+    "nasdaq": "18.335 (+0,1 %)",
+    "dax": "19.240 (-0,3 %)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet",
+        "Microsoft",
+        "Intel"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Intel-Apple-Partnerschaft konkretisiert sich: 18A-P in Risk Production",
+          "rating": 5,
+          "summary": "US-Präsident Trump kündigte am 18. Juni an, dass Apple mit Intel Chips domestiziert zusammenarbeitet. Intel meldete am 16. Juni, dass die 18A-P-Variante die Risk-Production-Phase erreicht hat — mit 9% höherer Performance bei gleicher Leistung oder 18% niedrigerem Energieverbrauch. Dies signalisiert Intels Fähigkeit, seine \"5 Nodes in 4 Jahren\"-Roadmap konsistent zu liefern. Das Risiko: Analysten gehen davon aus, dass erste Massenproduktion nicht vor 2027 läuft.",
+          "price_change": "+9,5 %",
+          "investor_relevance": "Intel-Position im Portfolio erhält kritischen Katalysator; Apple-Deal validiert Intels Foundry-Strategie und könnte die Kapitalrendite senken, wenn echte Volumina kommen."
+        },
+        {
+          "priority": "lightning",
+          "title": "OpenAI stellt Jalapeño-Chip mit Broadcom vor — direkter NVIDIA-Gegenwurf",
+          "rating": 4,
+          "summary": "OpenAI kündigte seinen ersten eigenen Chip \"Jalapeño\" an, der mit Broadcom entwickelt wurde und laut Unternehmen bessere Performance pro Watt bietet als aktuelle State-of-the-Art-Chips. Das Chip soll für Inferencing (Ausführen von KI-Modellen) optimiert sein. Broadcom-Aktie stieg daraufhin über 1%. Bedeutung: Hyperscaler reduzieren NVIDIA-Abhängigkeit; Inferencing-Markt diversifiziert.",
+          "investor_relevance": "NVIDIA-Risiko im Portfolio bleibt real; Custom-Chip-Trend beschleunigt. Broadcom profitiert als Partner, aber auch als Validation-Signal, dass der reine GPU-Boom differenziert wird."
+        },
+        {
+          "priority": "pin",
+          "title": "Microsoft Q3 FY2026: Azure Wachstum 39-40%, Kapazitätszwang bleibt",
+          "rating": 3,
+          "summary": "Microsofts Azure und Cloud-Services zeigten 39-40% YoY-Wachstum in konstanter Währung; Microsoft Cloud Gesamtumsatz wuchs 29% auf 54,5 Mrd. USD. Management erwartet weiterhin Kapazitätszwang bis mindestens Ende 2026 und bescheidene Beschleunigung in der zweiten Jahreshälfte. Cloud-Bruttomarge fiel auf 64% durch KI-Investitionen und GitHub Copilot-Kosten. Status: Stark, aber Margenwind.",
+          "investor_relevance": "Microsoft Q4 FY2026 Earnings am 28./29. Juli; Hot-Take bleibt valide. Kapazitätszwang ist Wachstumsbremse, aber auch defensiver Moat — breitere Hyperscaler-Konkurrenz wird schwer."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard"
+      ],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "MasterCard Q1 2026: Starke Grundlagen, aber Geopolitik belastet Cross-Border",
+          "rating": 3,
+          "summary": "MasterCard meldete Q1 2026 Nettoeinkommen von 3,9 Mrd. USD (18% YoY-Anstieg); Nettoumsatz 8,4 Mrd. USD (16% YoY). Gross Dollar Volume wuchs 7%, Cross-Border-Volumen 13% in Lokalwährung. Allerdings warnte CFO, dass Iran-Konflikt Reiseverkehr belastet; Management erwartet Lockerung bis Juni. Geopolitische Gewinde ebbten ab — Impuls für Q2-Guidance könnte positiv sein.",
+          "investor_relevance": "MasterCard Q2-Earnings liegen auf dem Radar (23. Juli). Starke VASS-Wachstum (22% in Q1) und agentic-commerce-Opportunität sind Langfrist-Pluspunkte. Kursfristig auf stabiles Konsumwachstum fokussiert."
+        }
+      ]
+    },
+    {
+      "name": "Halbleiter & Chip-Ausrüstung",
+      "emoji": "⚙️",
+      "positions_mentioned": [
+        "NVIDIA",
+        "Broadcom",
+        "AMD"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Halbleiter-Sektor unter Druck: Broadcom-Guidance verfehlt, Smartphone-Krise verstärkt sich",
+          "rating": 3,
+          "summary": "Broadcoms Q3 AI-Umsatzleitlinie von 16 Mrd. USD verfehlt die Erwartung von 17,2 Mrd. USD am 3. Juni; PHLX Chip Index fiel am 5. Juni 10%, der tiefste Eintages-Verlust seit März 2020. Eine tiefere Krise: globale Smartphone-Nachfrage sackt um Rekordniveau — IDC warnt vor 13%-Rückgang 2026, niedrigstes Level in einem Jahrzehnt. Speicherchip-Mangel verschärft sich, da Micron Kapazitäten zu Rechenzentren umleitet.",
+          "investor_relevance": "NVIDIA, AMD und Broadcom unter Angebotsdruck. Die KI-Infrastruktur-These bleibt intakt, aber Verbraucher- und Smartphone-Schwäche wird Branchengewinn 2026 belasten. Watch: Micron und TSMC für Kapazitäts- und Preis-Signale."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Intel",
+      "rating": 4,
+      "event_basis": "Apple-Intel Chip-Partnerschaft (18. Juni 2026, Trump), 18A-P Risk Production (16. Juni), Seok-Hee Lee Ernennung, BofA Doppel-Upgrade (ca. 10. Juni). Alle vier Katalysatoren liegen im aktuellen Monat; Intel zeigt operativ Stabilität auf Roadmap.",
+      "event_date": "2026-06-30",
+      "time_horizon": "2-4 Wochen",
+      "expected_move_pct": {
+        "low": 3.0,
+        "high": 7.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 26.0,
+        "high": 32.0,
+        "currency": "USD"
+      },
+      "thesis": "Intels Foundry-Strategie erhält mit Apple-Deal kritische Bestätigung. 18A-P Risk-Production-Ankündigung auf Zeitplan signalisiert verlässliche Ausführung. Markt wechselt von Zweifeln zu operativem Vertrauen — kurzes Fenster für Momentum.",
+      "risks": "Deal-Bestätigung noch nicht finalisiert (Präsidenten-Ankündigung, nicht Unternehmensvertrag). Konkurrenz von TSMC und Samsung. Volumenskeptizismus bleibt; Intels Marge-Druck in Foundry-Geschäft könnte Bewertung deckeln."
+    },
+    {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026. Azure Wachstum bei 40% in Q3; Guidance für Q4 erwartet 39-40% in konstanter Währung. Management erwartet Kapazitäts-Lockerung und modest acceleration in H2 2026.",
+      "event_date": "2026-07-28",
+      "time_horizon": "3-4 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft zeigt konsistent strong Azure-Wachstum und verdrängt Margin-Bedenken durch Cloud-Mix-Optimierung. Q4 sollte Beschleunigung und Guidance-Bestätigung liefern; Copilot-Monetisierung rampt in Enterprise auf. Konsens unterschätzt Leverage-Potenzial.",
+      "risks": "Kapazitätszwang länger als erwartet. Margin-Kompression stärker als Konsens modelliert. Konkurrenten (Amazon AWS, Google Cloud) könnten Wachstums-Dynamik stehlen. Makro-Rezession reduziert Enterprise-IT-Ausgaben."
+    }
+  ],
+  "forecast": {
+    "commentary": "Das Portfolio steht unter gemischtem Druck: Halbleiter-Volatilität (Broadcom-Schock, Smartphone-Krise) lastete auf NVIDIA im Juni; Intels Fundamental-Katalysatoren (Apple-Deal, 18A-P) kalibrieren Risiken neu. Microsoft und Alphabet zeigen Cloud-Stärke und KI-Monetisierung — Branchenkosten-Druck bleibt, aber differentiale Wachstum-Stories bestehen. Nächste 4 Wochen kritisch: Microsoft Q4-Earnings (28./29. Juli), EZB Zinsentscheid (23. Juli), nonfarm payrolls (2. Juli) werden Makro-Sentiment prägen. Defensiv-Position (ETFs, MasterCard) bleibt Ballast — aber Konjunktur stabil genug, dass reine Rotation-Verkäufe begrenzt bleiben. Watchlist-Positionen (Tesla, Bitcoin, Boeing) folgen Breitmarkt.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "WWDC Juni mit KI-Features",
+          "iPhone-Absatz China schwach",
+          "Bewertung ambitioniert bei Wachstum ~5-7% YoY"
+        ],
+        "thesis": "Apple-Kurs folgt breiterer Tech-Rotation; KI-Katalysatoren priced-in. WWDC deutete generative-Features an, aber Umsatz-Impact bleibt fraglich.",
+        "pros": [
+          "WWDC AI-Features validieren On-Device-Compute-Strategie",
+          "Services-Sparte wächst 11-13% YoY stabil",
+          "Kapitalrückgabe (Buybacks) stützt EPS"
+        ],
+        "cons": [
+          "China iPhone-Absatz unter Druck",
+          "Bewertung PE ~30x, 5% höher als 5-Jahres-Median",
+          "KI-Hardware-Zyklus verzögert sich bis iPhone-18 (2026H2+)"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 6.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Broadcom AI-Guidance schwach, Skeptizismus",
+          "Custom Chips (OpenAI, Meta) nehmen Marktanteile",
+          "Hyperscaler-Capex bleibt stark",
+          "H100/H200 Verfügbarkeit knapp"
+        ],
+        "thesis": "NVIDIA unter Druck von OpenAI-Chip und Broadcom-Warnung, aber Kerngeschäft (Hyperscaler-GPU) bleibt dominant. Kursfristig range-bound, Aufwärts-Bias auf Q2 FY2027 Earnings (spätes Aug).",
+        "pros": [
+          "Hyperscaler-Capex 2026 $120-150B erwartet (vs. 2025 $100B)",
+          "Inferencing-Shift zu NVIDIA-Architektur",
+          "Grace-Hopper und Rubin-Roadmap bleibt intact"
+        ],
+        "cons": [
+          "Custom-Chip-Trend (OpenAI, Meta, Google) reduziert NVIDIA-Anteil",
+          "Broadcom AI-Guidance verfehlt; Markt skeptisch",
+          "Valuation PE ~55-60x bleibt reif für Volatilität"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 7.0,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Search AI-Integration (Gemini)",
+          "YouTube Premium Subscriber-Wachstum",
+          "Cloud-Capex in AI-Data-Center",
+          "Regulierungsrisiken E.U./US gedimmt"
+        ],
+        "thesis": "Alphabet zeigt AI-Monetisierung über Search + Cloud; Google Cloud Wachstum beschleunigt sich auf KI-Demand. Gemini-Integration in Search treibt langfristige ARU-Gans.",
+        "pros": [
+          "Google Cloud wächst 25%+ YoY, Profitabilität naht",
+          "Search-Gemini-Features treiben ARU stabil",
+          "Capex-Ratios stabilisieren im H2 2026"
+        ],
+        "cons": [
+          "E.U. Regulierung (DMA, Digital Services) komprimiert Optionen",
+          "YouTube Video-View-Kompression durch Shorts-Kannibal",
+          "KI-Modell-Kosten bleiben gross"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS Capex für Bedrock/LLM-Inferencing",
+          "Advertising-Segment Wachstum 20%+",
+          "Retail-Marge unter Druck Lohnkosten"
+        ],
+        "thesis": "Amazon AWS Cloud dominiert bei Bedrock LLM-Services; Advertising-Business wird Wachstumstreiber. Retail bleibt Margin-Headwind von Lohnerhöhungen.",
+        "pros": [
+          "AWS Bedrock Adoption durch Enterprise steigt",
+          "Ads-Segment wächst >20% YoY (14% des Umsatz)",
+          "Cashflow-Effizienz schärft sich bei Capex-Normalisierung"
+        ],
+        "cons": [
+          "Retail-Operating-Margin unter Druck (11% vs. 12% target)",
+          "Logistik-Inflationszwang von Lohnerhöhungen",
+          "Wettbewerb mit Microsoft/Google in generative-AI"
+        ]
+      },
+      {
+        "company": "S&P 500 (Core)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.5,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Fed Kevin Warsh Vorsitz (erste FOMC 16.-17. Juni)",
+          "Inflation stabil, Lohndruck moderat",
+          "Earnings Season peak Juli",
+          "China-Geopolitik lenkt Rotation"
+        ],
+        "thesis": "S&P 500 realisiert Broadcom-Schock; moderate Erholung erwartet auf Earnings-Bestätigungen und Fed-Klarheit durch Warsh. Rotation zu Small-Cap/Value hält an.",
+        "pros": [
+          "Q2 Earnings erwartet 8-10% YoY Gewinn",
+          "Fed Hawkish-Signale bereits priced-in",
+          "Tech-Gewichte stabilisieren sich post-Panic"
+        ],
+        "cons": [
+          "Recession-Tail-Risk bei Konsum-Verlangsamung",
+          "China-Sanktionen auf US-Tech verstärken sich",
+          "Mega-Cap-Bewertung noch immer gespannt (PE ~25-27x)"
+        ]
+      },
+      {
+        "company": "MSCI World (Core)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 3.8,
+        "potential_rating": 2,
+        "key_drivers": [
+          "EZB Zinsentscheid 23. Juli erwartet stabiler",
+          "Europäische Tech-Schwäche vs. US",
+          "China-Konjunktur-Stimulus schwach",
+          "Geopolitik (Iran, Nahost)"
+        ],
+        "thesis": "MSCI World folgt US-Tech-Druck. EZB bleibt hold bis Aug; europäische Erträge moderate 4-6% YoY. Asia-Gewichte (TSMC, Samsung HBM) unter Smartphone-Druck.",
+        "pros": [
+          "EZB-Stabilität durch Warsh-Klarheit",
+          "Europäische Industrials profitieren von China-Stimulus",
+          "Dividend-Renditen stabil 2,5-3%"
+        ],
+        "cons": [
+          "Europäische Tech schwächer als US (VAG, SAP, Asml)",
+          "China-Wachstum < 5% real; Export-Druck",
+          "Emerging-Market-Volatilität bleibt (Iran, Brasilien)"
+        ]
+      },
+      {
+        "company": "MSCI EM Ex China",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 5.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Brasilien-Wahlen Politisk-Risiko",
+          "Asien-Smartphone-Krise (Samsung, SK Hynix)",
+          "Indische Inflation resistent",
+          "Rohstoff-Preise volatile"
+        ],
+        "thesis": "EM ex-China unter Druck: Smartphone-Memory-Krise, Geopolitik, Brasilien-Unsicherheit. Zu wenig domestische KI-Gewichte für Upside.",
+        "pros": [
+          "Indische Tech-Services stark (TCS, Infosys)",
+          "Südkoreas KI-Chipexporte über SK Hynix HBM",
+          "ASEAN-Tech-Umsatz stabil (10-12% YoY)"
+        ],
+        "cons": [
+          "Samsung Galaxy-Absatz unter Erwartung",
+          "SK Hynix Memory-Preisdruck verstärkt",
+          "Brasilien-Politische Instabilität, CNY-Druck"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.5,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Broadcom-Schock erholt sich auf Earnings",
+          "Custom-Chip-Trend bremst NVIDIA-Monopol",
+          "Cloud-Hypescaler-Capex weiterhin fest",
+          "Software-Bewertung PE 30-35x nachgebend"
+        ],
+        "thesis": "Tech-ETF ist NVIDIA/Apple-Heavy; Broadcom-Schock vorbei. Erholung erwartet auf Q2-Earnings und Azure-Klarheit (Microsoft Q4 Juli). Custom Chips sind strukturelle Bremse.",
+        "pros": [
+          "Hyperscaler-Capex $150B+ 2026, stützt Halbleiter",
+          "KI-Software-Monetisierung ramps (Salesforce, Adobe)",
+          "Geopolitik-Unsicherheit priced-in bereits"
+        ],
+        "cons": [
+          "Valuation noch 5-10% über historischem Median",
+          "Custom-Chips drücken NVIDIA-Margenerwartung",
+          "Smartphone-Schwäche zieht semicap-Multiple zurück"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 3.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "US-Konsumtrends stabil Lohnwachstum >Inflation",
+          "E-Commerce-Wachstum 10-12% YoY",
+          "Margin-Druck Lohnerhöhungen, Zollkosten"
+        ],
+        "thesis": "Walmart-Konsumbarometer bleibt stabil; Consumer-Spending widerstandsfähig vs. Makro-Nervosität. E-Commerce-Sparte Momentum, aber Gross-Margin unter Druck.",
+        "pros": [
+          "US-Konsumausgaben wachsen >2,5% real",
+          "E-Commerce Anteil steigt 15%+ YoY, höhere Margen",
+          "Grocery-Deflation unterstützt Traffic"
+        ],
+        "cons": [
+          "Lohnerhöhungen (12-14% über 2024-2025) drücken Betriebsmarge",
+          "Tariff-Kompression bei Importen (China, Mexico) begrenzt Marge",
+          "Konsumtrends zeigen Schwächesignale (Q1 Ticketing-Rückgang)"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -3.0,
+        "expected_change_90d_pct": 0.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "EV-Nachfrage-Schwäche in China/Europa",
+          "Wettbewerb von BYD, NIO intensiv",
+          "US-Zinssätze drücken Autokredite",
+          "FSD-Autonomie-Roadmap verzögert"
+        ],
+        "thesis": "Tesla unter Druck: Absatz-Schwäche in China, European Headwind, Auto-Zins-Lastigkeit. Margin-Compression von Preiskonkurrenz. Autonomie-Timeline unklar — Valuation-Rechtfertigung fragwürdig.",
+        "pros": [
+          "Giga-Austin/Berlin rampen Kapazität",
+          "Battery-Cost-Verbesserung auf $120-130/kWh",
+          "Semi-Truck-Produktion startet 2026H2"
+        ],
+        "cons": [
+          "China-EV-Markt reif, Preiskrieg mit BYD/NIO",
+          "Europäische Verkäufe -12% YoY (Subsidy-Reduktion)",
+          "Auto-Zinssätze 5-6% drücken Finanzierungen",
+          "FSD-Deployments bleiben Beta, Timeline unklar"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 3.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 8.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Makro-Unsicherheit (Fed, Inflation)",
+          "Spot-Bitcoin-ETF Inflows beschleunigen",
+          "Halving-Zyklus 2024 verblasst",
+          "Geopolitik (Iran, US-China)"
+        ],
+        "thesis": "Bitcoin-Volatilität hoch auf Makro. Spot-ETFs treiben retail-adoption, aber Institutionelle Buy-Signals schwach. Long-term-Believer halten; Kurzfristig Range-Bound $59-65K.",
+        "pros": [
+          "Spot-Bitcoin-ETFs treiben retail-Zugang",
+          "Fed-Unsicherheit stützt Safe-Haven-Narrative",
+          "Inflation-Hedge-Appeal bei >3% CPI"
+        ],
+        "cons": [
+          "Makro-Hawkish-Trend drückt Risk Assets",
+          "Halving-Zyklus-Momentum verblasst",
+          "Regulatory-Unsicherheit (US-Wahlen 2024 fallout)",
+          "Altcoin-Konkurrenz (Ethereum, Solana)"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 10.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "Shanghai Upgrade-Effekte verblasst",
+          "Layer-2-Adoption (Arbitrum, Optimism)",
+          "Staking-Renditen 3-4% YoY stabil",
+          "DeFi-TVL Konsolidierung"
+        ],
+        "thesis": "Ethereum unter Druck vs. Bitcoin: Layer-2-Adoption schwächer erwartet, Staking-Rewards modest, Shanghai-Upgrades antiquiert. Spekulativ vs. Bitcoin, weniger Institutional-Appeal.",
+        "pros": [
+          "Layer-2-Durchsätze treiben nutzbare Kapazität",
+          "Staking-Rewards attraktiv vs. Treasuries",
+          "DeFi-Innovation (Flash-Loans, Derivatives) fortlaufend"
+        ],
+        "cons": [
+          "Shanghai Upgrade-Effekte vorbei, Nächste Major-Update unklar",
+          "Layer-2 Fragmentation mindert Ethereum-Dominanz",
+          "Makro-Headwind schwächer als Bitcoin-Appeal",
+          "Regulatory-Risiko (US-CFTC, EU-MiCA) höher"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": -1.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 1,
+        "key_drivers": [
+          "787 Production-Ramp verzögert",
+          "737-MAX Grounder-Risiko (Plug-Door)",
+          "Defense-Budget-Druck 2026",
+          "Supply-Chain-Inflation"
+        ],
+        "thesis": "Boeing bleibt operativ unter Druck: 787-Ramp verspätet, 737-MAX-Tür-Probleme dauern, Defense-Sektor staut ab. Debt-Service-Belastung hoch, Kapitalrendite fragwürdig. Kein Kurstreiber erkennbar.",
+        "pros": [
+          "Aerospace-Demand stabil (Narrow-Body zyklisch)",
+          "Air-Show-Bookings geben Ausblick",
+          "Defense-Spend (Space, Missiles) differenziert"
+        ],
+        "cons": [
+          "737-MAX Grounder-Risiko (Structural Integrität)",
+          "787-Produktionsraten zu niedrig für Guidance",
+          "Luftfahrt-Supply-Chain-Kosten bleiben aufgeblasen",
+          "Regulierungsneubewertung nach Alaska-Air-Incident bleibt Hintergrund"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-07-02",
+      "event": "Nonfarm Payrolls (Juni) — US-Arbeitsmarktbericht",
+      "relevant_for": "Gesamtmarkt, Fed-Zinspfad",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-02",
+      "event": "ISM Manufacturing Index (Juni)",
+      "relevant_for": "Konjunktur, Industriesektor",
+      "rating": 3
+    },
+    {
+      "date": "2026-07-23",
+      "event": "EZB-Ratensitzung — Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, Europäische Aktien, MSCI World",
+      "rating": 4
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
+      "relevant_for": "Microsoft, Tech-Sektor, Cloud-Narrative",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Apple Q3 FY2026 Earnings",
+      "relevant_for": "Apple, Tech-Hardware, Consumer-Demand",
+      "rating": 4
+    }
+  ],
+  "usage": {
+    "input_tokens": 51807,
+    "output_tokens": 9929
+  }
+}

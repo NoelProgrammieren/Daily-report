@@ -1,6 +1,6 @@
 {
-  "report_market_state": "Die Marktbreite zeigt ein stark polarisiertes Bild: Während der S&P 500 und World IT leicht zulegen, kollabieren der Russell 2000 (-1.22%) und EM ex China (-1.47%), was auf extreme Konzentration in Mega-Cap-Tech hindeutet. Das Advance/Decline-Verhältnis ist vermutlich negativ — wenige Gewinner ziehen den breiten Index nach oben, während die Masse der Small Caps und internationalen Titel leiden. Die Tech-Beta zum S&P 500 ist erhöht (World IT +0.50% vs. S&P +0.19%), beweist die Übergewichtung von Wachstumstiteln. Der Sektor-Rotation zeigt klassisches Risk-On: Tech und Kommunikation führen klar, Defensives (Gesundheitswesen, Energie) verharrt. Das USD-Implikat ist schwer zu quantifizieren ohne Kurs-Daten, doch die EM-Schwäche könnte mit DXY-Stärke assoziiert sein. Volumen war vermutlich erhöht bei Tech-Namen, da Momentum-Käufe Tesla und Alphabet trieben. Gesamteindruck: Breiter Markt krank, Elite-Tech fit — klassisches Konzentrations-Szenario.",
-  "report_sentiment": "Der VIX fiel um 4.29% auf 17.62, signalisierend eine Entspannung der Angst — liegt aber noch leicht über dem langjährigen Durchschnitt von ca. 15, deutet also auf latente Nervosität trotz positiver Börsentage. Put/Call-Verhältnis ist nicht direkt ableitbar, doch der VIX-Rückgang impliziert höhere Call-Nachfrage relativ zu Puts, typisch für Short-Covering in einer Tech-Rally. Die MOVE-Index-Implikation (Bonds-Volatilität) lässt sich aus dem stabilen 10Y-2Y-Spread von 7 bps ableiten: normale Zinsvolatilität, keine panischen Kurven-Verschiebungen zu erwarten. Fear & Greed ist nicht angegeben, doch die Kombination aus fallender VIX, Mega-Cap-Outperformance und EM-Flucht deutet auf \"Selective Greed\" hin — Anleger sind mutig bei Tech, aber ängstlich bei Breite. Die Positionierung vor anstehenden (unbekannten) Events ist offensiv in Growth, defensiv in Value/EM — ein Wetten auf stabiles Makro und niedrige Zinsen, was bei überraschend hoher Inflation schmerzlich scheitern könnte.",
+  "report_market_state": "Die Marktbreite war gesund: S&P 500 und Russell 2000 stiegen synchron (+1,03% respektive +1,13%), was auf breite Partizipation über Mega-Caps hinaus hindeutet. Tech-Beta zum Gesamtmarkt war deutlich positiv mit World IT +2,87% gegenüber MSCI World +0,93% — ein Beta von knapp 3x, ein klassisches Zeichen für Wachstumsfantasie. Die Sektor-Rotation war unidirektional: Technologie +2,54%, Industrie +1,15%, während Kommunikation, Gesundheitswesen und Energie fielen — typisch für ein Umfeld, in dem Anleger Zinsrisiken reduzieren und auf zyklische Erträge setzen. EM ex China mit +2,67% zeigt, dass die Flucht aus China-Konzernen zugunsten anderer Emerging Markets anhielt. Klassische defensiv-konjunktur-sensitive Techniken (Diversifizierung bei breiter Basis) funktionierten; allerdings war Konzentration in Tech und EM-Momentum offensichtlich der dominierende Treiber. Volumen-Indikatoren lassen sich aus den gegebenen Daten nicht ablesen, aber die konsistente Aufwärts-Bewegung über mehrere Indizes spricht für organische Nachfrage, nicht Technologie-getrieben-Spekulation allein.",
+  "report_sentiment": "Der VIX-Rückgang von 6,01% auf 16,59 Punkte signalisiert deutlich gesunkene Marktängstlichkeit — ein Level, das comfort mit Risiken anzeigt, ohne extreme Gier zu vermuten. Das 7-bps-Spread 10Y-2Y ist nahe dem Neutral-Punkt, was weder deflationäre noch inflationäre Panik ausdrückt; Anleger kalkulieren mit status quo oder gradueller Anpassung. Fear & Greed-Daten sind nicht vorhanden, erschweren also tiefere Sentiment-Deutung; basierend auf Tech-Outperformance (+2,87% World IT), EM-Strength und VIX-Fall ist das Investor-Sentiment aber eher risikofreudig zu klassifizieren. Put/Call-Immanenz lässt sich nicht direkt ablesen, doch der VIX-Rückgang deutet auf sinkende Hedging-Nachfrage hin — Profis reduzieren Schutzpositionen. Bitcoin und Ethereum litten unter Gewinnmitnahmen (-2,82% und -2,22%), möglicher Hinweis auf taktische Reallokation von riskanten Nischen hin zu etablierten Tech-Aktien. Das Aufwärts-Momentum in EM ex China und Tech suggeriert, dass Anleger sich in ein Growth-Regime bewegen, nicht in Defensives flüchten — eine Komfortzone, solange Zins- und Inflationsdaten nicht explodieren.",
   "overview_chart": {
     "ranges": {
       "1D": {
@@ -26,150 +26,149 @@
         "series": {
           "sxr8": [
             0.0,
-            0.052,
-            0.135,
-            0.138,
-            0.175,
-            0.109,
-            0.143,
-            0.218,
-            0.218,
-            0.152,
-            0.252,
-            0.209,
-            0.118,
-            0.123,
-            -0.077,
-            0.083,
-            0.075
+            -0.003,
+            0.117,
+            0.046,
+            0.068,
+            0.06,
+            0.094,
+            0.119,
+            0.125,
+            0.159,
+            -0.023,
+            -0.057,
+            -0.065,
+            0.307,
+            0.27,
+            -0.071,
+            0.313
           ],
           "eunl": [
             0.0,
-            0.057,
-            0.093,
-            0.057,
-            0.109,
-            0.057,
-            0.121,
-            0.194,
-            0.162,
-            0.145,
-            0.226,
-            0.19,
-            0.113,
-            0.113,
-            -0.036,
-            0.036,
-            0.105
+            -0.008,
+            0.1,
+            -0.008,
+            0.068,
+            0.092,
+            0.132,
+            0.176,
+            0.18,
+            0.204,
+            0.004,
+            -0.02,
+            -0.064,
+            0.289,
+            0.277,
+            -0.028,
+            0.249
           ],
           "xdwt": [
             0.0,
-            0.05,
+            -0.082,
+            0.065,
+            -0.18,
+            -0.131,
+            -0.114,
             0.033,
-            0.298,
-            0.231,
-            0.132,
-            0.116,
-            0.182,
-            0.182,
-            0.066,
-            0.231,
-            0.116,
-            0.314,
-            -0.645,
-            -1.256,
-            -0.529,
-            -0.231
+            0.0,
+            0.163,
+            0.196,
+            -0.049,
+            -0.245,
+            -0.033,
+            1.242,
+            1.536,
+            0.98,
+            1.291
           ],
           "emxc": [
             0.0,
-            0.213,
-            0.308,
-            0.19,
-            0.107,
-            0.024,
-            0.107,
-            0.154,
-            0.201,
-            0.083,
-            0.107,
-            0.047,
-            -0.059,
-            -0.96,
-            -1.256,
-            -1.244,
-            -1.043
+            -0.27,
+            -0.234,
+            -0.492,
+            -0.281,
+            -0.375,
+            -0.387,
+            -0.152,
+            -0.082,
+            0.105,
+            -0.094,
+            -0.223,
+            -0.363,
+            0.398,
+            0.785,
+            0.293,
+            0.352
           ],
           "zprr": [
             0.0,
-            0.052,
-            0.169,
-            0.0,
+            -0.013,
+            -0.013,
+            -0.039,
+            0.013,
+            0.078,
+            0.117,
             0.104,
-            0.026,
-            0.026,
-            0.104,
-            0.104,
-            0.286,
-            0.299,
-            0.208,
-            -0.13,
-            -0.649,
-            -0.701,
-            -0.753,
-            -1.312
+            0.078,
+            0.039,
+            -0.22,
+            -0.194,
+            -0.22,
+            -0.026,
+            0.143,
+            -0.415,
+            -0.013
           ]
         }
       },
       "5D": {
         "labels": [
-          "Di",
           "Mi",
           "Do",
           "Fr",
-          "Mo"
+          "Mo",
+          "Di"
         ],
         "series": {
           "sxr8": [
             0.0,
-            0.848,
-            -0.072,
-            -0.235,
-            -0.043
+            -0.912,
+            -1.074,
+            -0.884,
+            0.142
           ],
           "eunl": [
             0.0,
-            0.653,
-            0.093,
-            -0.186,
-            -0.077
+            -0.557,
+            -0.833,
+            -0.725,
+            0.196
           ],
           "xdwt": [
             0.0,
-            0.212,
-            -1.336,
-            -2.249,
-            -1.76
+            -1.545,
+            -2.456,
+            -1.968,
+            0.846
           ],
           "emxc": [
             0.0,
-            0.071,
-            1.224,
-            -0.094,
-            -1.565
+            1.153,
+            -0.165,
+            -1.635,
+            0.988
           ],
           "zprr": [
             0.0,
-            1.334,
-            0.837,
-            0.85,
-            -0.379
+            -0.49,
+            -0.477,
+            -1.69,
+            -0.581
           ]
         }
       },
       "1M": {
         "labels": [
-          "KW22",
           "KW23",
           "KW23",
           "KW23",
@@ -190,128 +189,129 @@
           "KW26",
           "KW26",
           "KW26",
+          "KW27",
           "KW27"
         ],
         "series": {
           "sxr8": [
             0.0,
-            0.504,
-            0.721,
-            0.409,
-            0.263,
-            -0.086,
-            -0.807,
-            -2.344,
-            -2.461,
-            -2.527,
-            -1.007,
-            0.386,
-            0.112,
-            -0.126,
-            0.395,
-            0.664,
-            0.672,
-            -0.12,
-            0.727,
-            -0.192,
-            -0.355,
-            -0.163
+            0.216,
+            -0.094,
+            -0.239,
+            -0.587,
+            -1.304,
+            -2.833,
+            -2.95,
+            -3.015,
+            -1.503,
+            -0.117,
+            -0.39,
+            -0.626,
+            -0.108,
+            0.159,
+            0.168,
+            -0.621,
+            0.222,
+            -0.692,
+            -0.854,
+            -0.663,
+            0.364
           ],
           "eunl": [
             0.0,
-            0.284,
-            0.713,
-            0.381,
-            0.397,
-            -0.069,
-            -0.648,
-            -2.022,
-            -2.212,
-            -2.054,
-            -0.421,
-            0.689,
-            0.567,
-            0.64,
-            0.988,
-            1.122,
-            1.329,
-            0.454,
-            1.11,
-            0.547,
-            0.267,
-            0.377
+            0.428,
+            0.097,
+            0.113,
+            -0.351,
+            -0.929,
+            -2.299,
+            -2.488,
+            -2.331,
+            -0.703,
+            0.404,
+            0.283,
+            0.356,
+            0.703,
+            0.836,
+            1.042,
+            0.17,
+            0.824,
+            0.263,
+            -0.016,
+            0.093,
+            1.022
           ],
           "xdwt": [
             0.0,
-            2.816,
-            4.216,
-            3.604,
-            1.496,
-            -1.158,
-            -1.11,
-            -4.859,
-            -5.406,
-            -4.827,
-            -2.462,
-            0.016,
-            -1.239,
-            -0.965,
-            0.708,
-            1.158,
-            1.577,
-            -1.271,
-            -1.062,
-            -2.591,
-            -3.492,
-            -3.009
+            1.361,
+            0.767,
+            -1.283,
+            -3.865,
+            -3.818,
+            -7.465,
+            -7.997,
+            -7.433,
+            -5.133,
+            -2.723,
+            -3.944,
+            -3.678,
+            -2.05,
+            -1.612,
+            -1.205,
+            -3.975,
+            -3.772,
+            -5.258,
+            -6.135,
+            -5.665,
+            -2.958
           ],
           "emxc": [
             0.0,
-            2.461,
-            3.028,
-            2.268,
-            0.422,
-            -3.499,
-            -3.824,
-            -4.391,
-            -5.236,
-            -3.607,
-            -0.229,
-            2.907,
-            2.135,
-            4.054,
-            6.816,
-            5.839,
-            8.107,
-            2.497,
-            2.57,
-            3.752,
-            2.401,
-            0.893
+            0.553,
+            -0.188,
+            -1.99,
+            -5.817,
+            -6.134,
+            -6.688,
+            -7.512,
+            -5.923,
+            -2.626,
+            0.436,
+            -0.318,
+            1.554,
+            4.251,
+            3.297,
+            5.51,
+            0.035,
+            0.106,
+            1.26,
+            -0.059,
+            -1.531,
+            1.095
           ],
           "zprr": [
             0.0,
-            0.014,
-            0.756,
-            0.082,
-            1.017,
-            -0.165,
-            -0.385,
-            -1.47,
-            -0.824,
-            0.055,
-            2.514,
-            2.858,
-            2.212,
-            2.721,
-            3.201,
-            4.122,
-            5.111,
-            5.098,
-            6.499,
-            5.977,
-            5.991,
-            4.699
+            0.742,
+            0.069,
+            1.003,
+            -0.179,
+            -0.398,
+            -1.484,
+            -0.838,
+            0.041,
+            2.5,
+            2.844,
+            2.198,
+            2.706,
+            3.187,
+            4.108,
+            5.097,
+            5.083,
+            6.484,
+            5.962,
+            5.976,
+            4.685,
+            5.866
           ]
         }
       },
@@ -372,7 +372,8 @@
             11.774,
             10.744,
             12.613,
-            11.474
+            11.474,
+            12.844
           ],
           "eunl": [
             0.0,
@@ -400,7 +401,8 @@
             10.793,
             10.402,
             12.114,
-            11.166
+            11.166,
+            12.32
           ],
           "xdwt": [
             0.0,
@@ -428,7 +430,8 @@
             22.639,
             21.022,
             25.514,
-            19.744
+            19.744,
+            23.797
           ],
           "emxc": [
             0.0,
@@ -456,7 +459,8 @@
             31.931,
             36.401,
             44.697,
-            39.997
+            39.997,
+            41.613
           ],
           "zprr": [
             0.0,
@@ -484,7 +488,8 @@
             17.592,
             20.748,
             22.641,
-            24.842
+            24.842,
+            24.713
           ]
         }
       },
@@ -593,6 +598,7 @@
           "",
           "",
           "Jun",
+          "",
           "",
           "",
           "",
@@ -738,7 +744,8 @@
             12.684,
             11.656,
             11.474,
-            11.688
+            11.688,
+            12.844
           ],
           "eunl": [
             0.0,
@@ -863,7 +870,8 @@
             12.1,
             11.476,
             11.166,
-            11.287
+            11.287,
+            12.32
           ],
           "xdwt": [
             0.0,
@@ -988,7 +996,8 @@
             22.759,
             20.862,
             19.744,
-            20.343
+            20.343,
+            23.797
           ],
           "emxc": [
             0.0,
@@ -1113,7 +1122,8 @@
             40.228,
             41.844,
             39.997,
-            37.935
+            37.935,
+            41.613
           ],
           "zprr": [
             0.0,
@@ -1238,7 +1248,8 @@
             25.441,
             24.826,
             24.842,
-            23.321
+            23.321,
+            24.713
           ]
         }
       },
@@ -1270,7 +1281,7 @@
             0.722,
             10.198,
             17.301,
-            17.109
+            18.321
           ],
           "eunl": [
             0.0,
@@ -1284,7 +1295,7 @@
             2.919,
             11.473,
             17.554,
-            17.997
+            19.092
           ],
           "xdwt": [
             0.0,
@@ -1298,7 +1309,7 @@
             -4.113,
             12.615,
             31.437,
-            27.482
+            31.141
           ],
           "emxc": [
             0.0,
@@ -1312,7 +1323,7 @@
             21.429,
             41.148,
             59.159,
-            60.58
+            64.862
           ],
           "zprr": [
             0.0,
@@ -1326,7 +1337,7 @@
             10.418,
             22.684,
             29.387,
-            35.467
+            36.996
           ]
         }
       }
@@ -1336,118 +1347,118 @@
     {
       "name": "S&P 500",
       "key": "sxr8",
-      "value": 697.76,
-      "change_pct": 0.19,
+      "value": 704.98,
+      "change_pct": 1.03,
       "color": "#3b82f6"
     },
     {
       "name": "MSCI World",
       "key": "eunl",
-      "value": 123.89,
-      "change_pct": 0.11,
+      "value": 125.04,
+      "change_pct": 0.93,
       "color": "#e9edf3"
     },
     {
       "name": "World IT",
       "key": "xdwt",
-      "value": 120.56,
-      "change_pct": 0.5,
+      "value": 124.02,
+      "change_pct": 2.87,
       "color": "#a78bfa"
     },
     {
       "name": "EM ex China",
       "key": "emxc",
-      "value": 41.81,
-      "change_pct": -1.47,
+      "value": 42.93,
+      "change_pct": 2.67,
       "color": "#22c55e"
     },
     {
       "name": "Russell 2000",
       "key": "zprr",
-      "value": 76.2,
-      "change_pct": -1.22,
+      "value": 77.06,
+      "change_pct": 1.13,
       "color": "#f59e0b"
     }
   ],
   "sentiment": {
     "score": null,
-    "label": "Selective Risk-On mit Konzentrationsrisiko"
+    "label": "Risiko-Appetit — Moderat Optimistisch"
   },
   "sectors": [
     {
       "name": "Technologie",
-      "change_pct": 2.27
+      "change_pct": 2.54
     },
     {
       "name": "Kommunikation",
-      "change_pct": 1.8
+      "change_pct": -0.62
     },
     {
       "name": "Industrie",
-      "change_pct": 0.83
+      "change_pct": 1.15
     },
     {
       "name": "Gesundheitswesen",
-      "change_pct": 0.11
+      "change_pct": -0.79
     },
     {
       "name": "Energie",
-      "change_pct": 0.05
+      "change_pct": -0.39
     }
   ],
   "top_movers": {
     "gainers": [
       {
+        "name": "World IT",
+        "value": 124.02,
+        "change_pct": 2.87
+      },
+      {
+        "name": "EM ex China",
+        "value": 42.93,
+        "change_pct": 2.67
+      },
+      {
+        "name": "Apple",
+        "value": 288.16,
+        "change_pct": 2.28
+      },
+      {
+        "name": "NVIDIA",
+        "value": 198.94,
+        "change_pct": 2.04
+      },
+      {
         "name": "Tesla",
-        "value": 409.96,
-        "change_pct": 7.97
-      },
-      {
-        "name": "Alphabet",
-        "value": 350.39,
-        "change_pct": 4.69
-      },
-      {
-        "name": "Amazon",
-        "value": 241.14,
-        "change_pct": 3.63
-      },
-      {
-        "name": "Ethereum",
-        "value": 1618.26,
-        "change_pct": 3.05
-      },
-      {
-        "name": "Bitcoin",
-        "value": 60170.9,
-        "change_pct": 1.07
+        "value": 418.97,
+        "change_pct": 1.73
       }
     ],
     "losers": [
       {
-        "name": "EM ex China",
-        "value": 41.81,
-        "change_pct": -1.47
+        "name": "Bitcoin",
+        "value": 58442.8,
+        "change_pct": -2.82
       },
       {
-        "name": "Boeing",
-        "value": 214.18,
-        "change_pct": -1.42
-      },
-      {
-        "name": "Russell 2000",
-        "value": 76.2,
-        "change_pct": -1.22
+        "name": "Ethereum",
+        "value": 1574.53,
+        "change_pct": -2.22
       },
       {
         "name": "Walmart",
-        "value": 114.46,
-        "change_pct": -1.06
+        "value": 113.78,
+        "change_pct": -0.72
       },
       {
-        "name": "Apple",
-        "value": 282.03,
-        "change_pct": -0.62
+        "name": "Amazon",
+        "value": 238.5,
+        "change_pct": -0.68
+      },
+      {
+        "name": "Boeing",
+        "value": 215.84,
+        "change_pct": 0.54
       }
     ]
   }

@@ -10,8 +10,15 @@
     {
       "date": "2026-07-02",
       "event": "ISM Manufacturing Index (Juni)",
-      "relevant_for": "Industrie, Wirtschaftsseniorität",
+      "relevant_for": "Industrie-Konjunktur, Halbleiter-Nachfrage-Indikator",
       "rating": 3,
+      "category": "economic"
+    },
+    {
+      "date": "2026-07-02",
+      "event": "Nonfarm Payrolls (Juni) — Arbeitsmarktbericht",
+      "relevant_for": "Gesamtmarkt, Fed-Zinspfad, Konsumausgaben",
+      "rating": 5,
       "category": "economic"
     },
     {
@@ -43,6 +50,13 @@
       "category": "fed"
     },
     {
+      "date": "2026-07-23",
+      "event": "EZB-Sitzung — Zinsentscheid",
+      "relevant_for": "Gesamtmarkt, Europäische Finanzdienstleistungen, MSCI World",
+      "rating": 4,
+      "category": "fed"
+    },
+    {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
       "relevant_for": "Microsoft, Tech, Cloud-Sektor",
@@ -52,7 +66,7 @@
     {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
-      "relevant_for": "Microsoft, Cloud-Stocks, NVIDIA",
+      "relevant_for": "Microsoft, Cloud (Azure), KI-Monetisierung, Tech-Sektor",
       "rating": 5,
       "category": "earnings"
     },
@@ -101,10 +115,17 @@
     {
       "date": "2026-07-29",
       "event": "Apple Q3 FY2026 Earnings",
-      "relevant_for": "Apple, Konsumtrends, China-Nachfrage",
+      "relevant_for": "Apple, iPhone-Zyklus, China-Demand, Consumer-Hardware",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
+      "date": "2026-07-30",
+      "event": "MasterCard Q2 2026 Earnings",
+      "relevant_for": "MasterCard, Zahlungsverkehr, Cross-Border-Volumen",
       "rating": 4,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-06-29T21:00:07.271242+02:00"
+  "updated_at": "2026-06-30T20:29:59.954145+02:00"
 }

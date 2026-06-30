@@ -3,9 +3,9 @@
     {
       "company": "Intel",
       "rating": 4,
-      "event_basis": "Apple-Intel Chip-Partnerschaft (18. Juni 2026, Trump-Ankündigung), 18A-P Risk-Produktion (16. Juni), BofA Doppel-Upgrade (ca. 10. Juni), Seok-Hee Lee Ernennung (18. Juni)",
+      "event_basis": "Apple-Intel Chip-Partnerschaft (18. Juni 2026, Trump), 18A-P Risk Production (16. Juni), Seok-Hee Lee Ernennung, BofA Doppel-Upgrade (ca. 10. Juni). Alle vier Katalysatoren liegen im aktuellen Monat; Intel zeigt operativ Stabilität auf Roadmap.",
       "event_date": "2026-06-30",
-      "time_horizon": "2–3 Wochen",
+      "time_horizon": "2-4 Wochen",
       "expected_move_pct": {
         "low": 3.0,
         "high": 7.0,
@@ -16,17 +16,17 @@
         "high": 32.0,
         "currency": "USD"
       },
-      "thesis": "Intel Foundry hat konkrete Katalysatoren: Apple-Deal signalisiert Kundenbewährung, 18A-P bestätigt Process-Roadmap-Fortschritt, Seok-Hee Lee Ernennung deutet Leadership-Stabilität. Nächste Earnings (23. Juli) werden Management-Bestätigung zum Apple-Umfang bringen. Technische Stärke (BofA-Upgrade, 6–11 % Move am 18. Juni) zeigt institutionelles Momentum.",
-      "risks": "Keine offizielle Bestätigung von Apple/Intel bis dato; Deal-Scope könnte kleiner ausfallen als erwartet; Foundry-Profitabilität bleibt unter Druck.",
+      "thesis": "Intels Foundry-Strategie erhält mit Apple-Deal kritische Bestätigung. 18A-P Risk-Production-Ankündigung auf Zeitplan signalisiert verlässliche Ausführung. Markt wechselt von Zweifeln zu operativem Vertrauen — kurzes Fenster für Momentum.",
+      "risks": "Deal-Bestätigung noch nicht finalisiert (Präsidenten-Ankündigung, nicht Unternehmensvertrag). Konkurrenz von TSMC und Samsung. Volumenskeptizismus bleibt; Intels Marge-Druck in Foundry-Geschäft könnte Bewertung deckeln.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-06-26T20:23:57.572024+02:00"
+      "last_updated": "2026-06-30T20:29:59.955959+02:00"
     },
     {
       "company": "Microsoft",
       "rating": 4,
-      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026; Cloud-Business (Azure) zeigte 39–40 % YoY-Wachstum in Q3, Nachfrage weiterhin robust",
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026. Azure Wachstum bei 40% in Q3; Guidance für Q4 erwartet 39-40% in konstanter Währung. Management erwartet Kapazitäts-Lockerung und modest acceleration in H2 2026.",
       "event_date": "2026-07-28",
-      "time_horizon": "4 Wochen",
+      "time_horizon": "3-4 Wochen",
       "expected_move_pct": {
         "low": 2.0,
         "high": 5.0,
@@ -37,10 +37,10 @@
         "high": 445.0,
         "currency": "USD"
       },
-      "thesis": "Microsoft prognostiziert Azure-Cloud-Wachstum zwischen 39 % und 40 %, über dem StreetAccount-Konsens von 37 %, mit über 20 Mio. zahlenden Seats für Copilot. Wenn Q4 diese Erwartungen erfüllt oder übertrifft, sollte der Kurs reagieren.",
-      "risks": "Makro-Schwäche, höhere-als-erwartete Capex-Ausgaben oder niedrigere Cloud-Auslastung könnten Beat torpedieren.",
+      "thesis": "Microsoft zeigt konsistent strong Azure-Wachstum und verdrängt Margin-Bedenken durch Cloud-Mix-Optimierung. Q4 sollte Beschleunigung und Guidance-Bestätigung liefern; Copilot-Monetisierung rampt in Enterprise auf. Konsens unterschätzt Leverage-Potenzial.",
+      "risks": "Kapazitätszwang länger als erwartet. Margin-Kompression stärker als Konsens modelliert. Konkurrenten (Amazon AWS, Google Cloud) könnten Wachstums-Dynamik stehlen. Makro-Rezession reduziert Enterprise-IT-Ausgaben.",
       "first_seen": "2026-06-26",
-      "last_updated": "2026-06-29T21:00:07.271594+02:00"
+      "last_updated": "2026-06-30T20:29:59.955959+02:00"
     }
   ],
   "archive": [
@@ -199,5 +199,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-29T21:00:07.271594+02:00"
+  "updated_at": "2026-06-30T20:29:59.955959+02:00"
 }

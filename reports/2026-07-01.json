@@ -1,0 +1,466 @@
+{
+  "date": "2026-07-01",
+  "generated_at": "2026-07-01T20:55:57.254550+02:00",
+  "macro": {
+    "market_state": "Der S&P 500 stieg um 0,52 %, der Nasdaq Composite kletterte um 1,52 %. Der Markt abschließt das 2. Quartal nach einem starken Aufwärts-Trend — Juni endete gedämpfter, mit selektiver Teilnahme und Rotation aus Tech in defensive Werte.",
+    "macro_drivers": "Arbeitsmarktdaten stehen im Fokus: ADP-Bericht zeigt Juni-Privatsektor-Beschäftigung mit nur 98.000 neuen Stellen (unter Erwartungen). Morgen folgen die Nonfarm Payrolls und ISM Manufacturing Index — beides zentral für die Fed-Zinspolitik. Inflationstrends und Notenbankpfad bleiben heißes Thema. Fed-Chair Warsh signalisierte zuletzt Inflationsrisiko-Reduktion.",
+    "sentiment": "Abwartend bis vorsichtig optimistisch. Nach bestem Quartal seit 2020 folgt Gewinnmitnahmen-Phase; Anleger prüfen Nachhaltigkeit des Rally.",
+    "sp500": "7.449,36 (+0,52 %)",
+    "nasdaq": "26.213,72 (+1,52 %)",
+    "dax": "Daten nicht verfügbar"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Alphabet C",
+        "Microsoft"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Visa und Mastercard gründen Open-USD-Stablecoin — Blockchain-Initiative neben Banken",
+          "rating": 4,
+          "summary": "Ein Konsortium von über 140 Finanz- und Technologieunternehmen, darunter Visa, Mastercard, Stripe und Coinbase, hat den neuen Dollar-gestützten Stablecoin Open USD gelauncht. Das ist eine strukturelle Verschiebung im Zahlungsverkehr in Richtung tokenisierte Settlement — relevant für MasterCard und künftige Fintech-Integration.",
+          "price_change": "N/A",
+          "investor_relevance": "MasterCard setzt mit Stablecoin-Beteiligung (BVNK-Übernahme) auf Blockchain-Payments; offene Frage bleibt Profitabilität dieser noch-frühen Kastanien."
+        },
+        {
+          "priority": "pin",
+          "title": "Apple & NVIDIA — Apple Intelligence nutzet Nvidia-Cloud für KI-Features",
+          "rating": 3,
+          "summary": "Apple und Google kündigten ihre Partnerschaft für Apple Intelligence offiziell an, bestätigt, dass einige Features auf Nvidia-Chips laufen — diese nutzen Apples Private Cloud Compute auf Nvidia GPUs in Googles Cloud. Zeigt tiefe Verflechtung, bleibt aber unter den Großkunden-Ausgaben von Meta oder Microsoft.",
+          "investor_relevance": "Bestätigt Apples KI-Strategie + Nvidia als Basis-Infrastruktur; keine fundamentale News, eher Bekräftigung bestehender Pläne."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard"
+      ],
+      "news": [
+        {
+          "priority": "lightning",
+          "title": "JPMorgan wird neuer Aussteller der Apple Card — Transition in ~24 Monaten",
+          "rating": 4,
+          "summary": "Apple und Chase kündigten an, dass Chase über ~24 Monate zum neuen Aussteller der Apple Card wird; Mastercard bleibt Zahlungsnetzwerk, und JPMorgan Securities berät auf die Transition von über 20 Milliarden USD Kreditkarten-Portfolio.",
+          "investor_relevance": "Kurzfristig neutral für MasterCard (bleibt Netzwerk), langfristig ein Signal für Bankenfusion in Consumer-Payments. Goldman Sachs verliert Emittent-Rolle, JPMorgan gewinnt Volumen."
+        }
+      ]
+    },
+    {
+      "name": "Verbraucher & Defensiv",
+      "emoji": "🛒",
+      "positions_mentioned": [
+        "Walmart"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Walmart-Kurs fällt 5,17 % — Margen unter Druck durch Lohnsteigerungen",
+          "rating": 2,
+          "summary": "Walmart fällt 5,17 %, belastet durch Lohnkosten und Zollkalkulation; Caterpillar fällt sogar 5,13 % — Rotation weg von Konsumwerten. Starke Konsumtrends werden durch Inflationsdruck negiert.",
+          "investor_relevance": "Watchlist-Position unter Druck; Earnings Mitte des Monats entscheidend für weitere Kursentwicklung."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 — erwartet Bekräftigung von Azure-Wachstum bei 39–40 % YoY in konstanter Währung.",
+      "event_date": "2026-07-29",
+      "time_horizon": "4 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft-Earnings sind traditionell starke Kurstreiber. Mit Azure-Wachstum im 40%-Bereich und Guidance-Bestätigung für H2 2026 sollte eine positive Überraschung Momentum behalten.",
+      "risks": "Makroschock (Konjunkturdaten am 2.7. schwächer, Fed-Signale hawkisch) könnte Earnings-Rally dampfen; Cloud-Wachstumserwartungen sind bereits ambitioniert."
+    }
+  ],
+  "forecast": {
+    "commentary": "Im Q3-Start herrscht Gewinnmitnahmen-Stimmung nach stärkstem Quartal seit 2020. Die nächste Treiber sind Arbeitsmarktdaten (2.7.), Fed-Ratensignale (FOMC 29.7.) und Earnings-Saison (Mitte Juli). Tech-Sektor bleibt volatil — Apple, NVIDIA und Microsoft haben starke Erwartungen eingeprägt. Zins-Unsicherheit und China-Konjunktur-Zweifel bleiben Gegenwind.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "iPhone-Zyklus schwach",
+          "China-Nachfrage weiter rückläufig",
+          "Services-Wachstum stabil"
+        ],
+        "thesis": "Apple stagniert nach Q2-Rally; iPhone-Absatz in China besorgt, Services stützen aber Valuations.",
+        "pros": [
+          "Services-Sparte wächst zweistellig",
+          "Apple Intelligence wird ab iOS 18 Integration tragen",
+          "Hohe Operating Margins (25%+)"
+        ],
+        "cons": [
+          "China-Absatz deutlich rückläufig",
+          "Bewertung (25x fwd PE) bereits hoch",
+          "Upgrade-Zyklus schwächer als erwartet"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 5.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Halbleiter-Sektor unter Druck",
+          "Capex-Zyklus bleibt stark",
+          "China-Restriktionen weiterlaufen"
+        ],
+        "thesis": "NVIDIA korrigiert nach Mega-Rally; Fundamentals bleiben solide, aber Bewertung ist extremer Frühwarner.",
+        "pros": [
+          "Hyperscaler-Capex bleibt bei hohem Level ($561B global bis 2030)",
+          "H100/B100 Nachfrage ungebrochen",
+          "Marktführerschaft in KI-Chips unangetastet"
+        ],
+        "cons": [
+          "KI-Sektor ist überbewerteter als je zuvor",
+          "Konkurrenz vom AMD, Intel, Custom-Chips steigt",
+          "Regulatorische Risiken (China, Export-Kontrolle)"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Gemini-Wettbewerb intensiv",
+          "Cloud-Infrastruktur-Investitionen",
+          "Advertisingmarkt stabil"
+        ],
+        "thesis": "Alphabet navigiert Suchmaschinen-Disruption durch Gemini; Cloud-Capex bedeutet Margen-Gegenwind kurzfristig.",
+        "pros": [
+          "Search-Dominant, 90%+ Marktanteil",
+          "YouTube bleibt unkündbar für Advertiser",
+          "Gemini-Integration in Services schreitet voran"
+        ],
+        "cons": [
+          "KI-Capex drückt Profitabilität",
+          "Regulierungsrisiken (Monopol-Vorwürfe)",
+          "Wettbewerb von OpenAI, Anthropic wächst"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 4.5,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS AI-Services",
+          "Advertising-Geschäft expandiert",
+          "Retail-Wettbewerb bleibt hart"
+        ],
+        "thesis": "Amazon profitiert von AWS-KI-Diensten; Advertising-Sparte zeigt zweistelliges Wachstum, aber Retail-Margen unter Druck.",
+        "pros": [
+          "AWS Anteil am Cloud-Markt 32%+",
+          "Advertising-Sparte wird zur Gewinn-Maschine",
+          "Trainium/Inferentia Custom Chips reduzieren Kosten"
+        ],
+        "cons": [
+          "Retail-Konkurrenz (Walmart, Zoll-Druck) schärfer",
+          "AWS-Margen unter Kosten-Druck",
+          "Generative KI-ROI noch nicht bewiesen"
+        ]
+      },
+      {
+        "company": "S&P 500 (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Arbeitsmarktbericht morgen",
+          "Earnings-Saison beginnt",
+          "Fed-Ratenpfad Kern-Unsicherheit"
+        ],
+        "thesis": "S&P 500 nach bestem Quartal seit 2020 in Gewinnmitnahmephase; Breite des Market bleibt konstruktiv (65%+ advancing), aber Megacaps führen.",
+        "pros": [
+          "Unternehmensgewinne bleiben robust",
+          "Arbeitsmarkt zeigt Kraftverlust (ADP +98k) — könnte Fed-Zinsschritte hemmen",
+          "Sektor-Rotation bietet Diversifizierung"
+        ],
+        "cons": [
+          "Bewertungen am oberen Ende (23x fwd PE)",
+          "KI-Euphorie könnte platzen bei Enttäuschungen",
+          "Zinsangst bleibt im Markt präsent"
+        ]
+      },
+      {
+        "company": "MSCI World (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.8,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.8,
+        "potential_rating": 2,
+        "key_drivers": [
+          "US überwiegt, Europa schwach",
+          "EZB-Ratensitzung 23.7.",
+          "Zollgeopolitik belastet breit"
+        ],
+        "thesis": "MSCI World stark US-lastig (60%+); Europa bleibt untergewichtet. Internationale Diversifikation bietet wenig aktuellen Tailwind.",
+        "pros": [
+          "Diversifikation über Regionen",
+          "Europäische Unternehmen günstig bewertet",
+          "Yen-Schwäche könnte Japan-Exporte unterstützen"
+        ],
+        "cons": [
+          "Europa-Konjunktur schwach (Zölle, China-Nachfrage)",
+          "EZB-Zinssenkungs-Hoffnungen reichen nicht",
+          "Geopolitik (Nahost, Taiwan) bleibt Risiko"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China (ETF)",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.0,
+        "expected_change_90d_pct": 0.5,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "China-Konjunktur bleibt schwach",
+          "Fed-Zinserwartungen volatil",
+          "Rohstoff-Preise unter Druck"
+        ],
+        "thesis": "Schwellenländer ohne China bleiben Gegwind ausgesetzt; Rohstoff-Abhängigkeit führt zu Kursdruck bei Rezessions-Ängsten.",
+        "pros": [
+          "Billigere Bewertungen als USA",
+          "Einige Länder (Indien) zeigen Stärke",
+          "Reallokation in EM bei Fed-Zinssenkungs-Zyklus möglich"
+        ],
+        "cons": [
+          "China-Schwäche drückt Ex-China-EM",
+          "Währungsvolatilität bei starkem Dollar",
+          "Rohstoff-Sektor abhängig von globaler Nachfrage"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "KI-Capex bleibt Treiber",
+          "Halbleiter-Zyklus reift ab",
+          "Bewertungs-Druck bleibt"
+        ],
+        "thesis": "Tech-ETF spiegelt Mega-Cap-Performance; stark NVIDIA-lastig (10%+), was Volatilität erhöht. KI bleibt Theme, aber in den Kurs eingepreist.",
+        "pros": [
+          "KI-Infrastruktur-Ausgaben bleiben Jahrzehnt-Trend",
+          "Enterprise-Software-Adoption beschleunigt",
+          "Cloud-Hyperscaler gewinnen Share bei traditioneller IT"
+        ],
+        "cons": [
+          "Tech-Bewertungen sind extremer (30x fwd)",
+          "Regulierungsrisiken (China, Datenschutz)",
+          "Konsens-Wachstum bereits ambitioniert eingeprägt"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Q2-Earnings Mitte Juli",
+          "Konsumtrends bleiben stabil",
+          "Zoll-Lohnkosten-Margendruck"
+        ],
+        "thesis": "Walmart als Konsumindikator gemischt; Zoll- und Lohnausgaben belasten Margen, aber E-Commerce-Sparte wächst zweistellig.",
+        "pros": [
+          "US-Konsument noch zu starken Fundamentals",
+          "E-Commerce-Sparte wächst 20%+",
+          "Marktführerschaft im Einzelhandel unangetastet"
+        ],
+        "cons": [
+          "Margendruck durch Lohnerhöhungen",
+          "Zollbelastung auf Lieferkette",
+          "Zollthema erzeugt Guidance-Vorsicht"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 0.0,
+        "uncertainty_pct": 6.5,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Robotaxi-Launch eher Spekulation",
+          "China-EV-Wettbewerb brutal",
+          "Margen-Druck durch Preiskrieg"
+        ],
+        "thesis": "Tesla bleibt volatil; Robotaxi-Ankündigung war schwach, Übernahmen-Gerüchte (SpaceX-Merger) spekulativ, China-Markt-Anteile schwinden.",
+        "pros": [
+          "Roadster Reveal im August Kurstreiber",
+          "Cybercab Autonomie-Fortschritte beeindruckend",
+          "Vertikale Integration (Batterie, Optimus) längerfristig wertvoll"
+        ],
+        "cons": [
+          "China-Konkurrenz (BYD, Nio) dominiert Massenmarkt",
+          "Robotaxi-Skalierung Jahrzehnt entfernt",
+          "Musk-Volatilität (Government-Rollen, Musk-Dimon-Fehde) belastet"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -1.5,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "BTC fiel Q1+Q2 2026 — nur 3. Mal in Historie",
+          "Zinserwartungen bleiben hawkisch",
+          "Makro-Schwäche drückt"
+        ],
+        "thesis": "Bitcoin testet kritische Unterstützung bei $58.5k; falls Support bricht, nächstes Ziel $50k. Bis dahin bleibt Konsolidierung wahrscheinlich.",
+        "pros": [
+          "Institutional adoption über ETFs steigt",
+          "Lange-Term Holder akkumulieren",
+          "Halving-Zyklus in Zukunft bullish (wenn auch Jahre entfernt)"
+        ],
+        "cons": [
+          "Seltenes Szenario: beide Q1+Q2 2026 im minus",
+          "Fed-Zinserhöhungs-Risiko (BofA: 3 Anstiege bis Dez)",
+          "Technische Bären-Signale nach langen Kämpfen um Support"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 0.5,
+        "uncertainty_pct": 6.5,
+        "potential_rating": 1,
+        "key_drivers": [
+          "Glamsterdam-Upgrade H2 2026 noch weit weg",
+          "ETH: -54% von Jan-Peak ($3.4k)",
+          "Liquidität-Schocks führen zu Verkaufskettenreaktionen"
+        ],
+        "thesis": "Ethereum unter schwerstem Druck seit Januar; mehrere Stützungen gebrochen. Glamsterdam-Upgrade ist Hoffnung, reicht aber nicht für kurzfristige Erholung.",
+        "pros": [
+          "Glamsterdam-Upgrade verspricht Base-Layer-Durchsatz",
+          "DeFi/NFT-Bedarf für Ethereum-Skalierung ist hoch",
+          "BlackRock-ETHB + JPMorgan JLTXX institutional demand"
+        ],
+        "cons": [
+          "Scharfe 54%-Abwärts-Bewegung 2026 in voller Kraft",
+          "Globale Makro-Zinsängste drücken Risk-Assets",
+          "Nächste Support-Level bei $1.4k–$1.2k, ohne Bounce-Hoffnung"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "737-MAX North Line ramp am 6.7.",
+          "Lieferungen on-track für 500 MAX in 2026",
+          "Zertifizierung 737-7/-10 bis Ende 2026 erwartet"
+        ],
+        "thesis": "Boeing ist mid-turnaround; Produktions-Ramp beschleunigt, Lieferdaten sind solide. Zertifizierungs-Risiko für 737 MAX 7/10 bleibt, aber managebar.",
+        "pros": [
+          "Q2 Lieferungen (250 bis Mai) gegen Plan",
+          "North Line Ramp 6.7. ist Milestone für Kapazität-Steigerung",
+          "$695B Backlog gibt langfristige Sichtbarkeit"
+        ],
+        "cons": [
+          "777-9 verzögert sich bis 2027",
+          "Zertifizierungs-Risiken FAA-bedingt",
+          "Max-Unfallgeschichte wirkt nach bei Airlines"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-07-02",
+      "event": "Nonfarm Payrolls (Juni) — Arbeitsmarktbericht",
+      "relevant_for": "Gesamtmarkt, Fed-Ratenpolitik",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-02",
+      "event": "ISM Manufacturing Index (Juni)",
+      "relevant_for": "Konjunktur-Indikator, Industrie-Sektor",
+      "rating": 3
+    },
+    {
+      "date": "2026-07-23",
+      "event": "EZB-Ratensitzung – Zinsentscheid",
+      "relevant_for": "Europäische Aktien, Währungen",
+      "rating": 4
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Microsoft, Technologie-Sektor",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Apple Q3 FY2026 Earnings",
+      "relevant_for": "Apple, Konsumer-Tech",
+      "rating": 4
+    },
+    {
+      "date": "2026-07-30",
+      "event": "MasterCard Q2 2026 Earnings",
+      "relevant_for": "MasterCard, Finanzdienstleistungen",
+      "rating": 4
+    }
+  ],
+  "usage": {
+    "input_tokens": 69112,
+    "output_tokens": 7570
+  }
+}

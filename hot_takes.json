@@ -1,6 +1,50 @@
 {
   "takes": [
     {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026. Azure Wachstum bei 40% in Q3; Guidance für Q4 erwartet 39-40% in konstanter Währung. Management erwartet Kapazitäts-Lockerung und modest acceleration in H2 2026.",
+      "event_date": "2026-07-28",
+      "time_horizon": "3-4 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft zeigt konsistent strong Azure-Wachstum und verdrängt Margin-Bedenken durch Cloud-Mix-Optimierung. Q4 sollte Beschleunigung und Guidance-Bestätigung liefern; Copilot-Monetisierung rampt in Enterprise auf. Konsens unterschätzt Leverage-Potenzial.",
+      "risks": "Kapazitätszwang länger als erwartet. Margin-Kompression stärker als Konsens modelliert. Konkurrenten (Amazon AWS, Google Cloud) könnten Wachstums-Dynamik stehlen. Makro-Rezession reduziert Enterprise-IT-Ausgaben.",
+      "first_seen": "2026-06-26",
+      "last_updated": "2026-06-30T20:29:59.955959+02:00"
+    },
+    {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 — erwartet Bekräftigung von Azure-Wachstum bei 39–40 % YoY in konstanter Währung.",
+      "event_date": "2026-07-29",
+      "time_horizon": "4 Wochen",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft-Earnings sind traditionell starke Kurstreiber. Mit Azure-Wachstum im 40%-Bereich und Guidance-Bestätigung für H2 2026 sollte eine positive Überraschung Momentum behalten.",
+      "risks": "Makroschock (Konjunkturdaten am 2.7. schwächer, Fed-Signale hawkisch) könnte Earnings-Rally dampfen; Cloud-Wachstumserwartungen sind bereits ambitioniert.",
+      "first_seen": "2026-07-01",
+      "last_updated": "2026-07-01T20:55:57.255866+02:00"
+    }
+  ],
+  "archive": [
+    {
       "company": "Intel",
       "rating": 4,
       "event_basis": "Apple-Intel Chip-Partnerschaft (18. Juni 2026, Trump), 18A-P Risk Production (16. Juni), Seok-Hee Lee Ernennung, BofA Doppel-Upgrade (ca. 10. Juni). Alle vier Katalysatoren liegen im aktuellen Monat; Intel zeigt operativ Stabilität auf Roadmap.",
@@ -21,29 +65,6 @@
       "first_seen": "2026-05-13",
       "last_updated": "2026-06-30T20:29:59.955959+02:00"
     },
-    {
-      "company": "Microsoft",
-      "rating": 4,
-      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026. Azure Wachstum bei 40% in Q3; Guidance für Q4 erwartet 39-40% in konstanter Währung. Management erwartet Kapazitäts-Lockerung und modest acceleration in H2 2026.",
-      "event_date": "2026-07-28",
-      "time_horizon": "3-4 Wochen",
-      "expected_move_pct": {
-        "low": 2.0,
-        "high": 5.0,
-        "direction": "up"
-      },
-      "price_target": {
-        "low": 420.0,
-        "high": 445.0,
-        "currency": "USD"
-      },
-      "thesis": "Microsoft zeigt konsistent strong Azure-Wachstum und verdrängt Margin-Bedenken durch Cloud-Mix-Optimierung. Q4 sollte Beschleunigung und Guidance-Bestätigung liefern; Copilot-Monetisierung rampt in Enterprise auf. Konsens unterschätzt Leverage-Potenzial.",
-      "risks": "Kapazitätszwang länger als erwartet. Margin-Kompression stärker als Konsens modelliert. Konkurrenten (Amazon AWS, Google Cloud) könnten Wachstums-Dynamik stehlen. Makro-Rezession reduziert Enterprise-IT-Ausgaben.",
-      "first_seen": "2026-06-26",
-      "last_updated": "2026-06-30T20:29:59.955959+02:00"
-    }
-  ],
-  "archive": [
     {
       "company": "Apple",
       "rating": 4,
@@ -199,5 +220,5 @@
       }
     }
   ],
-  "updated_at": "2026-06-30T20:29:59.955959+02:00"
+  "updated_at": "2026-07-01T20:55:57.255866+02:00"
 }

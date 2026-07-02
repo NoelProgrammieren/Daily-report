@@ -1,0 +1,468 @@
+{
+  "date": "2026-07-02",
+  "generated_at": "2026-07-02T20:23:21.568267+02:00",
+  "macro": {
+    "market_state": "US-Märkte zeigen gemischte Signale: Der Dow Jones legt 0,5 % zu und erreicht Allzeit-Intraday-Hochs, während S&P 500 und Nasdaq unter Druck stehen. Halbleiter und Tech-Aktien verzeichnen deutliche Verluste nach schwachen Jobdaten und Gewinnen in der ersten Jahreshälfte.",
+    "macro_drivers": "Der Juni-Arbeitsmarktbericht (Nonfarm Payrolls) zeigt nur 57.000 neue Arbeitsplätze — deutlich unter Erwartungen von 113.000. Dieses schwache Ergebnis schwächt die Begründung für Zinserhöhungen. Der US-Dollar fällt, da Marktteilnehmer Erwartungen für September-Zinsanhebungen zurückfahren. Halbleiter- und Speicheraktien realisieren Gewinne nach Rekordanstiegen von über 80 % im H1 2026.",
+    "sentiment": "Gesamtmarkt abwartend; Tech und Halbleiter in Gewinnmitnahme; Defensives und Finanztitel profitieren von Rate-Pause-Erwartungen.",
+    "sp500": "7.483 (-0,5 %)",
+    "nasdaq": "26.040 (-0,7 %)",
+    "dax": "ca. 19.350 (+0,4 % am Vortag)"
+  },
+  "sectors": [
+    {
+      "name": "Informationstechnologie",
+      "emoji": "🖥️",
+      "positions_mentioned": [
+        "Apple",
+        "NVIDIA",
+        "Microsoft"
+      ],
+      "news": [
+        {
+          "priority": "fire",
+          "title": "Halbleiter-Korrektur: NVIDIA fällt 2,1 %, Memory-Aktien crashen zweistellig",
+          "rating": 5,
+          "summary": "NVIDIA-Aktien fielen um 1,8 %, während Micron um 5 % einbrach. Der VanEck Semiconductor ETF fiel um 3 %, angeführt von Teradyne und KLA mit Rückgängen um 12 %. Speichertitel wie Micron stehen vor weiteren Verlusten, nachdem sie 260+ % zugelegt haben. Anleger realisieren Gewinne nach starkem H1 2026.",
+          "price_change": "NVIDIA -2,1 %, Micron -5-6 %",
+          "investor_relevance": "Portfolio hat bedeutende NVIDIA- (5,09 %) und Halbleiter-Exposures (über Tech-ETFs). Gewinnmitnahmen könnten kurzfristig Druck auf MSCI World Information Technology ETF ausüben."
+        },
+        {
+          "priority": "lightning",
+          "title": "Microsoft investiert 2,5 Mrd. USD in Microsoft Frontier Company",
+          "rating": 3,
+          "summary": "Microsoft-Aktien gewannen 1,5 %, nachdem das Unternehmen ankündigte, 2,5 Milliarden USD in eine neue Microsoft Frontier Company-Gruppe zu investieren, die auf die Unterstützung von Kunden abzielt. Dies unterstreicht Microsofts Engagement in KI-Infrastruktur über Azure hinaus.",
+          "price_change": "+1,5 %",
+          "investor_relevance": "Microsoft ist 1,97 % des Portfolios. Q4-Earnings am 28./29. Juli erwartet; Azure-Wachstum bleibt Fokus mit erwarteten 39-40 % YoY."
+        }
+      ]
+    },
+    {
+      "name": "Finanzdienstleistungen & Bankensektor",
+      "emoji": "💳",
+      "positions_mentioned": [
+        "MasterCard"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Finanztitel profitieren von Rate-Pause-Signalen nach schwachen Jobdaten",
+          "rating": 2,
+          "summary": "Nach dem schwachen Arbeitsmarktbericht (nur 57.000 neue Jobs) erwarten Märkte eher eine Zinspause der Fed als Erhöhungen. Finanzwerte wie Bankentitel zeigen moderate Stabilität, während Spekulationen auf frühere Rentenschnitte zunehmen.",
+          "investor_relevance": "MasterCard 2,04 % des Portfolios — Profiteur von stabiler Konsumausgaben, aber auch exponiert gegenüber Zinserwartungs-Schwankungen. Nächste FOMC-Sitzung erst Juli 2026 (nicht diese Woche)."
+        }
+      ]
+    },
+    {
+      "name": "Luxusgüter & Consumer",
+      "emoji": "👜",
+      "positions_mentioned": [
+        "LVMH",
+        "Hermès"
+      ],
+      "news": [
+        {
+          "priority": "pin",
+          "title": "Walmart-Schwäche und gemischte Consumer-Signale",
+          "rating": 2,
+          "summary": "Walmart fiel um 5,17 % auf der Watch-Liste, was Konsumhebel-Schwächen andeutet. Gleichzeitig bleibt der US-Arbeitsmarkt relativ stabil (Arbeitslosenquote bei 4,2 %), unterstützt von Beschäftigungszuwächsen in Gesundheitswesen, beruflichen Dienstleistungen und sozialen Diensten.",
+          "investor_relevance": "LVMH und Hermès sind kleine Positionen (0,53 % + 0,39 %) — primär exponiert gegenüber europäischen und Schwellenmarkt-Trends, nicht unmittelbar durch US-Jobdaten betroffen."
+        }
+      ]
+    }
+  ],
+  "hot_takes": [
+    {
+      "company": "Microsoft",
+      "rating": 4,
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 — erwartet Bekräftigung von Azure-Wachstum bei 39–40 % YoY. 2,5-Mrd.-USD-Investition in Frontier Company zeigt KI-Momentum.",
+      "event_date": "2026-07-28",
+      "time_horizon": "3-4 Wochen bis Earnings",
+      "expected_move_pct": {
+        "low": 2.0,
+        "high": 5.0,
+        "direction": "up"
+      },
+      "price_target": {
+        "low": 420.0,
+        "high": 445.0,
+        "currency": "USD"
+      },
+      "thesis": "Microsoft bewältigt Halbleiter-Schwäche und Azure-Deklartion besser als Konkurrenten. Azure-Guidance von 39–40 % signalisiert anhaltende Cloud-KI-Nachfrage troits Marktrotation. 2,5-Mrd.-USD-Investment in neue KI-Frontier-Division unterstützt längerfristige Wachstums-Thesis.",
+      "risks": "Weitere Semikonductor-Verluste könnten Capex-Guidance unter Druck setzen; Operating-Margin-Guidance fällt weiterhin unter Konsens."
+    }
+  ],
+  "forecast": {
+    "commentary": "Das Portfolio steht unter kurzfristigen Gewinnmitnahme-Druck, insbesondere Tech und Halbleiter nach 80+-prozentigen H1-Zuwächsen. Der schwache Arbeitsmarktbericht (57.000 Jobs vs. 113.000 erwartet) senkt Zinserhöhungs-Erwartungen und begünstigt defensive Sektoren, aber bremst zyklische Phantasie. Azure-Guidance und Earnings-Kalender (Microsoft 28./29. Juli, Apple 30. Juli, MasterCard 30. Juli) werden in den kommenden 4 Wochen kritisch. EZB-Entscheid am 23. Juli könnte europäische Holdings stützen. Erwartung: leichte Konsolidierung, dann Stabilisierung bei Earnings-Überwinden.",
+    "tickers": [
+      {
+        "company": "Apple",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 4.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Q3-Earnings am 30. Juli",
+          "China-Nachfrage",
+          "iPhone-17-Cycle",
+          "Supply-Normalisierung"
+        ],
+        "thesis": "Apple profitiert von starkem Services-Wachstum und stabilem iPhone-Umsatz, aber kurzfristige Gewinnmitnahmen und China-Headwinds halten Kurs flach bis moderat positiv.",
+        "pros": [
+          "Services-Sparte wächst 16 % YoY, Margin-Verbesserungen",
+          "Q3-Guidance 14–17 % Wachstum konservativ, Beat wahrscheinlich",
+          "iPhone 17 im Rampup, Akzeptanz hoch"
+        ],
+        "cons": [
+          "China-Absatz unter Druck, geografisches Gegenwind",
+          "Memory-Kosten belasten Produkt-Margen",
+          "Tech-Sektor in Gewinnmitnahme"
+        ]
+      },
+      {
+        "company": "NVIDIA",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -3.0,
+        "expected_change_90d_pct": 2.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Halbleiter-Gewinnmitnahme",
+          "Speicher-Rückgang",
+          "China-Restriktionen",
+          "July/Aug Earnings-Schwäche"
+        ],
+        "thesis": "NVIDIA fällt kurzfristig in Halbleiter-Korrektion (260+ % H1-Zuwachs), könnte sich aber mid-term erholen bei Bestätigung von Hyperscaler-Capex-Zyklus und Rubin-Ramp.",
+        "pros": [
+          "Rubin-Platform in voller Produktion, H2-2026 Verfügbarkeit",
+          "Hyperscaler-Capex-Zyklus intakt (Azure, AWS, Google)",
+          "30+ AI-Supercomputer in Europa im Entwicklung"
+        ],
+        "cons": [
+          "Kurzzeitige Gewinnmitnahme nach 80+ % H1-Anstieg",
+          "China-Restriktionen bleiben strukturell",
+          "Bewertung unter Druck nach June-Sell-off"
+        ]
+      },
+      {
+        "company": "Alphabet C",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 4.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Tech-Rotation Headwind",
+          "Search-Stabilität",
+          "Cloud-Momentum",
+          "Sommergeschäft"
+        ],
+        "thesis": "Alphabet bleibt Defensive im KI-Sektor mit profitablem Google-Cloud-Geschäft, aber kurzzeitiger Tech-Gegenwind bremst Aufwärts-Potenzial bis Juli-Earnings.",
+        "pros": [
+          "Google Cloud wächst zweistellig, Profitabilität verbessert sich",
+          "Search-Geschäft verteidigt Premium-Stellung",
+          "AI-Integration in Produkte (Gemini, NotebookLM) stärkt Moat"
+        ],
+        "cons": [
+          "Tech-Sektor-Rotation negativ",
+          "Regulatory-Gegenwind (Antitrust) persistent",
+          "KI-Monetisierungs-Pfad weniger klar als bei Microsoft"
+        ]
+      },
+      {
+        "company": "Amazon",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.0,
+        "expected_change_90d_pct": 3.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "AWS-KI-Capex",
+          "E-Commerce-Sommer",
+          "Retail-Konkurrenz",
+          "Jul-Aug Earnings"
+        ],
+        "thesis": "Amazon balanciert AWS-KI-Investitionen gegen E-Commerce-Saisonen-Schwäche; neutral bis leicht bullish bei stabilen Konsumzahlen.",
+        "pros": [
+          "AWS bleibt Cashcow mit starker Positionierung in KI-Infrastruktur",
+          "Advertising-Sparte wächst weiterhin",
+          "Summergeschäft normalerweise solide"
+        ],
+        "cons": [
+          "Retail-Gewinnmargen unter Druck (Walmart-Konkurrenz)",
+          "Konsumausgaben nach schwachen Jobdaten fragil",
+          "Höhere Lagerkostenin Q2"
+        ]
+      },
+      {
+        "company": "S&P 500 (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.5,
+        "expected_change_90d_pct": 2.5,
+        "uncertainty_pct": 3.5,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Fed-Zinspfad",
+          "Earnings-Saison Jul/Aug",
+          "Arbeitsmarkt-Stabilität",
+          "Gewinnemitnahmen"
+        ],
+        "thesis": "S&P 500 nach starkem H1 (9,6 %) in Konsolidierungsphase. Schwache Jobdaten senken Zinserhöhungs-Wahrscheinlichkeit, neutral für Breite; Tech-Rotation negativ.",
+        "pros": [
+          "Arbeitslosenquote bei 4,2 % — stabil, kein Rezessionszeichen",
+          "Konsumausgaben weiterhin robust (selektive Daten)",
+          "Earnings-Saison bringt Katalysatoren"
+        ],
+        "cons": [
+          "Tech-Übergewicht (25 % des Index) in Gewinnmitnahme",
+          "Valuation nach +9,6 % H1 ambitioniert",
+          "Geopolitische Risiken (Iran-Israel, Handelspolitik)"
+        ]
+      },
+      {
+        "company": "MSCI World (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 0.8,
+        "expected_change_90d_pct": 2.8,
+        "uncertainty_pct": 3.8,
+        "potential_rating": 3,
+        "key_drivers": [
+          "EZB-Entscheid 23. Juli",
+          "Europäische Earnings",
+          "USD-Weakness",
+          "Tech-Rotation"
+        ],
+        "thesis": "MSCI World folgt US-Trends, aber Europäische Komponenten (Siemens, LVMH, SAP) weniger betroffen von Halbleiter-Korrektur. EZB-Guidance am 23. Juli kritisch.",
+        "pros": [
+          "Europäische Defensive (Pharma, Utilities) stabiler als Tech",
+          "EZB-Ratensenkung im H2 2026 wahrscheinlich — Tailwind",
+          "Diversifikation reduziert Tech-Konzentrationsrisiko"
+        ],
+        "cons": [
+          "China-Schwäche belastet globale Tech-Supply-Chains",
+          "Europäische Wachstumsstagnation persistent",
+          "USD-Stärke benachteiligt europäische Exporte"
+        ]
+      },
+      {
+        "company": "MSCI Emerging Markets Ex China (ETF)",
+        "category": "portfolio",
+        "scenario": "neutral",
+        "expected_change_30d_pct": -0.5,
+        "expected_change_90d_pct": 1.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Asien-Technologie",
+          "Indien-Wachstum",
+          "Rohstoff-Zyklen",
+          "China-Entkopplung"
+        ],
+        "thesis": "EM-ex-China unter Druck von globaler Halbleiter-Korrektur und Zinspause-Erwartungen; begrenzte Aufwärts-Katalysatoren kurzfristig.",
+        "pros": [
+          "Indien-Exposition (Apple-Produktion) profitiert von nearshoring",
+          "Rohstoff-Länder (BRL, ZAR) gewinnen bei weicherem USD",
+          "Bewertung attraktiv nach Underperformance vs. US"
+        ],
+        "cons": [
+          "Südkorea (Samsung, SK Hynix) massiv in Halbleiter-Korrektur (-14 % bis -9 %)",
+          "Zinspause-Erwartungen bremsen EM-Carry-Trades",
+          "China-Schwäche strahlt auf EM-ex-China aus (Lieferketten)"
+        ]
+      },
+      {
+        "company": "MSCI World Information Technology (ETF)",
+        "category": "portfolio",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.5,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 6.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Halbleiter-Sell-Off",
+          "Bewertungskorrektur",
+          "KI-Realisierung-Gewinne",
+          "Earnings-Tests"
+        ],
+        "thesis": "Tech-ETF am stärksten betroffen von H1-Momentum-Rückgang (80+ %). Halbleiter (24 % des Index) in Freien Fall; Stabilisierung erst nach Earnings-Bestätigungen Mitte/Ende Juli.",
+        "pros": [
+          "Megatrend KI intakt — langfristige Aufwärts-Thesis unverändert",
+          "Große Technologie (Microsoft, Google, Apple, Amazon) zahlen Earnings",
+          "Bewertung nach Korrektur fairer"
+        ],
+        "cons": [
+          "Halbleiter-Index (Micron, Sandisk, Teradyne) crasht -10 bis -20 %",
+          "Gewinnmitnahmen nach 80+-prozentigen H1-Zuwächsen strukturell",
+          "Rotation in Defensives anhaltend bis August"
+        ]
+      },
+      {
+        "company": "Walmart",
+        "category": "watchlist",
+        "scenario": "bearish",
+        "expected_change_30d_pct": -2.0,
+        "expected_change_90d_pct": 1.0,
+        "uncertainty_pct": 4.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Konsumausgaben-Stabilität",
+          "Quartals-Earnings Mitte Mai",
+          "Lohn-Margendruck",
+          "Zoll-Exposition"
+        ],
+        "thesis": "Walmart fällt 5,17 % intraday nach möglichen Konsumindikator-Schwächen; Earnings am 15. Mai könnten Margen-Druck zeigen, bietet aber langfristig Defensive-Spielraum.",
+        "pros": [
+          "Konsumdaten in USA bleiben robust (auch nach schwachen Jobs)",
+          "E-Commerce-Sparte wächst zweistellig",
+          "Baumaterial/Gartenprodukte saisonal stark im Sommer"
+        ],
+        "cons": [
+          "Intraday -5 % Rückgang signalisiert kurzfristige Verkaufsdrücke",
+          "Zollbelastung auf Lieferkette persistent",
+          "Lohnkostenaufzwang bremst Margenerweiterung"
+        ]
+      },
+      {
+        "company": "Tesla",
+        "category": "watchlist",
+        "scenario": "bullish",
+        "expected_change_30d_pct": 5.0,
+        "expected_change_90d_pct": 10.0,
+        "uncertainty_pct": 7.0,
+        "potential_rating": 4,
+        "key_drivers": [
+          "Q2-Lieferungen Beat (480K vs 407K erwartet)",
+          "EV-Marktanteils-Gewinne",
+          "Produktion-Ramp",
+          "Profitabilität-Pfad"
+        ],
+        "thesis": "Tesla liefert Q2-Fahrzeuge von 480.126 ab — deutlich über Erwartungen (406.600). Q2-Ergebnis zeigt Momentum; Kurs steigt in Pre-Market um ~1 %. Ramp-Beschleunigung im H2 2026 könnte Kurse treiben.",
+        "pros": [
+          "Q2-Lieferungen 480K vs. 384K im Vorjahr — 25 % YoY-Wachstum",
+          "Production-Auslastung besser, Effizienzgewinne greifen",
+          "Geopolitische Entspannung (Iran-Israel) entlastet Energiepreise"
+        ],
+        "cons": [
+          "Bewertung volatil — hohe Erwartungen bereits eingepreist",
+          "Konkurrenz von BYD, Volkswagen, Hyundai verstärkt sich",
+          "Makro-Unsicherheit (Zinserwartungen) könnte Nachfrage bremsen"
+        ]
+      },
+      {
+        "company": "Bitcoin",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 2.0,
+        "expected_change_90d_pct": 5.0,
+        "uncertainty_pct": 8.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Zinserwartungs-Senkungen",
+          "Risk-On-Sentiment",
+          "Halving-Zyklus-Spätstadium",
+          "Makro-Volatilität"
+        ],
+        "thesis": "Schwache Jobdaten senken Zinserhöhungs-Erwartungen — kurzfristig positiv für Risiko-Assets wie Bitcoin. Allerdings bleibt Makro-Unsicherheit hoch (Inflation, Geopolitik); Kurs dürfte konsolidierend seitwärtslaufen.",
+        "pros": [
+          "Zinserwartungs-Senkung begünstigt Risiko-Assets",
+          "Inflation-Schutz-Narrativ bei anhaltenden Energiepreisen",
+          "On-chain-Metriken (Whale-Aktivität) zeigen Stabilität"
+        ],
+        "cons": [
+          "Makro-Risiken persistent (Geopolitik, Inflation)",
+          "Regulierungsrisiken in EU/US noch nicht geklärt",
+          "Halving-Zyklus-Effekt im 2026 schwächer als vorhergehende Zyklen"
+        ]
+      },
+      {
+        "company": "Ethereum",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.5,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 9.0,
+        "potential_rating": 2,
+        "key_drivers": [
+          "Altcoin-Rotation",
+          "Staking-Yields",
+          "DeFi-Aktivität",
+          "Tech-Sektor-Korrelation"
+        ],
+        "thesis": "Ethereum im Windschatten von Bitcoin, aber höhere Volatilität und Korrelation zu Tech-Sektor. Zinserwartungs-Senkung mildern Druck auf Staking-Yields; dennoch schwächere Aufwärts-Dynamik als Bitcoin kurzfristig.",
+        "pros": [
+          "Staking-Yields attraktiv bei stabilen Validatoren",
+          "DeFi-Protokolle zeigen organisches Wachstum",
+          "Zinserwartungs-Senkung könnte Kapitalfluß aus Bonds in Kryptos fördern"
+        ],
+        "cons": [
+          "Höhere Volatilität als Bitcoin — Makro-Schocks stärker",
+          "Tech-Sektor-Korrelation (Halbleiter-Verkauf) belastet Sentiment",
+          "Regulatory-Unsicherheit bleibt größer als bei Bitcoin"
+        ]
+      },
+      {
+        "company": "Boeing",
+        "category": "watchlist",
+        "scenario": "neutral",
+        "expected_change_30d_pct": 1.0,
+        "expected_change_90d_pct": 3.5,
+        "uncertainty_pct": 5.0,
+        "potential_rating": 3,
+        "key_drivers": [
+          "Luft-/Raumfahrt-Konjunktur",
+          "Militär-Aufträge",
+          "Supply-Chain-Stabilisierung",
+          "Sicherheits-Compliance"
+        ],
+        "thesis": "Boeing bleibt im Windschatten von Rüstungs-Aufträgen und Verteidigungsbudgets, profitiert aber indirekt von weicheren Zinsen (Financing von Flugzeugen günstiger). Keine spezifischen Treiber diese Woche, aber struktureller Aufwind mittelfristig.",
+        "pros": [
+          "Rüstungs-Boom (Lockheed-Upgrade zeigt Sektor-Stärke)",
+          "Zivilluftfahrt-Nachfrage bleibt strukturell positiv",
+          "Weichere Zinserwartungen begünstigen Flugzeug-Finanzierung"
+        ],
+        "cons": [
+          "Sicherheits-/Compliance-Reputationsrisiken persistent",
+          "Max-Produktions-Kapazität limitiert Margen-Upside",
+          "Betriebsmittel-Kosten (Stahl, Aluminium) volatil"
+        ]
+      }
+    ]
+  },
+  "outlook": [
+    {
+      "date": "2026-07-23",
+      "event": "EZB-Ratensitzung – Zinsentscheid (Latarde-Reden erwartet)",
+      "relevant_for": "Gesamtmarkt, europäische Aktien (LVMH, Hermès, MSCI World)",
+      "rating": 4
+    },
+    {
+      "date": "2026-07-28",
+      "event": "Microsoft Q4 FY2026 Earnings (nach Börsenschluss)",
+      "relevant_for": "Microsoft, MSCI World Information Technology ETF, S&P 500",
+      "rating": 5
+    },
+    {
+      "date": "2026-07-29",
+      "event": "Apple Q3 FY2026 Earnings (nach Börsenschluss)",
+      "relevant_for": "Apple, S&P 500, MSCI World Information Technology ETF",
+      "rating": 4
+    },
+    {
+      "date": "2026-07-30",
+      "event": "MasterCard Q2 2026 Earnings",
+      "relevant_for": "MasterCard, MSCI World Financial Services",
+      "rating": 4
+    }
+  ],
+  "usage": {
+    "input_tokens": 65493,
+    "output_tokens": 8313
+  }
+}

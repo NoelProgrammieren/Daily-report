@@ -3,9 +3,9 @@
     {
       "company": "Microsoft",
       "rating": 4,
-      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026. Azure Wachstum bei 40% in Q3; Guidance für Q4 erwartet 39-40% in konstanter Währung. Management erwartet Kapazitäts-Lockerung und modest acceleration in H2 2026.",
+      "event_basis": "Q4 FY2026 Earnings am 28./29. Juli 2026 — erwartet Bekräftigung von Azure-Wachstum bei 39–40 % YoY. 2,5-Mrd.-USD-Investition in Frontier Company zeigt KI-Momentum.",
       "event_date": "2026-07-28",
-      "time_horizon": "3-4 Wochen",
+      "time_horizon": "3-4 Wochen bis Earnings",
       "expected_move_pct": {
         "low": 2.0,
         "high": 5.0,
@@ -16,10 +16,10 @@
         "high": 445.0,
         "currency": "USD"
       },
-      "thesis": "Microsoft zeigt konsistent strong Azure-Wachstum und verdrängt Margin-Bedenken durch Cloud-Mix-Optimierung. Q4 sollte Beschleunigung und Guidance-Bestätigung liefern; Copilot-Monetisierung rampt in Enterprise auf. Konsens unterschätzt Leverage-Potenzial.",
-      "risks": "Kapazitätszwang länger als erwartet. Margin-Kompression stärker als Konsens modelliert. Konkurrenten (Amazon AWS, Google Cloud) könnten Wachstums-Dynamik stehlen. Makro-Rezession reduziert Enterprise-IT-Ausgaben.",
+      "thesis": "Microsoft bewältigt Halbleiter-Schwäche und Azure-Deklartion besser als Konkurrenten. Azure-Guidance von 39–40 % signalisiert anhaltende Cloud-KI-Nachfrage troits Marktrotation. 2,5-Mrd.-USD-Investment in neue KI-Frontier-Division unterstützt längerfristige Wachstums-Thesis.",
+      "risks": "Weitere Semikonductor-Verluste könnten Capex-Guidance unter Druck setzen; Operating-Margin-Guidance fällt weiterhin unter Konsens.",
       "first_seen": "2026-06-26",
-      "last_updated": "2026-06-30T20:29:59.955959+02:00"
+      "last_updated": "2026-07-02T20:23:21.569724+02:00"
     },
     {
       "company": "Microsoft",
@@ -63,7 +63,11 @@
       "thesis": "Intels Foundry-Strategie erhält mit Apple-Deal kritische Bestätigung. 18A-P Risk-Production-Ankündigung auf Zeitplan signalisiert verlässliche Ausführung. Markt wechselt von Zweifeln zu operativem Vertrauen — kurzes Fenster für Momentum.",
       "risks": "Deal-Bestätigung noch nicht finalisiert (Präsidenten-Ankündigung, nicht Unternehmensvertrag). Konkurrenz von TSMC und Samsung. Volumenskeptizismus bleibt; Intels Marge-Druck in Foundry-Geschäft könnte Bewertung deckeln.",
       "first_seen": "2026-05-13",
-      "last_updated": "2026-06-30T20:29:59.955959+02:00"
+      "last_updated": "2026-06-30T20:29:59.955959+02:00",
+      "performance": {
+        "status": "pending",
+        "evaluated_at": null
+      }
     },
     {
       "company": "Apple",
@@ -220,5 +224,5 @@
       }
     }
   ],
-  "updated_at": "2026-07-01T20:55:57.255866+02:00"
+  "updated_at": "2026-07-02T20:23:21.569724+02:00"
 }

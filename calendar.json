@@ -3,14 +3,14 @@
     {
       "date": "2026-07-02",
       "event": "Nonfarm Payrolls (Juni) – Arbeitsmarktbericht",
-      "relevant_for": "Gesamtmarkt, Fed-Pfad",
+      "relevant_for": "Gesamtmarkt, Zinserwartungen, USD",
       "rating": 5,
       "category": "economic"
     },
     {
       "date": "2026-07-02",
       "event": "ISM Manufacturing Index (Juni)",
-      "relevant_for": "Industrie-Konjunktur",
+      "relevant_for": "Industrie, Konjunktur-Indikator",
       "rating": 3,
       "category": "economic"
     },
@@ -45,7 +45,7 @@
     {
       "date": "2026-07-23",
       "event": "EZB-Sitzung – Zinsentscheid",
-      "relevant_for": "Europäische Märkte, Währungen, LVMH, Hermès",
+      "relevant_for": "Europäische Märkte, Euro, LVMH, Hermès",
       "rating": 4,
       "category": "fed"
     },
@@ -59,7 +59,7 @@
     {
       "date": "2026-07-28",
       "event": "Microsoft Q4 FY2026 Earnings nach Börsenschluss",
-      "relevant_for": "Microsoft, Cloud-Sektor, Tech-Momentum",
+      "relevant_for": "Microsoft, Tech-Sektor, MSCI World Information Technology",
       "rating": 5,
       "category": "earnings"
     },
@@ -120,12 +120,19 @@
       "category": "earnings"
     },
     {
+      "date": "2026-07-29",
+      "event": "Apple Q3 FY2026 Earnings nach Börsenschluss",
+      "relevant_for": "Apple, Tech-Sektor, S&P 500",
+      "rating": 4,
+      "category": "earnings"
+    },
+    {
       "date": "2026-07-30",
       "event": "MasterCard Q2 2026 Earnings",
-      "relevant_for": "MasterCard, Payments-Sektor",
+      "relevant_for": "MasterCard, Finanztitel, Payments-Sektor",
       "rating": 4,
       "category": "earnings"
     }
   ],
-  "updated_at": "2026-07-01T20:55:57.255533+02:00"
+  "updated_at": "2026-07-02T20:23:21.569365+02:00"
 }
